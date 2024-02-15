@@ -1,0 +1,41 @@
+sub_units = {
+	small_scout_plane = {
+		sprite = small_plane
+		priority = 1
+		active = yes
+		type = scout_plane
+		need = { small_plane_scout_plane_airframe = 1 }
+		categories = { category_small_scout_plane }
+		land_air_wing_size = 10
+	}
+	
+	medium_nav_bomber = {
+		sprite = medium_plane
+		priority = 3
+		active = yes
+		type = naval_bomber
+		need = { medium_plane_naval_bomber_airframe = 1 }
+		categories = { category_patrol_bomber }
+		land_air_wing_size = 100
+	}
+	
+	medium_patrol_plane = {
+		sprite = heavy_plane
+		priority = 4
+		active = yes
+		type = maritime_patrol_plane
+		need = { medium_plane_maritime_patrol_plane_airframe = 1 }
+		categories = { category_patrol_bomber }
+		land_air_wing_size = 100
+	}
+
+	heavy_tac_bomber = {
+		sprite = heavy_plane
+		priority = 4
+		active = yes
+		type = tactical_bomber
+		need = { large_tactical_plane_airframe = 1 }
+		categories = { category_tac_bomber }
+		land_air_wing_size = 100
+	}
+}

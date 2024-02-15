@@ -1,0 +1,2379 @@
+on_actions = {
+    on_startup = {
+        effect = {
+			set_global_flag = aircraft_designer_improved_actived
+			if = {
+				limit = {
+					has_start_date < 1936.1.2
+				}
+				all_country = {
+					limit = {
+						is_ai = yes
+					}
+					air_experience = 80
+				}
+				ARG = {
+					create_equipment_variant = {
+						name = "FMA Dewoitine 21" #
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_high_wing
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+							
+						}
+						
+						icon = "GFX_FRA_early_fighter_medium"
+					}
+					set_technology = {
+						CAS1 = 1
+					}
+				}
+				
+				
+				
+				CZE = {
+					create_equipment_variant = {
+						name = "Avia B.534.IV" #
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_V
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_4x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+							
+						}
+						
+						icon = "GFX_CZE_early_fighter_medium"
+					}
+				
+					set_technology = {
+						engines_2 = 1
+						iw_medium_airframe = 1
+					}
+					
+					create_equipment_variant = {
+						name = "Aero Vodochody A.101" #
+						type = small_plane_cas_airframe_0
+						modules = {
+							fixed_main_weapon_slot = bomb_locks
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							aircraft_middle = lmg_defense_turret
+							#aircraft_empennage
+							aircraft_designer_role = adi_cas_role
+							
+						}
+						
+						icon = "GFX_CZE_early_fighter_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Letov-S-16" #
+						type = small_plane_cas_airframe_0
+						modules = {
+							fixed_main_weapon_slot = bomb_locks
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							#aircraft_cockpit_rear
+							aircraft_middle = lmg_defense_turret
+							#aircraft_empennage
+							aircraft_designer_role = adi_cas_role
+							
+						}
+						
+						icon = "GFX_CZE_early_fighter_medium"
+					}
+				
+					set_technology = {
+						engines_2 = 1
+						iw_medium_airframe = 1
+					}
+				}
+				
+				ENG = {
+					create_equipment_variant = {
+						name = "Hawker-Fury" #also covers Gloster Gauntlet, Hawker Demon
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+							
+						}
+						obsolete = yes
+						icon = "GFX_ENG_light_plane_5_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Hawker-Nimrod" 
+						type = cv_small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+							
+						}
+						obsolete = yes
+						icon = "GFX_ENG_light_plane_5_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Gloster Gladiator"
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = light_mg_2x
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+							
+						}
+						icon = "GFX_ENG_early_fighter_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Fairey-Gordon"
+						type = small_plane_cas_airframe_0
+						modules = {
+							fixed_main_weapon_slot = bomb_locks
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = lmg_defense_turret
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_cas_role
+							
+						}
+						obsolete = yes
+						icon = "GFX_ENG_CAS1_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Vickers-Vildebeest"
+						type = small_plane_naval_bomber_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							#aircraft_cockpit_rear
+							aircraft_middle = torpedo_mounting
+							#aircraft_empennage
+							aircraft_designer_role = adi_naval_bomber_role
+							
+						}
+						icon = "GFX_ENG_naval_bomber1_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Blackburn-Shark"
+						type = cv_small_plane_naval_bomber_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							#aircraft_cockpit_rear
+							aircraft_middle = torpedo_mounting
+							#aircraft_empennage
+							aircraft_designer_role = adi_naval_bomber_role
+							
+						}
+						icon = "GFX_ENG_naval_bomber1_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Handley-Page Heyford" 
+						type = medium_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = lmg_defense_turret
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = lmg_defense_turret
+							#aircraft_empennage
+							aircraft_designer_role = adi_tac_bomb_role
+							
+						}
+						icon = "GFX_ENG_iw_large_airframe_medium"
+						obsolete = yes
+					}
+					
+					create_equipment_variant = {
+						name = "Bristol-Blenheim" 
+						type = medium_plane_airframe_1
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_radial
+							aircraft_nose = adi_observation_bay
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = lmg_defense_turret
+							aircraft_middle = medium_bomb_bay
+							#aircraft_empennage
+							aircraft_designer_role = adi_tac_bomb_role
+							
+						}
+						icon = "GFX_ENG_heavy_fighter1_medium"
+					}
+					
+					set_technology = {
+						maritime_aircraft_construction = 1
+						aircraft_construction = 1
+					}
+				}
+				
+				FRA = {
+					create_equipment_variant = {
+						name = "Breguet 19" #
+						type = small_plane_cas_airframe_0
+						modules = {
+							fixed_main_weapon_slot = bomb_locks
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							#aircraft_cockpit_rear
+							aircraft_middle = lmg_defense_turret
+							#aircraft_empennage
+							aircraft_designer_role = adi_cas_role
+						}
+						obsolete = yes
+						icon = "GFX_FRA_early_fighter_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Nieuport Delage 62" #
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+							
+						}
+						obsolete = yes
+						icon = "GFX_FRA_early_fighter_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Dewoitine 500" #
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = light_mg_2x
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+							
+						}
+						obsolete = yes
+						icon = "GFX_FRA_light_plane_2_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Dewoitine 373" #
+						type = cv_small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = light_mg_4x
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_high_wing
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+							
+						}
+						obsolete = yes
+						icon = "GFX_FRA_light_plane_2_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Levasseur PL7" #
+						type = cv_small_plane_naval_bomber_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = torpedo_mounting
+							aircraft_middle = lmg_defense_turret
+							#aircraft_empennage
+							aircraft_designer_role = adi_naval_bomber_role
+							
+						}
+						obsolete = yes
+						icon = "GFX_FRA_naval_bomber1_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Dewoitine 510" #
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = light_mg_2x
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine_canon
+							#aircraft_cockpit_front
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+							
+						}
+						icon = "GFX_FRA_light_plane_2_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Latecoere-296" #
+						type = small_plane_naval_bomber_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = floats
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_high_wing
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = torpedo_mounting
+							aircraft_middle = lmg_defense_turret
+							#aircraft_empennage
+							aircraft_designer_role = adi_naval_bomber_role
+							
+						}
+						icon = "GFX_FRA_naval_bomber1_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Amiot-143" #
+						type = medium_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_radial
+							aircraft_nose = adi_observation_bay
+							aircraft_cockpit_front = lmg_defense_turret
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = lmg_defense_turret_2x
+							#aircraft_empennage
+							aircraft_designer_role = adi_tac_bomb_role
+							
+						}
+						icon = "GFX_FRA_tactical_bomber1_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Farman 222" #
+						type = large_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_high_wing
+							engine_kind_slot = engine_pull_push
+							aircraft_nose = adi_observation_bay
+							aircraft_cockpit_front = lmg_defense_turret
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = lmg_defense_turret_2x
+							#aircraft_empennage
+							aircraft_designer_role = adi_strat_bomb_role
+							
+						}
+						icon = "GFX_FRA_strategic_bomber1_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Marcel Bloch 200" #
+						type = medium_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_high_wing
+							engine_kind_slot = engine_motor_rotary
+							
+							aircraft_nose = adi_observation_bay
+							aircraft_cockpit_front = lmg_defense_turret
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = lmg_defense_turret_2x
+							#aircraft_empennage
+							aircraft_designer_role = adi_tac_bomb_role
+							
+						}
+						icon = "GFX_FRA_early_bomber_medium"
+						obsolete = yes
+					}
+					
+					set_technology = {
+						maritime_aircraft_construction = 1
+					}
+				}
+				
+				
+				
+				GER = {
+					create_equipment_variant = {
+						name = "Dornier 23"
+						type = medium_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_high_wing
+							engine_kind_slot = engine_inline
+							
+							aircraft_nose = adi_observation_bay
+							aircraft_cockpit_front = lmg_defense_turret
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = lmg_defense_turret_2x
+							#aircraft_empennage
+							aircraft_designer_role = adi_tac_bomb_role
+							
+						}
+						icon = "GFX_GER_early_bomber_medium"
+						obsolete = yes
+					}
+					
+					create_equipment_variant = {
+						name = "Junker 86"
+						type = medium_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_high_wing
+							engine_kind_slot = engine_radial
+							
+							aircraft_nose = adi_observation_bay
+							aircraft_cockpit_front = lmg_defense_turret
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = lmg_defense_turret_2x
+							aircraft_empennage = adi_twin_tail
+							aircraft_designer_role = adi_tac_bomb_role
+							
+						}
+						icon = "GFX_GER_early_bomber_medium"
+						obsolete = yes
+					}
+					
+					create_equipment_variant = {
+						name = "Heinkel 111" 
+						type = medium_plane_airframe_1
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_high_wing
+							engine_kind_slot = engine_radial
+							
+							aircraft_nose = adi_observation_bay
+							aircraft_cockpit_front = lmg_defense_turret_2x
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = lmg_defense_turret_2x
+							#aircraft_empennage
+							aircraft_designer_role = adi_tac_bomb_role
+							
+						}
+						icon = "GFX_GER_tactical_bomber1_medium"
+					}
+					create_equipment_variant = {
+						name = "Dornier 17" #
+						type = small_plane_cas_airframe_0
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = adi_observation_bay
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							aircraft_middle = small_bomb_bay
+							aircraft_empennage = adi_twin_tail
+							aircraft_designer_role = adi_cas_role
+							
+						}
+						icon = "GFX_GER_medium_plane_1_medium"
+					}
+					create_equipment_variant = {
+						name = "Heinkel 51"
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+							
+						}
+						obsolete = yes
+					}
+					create_equipment_variant = {
+						name = "Henschel 123"
+						type = small_plane_cas_airframe_0
+						modules = {
+							fixed_main_weapon_slot = bomb_locks
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							aircraft_cockpit_rear = bomb_locks
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_cas_role
+							
+						}
+						obsolete = yes
+					}
+					create_equipment_variant = {
+						name = "Messerschmitt Bf.109"
+						type = small_plane_airframe_1
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = light_mg_2x
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_V
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+							
+						}
+						icon = "GFX_GER_fighter1_medium"
+					}
+					create_equipment_variant = {
+						name = "Junker 87"
+						type = small_plane_cas_airframe_1
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							fixed_auxiliary_weapon_slot_2 = bomb_locks
+							fixed_auxiliary_weapon_slot_3 = dive_brakes_small
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_V
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = lmg_defense_turret
+							aircraft_middle = bomb_locks
+							#aircraft_empennage
+							aircraft_designer_role = adi_cas_role
+							
+						}
+						icon = "GFX_GER_CAS1_medium"
+					}
+					create_equipment_variant = {
+						name = "Dornier 22"
+						type = small_plane_naval_bomber_airframe_1
+						modules = {
+							fixed_main_weapon_slot = floats
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_high_wing
+							engine_kind_slot = engine_V
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = lmg_defense_turret
+							aircraft_middle = torpedo_mounting
+							#aircraft_empennage
+							aircraft_designer_role = adi_naval_bomber_role
+							
+						}
+						icon = "GFX_GER_naval_bomber1_medium"
+					}
+					
+					set_technology = {
+						maritime_aircraft_construction = 1
+						advanced_aircraft_construction = 1
+					}			
+				}
+				
+				
+				
+				HOL = {
+					create_equipment_variant = {
+						name = "Fokker C.X."
+						type = small_plane_cas_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = bomb_locks
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							aircraft_middle = lmg_defense_turret
+							#aircraft_empennage
+							aircraft_designer_role = adi_cas_role
+							
+						}
+					}
+					create_equipment_variant = {
+						name = "Fokker T.IV." #
+						type = medium_plane_maritime_patrol_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = floats
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = flying_boat_large
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = lmg_defense_turret
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = torpedo_mounting
+							aircraft_middle = lmg_defense_turret
+							#aircraft_empennage
+							aircraft_designer_role = adi_maritime_pat_role
+							
+						}
+					}
+					set_technology = {
+						maritime_aircraft_construction = 1
+					}
+				}
+				
+				
+				
+				HUN = {
+					create_equipment_variant = {
+						name = "Weiss Manfred 16"
+						type = small_plane_cas_airframe_0
+						modules = {
+							fixed_main_weapon_slot = bomb_locks
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							aircraft_middle = lmg_defense_turret
+							#aircraft_empennage
+							aircraft_designer_role = adi_cas_role
+							
+						}
+					}
+				}
+				
+				
+				
+				ITA = {
+					create_equipment_variant = {
+						name = "Fiat CR.32"
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = heavy_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+							
+						}
+					}
+					create_equipment_variant = {
+						name = "Caproni 111"
+						type = small_plane_cas_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_high_wing
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = lmg_defense_turret_2x
+							aircraft_middle = small_bomb_bay
+							#aircraft_empennage
+							aircraft_designer_role = adi_cas_role
+							
+						}
+						obsolete = yes
+						icon = "GFX_ITA_early_bomber_old_medium"
+					}
+					create_equipment_variant = {
+						name = "Caproni 101" #
+						type = medium_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_high_wing
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = lmg_defense_turret
+							#aircraft_empennage
+							aircraft_designer_role = adi_tac_bomb_role
+							
+						}
+						icon = "GFX_ITA_early_bomber_old_medium"
+						obsolete = yes
+					}
+					create_equipment_variant = {
+						name = "Caproni 133" #
+						type = medium_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_high_wing
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front = lmg_defense_turret_2x
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = bomb_locks
+							#aircraft_empennage = lmg_defense_turret_2x
+							aircraft_designer_role = adi_tac_bomb_role
+							
+						}
+						icon = "GFX_ITA_early_bomber_old_medium"
+						obsolete = yes
+					}
+					
+					create_equipment_variant = {
+						name = "Savoia Marchetti 81" #
+						type = medium_plane_airframe_1
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = lmg_defense_turret_2x
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = medium_bomb_bay
+							aircraft_empennage = lmg_defense_turret_2x
+							aircraft_designer_role = adi_tac_bomb_role
+							
+						}
+						icon = "GFX_ITA_early_bomber_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Savoia Marchetti 79" #
+						type = medium_plane_airframe_1
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_radial
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = lmg_defense_turret_2x
+							aircraft_cockpit_rear = torpedo_mounting
+							aircraft_middle = torpedo_mounting
+							#aircraft_empennage
+							aircraft_designer_role = adi_tac_bomb_role      #was adi_naval_bomber_role
+							
+						}
+						icon = "GFX_ITA_naval_bomber1_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Breda 65"
+						type = small_plane_cas_airframe_1
+						modules = {
+							fixed_main_weapon_slot = heavy_mg_2x
+							fixed_auxiliary_weapon_slot_1 = light_mg_2x
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_radial
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = lmg_defense_turret
+							aircraft_middle = bomb_locks
+							#aircraft_empennage
+							aircraft_designer_role = adi_cas_role
+							
+						}
+						icon = "GFX_ITA_CAS1_medium"
+					}
+					
+					set_technology = {
+						maritime_aircraft_construction = 1
+					}
+				}
+				
+				
+				
+				
+				JAP = {
+					create_equipment_variant = {
+						name = "Kawasaki KI-10"
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+							
+						}
+					}
+					create_equipment_variant = {
+						name = "Mitsubishi KI-2"
+						type = small_plane_cas_airframe_0
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = adi_observation_bay
+							aircraft_cockpit_front = lmg_defense_turret_2x
+							aircraft_cockpit_rear = small_bomb_bay
+							#aircraft_middle
+							aircraft_empennage = adi_twin_tail
+							aircraft_designer_role = adi_cas_role
+							
+						}
+						icon = "GFX_JAP_CAS1_medium"
+					}
+					create_equipment_variant = {
+						name = "Mitsubishi KI-1"
+						type = medium_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = adi_observation_bay
+							aircraft_cockpit_front = lmg_defense_turret
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = lmg_defense_turret_2x
+							aircraft_empennage = adi_twin_tail
+							aircraft_designer_role = adi_tac_bomb_role
+							
+						}
+					}
+					create_equipment_variant = {
+						name = "Kawasaki KI-3"
+						type = small_plane_cas_airframe_0
+						modules = {
+							fixed_main_weapon_slot = bomb_locks
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = lmg_defense_turret
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_cas_role
+							
+						}
+						icon = "GFX_JAP_CAS1_medium"
+					}
+					create_equipment_variant = {
+						name = "Aichi-D1A2"
+						type = cv_small_plane_cas_airframe_0
+						modules = {
+							fixed_main_weapon_slot = bomb_locks
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							fixed_auxiliary_weapon_slot_3 = dive_brakes_small
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = lmg_defense_turret
+							aircraft_middle = bomb_locks
+							#aircraft_empennage
+							aircraft_designer_role = adi_cas_role
+							
+						}
+						icon = "GFX_JAP_CAS1_medium"
+					}
+					create_equipment_variant = {
+						name = "Nakajima A4N"
+						type = cv_small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+						}
+					}
+					create_equipment_variant = {
+						name = "Mitsubishi B2M"
+						type = cv_small_plane_naval_bomber_airframe_0
+						modules = {
+							fixed_main_weapon_slot = bomb_locks
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = lmg_defense_turret
+							aircraft_middle = torpedo_mounting
+							#aircraft_empennage
+							aircraft_designer_role = adi_naval_bomber_role
+							
+						}
+						obsolete = yes
+						icon = "GFX_JAP_cv_naval_bomber1_medium"
+					}
+					create_equipment_variant = {
+						name = "Yokosuka B4Y"
+						type = cv_small_plane_naval_bomber_airframe_1
+						modules = {
+							fixed_main_weapon_slot = bomb_locks
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_radial
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = lmg_defense_turret
+							aircraft_middle = torpedo_mounting
+							#aircraft_empennage
+							aircraft_designer_role = adi_naval_bomber_role
+							
+						}
+						icon = "GFX_JAP_cv_naval_bomber1_medium"
+					}
+					set_technology = {
+						maritime_aircraft_construction = 1
+						advanced_aircraft_construction = 1
+					}
+				}
+				
+				
+				
+				POL = {
+					create_equipment_variant = {
+						name = "Państwowe Zakłady Lotnicze P.11"
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = light_mg_2x
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_high_wing
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+							
+						}
+						obsolete = yes
+					}
+					
+					create_equipment_variant = {
+						name = "Państwowe Zakłady Lotnicze P.24"
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = aircraft_cannon_1_2x
+							fixed_auxiliary_weapon_slot_1 = light_mg_2x
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_high_wing
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+							
+						}
+					}
+					
+					create_equipment_variant = {
+						name = "Państwowe Zakłady Lotnicze P.23"
+						type = small_plane_cas_airframe_1
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front 
+							aircraft_cockpit_rear = lmg_defense_turret_2x
+							aircraft_middle = bomb_locks
+							#aircraft_empennage
+							aircraft_designer_role = adi_cas_role
+							
+						}
+					}
+				}
+				
+				
+				
+				ROM = {
+					create_equipment_variant = {
+						name = "Industria Aeronautică Română 14"
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+							
+						}
+					}
+				}
+				
+				
+				
+				SOV = {
+					create_equipment_variant = {
+						name = "Polikarpov I-15"
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_4x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+						}
+						obsolete = yes
+					}
+					create_equipment_variant = {
+						name = "Polikarpov I-16"
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = light_mg_2x
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+						}
+						icon = "GFX_SOV_fighter1_medium"
+					}
+					create_equipment_variant = {
+						name = "Illouchine DB-3"
+						type = medium_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_radial
+							aircraft_nose = adi_observation_bay
+							aircraft_cockpit_front = lmg_defense_turret
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = lmg_defense_turret_2x
+							#aircraft_empennage
+							aircraft_designer_role = adi_tac_bomb_role
+							
+						}
+						icon = "GFX_SOV_early_bomber_medium"
+					}
+					create_equipment_variant = {
+						name = "Tupolev TB-3" #
+						type = large_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = wing_engine
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_high_wing
+							engine_kind_slot = engine_inline
+							aircraft_nose = adi_observation_bay
+							aircraft_cockpit_front = lmg_defense_turret
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = lmg_defense_turret
+							#aircraft_empennage
+							aircraft_designer_role = adi_strat_bomb_role
+							
+						}
+						icon = "GFX_SOV_transport_plane_equipment_1_medium"
+					}
+					create_equipment_variant = {
+						name = "Tupolev ANT-40" #
+						type = medium_plane_airframe_1
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_radial
+							aircraft_nose = adi_observation_bay
+							aircraft_cockpit_front = lmg_defense_turret
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = lmg_defense_turret_2x
+							#aircraft_empennage
+							aircraft_designer_role = adi_tac_bomb_role
+							
+						}
+						icon = "GFX_SOV_tactical_bomber1_medium"
+					}
+				
+				}
+				
+				SWE = {
+					create_equipment_variant = {
+						name = "Svenska Jaktfalken J6B"
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+						}
+					}
+				}
+				
+				USA = {
+					create_equipment_variant = {
+						name = "Curtiss P-6 Hawk"
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+						}
+						obsolete = yes
+					}
+					create_equipment_variant = {
+						name = "Boeing P-26A Peashooter"
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+						}
+						obsolete = yes
+						icon = "GFX_USA_light_plane_2_medium"
+					}
+					create_equipment_variant = {
+						name = "Vought O2U Corsair"
+						type = small_plane_cas_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							aircraft_cockpit_rear = lmg_defense_turret
+							aircraft_middle = bomb_locks
+							#aircraft_empennage
+							aircraft_designer_role = adi_cas_role
+							
+						}
+						obsolete = yes
+					}
+					create_equipment_variant = {
+						name = "Vought SBU Corsair"
+						type = cv_small_plane_cas_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							fixed_auxiliary_weapon_slot_3 = dive_brakes_small
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = lmg_defense_turret
+							aircraft_middle = bomb_locks
+							#aircraft_empennage
+							aircraft_designer_role = adi_cas_role
+							
+						}
+						obsolete = yes
+					}
+					create_equipment_variant = {
+						name = "Martin BM-2"
+						type = small_plane_naval_bomber_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = lmg_defense_turret
+							aircraft_middle = torpedo_mounting
+							#aircraft_empennage
+							aircraft_designer_role = adi_naval_bomber_role
+						}
+						obsolete = yes
+					}
+					create_equipment_variant = {
+						name = "Curtiss A-12 Shrike"
+						type = small_plane_cas_airframe_0
+						modules = {
+							fixed_main_weapon_slot = light_mg_4x
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = lmg_defense_turret
+							aircraft_middle = small_bomb_bay
+							#aircraft_empennage
+							aircraft_designer_role = adi_cas_role
+							
+						}
+						obsolete = yes
+						icon = "GFX_USA_CAS1_medium"
+					}
+					create_equipment_variant = {
+						name = "Northrop A-17"
+						type = small_plane_cas_airframe_1
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = light_mg_2x
+							#fixed_auxiliary_weapon_slot_2
+							fixed_auxiliary_weapon_slot_3 = dive_brakes_small
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_radial
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							aircraft_cockpit_rear = lmg_defense_turret
+							aircraft_middle = small_bomb_bay
+							#aircraft_empennage
+							aircraft_designer_role = adi_cas_role
+							
+						}
+						icon = "GFX_USA_CAS1_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Seversky P-35"
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_radial
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+						}
+						icon = "GFX_USA_light_plane_4_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Curtiss P-36G Hawk"
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = light_mg_4x
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_radial
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+						}
+						icon = "GFX_USA_fighter1_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Keystone B-6A" #
+						type = medium_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = lmg_defense_turret
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = lmg_defense_turret_2x
+							#aircraft_empennage
+							aircraft_designer_role = adi_tac_bomb_role
+						}
+						obsolete = yes
+					}
+					
+					create_equipment_variant = {
+						name = "Martin B-10" #
+						type = medium_plane_airframe_1
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = lmg_defense_turret
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = lmg_defense_turret
+							#aircraft_empennage
+							aircraft_designer_role = adi_tac_bomb_role
+						}
+						icon = "GFX_medium_plane_1_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Douglas B-18 Bolo" #
+						type = medium_plane_airframe_1
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_radial
+							aircraft_nose = adi_observation_bay
+							aircraft_cockpit_front = lmg_defense_turret
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = lmg_defense_turret_2x
+							#aircraft_empennage
+							aircraft_designer_role = adi_tac_bomb_role
+						}
+						icon = "GFX_USA_early_bomber_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Consolidated P2Y" #
+						type = medium_plane_maritime_patrol_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = bomb_locks
+							fixed_auxiliary_weapon_slot_2 = floats
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = flying_boat_large
+							engine_kind_slot = engine_radial
+							aircraft_nose = lmg_defense_turret
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = medium_bomb_bay
+							aircraft_middle = lmg_defense_turret
+							aircraft_empennage = adi_twin_tail
+							aircraft_designer_role = adi_maritime_pat_role
+						}
+						obsolete = yes
+						icon = "GFX_USA_naval_bomber1_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Consolidated PBY Cantinala" #
+						type = medium_plane_maritime_patrol_plane_airframe_1
+						modules = {
+							fixed_main_weapon_slot = wing_engine
+							fixed_auxiliary_weapon_slot_1 = empty
+							fixed_auxiliary_weapon_slot_2 = floats
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = flying_boat_large
+							engine_kind_slot = engine_radial
+							aircraft_nose = lmg_defense_turret
+							#aircraft_cockpit_front
+							aircraft_cockpit_rear = torpedo_mounting
+							aircraft_middle = lmg_defense_turret_2x
+							#aircraft_empennage
+							aircraft_designer_role = adi_maritime_pat_role
+						}
+						icon = "GFX_USA_naval_bomber1_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Boeing F4B"
+						type = cv_small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_motor_rotary
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+						}
+						obsolete = yes
+						icon = "GFX_USA_cv_fighter1_medium"
+					}
+					
+					create_equipment_variant = {
+						name = "Grumman F3F"
+						type = cv_small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_biplane
+							engine_kind_slot = engine_radial
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							#aircraft_middle
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+						}
+						icon = "GFX_USA_cv_fighter1_medium"
+					}
+					set_technology = {
+						maritime_aircraft_construction = 1
+						advanced_aircraft_construction = 1
+					}
+				}
+				
+				
+				ARG = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 18
+						producer = ARG
+						variant_name = "FMA Dewoitine 21"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 12
+						producer = FRA
+						variant_name = "Breguet 19"
+					}
+				}
+				SWI = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 36
+						producer = FRA
+						variant_name = "Nieuport Delage 62"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 12
+						producer = HOL
+						variant_name = "Fokker C.X."
+					}
+				}
+				COL = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 30
+						producer = USA
+						variant_name = "Curtiss P-6 Hawk"
+					}
+				}
+				MEX = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 12
+						producer = ENG
+						variant_name = "Fairey-Gordon"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 6
+						producer = ENG
+						variant_name = "Hawker-Fury"
+					}
+				}
+				PRU = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 27
+						producer = ITA
+						variant_name = "Fiat CR.32"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 18
+						producer = ENG
+						variant_name = "Fairey-Gordon"
+					}
+				}
+				LIT = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 48
+						producer = FRA
+						variant_name = "Dewoitine 510"
+					}
+				}
+				GER = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 280
+						producer = GER
+						variant_name = "Heinkel 51"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 80
+						producer = GER
+						variant_name = "Henschel 123"
+					}
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe_0
+						amount = 440
+						producer = GER
+						variant_name = "Dornier 23"
+					}
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe_0
+						amount = 40
+						producer = GER
+						variant_name = "Junker 86"
+					}
+				}
+				HOL = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 24
+						producer = HOL
+						variant_name = "Fokker C.X."
+					}
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe_0
+						amount = 24
+						producer = HOL
+						variant_name = "Fokker T.IV."
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 12
+						producer = USA
+						variant_name = "Curtiss P-6 Hawk"
+					}
+				}
+				EST = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 18
+						producer = ENG
+						variant_name = "Hawker-Fury"
+					}
+				}
+				HUN = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 72
+						producer = ITA
+						variant_name = "Fiat CR.32"
+					}
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe_0
+						amount = 12
+						producer = ITA
+						variant_name = "Caproni 101"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 12
+						producer = HUN
+						variant_name = "Weiss Manfred 16"
+					}
+				}
+				BOL = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 12
+						producer = USA
+						variant_name = "Curtiss P-6 Hawk"
+					}
+				}
+				IRQ = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 25
+						producer = ENG
+						variant_name = "Fairey-Gordon"
+					}
+				}
+				GRE = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 26
+						producer = ENG
+						variant_name = "Hawker-Fury"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 71
+						producer = FRA
+						variant_name = "Breguet 19"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 25
+						producer = ENG
+						variant_name = "Vickers-Vildebeest"
+					}
+				}
+				NZL = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 12
+						producer = ENG
+						variant_name = "Vickers-Vildebeest"
+					}
+				}
+				NOR = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 18
+						producer = HOL
+						variant_name = "Fokker C.X."
+					}
+				}
+				USA = {
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe_0
+						amount = 96
+						producer = USA
+						variant_name = "Keystone B-6A"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 96
+						producer = USA
+						variant_name = "Curtiss A-12 Shrike"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 384
+						producer = USA
+						variant_name = "Boeing P-26A Peashooter"
+					}
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe_1
+						amount = 108
+						producer = USA
+						variant_name = "Martin B-10"
+					}
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe_0
+						amount = 108
+						producer = USA
+						variant_name = "Consolidated P2Y"
+					}
+					add_equipment_to_stockpile = {
+						type = cv_small_plane_airframe_0
+						amount = 24
+						producer = USA
+						variant_name = "Boeing F4B"
+					}
+					add_equipment_to_stockpile = {
+						type = cv_small_plane_airframe_0
+						amount = 42
+						producer = USA
+						variant_name = "Vought SBU Corsair"
+					}
+					add_equipment_to_stockpile = {
+						type = cv_small_plane_airframe_0
+						amount = 24
+						producer = USA
+						variant_name = "Martin BM-2"
+					}
+				}
+				CHL = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 18
+						producer = USA
+						variant_name = "Curtiss P-6 Hawk"
+					}
+				}
+				AST = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 24
+						producer = ENG
+						variant_name = "Hawker-Fury"
+					}
+				}
+				BEL = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 20
+						producer = ENG
+						variant_name = "Hawker-Fury"
+					}
+				}
+				TUR = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 45
+						producer = USA
+						variant_name = "Curtiss P-6 Hawk"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 16
+						producer = CZE
+						variant_name = "Letov-S-16"
+					}
+				}
+				SPR = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 60
+						producer = FRA
+						variant_name = "Nieuport Delage 62"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 27
+						producer = ENG
+						variant_name = "Vickers-Vildebeest"
+					}
+				}
+				SIA = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 60
+						producer = USA
+						variant_name = "Curtiss P-6 Hawk"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 12
+						producer = USA
+						variant_name = "Vought O2U Corsair"
+					}
+				}
+				LAT = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 12
+						producer = ENG
+						variant_name = "Hawker-Fury"
+					}
+				}
+				BRA = {
+					add_equipment_to_stockpile = {
+						type = cv_small_plane_airframe_0
+						amount = 30
+						producer = USA
+						variant_name = "Boeing F4B"
+					}
+				}
+				BUL = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 48
+						producer = GER
+						variant_name = "Heinkel 51"
+					}
+				}
+				DEN = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 22
+						producer = ENG
+						variant_name = "Hawker-Fury"
+					}
+					add_equipment_to_stockpile = {
+						type = cv_small_plane_airframe_0
+						amount = 10
+						producer = ENG
+						variant_name = "Hawker-Nimrod"
+					}
+				}
+				PAR = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 12
+						producer = ITA
+						variant_name = "Fiat CR.32"
+					}
+				}
+				CAN = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 24
+						producer = ENG
+						variant_name = "Fairey-Gordon"
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_start_date > 1939.8.13
+					has_start_date < 1939.8.15
+				}
+				ROM = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 24
+						producer = ROM
+						variant_name = "Industria Aeronautică Română 14"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 48
+						producer = POL
+						variant_name = "Państwowe Zakłady Lotnicze P.11"
+					}
+				}
+				SWE = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 36
+						producer = ENG
+						variant_name = "Fairey-Gordon"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 30
+						producer = SWE
+						variant_name = "Svenska Jaktfalken J6B"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_1
+						amount = 12
+						producer = GER
+						variant_name = "Dornier 22"
+					}
+				}
+				POR = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_1
+						amount = 12
+						producer = GER
+						variant_name = "Dornier 22"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 12
+						producer = ENG
+						variant_name = "Fairey-Gordon"
+					}
+				}
+				YUG = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 48
+						producer = FRA
+						variant_name = "Nieuport Delage 62"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 36
+						producer = ENG
+						variant_name = "Hawker-Fury"
+					}
+				}
+				PER = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 72
+						producer = ENG
+						variant_name = "Hawker-Fury"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 48
+						producer = ENG
+						variant_name = "Fairey-Gordon"
+					}
+				}
+				RAJ = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 80
+						producer = ENG
+						variant_name = "Fairey-Gordon"
+					}
+				}
+				SAF = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 30
+						producer = ENG
+						variant_name = "Hawker-Fury"
+					}
+				}
+				PHI = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 12
+						producer = USA
+						variant_name = "Boeing P-26A Peashooter"
+					}
+				}
+				CHI = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 30
+						producer = ITA
+						variant_name = "Fiat CR.32"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 70
+						producer = USA
+						variant_name = "Curtiss P-6 Hawk"
+					}
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe_1
+						amount = 15
+						producer = USA
+						variant_name = "Martin B-10"
+					}
+				}
+				AUS = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 42
+						producer = ITA
+						variant_name = "Fiat CR.32"
+					}
+				}
+				POL = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 162
+						producer = POL
+						variant_name = "Państwowe Zakłady Lotnicze P.11"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_1
+						amount = 22
+						producer = POL
+						variant_name = "Państwowe Zakłady Lotnicze P.23"
+					}
+				}
+				FRA = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 96
+						producer = FRA
+						variant_name = "Dewoitine 500"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 192
+						producer = FRA
+						variant_name = "Dewoitine 510"
+					}
+					add_equipment_to_stockpile = {
+						type = large_plane_airframe_0
+						amount = 84
+						producer = FRA
+						variant_name = "Farman 222"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 144
+						producer = FRA
+						variant_name = "Nieuport Delage 62"
+					}
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe_0
+						amount = 120
+						producer = FRA
+						variant_name = "Amiot-143"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 24
+						producer = FRA
+						variant_name = "Latecoere-296"
+					}
+					add_equipment_to_stockpile = {
+						type = cv_small_plane_airframe_0
+						amount = 20
+						producer = FRA
+						variant_name = "Dewoitine 373"
+					}
+					add_equipment_to_stockpile = {
+						type = cv_small_plane_airframe_0
+						amount = 20
+						producer = FRA
+						variant_name = "Levasseur PL7"
+					}
+				}
+				
+				JAP = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 216
+						producer = JAP
+						variant_name = "Kawasaki KI-10"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 54
+						producer = JAP
+						variant_name = "Mitsubishi KI-2"
+					}
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe_0
+						amount = 54
+						producer = JAP
+						variant_name = "Mitsubishi KI-1"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 108
+						producer = JAP
+						variant_name = "Kawasaki KI-3"
+					}
+					add_equipment_to_stockpile = {
+						type = cv_small_plane_airframe_0
+						amount = 165
+						producer = JAP
+						variant_name = "Aichi-D1A2"
+					}
+					add_equipment_to_stockpile = {
+						type = cv_small_plane_airframe_0
+						amount = 131
+						producer = JAP
+						variant_name = "Nakajima A4N"
+					}
+					add_equipment_to_stockpile = {
+						type = cv_small_plane_airframe_0
+						amount = 113
+						producer = JAP
+						variant_name = "Mitsubishi B2M"
+					}
+				}
+				ENG = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 634
+						producer = ENG
+						variant_name = "Hawker-Fury"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 304
+						producer = ENG
+						variant_name = "Fairey-Gordon"
+					}
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe_0
+						amount = 244
+						producer = ENG
+						variant_name = "Handley-Page Heyford"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 48
+						producer = ENG
+						variant_name = "Vickers-Vildebeest"
+					}
+					add_equipment_to_stockpile = {
+						type = cv_small_plane_airframe_0
+						amount = 42
+						producer = ENG
+						variant_name = "Hawker-Nimrod"
+					}
+					add_equipment_to_stockpile = {
+						type = cv_small_plane_airframe_0
+						amount = 78
+						producer = ENG
+						variant_name = "Blackburn-Shark"
+					}
+				}
+				CZE = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 144
+						producer = CZE
+						variant_name = "Avia B.534.IV"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 48
+						producer = CZE
+						variant_name = "Aero Vodochody A.101"
+					}
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe_0
+						amount = 72
+						producer = FRA
+						variant_name = "Marcel Bloch 200"
+					}
+				}
+				
+				ITA = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 300
+						producer = ITA
+						variant_name = "Fiat CR.32"
+					}
+
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe_0
+						amount = 64
+						producer = ITA
+						variant_name = "Caproni 101"
+					}
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe_0
+						amount = 192
+						producer = ITA
+						variant_name = "Caproni 133"
+					}
+					
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe_1
+						amount = 72
+						producer = ITA
+						variant_name = "Savoia Marchetti 79"
+					}
+					
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe_1
+						amount = 32
+						producer = ITA
+						variant_name = "Savoia Marchetti 81"
+					}
+				}
+				SOV = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 470
+						producer = SOV
+						variant_name = "Polikarpov I-15"
+					}
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe_0
+						amount = 348
+						producer = SOV
+						variant_name = "Illouchine DB-3"
+					}
+					add_equipment_to_stockpile = {
+						type = large_plane_airframe_0
+						amount = 72
+						producer = SOV
+						variant_name = "Tupolev TB-3"
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 188
+						producer = SOV
+						variant_name = "Polikarpov I-16"
+					}
+				}			
+			}
+		}
+    }
+}

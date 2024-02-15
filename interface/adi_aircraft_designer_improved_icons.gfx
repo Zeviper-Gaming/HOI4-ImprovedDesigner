@@ -1,0 +1,353 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_EMSI_fixed_main_weapon_slot"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/plane_module_wing_slot_3.dds" 
+	} 
+	
+	spriteType = {
+		name = "GFX_EMSI_fixed_auxiliary_weapon_slot_1"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/plane_module_wing_slot_2.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMSI_fixed_auxiliary_weapon_slot_2"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/plane_module_wing_slot_1.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMSI_fixed_auxiliary_weapon_slot_3"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/plane_module_wing_slot_4.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMSI_fixed_auxiliary_weapon_slot_4"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/plane_module_slot_wings.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMSI_engine_kind_slot"
+		textureFile = "gfx/interface/equipmentdesigner/naval/module_slots/icons/engine.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_EMSI_aircraft_nose"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/plane_module_slot_nose.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMSI_aircraft_cockpit_front"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/plane_module_slot_front_cockpit.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMSI_aircraft_cockpit_rear"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/plane_module_slot_rear_cockpit.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMSI_aircraft_middle"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/plane_module_slot_middle.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMSI_aircraft_empennage"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/plane_module_slot_rear.dds" 
+	}
+
+	spriteType = {
+		name = "GFX_EMSI_aircraft_designer_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/plane_role_module_second.dds" 
+	}
+	
+	
+	spriteType = {
+		name = "GFX_EMI_adi_fighter_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/fighter.dds" 
+	}
+	spriteType = {
+		name = "GFX_EMI_adi_interceptor_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/heavy_fighter.dds" 
+	}
+	spriteType = {
+		name = "GFX_EMI_adi_cas_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/cas.dds" 
+	}
+	spriteType = {
+		name = "GFX_EMI_adi_naval_bomber_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/naval_bomber.dds" 
+	}
+	spriteType = {
+		name = "GFX_EMI_adi_suicide_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/naval_bomber.dds" 
+	}
+	spriteType = {
+		name = "GFX_EMI_adi_scout_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/scout_plane.dds" 
+	}
+	spriteType = {
+		name = "GFX_EMI_adi_tac_bomb_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/tactical_bomber.dds" 
+	}
+	spriteType = {
+		name = "GFX_EMI_adi_maritime_pat_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/maritime_patrol.dds" 
+	}	
+	spriteType = {
+		name = "GFX_EMI_adi_strat_bomb_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/strategic_bomber.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_aircraft_role_1"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/fighter.dds" 
+	}
+	spriteType = {
+		name = "GFX_SMI_aircraft_role_2"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/heavy_fighter.dds" 
+	}
+	spriteType = {
+		name = "GFX_SMI_aircraft_role_3"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/strategic_bomber.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_fuselage_biplane"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_biplane.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_fuselage_high_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_high_wing.dds" 
+	}
+
+	spriteType = {
+		name = "GFX_EMI_fuselage_monoplane"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_monoplane.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_fuselage_twin"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_twin.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_fuselage_flying_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_flying_wing.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_fuselage_swept_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_swept_wing.dds" 
+	}
+	
+	
+	spriteType = {
+		name = "GFX_SMI_plane_engine_kind_reactor"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_jet_engine_1_icon.dds" 
+	}
+
+	spriteType = {
+		name = "GFX_SMI_plane_engine_kind"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/engine_inline.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_engine_inline"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/engine_inline.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_engine_motor_rotary"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/engine_motor_rotary.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_engine_plane_towing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/engine_plane_towing.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_engine_pull_push"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/engine_pull_push.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_engine_radial"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/engine_radial.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_engine_radial_1"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/engine_radial_1.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_engine_radial_protected"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/engine_radial_protected.dds" 
+	}
+
+	spriteType = {
+		name = "GFX_EMI_engine_V"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/engine_V.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_engine_V_1"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/engine_V_1.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_engine_V_protected"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/engine_V_protected.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_engine_turbo_prop"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/engine_turbo_prop.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_nose_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/motor_nose.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_nose_engine_canon"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/motor_nose_cannon.dds" 
+	}
+
+	spriteType = {
+		name = "GFX_SMI_plane_nose_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/motor_nose_cannon.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_wing_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/motor_wing.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_plane_wing_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/motor_wing.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_rear_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/motor_tail.dds" 
+	}
+	spriteType = {
+		name = "GFX_SMI_plane_rear_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/motor_tail.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_top_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/motor_top.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_plane_top_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/motor_top.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_adi_observation_bay"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/adi_observation_bay.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_plane_special_observe"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_recon_camera_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_plane_suspended"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_bomb_lock_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_bomb_bays"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_large_bomb_bay_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_adi_at_gun"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_tank_buster_1_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_plane_flaps_cat"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_dive_brakes_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_plane_empennage"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/plane_module_slot_rear.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_adi_t_tail"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/empennage_t_tail.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_adi_twin_boom"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/empennage_twin_boom.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_adi_twin_tail"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/empennage_twin_tail.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_aircraft_cargo_bay"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/plane_module_troop_carrier.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_hollow_part_small"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_easy_maintenance_access.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_hollow_part_medium"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_easy_maintenance_access.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_hollow_part_large"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_easy_maintenance_access.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_adi_schraege_musik"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/Schrage_musik.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_schraege_cat"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/Schrage_musik.dds" 
+	}
+	
+	SpriteType = {
+		name = "GFX_survivability_studies_dos_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/technologies/survivability_studies.dds" 
+	}
+	SpriteType = {
+		name = "GFX_maritime_aircraft_construction_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/technologies/aircraft_construction.dds" 
+	}
+	SpriteType = {
+		name = "GFX_tech_schraege_musik_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/technologies/musik_tech.dds" 
+	}	
+	
+	SpriteType = {
+		name = "GFX_advanced_aircraft_construction_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/technologies/aircraft_contruction_advanced.dds" 
+	}
+	SpriteType = {
+		name = "GFX_modern_aircraft_construction_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/technologies/aircraft_construction_modern.dds" 
+	}
+}
