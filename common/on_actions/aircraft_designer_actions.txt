@@ -300,6 +300,27 @@ on_actions = {
 				
 				FRA = {
 					create_equipment_variant = {
+						name = "Avion TEST" #
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = empty
+							fixed_auxiliary_weapon_slot_1 = empty
+							#fixed_auxiliary_weapon_slot_2
+							#fixed_auxiliary_weapon_slot_3
+							fixed_auxiliary_weapon_slot_4 = fuselage_monoplane
+							engine_kind_slot = engine_inline
+							aircraft_nose = nose_engine
+							aircraft_cockpit_front = light_mg_2x
+							#aircraft_cockpit_rear
+							aircraft_middle = lmg_defense_turret
+							#aircraft_empennage
+							aircraft_designer_role = adi_fighter_role
+						}
+						obsolete = yes
+						icon = "GFX_FRA_light_plane_2_medium"
+					}
+
+					create_equipment_variant = {
 						name = "Breguet 19" #
 						type = small_plane_cas_airframe_0
 						modules = {
@@ -2159,6 +2180,12 @@ on_actions = {
 					}
 				}
 				FRA = {
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_0
+						amount = 1
+						producer = FRA
+						variant_name = "Avion TEST"
+					}
 					add_equipment_to_stockpile = {
 						type = small_plane_airframe_0
 						amount = 96

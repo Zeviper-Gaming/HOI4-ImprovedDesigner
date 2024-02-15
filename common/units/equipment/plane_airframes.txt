@@ -366,6 +366,7 @@ equipments = {
 		
 		module_slots = inherit
 	}
+
 	small_plane_airframe_2 = { #Improved
 		abbreviation = "afs2"
 		derived_variant_name = fighter_equipment_2
