@@ -1,8 +1,6 @@
-version="1.0"
+version="0.4.1"
 tags={
-	"Gameplay"
-	"Technologies"
+	"Fixes"
 }
-name="Air Designer Improved"
-supported_version="1.12.12"
-remote_file_id="2884019213"
+name="ZV_test"
+supported_version="1.13.7"
