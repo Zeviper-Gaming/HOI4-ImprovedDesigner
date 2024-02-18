@@ -139,7 +139,11 @@ spriteTypes = {
 		name = "GFX_EMI_fuselage_swept_wing"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_swept_wing.dds" 
 	}
-	
+
+	spriteType = {
+		name = "GFX_EMI_fuselage_elliptoid_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_elliptoid_wing.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_SMI_plane_engine_kind_reactor"

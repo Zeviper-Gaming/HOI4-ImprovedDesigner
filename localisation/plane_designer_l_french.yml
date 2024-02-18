@@ -39,7 +39,8 @@
  EQ_MOD_SLOT_aircraft_middle_TITLE:0 "Milieu de l'avion"
  EQ_MOD_SLOT_aircraft_empennage_TITLE:0 "Empennage"
  EQ_MOD_SLOT_aircraft_designer_role_TITLE:0 "Role de l'avion"
- 
+
+ # engines
  engine_inline:0 "Moteur en ligne"
  engine_inline_desc:0 "Un moteur avec une seul ligne de piston mis les uns derrières les autres. Son fin profil lui permet de prendre peu de place et de rendre l'avion aérodynamique"
  engine_motor_rotary:0 "Moteur rotatif"
@@ -63,7 +64,7 @@
  engine_turbo_prop:0 "Moteur Turbopropulseur"
  engine_turbo_prop_desc:0 "Un moteur au fonctionnement similaire au moteur à réaction. L'air ambiant entre dans le moteur, est compressé et enflammé pour l'accélérer, mais au lieu d'être éjecté pour propulser l'avion, il est utilisé pour faire tourner a haute vitesse une turbine, entrainant avec elle les pâles du moteur."
  EQ_MOD_CAT_plane_jet_engine_type_TITLE:1 "Moteur à réaction"
- 
+
  nose_engine:0 "Ajouter Un Moteur"
  nose_engine_desc:0 " "
  nose_engine_canon:0 "Ajouter Un Cannon-Moteur"
@@ -76,7 +77,15 @@
  rear_engine_desc:0 " "
  top_engine:0 "Ajouter Un Moteur"
  top_engine_desc:0 " "
- 
+
+ # weapons
+ engine_1_6x:0 "6 mitrailleuse légère"
+ engine_1_6x_desc:0 ""
+ heavy_bomb_lock:0 "Attache pour bombe lourde"
+ heavy_bomb_lock_desc:0 ""
+ heavy_rocket_rail:0 "Rail pour roquette lourdes"
+ heavy_rocket_rail_desc:0 ""
+
  #Observation window
  adi_observation_bay:0 "Hublot d'observation" 
  adi_observation_bay_desc:0 "Un hublot avec une grande visibilité au sol pour aider au ciblage"
