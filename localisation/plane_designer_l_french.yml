@@ -68,6 +68,8 @@
  nose_engine_desc:0 " "
  nose_engine_canon:0 "Ajouter Un Cannon-Moteur"
  nose_engine_canon_desc:0 "Rajoutte un moteur spécialement modifié pour y acceuillir un canon a travers"
+ nose_engine_machinegun:0 "Canon avec 2 mitrailleuses"
+ nose_engine_machinegun_desc:0 "Un canon avec un emplacement pour deux mitrailleuses qui tire a travers l'hélice"
  wing_engine:0 "Ajouter Deux Moteur"
  wing_engine_desc:0 " "
  rear_engine:0 "Ajouter Un Moteur"
@@ -126,7 +128,9 @@
  fuselage_flying_wing_desc:0 "Une configuration de fuselage dans laquelle la partie arrière de l'avion est fusionnée avec l'aile. Cette configuration permet de limité les surfaces exposées a l'air de l'avion, augmentant drastiquement l'aérodynamique de l'avion. Sans queue, les tourelles défensifs de l'avion on un champs de tir sans agnles mort a l'arrière de l'avion. Le seul problème est l'instabilité en vol provoquée par le manque de queue."
  fuselage_swept_wing:0 "Configuration ailes en fléches"
  fuselage_swept_wing_desc:0 "Une configuration dans laquelle l'angle d'attaque des ailes est aggrandi, de sorte a ce que les ailes forment une fléche. Cette configuration permet a l'avion de mieux pénétré les airs a grande vitesse, mais réduit la maniabilité a basse vitesse."
- 
+ fuselage_elliptoid_wing:0 "Configuration aille elliptoide"
+fuselage_elliptoid_wing_desc:0 "Une aile elliptoide qui réduit la trainée mais qui est cher a construire (spitfire)"
+
  adi_fighter_role:0 "Chasseur"
  adi_fighter_role_desc:0 "Cet avion sera désigné comme un chasseur"
  adi_interceptor_role:0 "Intercepteur"

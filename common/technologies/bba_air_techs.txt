@@ -1430,7 +1430,7 @@ technologies = {
 			hollow_part_medium
 			hollow_part_large
 
-			elliptoid_wing
+			fuselage_elliptoid_wing
 			
 			non_strategic_materials_small
 			non_strategic_materials_medium

@@ -1943,7 +1943,7 @@ equipment_modules = {
 		}
 	}
 
-	elliptoid_wing = {
+	fuselage_elliptoid_wing = {
 		abbreviation = "adi_ellip"
 		category = adi_fuselage_kind
 		sfx = sfx_ui_sd_module_turret
