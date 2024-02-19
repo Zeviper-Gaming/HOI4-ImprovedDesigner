@@ -126,6 +126,26 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_EMI_fuselage_elliptoid_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_elliptoid_wing.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_fuselage_low_tapered_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_low_tapered_wing.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_fuselage_high_tapered_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_high_tapered_wing.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_fuselage_inverted_gull_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_inverted_gull_wing.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_EMI_fuselage_twin"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_twin.dds" 
 	}
