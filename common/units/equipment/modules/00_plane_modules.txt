@@ -1951,12 +1951,11 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			build_cost_ic = 15
+			build_cost_ic = 5
 		}
 
 		multiply_stats = {
-			air_attack = 0.05  # commun au monoplane
-			air_agility = 0.10
+			air_agility = 0.15
 		}
 		xp_cost = 3
 
@@ -1967,17 +1966,62 @@ equipment_modules = {
 		}
 	}
 
-	fuselage_tapered_wing = {
-		abbreviation = "adi_tapered"
+	fuselage_low_tapered_wing = {
+		abbreviation = "adi_ltap"
 		category = adi_fuselage_kind
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
+			build_cost_ic = 1
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.1  # commun au monoplane
-			air_agility = -0.10
+			maximum_speed = 0.1
+			air_agility = 0.05
+		}
+		xp_cost = 3
+
+		allowed_module_categories = {
+			aircraft_empennage = {
+				plane_empennage
+			}
+		}
+	}
+	
+	fuselage_high_tapered_wing = {
+		abbreviation = "adi_htap"
+		category = adi_fuselage_kind
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 2
+		}
+
+		multiply_stats = {
+			reliability = 0.05  # commun au monoplane
+			weight = - 0.05
+		}
+		xp_cost = 3
+
+		allowed_module_categories = {
+			aircraft_empennage = {
+				plane_empennage
+			}
+		}
+	}
+	
+	fuselage_inverted_gull_wing = {
+		abbreviation = "adi_igull"
+		category = adi_fuselage_kind
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 3
+		}
+
+		multiply_stats = {
+			air_attack = 0.05  # commun au monoplane
+			air_agility = 0.10
 		}
 		xp_cost = 3
 

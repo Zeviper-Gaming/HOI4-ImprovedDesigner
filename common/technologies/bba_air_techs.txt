@@ -1431,6 +1431,9 @@ technologies = {
 			hollow_part_large
 
 			fuselage_elliptoid_wing
+			fuselage_low_tapered_wing
+			fuselage_high_tapered_wing
+			fuselage_inverted_gull_wing
 			
 			non_strategic_materials_small
 			non_strategic_materials_medium
