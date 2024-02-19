@@ -1999,7 +1999,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			reliability = 0.05  # commun au monoplane
-			weight = - 0.05
+			weight = -0.05
 		}
 		xp_cost = 3
 
