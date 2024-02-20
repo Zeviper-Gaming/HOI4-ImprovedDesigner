@@ -828,8 +828,6 @@ technologies = {
 			light_mg_6x
 			lmg_defense_turret
 			lmg_defense_turret_2x
-
-			nose_engine_machinegun
 			
 			adi_fighter_role
 			adi_interceptor_role

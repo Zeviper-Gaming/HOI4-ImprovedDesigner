@@ -69,8 +69,6 @@
  nose_engine_desc:0 " "
  nose_engine_canon:0 "Ajouter Un Cannon-Moteur"
  nose_engine_canon_desc:0 "Rajoutte un moteur spécialement modifié pour y acceuillir un canon a travers"
- nose_engine_machinegun:0 "Canon avec 2 mitrailleuses"
- nose_engine_machinegun_desc:0 "Un canon avec un emplacement pour deux mitrailleuses qui tire a travers l'hélice"
  wing_engine:0 "Ajouter Deux Moteur"
  wing_engine_desc:0 " "
  rear_engine:0 "Ajouter Un Moteur"

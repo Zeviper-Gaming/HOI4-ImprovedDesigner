@@ -2701,21 +2701,6 @@ equipment_modules = {
 		}
 		xp_cost = 2
 	}
-
-	nose_engine_machinegun = {
-		abbreviation = "eng_nos_mg"
-		category = plane_nose_engine
-		sfx = sfx_ui_sd_module_engine
-
-		add_stats = {
-			build_cost_ic = 7
-			fuel_consumption = 0.05
-			thrust = 8
-			maximum_speed = 50
-			air_attack = 2
-		}
-		xp_cost = 2
-	}
 	
 	nose_engine_canon = {
 		abbreviation = "eng_nos_g"
