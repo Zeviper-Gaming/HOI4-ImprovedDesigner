@@ -126,6 +126,31 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_EMI_light_mg_6x"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/light_mg_6x.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_fuselage_elliptoid_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_elliptoid_wing.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_fuselage_low_tapered_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_low_tapered_wing.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_fuselage_high_tapered_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_high_tapered_wing.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_fuselage_inverted_gull_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_inverted_gull_wing.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_EMI_fuselage_twin"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_twin.dds" 
 	}
@@ -139,8 +164,7 @@ spriteTypes = {
 		name = "GFX_EMI_fuselage_swept_wing"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules_slot/modules/fuselage_swept_wing.dds" 
 	}
-	
-	
+
 	spriteType = {
 		name = "GFX_SMI_plane_engine_kind_reactor"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_jet_engine_1_icon.dds" 

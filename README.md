@@ -18,4 +18,12 @@ Il a pour but de reprendre les ajouts de ces mods dans lesquels j'y ajouterai ou
 ## gfx
 Contient les images nécéssaires
 
-## 
+## Ajout de nouveaux modules
+### 1- Caractéristiques des modules
+### 2- Technologies 
+### 3- Description
+
+
+
+
+

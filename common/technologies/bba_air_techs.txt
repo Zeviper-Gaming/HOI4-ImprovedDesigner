@@ -742,9 +742,12 @@ technologies = {
 
 		enable_equipment_modules = {
 			bomb_locks
+			heavy_bomb_locks
 			small_bomb_bay
 			medium_bomb_bay
 			large_bomb_bay
+
+			heavy_rocket_rails
 			
 			adi_cas_role
 			adi_naval_bomber_role
@@ -822,6 +825,7 @@ technologies = {
 		enable_equipment_modules = {
 			light_mg_2x
 			light_mg_4x
+			light_mg_6x
 			lmg_defense_turret
 			lmg_defense_turret_2x
 			
@@ -1423,6 +1427,11 @@ technologies = {
 			hollow_part_small
 			hollow_part_medium
 			hollow_part_large
+
+			fuselage_elliptoid_wing
+			fuselage_low_tapered_wing
+			fuselage_high_tapered_wing
+			fuselage_inverted_gull_wing
 			
 			non_strategic_materials_small
 			non_strategic_materials_medium
