@@ -1,0 +1,62 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_radial_engines_1_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_radial_engines_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_radial_engines_2_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_radial_engines_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_radial_engines_3_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_radial_engines_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_radial_engines_4_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_radial_engines_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_rocket_rails_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_rocket_rails.dds"
+	}
+	SpriteType = {
+		name = "GFX_rocket_rails_2_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_rocket_rails_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_aircraft_construction_2_medium"
+		texturefile = "gfx/interface/technologies/aircraft_construction_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_jet_engine_improvements_medium"
+		texturefile = "gfx/interface/technologies/jet_engine_improvements.dds"
+	}
+	SpriteType = {
+		name = "GFX_ASW_medium"
+		texturefile = "gfx/interface/technologies/ASW.dds"
+	}
+	spriteType = {
+		name = "GFX_adjuster_paradrop_bg"
+		texturefile = "gfx/interface/strategicair/adjuster_mission_paradrop.dds"
+	}
+	spriteType = {
+		name = "GFX_adjuster_air_supply_bg"
+		texturefile = "gfx/interface/strategicair/adjuster_mission_air_supply.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_torpedoe_1_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_basic_torpedo.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_torpedoe_2_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_improved_torpedo.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_torpedoe_3_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_advanced_torpedo.dds"
+	}
+	SpriteType = {
+		name = "GFX_aa_hmg_2_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_aa_mg_3.dds"
+	}		
+}	

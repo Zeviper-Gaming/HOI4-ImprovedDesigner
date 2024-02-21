@@ -1,0 +1,227 @@
+﻿l_english:
+ 
+ radial_engines_1: "Radial Engines I"
+ radial_engines_1_desc: "Airplane Radial engine must be powerful, but lightweight and reliable. This engine type provides enough power to get a plane in the air, but somewhat limits it from reaching its full potential."
+ radial_engines_2: "Radial Engines II"
+ radial_engines_2_desc: "The rapid growth of airplanes requires a corresponding growth of engine power."
+ radial_engines_3: "Radial Engines III"
+ radial_engines_3_desc: "$engine_3_1x_desc$"
+ radial_engines_4: "Radial Engines IV"
+ radial_engines_4_desc: "$engine_4_1x_desc$" 
+ 
+ radial_engine_1_1x: "1x Radial engine I"
+ radial_engine_1_1x_desc: "Air-cooled Radial engines, which are heavy and sturdy, produce more raw horse power than inline engines, but are slower due to more drag because of their larger frontal area."
+ radial_engine_1_2x: "2x Radial engine I"
+ radial_engine_1_2x_desc: "Twin Radial engines give the plane a significant increase in thrust, but at a cost."
+ radial_engine_1_3x: "3x Radial engine I"
+ radial_engine_1_3x_desc: "Three Radial engines give more thrust than a pair of them, without the additional cost of a fourth radial_engine."
+ radial_engine_1_4x: "4x Radial engine I"
+ radial_engine_1_4x_desc: "A quartet of Radial engines provides enough thrust to lift a heavy plane and allow it to carry a significant payload."
+ radial_engine_1_6x: "6x Radial engine I"
+ radial_engine_1_6x_desc: "With six Radial engines, any plane can be made to carry a significant payload over a long range, at a decent speed."
+ radial_engine_2_1x: "1x Radial engine II"
+ radial_engine_2_1x_desc: "A larger and more powerful Radial engine allows for higher speed and greater payload."
+ radial_engine_2_2x: "2x Radial engine II"
+ radial_engine_2_2x_desc: "$radial_engine_1_2x_desc$"
+ radial_engine_2_3x: "3x Radial engine II"
+ radial_engine_2_3x_desc: "$radial_engine_1_3x_desc$"
+ radial_engine_2_4x: "4x Radial engine II"
+ radial_engine_2_4x_desc: "$radial_engine_1_4x_desc$"
+ radial_engine_2_6x: "6x Radial engine II"
+ radial_engine_2_6x_desc: "$radial_engine_1_6x_desc$"
+ radial_engine_3_1x: "1x Radial engine III"
+ radial_engine_3_1x_desc: "Incorporating advanced features such as methanol-injection and automatic mixture, this engine is able to put out significantly more power."
+ radial_engine_3_2x: "2x Radial engine III"
+ radial_engine_3_2x_desc: "$radial_engine_1_2x_desc$"
+ radial_engine_3_3x: "3x Radial engine III"
+ radial_engine_3_3x_desc: "$radial_engine_1_3x_desc$"
+ radial_engine_3_4x: "4x Radial engine III"
+ radial_engine_3_4x_desc: "$radial_engine_1_4x_desc$"
+ radial_engine_3_6x: "6x Radial engine III"
+ radial_engine_3_6x_desc: "$radial_engine_1_6x_desc$"
+ radial_engine_4_1x: "1x Radial engine IV"
+ radial_engine_4_1x_desc: "With extensive engineering to capitalize on every possible performance boost, this engine represents the absolute pinnacle of piston-driven engine technology."
+ radial_engine_4_2x: "2x Radial engine IV"
+ radial_engine_4_2x_desc: "$radial_engine_1_2x_desc$"
+ radial_engine_4_3x: "3x Radial engine IV"
+ radial_engine_4_3x_desc: "$radial_engine_1_3x_desc$"
+ radial_engine_4_4x: "4x Radial engine IV"
+ radial_engine_4_4x_desc: "$radial_engine_1_4x_desc$"
+ radial_engine_4_6x: "6x Radial engine IV"
+ radial_engine_4_6x_desc: "$radial_engine_1_6x_desc$"
+ 
+ reflex_gunsight_1: "Reflex Gunsight I"
+ reflex_gunsight_2: "Reflex Gunsight II"
+ cas_reflex_gunsight_1: "CAS Reflex Gunsight I"
+ cas_reflex_gunsight_2: "CAS Reflex Gunsight II"
+ gyro_gunsight_1: "Gyroscopic Gunsight I"
+ gyro_gunsight_2: "Gyroscopic Gunsight II"
+ 
+ high_octane_fuel_small: "High-Octane Additive" 
+ high_octane_fuel_small_desc: "Higher octane aviation gasoline could fuel high-performance aircraft engines, boosting the performance of the planes."
+
+ high_octane_fuel_medium: "High-Octane Additive" 
+ high_octane_fuel_medium_desc: "Higher octane aviation gasoline could fuel high-performance aircraft engines, boosting the performance of the planes."
+ 
+ high_octane_fuel_large: "High-Octane Additive"
+ high_octane_fuel_large_desc: "Higher octane aviation gasoline could fuel high-performance aircraft engines, boosting the performance of the planes."  
+ 
+ remote_control_turret_system: "Remote Control Turret System"
+ remote_control_turret_system_desc: "Turret-gunners can be pretty annoying if they are dead or fall a sleep in the middle of the airbattle, so it be very convenient to replace them with the centralised control system."
+ remote_control_turret_system_category: "Remote Control Turret System" 
+  
+ pressurized_cockpit: "Pressurized cockpit" 
+ pressurized_cockpit_desc: "Aircraft cockpit pressurization allows flying at much higher altitudes with less dense air. Thereby increasing its speed and maneuverability."  
+
+ water_injection_small: "Engine injection system" 
+ water_injection_small_desc: "Engine injection is used to cool the fuel-air mixture and thus achieve more power and lower consumption. " 
+ water_injection_medium: "Engine injection system" 
+ water_injection_medium_desc: "Engine injection is used to cool the fuel-air mixture and thus achieve more power and lower consumption. " 
+ water_injection_large: "Engine injection system" 
+ water_injection_large_desc: "Engine injection is used to cool the fuel-air mixture and thus achieve more power and lower consumption. "  
+
+ early_turbocharger: "Early Turbocharger"
+ early_turbocharger_desc: "A turbocharger is a turbine driven, forced induction device that is utilised in a piston engine to enable it to produce more power."
+ early_supercharger: "Early Supercharger"
+ early_supercharger_desc: "A supercharger is a mechanically driven, forced induction device that is utilised in a piston engine to enable it to produce more power. Its purpose and function is similar to a turbocharger with the principal difference being that it is mechanically driven by a direct connection to the engine whereas a turbocharger is turbine driven using engine exhaust gas flow." 
+
+
+ turbocharger: "Turbocharger"
+ turbocharger_desc: "A turbocharger is a turbine driven, forced induction device that is utilised in a piston engine to enable it to produce more power."
+ supercharger: "Supercharger"
+ supercharger_desc: "A supercharger is a mechanically driven, forced induction device that is utilised in a piston engine to enable it to produce more power. Its purpose and function is similar to a turbocharger with the principal difference being that it is mechanically driven by a direct connection to the engine whereas a turbocharger is turbine driven using engine exhaust gas flow." 
+
+ dive_brakes_medium: "Dive Brakes" 
+ dive_brakes_medium_desc: "A set of spoilers along the trailing edge of the wing deploy when the plane enters a dive, reducing overall speed and allowing the plane to pull out of steep dives without ripping its wings off. this, in turn, allows the plane to attack from a near-vertical dive, drastically increasing accuracy."
+ 
+ EQ_MOD_CAT_plane_special_module_gunsight_TITLE: "Gunsights" 
+ EQ_MOD_CAT_remote_control_turret_system_category_TITLE: "Remote Control Turret System"
+ EQ_MOD_CAT_plane_special_module_turrets_additions_TITLE: "Remote Control Turret System"  
+ EQ_MOD_CAT_plane_special_module_engine_TITLE: "Special Modules Engine"
+ EQ_MOD_CAT_plane_construction_type_module_small_TITLE: "Construction Type" 
+ EQ_MOD_CAT_plane_construction_type_module_medium_TITLE: "Construction Type"
+ EQ_MOD_CAT_plane_construction_type_module_large_TITLE: "Construction Type" 
+ 
+ EQ_MOD_CAT_engine_mounted_cannons_TITLE: "Engine-Mounted Cannons" 
+ EQ_MOD_CAT_plane_special_module_ASW_TITLE: "Anti-submarine warfare" 
+ EQ_MOD_CAT_plane_special_module_cargo_TITLE: "Cargo compartment"  
+ 
+ aircraft_engine_mounted_cannon_1: "Engine-Mounted Cannon I" 
+ aircraft_engine_mounted_cannon_1_desc: "Aircraft engine even with big gun mounted between the cylinders is not that useful if it has excessive holes from the enemy bullets, so please shoot first." 
+ 
+ aircraft_engine_mounted_cannon_2: "Engine-Mounted Cannon II"
+ aircraft_engine_mounted_cannon_2_desc: "Even a bigger gun huh? You can never go wrong with this i guess"  
+ 
+ aircraft_lightweight_construction_small: "Lightweight Construction"
+ aircraft_lightweight_construction_small_desc: "Perhaps if you fly fast enough enemy will not notice that wings our of planes is paper thin..." 
+ aircraft_lightweight_construction_medium: "Lightweight Construction"
+ aircraft_lightweight_construction_medium_desc: "Perhaps if you fly fast enough enemy will not notice that wings our of planes is paper thin..."  
+ 
+ medium_plane_naval_bomber_airframe_0: "Inter-War Medium Naval Bomber Airframe"
+ medium_plane_naval_bomber_airframe_1: "Basic Medium Naval Bomber Airframe"
+ medium_plane_naval_bomber_airframe_2: "Improved Medium Naval Bomber Airframe"
+ medium_plane_naval_bomber_airframe_3: "Advanced Medium Naval Bomber Airframe"
+ medium_plane_naval_bomber_airframe_4: "Modern Medium Naval Bomber Airframe"
+ medium_plane_naval_bomber_airframe_desc: "A specialized aircraft designed specifically for hunting enemy ships on the high seas."
+ medium_nav_bomber: "Medium Naval Bomber" 
+ medium_plane_naval_bomber_airframe: "Medium Naval Bomber" 
+ 
+ rocket_rails_2: "Improved rocket rails" 
+ rocket_rails_2_desc: "An improved version of air to surface missiles carries a lot of love and respect to our enemies or a lot of explosives i can't really tell, please let me know after you test them.." 
+ 
+ auto_extinguisher_system_small: "Fire Extinguishing Systems" 
+ auto_extinguisher_system_small_desc: "The name of the system speaks for itself. An engine fire during a flight, and even more so during a battle, is not something we would like to deal with."
+ auto_extinguisher_system_medium: "Fire Extinguishing Systems" 
+ auto_extinguisher_system_medium_desc: "The name of the system speaks for itself. An engine fire during a flight, and even more so during a battle, is not something we would like to deal with."
+ auto_extinguisher_system_large: "Fire Extinguishing Systems"
+ auto_extinguisher_system_large_desc: "The name of the system speaks for itself. An engine fire during a flight, and even more so during a battle, is not something we would like to deal with."
+ 
+ aircraft_reinforced_construction_small: "Reinforced Construction" 
+ aircraft_reinforced_construction_small_desc: "Being able to continue flying after a couple hundred of new holes in the hull is a pretty good feeling." 
+ 
+ aircraft_reinforced_construction_medium: "Reinforced Construction"
+ aircraft_reinforced_construction_medium_desc: "Being able to continue flying after a couple hundred of new holes in the hull is a pretty good feeling."
+ 
+ aircraft_reinforced_construction_large: "Reinforced Construction"
+ aircraft_reinforced_construction_large_desc: "Being able to continue flying after a couple hundred of new holes in the hull is a pretty good feeling."
+
+ aircraft_balanced_construction_small: "Balanced Construction" 
+ aircraft_balanced_construction_small_desc: "Being able to continue flying after a couple hundred of new holes in the hull is a pretty good feeling." 
+ 
+ aircraft_balanced_construction_medium: "Balanced Construction"
+ aircraft_balanced_construction_medium_desc: "Being able to continue flying after a couple hundred of new holes in the hull is a pretty good feeling."
+ 
+ aircraft_balanced_construction_large: "Balanced Construction"
+ aircraft_balanced_construction_large_desc: "Being able to continue flying after a couple hundred of new holes in the hull is a pretty good feeling."
+
+
+ aerodynamic_pylons_small: "Aerodynamic pylons"
+ aerodynamic_pylons_small_desc: "Drag, oddly enough, does not help you fly faster, especially if you hang a couple of bombs under the wings."  
+ aerodynamic_pylons_medium: "Aerodynamic pylons"
+ aerodynamic_pylons_medium_desc: "Drag, oddly enough, does not help you fly faster, especially if you hang a couple of bombs under the wings." 
+
+ drop_tanks_medium: "Drop tanks"
+ drop_tanks_medium_desc: "A lot of fuel is always better than a no fuel, more range is better than being shot. Being a airdesigner is that simple don't you know?"
+ 
+ EQ_MOD_SLOT_special_type_slot_7_TITLE: "Construction Type"
+ EQ_MOD_SLOT_special_type_slot_8_TITLE: "Gunsight"
+ 
+ EQ_MOD_SLOT_fixed_auxiliary_weapon_slot_5_TITLE: "Turrets"
+ EQ_MOD_SLOT_fixed_auxiliary_weapon_slot_6_TITLE: "Turrets" 
+ 
+ EQ_MOD_CAT_plane_special_module_jet_TITLE: "Jet Special Modules"
+ swept_wings: "Swept Wings"
+ swept_wings_desc: "Swept Wings helps reduce drag in supersonic flights." 
+ improved_compressor: "Improved Compressor"
+ improved_compressor_desc: "Jet engines take in a great amount of surrounding air through their inlet. Behind the inlet is the compressor section. The compressor's job is to increase the pressure of the incoming air before it reaches the combustion section." 
+ supersonic_air_intake: "Supersonic air Intake"
+ supersonic_air_intake_desc: "For a supersonic aircraft, the inlet must slow the flow down to subsonic speeds before the air reaches the compressor." 
+ afterburner: "Afterburner"
+ afterburner_desc: "Now you can overclock your jet engine! How cool is that?" 
+ 
+ leigh_light: "Leigh Light"
+ leigh_light_desc: "Powerful carbon arc searchlight help spot surfaced subs at night." 
+ sonobuoy: "Sonobuoy"
+ sonobuoy_desc: "Expendable sonar system that is dropped from aircraft conducting anti-submarine warfare"
+ magnetic_anomaly_detector: "Magnetic Anomaly Detector"
+ magnetic_anomaly_detector_desc: "Magnetometers are commonly used to search for submarines. Submarines are made mainly from ferromagnetic materials, so their presence in the Earth’s magnetic field will distort the field about them. This is in addition to their inherent remanent magnetisation."
+ asv_radar: "Sea-surface search radar"
+ asv_radar_desc: "Basic airborne sea-surface search radar"
+ 
+ medium_bomb_bay_cluster_bombs: "Cluster Bombs"
+ medium_bomb_bay_cluster_bombs_desc: "Cluster bombs ejects explosive bomblets that are designed to kill personnel and destroy vehicles."
+
+ small_cluster_bombs: "Butterfly bombs"
+ small_cluster_bombs_desc: "This bomb type was one of the first cluster bombs ever used in combat and it proved to be a highly effective weapon."
+ 
+ supply_drops: "Airdrop Supply"
+ troop_compartment: "Troop Compartment"
+ cargo_bay: "Cargo Bay" 
+ cargo_bay_desc: "We can remove weapons to make room for more cargo" 
+ 
+ jet_engine_improvements: "Jet Engine Improvements"
+ 
+ torpedo_mounting: "Light Torpedo Mountings"
+ torpedo_mounting_desc: "Hardpoints to allow a lightweight torpedo to be mounted under the fuselage. This gives the plane a potent weapon to use against enemy ships."
+ torpedo_mounting_2: "Medium Torpedo Mountings"
+ torpedo_mounting_2_desc: "Hardpoints to allow a Medium weight torpedo to be mounted under the fuselage. This gives the plane a potent weapon to use against enemy ships."
+ torpedo_mounting_3: "Heavy Torpedo Mountings"
+ torpedo_mounting_3_desc: "Hardpoints to allow a heavy weight torpedo to be mounted under the fuselage. This gives the plane a potent weapon to use against enemy ships."
+ 
+ air_torpedoe_1: "Air Launched Torpedoes"
+ air_torpedoe_1_desc: "lightweight torpedoes must be developed so that they can be carried by our aircraft."
+ air_torpedoe_2: "Improved Air Launched Torpedoes"
+ air_torpedoe_2_desc: "advances in aircraft allows up to develop larger more powerful torpedoes."
+ air_torpedoe_3: "Advanced Air Launched Torpedoes"
+ air_torpedoe_3_desc: "By combining the latest techknowlogies we can create highly advanced torpedoes for our aircraft."
+ 
+ imp_heavy_mg_4x: "4x Improved Heavy Machine Gun"
+ imp_heavy_mg_2x: "2x Improved Heavy Machine Gun"
+ aa_hmg_2: "Improved Heavy MG"
+ 
+ NACA_cowling: "NACA cowling"
+ NACA_cowling_desc: "The cowling consists of a symmetric, circular airfoil that is wrapped around the engine.It is a major advance in aerodynamic drag reduction for radial engines."
+ EQ_MOD_CAT_plane_special_module_radial_engine_TITLE: "Radial Engine Special"
+
+ 
+
