@@ -1630,6 +1630,11 @@ spriteTypes = {
 	# generic small_plane_naval_bomber_airframe
 
 	spriteType = {
+		name = "GFX_TC_medium_plane_naval_bomber_airframe"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/generic_medium_naval_bomber.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_TC_medium_plane_naval_bomber_airframe_0"
 		textureFile = "gfx/interface/equipmentdesigner/planes/generic/generic_medium_naval_bomber_0.dds"
 		legacy_lazy_load = no

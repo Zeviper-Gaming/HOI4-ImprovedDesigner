@@ -94,7 +94,7 @@ equipment_modules = {
 			build_cost_ic = 14
 			fuel_consumption = 0.16
 		}
-
+		
 		multiply_stats = {
 			maximum_speed = 0.20
 		}		
@@ -481,7 +481,7 @@ equipment_modules = {
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = engine_4_1x
-		
+
 		add_stats = {
 			thrust = 25
 			build_cost_ic = 19
@@ -499,7 +499,7 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = plane_engine_type
 			convert_cost_ic = 5
-		}	
+		}
 		forbid_module_categories = {
 		plane_special_module_radial_engine
 		engine_mounted_cannons
@@ -511,7 +511,7 @@ equipment_modules = {
 		category = twin_plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = engine_4_2x
-		
+
 		add_stats = {
 			thrust = 38
 			build_cost_ic = 38
@@ -541,7 +541,7 @@ equipment_modules = {
 		category = medium_plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = engine_4_3x
-		
+
 		add_stats = {
 			thrust = 51
 			build_cost_ic = 57
@@ -571,7 +571,7 @@ equipment_modules = {
 		category = quad_large_plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = engine_4_4x
-		
+
 		add_stats = {
 			thrust = 64
 			build_cost_ic = 76
@@ -600,7 +600,7 @@ equipment_modules = {
 		category = large_plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = engine_4_6x
-		
+
 		add_stats = {
 			thrust = 90
 			build_cost_ic = 114
@@ -628,7 +628,7 @@ equipment_modules = {
 		abbreviation = "re1"
 		category = plane_rocket_engine_type
 		sfx = sfx_ui_sd_module_engine
-		
+
 		add_stats = {
 			thrust = 20
 			build_cost_ic = 15
@@ -641,7 +641,6 @@ equipment_modules = {
 		build_cost_resources = {
 			tungsten = 3
 		}
-		
 		dismantle_cost_ic = 5
 		
 		forbid_module_categories = {
@@ -654,7 +653,7 @@ equipment_modules = {
 		abbreviation = "re2"
 		category = plane_rocket_engine_type
 		sfx = sfx_ui_sd_module_engine
-		
+
 		add_stats = {
 			thrust = 25
 			build_cost_ic = 16
@@ -666,7 +665,6 @@ equipment_modules = {
 		build_cost_resources = {
 			tungsten = 3
 		}
-	
 		dismantle_cost_ic = 7
 		
 		forbid_module_categories = {
@@ -679,7 +677,7 @@ equipment_modules = {
 		abbreviation = "re3"
 		category = plane_rocket_engine_type
 		sfx = sfx_ui_sd_module_engine
-		
+
 		add_stats = {
 
 			thrust = 30
@@ -692,15 +690,14 @@ equipment_modules = {
 		build_cost_resources = {
 			tungsten = 3
 		}
-	
 		dismantle_cost_ic = 10
-
+		
 		forbid_module_categories = {
 		plane_special_module_radial_engine
 		engine_mounted_cannons
-		}		
+		}			
 	}
-
+	
 ##      ## ########    ###    ########   #######  ##    ##  ######  
 ##  ##  ## ##         ## ##   ##     ## ##     ## ###   ## ##    ## 
 ##  ##  ## ##        ##   ##  ##     ## ##     ## ####  ## ##       
@@ -1042,7 +1039,7 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 0.5
 	}
-
+	
 	rocket_rails = {
 		abbreviation = "rrl"
 		category = cas_weapon
@@ -1513,7 +1510,7 @@ equipment_modules = {
 		xp_cost = 1
 		dismantle_cost_ic = 0.5
 	}
-
+	
 	self_sealing_fuel_tanks_small = {
 		abbreviation = "ssf"
 		category = plane_special_module_small
@@ -1627,7 +1624,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 1
 	}
-
+	
  ######  ########  ########  ######  ####    ###    ##          ##     ##  #######  ########  ##     ## ##       ########  ######                ##     ## ######## ########  #### ##     ## ##     ## 
 ##    ## ##     ## ##       ##    ##  ##    ## ##   ##          ###   ### ##     ## ##     ## ##     ## ##       ##       ##    ##               ###   ### ##       ##     ##  ##  ##     ## ###   ### 
 ##       ##     ## ##       ##        ##   ##   ##  ##          #### #### ##     ## ##     ## ##     ## ##       ##       ##                     #### #### ##       ##     ##  ##  ##     ## #### #### 
@@ -1669,7 +1666,7 @@ equipment_modules = {
 		xp_cost = 1
 		dismantle_cost_ic = 1
 	}
-	
+		
 	self_sealing_fuel_tanks_medium = {
 		abbreviation = "ssm"
 		category = plane_special_module_medium
@@ -1728,7 +1725,7 @@ equipment_modules = {
 		dismantle_cost_ic = 2
 		xp_cost = 1
 	}
-			
+				
 	demining_coil = {
 		abbreviation = "dmc"
 		category = mine_warfare_defense
@@ -1745,7 +1742,7 @@ equipment_modules = {
 			naval_mines_sweeping
 		}
 		dismantle_cost_ic = 1
-	}
+	}	
  ######  ########  ########  ######  ####    ###    ##          ##     ## ########   #######  ##     ## ##       ########  ######                ##          ###    ########   ######   ######## 
 ##    ## ##     ## ##       ##    ##  ##    ## ##   ##          ###   ### ##     ## ##     ## ##     ## ##       ##       ##    ##               ##         ## ##   ##     ## ##    ##  ##       
 ##       ##     ## ##       ##        ##   ##   ##  ##          #### #### ##     ## ##     ## ##     ## ##       ##       ##                     ##        ##   ##  ##     ## ##        ##       
@@ -1846,7 +1843,7 @@ equipment_modules = {
 		xp_cost = 1
 		dismantle_cost_ic = 5
 	}
-
+	
 ######## ##       ########  ######  ######## ########   #######  ##    ## ####  ######   ######  
 ##       ##       ##       ##    ##    ##    ##     ## ##     ## ###   ##  ##  ##    ## ##    ## 
 ##       ##       ##       ##          ##    ##     ## ##     ## ####  ##  ##  ##       ##       
@@ -2076,6 +2073,7 @@ equipment_modules = {
 		multiply_stats ={
 			maximum_speed = -0.03
 		}
+
 		dismantle_cost_ic = 1
 		can_convert_from = {
 			module_category = plane_special_module_defense_turret
@@ -2118,7 +2116,7 @@ equipment_modules = {
 
 			add_stats = {
 				air_agility = 1
-		}
+			}
 		}
 
 		multiply_stats ={
@@ -2195,7 +2193,7 @@ equipment_modules = {
 		gui_category = plane_special_module_defense_turret
 		sfx = sfx_ui_sd_module_turret
 
-		add_stats = {
+		add_stats = {	
 			build_cost_ic = 4
 			weight = 4
 			air_attack = 3
@@ -2247,7 +2245,7 @@ equipment_modules = {
 			build_cost_ic = 4
 			weight = 4
 			air_attack = 3
-			air_defence = 4			
+			air_defence = 4
 		}
 
 		mission_type_stats = {
@@ -2291,7 +2289,7 @@ equipment_modules = {
 			build_cost_ic = 8
 			weight = 8
 			air_attack = 6
-			air_defence = 8				
+			air_defence = 8
 		}
 
 		mission_type_stats = {
@@ -3236,7 +3234,7 @@ equipment_modules = {
 		}		
 		xp_cost = 1
 	}	
-
+	
 	aircraft_engine_mounted_cannon_1 = {
 		abbreviation = "ac21"
 		category = engine_mounted_cannons
@@ -3262,6 +3260,7 @@ equipment_modules = {
 			}
 		}		
 	}
+	
 	aircraft_engine_mounted_cannon_2 = {
 		abbreviation = "ac21"
 		category = engine_mounted_cannons
@@ -3287,6 +3286,7 @@ equipment_modules = {
 			}
 		}		
 	}
+	
 	aircraft_lightweight_construction_small = { 
 		abbreviation = "flo"
 		category = plane_construction_type_module_small
@@ -3304,6 +3304,7 @@ equipment_modules = {
 		dismantle_cost_ic = 4
 		xp_cost = 1
 	}
+	
 	aircraft_lightweight_construction_medium = { 
 		abbreviation = "flo"
 		category = plane_construction_type_module_medium
@@ -3349,7 +3350,8 @@ equipment_modules = {
 			weight = 3
 		}		
 		xp_cost = 1
-	}	
+	}
+	
 	drop_tanks_medium = {
 		abbreviation = "dpt"
 		category = plane_special_module_medium
@@ -3359,9 +3361,10 @@ equipment_modules = {
 			build_cost_ic = 2
 			air_range = 300
 			weight = 2
-		}
+		}			
 		xp_cost = 1
 	}
+	
 	auto_extinguisher_system_small = {
 		abbreviation = "aps"
 		category = plane_special_module_small
@@ -3376,6 +3379,7 @@ equipment_modules = {
 		xp_cost = 1
 		dismantle_cost_ic = 0.5
 	}
+	
 	auto_extinguisher_system_medium = {
 		abbreviation = "apm"
 		category = plane_special_module_medium
@@ -3390,6 +3394,7 @@ equipment_modules = {
 		xp_cost = 1
 		dismantle_cost_ic = 1
 	}
+	
 	auto_extinguisher_system_large = {
 		abbreviation = "apl"
 		category = plane_special_module_large
@@ -3404,6 +3409,7 @@ equipment_modules = {
 		xp_cost = 1
 		dismantle_cost_ic = 1
 	}
+	
 	aircraft_reinforced_construction_small = { 
 		abbreviation = "flo"
 		category = plane_construction_type_module_small
@@ -3418,6 +3424,7 @@ equipment_modules = {
 		dismantle_cost_ic = 4
 		xp_cost = 1
 	}
+	
 	aircraft_reinforced_construction_medium = { 
 		abbreviation = "flo"
 		category = plane_construction_type_module_medium
@@ -3432,6 +3439,7 @@ equipment_modules = {
 		dismantle_cost_ic = 4
 		xp_cost = 1
 	}
+	
 	aircraft_reinforced_construction_large = { 
 		abbreviation = "flo"
 		category = plane_construction_type_module_large
@@ -3445,7 +3453,8 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 4
 		xp_cost = 1
-	}	
+	}
+	
 	aerodynamic_pylons_small = {
 		abbreviation = "dbs"
 		category = plane_special_module_small
@@ -3467,6 +3476,7 @@ equipment_modules = {
 		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
 		xp_cost = 1
 	}
+	
 	aerodynamic_pylons_medium = {
 		abbreviation = "dbs"
 		category = plane_special_module_medium
@@ -3487,7 +3497,8 @@ equipment_modules = {
 		}		
 		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
 		xp_cost = 1
-	}	
+	}
+	
 	afterburner = {
 		abbreviation = "abr"
 		category = plane_special_module_jet
@@ -3508,6 +3519,7 @@ equipment_modules = {
 		xp_cost = 2
 		dismantle_cost_ic = 4
 	}
+	
 	supersonic_air_intake = {
 		abbreviation = "sai"
 		category = plane_special_module_jet
@@ -3524,6 +3536,7 @@ equipment_modules = {
 		xp_cost = 2
 		dismantle_cost_ic = 4
 	}
+	
 	swept_wings = {
 		abbreviation = "stw"
 		category = plane_special_module_jet
@@ -3538,7 +3551,8 @@ equipment_modules = {
 		}		
 		xp_cost = 2
 		dismantle_cost_ic = 4
-	}	
+	}
+	
 	improved_compressor = { 
 		abbreviation = "spch"
 		category = plane_special_module_jet
@@ -3555,6 +3569,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 1
 	}
+	
 #	airdropped_depth_charges = {
 #		abbreviation = "tpm"
 #		category = ASW_weapons
@@ -3580,6 +3595,7 @@ equipment_modules = {
 #			}
 #		dismantle_cost_ic = 1.5
 #	}
+
 	leigh_light = { 
 		abbreviation = "llt"
 		category = plane_special_module_ASW
@@ -3595,6 +3611,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 1
 	}
+	
 	magnetic_anomaly_detector = { 
 		abbreviation = "llt"
 		category = plane_special_module_ASW
@@ -3609,6 +3626,7 @@ equipment_modules = {
 		dismantle_cost_ic = 3
 		xp_cost = 1
 	}
+	
 	sonobuoy = { 
 		abbreviation = "llt"
 		category = plane_special_module_ASW
@@ -3622,6 +3640,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 1
 	}
+	
 	asv_radar = {
 		abbreviation = "agr1"
 		category = plane_special_module_air_ground_radar
@@ -3646,6 +3665,7 @@ equipment_modules = {
 		}		
 		xp_cost = 1
 	}
+	
 	medium_bomb_bay_cluster_bombs = {
 		abbreviation = "mbb"
 		category = tac_weapon
@@ -3684,6 +3704,7 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 7
 	}
+	
 	small_cluster_bombs = {
 		abbreviation = "bol"
 		category = cas_weapon
@@ -3711,6 +3732,7 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 0.5
 	}
+	
 	cargo_bay = {
 		abbreviation = "lbb"
 		category = plane_special_module_cargo
@@ -3734,6 +3756,7 @@ equipment_modules = {
 
 		dismantle_cost_ic = 8
 	}
+	
 	supply_drops = {
 		abbreviation = "lbb"
 		category = plane_special_module_cargo
@@ -3765,6 +3788,7 @@ equipment_modules = {
 		
 		dismantle_cost_ic = 3
 	}
+	
 	troop_compartment = {
 		abbreviation = "lbb"
 		category = plane_special_module_cargo
