@@ -1,0 +1,189 @@
+#scripted trigger for Yugoslavia
+
+is_available_fighter_YUG = {
+	OR = {
+		AND = {
+			has_tech = fighter1
+			ROOT = { 
+				NOT = { has_tech = fighter1}
+			}
+		}
+		AND = {
+			has_tech = fighter2
+			ROOT = { 
+				NOT = { has_tech = fighter2}
+			}
+		}
+		AND = {
+			has_tech = fighter3
+			ROOT = { 
+				NOT = { has_tech = fighter3}
+			}
+		}
+		AND = {
+			has_tech = basic_small_airframe
+			ROOT = { 
+				NOT = { has_tech = basic_small_airframe}
+			}
+		}
+		AND = {
+			has_tech = improved_small_airframe
+			ROOT = { 
+				NOT = { has_tech = improved_small_airframe}
+			}
+		}
+		AND = {
+			has_tech = advanced_small_airframe
+			ROOT = { 
+				NOT = { has_tech = advanced_small_airframe}
+			}
+		}
+	}
+	NOT = {
+		has_war_with = ROOT
+	}
+}
+
+is_available_heavy_fighter_YUG = {
+	OR = {
+		AND = {
+			has_tech = heavy_fighter1
+			ROOT = { 
+				NOT = { has_tech = heavy_fighter1}
+			}
+		}
+		AND = {
+			has_tech = heavy_fighter2
+			ROOT = { 
+				NOT = { has_tech = heavy_fighter2}
+			}
+		}
+		AND = {
+			has_tech = heavy_fighter3
+			ROOT = { 
+				NOT = { has_tech = heavy_fighter3}
+			}
+		}
+		AND = {
+			has_tech = basic_medium_airframe
+			ROOT = { 
+				NOT = { has_tech = basic_medium_airframe}
+			}
+		}
+		AND = {
+			has_tech = improved_medium_airframe
+			ROOT = { 
+				NOT = { has_tech = improved_medium_airframe}
+			}
+		}
+		AND = {
+			has_tech = advanced_medium_airframe
+			ROOT = { 
+				NOT = { has_tech = advanced_medium_airframe}
+			}
+		}
+	}
+	NOT = {
+		has_war_with = ROOT
+	}
+}
+
+is_available_cas_YUG = {
+	OR = {
+		AND = {
+			has_tech = CAS1
+			ROOT = { 
+				NOT = { has_tech = CAS1}
+			}
+		}
+		AND = {
+			has_tech = CAS2
+			ROOT = { 
+				NOT = { has_tech = CAS2}
+			}
+		}
+		AND = {
+			has_tech = CAS3
+			ROOT = { 
+				NOT = { has_tech = CAS3}
+			}
+		}
+		AND = {
+			has_tech = basic_small_airframe
+			ROOT = { 
+				NOT = { has_tech = basic_small_airframe}
+			}
+		}
+		AND = {
+			has_tech = improved_small_airframe
+			ROOT = { 
+				NOT = { has_tech = improved_small_airframe}
+			}
+		}
+		AND = {
+			has_tech = advanced_small_airframe
+			ROOT = { 
+				NOT = { has_tech = advanced_small_airframe}
+			}
+		}
+	}
+	NOT = {
+		has_war_with = ROOT
+	}
+}
+
+is_available_tac_YUG = {
+	OR = {
+		AND = {
+			has_tech = tactical_bomber1
+			ROOT = { 
+				NOT = { has_tech = tactical_bomber1}
+			}
+		}
+		AND = {
+			has_tech = tactical_bomber2
+			ROOT = { 
+				NOT = { has_tech = tactical_bomber2}
+			}
+		}
+		AND = {
+			has_tech = tactical_bomber3
+			ROOT = { 
+				NOT = { has_tech = tactical_bomber3}
+			}
+		}
+		AND = {
+			has_tech = basic_medium_airframe
+			ROOT = { 
+				NOT = { has_tech = basic_medium_airframe}
+			}
+		}
+		AND = {
+			has_tech = improved_medium_airframe
+			ROOT = { 
+				NOT = { has_tech = improved_medium_airframe}
+			}
+		}
+		AND = {
+			has_tech = advanced_medium_airframe
+			ROOT = { 
+				NOT = { has_tech = advanced_medium_airframe}
+			}
+		}
+	}
+	NOT = {
+		has_war_with = ROOT
+	}
+}
+
+is_yug_cosmetic_tag = {
+	OR = {
+		has_cosmetic_tag = SER	
+		has_cosmetic_tag = vojvodina	
+		has_cosmetic_tag = dalmatia	
+		has_cosmetic_tag = BOS_without_HRZ	
+		has_country_flag = yug_transylvania_flag
+		has_country_flag = yug_croatia_flag
+		has_country_flag = yug_bosnia_flag
+	}
+}
