@@ -57,125 +57,189 @@ equipments = {
 
 		module_slots = {
 			fixed_main_weapon_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-
+					cas_weapon
+					# todo -- ajouter "hcas_weapon"
+					nav_bomber_weapon
+					recon_camera
+					mine_warfare_offense
+					kamikaze_bomber_weapon
+					plane_special_module_small
 				}
 			}
 
 			fixed_auxiliary_weapon_slot_1 = { 
 				required = no
 				allowed_module_categories = {
-
+					# todo -- ajouter moteurs
+					fighter_weapon
+					cas_weapon
+					nav_bomber_weapon
+					mine_warfare_offense
+					plane_special_module_small
+					plane_construction_type_module_small
+					plane_special_module_small
 				}
 			}
 			
 			fixed_auxiliary_weapon_slot_2 = {
 				required = no
 				allowed_module_categories = {
-
+					# todo -- ajouter moteurs
+					fighter_weapon
+					cas_weapon
+					nav_bomber_weapon
+					mine_warfare_offense
+					plane_special_module_small
+					plane_construction_type_module_small
+					plane_special_module_small
 				}
 			}
 			
 			fixed_auxiliary_weapon_slot_3 = {
 				required = no
 				allowed_module_categories = {
-
+					# todo -- ajouter moteurs
+					fighter_weapon
+					cas_weapon
+					nav_bomber_weapon
+					mine_warfare_offense
+					plane_special_module_small
+					plane_construction_type_module_small
+					plane_special_module_small
 				}
 			}
 			
 			fixed_auxiliary_weapon_slot_4 = {
 				required = no
 				allowed_module_categories = {
-
+					# todo -- Ajouter les flaps et air brakes dans une nouvelle catégorie
+					plane_special_module_small
 				}
 			}
 			
 			fixed_auxiliary_weapon_slot_5 = {
 				required = no
 				allowed_module_categories = {
-
+					# todo -- Ajouter les flaps et air brakes dans une nouvelle catégorie
+					plane_special_module_small
 				}
 			}
 			
 			fixed_auxiliary_weapon_slot_6 = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-
+					# todo -- Ajouter les types de fuselage
 				}
 			}
 			
 			fixed_auxiliary_weapon_slot_7 = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-
+					# todo -- Ajouter les types d'empennage
 				}
 			}
 			
 			fixed_auxiliary_weapon_slot_8 = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-
+					# todo -- Ajouter les roles des avions
 				}
 			}
 
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
-
+					# todo -- Ajouter les roles des avions
 				}
 			}
 
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-
+					# todo -- ajouter moteurs
+					# todo -- ajouter les modules d'armures
+					fighter_weapon
+					plane_special_module_bomb_sights
+					plane_special_module_radio_navigation
+					plane_special_module_air_ground_radar
+					plane_special_module_air_air_radar
+					plane_special_module_gunsight
+					remote_control_turret_system_category
+					plane_construction_type_module_small
+					plane_special_module_jet
+					plane_special_module_ASW
 				}
 			}
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
-
+					fighter_weapon
+					plane_special_module_bomb_sights
+					plane_special_module_gunsight
+					plane_special_module_small
 				}
 			}
 			special_type_slot_3 = {
 				required = no
 				allowed_module_categories = {
-
+					plane_special_module_small
+					plane_special_module_radio_navigation
+					plane_special_module_air_ground_radar
+					plane_special_module_air_air_radar
+					plane_special_module_ASW
+					plane_special_module_defense_turret
 				}
 			}
 			special_type_slot_4 = {
 				required = no
 				allowed_module_categories = {
-
+					cas_weapon
+					# todo -- ajouter "hcas_weapon"
+					nav_bomber_weapon
+					recon_camera
+					mine_warfare_offense
+					kamikaze_bomber_weapon
+					plane_special_module_small
+					plane_special_module_defense_turret
+					plane_construction_type_module_small
 				}
 			}
 			special_type_slot_5 = {
 				required = no
 				allowed_module_categories = {
-
+					plane_special_module_small
+					plane_construction_type_module_small
 				}
 			}
 			special_type_slot_6 = {
 				required = no
 				allowed_module_categories = {
-
+					plane_special_module_small
+					plane_special_module_engine
+					plane_construction_type_module_small
 				}
 			}			
 			special_type_slot_7 = {
 				required = no
 				allowed_module_categories = {
-
+					plane_special_module_small
+					plane_special_module_engine
+					plane_construction_type_module_small
 				}
 			}					
 			special_type_slot_8 = {
 				required = no
 				allowed_module_categories = {
-
+					plane_special_module_small
+					plane_special_module_engine
+					plane_construction_type_module_small
 				}
 			}			
 		}
 		
+		# TODO -- verify module_count_limits
 		module_count_limit = {
 			module = guided_anti_ship_missile
 			count < 2

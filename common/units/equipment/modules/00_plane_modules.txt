@@ -706,6 +706,8 @@ equipment_modules = {
 ##  ##  ## ##       ##     ## ##        ##     ## ##   ### ##    ## 
  ###  ###  ######## ##     ## ##         #######  ##    ##  ######  
 
+	# fighter weapons
+	
 	light_mg_2x = {
 		abbreviation = "lmg2"
 		category = fighter_weapon
@@ -914,6 +916,8 @@ equipment_modules = {
 		}
 	}
 
+	# cas weapon
+	
 	bomb_locks = {
 		abbreviation = "bol"
 		category = cas_weapon
@@ -1136,7 +1140,48 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 3.5
 	}
+	tank_buster_1 = {
+		abbreviation = "tb1"
+		category = cas_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = cas
 
+		add_stats = {
+			air_ground_attack = 10 #original 8
+			build_cost_ic = 5
+			weight = 8
+			air_agility = -15
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			cas
+			attack_logistics
+		}
+		dismantle_cost_ic = 1.5
+	}
+
+	tank_buster_2 = {
+		abbreviation = "tb2"
+		category = cas_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = cas
+
+		add_stats = {
+			air_ground_attack = 17 #original 15
+			build_cost_ic = 8
+			weight = 12
+			air_agility = -20
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			cas
+			attack_logistics
+		}
+		dismantle_cost_ic = 3.5
+	}
+
+	# tactical weapons
+	
 	medium_bomb_bay = {
 		abbreviation = "mbb"
 		category = tac_weapon
@@ -1179,6 +1224,8 @@ equipment_modules = {
 		dismantle_cost_ic = 7
 	}
 
+	# strat weapons
+	
 	large_bomb_bay = {
 		abbreviation = "lbb"
 		category = strat_weapon
@@ -1216,46 +1263,7 @@ equipment_modules = {
 		dismantle_cost_ic = 12
 	}
 
-	tank_buster_1 = {
-		abbreviation = "tb1"
-		category = cas_weapon
-		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = cas
-
-		add_stats = {
-			air_ground_attack = 10 #original 8
-			build_cost_ic = 5
-			weight = 8
-			air_agility = -15
-		}
-		xp_cost = 2
-		allow_mission_type = {
-			cas
-			attack_logistics
-		}
-		dismantle_cost_ic = 1.5
-	}
-
-	tank_buster_2 = {
-		abbreviation = "tb2"
-		category = cas_weapon
-		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = cas
-
-		add_stats = {
-			air_ground_attack = 17 #original 15
-			build_cost_ic = 8
-			weight = 12
-			air_agility = -20
-		}
-		xp_cost = 2
-		allow_mission_type = {
-			cas
-			attack_logistics
-		}
-		dismantle_cost_ic = 3.5
-	}
-
+	# nav bomb weapons
 	torpedo_mounting = {
 		abbreviation = "tpm"
 		category = nav_bomber_weapon
@@ -1351,52 +1359,14 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 1.5
 	}
-	recon_camera = {
-		abbreviation = "rca"
-		category = recon_camera
-		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = scout_plane
-		forbid_equipment_type_exact_match_for_category = {
-			fighter_weapon = scout_plane
-			cas_weapon = scout_plane
-			nav_bomber_weapon = scout_plane
-			tac_weapon = scout_plane
-			mine_warfare_offense = scout_plane
-		}
-
-		add_stats = {
-			build_cost_ic = 1
-			weight = 1
-		}
-		xp_cost = 2
-		allow_mission_type = {
-			recon
-		}
-	}
-
-	airdropped_mines = {
-		abbreviation = "adm"
-		category = mine_warfare_offense
-		sfx = sfx_ui_sd_module_turret
-
-		add_stats = {
-			build_cost_ic = 2
-			weight = 2
-			mines_planting = 0.05
-		}
-		xp_cost = 2
-		allow_mission_type = {
-			naval_mines_planting
-		}
-	}
-
+	
 	guided_anti_ship_missile = {
 		abbreviation = "asm"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { naval_bomber maritime_patrol_plane }
 
-		add_stats = {	
+		add_stats = {
 			build_cost_ic = 15
 		}
 		xp_cost = 5
@@ -1420,7 +1390,49 @@ equipment_modules = {
 			}
 		}
 	}
+	
+	# recon
+	recon_camera = {
+		abbreviation = "rca"
+		category = recon_camera
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = scout_plane
+		forbid_equipment_type_exact_match_for_category = {
+			fighter_weapon = scout_plane
+			cas_weapon = scout_plane
+			nav_bomber_weapon = scout_plane
+			tac_weapon = scout_plane
+			mine_warfare_offense = scout_plane
+		}
 
+		add_stats = {
+			build_cost_ic = 1
+			weight = 1
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			recon
+		}
+	}
+
+	# mine warfare
+	airdropped_mines = {
+		abbreviation = "adm"
+		category = mine_warfare_offense
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 2
+			weight = 2
+			mines_planting = 0.05
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			naval_mines_planting
+		}
+	}
+	
+	# Kamikaze
 	fixed_explosive_charge = {
 		abbreviation = "fec"
 		category = kamikaze_bomber_weapon
@@ -1474,8 +1486,7 @@ equipment_modules = {
 		xp_cost = 1
 		dismantle_cost_ic = 0.5
 	}
-
-
+	
 	fuel_tanks_small = {
 		abbreviation = "fts"
 		category = plane_special_module_small
