@@ -131,14 +131,14 @@ equipments = {
 			fixed_auxiliary_weapon_slot_6 = {
 				required = yes
 				allowed_module_categories = {
-					# todo -- Ajouter les types de fuselage
+					adi_fuselage_kind
 				}
 			}
 			
 			fixed_auxiliary_weapon_slot_7 = {
 				required = yes
 				allowed_module_categories = {
-					# todo -- Ajouter les types d'empennage
+					plane_empennage
 				}
 			}
 			
@@ -193,6 +193,7 @@ equipments = {
 					plane_special_module_air_air_radar
 					plane_special_module_ASW
 					plane_special_module_defense_turret
+					schraege_cat
 				}
 			}
 			special_type_slot_4 = {
@@ -208,6 +209,7 @@ equipments = {
 					plane_special_module_defense_turret
 					plane_construction_type_module_small
 					plane_special_module_jet
+					schraege_cat
 				}
 			}
 			special_type_slot_5 = {

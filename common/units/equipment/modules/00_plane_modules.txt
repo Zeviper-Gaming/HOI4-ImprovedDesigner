@@ -2146,6 +2146,33 @@ equipment_modules = {
 		dismantle_cost_ic = 4
 	}
 
+	# Musik
+	adi_schraege_musik = {
+		abbreviation = "adi_schm"
+		category = schraege_cat
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 5
+			weight = 8
+			air_agility = -3
+		}
+
+		allow_mission_type = {
+			interception
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			add_stats = {
+				air_attack = 15
+				air_defence = 5
+			}
+		}
+		xp_cost = 3
+	}
+
  ######  ########  ########  ######  ####    ###    ##          ##     ##  #######  ########  ##     ## ##       ########  ######                 ######  ##     ##    ###    ##       ##       
 ##    ## ##     ## ##       ##    ##  ##    ## ##   ##          ###   ### ##     ## ##     ## ##     ## ##       ##       ##    ##               ##    ## ###   ###   ## ##   ##       ##       
 ##       ##     ## ##       ##        ##   ##   ##  ##          #### #### ##     ## ##     ## ##     ## ##       ##       ##                     ##       #### ####  ##   ##  ##       ##       
@@ -3461,7 +3488,352 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 1
 	}
-	
+
+	# fuselage kind
+	fuselage_biplane = {
+		abbreviation = "adi_bipl"
+		category = adi_fuselage_kind
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			reliability = 0.05
+			air_defence = 2
+			thrust = 3
+		}
+
+		multiply_stats = {
+			air_range = -0.4
+			build_cost_ic = 0.15
+			air_agility = 0.4
+			maximum_speed = -0.4
+		}
+		xp_cost = 2
+
+		allowed_module_categories = {
+			aircraft_empennage = {
+				plane_empennage
+			}
+		}
+	}
+	fuselage_high_wing = {
+		abbreviation = "adi_high"
+		category = adi_fuselage_kind
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1
+			surface_detection = 5
+			sub_detection = 2
+			reliability = -0.05
+		}
+		xp_cost = 2
+
+		allowed_module_categories = {
+			aircraft_empennage = {
+				plane_empennage
+			}
+		}
+	}
+	fuselage_monoplane = {
+		abbreviation = "adi_mono"
+		category = adi_fuselage_kind
+		sfx = sfx_ui_sd_module_turret
+
+		multiply_stats = {
+			air_attack = 0.05
+		}
+		xp_cost = 2
+
+		allowed_module_categories = {
+			aircraft_empennage = {
+				plane_empennage
+			}
+		}
+	}
+	fuselage_elliptoid_wing = {
+		abbreviation = "adi_ellip"
+		category = adi_fuselage_kind
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 5
+		}
+
+		multiply_stats = {
+			air_agility = 0.15
+		}
+		xp_cost = 3
+
+		allowed_module_categories = {
+			aircraft_empennage = {
+				plane_empennage
+			}
+		}
+	}
+	fuselage_low_tapered_wing = {
+		abbreviation = "adi_ltap"
+		category = adi_fuselage_kind
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.1
+			air_agility = 0.05
+		}
+		xp_cost = 3
+
+		allowed_module_categories = {
+			aircraft_empennage = {
+				plane_empennage
+			}
+		}
+	}
+	fuselage_high_tapered_wing = {
+		abbreviation = "adi_htap"
+		category = adi_fuselage_kind
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 2
+		}
+
+		multiply_stats = {
+			reliability = 0.05  # commun au monoplane
+			weight = -0.05
+		}
+		xp_cost = 3
+
+		allowed_module_categories = {
+			aircraft_empennage = {
+				plane_empennage
+			}
+		}
+	}
+	fuselage_inverted_gull_wing = {
+		abbreviation = "adi_igull"
+		category = adi_fuselage_kind
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 3
+		}
+
+		multiply_stats = {
+			air_attack = 0.05  # commun au monoplane
+			air_agility = 0.10
+		}
+		xp_cost = 3
+
+		allowed_module_categories = {
+			aircraft_empennage = {
+				plane_empennage
+			}
+		}
+	}
+	flying_boat_large = {
+		abbreviation = "flbl"
+		category = adi_fuselage_kind
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 4
+			surface_detection = 10
+			sub_detection = 4
+		}
+
+		multiply_stats = {
+			maximum_speed = -0.25
+		}
+
+		allow_mission_type = {
+			naval_patrol
+		}
+
+		xp_cost = 5
+		dismantle_cost_ic = 2.5
+
+		allowed_module_categories = {
+			aircraft_empennage = {
+				plane_empennage
+			}
+		}
+	}
+	fuselage_twin = {
+		abbreviation = "adi_twin"
+		category = adi_fuselage_kind
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			reliability = -0.05
+		}
+
+		multiply_stats = {
+			thrust = 0.1
+			air_range = 0.5
+			build_cost_ic = 1.1
+			air_agility = -0.25
+		}
+		xp_cost = 5
+
+		allowed_module_categories = {
+			aircraft_empennage = {
+				plane_empennage
+			}
+		}
+	}
+	fuselage_flying_wing = {
+		abbreviation = "adi_fly_w"
+		category = adi_fuselage_kind
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			reliability = -0.1
+			build_cost_ic = -1.5
+			thrust = 3
+		}
+
+		multiply_stats = {
+			air_range = 0.15
+			air_agility = -0.15
+			maximum_speed = 0.05
+		}
+
+		mission_type_stats = {
+			limit = {
+				cas
+				naval_bomber
+				port_strike
+				strategic_bomber
+				attack_logistics
+				recon
+				naval_patrol
+			}
+			multiply_stats = {
+				air_attack = 0.25
+			}
+		}
+
+		xp_cost = 5
+
+		allowed_module_categories = {
+			aircraft_middle = {
+				plane_rear_engine
+				recon_camera
+				plane_special_module_bomb_sights
+			}
+		}
+	}
+	fuselage_swept_wing = {
+		abbreviation = "adi_swep"
+		category = adi_fuselage_kind
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1
+		}
+
+		multiply_stats = {
+			air_agility = -0.25
+			maximum_speed = 0.2
+		}
+
+		allowed_module_categories = {
+			aircraft_empennage = {
+				plane_empennage
+			}
+		}
+
+		xp_cost = 5
+	}
+
+	# empennage kind
+	adi_t_tail = {
+		abbreviation = "adi_tt"
+		category = plane_empennage
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_agility = 20
+			reliability = -0.08
+			weight = 1
+		}
+
+		multiply_stats = {
+			air_range = 0.1
+		}
+
+		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
+		xp_cost = 5
+	}
+	adi_twin_boom = {
+		abbreviation = "adi_tb"
+		category = plane_empennage
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			maximum_speed = 75
+			build_cost_ic = 1.5
+			reliability = 0.05
+		}
+
+		mission_type_stats = {
+			limit = {
+				cas
+				naval_bomber
+				port_strike
+				strategic_bomber
+				attack_logistics
+				recon
+				naval_patrol
+			}
+			multiply_stats = {
+				air_attack = 0.2
+			}
+		}
+
+		allowed_module_categories = {
+			aircraft_middle = {
+				plane_rear_engine
+				recon_camera
+				plane_special_module_bomb_sights
+			}
+		}
+		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
+		xp_cost = 5
+	}
+	adi_twin_tail = {
+		abbreviation = "adi_twt"
+		category = plane_empennage
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 2.5
+			air_agility = 10
+			thrust = 2
+		}
+
+		mission_type_stats = {
+			limit = {
+				cas
+				naval_bomber
+				port_strike
+				strategic_bomber
+				attack_logistics
+				recon
+				naval_patrol
+			}
+			multiply_stats = {
+				air_attack = 0.3
+			}
+		}
+
+		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
+		xp_cost = 5
+	}
+
 ########  ######## ######## ######## ##    ##  ######  #### ##     ## ########    ######## ##     ## ########  ########  ######## ########  ######  
 ##     ## ##       ##       ##       ###   ## ##    ##  ##  ##     ## ##             ##    ##     ## ##     ## ##     ## ##          ##    ##    ## 
 ##     ## ##       ##       ##       ####  ## ##        ##  ##     ## ##             ##    ##     ## ##     ## ##     ## ##          ##    ##       
