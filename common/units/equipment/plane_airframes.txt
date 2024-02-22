@@ -160,7 +160,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					# todo -- ajouter moteurs
-					# todo -- ajouter les modules d'armures
 					fighter_weapon
 					plane_armor_module_small
 					plane_special_module_bomb_sights
