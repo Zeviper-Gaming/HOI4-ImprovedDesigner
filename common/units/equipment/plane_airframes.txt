@@ -60,7 +60,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					cas_weapon
-					# todo -- ajouter "hcas_weapon"
+					heavy_cas_weapon
 					nav_bomber_weapon
 					recon_camera
 					mine_warfare_offense
@@ -78,6 +78,7 @@ equipments = {
 					nav_bomber_weapon
 					mine_warfare_offense
 					plane_special_module_small
+					plane_armor_module_small
 					plane_construction_type_module_small
 					plane_special_module_small
 				}
@@ -92,6 +93,7 @@ equipments = {
 					nav_bomber_weapon
 					mine_warfare_offense
 					plane_special_module_small
+					plane_armor_module_small
 					plane_construction_type_module_small
 					plane_special_module_small
 				}
@@ -106,6 +108,7 @@ equipments = {
 					nav_bomber_weapon
 					mine_warfare_offense
 					plane_special_module_small
+					plane_armor_module_small
 					plane_construction_type_module_small
 					plane_special_module_small
 				}
@@ -114,16 +117,14 @@ equipments = {
 			fixed_auxiliary_weapon_slot_4 = {
 				required = no
 				allowed_module_categories = {
-					# todo -- Ajouter les flaps et air brakes dans une nouvelle catégorie
-					plane_special_module_small
+					plane_aero_module_small
 				}
 			}
 			
 			fixed_auxiliary_weapon_slot_5 = {
 				required = no
 				allowed_module_categories = {
-					# todo -- Ajouter les flaps et air brakes dans une nouvelle catégorie
-					plane_special_module_small
+					plane_aero_module_small
 				}
 			}
 			
@@ -161,6 +162,7 @@ equipments = {
 					# todo -- ajouter moteurs
 					# todo -- ajouter les modules d'armures
 					fighter_weapon
+					plane_armor_module_small
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -175,6 +177,7 @@ equipments = {
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
+					plane_armor_module_small
 					fighter_weapon
 					plane_special_module_bomb_sights
 					plane_special_module_gunsight
@@ -184,6 +187,7 @@ equipments = {
 			special_type_slot_3 = {
 				required = no
 				allowed_module_categories = {
+					plane_armor_module_small
 					plane_special_module_small
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -195,22 +199,24 @@ equipments = {
 			special_type_slot_4 = {
 				required = no
 				allowed_module_categories = {
+					plane_armor_module_small
 					cas_weapon
-					# todo -- ajouter "hcas_weapon"
+					heavy_cas_weapon
 					nav_bomber_weapon
 					recon_camera
 					mine_warfare_offense
 					kamikaze_bomber_weapon
-					plane_special_module_small
 					plane_special_module_defense_turret
 					plane_construction_type_module_small
+					plane_special_module_jet
 				}
 			}
 			special_type_slot_5 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_small
+					plane_armor_module_small
 					plane_construction_type_module_small
+					plane_special_module_jet
 				}
 			}
 			special_type_slot_6 = {
@@ -234,6 +240,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_small
 					plane_special_module_engine
+					plane_special_module_engine_small
 					plane_construction_type_module_small
 				}
 			}			
@@ -660,6 +667,7 @@ equipments = {
 			}			
 		}
 	}
+
 	small_plane_airframe_2 = { #Improved
 		abbreviation = "afs2"
 		derived_variant_name = fighter_equipment_2
