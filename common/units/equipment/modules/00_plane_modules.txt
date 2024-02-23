@@ -1566,7 +1566,7 @@ equipment_modules = {
 	}
 	heavy_bomb_locks = {
 		abbreviation = "bol"
-		category = heavy_cas_weapon
+		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
 
@@ -1648,7 +1648,7 @@ equipment_modules = {
 	}
 	rocket_rails = {
 		abbreviation = "rrl"
-		category = rocket_rails
+		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
 
@@ -1675,7 +1675,7 @@ equipment_modules = {
 	}
 	rocket_rails_2 = {
 		abbreviation = "rrl"
-		category = rocket_rails
+		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
 
@@ -1744,7 +1744,7 @@ equipment_modules = {
 	}
 	tank_buster_1 = {
 		abbreviation = "tb1"
-		category = heavy_cas_weapon
+		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
 
@@ -1763,7 +1763,7 @@ equipment_modules = {
 	}
 	tank_buster_2 = {
 		abbreviation = "tb2"
-		category = heavy_cas_weapon
+		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
 
