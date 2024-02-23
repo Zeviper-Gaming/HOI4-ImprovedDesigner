@@ -1270,6 +1270,8 @@ technologies = {
 			cannon_defense_turret
 			cannon_defense_turret_2x
 			aircraft_engine_mounted_cannon_2
+			
+			adi_schraege_musik
 		}
 		
 		research_cost = 1.5
@@ -1998,7 +2000,24 @@ technologies = {
 			cargo_bay
 			supply_drops
 			troop_compartment
-			NACA_cowling			
+			NACA_cowling
+			
+			fuselage_high_wing
+			fuselage_monoplane
+			fuselage_biplane
+			fuselage_twin
+			
+			adi_t_tail
+			adi_twin_boom
+			adi_twin_tail
+
+			fuselage_elliptoid_wing
+			fuselage_low_tapered_wing
+			fuselage_high_tapered_wing
+			fuselage_inverted_gull_wing
+			# todo deplacer dans d'autres techs
+			fuselage_swept_wing
+			fuselage_flying_wing
 		}
 		
 		research_cost = 1
