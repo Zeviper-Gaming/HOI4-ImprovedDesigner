@@ -3833,6 +3833,80 @@ equipment_modules = {
 		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
 		xp_cost = 5
 	}
+	
+	# Roles
+	adi_fighter_role = {
+		abbreviation = "r_figt"
+		category = aircraft_role_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = fighter
+
+		xp_cost = 0
+	}
+	adi_interceptor_role = {
+		abbreviation = "r_inter"
+		category = aircraft_role_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = interceptor
+
+		xp_cost = 0
+	}
+	adi_cas_role = {
+		abbreviation = "r_cas"
+		category = aircraft_role_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = cas
+
+		xp_cost = 0
+	}
+	adi_naval_bomber_role = {
+		abbreviation = "r_nav_b"
+		category = aircraft_role_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = naval_bomber
+
+		xp_cost = 0
+	}
+	adi_suicide_role = {
+		abbreviation = "r_suic"
+		category = aircraft_role_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = suicide
+
+		xp_cost = 0
+	}
+	adi_scout_role = {
+		abbreviation = "r_scout"
+		category = aircraft_role_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = scout_plane
+
+		xp_cost = 0
+	}
+	adi_tac_bomb_role = {
+		abbreviation = "r_tac_bomb"
+		category = aircraft_role_3
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = tactical_bomber
+
+		xp_cost = 0
+	}
+	adi_maritime_pat_role = {
+		abbreviation = "r_mar_pat"
+		category = aircraft_role_3
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = maritime_patrol_plane
+
+		xp_cost = 0
+	}
+	adi_strat_bomb_role = {
+		abbreviation = "r_strat_bomb"
+		category = aircraft_role_3
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = strategic_bomber
+
+		xp_cost = 0
+	}
 
 ########  ######## ######## ######## ##    ##  ######  #### ##     ## ########    ######## ##     ## ########  ########  ######## ########  ######  
 ##     ## ##       ##       ##       ###   ## ##    ##  ##  ##     ## ##             ##    ##     ## ##     ## ##     ## ##          ##    ##    ## 

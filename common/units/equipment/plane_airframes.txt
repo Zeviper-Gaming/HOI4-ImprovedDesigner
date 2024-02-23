@@ -155,19 +155,20 @@ equipments = {
 				allowed_module_categories = {
 					adi_fuselage_kind
 				}
-			}
+			} # Type de fuselage
 			fixed_auxiliary_weapon_slot_7 = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
 				}
-			}
+			} # Empennage
 			fixed_auxiliary_weapon_slot_8 = {
 				required = yes
 				allowed_module_categories = {
-					# todo -- Ajouter les roles des avions
+					aircraft_role_1
+					aircraft_role_2
 				}
-			}
+			} # Role
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
