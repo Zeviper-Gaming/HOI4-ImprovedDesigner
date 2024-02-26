@@ -3751,6 +3751,36 @@ equipment_modules = {
 			}
 		}
 	}
+	fuselage_low_trapezoid_short_wing = {
+		abbreviation = "adi_ltap_short"
+		category = adi_fuselage_kind
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 2
+		}
+
+		multiply_stats = {
+			air_agility = +0.05
+			maximum_speed = 0.10
+		}
+		xp_cost = 3
+		mission_type_stats = {
+			limit = {
+                interception
+				air_superiority
+			}
+			multiply_stats = {
+				air_attack = 0.05
+			}
+		}
+
+		allowed_module_categories = {
+			aircraft_empennage = {
+				plane_empennage
+			}
+		}
+	} # trapezoid tronqué
 	fuselage_trapezoid_wing = {
 		abbreviation = "adi_htap"
 		category = adi_fuselage_low
@@ -3811,7 +3841,7 @@ equipment_modules = {
 		}
 	}
 	fuselage_low_dihedral = {
-		abbreviation = "adi_high_dihedral"
+		abbreviation = "adi_low_dihedral"
 		category = adi_fuselage_high
 		sfx = sfx_ui_sd_module_turret
 

@@ -2002,6 +2002,7 @@ technologies = {
 			troop_compartment
 			NACA_cowling
 			
+			fuselage_low_trapezoid_short_wing
 			fuselage_high_wing
 			fuselage_low_wing
 			fuselage_biplane
