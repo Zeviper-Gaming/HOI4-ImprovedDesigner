@@ -3691,7 +3691,7 @@ equipment_modules = {
 	} # aile droite basse
 	fuselage_elliptoid_wing = {
 		abbreviation = "adi_ellip"
-		category = adi_fuselage_kind
+		category = adi_fuselage_low
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -3721,7 +3721,7 @@ equipment_modules = {
 	}
 	fuselage_low_trapezoid_wing = {
 		abbreviation = "adi_ltap"
-		category = adi_fuselage_kind
+		category = adi_fuselage_low
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -3753,7 +3753,7 @@ equipment_modules = {
 	}
 	fuselage_low_trapezoid_short_wing = {
 		abbreviation = "adi_ltap_short"
-		category = adi_fuselage_kind
+		category = adi_fuselage_low
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -3813,7 +3813,7 @@ equipment_modules = {
 	}
 	fuselage_inverted_gull_wing = {
 		abbreviation = "adi_igull"
-		category = adi_fuselage_kind
+		category = adi_fuselage_low
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -3842,7 +3842,7 @@ equipment_modules = {
 	}
 	fuselage_low_dihedral = {
 		abbreviation = "adi_low_dihedral"
-		category = adi_fuselage_high
+		category = adi_fuselage_low
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -3879,7 +3879,7 @@ equipment_modules = {
 	# fuselage other wings
 	fuselage_biplane = {
 		abbreviation = "adi_bipl"
-		category = adi_fuselage_multiplan
+		category = adi_fuselage_other
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {

@@ -19,6 +19,14 @@
  EQ_MOD_SLOT_special_type_slot_7_TITLE:0 "Auxiliary 2"
  EQ_MOD_SLOT_special_type_slot_8_TITLE:0 "Auxiliary 3"
 
+
+ adi_fuselage_high:0 "Configuration ailes hautes"
+ adi_fuselage_high_desc:0 "Avantage pour les reco et attaques navales, meilleurs fiabilité au détriment de la vitesse et des performances en combat aérien"
+ adi_fuselage_low:0 "Configuration ailes basses"
+ adi_fuselage_low_desc:0 "Avantage les performances en combat aérien"
+ adi_fuselage_other:0 "Configuration autres"
+ adi_fuselage_other_desc:0 ""
+
  fuselage_biplane:0 "Configuration Biplan"
  fuselage_biplane_desc:0 "Une configuration du fuselage avec deux ailes au lieu d'une seul. Avoir une aile supplémenaitre permet d'augmenter la surface alaire des ailes. Cela résulte en une augmentation de la portance et de l'agilité de l'avion a basse vitesse. Ce doublement permet également a l'avion de rester en vol même avec une aile endommagée, mais réduit également l'aérodynamisme de l'avion et sa vitesse."
  fuselage_high_wing:0 "Configuration monoplan aile haute"
