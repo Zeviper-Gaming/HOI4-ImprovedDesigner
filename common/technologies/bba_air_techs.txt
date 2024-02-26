@@ -2006,6 +2006,10 @@ technologies = {
 			fuselage_low_wing
 			fuselage_biplane
 			fuselage_twin
+			fuselage_high_anhedral
+			fuselage_high_dihedral
+			fuselage_low_dihedral
+			fuselage_high_gull
 			
 			adi_t_tail
 			adi_twin_boom

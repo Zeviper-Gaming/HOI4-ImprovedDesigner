@@ -20,7 +20,7 @@
  EQ_MOD_SLOT_special_type_slot_8_TITLE:0 "Auxiliary 3"
 
  fuselage_biplane:0 "Configuration Biplan"
- fuselage_biplane_desc:0 "Une configuration du fusealge avec deux ailes au lieu d'une seul. Avoir une aile supplémenaitre permet d'augmenter la surface alaire des ailes. Cela résulte en une augmentation de la portance et de l'agilité de l'avion a basse vitesse. Ce doublement permet également a l'avion de rester en vol même avec une aile endommagée, mais réduit également l'aérodynamisme de l'avion et sa vitesse."
+ fuselage_biplane_desc:0 "Une configuration du fuselage avec deux ailes au lieu d'une seul. Avoir une aile supplémenaitre permet d'augmenter la surface alaire des ailes. Cela résulte en une augmentation de la portance et de l'agilité de l'avion a basse vitesse. Ce doublement permet également a l'avion de rester en vol même avec une aile endommagée, mais réduit également l'aérodynamisme de l'avion et sa vitesse."
  fuselage_high_wing:0 "Configuration monoplan aile haute"
  fuselage_high_wing_desc:0 "Une configuration de fuselage avec les ailes placées au dessus du pilote. Se placement permet de dégager la vue, offrant au pilote une excellent vision du sol."
  fuselage_low_wing:0 "Configuration monoplan aile basse"
@@ -39,6 +39,14 @@
  fuselage_trapezoid_wing_desc:0 "Aile trapézoidale a grand aspect"
  fuselage_inverted_gull_wing:0 "Aile en mouette inversé"
  fuselage_inverted_gull_wing_desc:0 "Aile de type mouette inversé (Stuka / F4U)"
+ fuselage_high_anhedral:0 ""
+ fuselage_high_anhedral_desc:0 ""
+ fuselage_high_dihedral:0 ""
+ fuselage_high_dihedral_desc:0 ""
+ fuselage_low_dihedral:0 ""
+ fuselage_low_dihedral_desc:0 ""
+ fuselage_high_gull:0 ""
+ fuselage_high_gull_desc:0 ""
 
  adi_t_tail:0 "Empennage en T"
  adi_t_tail_desc:0 "Une configuration dans laquelle les gouvernes de profondeur sont placées au sommet de la dérive, donnant une forme de T a la queue. Elle permet de mettre les gouvernes en dehors du sillage du moteur, augmentant l'éfficacité des gouvernes pour une meilleur agilité. Elle offre également une meilleur portance, mais est plus lourdes et dangeureuse si l'avion entre en décrochage."
