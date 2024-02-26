@@ -3492,20 +3492,17 @@ equipment_modules = {
 	# fuselage kind
 	fuselage_biplane = {
 		abbreviation = "adi_bipl"
-		category = adi_fuselage_kind
+		category = adi_fuselage_multiplan
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			reliability = 0.05
-			air_defence = 2
-			thrust = 3
+			build_cost_ic = 1
 		}
 
 		multiply_stats = {
-			air_range = -0.4
-			build_cost_ic = 0.15
-			air_agility = 0.4
-			maximum_speed = -0.4
+			air_range = -0.2
+			air_agility = 0.2
+			maximum_speed = -0.1
 		}
 		xp_cost = 2
 
@@ -3517,16 +3514,31 @@ equipment_modules = {
 	}
 	fuselage_high_wing = {
 		abbreviation = "adi_high"
-		category = adi_fuselage_kind
+		category = adi_fuselage_high
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			build_cost_ic = 1
+			build_cost_ic = 2
 			surface_detection = 5
 			sub_detection = 2
-			reliability = -0.05
+			reliability = +0.05
+		}
+		multiply_stats = {
+			surface_detection = 0.05
+			air_range = 0
+			air_agility = 0
+			maximum_speed = 0
 		}
 		xp_cost = 2
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+			}
+			multiply_stats = {
+				naval_strike_targetting = 0 #todo change value
+			}
+		}
 
 		allowed_module_categories = {
 			aircraft_empennage = {
