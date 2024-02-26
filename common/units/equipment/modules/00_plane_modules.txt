@@ -3545,7 +3545,7 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
-	}
+	} # aile droite haute
 	fuselage_low_wing = {
 		abbreviation = "adi_mono"
 		category = adi_fuselage_low
@@ -3553,15 +3553,25 @@ equipment_modules = {
 
 		multiply_stats = {
 			air_attack = 0.05
+			air_agility = 0.05
 		}
 		xp_cost = 2
+		mission_type_stats = {
+			limit = {
+                interception
+				air_superiority
+			}
+			multiply_stats = {
+				air_attack = 0.5
+			}
+		}
 
 		allowed_module_categories = {
 			aircraft_empennage = {
 				plane_empennage
 			}
 		}
-	}
+	} # aile droite basse
 	fuselage_elliptoid_wing = {
 		abbreviation = "adi_ellip"
 		category = adi_fuselage_kind
