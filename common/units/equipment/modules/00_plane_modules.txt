@@ -3,6 +3,214 @@ equipment_modules = {
 		has_dlc = "By Blood Alone"
 	}
 	### Engines
+	engine_1x = {
+		abbreviation = "e1"
+		category = plane_engine_number
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 11
+			build_cost_ic = 12
+			fuel_consumption = 0.16
+		}
+	}
+	engine_2x = {
+		abbreviation = "e2"
+		category = plane_engine_number
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 19
+			build_cost_ic = 24
+			fuel_consumption = 0.32
+		}
+	}
+	engine_3x = {
+		abbreviation = "e3"
+		category = plane_engine_number
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 23
+			build_cost_ic = 36
+			fuel_consumption = 0.48
+		}
+	}
+	engine_4x = {
+		abbreviation = "e4"
+		category = plane_engine_number
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 32
+			build_cost_ic = 48
+			fuel_consumption = 0.64
+		}
+	}
+	engine_6x = {
+		abbreviation = "e6"
+		category = plane_engine_number
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 41
+			build_cost_ic = 68
+			fuel_consumption = 0.80
+		}
+	}
+
+	rotating_engine_1 = {
+		abbreviation = "rot_1"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		multiply_stats = {
+			thrust = 0
+			build_cost_ic = 0
+			maximum_speed = 0
+		}
+		forbid_module_categories = {
+		plane_special_module_jet
+		}
+	}
+	rotating_engine_2 = {
+		abbreviation = "rot_2"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		multiply_stats = {
+			thrust = +0.4
+			build_cost_ic = +0.1
+			maximum_speed = +0.2
+		}
+		can_convert_from = {
+			module = rotating_engine_1
+			convert_cost_ic = 1.5
+		}
+		forbid_module_categories = {
+		plane_special_module_jet
+		}
+	}
+	rotating_engine_3 = {
+		abbreviation = "rot_3"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		multiply_stats = {
+			thrust = +0.8
+			build_cost_ic = +0.2
+			maximum_speed = +0.3
+		}
+		can_convert_from = {
+			module = rotating_engine_2
+			convert_cost_ic = 2.5
+		}
+		forbid_module_categories = {
+		plane_special_module_jet
+		}
+	}
+	rotating_engine_4 = {
+		abbreviation = "rot_3"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		multiply_stats = {
+			thrust = +1.2
+			build_cost_ic = +0.3
+			maximum_speed = +0.4
+		}
+		can_convert_from = {
+			module = rotating_engine_3
+			convert_cost_ic = 3
+		}
+		forbid_module_categories = {
+		plane_special_module_jet
+		}
+	}
+
+	radial_engine_1 = {
+		abbreviation = "rad_1"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = +0.2
+			air_defence = +3
+		}
+		multiply_stats = {
+			thrust = 0
+			build_cost_ic = +0.2
+			fuel_consumption = -0.2
+		}
+		forbid_module_categories = {
+		plane_special_module_jet
+		}
+	}
+	radial_engine_2 = {
+		abbreviation = "rad_2"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = +0.2
+			air_defence = +3
+		}
+		multiply_stats = {
+			thrust = 0
+			build_cost_ic = +0.2
+			fuel_consumption = -0.2
+		}
+		can_convert_from = {
+			module = radial_engine_1
+			convert_cost_ic = 1.5
+		}
+		forbid_module_categories = {
+		plane_special_module_jet
+		}
+	} #todo modifier les valeurs
+	radial_engine_3 = {
+		abbreviation = "rad_3"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = +0.2
+			air_defence = +3
+		}
+		multiply_stats = {
+			thrust = 0
+			build_cost_ic = +0.2
+			fuel_consumption = -0.2
+		}
+		can_convert_from = {
+			module = radial_engine_2
+			convert_cost_ic = 2.5
+		}
+		forbid_module_categories = {
+		plane_special_module_jet
+		}
+	} #todo modifier les valeurs
+	radial_engine_4 = {
+		abbreviation = "rad_4"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = +0.2
+			air_defence = +3
+		}
+		multiply_stats = {
+			thrust = 0
+			build_cost_ic = +0.2
+			fuel_consumption = -0.2
+		}
+		can_convert_from = {
+			module = radial_engine_3
+			convert_cost_ic = 3
+		}
+		forbid_module_categories = {
+		plane_special_module_jet
+		}
+	} #todo modifier les valeurs
 
 	engine_1_1x = {
 		abbreviation = "e11"
