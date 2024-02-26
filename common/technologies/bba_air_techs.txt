@@ -2012,8 +2012,8 @@ technologies = {
 			adi_twin_tail
 
 			fuselage_elliptoid_wing
-			fuselage_low_tapered_wing
-			fuselage_high_tapered_wing
+			fuselage_low_trapezoid_wing
+			fuselage_trapezoid_wing
 			fuselage_inverted_gull_wing
 			# todo deplacer dans d'autres techs
 			fuselage_swept_wing
