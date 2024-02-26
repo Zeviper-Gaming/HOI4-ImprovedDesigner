@@ -2003,7 +2003,7 @@ technologies = {
 			NACA_cowling
 			
 			fuselage_high_wing
-			fuselage_monoplane
+			fuselage_low_wing
 			fuselage_biplane
 			fuselage_twin
 			
