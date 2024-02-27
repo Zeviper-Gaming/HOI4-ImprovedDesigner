@@ -61,7 +61,7 @@ equipment_modules = {
 
 	rotating_engine_1 = {
 		abbreviation = "rot_1"
-		category = plane_engine_type
+		category = plane_engine_rotating
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
@@ -75,7 +75,7 @@ equipment_modules = {
 	}
 	rotating_engine_2 = {
 		abbreviation = "rot_2"
-		category = plane_engine_type
+		category = plane_engine_rotating
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
@@ -93,7 +93,7 @@ equipment_modules = {
 	}
 	rotating_engine_3 = {
 		abbreviation = "rot_3"
-		category = plane_engine_type
+		category = plane_engine_rotating
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
@@ -102,7 +102,7 @@ equipment_modules = {
 			fuel_consumption = 0.16
 		}
 		multiply_stats = {
-			maximum_speed = +0.3
+			maximum_speed = +0.15
 		}
 		can_convert_from = {
 			module = rotating_engine_2
@@ -114,7 +114,7 @@ equipment_modules = {
 	}
 	rotating_engine_4 = {
 		abbreviation = "rot_3"
-		category = plane_engine_type
+		category = plane_engine_rotating
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
@@ -123,7 +123,7 @@ equipment_modules = {
 			fuel_consumption = 0.16
 		}
 		multiply_stats = {
-			maximum_speed = 0.4
+			maximum_speed = 0.25
 		}
 		can_convert_from = {
 			module = rotating_engine_3
@@ -136,16 +136,16 @@ equipment_modules = {
 
 	radial_engine_1 = {
 		abbreviation = "rad_1"
-		category = plane_engine_type
+		category = plane_engine_radial
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
 			reliability = +0.2
 			air_defence = +3
+			thrust = 16
+			build_cost_ic = 13
+			fuel_consumption = 0.16
 		}
 		multiply_stats = {
-			thrust = 0
-			build_cost_ic = +0.2
-			fuel_consumption = -0.2
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -153,17 +153,18 @@ equipment_modules = {
 	}
 	radial_engine_2 = {
 		abbreviation = "rad_2"
-		category = plane_engine_type
+		category = plane_engine_radial
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
 			reliability = +0.2
 			air_defence = +3
+			thrust = 18
+			build_cost_ic = 14
+			fuel_consumption = 0.16
 		}
 		multiply_stats = {
-			thrust = 0
-			build_cost_ic = +0.2
-			fuel_consumption = -0.2
+			air_agility = -0.1
 		}
 		can_convert_from = {
 			module = radial_engine_1
@@ -172,20 +173,22 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
-	} #todo modifier les valeurs
+	}
 	radial_engine_3 = {
 		abbreviation = "rad_3"
-		category = plane_engine_type
+		category = plane_engine_radial
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			reliability = +0.2
+			thrust = 27
+			build_cost_ic = 15
+			fuel_consumption = 0.16
 			air_defence = +3
+			reliability = +0.2
 		}
 		multiply_stats = {
-			thrust = 0
-			build_cost_ic = +0.2
-			fuel_consumption = -0.2
+			maximum_speed = 0.25
+			air_agility = -0.1
 		}
 		can_convert_from = {
 			module = radial_engine_2
@@ -194,20 +197,22 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
-	} #todo modifier les valeurs
+	}
 	radial_engine_4 = {
 		abbreviation = "rad_4"
-		category = plane_engine_type
+		category = plane_engine_radial
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			reliability = +0.2
+			thrust = 34
+			build_cost_ic = 16
+			fuel_consumption = 0.16
 			air_defence = +3
+			reliability = +0.2
 		}
 		multiply_stats = {
-			thrust = 0
-			build_cost_ic = +0.2
-			fuel_consumption = -0.2
+			maximum_speed = 0.4
+			air_agility = -0.1
 		}
 		can_convert_from = {
 			module = radial_engine_3
@@ -216,1000 +221,153 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
-	} #todo modifier les valeurs
+	}
 
-	engine_1_1x = {
-		abbreviation = "e11"
-		category = plane_engine_type
+	inline_engine_1 = {
+		abbreviation = "ine_1"
+		category = plane_engine_inline
 		sfx = sfx_ui_sd_module_engine
-
 		add_stats = {
-			thrust = 11
-			build_cost_ic = 12
+			thrust = 18
+			build_cost_ic = 15
 			fuel_consumption = 0.16
+			reliability = -0.1
+			air_defence = +5
 		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		}		
-	}
-	engine_1_2x = {
-		abbreviation = "e12"
-		category = twin_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		add_stats = {
-			thrust = 19
-			build_cost_ic = 24
-			fuel_consumption = 0.32
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		plane_special_module_radial_engine
-		}		
-	}
-	engine_1_3x = {
-		abbreviation = "e13"
-		category = medium_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-
-		add_stats = {
-			thrust = 23
-			build_cost_ic = 36
-			fuel_consumption = 0.48
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		plane_special_module_radial_engine
-		}		
-	}
-	engine_1_4x = {
-		abbreviation = "e14"
-		category = quad_large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-
-		add_stats = {
-			thrust = 32
-			build_cost_ic = 48
-			fuel_consumption = 0.64
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		plane_special_module_radial_engine
-		}		
-	}
-	engine_1_6x = {
-		abbreviation = "e16"
-		category = large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-
-		add_stats = {
-			thrust = 41
-			build_cost_ic = 68
-			fuel_consumption = 0.8
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		plane_special_module_radial_engine
-		}		
-	}
-	engine_2_1x = {
-		abbreviation = "e21"
-		category = plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_1_1x
-
-		add_stats = {
-			thrust = 16
-			build_cost_ic = 14
-			fuel_consumption = 0.16
-		}
-		
 		multiply_stats = {
-			maximum_speed = 0.20
-		}		
-
-		can_convert_from = {
-			module = engine_1_1x
-			convert_cost_ic = 1.5
+			maximum_speed = 0.15
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
-		plane_special_module_radial_engine
-		}		
-	}
-	engine_2_2x = {
-		abbreviation = "e22"
-		category = twin_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_1_2x
-
-		add_stats = {
-			thrust = 25
-			build_cost_ic = 28
-			fuel_consumption = 0.32
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.20
-		}
-
-		can_convert_from = {
-			module = engine_1_2x
-			convert_cost_ic = 3
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		plane_special_module_radial_engine
 		}
 	}
-	engine_2_3x = {
-		abbreviation = "e23"
-		category = medium_plane_engine_type
+	inline_engine_2 = {
+		abbreviation = "ine_2"
+		category = plane_engine_inline
 		sfx = sfx_ui_sd_module_engine
-		parent = engine_1_3x
-
 		add_stats = {
-			thrust = 32
-			build_cost_ic = 42
-			fuel_consumption = 0.48
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.20
-		}
-
-		can_convert_from = {
-			module = engine_1_3x
-			convert_cost_ic = 4.5
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		plane_special_module_radial_engine
-		}		
-	}
-	engine_2_4x = {
-		abbreviation = "e24"
-		category = quad_large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_1_4x
-
-		add_stats = {
-			thrust = 40
-			build_cost_ic = 56
-			fuel_consumption = 0.64
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.20
-		}
-
-		can_convert_from = {
-			module = engine_1_4x
-			convert_cost_ic = 6
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		plane_special_module_radial_engine
-		}		
-	}
-	engine_2_6x = {
-		abbreviation = "e26"
-		category = large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_1_6x
-
-		add_stats = {
-			thrust = 56
-			build_cost_ic = 80
-			fuel_consumption = 0.8
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.20
-		}
-
-		can_convert_from = {
-			module = engine_1_6x
-			convert_cost_ic = 9
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		plane_special_module_radial_engine
-		}		
-	}
-	engine_3_1x = {
-		abbreviation = "e31"
-		category = plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_2_1x
-
-		add_stats = {
-			thrust = 25
+			thrust = 22
 			build_cost_ic = 16
 			fuel_consumption = 0.16
+			reliability = -0.1
+			air_defence = +5
 		}
-
-		multiply_stats = {
-			maximum_speed = 0.30
-		}
-
-		can_convert_from = {
-			module = engine_2_1x
-			convert_cost_ic = 2.5
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		plane_special_module_radial_engine
-		}		
-	}
-	engine_3_2x = {
-		abbreviation = "e32"
-		category = twin_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_2_2x
-
-		add_stats = {
-			thrust = 38
-			build_cost_ic = 32
-			fuel_consumption = 0.32
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.30
-		}
-
-		can_convert_from = {
-			module = engine_2_2x
-			convert_cost_ic = 5
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		plane_special_module_radial_engine
-		}
-	}
-	engine_3_3x = {
-		abbreviation = "e33"
-		category = medium_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_2_3x
-
-		add_stats = {
-			thrust = 51
-			build_cost_ic = 48
-			fuel_consumption = 0.48
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.30
-		}
-
-		can_convert_from = {
-			module = engine_2_3x
-			convert_cost_ic = 7.5
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		plane_special_module_radial_engine
-		}		
-	}
-	engine_3_4x = {
-		abbreviation = "e34"
-		category = quad_large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_2_4x
-
-		add_stats = {
-			thrust = 64
-			build_cost_ic = 64
-			fuel_consumption = 0.64
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.30
-		}
-
-		can_convert_from = {
-			module = engine_2_4x
-			convert_cost_ic = 10
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		plane_special_module_radial_engine
-		}		
-	}
-	engine_3_6x = {
-		abbreviation = "e36"
-		category = large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_2_6x
-
-		add_stats = {
-			thrust = 90
-			build_cost_ic = 92
-			fuel_consumption = 0.8
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.30
-		}
-
-		can_convert_from = {
-			module = engine_2_4x
-			convert_cost_ic = 15
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		plane_special_module_radial_engine
-		}		
-	}
-	engine_4_1x = {
-		abbreviation = "e41"
-		category = plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_3_1x
-
-		add_stats = {
-			thrust = 30
-			build_cost_ic = 18
-			fuel_consumption = 0.16
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.45
-		}
-
-		can_convert_from = {
-			module = engine_3_1x
-			convert_cost_ic = 3
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		plane_special_module_radial_engine
-		}		
-	}
-	engine_4_2x = {
-		abbreviation = "e42"
-		category = twin_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_3_2x
-
-		add_stats = {
-			thrust = 45
-			build_cost_ic = 36
-			fuel_consumption = 0.32
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.45
-		}
-
-		can_convert_from = {
-			module = engine_3_2x
-			convert_cost_ic = 6
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		plane_special_module_radial_engine
-		}		
-	}
-	engine_4_3x = {
-		abbreviation = "e43"
-		category = medium_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_3_3x
-
-		add_stats = {
-			thrust = 60
-			build_cost_ic = 54
-			fuel_consumption = 0.48
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.45
-		}
-
-		can_convert_from = {
-			module = engine_3_3x
-			convert_cost_ic = 9
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		plane_special_module_radial_engine
-		}		
-	}
-	engine_4_4x = {
-		abbreviation = "e44"
-		category = quad_large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_3_4x
-
-		add_stats = {
-			thrust = 75
-			build_cost_ic = 72
-			fuel_consumption = 0.64
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.45
-		}
-
-		can_convert_from = {
-			module = engine_3_4x
-			convert_cost_ic = 12
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		plane_special_module_radial_engine
-		}		
-	}
-	engine_4_6x = {
-		abbreviation = "e46"
-		category = large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_3_6x
-
-		add_stats = {
-			thrust = 105
-			build_cost_ic = 108
-			fuel_consumption = 0.8
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.45
-		}
-
-		can_convert_from = {
-			module = engine_3_6x
-			convert_cost_ic = 18
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		plane_special_module_radial_engine
-		}		
-	}
-	radial_engine_1_1x = {
-		abbreviation = "re11"
-		category = plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-
-		add_stats = {
-			thrust = 17 #+15%
-			build_cost_ic = 9 #-20%
-			fuel_consumption = 0.13 #-20%
-			reliability = 0.2
-			weight = 1
-			air_defence = 3
-		}
-		multiply_stats = {
-			air_agility = -0.1 ###Radials
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		}
-		
-	}
-	radial_engine_1_2x = {
-		abbreviation = "re12"
-		category = twin_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		add_stats = {
-			thrust = 25
-			build_cost_ic = 18
-			fuel_consumption = 0.26
-			reliability = 0.2
-			weight = 1.5
-			air_defence = 3
-		}
-		multiply_stats = {
-			air_agility = -0.1 ###Radials
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		}
-	}
-	radial_engine_1_3x = {
-		abbreviation = "re13"
-		category = medium_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-
-		add_stats = {
-			thrust = 34.5
-			build_cost_ic = 27
-			fuel_consumption = 0.38
-			reliability = 0.2
-			weight = 2
-			air_defence = 3
-		}
-		multiply_stats = {
-			air_agility = -0.1 ###Radials
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		}
-	}
-	radial_engine_1_4x = {
-		abbreviation = "re14"
-		category = quad_large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-
-		add_stats = {
-			thrust = 42
-			build_cost_ic = 36
-			fuel_consumption = 0.51
-			reliability = 0.2
-			weight = 2.5
-			air_defence = 3
-		}
-		multiply_stats = {
-			air_agility = -0.1 ###Radials
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		}
-	}
-	radial_engine_1_6x = {
-		abbreviation = "re16"
-		category = large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-
-		add_stats = {
-			thrust = 60
-			build_cost_ic = 54
-			fuel_consumption = 0.64
-			reliability = 0.2
-			weight = 3
-			air_defence = 3
-		}
-		multiply_stats = {
-			air_agility = -0.1 ###Radials
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		}
-	}
-	radial_engine_2_1x = {
-		abbreviation = "re21"
-		category = plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = radial_engine_1_1x
-
-		add_stats = {
-			thrust = 18.5 #+15%
-			build_cost_ic = 11 #-20%
-			fuel_consumption = 0.13 #-20%
-			reliability = 0.2
-			weight = 1
-			air_defence = 3
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.17
-			air_agility = -0.1 ###Radials
-		}
-
-		can_convert_from = {
-			module = radial_engine_1_1x
-			convert_cost_ic = 1.5
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		}
-	}
-	radial_engine_2_2x = {
-		abbreviation = "re22"
-		category = twin_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = radial_engine_1_2x
-
-		add_stats = {
-			thrust = 27
-			build_cost_ic = 22
-			fuel_consumption = 0.26
-			reliability = 0.2
-			weight = 1.5
-			air_defence = 3
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.17
-			air_agility = -0.1 ###Radials
-		}
-
-		can_convert_from = {
-			module = radial_engine_1_2x
-			convert_cost_ic = 3
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		}
-	}
-	radial_engine_2_3x = {
-		abbreviation = "re23"
-		category = medium_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = radial_engine_1_3x
-
-		add_stats = {
-			thrust = 37
-			build_cost_ic = 33
-			fuel_consumption = 0.38
-			reliability = 0.2
-			weight = 2
-			air_defence = 3
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.17
-			air_agility = -0.1 ###Radials
-		}
-
-		can_convert_from = {
-			module = radial_engine_1_3x
-			convert_cost_ic = 4.5
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		}
-	}
-	radial_engine_2_4x = {
-		abbreviation = "re24"
-		category = quad_large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = radial_engine_1_4x
-
-		add_stats = {
-			thrust = 46
-			build_cost_ic = 44
-			fuel_consumption = 0.51
-			reliability = 0.2
-			weight = 2.5
-			air_defence = 3
-		}
-		
-		multiply_stats = {
-			maximum_speed = 0.17
-			air_agility = -0.1 ###Radials
-		}
-		
-		can_convert_from = {
-			module = radial_engine_1_4x
-			convert_cost_ic = 6
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		}
-	}
-	radial_engine_2_6x = {
-		abbreviation = "re26"
-		category = large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = radial_engine_1_6x
-
-		add_stats = {
-			thrust = 64
-			build_cost_ic = 66
-			fuel_consumption = 0.64
-			reliability = 0.2
-			weight = 3.5
-			air_defence = 3
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.17
-			air_agility = -0.1 ###Radials
-		}
-
-		can_convert_from = {
-			module = radial_engine_1_6x
-			convert_cost_ic = 9
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		}
-	}
-	radial_engine_3_1x = {
-		abbreviation = "re31"
-		category = plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = radial_engine_2_1x
-
-		add_stats = {
-			thrust = 28 #+15%
-			build_cost_ic = 13
-			fuel_consumption = 0.13
-			reliability = 0.2
-			weight = 1
-			air_defence = 3
-		}
-
 		multiply_stats = {
 			maximum_speed = 0.25
-			air_agility = -0.1 ###Radials
-		}
-
-		can_convert_from = {
-			module = radial_engine_2_1x
-			convert_cost_ic = 2.5
 		}
 		forbid_module_categories = {
-		engine_mounted_cannons
 		plane_special_module_jet
 		}
 	}
-	radial_engine_3_2x = {
-		abbreviation = "re32"
-		category = twin_plane_engine_type
+	inline_engine_3 = {
+		abbreviation = "ine_3"
+		category = plane_engine_inline
 		sfx = sfx_ui_sd_module_engine
-		parent = radial_engine_2_2x
-
+		add_stats = {
+			thrust = 35
+			build_cost_ic = 18
+			fuel_consumption = 0.18
+			reliability = -0.1
+			air_defence = +5
+		}
+		multiply_stats = {
+			maximum_speed = 0.35
+		}
+		forbid_module_categories = {
+		plane_special_module_jet
+		}
+	}
+	inline_engine_4 = {
+		abbreviation = "ine_4"
+		category = plane_engine_inline
+		sfx = sfx_ui_sd_module_engine
 		add_stats = {
 			thrust = 43
-			build_cost_ic = 26
-			fuel_consumption = 0.26
-			reliability = 0.2
-			weight = 1.5
-			air_defence = 3
+			build_cost_ic = 20
+			fuel_consumption = 0.20
+			reliability = -0.1
+			air_defence = +5
 		}
-
+		multiply_stats = {
+			maximum_speed = 0.45
+		}
+		forbid_module_categories = {
+		plane_special_module_jet
+		}
+	}
+	V_engine_1 = {
+		abbreviation = "V_1"
+		category = plane_engine_V
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 22
+			build_cost_ic = 17
+			fuel_consumption = 0.18
+			reliability = -0.15
+			air_defence = +5
+		}
+		multiply_stats = {
+			maximum_speed = 0.15
+		}
+		forbid_module_categories = {
+		plane_special_module_jet
+		}
+	}
+	V_engine_2 = {
+		abbreviation = "V_2"
+		category = plane_engine_V
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 28
+			build_cost_ic = 19
+			fuel_consumption = 0.18
+			reliability = -0.15
+			air_defence = +5
+		}
 		multiply_stats = {
 			maximum_speed = 0.25
-			air_agility = -0.1 ###Radials
-		}
-
-		can_convert_from = {
-			module = radial_engine_2_2x
-			convert_cost_ic = 5
 		}
 		forbid_module_categories = {
-		engine_mounted_cannons
 		plane_special_module_jet
 		}
 	}
-	radial_engine_3_3x = {
-		abbreviation = "re33"
-		category = medium_plane_engine_type
+	V_engine_3 = {
+		abbreviation = "V_3"
+		category = plane_engine_V
 		sfx = sfx_ui_sd_module_engine
-		parent = radial_engine_2_3x
-
 		add_stats = {
-			thrust = 55
-			build_cost_ic = 39
-			fuel_consumption = 0.38
-			reliability = 0.2
-			weight = 2
-			air_defence = 3
+			thrust = 40
+			build_cost_ic = 22
+			fuel_consumption = 0.20
+			reliability = -0.15
+			air_defence = +5
 		}
-
 		multiply_stats = {
-			maximum_speed = 0.25
-			air_agility = -0.1 ###Radials
-		}
-
-		can_convert_from = {
-			module = radial_engine_2_3x
-			convert_cost_ic = 7.5
+			maximum_speed = 0.35
 		}
 		forbid_module_categories = {
-		engine_mounted_cannons
 		plane_special_module_jet
 		}
 	}
-	radial_engine_3_4x = {
-		abbreviation = "re34"
-		category = quad_large_plane_engine_type
+	V_engine_4 = {
+		abbreviation = "V_4"
+		category = plane_engine_V
 		sfx = sfx_ui_sd_module_engine
-		parent = radial_engine_2_4x
-
 		add_stats = {
-			thrust = 73
-			build_cost_ic = 52
-			fuel_consumption = 0.51
-			reliability = 0.2
-			weight = 2.5
-			air_defence = 3
+			thrust = 48
+			build_cost_ic = 25
+			fuel_consumption = 0.22
+			reliability = -0.15
+			air_defence = +5
 		}
-
 		multiply_stats = {
-			maximum_speed = 0.25
-			air_agility = -0.1 ###Radials
-		}
-
-		can_convert_from = {
-			module = radial_engine_2_4x
-			convert_cost_ic = 10
+			maximum_speed = 0.45
 		}
 		forbid_module_categories = {
-		engine_mounted_cannons
 		plane_special_module_jet
 		}
 	}
-	radial_engine_3_6x = {
-		abbreviation = "re36"
-		category = large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = radial_engine_2_6x
-
-		add_stats = {
-			thrust = 103
-			build_cost_ic = 78
-			fuel_consumption = 0.64
-			reliability = 0.2
-			weight = 3
-			air_defence = 3
-		}
-		
-		multiply_stats = {
-			maximum_speed = 0.25
-			air_agility = -0.1 ###Radials
-		}
-		
-		can_convert_from = {
-			module = radial_engine_2_4x
-			convert_cost_ic = 15
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		}
-	}
-	radial_engine_4_1x = {
-		abbreviation = "re41"
-		category = plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = radial_engine_3_1x
-
-		add_stats = {
-			thrust = 35 #+15%
-			build_cost_ic = 14
-			fuel_consumption = 0.13
-			weight = 1
-			reliability = 0.2
-			air_defence = 3
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.4
-			air_agility = -0.1 ###Radials
-		}
-
-		can_convert_from = {
-			module = radial_engine_3_1x
-			convert_cost_ic = 3
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		}
-	}
-	radial_engine_4_2x = {
-		abbreviation = "re42"
-		category = twin_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = radial_engine_3_2x
-
-		add_stats = {
-			thrust = 41
-			build_cost_ic = 28
-			fuel_consumption = 0.26
-			weight = 1.5
-			reliability = 0.2
-			air_defence = 3
-		}
-		
-		multiply_stats = {
-			maximum_speed = 0.4
-			air_agility = -0.1 ###Radials
-		}
-		
-		can_convert_from = {
-			module = radial_engine_3_2x
-			convert_cost_ic = 6
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		}
-	}
-	radial_engine_4_3x = {
-		abbreviation = "re43"
-		category = medium_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = radial_engine_3_3x
-
-		add_stats = {
-			thrust = 69
-			build_cost_ic = 42
-			fuel_consumption = 0.38
-			weight = 2
-			reliability = 0.2
-			air_defence = 3
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.4
-			air_agility = -0.1 ###Radials
-		}
-
-		can_convert_from = {
-			module = radial_engine_3_3x
-			convert_cost_ic = 9
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		}
-	}
-	radial_engine_4_4x = {
-		abbreviation = "re44"
-		category = quad_large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = radial_engine_3_4x
-
-		add_stats = {
-			thrust = 86
-			build_cost_ic = 56
-			fuel_consumption = 0.51
-			weight = 2.5
-			reliability = 0.2
-			air_defence = 3
-		}
-
-		multiply_stats = {
-			maximum_speed = 0.4
-			air_agility = -0.1 ###Radials
-		}
-
-		can_convert_from = {
-			module = radial_engine_3_4x
-			convert_cost_ic = 12
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		}
-	}
-	radial_engine_4_6x = {
-		abbreviation = "re46"
-		category = large_plane_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = radial_engine_3_6x
-
-		add_stats = {
-			thrust = 121
-			build_cost_ic = 84
-			fuel_consumption = 0.64
-			weight = 3
-			reliability = 0.2
-			air_defence = 3
-		}
 	
-		multiply_stats = {
-			maximum_speed = 0.4
-			air_agility = -0.1 ###Radials
-		}
-		
-		can_convert_from = {
-			module = radial_engine_3_6x
-			convert_cost_ic = 18
-		}
-		forbid_module_categories = {
-		engine_mounted_cannons
-		plane_special_module_jet
-		}
-	}
 	jet_engine_1x = {
 		abbreviation = "j1"
 		category = plane_jet_engine_type
