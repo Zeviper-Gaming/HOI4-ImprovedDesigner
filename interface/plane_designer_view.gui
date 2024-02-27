@@ -124,7 +124,8 @@ guiTypes = {
 			@fixed_btn_mod_col_6 = 439
 
 			@fixed_btn_mod_row_0 = 1
-			@fixed_btn_mod_row_2 = 50			
+			@fixed_btn_mod_row_2 = 50
+			@fixed_btn_mod_row_3 = 250
 			@fixed_btn_mod_row_1 = 300
 
 			# Code checks this position to know if module is in upper or low row to
@@ -181,7 +182,12 @@ guiTypes = {
 			positionType = {
 				name = "pos_custom_module_slot_window_0"
 				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_1 }
-			}
+			} # engine kind
+			
+			positionType = {
+				name = "pos_custom_module_slot_window_nb_engine"
+				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_2 }
+			} # nb engine
 
 			positionType = {
 				name = "pos_custom_module_slot_window_1"

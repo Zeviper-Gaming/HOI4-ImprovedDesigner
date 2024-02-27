@@ -5,7 +5,7 @@ equipment_modules = {
 	### Engines
 	engine_1x1 = {
 		abbreviation = "e1"
-		category = plane_engine_number
+		category = plane_engine_number_1
 		sfx = sfx_ui_sd_module_engine
 
 		multiply_stats = {
@@ -16,7 +16,7 @@ equipment_modules = {
 	}
 	engine_2x1 = {
 		abbreviation = "e2"
-		category = plane_engine_number
+		category = plane_engine_number_2
 		sfx = sfx_ui_sd_module_engine
 
 		multiply_stats = {
@@ -27,7 +27,7 @@ equipment_modules = {
 	}
 	engine_3x1 = {
 		abbreviation = "e3"
-		category = plane_engine_number
+		category = plane_engine_number_3
 		sfx = sfx_ui_sd_module_engine
 
 		multiply_stats = {
@@ -38,7 +38,7 @@ equipment_modules = {
 	}
 	engine_4x1 = {
 		abbreviation = "e4"
-		category = plane_engine_number
+		category = plane_engine_number_4
 		sfx = sfx_ui_sd_module_engine
 
 		multiply_stats = {
@@ -49,7 +49,7 @@ equipment_modules = {
 	}
 	engine_6x1 = {
 		abbreviation = "e6"
-		category = plane_engine_number
+		category = plane_engine_number_6
 		sfx = sfx_ui_sd_module_engine
 
 		multiply_stats = {
@@ -369,9 +369,9 @@ equipment_modules = {
 		}
 	}
 	
-	jet_engine_1x = {
+	jet_engine_1 = {
 		abbreviation = "j1"
-		category = plane_jet_engine_type
+		category = plane_engine_jet
 		sfx = sfx_ui_sd_module_engine
 		parent = engine_4_1x
 
@@ -398,123 +398,10 @@ equipment_modules = {
 		engine_mounted_cannons
 		}		
 	}
-	jet_engine_2x = {
-		abbreviation = "j2"
-		category = twin_plane_jet_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_4_2x
-
-		add_stats = {
-			thrust = 38
-			build_cost_ic = 38
-			fuel_consumption = 0.6
-		}
-
-		multiply_stats = {			
-			maximum_speed = 0.65
-		}
-
-		build_cost_resources = {
-			tungsten = 1
-		}
-
-		can_convert_from = {
-			module_category = plane_engine_type
-			convert_cost_ic = 10
-		}
-		forbid_module_categories = {
-		plane_special_module_radial_engine
-		engine_mounted_cannons
-		}			
-	}
-	jet_engine_3x = {
-		abbreviation = "j3"
-		category = medium_plane_jet_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_4_3x
-
-		add_stats = {
-			thrust = 51
-			build_cost_ic = 57
-			fuel_consumption = 0.9
-		}
-
-		multiply_stats = {			
-			maximum_speed = 0.65
-		}
-
-		build_cost_resources = {
-			tungsten = 2
-		}
-
-		can_convert_from = {
-			module_category = medium_plane_engine_type
-			convert_cost_ic = 15
-		}
-		forbid_module_categories = {
-		plane_special_module_radial_engine
-		engine_mounted_cannons
-		}			
-	}
-	jet_engine_4x = {
-		abbreviation = "j4"
-		category = quad_large_plane_jet_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_4_4x
-
-		add_stats = {
-			thrust = 64
-			build_cost_ic = 76
-			fuel_consumption = 1.2
-		}
-
-		multiply_stats = {			
-			maximum_speed = 0.65
-		}
-
-		build_cost_resources = {
-			tungsten = 2
-		}
-		can_convert_from = {
-			module_category = medium_plane_engine_type
-			convert_cost_ic = 20
-		}
-		forbid_module_categories = {
-		plane_special_module_radial_engine
-		engine_mounted_cannons
-		}			
-	}
-	jet_engine_6x = {
-		abbreviation = "j6"
-		category = large_plane_jet_engine_type
-		sfx = sfx_ui_sd_module_engine
-		parent = engine_4_6x
-
-		add_stats = {
-			thrust = 90
-			build_cost_ic = 114
-			fuel_consumption = 1.8
-		}
-
-		multiply_stats = {			
-			maximum_speed = 0.65
-		}
-
-		build_cost_resources = {
-			tungsten = 3
-		}
-		can_convert_from = {
-			module_category = large_plane_engine_type
-			convert_cost_ic = 30
-		}
-		forbid_module_categories = {
-		plane_special_module_radial_engine
-		engine_mounted_cannons
-		}			
-	}
+	
 	rocket_engine_1 = { #rocket engines only come in sets of 1
 		abbreviation = "re1"
-		category = plane_rocket_engine_type
+		category = plane_engine_rocket
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
@@ -534,11 +421,15 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_radial_engine
 		engine_mounted_cannons
+			plane_engine_number_2
+			plane_engine_number_3
+			plane_engine_number_4
+			plane_engine_number_6
 		}			
 	}
 	rocket_engine_2 = { #rocket engines only come in sets of 1
 		abbreviation = "re2"
-		category = plane_rocket_engine_type
+		category = plane_engine_rocket
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
@@ -557,11 +448,15 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_radial_engine
 		engine_mounted_cannons
+			plane_engine_number_2
+			plane_engine_number_3
+			plane_engine_number_4
+			plane_engine_number_6
 		}			
 	}
 	rocket_engine_3 = { #rocket engines only come in sets of 1
 		abbreviation = "re3"
-		category = plane_rocket_engine_type
+		category = plane_engine_rocket
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
@@ -579,9 +474,13 @@ equipment_modules = {
 		dismantle_cost_ic = 10
 		
 		forbid_module_categories = {
-		plane_special_module_radial_engine
-		engine_mounted_cannons
-		}			
+			plane_special_module_radial_engine
+			engine_mounted_cannons
+			plane_engine_number_2
+			plane_engine_number_3
+			plane_engine_number_4
+			plane_engine_number_6
+		}
 	}
 	
 	# mounted canon

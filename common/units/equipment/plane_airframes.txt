@@ -153,7 +153,9 @@ equipments = {
 			fixed_auxiliary_weapon_slot_6 = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					adi_fuselage_high
+					adi_fuselage_low
+					adi_fuselage_other
 				}
 			} # Type de fuselage
 			fixed_auxiliary_weapon_slot_7 = {
@@ -172,7 +174,10 @@ equipments = {
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					# todo -- Ajouter les moteurs
+					plane_engine_rotating
+					plane_engine_radial
+					plane_engine_inline
+					plane_engine_V
 				}
 			}
 			special_type_slot_1 = {
@@ -311,6 +316,13 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}			
+			engine_nb_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_engine_number_1
+					plane_engine_number_2
+				}
+			}
 		}
 		
 		# TODO -- verify module_count_limits
@@ -504,7 +516,8 @@ equipments = {
 		default_modules = {
 			fixed_main_weapon_slot = empty
 			fixed_auxiliary_weapon_slot_1 = empty
-			engine_type_slot = engine_1_1x
+			engine_nb_slot = engine_1x1
+			engine_type_slot = rotating_engine_1
 			special_type_slot_1 = empty
 			special_type_slot_2 = empty
 			special_type_slot_8 = empty

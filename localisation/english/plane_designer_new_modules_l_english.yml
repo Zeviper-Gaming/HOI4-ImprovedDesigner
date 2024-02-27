@@ -55,8 +55,8 @@
  fuselage_low_dihedral_desc:0 ""
  fuselage_high_gull:0 ""
  fuselage_high_gull_desc:0 ""
-fuselage_low_trapezoid_short_wing:0 ""
-fuselage_low_trapezoid_short_wing_desc:0 ""
+ fuselage_low_trapezoid_short_wing:0 ""
+ fuselage_low_trapezoid_short_wing_desc:0 ""
 
  adi_t_tail:0 "Empennage en T"
  adi_t_tail_desc:0 "Une configuration dans laquelle les gouvernes de profondeur sont placées au sommet de la dérive, donnant une forme de T a la queue. Elle permet de mettre les gouvernes en dehors du sillage du moteur, augmentant l'éfficacité des gouvernes pour une meilleur agilité. Elle offre également une meilleur portance, mais est plus lourdes et dangeureuse si l'avion entre en décrochage."
