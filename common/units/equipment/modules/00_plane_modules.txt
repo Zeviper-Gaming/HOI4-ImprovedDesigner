@@ -67,7 +67,7 @@ equipment_modules = {
 		add_stats = {
 			thrust = 11
 			build_cost_ic = 12
-			maximum_speed = 0.16
+			fuel_consumption = 0.16
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -81,7 +81,7 @@ equipment_modules = {
 		add_stats = {
 			thrust = 16
 			build_cost_ic = 14
-			maximum_speed = 0.36
+			fuel_consumption = 0.36
 		}
 		can_convert_from = {
 			module = rotating_engine_1

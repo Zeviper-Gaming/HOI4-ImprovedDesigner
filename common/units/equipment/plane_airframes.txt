@@ -56,6 +56,7 @@ equipments = {
 		lend_lease_cost = 8
 
 		module_slots = {
+			# Ligne 1
 			fixed_main_weapon_slot = {
 				required = no
 				allowed_module_categories = {
@@ -150,6 +151,22 @@ equipments = {
 					schraege_cat
 				}
 			}
+			fixed_auxiliary_weapon_slot_6 = {
+				required = no
+				allowed_module_categories = {
+					fighter_weapon
+					cas_weapon
+					nav_bomber_weapon
+					mine_warfare_offense
+					plane_special_module_small
+					plane_armor_module_small
+					plane_construction_type_module_small
+					plane_special_module_small
+					plane_aero_module_small
+					schraege_cat
+				}
+			}
+			# Ligne 2
 			fuselage_wings_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -171,15 +188,7 @@ equipments = {
 					aircraft_role_2
 				}
 			} # Role
-			engine_type_slot = {
-				required = yes
-				allowed_module_categories = {
-					plane_engine_rotating
-					plane_engine_radial
-					plane_engine_inline
-					plane_engine_V
-				}
-			}
+			# Ligne 4
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
@@ -298,24 +307,17 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 				}
-			}					
-			special_type_slot_8 = {
-				required = no
+			}
+			# Ligne 3
+			engine_type_slot = {
+				required = yes
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
+					plane_engine_rotating
+					plane_engine_radial
+					plane_engine_inline
+					plane_engine_V
 				}
-			}			
+			}
 			engine_nb_slot = {
 				required = yes
 				allowed_module_categories = {
