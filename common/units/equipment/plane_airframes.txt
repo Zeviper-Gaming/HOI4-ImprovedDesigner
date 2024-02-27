@@ -150,7 +150,7 @@ equipments = {
 					schraege_cat
 				}
 			}
-			fixed_auxiliary_weapon_slot_6 = {
+			fuselage_wings_slot = {
 				required = yes
 				allowed_module_categories = {
 					adi_fuselage_high
@@ -158,13 +158,13 @@ equipments = {
 					adi_fuselage_other
 				}
 			} # Type de fuselage
-			fixed_auxiliary_weapon_slot_7 = {
+			fuselage_empennage_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
 				}
 			} # Empennage
-			fixed_auxiliary_weapon_slot_8 = {
+			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
 					aircraft_role_1

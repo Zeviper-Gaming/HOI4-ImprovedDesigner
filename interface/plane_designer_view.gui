@@ -176,7 +176,23 @@ guiTypes = {
 			positionType = {
 				name = "pos_fixed_module_slot_window_8"
 				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_2 }
-			}			
+			}
+			
+			positionType = {
+				name = "pos_fixed_module_slot_window_9"
+				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_2 }
+			} # nb engine
+			
+			positionType = {
+				name = "pos_fixed_module_slot_window_10"
+				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_2 }
+			}
+			
+			positionType = {
+				name = "pos_fixed_module_slot_window_11"
+				position = { x=@fixed_btn_mod_col_2 y=@fixed_btn_mod_row_2 }
+			}
+			
 			# Special module slots
 
 			positionType = {
@@ -184,11 +200,6 @@ guiTypes = {
 				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_1 }
 			} # engine kind
 			
-			positionType = {
-				name = "pos_custom_module_slot_window_nb_engine"
-				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_2 }
-			} # nb engine
-
 			positionType = {
 				name = "pos_custom_module_slot_window_1"
 				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_1 }
@@ -225,7 +236,8 @@ guiTypes = {
 			positionType = {
 				name = "pos_custom_module_slot_window_8"
 				position = { x=@fixed_btn_mod_col_1 y=250 }
-			}			
+			}
+			
 		}
 
 		iconType = {
