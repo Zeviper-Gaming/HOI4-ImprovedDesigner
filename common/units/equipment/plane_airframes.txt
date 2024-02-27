@@ -166,28 +166,6 @@ equipments = {
 					schraege_cat
 				}
 			}
-			# Ligne 2
-			fuselage_wings_slot = {
-				required = yes
-				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
-				}
-			} # Type de fuselage
-			fuselage_empennage_slot = {
-				required = yes
-				allowed_module_categories = {
-					plane_empennage
-				}
-			} # Empennage
-			aircraft_role_slot = {
-				required = yes
-				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
-				}
-			} # Role
 			# Ligne 4
 			special_type_slot_1 = {
 				required = no
@@ -290,7 +268,7 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 				}
-			}			
+			}
 			special_type_slot_7 = {
 				required = no
 				allowed_module_categories = {
@@ -325,6 +303,29 @@ equipments = {
 					plane_engine_number_2
 				}
 			}
+			# Ligne 2
+			fuselage_wings_slot = {
+				required = yes
+				allowed_module_categories = {
+					adi_fuselage_high
+					adi_fuselage_low
+					adi_fuselage_other
+				}
+			} # Type de fuselage
+			fuselage_empennage_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_empennage
+				}
+			} # Empennage
+			aircraft_role_slot = {
+				required = yes
+				allowed_module_categories = {
+					aircraft_role_1
+					aircraft_role_2
+				}
+			} # Role
+			
 		}
 		
 		# TODO -- verify module_count_limits
