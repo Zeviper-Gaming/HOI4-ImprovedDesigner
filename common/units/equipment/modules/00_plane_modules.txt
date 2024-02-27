@@ -8,10 +8,10 @@ equipment_modules = {
 		category = plane_engine_number
 		sfx = sfx_ui_sd_module_engine
 
-		add_stats = {
-			thrust = 11
-			build_cost_ic = 12
-			fuel_consumption = 0.16
+		multiply_stats = {
+			thrust = 0
+			build_cost_ic = 0
+			fuel_consumption = 0
 		}
 	}
 	engine_2x = {
@@ -19,10 +19,10 @@ equipment_modules = {
 		category = plane_engine_number
 		sfx = sfx_ui_sd_module_engine
 
-		add_stats = {
-			thrust = 19
-			build_cost_ic = 24
-			fuel_consumption = 0.32
+		multiply_stats = {
+			thrust = 0.9
+			build_cost_ic = 1
+			fuel_consumption = 1
 		}
 	}
 	engine_3x = {
@@ -30,10 +30,10 @@ equipment_modules = {
 		category = plane_engine_number
 		sfx = sfx_ui_sd_module_engine
 
-		add_stats = {
-			thrust = 23
-			build_cost_ic = 36
-			fuel_consumption = 0.48
+		multiply_stats = {
+			thrust = 1.8
+			build_cost_ic = 2
+			fuel_consumption = 2
 		}
 	}
 	engine_4x = {
@@ -41,10 +41,10 @@ equipment_modules = {
 		category = plane_engine_number
 		sfx = sfx_ui_sd_module_engine
 
-		add_stats = {
-			thrust = 32
-			build_cost_ic = 48
-			fuel_consumption = 0.64
+		multiply_stats = {
+			thrust = 2.8
+			build_cost_ic = 3
+			fuel_consumption = 3
 		}
 	}
 	engine_6x = {
@@ -52,10 +52,10 @@ equipment_modules = {
 		category = plane_engine_number
 		sfx = sfx_ui_sd_module_engine
 
-		add_stats = {
-			thrust = 41
-			build_cost_ic = 68
-			fuel_consumption = 0.80
+		multiply_stats = {
+			thrust = 4.5
+			build_cost_ic = 5
+			fuel_consumption = 5
 		}
 	}
 
@@ -64,10 +64,10 @@ equipment_modules = {
 		category = plane_engine_type
 		sfx = sfx_ui_sd_module_engine
 
-		multiply_stats = {
-			thrust = 0
-			build_cost_ic = 0
-			maximum_speed = 0
+		add_stats = {
+			thrust = 11
+			build_cost_ic = 12
+			maximum_speed = 0.16
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -78,10 +78,10 @@ equipment_modules = {
 		category = plane_engine_type
 		sfx = sfx_ui_sd_module_engine
 
-		multiply_stats = {
-			thrust = +0.4
-			build_cost_ic = +0.1
-			maximum_speed = +0.2
+		add_stats = {
+			thrust = 16
+			build_cost_ic = 14
+			maximum_speed = 0.36
 		}
 		can_convert_from = {
 			module = rotating_engine_1
@@ -96,9 +96,12 @@ equipment_modules = {
 		category = plane_engine_type
 		sfx = sfx_ui_sd_module_engine
 
+		add_stats = {
+			thrust = 25
+			build_cost_ic = 16
+			fuel_consumption = 0.16
+		}
 		multiply_stats = {
-			thrust = +0.8
-			build_cost_ic = +0.2
 			maximum_speed = +0.3
 		}
 		can_convert_from = {
@@ -114,10 +117,13 @@ equipment_modules = {
 		category = plane_engine_type
 		sfx = sfx_ui_sd_module_engine
 
+		add_stats = {
+			thrust = 30
+			build_cost_ic = 18
+			fuel_consumption = 0.16
+		}
 		multiply_stats = {
-			thrust = +1.2
-			build_cost_ic = +0.3
-			maximum_speed = +0.4
+			maximum_speed = 0.4
 		}
 		can_convert_from = {
 			module = rotating_engine_3
