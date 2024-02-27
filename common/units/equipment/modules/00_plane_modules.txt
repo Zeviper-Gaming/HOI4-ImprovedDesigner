@@ -3,7 +3,7 @@ equipment_modules = {
 		has_dlc = "By Blood Alone"
 	}
 	### Engines
-	engine_1x = {
+	engine_1x1 = {
 		abbreviation = "e1"
 		category = plane_engine_number
 		sfx = sfx_ui_sd_module_engine
@@ -14,7 +14,7 @@ equipment_modules = {
 			fuel_consumption = 0
 		}
 	}
-	engine_2x = {
+	engine_2x1 = {
 		abbreviation = "e2"
 		category = plane_engine_number
 		sfx = sfx_ui_sd_module_engine
@@ -25,7 +25,7 @@ equipment_modules = {
 			fuel_consumption = 1
 		}
 	}
-	engine_3x = {
+	engine_3x1 = {
 		abbreviation = "e3"
 		category = plane_engine_number
 		sfx = sfx_ui_sd_module_engine
@@ -36,7 +36,7 @@ equipment_modules = {
 			fuel_consumption = 2
 		}
 	}
-	engine_4x = {
+	engine_4x1 = {
 		abbreviation = "e4"
 		category = plane_engine_number
 		sfx = sfx_ui_sd_module_engine
@@ -47,7 +47,7 @@ equipment_modules = {
 			fuel_consumption = 3
 		}
 	}
-	engine_6x = {
+	engine_6x1 = {
 		abbreviation = "e6"
 		category = plane_engine_number
 		sfx = sfx_ui_sd_module_engine
@@ -295,6 +295,7 @@ equipment_modules = {
 		plane_special_module_jet
 		}
 	}
+	
 	V_engine_1 = {
 		abbreviation = "V_1"
 		category = plane_engine_V

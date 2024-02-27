@@ -1316,16 +1316,16 @@ technologies = {
 	engines_1 = {
 
 		enable_equipment_modules = {
-			engine_1_1x
-			engine_1_2x
-			engine_1_3x
-			engine_1_4x
-			engine_1_6x	
-			radial_engine_1_1x
-			radial_engine_1_2x
-			radial_engine_1_3x
-			radial_engine_1_4x
-			radial_engine_1_6x			
+			engine_1x1
+			engine_2x1
+			engine_3x1
+			engine_4x1
+			engine_6x1
+			
+			rotating_engine_1
+			radial_engine_1
+			inline_engine_1
+			V_engine_1
 		}
 		
 		research_cost = 1
@@ -1398,13 +1398,11 @@ technologies = {
 	engines_2 = {
 
 		enable_equipment_modules = {
-			engine_2_1x
-			engine_2_2x
-			engine_2_3x
-			engine_2_4x
-			engine_2_6x
+			rotating_engine_2
+			inline_engine_2
+			
 			early_supercharger
-			early_turbocharger			
+			early_turbocharger
 		}
 		
 		research_cost = 1
@@ -1460,11 +1458,9 @@ technologies = {
 	engines_3 = {
 
 		enable_equipment_modules = {
-			engine_3_1x
-			engine_3_2x
-			engine_3_3x
-			engine_3_4x
-			engine_3_6x	
+			rotating_engine_3
+			inline_engine_3
+			
 			turbocharger
 			supercharger
 			water_injection_small
@@ -1541,11 +1537,8 @@ technologies = {
 	engines_4 = {
 
 		enable_equipment_modules = {
-			engine_4_1x
-			engine_4_2x
-			engine_4_3x
-			engine_4_4x
-			engine_4_6x	
+			rotating_engine_4
+			inline_engine_4
 		}
 		
 		research_cost = 1.5
@@ -1603,11 +1596,9 @@ technologies = {
 	radial_engines_2 = {
 
 		enable_equipment_modules = {
-			radial_engine_2_1x
-			radial_engine_2_2x
-			radial_engine_2_3x
-			radial_engine_2_4x
-			radial_engine_2_6x
+			radial_engine_2
+			V_engine_2
+			
 			early_supercharger
 			early_turbocharger
 		}
@@ -1662,11 +1653,9 @@ technologies = {
 	radial_engines_3 = {
 
 		enable_equipment_modules = {
-			radial_engine_3_1x
-			radial_engine_3_2x
-			radial_engine_3_3x
-			radial_engine_3_4x
-			radial_engine_3_6x	
+			radial_engine_3
+			V_engine_3
+			
 			turbocharger
 			supercharger
 			water_injection_small
@@ -1739,11 +1728,8 @@ technologies = {
 	radial_engines_4 = {
 
 		enable_equipment_modules = {
-			radial_engine_4_1x
-			radial_engine_4_2x
-			radial_engine_4_3x
-			radial_engine_4_4x
-			radial_engine_4_6x	
+			radial_engine_4
+			V_engine_4
 		}
 		
 		research_cost = 1.5
