@@ -312,6 +312,7 @@ equipments = {
 			fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
 			empennage_slot = {

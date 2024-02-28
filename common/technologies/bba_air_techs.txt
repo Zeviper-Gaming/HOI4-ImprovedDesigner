@@ -2018,6 +2018,10 @@ technologies = {
 			fuselage_low_dihedral
 			fuselage_high_gull
 			
+			fuselage_bi
+			fuselage_jug
+			fuselage_drop
+			
 			adi_t_tail
 			adi_twin_boom
 			adi_twin_tail
