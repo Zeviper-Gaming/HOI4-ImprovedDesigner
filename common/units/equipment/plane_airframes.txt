@@ -57,7 +57,7 @@ equipments = {
 
 		module_slots = {
 			# Ligne 1
-			fixed_main_weapon_slot = {
+			fixed_weapon_slot_0 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -74,7 +74,7 @@ equipments = {
 					schraege_cat
 				}
 			}
-			fixed_auxiliary_weapon_slot_1 = { 
+			fixed_weapon_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -91,7 +91,7 @@ equipments = {
 					schraege_cat
 				}
 			}
-			fixed_auxiliary_weapon_slot_2 = {
+			fixed_weapon_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -106,7 +106,7 @@ equipments = {
 					schraege_cat
 				}
 			}
-			fixed_auxiliary_weapon_slot_3 = {
+			fixed_weapon_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -121,7 +121,7 @@ equipments = {
 					schraege_cat
 				}
 			}
-			fixed_auxiliary_weapon_slot_4 = {
+			fixed_weapon_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -136,7 +136,7 @@ equipments = {
 					schraege_cat
 				}
 			}
-			fixed_auxiliary_weapon_slot_5 = {
+			fixed_weapon_slot_5 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -151,7 +151,7 @@ equipments = {
 					schraege_cat
 				}
 			}
-			fixed_auxiliary_weapon_slot_6 = {
+			fixed_weapon_slot_6 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -167,7 +167,7 @@ equipments = {
 				}
 			}
 			# Ligne 4
-			special_type_slot_1 = {
+			fixed_special_slot_0 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -184,7 +184,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			special_type_slot_2 = {
+			fixed_special_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -201,7 +201,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			special_type_slot_3 = {
+			fixed_special_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -218,7 +218,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			special_type_slot_4 = {
+			fixed_special_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -235,7 +235,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			special_type_slot_5 = {
+			fixed_special_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -252,7 +252,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			special_type_slot_6 = {
+			fixed_special_slot_5 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -269,7 +269,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			special_type_slot_7 = {
+			fixed_special_slot_6 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -284,6 +284,36 @@ equipments = {
 					plane_special_module_ASW
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
+				}
+			}
+			# Ligne 2
+			wings_slot = {
+				required = yes
+				allowed_module_categories = {
+					adi_fuselage_high
+					adi_fuselage_low
+					adi_fuselage_other
+				}
+			} # Type d'ailes
+			fuselage_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			} # Fuselage de l'avion
+			empennage_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_empennage
+				}
+			} # Empennage
+			construction_slot_0 = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			construction_slot_1 = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			# Ligne 3
@@ -303,21 +333,6 @@ equipments = {
 					plane_engine_number_2
 				}
 			}
-			# Ligne 2
-			fuselage_wings_slot = {
-				required = yes
-				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
-				}
-			} # Type de fuselage
-			fuselage_empennage_slot = {
-				required = yes
-				allowed_module_categories = {
-					plane_empennage
-				}
-			} # Empennage
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -325,10 +340,8 @@ equipments = {
 					aircraft_role_2
 				}
 			} # Role
-			
 		}
 		
-		# TODO -- verify module_count_limits
 		module_count_limit = {
 			module = guided_anti_ship_missile
 			count < 2
