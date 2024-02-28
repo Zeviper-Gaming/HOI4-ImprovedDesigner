@@ -483,6 +483,97 @@ equipment_modules = {
 		}
 	}
 	
+	
+	engine_power_80 = {
+		abbreviation = "e80"
+		category = plane_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		multiply_stats = {
+			thrust = -0.2
+			build_cost_ic = -0.15
+			fuel_consumption = -0.2
+			maximum_speed = -0.15
+		}
+	}
+	engine_power_120 = {
+		abbreviation = "e120"
+		category = plane_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		multiply_stats = {
+			thrust = 0.2
+			build_cost_ic = 0.1
+			fuel_consumption = 0.2
+			maximum_speed = 0.1
+		}
+	}
+	engine_power_140 = {
+		abbreviation = "e140"
+		category = plane_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		multiply_stats = {
+			thrust = 0.4
+			build_cost_ic = 0.2
+			fuel_consumption = 0.4
+			maximum_speed = 0.2
+		}
+	}
+	engine_power_160 = {
+		abbreviation = "e160"
+		category = plane_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		multiply_stats = {
+			thrust = 0.6
+			build_cost_ic = 0.4
+			fuel_consumption = 0.7
+			maximum_speed = 0.3
+		}
+	}
+	
+	reliability_85 = {
+		abbreviation = "r85"
+		category = plane_engine_reliability
+		sfx = sfx_ui_sd_module_engine
+
+		multiply_stats = {
+			reliability = -0.15
+			build_cost_ic = -0.15
+		}
+	}
+	reliability_115 = {
+		abbreviation = "r115"
+		category = plane_engine_reliability
+		sfx = sfx_ui_sd_module_engine
+
+		multiply_stats = {
+			reliability = 0.15
+			build_cost_ic = 0.15
+		}
+	}
+	reliability_130 = {
+		abbreviation = "r130"
+		category = plane_engine_reliability
+		sfx = sfx_ui_sd_module_engine
+
+		multiply_stats = {
+			reliability = 0.30
+			build_cost_ic = 0.35
+		}
+	}
+	reliability_150 = {
+		abbreviation = "r150"
+		category = plane_engine_reliability
+		sfx = sfx_ui_sd_module_engine
+
+		multiply_stats = {
+			reliability = 0.50
+			build_cost_ic = 0.65
+		}
+	}
+	
 	# mounted canon
 	# todo -- réfléchir a les garder ?
 	aircraft_engine_mounted_cannon_1 = {

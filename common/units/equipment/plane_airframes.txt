@@ -289,12 +289,14 @@ equipments = {
 			# Ligne 4 - Power and reliability
 			engine_power_slot = {
 				required = no
-				allowed_module_categories = {
+				allowed_module_categories ={
+					plane_engine_power
 				}
 			}
 			Reliability_slot = {
 				required = no
 				allowed_module_categories = {
+					plane_engine_reliability
 				}
 			}
 			

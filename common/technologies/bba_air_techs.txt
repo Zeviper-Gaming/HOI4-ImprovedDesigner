@@ -1336,6 +1336,16 @@ technologies = {
 			radial_engine_1
 			inline_engine_1
 			V_engine_1
+			
+			engine_power_80
+			engine_power_120
+			engine_power_140
+			engine_power_160
+			
+			reliability_85
+			reliability_115
+			reliability_130
+			reliability_150
 		}
 		
 		research_cost = 1
