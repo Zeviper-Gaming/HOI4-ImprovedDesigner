@@ -56,7 +56,7 @@ equipments = {
 		lend_lease_cost = 8
 
 		module_slots = {
-			# Ligne 1
+			# Ligne 1 - Weapons
 			fixed_weapon_slot_0 = {
 				required = no
 				allowed_module_categories = {
@@ -166,7 +166,7 @@ equipments = {
 					schraege_cat
 				}
 			}
-			# Ligne 4
+			# Ligne 4 - Special modules
 			fixed_special_slot_0 = {
 				required = no
 				allowed_module_categories = {
@@ -286,7 +286,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			# Ligne 2
+			# Ligne 2 - Construction modules
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -316,7 +316,18 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			# Ligne 3
+			# Ligne 4 - Power and reliability
+			engine_power_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			Reliability_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			# Ligne 3 - Engines and role
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -340,6 +351,7 @@ equipments = {
 					aircraft_role_2
 				}
 			} # Role
+			
 		}
 		
 		module_count_limit = {

@@ -125,6 +125,7 @@ guiTypes = {
 
 			@fixed_btn_mod_row_3 = 1
 			@fixed_btn_mod_row_2 = 50
+			@fixed_btn_mod_row_4 = 100
 			@fixed_btn_mod_row_1 = 250
 			@fixed_btn_mod_row_0 = 300
 
@@ -228,6 +229,15 @@ guiTypes = {
 				name = "pos_fixed_module_slot_window_6"
 				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_3 }
 			}
+			# Ligne puissance moteur et fiabilité
+			positionType = {
+				name = "pos_custom_module_slot_window_8"
+				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_4 }
+			}
+			positionType = {
+				name = "pos_custom_module_slot_window_9"
+				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_4 }
+			}
 		}
 
 		iconType = {
@@ -248,7 +258,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "historical_design_button"
-			position = { x=170 y=404 }
+			position = { x=20 y=350 }
 			quadTextureSprite ="GFX_button_123x34"
 			buttonText = "HISTORICAL_PRESET"
 			buttonFont = "hoi_18mbs"
