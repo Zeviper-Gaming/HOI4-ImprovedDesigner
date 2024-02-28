@@ -790,6 +790,11 @@ technologies = {
 					torpedo_mounting
 					medium_bomb_bay_cluster_bombs
 					small_cluster_bombs
+			
+					adi_cas_role
+					adi_naval_bomber_role
+					adi_tac_bomb_role
+					adi_strat_bomb_role
 		}
 			
 		research_cost = 1
@@ -973,6 +978,8 @@ technologies = {
 	photo_reconnaisance = {
 		enable_equipment_modules = {
 			recon_camera
+			
+			adi_scout_role
 		}
 		
 		research_cost = 1
@@ -1009,7 +1016,10 @@ technologies = {
 			light_mg_2x
 			light_mg_4x
 			lmg_defense_turret
-			lmg_defense_turret_2x			
+			lmg_defense_turret_2x
+			
+			adi_fighter_role
+			adi_interceptor_role
 		}
 		
 		research_cost = 1
@@ -1270,6 +1280,8 @@ technologies = {
 			cannon_defense_turret
 			cannon_defense_turret_2x
 			aircraft_engine_mounted_cannon_2
+			
+			adi_schraege_musik
 		}
 		
 		research_cost = 1.5
@@ -1314,16 +1326,16 @@ technologies = {
 	engines_1 = {
 
 		enable_equipment_modules = {
-			engine_1_1x
-			engine_1_2x
-			engine_1_3x
-			engine_1_4x
-			engine_1_6x	
-			radial_engine_1_1x
-			radial_engine_1_2x
-			radial_engine_1_3x
-			radial_engine_1_4x
-			radial_engine_1_6x			
+			engine_1x1
+			engine_2x1
+			engine_3x1
+			engine_4x1
+			engine_6x1
+			
+			rotating_engine_1
+			radial_engine_1
+			inline_engine_1
+			V_engine_1
 		}
 		
 		research_cost = 1
@@ -1396,13 +1408,11 @@ technologies = {
 	engines_2 = {
 
 		enable_equipment_modules = {
-			engine_2_1x
-			engine_2_2x
-			engine_2_3x
-			engine_2_4x
-			engine_2_6x
+			rotating_engine_2
+			inline_engine_2
+			
 			early_supercharger
-			early_turbocharger			
+			early_turbocharger
 		}
 		
 		research_cost = 1
@@ -1458,11 +1468,9 @@ technologies = {
 	engines_3 = {
 
 		enable_equipment_modules = {
-			engine_3_1x
-			engine_3_2x
-			engine_3_3x
-			engine_3_4x
-			engine_3_6x	
+			rotating_engine_3
+			inline_engine_3
+			
 			turbocharger
 			supercharger
 			water_injection_small
@@ -1539,11 +1547,8 @@ technologies = {
 	engines_4 = {
 
 		enable_equipment_modules = {
-			engine_4_1x
-			engine_4_2x
-			engine_4_3x
-			engine_4_4x
-			engine_4_6x	
+			rotating_engine_4
+			inline_engine_4
 		}
 		
 		research_cost = 1.5
@@ -1601,11 +1606,9 @@ technologies = {
 	radial_engines_2 = {
 
 		enable_equipment_modules = {
-			radial_engine_2_1x
-			radial_engine_2_2x
-			radial_engine_2_3x
-			radial_engine_2_4x
-			radial_engine_2_6x
+			radial_engine_2
+			V_engine_2
+			
 			early_supercharger
 			early_turbocharger
 		}
@@ -1660,11 +1663,9 @@ technologies = {
 	radial_engines_3 = {
 
 		enable_equipment_modules = {
-			radial_engine_3_1x
-			radial_engine_3_2x
-			radial_engine_3_3x
-			radial_engine_3_4x
-			radial_engine_3_6x	
+			radial_engine_3
+			V_engine_3
+			
 			turbocharger
 			supercharger
 			water_injection_small
@@ -1737,11 +1738,8 @@ technologies = {
 	radial_engines_4 = {
 
 		enable_equipment_modules = {
-			radial_engine_4_1x
-			radial_engine_4_2x
-			radial_engine_4_3x
-			radial_engine_4_4x
-			radial_engine_4_6x	
+			radial_engine_4
+			V_engine_4
 		}
 		
 		research_cost = 1.5
@@ -1998,7 +1996,31 @@ technologies = {
 			cargo_bay
 			supply_drops
 			troop_compartment
-			NACA_cowling			
+			NACA_cowling
+			
+			fuselage_low_trapezoid_short_wing
+			fuselage_high_wing
+			fuselage_low_wing
+			fuselage_biplane
+			fuselage_twin
+			fuselage_high_anhedral
+			fuselage_high_dihedral
+			fuselage_low_dihedral
+			fuselage_high_gull
+			
+			adi_t_tail
+			adi_twin_boom
+			adi_twin_tail
+
+			fuselage_elliptoid_wing
+			fuselage_low_trapezoid_wing
+			fuselage_trapezoid_wing
+			fuselage_inverted_gull_wing
+			# todo deplacer dans d'autres techs
+			fuselage_swept_wing
+			fuselage_flying_wing
+			
+			adi_maritime_pat_role
 		}
 		
 		research_cost = 1
@@ -2043,6 +2065,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			fixed_explosive_charge
+			adi_suicide_role
 		}
 				
 		research_cost = 1.5 #Carrier Variant

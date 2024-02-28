@@ -1,4 +1,4 @@
-﻿capital = 16
+capital = 16
 
 if = {
 	limit = {
@@ -587,8 +587,10 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = light_mg_2x
 			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
-			engine_type_slot = engine_2_1x
+			engine_type_slot = rotating_engine_2
 			special_type_slot_1 = empty
+			engine_nb_slot = engine_1x1
+			
 		}
 		icon = "GFX_FRA_light_plane_2_medium"
 	}

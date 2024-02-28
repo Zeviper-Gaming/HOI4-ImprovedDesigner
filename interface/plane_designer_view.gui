@@ -124,7 +124,8 @@ guiTypes = {
 			@fixed_btn_mod_col_6 = 439
 
 			@fixed_btn_mod_row_0 = 1
-			@fixed_btn_mod_row_2 = 50			
+			@fixed_btn_mod_row_2 = 50
+			@fixed_btn_mod_row_3 = 250
 			@fixed_btn_mod_row_1 = 300
 
 			# Code checks this position to know if module is in upper or low row to
@@ -134,28 +135,23 @@ guiTypes = {
 				position = { x=0 y=@fixed_btn_mod_row_0 }
 			}
 
-			# Weapon slots
-
+			# Weapon slots - Ligne 1
 			positionType = {
 				name = "pos_fixed_module_slot_window_0"
 				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_0 }
 			}
-
 			positionType = {
 				name = "pos_fixed_module_slot_window_1"
 				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_0 }
 			}
-
 			positionType = {
 				name = "pos_fixed_module_slot_window_2"
 				position = { x=@fixed_btn_mod_col_2 y=@fixed_btn_mod_row_0 }
 			}
-
 			positionType = {
 				name = "pos_fixed_module_slot_window_3"
 				position = { x=@fixed_btn_mod_col_3 y=@fixed_btn_mod_row_0 }
 			}
-
 			positionType = {
 				name = "pos_fixed_module_slot_window_4"
 				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_0 }
@@ -168,21 +164,38 @@ guiTypes = {
 				name = "pos_fixed_module_slot_window_6"
 				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_0 }
 			}
+			# Ligne 2
 			positionType = {
 				name = "pos_fixed_module_slot_window_7"
-				position = { x=@fixed_btn_mod_col_5 y=@fixed_btn_mod_row_2 }
+				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_2 }
 			}
 			positionType = {
 				name = "pos_fixed_module_slot_window_8"
+				position = { x=@fixed_btn_mod_col_5 y=@fixed_btn_mod_row_2 }
+			}
+			
+			positionType = {
+				name = "pos_fixed_module_slot_window_9"
 				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_2 }
-			}			
+			}
+			
+			positionType = {
+				name = "pos_fixed_module_slot_window_10"
+				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_2 }
+			}
+			
+			positionType = {
+				name = "pos_fixed_module_slot_window_11"
+				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_2 }
+			}
+			
 			# Special module slots
 
 			positionType = {
 				name = "pos_custom_module_slot_window_0"
 				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_1 }
-			}
-
+			} # engine kind
+			
 			positionType = {
 				name = "pos_custom_module_slot_window_1"
 				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_1 }
@@ -219,7 +232,8 @@ guiTypes = {
 			positionType = {
 				name = "pos_custom_module_slot_window_8"
 				position = { x=@fixed_btn_mod_col_1 y=250 }
-			}			
+			}
+			
 		}
 
 		iconType = {
