@@ -123,10 +123,10 @@ guiTypes = {
 			@fixed_btn_mod_col_5 = 366
 			@fixed_btn_mod_col_6 = 439
 
-			@fixed_btn_mod_row_0 = 1
+			@fixed_btn_mod_row_3 = 1
 			@fixed_btn_mod_row_2 = 50
-			@fixed_btn_mod_row_3 = 250
-			@fixed_btn_mod_row_1 = 300
+			@fixed_btn_mod_row_1 = 250
+			@fixed_btn_mod_row_0 = 300
 
 			# Code checks this position to know if module is in upper or low row to
 			# give the tooltip the correct anchor 
@@ -135,105 +135,99 @@ guiTypes = {
 				position = { x=0 y=@fixed_btn_mod_row_0 }
 			}
 
-			# Weapon slots - Ligne 1
+			# Ligne 1 - Modules
 			positionType = {
-				name = "pos_fixed_module_slot_window_0"
+				name = "pos_fixed_module_slot_window_7"
 				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_0 }
 			}
 			positionType = {
-				name = "pos_fixed_module_slot_window_1"
+				name = "pos_fixed_module_slot_window_8"
 				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_0 }
 			}
 			positionType = {
-				name = "pos_fixed_module_slot_window_2"
+				name = "pos_fixed_module_slot_window_9"
 				position = { x=@fixed_btn_mod_col_2 y=@fixed_btn_mod_row_0 }
 			}
 			positionType = {
-				name = "pos_fixed_module_slot_window_3"
+				name = "pos_fixed_module_slot_window_10"
 				position = { x=@fixed_btn_mod_col_3 y=@fixed_btn_mod_row_0 }
 			}
 			positionType = {
-				name = "pos_fixed_module_slot_window_4"
+				name = "pos_fixed_module_slot_window_11"
 				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_0 }
 			}
 			positionType = {
-				name = "pos_fixed_module_slot_window_5"
+				name = "pos_fixed_module_slot_window_12"
 				position = { x=@fixed_btn_mod_col_5 y=@fixed_btn_mod_row_0 }
 			}
 			positionType = {
-				name = "pos_fixed_module_slot_window_6"
+				name = "pos_fixed_module_slot_window_13"
 				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_0 }
 			}
-			# Ligne 2
-			positionType = {
-				name = "pos_fixed_module_slot_window_7"
-				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_2 }
-			}
-			positionType = {
-				name = "pos_fixed_module_slot_window_8"
-				position = { x=@fixed_btn_mod_col_5 y=@fixed_btn_mod_row_2 }
-			}
-			
-			positionType = {
-				name = "pos_fixed_module_slot_window_9"
-				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_2 }
-			}
-			
-			positionType = {
-				name = "pos_fixed_module_slot_window_10"
-				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_2 }
-			}
-			
-			positionType = {
-				name = "pos_fixed_module_slot_window_11"
-				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_2 }
-			}
-			
-			# Special module slots
-
+			# Ligne 2 - Constructions
 			positionType = {
 				name = "pos_custom_module_slot_window_0"
 				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_1 }
-			} # engine kind
-			
+			}
 			positionType = {
 				name = "pos_custom_module_slot_window_1"
 				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_1 }
 			}
-
 			positionType = {
 				name = "pos_custom_module_slot_window_2"
 				position = { x=@fixed_btn_mod_col_2 y=@fixed_btn_mod_row_1 }
 			}
-
 			positionType = {
 				name = "pos_custom_module_slot_window_3"
 				position = { x=@fixed_btn_mod_col_3 y=@fixed_btn_mod_row_1 }
 			}
-
 			positionType = {
 				name = "pos_custom_module_slot_window_4"
 				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_1 }
 			}
-
+			# Ligne 3 - Engine and role
 			positionType = {
 				name = "pos_custom_module_slot_window_5"
-				position = { x=@fixed_btn_mod_col_5 y=@fixed_btn_mod_row_1 }
+				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_2 }
 			}
-
 			positionType = {
 				name = "pos_custom_module_slot_window_6"
-				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_1 }
+				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_2 }
 			}
 			positionType = {
 				name = "pos_custom_module_slot_window_7"
-				position = { x=@fixed_btn_mod_col_0 y=250 }
-			}
-			positionType = {
-				name = "pos_custom_module_slot_window_8"
-				position = { x=@fixed_btn_mod_col_1 y=250 }
+				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_2 }
 			}
 			
+			# Ligne 4 - Weapons
+			positionType = {
+				name = "pos_fixed_module_slot_window_0"
+				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_3 }
+			}
+			positionType = {
+				name = "pos_fixed_module_slot_window_1"
+				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_3 }
+			}
+			positionType = {
+				name = "pos_fixed_module_slot_window_2"
+				position = { x=@fixed_btn_mod_col_2 y=@fixed_btn_mod_row_3 }
+			}
+			positionType = {
+				name = "pos_fixed_module_slot_window_3"
+				position = { x=@fixed_btn_mod_col_3 y=@fixed_btn_mod_row_3 }
+			}
+			positionType = {
+				name = "pos_fixed_module_slot_window_4"
+				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_3 }
+			}
+			positionType = {
+				name = "pos_fixed_module_slot_window_5"
+				position = { x=@fixed_btn_mod_col_5 y=@fixed_btn_mod_row_3 }
+			}
+			positionType = {
+				name = "pos_fixed_module_slot_window_6"
+				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_3 }
+			}
 		}
 
 		iconType = {
