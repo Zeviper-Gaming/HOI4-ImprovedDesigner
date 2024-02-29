@@ -17,7 +17,55 @@ spriteTypes = {
 #   graphics entry cannot be found with the slot's specific key.
 ###################################################
 
-
+		### NEW MODULES ###
+	spriteType = {
+		name = "GFX_EMI_adi_t_tail"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/adi_t_tail.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_adi_twin_boom"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/adi_twin_boom.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_adi_twin_tail"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/adi_twin_tail.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_trapezoid_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/fuselage_trapezoid_wing.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_elliptoid_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/fuselage_elliptoid_wing.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_low_trapezoid_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/fuselage_low_trapezoid_wing.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_inverted_gull_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/fuselage_inverted_gull_wing.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_inverted_gull_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/fuselage_inverted_gull_wing.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_flying_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/fuselage_flying_wing.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	
 		#### MODULES ####
 
 	spriteType = {

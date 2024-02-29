@@ -2008,6 +2008,7 @@ technologies = {
 			troop_compartment
 			NACA_cowling
 			
+			# todo find pictures for just below
 			fuselage_low_trapezoid_short_wing
 			fuselage_high_wing
 			fuselage_low_wing
@@ -2017,7 +2018,6 @@ technologies = {
 			fuselage_high_dihedral
 			fuselage_low_dihedral
 			fuselage_high_gull
-			
 			fuselage_bi
 			fuselage_jug
 			fuselage_drop
