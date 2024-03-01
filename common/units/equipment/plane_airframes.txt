@@ -329,20 +329,6 @@ equipments = {
 				}
 			}
 			
-			# Ligne 4 - Power and reliability
-			engine_power_slot = {
-				required = no
-				allowed_module_categories ={
-					plane_engine_power
-				}
-			}
-			Reliability_slot = {
-				required = no
-				allowed_module_categories = {
-					plane_engine_reliability
-				}
-			}
-			
 			# Ligne 3 - Engines and role
 			engine_type_slot = {
 				required = yes
@@ -367,6 +353,20 @@ equipments = {
 					aircraft_role_2
 				}
 			} # Role
+			
+			# Ligne 4 - Power and reliability
+			engine_power_slot = {
+				required = no
+				allowed_module_categories ={
+					plane_engine_power
+				}
+			}
+			Reliability_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_engine_reliability
+				}
+			}
 			
 		}
 		
