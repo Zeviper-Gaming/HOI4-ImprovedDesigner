@@ -286,19 +286,6 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			# Ligne 4 - Power and reliability
-			engine_power_slot = {
-				required = no
-				allowed_module_categories ={
-					plane_engine_power
-				}
-			}
-			Reliability_slot = {
-				required = no
-				allowed_module_categories = {
-					plane_engine_reliability
-				}
-			}
 			
 			# Ligne 2 - Construction modules
 			wings_slot = {
@@ -339,6 +326,20 @@ equipments = {
 			construction_slot_3 = {
 				required = no
 				allowed_module_categories = {
+				}
+			}
+			
+			# Ligne 4 - Power and reliability
+			engine_power_slot = {
+				required = no
+				allowed_module_categories ={
+					plane_engine_power
+				}
+			}
+			Reliability_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_engine_reliability
 				}
 			}
 			
