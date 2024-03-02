@@ -2067,8 +2067,8 @@ technologies = {
 			
 			# todo find pictures for just below
 			fuselage_low_trapezoid_short_wing
-			fuselage_high_wing
-			fuselage_low_wing
+			fuselage_high_rectangular_wing
+			fuselage_low_rectangular_wing
 			fuselage_biplane
 			fuselage_twin
 			fuselage_high_anhedral
