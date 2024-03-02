@@ -488,9 +488,10 @@ equipment_modules = {
 		abbreviation = "e80"
 		category = plane_engine_power
 		sfx = sfx_ui_sd_module_engine
-
-		multiply_stats = {
+		add_stats = {
 			build_cost_ic = -2
+		}
+		multiply_stats = {
 			thrust = -0.2
 			reliability = -0.15
 			fuel_consumption = -0.2
@@ -501,9 +502,10 @@ equipment_modules = {
 		abbreviation = "e120"
 		category = plane_engine_power
 		sfx = sfx_ui_sd_module_engine
-
-		multiply_stats = {
+		add_stats = {
 			build_cost_ic = 2
+		}
+		multiply_stats = {
 			thrust = 0.2
 			reliability = 0.1
 			fuel_consumption = 0.2
@@ -514,9 +516,10 @@ equipment_modules = {
 		abbreviation = "e140"
 		category = plane_engine_power
 		sfx = sfx_ui_sd_module_engine
-
-		multiply_stats = {
+		add_stats = {
 			build_cost_ic = 4
+		}
+		multiply_stats = {
 			thrust = 0.4
 			reliability = 0.2
 			fuel_consumption = 0.4
@@ -527,9 +530,10 @@ equipment_modules = {
 		abbreviation = "e160"
 		category = plane_engine_power
 		sfx = sfx_ui_sd_module_engine
-
-		multiply_stats = {
+		add_stats = {
 			build_cost_ic = 6
+		}
+		multiply_stats = {
 			thrust = 0.6
 			reliability = 0.4
 			fuel_consumption = 0.7
@@ -541,19 +545,21 @@ equipment_modules = {
 		abbreviation = "r85"
 		category = plane_engine_reliability
 		sfx = sfx_ui_sd_module_engine
-
+		add_stats = {
+			reliability = -15
+		}
 		multiply_stats = {
-			reliability = -0.15
-			build_cost_ic = -0.15
+			build_cost_ic = -0.20
 		}
 	}
 	reliability_115 = {
 		abbreviation = "r115"
 		category = plane_engine_reliability
 		sfx = sfx_ui_sd_module_engine
-
+		add_stats = {
+			reliability = 15
+		}
 		multiply_stats = {
-			reliability = 0.15
 			build_cost_ic = 0.15
 		}
 	}
@@ -561,9 +567,10 @@ equipment_modules = {
 		abbreviation = "r130"
 		category = plane_engine_reliability
 		sfx = sfx_ui_sd_module_engine
-
+		add_stats = {
+			reliability = 30
+		}
 		multiply_stats = {
-			reliability = 0.30
 			build_cost_ic = 0.35
 		}
 	}
@@ -571,9 +578,10 @@ equipment_modules = {
 		abbreviation = "r150"
 		category = plane_engine_reliability
 		sfx = sfx_ui_sd_module_engine
-
+		add_stats = {
+			reliability = 50
+		}
 		multiply_stats = {
-			reliability = 0.50
 			build_cost_ic = 0.65
 		}
 	}
