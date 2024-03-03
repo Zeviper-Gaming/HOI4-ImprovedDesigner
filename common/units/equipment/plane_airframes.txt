@@ -302,7 +302,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -857,7 +857,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -1198,7 +1198,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -1539,7 +1539,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -1880,7 +1880,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -2245,7 +2245,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -2799,7 +2799,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -3139,7 +3139,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -3480,7 +3480,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -3820,7 +3820,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -4191,7 +4191,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -4754,7 +4754,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -5095,7 +5095,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -5436,7 +5436,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -5777,7 +5777,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -6131,7 +6131,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -6825,7 +6825,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -7166,7 +7166,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -7507,7 +7507,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage
@@ -7848,7 +7848,7 @@ equipments = {
 					adi_fuselage_kind
 				}
 			} # Fuselage de l'avion
-			empennage_slot = {
+			tail_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_empennage

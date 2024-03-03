@@ -3215,7 +3215,7 @@ equipment_modules = {
 			}
 		}
 	} #todo refract it
-	low_dihedral = {
+	low_dihedral_wing = {
 		abbreviation = "adi_low_dihedral"
 		category = adi_fuselage_low
 		sfx = sfx_ui_sd_module_turret

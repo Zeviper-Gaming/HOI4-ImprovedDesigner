@@ -2073,7 +2073,7 @@ technologies = {
 			fuselage_twin
 			high_anhedral_wing
 			high_dihedral_wing
-			low_dihedral
+			low_dihedral_wing
 			high_gull_wing
 			fuselage_bi
 			fuselage_jug
