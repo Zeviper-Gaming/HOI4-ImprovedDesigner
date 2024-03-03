@@ -2066,15 +2066,15 @@ technologies = {
 			NACA_cowling
 			
 			# todo find pictures for just below
-			fuselage_low_trapezoid_short_wing
-			fuselage_high_rectangular_wing
-			fuselage_low_rectangular_wing
-			fuselage_biplane
+			low_trapezoid_short_wing
+			high_rectangular_wing
+			low_rectangular_wing
+			biplane_wing
 			fuselage_twin
-			fuselage_high_anhedral
-			fuselage_high_dihedral
-			fuselage_low_dihedral
-			fuselage_high_gull
+			high_anhedral_wing
+			high_dihedral_wing
+			low_dihedral
+			high_gull_wing
 			fuselage_bi
 			fuselage_jug
 			fuselage_drop
@@ -2083,12 +2083,12 @@ technologies = {
 			adi_twin_boom
 			adi_twin_tail
 
-			fuselage_elliptoid_wing
-			fuselage_low_trapezoid_wing
+			low_elliptoid_wing
+			low_trapezoid_wing
 			fuselage_trapezoid_wing
 			fuselage_inverted_gull_wing
 			# todo deplacer dans d'autres techs
-			fuselage_swept_wing
+			swept_wing
 			fuselage_flying_wing
 			
 			adi_maritime_pat_role
