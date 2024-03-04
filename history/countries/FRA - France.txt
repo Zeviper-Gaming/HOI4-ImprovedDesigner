@@ -537,6 +537,7 @@ if = {
 			fixed_weapon_slot_1 = lmg_defense_turret
 			wings_slot = biplane_wing
 			tail_slot = adi_t_tail
+			aircraft_role_slot = cas_role
 		}
 		icon = "GFX_FRA_CAS1_medium"
 		obsolete = yes
@@ -550,6 +551,7 @@ if = {
 			engine_nb_slot = engine_1x1
 			wings_slot = fuselage_high_rectangular_wing
 			tail_slot = adi_t_tail
+			aircraft_role_slot = fighter_role
 		}
 		obsolete = yes
 	}
@@ -562,6 +564,7 @@ if = {
 			engine_nb_slot = engine_1x1
 			wings_slot = low_rectangular_wing
 			tail_slot = adi_t_tail
+			aircraft_role_slot = interceptor_role
 		}
 		icon = "GFX_FRA_light_plane_2_medium"
 		obsolete = yes
@@ -575,6 +578,7 @@ if = {
 			engine_nb_slot = engine_1x1
 			wings_slot = fuselage_high_rectangular_wing
 			tail_slot = adi_t_tail
+			aircraft_role_slot = fighter_role
 		}
 		icon = "GFX_FRA_light_plane_2_medium"
 		obsolete = yes
@@ -589,6 +593,7 @@ if = {
 			fixed_weapon_slot_1 = lmg_defense_turret
 			wings_slot = biplane_wing
 			tail_slot = adi_t_tail
+			aircraft_role_slot = naval_bomber_role
 		}
 		icon = "GFX_FRA_naval_bomber1_medium"
 		obsolete = yes
@@ -603,7 +608,7 @@ if = {
 			engine_nb_slot = engine_1x1
 			wings_slot = low_rectangular_wing
 			tail_slot = adi_t_tail
-			
+			aircraft_role_slot = interceptor_role
 		}
 		icon = "GFX_FRA_light_plane_2_medium"
 	}
@@ -617,6 +622,7 @@ if = {
 			fixed_special_slot_0 = floats
 			wings_slot = high_rectangular_wing
 			tail_slot = adi_t_tail
+			aircraft_role_slot = naval_bomber_role
 		}
 		icon = "GFX_FRA_naval_bomber1_medium"
 	}
@@ -630,7 +636,7 @@ if = {
 			engine_type_slot = rotating_engine_2
 			engine_nb_slot = engine_2x1
 			wings_slot = high_rectangular_wing
-			tail_slot = adi_t_tail
+			tail_slot = tac_bomb_role
 		}
 		icon = "GFX_FRA_early_bomber_medium"
 	}
@@ -644,6 +650,7 @@ if = {
 			engine_nb_slot = engine_4x1
 			wings_slot = high_dihedral_wing
 			tail_slot = adi_t_tail
+			aircraft_role_slot = strat_bomb_role
 		}
 		icon = "GFX_FRA_strategic_bomber1_medium"
 	}
@@ -657,6 +664,7 @@ if = {
 			engine_nb_slot = engine_2x1
 			wings_slot = high_rectangular_wing
 			tail_slot = adi_t_tail
+			aircraft_role_slot = tac_bomb_role
 		}
 		obsolete = yes
 	}
@@ -1102,6 +1110,7 @@ if = {
 				engine_nb_slot = engine_1x1
 				wings_slot = low_trapezoid_wing
 				tail_slot = adi_t_tail
+				aircraft_role_slot = fighter_role
 			}
 		}
 		create_equipment_variant = {
@@ -1114,6 +1123,7 @@ if = {
 				engine_nb_slot = engine_1x1
 				wings_slot = low_trapezoid_wing
 				tail_slot = adi_t_tail
+				aircraft_role_slot = fighter_role
 			}
 			icon = "GFX_FRA_fighter3_medium"
 		}
@@ -1127,6 +1137,7 @@ if = {
 				engine_nb_slot = engine_2x1
 				wings_slot = low_dihedral_wing
 				tail_slot = adi_t_tail
+				aircraft_role_slot = tac_bomb_role
 			}
 		}
 		create_equipment_variant = {
@@ -1141,6 +1152,7 @@ if = {
 				wings_slot = low_trapezoid_wing
 				tail_slot = adi_twin_tail
 				fuselage_slot = fuselage_drop
+				aircraft_role_slot = tac_bomb_role
 			}
 		}
 		create_equipment_variant = {
@@ -1157,6 +1169,7 @@ if = {
 				wings_slot = low_trapezoid_wing
 				tail_slot = adi_twin_tail
 				fuselage_slot = fuselage_drop
+				aircraft_role_slot = cas_role
 			}
 			icon = "GFX_FRA_CAS2_medium"
 		}
@@ -1172,6 +1185,7 @@ if = {
 				wings_slot = fuselage_inverted_gull_wing
 				tail_slot = adi_twin_tail
 				fuselage_slot = empty
+				aircraft_role_slot = naval_bomber_role
 			}
 			icon = "GFX_FRA_CAS1_medium"
 		}
@@ -1188,6 +1202,7 @@ if = {
 				wings_slot = low_dihedral_wing
 				tail_slot = adi_twin_tail
 				fuselage_slot = empty
+				aircraft_role_slot = cas_role
 			}
 			icon = "GFX_FRA_heavy_fighter1_medium"
 		}
