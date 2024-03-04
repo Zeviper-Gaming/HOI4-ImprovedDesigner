@@ -3533,15 +3533,23 @@ equipment_modules = {
 	# Roles
 	fighter_role = {
 		abbreviation = "r_figt"
-		category = aircraft_role_2
+		category = aircraft_role_small
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
 
 		xp_cost = 0
 	}
+	heavy_fighter_role = {
+		abbreviation = "r_figt"
+		category = aircraft_role_medium
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = heavy_fighter
+
+		xp_cost = 0
+	}
 	interceptor_role = {
 		abbreviation = "r_inter"
-		category = aircraft_role_1
+		category = aircraft_role_small
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = interceptor
 
@@ -3549,7 +3557,7 @@ equipment_modules = {
 	}
 	cas_role = {
 		abbreviation = "r_cas"
-		category = aircraft_role_1
+		category = aircraft_role_small
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
 
@@ -3557,7 +3565,7 @@ equipment_modules = {
 	}
 	naval_bomber_role = {
 		abbreviation = "r_nav_b"
-		category = aircraft_role_2
+		category = aircraft_role_medium
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = naval_bomber
 
@@ -3565,7 +3573,7 @@ equipment_modules = {
 	}
 	suicide_role = {
 		abbreviation = "r_suic"
-		category = aircraft_role_1
+		category = aircraft_role_small
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = suicide
 
@@ -3573,7 +3581,7 @@ equipment_modules = {
 	}
 	scout_role = {
 		abbreviation = "r_scout"
-		category = aircraft_role_2
+		category = aircraft_role_medium
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = scout_plane
 
@@ -3581,7 +3589,7 @@ equipment_modules = {
 	}
 	tac_bomb_role = {
 		abbreviation = "r_tac_bomb"
-		category = aircraft_role_3
+		category = aircraft_role_heavy
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = tactical_bomber
 
@@ -3589,7 +3597,7 @@ equipment_modules = {
 	}
 	maritime_pat_role = {
 		abbreviation = "r_mar_pat"
-		category = aircraft_role_3
+		category = aircraft_role_heavy
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = maritime_patrol_plane
 
@@ -3597,7 +3605,7 @@ equipment_modules = {
 	}
 	strat_bomb_role = {
 		abbreviation = "r_strat_bomb"
-		category = aircraft_role_3
+		category = aircraft_role_heavy
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = strategic_bomber
 

@@ -1019,6 +1019,7 @@ technologies = {
 			lmg_defense_turret_2x
 
 			fighter_role
+			heavy_fighter_role
 			interceptor_role
 		}
 		

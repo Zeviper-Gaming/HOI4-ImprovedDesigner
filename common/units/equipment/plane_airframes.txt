@@ -74,7 +74,7 @@ equipments = {
 					schraege_cat
 					plane_special_module_defense_turret
 					tac_weapon
-					strat_weapon
+					
 
 				}
 			}
@@ -95,7 +95,7 @@ equipments = {
 					schraege_cat
 					plane_special_module_defense_turret
 					tac_weapon
-					strat_weapon
+
 				}
 			}
 			fixed_weapon_slot_2 = {
@@ -113,7 +113,7 @@ equipments = {
 					schraege_cat
 					plane_special_module_defense_turret
 					tac_weapon
-					strat_weapon
+
 				}
 			}
 			fixed_weapon_slot_3 = {
@@ -131,7 +131,7 @@ equipments = {
 					schraege_cat
 					plane_special_module_defense_turret
 					tac_weapon
-					strat_weapon
+
 				}
 			}
 			fixed_weapon_slot_4 = {
@@ -149,7 +149,7 @@ equipments = {
 					schraege_cat
 					plane_special_module_defense_turret
 					tac_weapon
-					strat_weapon
+
 				}
 			}
 			fixed_weapon_slot_5 = {
@@ -167,7 +167,7 @@ equipments = {
 					schraege_cat
 					plane_special_module_defense_turret
 					tac_weapon
-					strat_weapon
+
 				}
 			}
 			fixed_weapon_slot_6 = {
@@ -185,7 +185,7 @@ equipments = {
 					schraege_cat
 					plane_special_module_defense_turret
 					tac_weapon
-					strat_weapon
+
 				}
 			}
 			# Ligne 4 - Special modules
@@ -308,7 +308,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			
+
 			# Ligne 2 - Construction modules
 			wings_slot = {
 				required = yes
@@ -353,7 +353,7 @@ equipments = {
 					construction_module
 				}
 			}
-			
+
 			# Ligne 3 - Engines and role
 			engine_type_slot = {
 				required = yes
@@ -374,11 +374,11 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
-			
+
 			# Ligne 4 - Power and reliability
 			engine_power_slot = {
 				required = no
@@ -392,7 +392,7 @@ equipments = {
 					plane_engine_reliability
 				}
 			}
-			
+
 		}
 		
 		module_count_limit = {
@@ -863,7 +863,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			
+
 			# Ligne 2 - Construction modules
 			wings_slot = {
 				required = yes
@@ -930,8 +930,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
@@ -1271,8 +1271,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
@@ -1612,8 +1612,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
@@ -1953,8 +1953,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
@@ -2318,8 +2318,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
@@ -2872,8 +2872,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
@@ -3212,8 +3212,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
@@ -3553,8 +3553,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
@@ -3893,8 +3893,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
@@ -4264,8 +4264,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
@@ -4827,8 +4827,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
@@ -5168,8 +5168,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
@@ -5509,8 +5509,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
@@ -5850,8 +5850,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
@@ -6898,8 +6898,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
@@ -7239,8 +7239,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
@@ -7580,8 +7580,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
@@ -7921,8 +7921,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_1
-					aircraft_role_2
+					aircraft_role_small
+					aircraft_role_medium
 				}
 			} # Role
 			
