@@ -4478,6 +4478,8 @@ equipments = {
 				allowed_module_categories = {
 					plane_engine_number_1
 					plane_engine_number_2
+					plane_engine_number_3
+					plane_engine_number_4
 				}
 			}
 			aircraft_role_slot = {
@@ -5071,6 +5073,8 @@ equipments = {
 				allowed_module_categories = {
 					plane_engine_number_1
 					plane_engine_number_2
+					plane_engine_number_3
+					plane_engine_number_4
 				}
 			}
 			aircraft_role_slot = {
@@ -5442,6 +5446,8 @@ equipments = {
 				allowed_module_categories = {
 					plane_engine_number_1
 					plane_engine_number_2
+					plane_engine_number_3
+					plane_engine_number_4
 				}
 			}
 			aircraft_role_slot = {
@@ -5813,6 +5819,8 @@ equipments = {
 				allowed_module_categories = {
 					plane_engine_number_1
 					plane_engine_number_2
+					plane_engine_number_3
+					plane_engine_number_4
 				}
 			}
 			aircraft_role_slot = {
@@ -6184,6 +6192,8 @@ equipments = {
 				allowed_module_categories = {
 					plane_engine_number_1
 					plane_engine_number_2
+					plane_engine_number_3
+					plane_engine_number_4
 				}
 			}
 			aircraft_role_slot = {
@@ -6566,13 +6576,16 @@ equipments = {
 			engine_nb_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_engine_number_1
 					plane_engine_number_2
+					plane_engine_number_3
+					plane_engine_number_4
+					plane_engine_number_6
 				}
 			}
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
+					aircraft_role_medium
 					aircraft_role_heavy
 				}
 			} # Role
@@ -7289,13 +7302,16 @@ equipments = {
 			engine_nb_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_engine_number_1
 					plane_engine_number_2
+					plane_engine_number_3
+					plane_engine_number_4
+					plane_engine_number_6
 				}
 			}
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
+					aircraft_role_medium
 					aircraft_role_heavy
 				}
 			} # Role
@@ -7659,13 +7675,16 @@ equipments = {
 			engine_nb_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_engine_number_1
 					plane_engine_number_2
+					plane_engine_number_3
+					plane_engine_number_4
+					plane_engine_number_6
 				}
 			}
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
+					aircraft_role_medium
 					aircraft_role_heavy
 				}
 			} # Role
@@ -8029,13 +8048,16 @@ equipments = {
 			engine_nb_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_engine_number_1
 					plane_engine_number_2
+					plane_engine_number_3
+					plane_engine_number_4
+					plane_engine_number_6
 				}
 			}
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
+					aircraft_role_medium
 					aircraft_role_heavy
 				}
 			} # Role
@@ -8399,13 +8421,16 @@ equipments = {
 			engine_nb_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_engine_number_1
 					plane_engine_number_2
+					plane_engine_number_3
+					plane_engine_number_4
+					plane_engine_number_6
 				}
 			}
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
+					aircraft_role_medium
 					aircraft_role_heavy
 				}
 			} # Role

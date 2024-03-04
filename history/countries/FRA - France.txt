@@ -636,7 +636,8 @@ if = {
 			engine_type_slot = rotating_engine_2
 			engine_nb_slot = engine_2x1
 			wings_slot = high_rectangular_wing
-			tail_slot = tac_bomb_role
+			tail_slot = empty
+			aircraft_role_slot = tac_bomb_role
 		}
 		icon = "GFX_FRA_early_bomber_medium"
 	}
