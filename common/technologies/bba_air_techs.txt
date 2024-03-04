@@ -790,11 +790,11 @@ technologies = {
 					torpedo_mounting
 					medium_bomb_bay_cluster_bombs
 					small_cluster_bombs
-			
-					adi_cas_role
-					adi_naval_bomber_role
-					adi_tac_bomb_role
-					adi_strat_bomb_role
+
+			cas_role
+			naval_bomber_role
+			tac_bomb_role
+			strat_bomb_role
 		}
 			
 		research_cost = 1
@@ -978,8 +978,8 @@ technologies = {
 	photo_reconnaisance = {
 		enable_equipment_modules = {
 			recon_camera
-			
-			adi_scout_role
+
+			scout_role
 		}
 		
 		research_cost = 1
@@ -1017,9 +1017,10 @@ technologies = {
 			light_mg_4x
 			lmg_defense_turret
 			lmg_defense_turret_2x
-			
-			adi_fighter_role
-			adi_interceptor_role
+
+			fighter_role
+			heavy_fighter_role
+			interceptor_role
 		}
 		
 		research_cost = 1
@@ -2066,15 +2067,15 @@ technologies = {
 			NACA_cowling
 			
 			# todo find pictures for just below
-			fuselage_low_trapezoid_short_wing
-			fuselage_high_rectangular_wing
-			fuselage_low_rectangular_wing
-			fuselage_biplane
+			low_trapezoid_short_wing
+			high_rectangular_wing
+			low_rectangular_wing
+			biplane_wing
 			fuselage_twin
-			fuselage_high_anhedral
-			fuselage_high_dihedral
-			fuselage_low_dihedral
-			fuselage_high_gull
+			high_anhedral_wing
+			high_dihedral_wing
+			low_dihedral_wing
+			high_gull_wing
 			fuselage_bi
 			fuselage_jug
 			fuselage_drop
@@ -2083,15 +2084,15 @@ technologies = {
 			adi_twin_boom
 			adi_twin_tail
 
-			fuselage_elliptoid_wing
-			fuselage_low_trapezoid_wing
+			low_elliptoid_wing
+			low_trapezoid_wing
 			fuselage_trapezoid_wing
 			fuselage_inverted_gull_wing
 			# todo deplacer dans d'autres techs
-			fuselage_swept_wing
+			swept_wing
 			fuselage_flying_wing
-			
-			adi_maritime_pat_role
+
+			maritime_pat_role
 		}
 		
 		research_cost = 1
@@ -2136,7 +2137,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			fixed_explosive_charge
-			adi_suicide_role
+			suicide_role
 		}
 				
 		research_cost = 1.5 #Carrier Variant
