@@ -615,7 +615,7 @@ if = {
 			engine_type_slot = rotating_engine_1
 			engine_nb_slot = engine_1x1
 			fixed_special_slot_0 = floats
-			wings_slot = fuselage_high_rectangular_wing
+			wings_slot = high_rectangular_wing
 			tail_slot = adi_t_tail
 		}
 		icon = "GFX_FRA_naval_bomber1_medium"
@@ -629,7 +629,7 @@ if = {
 			fixed_weapon_slot_2 = lmg_defense_turret
 			engine_type_slot = rotating_engine_2
 			engine_nb_slot = engine_2x1
-			wings_slot = fuselage_high_rectangular_wing
+			wings_slot = high_rectangular_wing
 			tail_slot = adi_t_tail
 		}
 		icon = "GFX_FRA_early_bomber_medium"

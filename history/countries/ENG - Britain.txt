@@ -1376,7 +1376,7 @@ if = {
 			modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
 				engine_type_slot = rotating_engine_2
-				engine_type_slot = engine_2x1
+				engine_nb_slot = engine_2x1
 				fixed_auxiliary_weapon_slot_4 = lmg_defense_turret
 				wings_slot = low_trapezoid_wing
 				tail_slot = adi_t_tail
@@ -1773,7 +1773,6 @@ if = {
 				tail_slot = empty
 				fuselage_slot = empty
 				fixed_main_weapon_slot = light_mg_4x
-				engine_type_slot = engine_2_2x
 				special_type_slot_1 = lmg_defense_turret
 			}
 			icon = "GFX_ENG_heavy_fighter1_medium"

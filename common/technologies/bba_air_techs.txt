@@ -790,11 +790,11 @@ technologies = {
 					torpedo_mounting
 					medium_bomb_bay_cluster_bombs
 					small_cluster_bombs
-			
-					adi_cas_role
-					adi_naval_bomber_role
-					adi_tac_bomb_role
-					adi_strat_bomb_role
+
+			cas_role
+			naval_bomber_role
+			tac_bomb_role
+			strat_bomb_role
 		}
 			
 		research_cost = 1
@@ -978,8 +978,8 @@ technologies = {
 	photo_reconnaisance = {
 		enable_equipment_modules = {
 			recon_camera
-			
-			adi_scout_role
+
+			scout_role
 		}
 		
 		research_cost = 1
@@ -1017,9 +1017,9 @@ technologies = {
 			light_mg_4x
 			lmg_defense_turret
 			lmg_defense_turret_2x
-			
-			adi_fighter_role
-			adi_interceptor_role
+
+			fighter_role
+			interceptor_role
 		}
 		
 		research_cost = 1
@@ -2090,8 +2090,8 @@ technologies = {
 			# todo deplacer dans d'autres techs
 			swept_wing
 			fuselage_flying_wing
-			
-			adi_maritime_pat_role
+
+			maritime_pat_role
 		}
 		
 		research_cost = 1
@@ -2136,7 +2136,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			fixed_explosive_charge
-			adi_suicide_role
+			suicide_role
 		}
 				
 		research_cost = 1.5 #Carrier Variant
