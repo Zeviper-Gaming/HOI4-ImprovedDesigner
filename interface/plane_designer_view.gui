@@ -205,7 +205,7 @@ guiTypes = {
 			}
 			positionType = {
 				name = "pos_custom_module_slot_window_9"
-				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_2 }
+				position = { x=@fixed_btn_mod_col_0 y=150 }
 			}
 			
 			# Ligne 4 - Weapons
@@ -236,6 +236,14 @@ guiTypes = {
 			positionType = {
 				name = "pos_fixed_module_slot_window_6"
 				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_3 }
+			}
+			positionType = {
+				name = "pos_fixed_module_slot_window_14"
+				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_2 }
+			}
+			positionType = {
+				name = "pos_fixed_module_slot_window_15"
+				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_2 }
 			}
 			# Ligne puissance moteur et fiabilité
 			positionType = {
