@@ -187,24 +187,24 @@ guiTypes = {
 				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_1 }
 			}
 			positionType = {
-				name = "pos_custom_module_slot_window_5"
+				name = "pos_fixed_module_slot_window_16"
 				position = { x=@fixed_btn_mod_col_5 y=@fixed_btn_mod_row_1 }
 			}
 			positionType = {
-				name = "pos_custom_module_slot_window_6"
+				name = "pos_fixed_module_slot_window_17"
 				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_1 }
 			}
 			# Ligne 3 - Engine and role
 			positionType = {
-				name = "pos_custom_module_slot_window_7"
+				name = "pos_custom_module_slot_window_5"
 				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_2 }
 			}
 			positionType = {
-				name = "pos_custom_module_slot_window_8"
+				name = "pos_custom_module_slot_window_6"
 				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_2 }
 			}
 			positionType = {
-				name = "pos_custom_module_slot_window_9"
+				name = "pos_custom_module_slot_window_7"
 				position = { x=@fixed_btn_mod_col_0 y=150 }
 			}
 			
@@ -247,11 +247,11 @@ guiTypes = {
 			}
 			# Ligne puissance moteur et fiabilité
 			positionType = {
-				name = "pos_custom_module_slot_window_10"
+				name = "pos_custom_module_slot_window_8"
 				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_4 }
 			}
 			positionType = {
-				name = "pos_custom_module_slot_window_11"
+				name = "pos_custom_module_slot_window_9"
 				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_4 }
 			}
 		}

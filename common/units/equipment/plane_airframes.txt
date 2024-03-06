@@ -347,7 +347,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -961,7 +961,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -1323,7 +1323,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -1685,7 +1685,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -2047,7 +2047,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -2433,7 +2433,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -3008,7 +3008,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -3369,7 +3369,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -3731,7 +3731,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -4092,7 +4092,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -4493,7 +4493,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -5088,7 +5088,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -5461,7 +5461,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -5834,7 +5834,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -6207,7 +6207,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -6593,7 +6593,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -7319,7 +7319,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -7692,7 +7692,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -8065,7 +8065,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -8438,7 +8438,7 @@ equipments = {
 					construction_module
 				}
 			}
-			construction_slot_4 = {
+			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
