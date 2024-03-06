@@ -78,7 +78,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -98,7 +98,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -116,7 +116,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -134,7 +134,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -152,7 +152,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -170,7 +170,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -189,7 +189,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -206,7 +206,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -223,7 +223,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -240,7 +240,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -257,7 +257,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -274,7 +274,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -291,7 +291,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -341,16 +341,53 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
+				}
+			}
+
+			fixed_turret_belly_slot = {
+				required = no
+				allowed_module_categories = {
+					fighter_weapon
+					cas_weapon
+					nav_bomber_weapon
+					mine_warfare_offense
+					plane_special_module_small
+					plane_armor_module_small
+					plane_construction_type_module_small
+					plane_special_module_small
+					plane_aero_module_small
+					schraege_cat
+					plane_special_module_defense_turret
+					tac_weapon
+
+				}
+			}
+			fixed_turret_tail_slot = {
+				required = no
+				allowed_module_categories = {
+					fighter_weapon
+					cas_weapon
+					nav_bomber_weapon
+					mine_warfare_offense
+					plane_special_module_small
+					plane_armor_module_small
+					plane_construction_type_module_small
+					plane_special_module_small
+					plane_aero_module_small
+					schraege_cat
+					plane_special_module_defense_turret
+					tac_weapon
+
 				}
 			}
 
@@ -655,7 +692,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -675,7 +712,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -693,7 +730,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -711,7 +748,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -729,7 +766,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -747,7 +784,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -766,7 +803,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -783,7 +820,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -800,7 +837,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -817,7 +854,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -834,7 +871,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -851,7 +888,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -868,7 +905,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -918,13 +955,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -1017,7 +1054,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1037,7 +1074,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1055,7 +1092,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1073,7 +1110,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1091,7 +1128,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1109,7 +1146,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1128,7 +1165,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1145,7 +1182,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1162,7 +1199,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1179,7 +1216,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1196,7 +1233,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1213,7 +1250,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1230,7 +1267,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1280,13 +1317,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -1379,7 +1416,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1399,7 +1436,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1417,7 +1454,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1435,7 +1472,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1453,7 +1490,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1471,7 +1508,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1490,7 +1527,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1507,7 +1544,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1524,7 +1561,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1541,7 +1578,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1558,7 +1595,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1575,7 +1612,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1592,7 +1629,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1642,13 +1679,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -1741,7 +1778,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1761,7 +1798,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1779,7 +1816,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1797,7 +1834,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1815,7 +1852,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1833,7 +1870,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -1852,7 +1889,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1869,7 +1906,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1886,7 +1923,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1903,7 +1940,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1920,7 +1957,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1937,7 +1974,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1954,7 +1991,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2004,13 +2041,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -2127,7 +2164,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -2147,7 +2184,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -2165,7 +2202,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -2183,7 +2220,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -2201,7 +2238,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -2219,7 +2256,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -2238,7 +2275,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2255,7 +2292,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2272,7 +2309,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2289,7 +2326,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2306,7 +2343,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2323,7 +2360,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2340,7 +2377,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2390,13 +2427,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -2702,7 +2739,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -2722,7 +2759,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -2740,7 +2777,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -2758,7 +2795,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -2776,7 +2813,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -2794,7 +2831,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -2813,7 +2850,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2830,7 +2867,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2847,7 +2884,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2864,7 +2901,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2881,7 +2918,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2898,7 +2935,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2915,7 +2952,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2965,13 +3002,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -3063,7 +3100,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3083,7 +3120,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3101,7 +3138,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3119,7 +3156,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3137,7 +3174,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3155,7 +3192,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3174,7 +3211,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3191,7 +3228,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3208,7 +3245,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3225,7 +3262,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3242,7 +3279,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3259,7 +3296,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3276,7 +3313,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3326,13 +3363,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -3425,7 +3462,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3445,7 +3482,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3463,7 +3500,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3481,7 +3518,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3499,7 +3536,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3517,7 +3554,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3536,7 +3573,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3553,7 +3590,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3570,7 +3607,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3587,7 +3624,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3604,7 +3641,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3621,7 +3658,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3638,7 +3675,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3688,13 +3725,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -3786,7 +3823,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3806,7 +3843,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3824,7 +3861,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3842,7 +3879,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3860,7 +3897,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3878,7 +3915,7 @@ equipments = {
 
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -3897,7 +3934,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3914,7 +3951,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3931,7 +3968,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3948,7 +3985,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3965,7 +4002,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3982,7 +4019,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3999,7 +4036,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -4049,13 +4086,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -4177,7 +4214,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -4197,7 +4234,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -4217,7 +4254,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -4237,7 +4274,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -4257,7 +4294,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -4277,7 +4314,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -4298,7 +4335,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -4315,7 +4352,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -4332,7 +4369,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -4349,7 +4386,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -4366,7 +4403,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -4383,7 +4420,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -4400,7 +4437,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -4450,13 +4487,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -4772,7 +4809,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -4792,7 +4829,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -4812,7 +4849,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -4832,7 +4869,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -4852,7 +4889,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -4872,7 +4909,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -4893,7 +4930,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -4910,7 +4947,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -4927,7 +4964,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -4944,7 +4981,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -4961,7 +4998,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -4978,7 +5015,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -4995,7 +5032,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -5045,13 +5082,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -5145,7 +5182,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -5165,7 +5202,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -5185,7 +5222,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -5205,7 +5242,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -5225,7 +5262,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -5245,7 +5282,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -5266,7 +5303,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -5283,7 +5320,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -5300,7 +5337,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -5317,7 +5354,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -5334,7 +5371,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -5351,7 +5388,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -5368,7 +5405,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -5418,13 +5455,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -5518,7 +5555,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -5538,7 +5575,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -5558,7 +5595,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -5578,7 +5615,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -5598,7 +5635,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -5618,7 +5655,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -5639,7 +5676,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -5656,7 +5693,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -5673,7 +5710,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -5690,7 +5727,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -5707,7 +5744,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -5724,7 +5761,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -5741,7 +5778,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -5791,13 +5828,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -5891,7 +5928,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -5911,7 +5948,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -5931,7 +5968,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -5951,7 +5988,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -5971,7 +6008,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -5991,7 +6028,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -6012,7 +6049,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -6029,7 +6066,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -6046,7 +6083,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -6063,7 +6100,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -6080,7 +6117,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -6097,7 +6134,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -6114,7 +6151,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -6164,13 +6201,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -6277,7 +6314,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -6297,7 +6334,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -6317,7 +6354,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -6337,7 +6374,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -6357,7 +6394,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -6377,7 +6414,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -6398,7 +6435,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -6415,7 +6452,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -6432,7 +6469,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -6449,7 +6486,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -6466,7 +6503,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -6483,7 +6520,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -6500,7 +6537,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -6550,13 +6587,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -7003,7 +7040,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7023,7 +7060,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7043,7 +7080,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7063,7 +7100,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7083,7 +7120,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7103,7 +7140,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7124,7 +7161,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7141,7 +7178,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7158,7 +7195,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7175,7 +7212,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7192,7 +7229,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7209,7 +7246,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7226,7 +7263,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7276,13 +7313,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -7376,7 +7413,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7396,7 +7433,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7416,7 +7453,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7436,7 +7473,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7456,7 +7493,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7476,7 +7513,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7497,7 +7534,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7514,7 +7551,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7531,7 +7568,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7548,7 +7585,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7565,7 +7602,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7582,7 +7619,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7599,7 +7636,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7649,13 +7686,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -7749,7 +7786,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7769,7 +7806,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7789,7 +7826,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7809,7 +7846,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7829,7 +7866,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7849,7 +7886,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -7870,7 +7907,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7887,7 +7924,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7904,7 +7941,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7921,7 +7958,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7938,7 +7975,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7955,7 +7992,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -7972,7 +8009,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -8022,13 +8059,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
@@ -8122,7 +8159,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_1 = {
+			fixed_wing_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -8142,7 +8179,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_2 = {
+			fixed_wing_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -8162,7 +8199,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_3 = {
+			fixed_wing_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -8182,7 +8219,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_4 = {
+			fixed_flaps_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -8202,7 +8239,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_5 = {
+			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -8222,7 +8259,7 @@ equipments = {
 					strat_weapon
 				}
 			}
-			fixed_weapon_slot_6 = {
+			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
 					fighter_weapon
@@ -8243,7 +8280,7 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_special_slot_0 = {
+			fixed_under_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -8260,7 +8297,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_1 = {
+			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -8277,7 +8314,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_2 = {
+			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -8294,7 +8331,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_3 = {
+			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -8311,7 +8348,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_4 = {
+			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -8328,7 +8365,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_5 = {
+			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -8345,7 +8382,7 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-			fixed_special_slot_6 = {
+			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -8395,13 +8432,13 @@ equipments = {
 				allowed_module_categories = {
 				}
 			}
-			construction_slot_2 = {
+			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
 					construction_module
 				}
 			}
-			construction_slot_3 = {
+			construction_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					construction_module

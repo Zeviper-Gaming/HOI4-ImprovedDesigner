@@ -1669,8 +1669,8 @@ if = {
 			type = cv_small_plane_airframe_0
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
-				fixed_weapon_slot_1 = empty
-				fixed_weapon_slot_4 = empty
+				fixed_wing_slot_1 = empty
+				fixed_flaps_slot = empty
 				engine_type_slot = rotating_engine_1
 				engine_nb_slot = engine_1x1
 				wings_slot = biplane_wing
@@ -1683,15 +1683,15 @@ if = {
 			type = cv_small_plane_cas_airframe_1
 			modules = {
 				fixed_main_weapon_slot = bomb_locks
-				fixed_weapon_slot_1 = light_mg_4x
-				fixed_weapon_slot_4 = empty
+				fixed_wing_slot_1 = light_mg_4x
+				fixed_flaps_slot = empty
 				engine_type_slot = rotating_engine_2
 				engine_nb_slot = engine_1x1
 				wings_slot = low_trapezoid_wing
 				tail_slot = adi_t_tail
 				fuselage_slot = empty
-				fixed_special_slot_0 = dive_brakes_small
-				fixed_special_slot_0 = fuel_tanks_small
+				fixed_under_fuselage_slot = dive_brakes_small
+				fixed_under_fuselage_slot = fuel_tanks_small
 			}
 			icon = "GFX_ENG_CAS1_medium"
 		}
@@ -1700,8 +1700,8 @@ if = {
 			type = cv_small_plane_naval_bomber_airframe_1
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
-				fixed_weapon_slot_1 = empty
-				fixed_weapon_slot_4 = empty
+				fixed_wing_slot_1 = empty
+				fixed_flaps_slot = empty
 				engine_type_slot = rotating_engine_1
 				engine_nb_slot = engine_1x1
 				wings_slot = biplane_wing
@@ -1715,14 +1715,14 @@ if = {
 			type = small_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = empty
-				fixed_weapon_slot_1 = empty
-				fixed_weapon_slot_4 = empty
+				fixed_wing_slot_1 = empty
+				fixed_flaps_slot = empty
 				wings_slot = low_elliptoid_wing
 				tail_slot = adi_t_tail
 				fuselage_slot = empty
 
 				fixed_main_weapon_slot = light_mg_4x
-				fixed_weapon_slot_1 = light_mg_4x
+				fixed_wing_slot_1 = light_mg_4x
 				engine_type_slot = V_engine_2
 				engine_nb_slot = engine_1x1
 			}
@@ -1739,8 +1739,8 @@ if = {
 				fuselage_slot = empty
 
 				fixed_main_weapon_slot = light_mg_4x
-				fixed_weapon_slot_1 = light_mg_4x
-				fixed_special_slot_1 = empty
+				fixed_wing_slot_1 = light_mg_4x
+				fixed_front_cockpit_slot = empty
 			}
 			icon = "GFX_ENG_fighter2_medium"
 		}
@@ -1755,8 +1755,8 @@ if = {
 				fuselage_slot = empty
 
 				fixed_main_weapon_slot = small_bomb_bay
-				fixed_weapon_slot_1 = bomb_lock
-				fixed_special_slot_1 = empty
+				fixed_wing_slot_1 = bomb_lock
+				fixed_front_cockpit_slot = empty
 			}
 			icon = "GFX_ENG_light_plane_1_medium"
 		}
@@ -1765,8 +1765,8 @@ if = {
 			type = medium_plane_fighter_airframe_1
 			modules = {
 				fixed_main_weapon_slot = empty
-				fixed_weapon_slot_1 = empty
-				fixed_weapon_slot_4 = empty
+				fixed_wing_slot_1 = empty
+				fixed_flaps_slot = empty
 				engine_type_slot = empty
 				engine_nb_slot = engine_1x
 				wings_slot = empty
@@ -1788,8 +1788,8 @@ if = {
 				fuselage_slot = fuselage_drop
 
 				fixed_main_weapon_slot = medium_bomb_bay
-				fixed_weapon_slot_1 = torpedo_mounting
-				fixed_special_slot_1 = lmg_defense_turret
+				fixed_wing_slot_1 = torpedo_mounting
+				fixed_front_cockpit_slot = lmg_defense_turret
 			}
 		}
 		create_equipment_variant = {
@@ -1802,9 +1802,9 @@ if = {
 				tail_slot = adi_t_tail
 				fuselage_slot = empty
 				fixed_main_weapon_slot = medium_bomb_bay
-				fixed_weapon_slot_1 = medium_bomb_bay
-				fixed_special_slot_1 = lmg_defense_turret_2x
-				fixed_special_slot_2 = lmg_defense_turret
+				fixed_wing_slot_1 = medium_bomb_bay
+				fixed_front_cockpit_slot = lmg_defense_turret_2x
+				fixed_rear_cockpit_slot = lmg_defense_turret
 
 			}
 			icon = "GFX_ENG_tactical_bomber1_medium"
@@ -1820,11 +1820,11 @@ if = {
 				fuselage_slot = flying_boat_large
 
 				fixed_main_weapon_slot = torpedo_mounting 
-				fixed_weapon_slot_1 = empty
-				fixed_special_slot_1 = lmg_defense_turret_2x
-				fixed_special_slot_2 = lmg_defense_turret_2x
-				fixed_special_slot_3 = lmg_defense_turret_2x
-				fixed_special_slot_5 = self_sealing_fuel_tanks_large
+				fixed_wing_slot_1 = empty
+				fixed_front_cockpit_slot = lmg_defense_turret_2x
+				fixed_rear_cockpit_slot = lmg_defense_turret_2x
+				fixed_front_fuselage_slot = lmg_defense_turret_2x
+				fixed_intern_slot_1 = self_sealing_fuel_tanks_large
 
 			}
 			icon = "GFX_ENG_heavy_plane_1_medium"
@@ -1840,12 +1840,12 @@ if = {
 				fuselage_slot = empty
 
 				fixed_main_weapon_slot = large_bomb_bay
-				fixed_weapon_slot_1 = large_bomb_bay
-				fixed_special_slot_1 = lmg_defense_turret_2x
-				fixed_special_slot_2 = lmg_defense_turret
-				fixed_special_slot_3 = empty
-				fixed_special_slot_4 = empty
-				fixed_special_slot_5 = self_sealing_fuel_tanks_large
+				fixed_wing_slot_1 = large_bomb_bay
+				fixed_front_cockpit_slot = lmg_defense_turret_2x
+				fixed_rear_cockpit_slot = lmg_defense_turret
+				fixed_front_fuselage_slot = empty
+				fixed_mid_fuselage_slot = empty
+				fixed_intern_slot_1 = self_sealing_fuel_tanks_large
 
 			}
 			icon = "GFX_ENG_strategic_bomber1_medium"
@@ -1860,7 +1860,7 @@ if = {
 				tail_slot = twin
 				fuselage_slot = empty
 				fixed_main_weapon_slot = medium_bomb_bay
-				fixed_special_slot_1 = lmg_defense_turret_2x
+				fixed_front_cockpit_slot = lmg_defense_turret_2x
 			}
 		}
 	}
