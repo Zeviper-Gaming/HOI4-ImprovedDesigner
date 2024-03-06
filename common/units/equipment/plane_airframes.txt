@@ -309,6 +309,44 @@ equipments = {
 				}
 			}
 
+
+			fixed_turret_belly_slot = {
+				required = no
+				allowed_module_categories = {
+					fighter_weapon
+					cas_weapon
+					nav_bomber_weapon
+					mine_warfare_offense
+					plane_special_module_small
+					plane_armor_module_small
+					plane_construction_type_module_small
+					plane_special_module_small
+					plane_aero_module_small
+					schraege_cat
+					plane_special_module_defense_turret
+					tac_weapon
+
+				}
+			}
+			fixed_turret_tail_slot = {
+				required = no
+				allowed_module_categories = {
+					fighter_weapon
+					cas_weapon
+					nav_bomber_weapon
+					mine_warfare_offense
+					plane_special_module_small
+					plane_armor_module_small
+					plane_construction_type_module_small
+					plane_special_module_small
+					plane_aero_module_small
+					schraege_cat
+					plane_special_module_defense_turret
+					tac_weapon
+
+				}
+			}
+
 			# Ligne 2 - Construction modules
 			wings_slot = {
 				required = yes
@@ -354,42 +392,6 @@ equipments = {
 				}
 			}
 
-			fixed_turret_belly_slot = {
-				required = no
-				allowed_module_categories = {
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					plane_special_module_small
-					plane_armor_module_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_aero_module_small
-					schraege_cat
-					plane_special_module_defense_turret
-					tac_weapon
-
-				}
-			}
-			fixed_turret_tail_slot = {
-				required = no
-				allowed_module_categories = {
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					plane_special_module_small
-					plane_armor_module_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_aero_module_small
-					schraege_cat
-					plane_special_module_defense_turret
-					tac_weapon
-
-				}
-			}
 
 			# Ligne 3 - Engines and role
 			engine_type_slot = {
