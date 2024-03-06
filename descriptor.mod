@@ -1,13 +1,12 @@
-version="1"
+version="Alpha"
 tags={
 	"Technologies"
 	"Graphics"
 	"Military"
 	"Balance"
 }
-name="Reworked Air Designer The Road to 56 Version"
+name="ZV Improved Airplanes designer"
 dependencies={
-	"The Road to 56"
 }
 supported_version="1.13.*"
 path="G:/Reworked_Air_Designer_Road_to_56"
