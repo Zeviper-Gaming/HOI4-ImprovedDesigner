@@ -69,5 +69,22 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/plane_module_slot_rear.dds"
 	}
 
+	spriteType = {
+		name = "GFX_EMSI_fixed_turret_tail_back"
+		textureFile = "gfx/interface/equipmentdesigner/planes/designer/slot_turrets.dds"
+	}
+	spriteType = {
+		name = "GFX_EMSI_fixed_turret_nose_slot"
+		textureFile = "gfx/interface/equipmentdesigner/planes/designer/slot_turrets.dds"
+	}
+	spriteType = {
+		name = "GFX_EMSI_fixed_turret_belly_slot"
+		textureFile = "gfx/interface/equipmentdesigner/planes/designer/slot_turrets.dds"
+	}
+	spriteType = {
+		name = "GFX_EMSI_fixed_turret_tail_slot"
+		textureFile = "gfx/interface/equipmentdesigner/planes/designer/slot_turrets.dds"
+	}
+
 
 }
