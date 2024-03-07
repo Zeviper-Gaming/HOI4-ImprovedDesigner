@@ -17,16 +17,18 @@
  EQ_MOD_SLOT_fixed_intern_slot_1_TITLE:0 "Module interne"
  EQ_MOD_SLOT_fixed_intern_slot_2_TITLE:0 "Module interne"
  EQ_MOD_SLOT_fixed_intern_slot_3_TITLE:0 "Module interne"
- EQ_MOD_SLOT_fixed_intern_slot_4_TITLE:0 "§BModule interne§!"
+ EQ_MOD_SLOT_fixed_intern_slot_4_TITLE:0 "Module interne"
+
+ EQ_MOD_SLOT_wing_trapezoid_TITLE:0 "Aile trapezoidale"
+ EQ_MOD_SLOT_wing_elliptic_TITLE:0 "Aile elliptique (spitfire)"
 
  wing_trap_W:0 "Aile en W"
- wing_trap_low:0 "Aile bassse"
+ wing_trap_low:0 "Aile basse"
  wing_trap_high:0 "Aile haute"
  wing_ellip_high:0 "Aile haute"
  wing_ellip_low:0 "Aile bassse"
  
- wing_trapezoid_TITLE:0 "Aile trapezoidale"
- wing_elliptic_TITLE:0 "Aile elliptique (spitfire)"
+
 
  adi_schraege_musik:0 "Schraege Musik"
  adi_schraege_musik_desc:0 "La Schraege Musik est un dispositif de canons orrientés vers le ciel, elle permet d'abattres des bombardiers qui volent plus haut. Cela permet a l'avion de rester hors de porté des défenses des bombardiers qui ne sauront même pas ce qui les a touchés."
