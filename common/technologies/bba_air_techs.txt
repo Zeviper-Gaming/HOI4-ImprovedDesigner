@@ -790,11 +790,11 @@ technologies = {
 					torpedo_mounting
 					medium_bomb_bay_cluster_bombs
 					small_cluster_bombs
-			
-					adi_cas_role
-					adi_naval_bomber_role
-					adi_tac_bomb_role
-					adi_strat_bomb_role
+
+			cas_role
+			naval_bomber_role
+			tac_bomb_role
+			strat_bomb_role
 		}
 			
 		research_cost = 1
@@ -978,8 +978,8 @@ technologies = {
 	photo_reconnaisance = {
 		enable_equipment_modules = {
 			recon_camera
-			
-			adi_scout_role
+
+			scout_role
 		}
 		
 		research_cost = 1
@@ -1017,9 +1017,10 @@ technologies = {
 			light_mg_4x
 			lmg_defense_turret
 			lmg_defense_turret_2x
-			
-			adi_fighter_role
-			adi_interceptor_role
+
+			fighter_role
+			heavy_fighter_role
+			interceptor_role
 		}
 		
 		research_cost = 1
@@ -1323,6 +1324,64 @@ technologies = {
 		}
 	}
 
+	engine_reliability = {
+		enable_equipment_modules = {
+			reliability_85
+			reliability_115
+			reliability_130
+			reliability_150
+		}
+		research_cost = 0.5
+		start_year = 1930
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+			modifier = {
+				date > "1937.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1938.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1939.1.1"
+				factor = 3
+			}
+		}
+	}
+	
 	engines_1 = {
 
 		enable_equipment_modules = {
@@ -1341,11 +1400,6 @@ technologies = {
 			engine_power_120
 			engine_power_140
 			engine_power_160
-			
-			reliability_85
-			reliability_115
-			reliability_130
-			reliability_150
 		}
 		
 		research_cost = 1
@@ -1367,6 +1421,10 @@ technologies = {
 
 		path = {
 			leads_to_tech = aircraft_construction
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = engine_reliability
 			research_cost_coeff = 1
 		}
 
@@ -2008,16 +2066,16 @@ technologies = {
 			troop_compartment
 			NACA_cowling
 			
-			fuselage_low_trapezoid_short_wing
-			fuselage_high_wing
-			fuselage_low_wing
-			fuselage_biplane
+			# todo find pictures for just below
+			low_trapezoid_short_wing
+			high_rectangular_wing
+			low_rectangular_wing
+			biplane_wing
 			fuselage_twin
-			fuselage_high_anhedral
-			fuselage_high_dihedral
-			fuselage_low_dihedral
-			fuselage_high_gull
-			
+			high_anhedral_wing
+			high_dihedral_wing
+			low_dihedral_wing
+			high_gull_wing
 			fuselage_bi
 			fuselage_jug
 			fuselage_drop
@@ -2026,15 +2084,15 @@ technologies = {
 			adi_twin_boom
 			adi_twin_tail
 
-			fuselage_elliptoid_wing
-			fuselage_low_trapezoid_wing
+			low_elliptoid_wing
+			low_trapezoid_wing
 			fuselage_trapezoid_wing
 			fuselage_inverted_gull_wing
 			# todo deplacer dans d'autres techs
-			fuselage_swept_wing
+			swept_wing
 			fuselage_flying_wing
-			
-			adi_maritime_pat_role
+
+			maritime_pat_role
 		}
 		
 		research_cost = 1
@@ -2079,7 +2137,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			fixed_explosive_charge
-			adi_suicide_role
+			suicide_role
 		}
 				
 		research_cost = 1.5 #Carrier Variant

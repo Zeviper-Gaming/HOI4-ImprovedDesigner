@@ -188,23 +188,23 @@ guiTypes = {
 			}
 			positionType = {
 				name = "pos_custom_module_slot_window_5"
-				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_1 }
+				position = { x=@fixed_btn_mod_col_5 y=@fixed_btn_mod_row_1 }
 			}
 			positionType = {
 				name = "pos_custom_module_slot_window_6"
-				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_1 }
+				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_1 }
 			}
 			# Ligne 3 - Engine and role
 			positionType = {
-				name = "pos_custom_module_slot_window_5"
+				name = "pos_custom_module_slot_window_7"
 				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_2 }
 			}
 			positionType = {
-				name = "pos_custom_module_slot_window_6"
+				name = "pos_custom_module_slot_window_8"
 				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_2 }
 			}
 			positionType = {
-				name = "pos_custom_module_slot_window_7"
+				name = "pos_custom_module_slot_window_9"
 				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_2 }
 			}
 			
@@ -239,11 +239,11 @@ guiTypes = {
 			}
 			# Ligne puissance moteur et fiabilité
 			positionType = {
-				name = "pos_custom_module_slot_window_8"
+				name = "pos_custom_module_slot_window_10"
 				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_4 }
 			}
 			positionType = {
-				name = "pos_custom_module_slot_window_9"
+				name = "pos_custom_module_slot_window_11"
 				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_4 }
 			}
 		}
@@ -281,7 +281,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "upgrade_assigned_industrial_org"
-			position = { x = 425 y = 310 }
+			position = { x = 425 y = 350 }
 			scale = 1.4
 			spriteType = "GFX_prod_line_target_strip"
 			frame = 2
@@ -290,7 +290,7 @@ guiTypes = {
 		buttonType = {
 			name = "design_team_button"
 			spriteType = "GFX_idea_slot_aircraft_manufacturer"
-			position = { x = 455 y = 300 }
+			position = { x = 455 y = 340 }
 		}
 
 		# right hand side, stats and mission adjusters
