@@ -17,7 +17,7 @@ spriteTypes = {
 #   graphics entry cannot be found with the slot's specific key.
 ###################################################
     spriteType = {
-		name = "GFX_EMSI_fixed_nose_slot"
+		name = "GFX_EMSI_fixed_main_weapon_slot"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/plane_module_slot_nose.dds"
 	}
 	spriteType = {
