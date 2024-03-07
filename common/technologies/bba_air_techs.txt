@@ -2067,15 +2067,13 @@ technologies = {
 			NACA_cowling
 			
 			# todo find pictures for just below
-			low_trapezoid_short_wing
-			high_rectangular_wing
-			low_rectangular_wing
-			biplane_wing
+			wing_trap_W
+			wing_trap_low
+			wing_trap_high
+			wing_ellip_high
+			wing_ellip_low
+
 			fuselage_twin
-			high_anhedral_wing
-			high_dihedral_wing
-			low_dihedral_wing
-			high_gull_wing
 			fuselage_bi
 			fuselage_jug
 			fuselage_drop

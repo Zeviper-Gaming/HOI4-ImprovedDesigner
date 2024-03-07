@@ -1,4 +1,4 @@
-﻿l_english:
+﻿l_french:
 
  EQ_MOD_SLOT_fixed_main_weapon_slot_TITLE:0 "Under the cockpit"
  EQ_MOD_SLOT_fixed_auxiliary_weapon_slot_1_TITLE:0 "Wing base"
@@ -19,6 +19,11 @@
  EQ_MOD_SLOT_special_type_slot_7_TITLE:0 "Auxiliary 2"
  EQ_MOD_SLOT_special_type_slot_8_TITLE:0 "Auxiliary 3"
 
+ wing_trap_W:0 "Aile en W"
+ wing_trap_low:0 "Aile bassse"
+ wing_trap_high:0 "Aile haute"
+ wing_ellip_high:0 "Aile haute"
+ wing_ellip_low:0 "Aile bassse"
 
  adi_fuselage_high:0 "Configuration ailes hautes"
  adi_fuselage_high_desc:0 "Avantage pour les reco et attaques navales, meilleurs fiabilité au détriment de la vitesse et des performances en combat aérien"
