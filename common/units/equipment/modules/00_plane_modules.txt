@@ -2847,8 +2847,8 @@ equipment_modules = {
 		xp_cost = 1
 	}
 
-	wing_low_trap = {
-		abbreviation = "low_trap"
+	wing_low_effil = {
+		abbreviation = "low_effil"
 		category = wing_low
 		sfx = sfx_ui_sd_module_turret
 
@@ -2889,8 +2889,8 @@ equipment_modules = {
 		}
 
 	}
-	wing_W_trap = {
-		abbreviation = "W_trap"
+	wing_W_effil = {
+		abbreviation = "W_effil"
 		category = wing_W
 		sfx = sfx_ui_sd_module_turret
 
@@ -2972,8 +2972,8 @@ equipment_modules = {
 		}
 
 	}
-	wing_high_trap = {
-		abbreviation = "high_trap"
+	wing_high_effil = {
+		abbreviation = "high_effil"
 		category = wing_high
 		sfx = sfx_ui_sd_module_turret
 

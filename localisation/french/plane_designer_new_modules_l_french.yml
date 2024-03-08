@@ -26,9 +26,9 @@
  EQ_MOD_SLOT_wing_W_TITLE:0 "Aile en W"
  EQ_MOD_SLOT_wing_W_TITLE_desc:0 ""
 
- wing_W_trap:0 "Aile W trapezoidale"
- wing_low_trap:0 "Aile basse trapezoidale"
- wing_high_trap:0 "Aile haute trapezoidale"
+ wing_W_effil:0 "Aile W effilée"
+ wing_low_effil:0 "Aile basse trapezoidale"
+ wing_high_effil:0 "Aile haute trapezoidale"
  wing_high_ellip:0 "Aile haute elliptique"
  wing_low_ellip:0 "Aile bassse elliptique"
 
@@ -66,13 +66,13 @@
  engine_power_160:0 "Puissance +60%"
  engine_power_160_desc:0 ""
 
- reliability_85:0 "Puissance -15%"
+ reliability_85:0 "Fiabilité -15%"
  reliability_85_desc:0 ""
- reliability_115:0 "Puissance +15%"
+ reliability_115:0 "Fiabilité +15%"
  reliability_115_desc:0 ""
- reliability_130:0 "Puissance +30%"
+ reliability_130:0 "Fiabilité +30%"
  reliability_130_desc:0 ""
- reliability_150:0 "Puissance +50%"
+ reliability_150:0 "Fiabilité +50%"
  reliability_150_desc:0 ""
 
  rotating_engine_1:0 "Rotating Engines I"

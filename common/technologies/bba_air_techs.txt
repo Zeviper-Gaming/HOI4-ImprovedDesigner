@@ -2067,9 +2067,9 @@ technologies = {
 			NACA_cowling
 			
 			# todo find pictures for just below
-			wing_W_trap
-			wing_low_trap
-			wing_high_trap
+			wing_W_effil
+			wing_low_effil
+			wing_high_effil
             wing_high_ellip
 			wing_low_ellip
 

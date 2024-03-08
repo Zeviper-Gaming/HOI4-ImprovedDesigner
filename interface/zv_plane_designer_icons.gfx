@@ -86,16 +86,16 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/slot_turrets.dds"
 	}
 	spriteType = {
-		name = "GFX_EMSI_wing_W_trap"
-		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_trapez.dds"
+		name = "GFX_EMSI_wing_W_effil"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_effil.dds"
 	}
 	spriteType = {
-		name = "GFX_EMSI_wing_low_trap"
-		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_trapez.dds"
+		name = "GFX_EMSI_wing_low_effil"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_effil.dds"
 	}
 	spriteType = {
-		name = "GFX_EMSI_wing_high_trap"
-		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_trapez.dds"
+		name = "GFX_EMSI_wing_high_effil"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_effil.dds"
 	}
 	spriteType = {
 		name = "GFX_EMSI_wing_high_ellip"
