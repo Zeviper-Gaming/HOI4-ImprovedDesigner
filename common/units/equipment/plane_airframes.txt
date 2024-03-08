@@ -231,8 +231,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -732,8 +734,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -1018,8 +1022,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -1304,8 +1310,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -1590,8 +1598,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -1900,8 +1910,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -2399,8 +2411,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -2684,8 +2698,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -2970,8 +2986,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -3255,8 +3273,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -3569,8 +3589,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -4076,8 +4098,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -4361,8 +4385,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -4646,8 +4672,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -4931,8 +4959,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -5229,8 +5259,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -5867,8 +5899,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -6152,8 +6186,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -6437,8 +6473,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -6722,8 +6760,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					wing_trapezoid
-					wing_elliptic
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
