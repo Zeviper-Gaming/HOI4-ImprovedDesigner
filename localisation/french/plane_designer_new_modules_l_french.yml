@@ -27,10 +27,14 @@
  EQ_MOD_SLOT_wing_W_TITLE_desc:0 ""
 
  wing_W_effil:0 "Aile W effilée"
+ wing_low_trapez:0 "Aile basse trapezoidale"
  wing_low_effil:0 "Aile basse trapezoidale"
  wing_high_effil:0 "Aile haute trapezoidale"
  wing_high_ellip:0 "Aile haute elliptique"
  wing_low_ellip:0 "Aile bassse elliptique"
+ wing_low_rect:0 "Aile basse rectangulaire"
+ wing_high_rect:0 "Aile haute rectangulaire"
+ wing_bi_rect:0 "Aile biplan"
 
 
  adi_schraege_musik:0 "Schraege Musik"

@@ -2072,6 +2072,10 @@ technologies = {
 			wing_high_effil
             wing_high_ellip
 			wing_low_ellip
+			wing_low_trapez
+			wing_low_rect
+			wing_high_rect
+			wing_bi_rect
 
 			fuselage_twin
 			fuselage_bi

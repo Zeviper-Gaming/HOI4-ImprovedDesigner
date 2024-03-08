@@ -68,7 +68,6 @@ spriteTypes = {
 		name = "GFX_EMSI_tail_slot"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/plane_module_slot_rear.dds"
 	}
-
 	spriteType = {
 		name = "GFX_EMSI_fixed_turret_back_back"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/slot_turrets.dds"
@@ -85,6 +84,8 @@ spriteTypes = {
 		name = "GFX_EMSI_fixed_turret_tail_slot"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/slot_turrets.dds"
 	}
+
+	# WINGS
 	spriteType = {
 		name = "GFX_EMSI_wing_W_effil"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_effil.dds"
@@ -106,6 +107,20 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_ellipt.dds"
 	}
 	spriteType = {
+		name = "GFX_EMSI_wing_low_trapez"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_trapez.dds"
+	}
+	spriteType = {
+		name = "GFX_EMSI_wing_low_rect"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_rect.dds"
+	}
+	spriteType = {
+		name = "GFX_EMSI_wing_high_rect"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_rect.dds"
+	}
+
+	# WING CATEGORY
+	spriteType = {
 		name = "GFX_EMSI_wing_low"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_low.dds"
 	}
@@ -116,6 +131,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMSI_wing_W"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_W.dds"
+	}
+	spriteType = {
+		name = "GFX_EMSI_wing_bi"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_biplan.dds"
 	}
 
 }
