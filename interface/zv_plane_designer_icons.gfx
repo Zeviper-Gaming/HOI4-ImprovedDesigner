@@ -69,7 +69,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/plane_module_slot_rear.dds"
 	}
 	spriteType = {
-		name = "GFX_EMSI_fixed_turret_back_back"
+		name = "GFX_EMSI_fixed_turret_back"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/slot_turrets.dds"
 	}
 	spriteType = {
