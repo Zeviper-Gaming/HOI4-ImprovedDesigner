@@ -19,15 +19,18 @@
  EQ_MOD_SLOT_fixed_intern_slot_3_TITLE:0 "Module interne"
  EQ_MOD_SLOT_fixed_intern_slot_4_TITLE:0 "Module interne"
 
- EQ_MOD_SLOT_wing_trapezoid_TITLE:0 "Aile trapezoidale"
- EQ_MOD_SLOT_wing_elliptic_TITLE:0 "Aile elliptique (spitfire)"
+ EQ_MOD_SLOT_wing_low_TITLE:0 "Aile Hautes"
+ EQ_MOD_SLOT_wing_low_TITLE_desc:0 ""
+ EQ_MOD_SLOT_wing_high_TITLE:0 "Aile Basses"
+ EQ_MOD_SLOT_wing_high_TITLE_desc:0 ""
+ EQ_MOD_SLOT_wing_W_TITLE:0 "Aile en W"
+ EQ_MOD_SLOT_wing_W_TITLE_desc:0 ""
 
- wing_trap_W:0 "Aile en W"
- wing_trap_low:0 "Aile basse"
- wing_trap_high:0 "Aile haute"
- wing_ellip_high:0 "Aile haute"
- wing_ellip_low:0 "Aile bassse"
- 
+ wing_W_trap:0 "Aile W trapezoidale"
+ wing_low_trap:0 "Aile basse trapezoidale"
+ wing_high_trap:0 "Aile haute trapezoidale"
+ wing_high_ellip:0 "Aile haute elliptique"
+ wing_low_ellip:0 "Aile bassse elliptique"
 
 
  adi_schraege_musik:0 "Schraege Musik"

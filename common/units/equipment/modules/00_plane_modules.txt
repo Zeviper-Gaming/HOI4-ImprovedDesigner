@@ -2847,9 +2847,9 @@ equipment_modules = {
 		xp_cost = 1
 	}
 
-	wing_trap_low = {
-		abbreviation = "trap_low"
-		category = wing_trapezoid
+	wing_low_trap = {
+		abbreviation = "low_trap"
+		category = wing_low
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -2880,18 +2880,18 @@ equipment_modules = {
 			}
 		}
 		can_convert_from = {
-			module = wing_ellip_low
+			module = wing_low_ellip
 			convert_cost_ic = 1
 		}
 		can_convert_from = {
-			module = wing_trap_low
+			module = wing_low_trap
 			convert_cost_ic = 1
 		}
 
 	}
-	wing_trap_W = {
-		abbreviation = "trap_W"
-		category = wing_trapezoid
+	wing_W_trap = {
+		abbreviation = "W_trap"
+		category = wing_W
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -2922,17 +2922,17 @@ equipment_modules = {
 			}
 		}
 		can_convert_from = {
-			module = wing_ellip_low
+			module = wing_low_ellip
 			convert_cost_ic = 1
 		}
 		can_convert_from = {
-			module = wing_trap_low
+			module = wing_low_trap
 			convert_cost_ic = 1
 		}
 	}
-	wing_ellip_low = {
-		abbreviation = "ellip_low"
-		category = wing_elliptic
+	wing_low_ellip = {
+		abbreviation = "low_ellip"
+		category = wing_low
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -2963,18 +2963,18 @@ equipment_modules = {
 			}
 		}
 		can_convert_from = {
-			module = wing_trap_low
+			module = wing_low_trap
 			convert_cost_ic = 1
 		}
 		can_convert_from = {
-			module = wing_trap_W
+			module = wing_W_trap
 			convert_cost_ic = 1
 		}
 
 	}
-	wing_trap_high = {
-		abbreviation = "trap_high"
-		category = wing_trapezoid
+	wing_high_trap = {
+		abbreviation = "high_trap"
+		category = wing_high
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -3008,9 +3008,9 @@ equipment_modules = {
 			convert_cost_ic = 1
 		}
 	}
-	wing_ellip_high = {
-		abbreviation = "ellip_high"
-		category = wing_elliptic
+	wing_high_ellip = {
+		abbreviation = "high_ellip"
+		category = wing_high
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -3040,7 +3040,7 @@ equipment_modules = {
 			}
 		}
 		can_convert_from = {
-			module = wing_trap_high
+			module = wing_high_trap
 			convert_cost_ic = 1
 		}
 	}
