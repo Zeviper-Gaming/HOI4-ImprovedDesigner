@@ -38,3 +38,23 @@
 				# stats des missions
 			}
 		}
+
+
+wing_trap_low
+wing_trap_high
+wing_trap_lowDihedral
+wing_trap_highAnhedral
+wing_trap_W
+wing_trap_gull
+
+wing_rect_low
+wing_rect_high
+wing_rect_lowDihedral
+wing_rect_highAnhedral
+wing_rect_W
+wing_rect_gull
+
+wing_ellipt_low
+wing_ellipt_high
+wing_ellipt_lowDihedral
+wing_ellipt_highAnhedral

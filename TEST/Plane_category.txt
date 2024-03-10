@@ -1,0 +1,50 @@
+# Engine number
+plane_engine_number_1
+plane_engine_number_2
+plane_engine_number_3
+plane_engine_number_4
+plane_engine_number_6
+# Engine type
+plane_engine_rotating
+plane_engine_radial
+plane_engine_inline
+plane_engine_V
+plane_engine_jet
+plane_engine_rocket
+# Engine power
+plane_engine_power
+# Engine reliability
+plane_engine_reliability
+# Engine modules
+plane_special_module_engine_small
+plane_special_module_engine_medium
+plane_special_module_engine_large
+
+# Weapons
+fighter_weapon
+cas_weapon
+tac_weapon
+strat_weapon
+nav_bomber_weapon
+schraege_cat
+kamikaze_bomber_weapon
+
+# Construction
+plane_construction_type_module_small
+plane_construction_type_module_medium
+plane_construction_type_module_large
+
+# Aero
+plane_aero_module_small
+plane_aero_module_medium
+
+# Special
+plane_special_module_small
+plane_special_module_medium
+plane_special_module_large
+
+# Other
+recon_camera
+mine_warfare_offense
+
+# Wings

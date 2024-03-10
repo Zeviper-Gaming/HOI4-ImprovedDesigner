@@ -68,9 +68,8 @@ spriteTypes = {
 		name = "GFX_EMSI_tail_slot"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/plane_module_slot_rear.dds"
 	}
-
 	spriteType = {
-		name = "GFX_EMSI_fixed_turret_back_back"
+		name = "GFX_EMSI_fixed_turret_back_slot"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/slot_turrets.dds"
 	}
 	spriteType = {
@@ -86,5 +85,60 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/slot_turrets.dds"
 	}
 
+	# WINGS
+	spriteType = {
+		name = "GFX_EMI_wing_W_effil"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_effil.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_wing_low_effil"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_effil.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_wing_high_effil"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_effil.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_wing_high_ellip"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_ellipt.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_wing_low_ellip"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_ellipt.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_wing_low_trapez"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_trapez.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_wing_low_rect"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_rect.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_wing_high_rect"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_rect.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_wing_bi_rect"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_rect.dds"
+	}
+
+	# WING CATEGORY
+	spriteType = {
+		name = "GFX_EMI_wing_low"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_low.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_wing_high"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_high.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_wing_W"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_W.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_wing_biplan"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_biplan.dds"
+	}
 
 }

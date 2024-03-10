@@ -231,9 +231,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -733,9 +734,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -1020,9 +1022,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -1307,9 +1310,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -1594,9 +1598,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -1905,9 +1910,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -2405,9 +2411,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -2691,9 +2698,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -2978,9 +2986,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -3264,9 +3273,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -3579,9 +3589,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -4087,9 +4098,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -4373,9 +4385,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -4659,9 +4672,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -4945,9 +4959,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -5244,9 +5259,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -5883,9 +5899,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -6169,9 +6186,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -6455,9 +6473,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
@@ -6741,9 +6760,10 @@ equipments = {
 			wings_slot = {
 				required = yes
 				allowed_module_categories = {
-					adi_fuselage_high
-					adi_fuselage_low
-					adi_fuselage_other
+					wing_biplan
+					wing_high
+					wing_low
+					wing_W
 				}
 			} # Type d'ailes
 			fuselage_slot = {
