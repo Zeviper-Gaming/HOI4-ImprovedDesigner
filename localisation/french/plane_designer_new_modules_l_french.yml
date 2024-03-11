@@ -60,6 +60,12 @@
  plane_engine_inline:0 "plane engine inline"
  plane_engine_V:0 "plane engine V"
 
+ plane_nose_engine:0 "Moteur de nez"
+ plane_pullpush_engine:0 "Moteur pull push"
+ plane_wing_engine:0 "Moteur d'ailes"
+ plane_rear_engine:0 "Moteur de queue"
+ plane_top_engine:0 "Moteur sur le fuselage"
+
  engine_1x1:0 "Mono-moteur"
  engine_1x1_desc:0 ""
  engine_2x1:0 "Bi-moteur"

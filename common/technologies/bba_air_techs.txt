@@ -1385,11 +1385,11 @@ technologies = {
 	engines_1 = {
 
 		enable_equipment_modules = {
-			engine_1x1
-			engine_2x1
-			engine_3x1
-			engine_4x1
-			engine_6x1
+			plane_nose_engine
+			plane_pullpush_engine
+			plane_wing_engine
+			plane_rear_engine
+			plane_top_engine
 			
 			rotating_engine_1
 			radial_engine_1
