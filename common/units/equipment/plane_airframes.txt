@@ -320,7 +320,12 @@ equipments = {
 			}
 
 		}
-		
+
+		module_count_limit = {
+			category = plane_wing_engine
+			count < 2
+		}
+
 		module_count_limit = {
 			module = guided_anti_ship_missile
 			count < 2
@@ -1998,6 +2003,11 @@ equipments = {
 				}
 			}
 
+		}
+
+		module_count_limit = {
+			category = plane_wing_engine
+			count < 2
 		}
 
 		module_count_limit = {
