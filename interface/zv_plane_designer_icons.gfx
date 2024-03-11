@@ -141,4 +141,26 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_biplan.dds"
 	}
 
+	# ENGINES PLACEMENT
+	spriteType = {
+		name = "GFX_EMI_engine_nose"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_nose.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_engine_canon_nose"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_nose_cannon.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_engine_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_wing.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_engine_rear"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_tail.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_engine_top"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_top.dds"
+	}
+
 }
