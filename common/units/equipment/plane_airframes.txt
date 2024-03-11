@@ -3498,6 +3498,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -3559,6 +3560,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -4010,6 +4013,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -4071,6 +4075,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -4300,6 +4306,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -4361,6 +4368,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -4590,6 +4599,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -4651,6 +4661,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -4880,6 +4892,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -4941,6 +4954,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -5185,6 +5200,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -5246,6 +5262,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -5645,6 +5663,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -5706,6 +5725,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -5934,6 +5955,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -5995,6 +6017,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -6223,6 +6247,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -6284,6 +6309,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -6512,6 +6539,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -6573,6 +6601,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {

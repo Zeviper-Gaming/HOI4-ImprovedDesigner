@@ -1385,12 +1385,13 @@ technologies = {
 	engines_1 = {
 
 		enable_equipment_modules = {
-			plane_nose_engine
-			plane_pullpush_engine
-			plane_wing_engine
-			plane_rear_engine
-			plane_top_engine
-			
+			engine_canon_nose
+			engine_nose
+			engine_pull_push
+			engine_rear
+			engine_top
+			engine_wing
+
 			rotating_engine_1
 			radial_engine_1
 			inline_engine_1
@@ -1476,7 +1477,7 @@ technologies = {
 	engines_2 = {
 
 		enable_equipment_modules = {
-			rotating_engine_2
+			V_engine_2
 			inline_engine_2
 			
 			early_supercharger
@@ -1536,7 +1537,7 @@ technologies = {
 	engines_3 = {
 
 		enable_equipment_modules = {
-			rotating_engine_3
+			V_engine_3
 			inline_engine_3
 			
 			turbocharger
@@ -1615,7 +1616,7 @@ technologies = {
 	engines_4 = {
 
 		enable_equipment_modules = {
-			rotating_engine_4
+			V_engine_4
 			inline_engine_4
 		}
 		
@@ -1675,7 +1676,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			radial_engine_2
-			V_engine_2
+			inline_engine_2
 			
 			early_supercharger
 			early_turbocharger
@@ -1732,7 +1733,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			radial_engine_3
-			V_engine_3
+			inline_engine_3
 			
 			turbocharger
 			supercharger
@@ -1807,7 +1808,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			radial_engine_4
-			V_engine_4
+			inline_engine_4
 		}
 		
 		research_cost = 1.5
