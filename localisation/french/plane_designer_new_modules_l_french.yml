@@ -63,6 +63,7 @@
 
  engine_nose:0 "Moteur simple"
  engine_canon_nose:0 "Moteur-canon"
+ engine_pull_push:0 "Moteur pull-push"
  engine_pullpush:0 "Moteur pull push"
  EQ_MOD_CAT_plane_nose_engine_TITLE:0 "Moteur de nez"
  engine_wing:0 "x2 Moteurs d'ailes"

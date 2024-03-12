@@ -178,5 +178,31 @@ spriteTypes = {
 		name = "GFX_EMI_plane_top_engine"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_top.dds"
 	}
+	spriteType = {
+		name = "GFX_EMI_engine_pull_push"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_pull_push.dds"
+	}
+	# Tail
+	spriteType = {
+		name = "GFX_EMI_adi_t_tail"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/empennage_t_tail.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_adi_twin_boom"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/empennage_twin_boom.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_adi_twin_tail"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/empennage_twin_tail.dds"
+	}
 
+	# FUSELAGE
+	spriteType = {
+		name = "GFX_EMI_fuselage_flying_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_flying_wing.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_twin"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_twin.dds"
+	}
 }
