@@ -319,10 +319,6 @@ equipments = {
 
 		}
 
-		module_count_limit = {
-			module = engine_wing
-			count < 2
-		}
 
 		module_count_limit = {
 			module = guided_anti_ship_missile
@@ -510,7 +506,11 @@ equipments = {
 		module_count_limit = {
 			module = asv_radar
 			count < 2
-		}		
+		}
+		module_count_limit = {
+			module = engine_wing
+			count < 2
+		}
 		default_modules = {
 			fixed_main_weapon_slot = empty
 			fixed_auxiliary_weapon_slot_1 = empty
