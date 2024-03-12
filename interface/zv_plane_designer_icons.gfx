@@ -1,5 +1,5 @@
 spriteTypes = {
-
+# IMAGES ZV
 ###################################################
 # Contains GFX for the equipment modules and slots shown on top of the blue print
 #
@@ -147,6 +147,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_nose.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_plane_nose_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_nose.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_engine_canon_nose"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_nose_cannon.dds"
 	}
@@ -155,11 +159,23 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_wing.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_plane_wing_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_wing.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_engine_rear"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_tail.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_plane_rear_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_tail.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_engine_top"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_top.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_plane_top_engine"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_top.dds"
 	}
 

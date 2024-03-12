@@ -20,7 +20,7 @@ equipment_modules = {
 	}
 	engine_pull_push = {
 		abbreviation = "eng_pp"
-		category = plane_pullpush_engine
+		category = plane_nose_engine
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {

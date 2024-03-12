@@ -35,6 +35,7 @@
  EQ_MOD_CAT_wing_high_TITLE_desc:0 "Utile pour la reconnaissance et la fiabilité"
  EQ_MOD_CAT_wing_W_TITLE:0 "Aile en W"
  EQ_MOD_CAT_wing_W_TITLE_desc:0 "Utile pour le CAS, l'attaque aérienne et l'agilité"
+ EQ_MOD_CAT_wing_biplan_TITLE:0 "Configuration biplan"
 
  wing_W_effil:0 "Aile W effilée"
  wing_low_trapez:0 "Aile basse trapezoidale"
@@ -60,11 +61,17 @@
  plane_engine_inline:0 "plane engine inline"
  plane_engine_V:0 "plane engine V"
 
- plane_nose_engine:0 "Moteur de nez"
- plane_pullpush_engine:0 "Moteur pull push"
- plane_wing_engine:0 "Moteur d'ailes"
- plane_rear_engine:0 "Moteur de queue"
- plane_top_engine:0 "Moteur sur le fuselage"
+ engine_nose:0 "Moteur simple"
+ engine_canon_nose:0 "Moteur-canon"
+ engine_pullpush:0 "Moteur pull push"
+ EQ_MOD_CAT_plane_nose_engine_TITLE:0 "Moteur de nez"
+ engine_wing:0 "x2 Moteurs d'ailes"
+ EQ_MOD_CAT_plane_wing_engine_TITLE:0 "Moteur d'ailes"
+ engine_rear:0 "Moteur de queue"
+ EQ_MOD_CAT_plane_rear_engine_TITLE:0 "Moteur de queue"
+ engine_top:0 "Moteur sur le fuselage"
+EQ_MOD_CAT_plane_top_engine_TITLE:0 "Moteur dessus le fuselage"
+
 
  engine_1x1:0 "Mono-moteur"
  engine_1x1_desc:0 ""

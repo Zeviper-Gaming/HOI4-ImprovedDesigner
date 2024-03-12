@@ -46,7 +46,7 @@ equipments = {
 		naval_strike_targetting = 1
 		lend_lease_cost = 8
 		manpower = 20
-		fuel_consumption = 0.05
+		fuel_consumption = 0
 		build_cost_ic = 4
 		resources = {
 			aluminium = 2
@@ -223,7 +223,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-					plane_wing_engine
+					plane_rear_engine
 				}
 			}
 
@@ -320,7 +320,7 @@ equipments = {
 		}
 
 		module_count_limit = {
-			category = plane_wing_engine
+			module = engine_wing
 			count < 2
 		}
 
@@ -729,7 +729,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-					plane_wing_engine
+					plane_rear_engine
 				}
 			}
 
@@ -1015,7 +1015,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-					plane_wing_engine
+					plane_rear_engine
 				}
 			}
 
@@ -1301,7 +1301,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-					plane_wing_engine
+					plane_rear_engine
 				}
 			}
 
@@ -1587,7 +1587,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-					plane_wing_engine
+					plane_rear_engine
 				}
 			}
 
@@ -1722,7 +1722,7 @@ equipments = {
 		naval_strike_targetting = 1
 		lend_lease_cost = 8
 		manpower = 20
-		fuel_consumption = 0.05
+		fuel_consumption = 0
 		build_cost_ic = 6
 		resources = {
 			aluminium = 2
@@ -1897,7 +1897,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-					plane_wing_engine
+					plane_rear_engine
 				}
 			}
 
@@ -2401,7 +2401,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-					plane_wing_engine
+					plane_rear_engine
 				}
 			}
 
@@ -2686,7 +2686,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-					plane_wing_engine
+					plane_rear_engine
 				}
 			}
 
@@ -2972,7 +2972,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-					plane_wing_engine
+					plane_rear_engine
 				}
 			}
 
@@ -3257,7 +3257,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-					plane_wing_engine
+					plane_rear_engine
 				}
 			}
 
@@ -5093,7 +5093,7 @@ equipments = {
 		naval_strike_targetting = 1
 		lend_lease_cost = 10
 		manpower = 80
-		fuel_consumption = 0.16
+		fuel_consumption = 0
 		build_cost_ic = 16
 
 		lend_lease_cost = 12
