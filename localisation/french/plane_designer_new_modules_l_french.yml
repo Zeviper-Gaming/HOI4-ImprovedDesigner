@@ -37,6 +37,21 @@
  EQ_MOD_CAT_wing_W_TITLE_desc:0 "Utile pour le CAS, l'attaque aérienne et l'agilité"
  EQ_MOD_CAT_wing_biplan_TITLE:0 "Configuration biplan"
 
+ EQ_MOD_CAT_aircraft_role_small_TITLE:0 "Role pour avion petits"
+ EQ_MOD_CAT_aircraft_role_medium_TITLE:0 "Roles pour avions moyens"
+ EQ_MOD_CAT_aircraft_role_large_TITLE:0 "Roles pour avions larges"
+
+ fighter_role:0 "Chasseur"
+ heavy_fighter_role:0 "Chasseur Lourd"
+ interceptor_role:0 "Intercepteur"
+ cas_role:0 "Appui aérien rapproché"
+ naval_bomber_role:0 "Bombardier naval"
+ suicide_role:0 "Suicide"
+ scout_role:0 "Reconnaissance"
+ tac_bomb_role:0 "Bombardier tactique"
+ strat_bomb_role:0 "Bombardier Strategique"
+ maritime_pat_role:0 "Patrouille maritime"
+
  wing_W_effil:0 "Aile W effilée"
  wing_low_trapez:0 "Aile basse trapezoidale"
  wing_low_effil:0 "Aile basse effilé"
@@ -47,6 +62,9 @@
  wing_high_rect:0 "Aile haute rectangulaire"
  wing_bi_rect:0 "Aile biplan rectangulaire"
 
+ adi_t_tail:0 "Empennage en T"
+ adi_twin_boom:0 "Empennage bi poutre"
+ adi_twin_tail:0 "Empennage double"
 
  adi_schraege_musik:0 "Schraege Musik"
  adi_schraege_musik_desc:0 "La Schraege Musik est un dispositif de canons orrientés vers le ciel, elle permet d'abattres des bombardiers qui volent plus haut. Cela permet a l'avion de rester hors de porté des défenses des bombardiers qui ne sauront même pas ce qui les a touchés."

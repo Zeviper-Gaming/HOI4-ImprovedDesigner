@@ -3441,7 +3441,7 @@ equipment_modules = {
 	}
 	tac_bomb_role = {
 		abbreviation = "r_tac_bomb"
-		category = aircraft_role_heavy
+		category = aircraft_role_large
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = tactical_bomber
 
@@ -3449,7 +3449,7 @@ equipment_modules = {
 	}
 	maritime_pat_role = {
 		abbreviation = "r_mar_pat"
-		category = aircraft_role_heavy
+		category = aircraft_role_large
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = maritime_patrol_plane
 
@@ -3457,7 +3457,7 @@ equipment_modules = {
 	}
 	strat_bomb_role = {
 		abbreviation = "r_strat_bomb"
-		category = aircraft_role_heavy
+		category = aircraft_role_large
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = strategic_bomber
 

@@ -1676,7 +1676,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			radial_engine_2
-			inline_engine_2
+			rotating_engine_2
 			
 			early_supercharger
 			early_turbocharger
@@ -1733,7 +1733,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			radial_engine_3
-			inline_engine_3
+			rotating_engine_3
 			
 			turbocharger
 			supercharger
@@ -1808,7 +1808,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			radial_engine_4
-			inline_engine_4
+			rotating_engine_4
 		}
 		
 		research_cost = 1.5

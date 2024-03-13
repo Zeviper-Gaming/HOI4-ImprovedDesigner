@@ -3654,7 +3654,7 @@ equipments = {
 				allowed_module_categories = {
 					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -4167,7 +4167,7 @@ equipments = {
 				allowed_module_categories = {
 					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -4458,7 +4458,7 @@ equipments = {
 				allowed_module_categories = {
 					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -4749,7 +4749,7 @@ equipments = {
 				allowed_module_categories = {
 					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -5040,7 +5040,7 @@ equipments = {
 				allowed_module_categories = {
 					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -5344,9 +5344,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -5805,9 +5804,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -6095,9 +6093,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -6385,9 +6382,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -6675,9 +6671,8 @@ equipments = {
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
