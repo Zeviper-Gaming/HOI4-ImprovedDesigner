@@ -62,6 +62,7 @@
  wing_high_rect:0 "Aile haute rectangulaire"
  wing_bi_rect:0 "Aile biplan rectangulaire"
 
+ adi_classic_tail:0 "Empennage classique"
  adi_t_tail:0 "Empennage en T"
  adi_twin_boom:0 "Empennage bi poutre"
  adi_twin_tail:0 "Empennage double"
@@ -85,6 +86,7 @@
  engine_pullpush:0 "Moteur pull push"
  EQ_MOD_CAT_plane_nose_engine_TITLE:0 "Moteur de nez"
  engine_wing:0 "x2 Moteurs d'ailes"
+ engine_wing_tandem:0 "2x2 Moteurs en tandem"
  EQ_MOD_CAT_plane_wing_engine_TITLE:0 "Moteur d'ailes"
  engine_rear:0 "Moteur de queue"
  EQ_MOD_CAT_plane_rear_engine_TITLE:0 "Moteur de queue"

@@ -39,6 +39,14 @@
 			}
 		}
 
+        allowed_module_categories = {
+                    aircraft_middle = {
+                        plane_rear_engine
+                        recon_camera
+                        plane_special_module_bomb_sights
+                    }
+        }
+
 
 wing_trap_low
 wing_trap_high

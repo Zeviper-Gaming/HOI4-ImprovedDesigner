@@ -63,6 +63,20 @@ equipment_modules = {
 		}
 		xp_cost = 2
 	}
+	engine_wing_tandem = {
+		abbreviation = "eng_wing_tandem"
+		category = plane_wing_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 15
+		}
+		multiply_stats = {
+			thrust = 4
+			fuel_consumption = 4
+		}
+		xp_cost = 2
+	}
 	engine_rear = {
 		abbreviation = "eng_rear"
 		category = plane_rear_engine
@@ -3295,6 +3309,11 @@ equipment_modules = {
 	}
 	
 	# empennage kind
+	adi_classic_tail = {
+		abbreviation = "adi_ct"
+		category = plane_empennage
+		sfx = sfx_ui_sd_module_turret
+	}
 	adi_t_tail = {
 		abbreviation = "adi_tt"
 		category = plane_empennage
@@ -3302,7 +3321,6 @@ equipment_modules = {
 
 		add_stats = {
 			reliability = -0.08
-			weight = 1
 		}
 
 		multiply_stats = {

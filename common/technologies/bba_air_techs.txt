@@ -1391,6 +1391,7 @@ technologies = {
 			engine_rear
 			engine_top
 			engine_wing
+			engine_wing_tandem
 
 			rotating_engine_1
 			radial_engine_1
@@ -2086,6 +2087,7 @@ technologies = {
 			adi_t_tail
 			adi_twin_boom
 			adi_twin_tail
+			adi_classic_tail
 
 			low_elliptoid_wing
 			low_trapezoid_wing

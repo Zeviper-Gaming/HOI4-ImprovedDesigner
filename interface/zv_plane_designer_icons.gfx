@@ -163,6 +163,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_wing.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_engine_wing_tandem"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_wing.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_plane_wing_engine"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_wing.dds"
 	}
