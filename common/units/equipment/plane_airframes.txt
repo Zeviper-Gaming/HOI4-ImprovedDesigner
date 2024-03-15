@@ -46,7 +46,7 @@ equipments = {
 		naval_strike_targetting = 1
 		lend_lease_cost = 8
 		manpower = 20
-		fuel_consumption = 0.05
+		fuel_consumption = 0
 		build_cost_ic = 4
 		resources = {
 			aluminium = 2
@@ -62,8 +62,8 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_small
-					
-
+					plane_nose_engine
+					plane_pullpush_engine
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -73,7 +73,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -83,7 +83,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -93,7 +93,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -108,7 +108,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -223,7 +223,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_rear_engine
 				}
 			}
 
@@ -291,10 +291,8 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
@@ -320,7 +318,8 @@ equipments = {
 			}
 
 		}
-		
+
+
 		module_count_limit = {
 			module = guided_anti_ship_missile
 			count < 2
@@ -507,7 +506,11 @@ equipments = {
 		module_count_limit = {
 			module = asv_radar
 			count < 2
-		}		
+		}
+		module_count_limit = {
+			module = engine_wing
+			count < 2
+		}
 		default_modules = {
 			fixed_main_weapon_slot = empty
 			fixed_auxiliary_weapon_slot_1 = empty
@@ -565,8 +568,8 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_small
-
-
+					plane_nose_engine
+					plane_pullpush_engine
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -576,7 +579,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -586,7 +589,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -596,7 +599,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -611,7 +614,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -726,7 +729,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_rear_engine
 				}
 			}
 
@@ -794,10 +797,8 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
@@ -853,8 +854,8 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_small
-
-
+					plane_nose_engine
+					plane_pullpush_engine
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -864,7 +865,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -874,7 +875,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -884,7 +885,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -899,7 +900,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -1014,7 +1015,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_rear_engine
 				}
 			}
 
@@ -1082,10 +1083,8 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
@@ -1141,8 +1140,8 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_small
-
-
+					plane_nose_engine
+					plane_pullpush_engine
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -1152,7 +1151,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -1162,7 +1161,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -1172,7 +1171,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -1187,7 +1186,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -1302,7 +1301,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_rear_engine
 				}
 			}
 
@@ -1370,10 +1369,8 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
@@ -1429,8 +1426,8 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_small
-
-
+					plane_nose_engine
+					plane_pullpush_engine
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -1440,7 +1437,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -1450,7 +1447,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -1460,7 +1457,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -1475,7 +1472,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -1590,7 +1587,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_rear_engine
 				}
 			}
 
@@ -1658,10 +1655,8 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
@@ -1727,7 +1722,7 @@ equipments = {
 		naval_strike_targetting = 1
 		lend_lease_cost = 8
 		manpower = 20
-		fuel_consumption = 0.05
+		fuel_consumption = 0
 		build_cost_ic = 6
 		resources = {
 			aluminium = 2
@@ -1741,8 +1736,8 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_small
-
-
+					plane_nose_engine
+					plane_pullpush_engine
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -1752,7 +1747,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -1762,7 +1757,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -1772,7 +1767,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -1787,7 +1782,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -1902,7 +1897,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_rear_engine
 				}
 			}
 
@@ -1970,10 +1965,8 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
@@ -1998,6 +1991,11 @@ equipments = {
 				}
 			}
 
+		}
+
+		module_count_limit = {
+			category = plane_wing_engine
+			count < 2
 		}
 
 		module_count_limit = {
@@ -2242,8 +2240,8 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_small
-
-
+					plane_nose_engine
+					plane_pullpush_engine
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -2253,7 +2251,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -2263,7 +2261,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -2273,7 +2271,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -2288,7 +2286,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -2403,7 +2401,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_rear_engine
 				}
 			}
 
@@ -2471,10 +2469,8 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
@@ -2529,8 +2525,8 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_small
-
-
+					plane_nose_engine
+					plane_pullpush_engine
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -2540,7 +2536,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -2550,7 +2546,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -2560,7 +2556,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -2575,7 +2571,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -2690,7 +2686,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_rear_engine
 				}
 			}
 
@@ -2758,10 +2754,8 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
@@ -2817,8 +2811,8 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_small
-
-
+					plane_nose_engine
+					plane_pullpush_engine
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -2828,7 +2822,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -2838,7 +2832,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -2848,7 +2842,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -2863,7 +2857,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -2978,7 +2972,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_rear_engine
 				}
 			}
 
@@ -3046,10 +3040,8 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
@@ -3104,8 +3096,8 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_small
-
-
+					plane_nose_engine
+					plane_pullpush_engine
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -3115,7 +3107,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -3125,7 +3117,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -3135,7 +3127,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -3150,7 +3142,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -3265,7 +3257,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_rear_engine
 				}
 			}
 
@@ -3333,10 +3325,8 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
@@ -3422,6 +3412,9 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_medium
+					plane_nose_engine
+					plane_pullpush_engine
+
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -3431,7 +3424,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_medium
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -3441,7 +3434,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -3451,7 +3444,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_medium
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -3466,7 +3459,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -3485,6 +3478,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -3546,6 +3540,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -3581,7 +3577,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 
@@ -3649,10 +3645,8 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
@@ -3660,7 +3654,7 @@ equipments = {
 				allowed_module_categories = {
 					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -3931,6 +3925,9 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_medium
+					plane_nose_engine
+					plane_pullpush_engine
+
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -3940,7 +3937,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_medium
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -3950,7 +3947,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -3960,7 +3957,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_medium
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -3975,7 +3972,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -3994,6 +3991,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -4055,6 +4053,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -4090,7 +4090,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 
@@ -4158,10 +4158,8 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
@@ -4169,7 +4167,7 @@ equipments = {
 				allowed_module_categories = {
 					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -4218,6 +4216,9 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_medium
+					plane_nose_engine
+					plane_pullpush_engine
+
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -4227,7 +4228,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_medium
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -4237,7 +4238,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -4247,7 +4248,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_medium
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -4262,7 +4263,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -4281,6 +4282,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -4342,6 +4344,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -4377,7 +4381,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 
@@ -4445,10 +4449,8 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
@@ -4456,7 +4458,7 @@ equipments = {
 				allowed_module_categories = {
 					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -4505,6 +4507,9 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_medium
+					plane_nose_engine
+					plane_pullpush_engine
+
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -4514,7 +4519,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_medium
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -4524,7 +4529,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -4534,7 +4539,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_medium
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -4549,7 +4554,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -4568,6 +4573,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -4629,6 +4635,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -4664,7 +4672,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 
@@ -4732,10 +4740,8 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
@@ -4743,7 +4749,7 @@ equipments = {
 				allowed_module_categories = {
 					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -4792,6 +4798,9 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_medium
+					plane_nose_engine
+					plane_pullpush_engine
+
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -4801,7 +4810,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_medium
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -4811,7 +4820,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -4821,7 +4830,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_medium
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -4836,7 +4845,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -4855,6 +4864,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -4916,6 +4926,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -4951,7 +4963,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 
@@ -5019,10 +5031,8 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
@@ -5030,7 +5040,7 @@ equipments = {
 				allowed_module_categories = {
 					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -5083,8 +5093,11 @@ equipments = {
 		naval_strike_targetting = 1
 		lend_lease_cost = 10
 		manpower = 80
-		fuel_consumption = 0.16
+		fuel_consumption = 0
 		build_cost_ic = 16
+
+		lend_lease_cost = 12
+
 		module_slots = {
 			# Ligne 1 - Weapons
 			fixed_main_weapon_slot = {
@@ -5092,6 +5105,8 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_large
+					plane_nose_engine
+					plane_pullpush_engine
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -5101,7 +5116,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_large
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -5109,9 +5124,9 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					cas_weapon
-					plane_armor_module_small
+					plane_armor_module_large
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -5121,7 +5136,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_large
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -5136,7 +5151,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -5155,6 +5170,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -5216,6 +5232,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -5251,7 +5269,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_rear_engine
 				}
 			}
 
@@ -5319,18 +5337,15 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -5348,188 +5363,6 @@ equipments = {
 				}
 			}
 
-		}
-
-		lend_lease_cost = 12
-
-		module_slots = {
-			fixed_main_weapon_slot = {
-				required = yes
-				allowed_module_categories = {
-					strat_weapon
-					plane_special_module_cargo
-					nav_bomber_weapon
-				}
-			}
-
-			fixed_auxiliary_weapon_slot_1 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					strat_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					plane_special_module_cargo
-				}
-			}
-			fixed_auxiliary_weapon_slot_2 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					strat_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					plane_special_module_cargo
-				}
-			}
-
-			fixed_auxiliary_weapon_slot_3 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					strat_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					plane_special_module_cargo
-				}
-			}
-			fixed_auxiliary_weapon_slot_4 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					strat_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					plane_special_module_cargo
-				}
-			}			
-			fixed_auxiliary_weapon_slot_5 = { 
-				required = no
-				allowed_module_categories = {
-				plane_special_module_defense_turret
-				plane_special_module_defense_turret_x2
-				}
-			}
-
-			fixed_auxiliary_weapon_slot_6 = { 
-				required = no
-				allowed_module_categories = {
-				plane_special_module_defense_turret
-				plane_special_module_defense_turret_x2
-				}
-			}
-			fixed_auxiliary_weapon_slot_7 = { 
-				required = no
-				allowed_module_categories = {
-				plane_special_module_defense_turret
-				plane_special_module_defense_turret_x2
-				}
-			}
-
-			fixed_auxiliary_weapon_slot_8 = { 
-				required = no
-				allowed_module_categories = {
-				plane_special_module_defense_turret
-				plane_special_module_defense_turret_x2			
-				}
-			}			
-			engine_type_slot = {
-				required = yes
-				allowed_module_categories = {
-					quad_large_plane_engine_type
-					large_plane_engine_type
-				}
-			}
-
-			special_type_slot_1 = {
-				required = no
-				allowed_module_categories = {
-					plane_special_module_ASW
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_large
-					plane_special_module_radial_engine
-					mine_warfare_defense
-				}
-			}
-
-			special_type_slot_2 = {
-				required = no
-				allowed_module_categories = {
-					plane_special_module_ASW
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_large
-					plane_special_module_radial_engine
-					mine_warfare_defense
-					plane_special_module_engine
-				}
-			}
-
-			special_type_slot_3 = {
-				required = no
-				allowed_module_categories = {
-					plane_special_module_ASW
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_large
-					plane_special_module_radial_engine
-					mine_warfare_defense
-				}
-			}
-
-			special_type_slot_4 = {
-				required = no
-				allowed_module_categories = {
-					plane_special_module_ASW
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_large
-					plane_special_module_radial_engine
-					mine_warfare_defense
-				}
-			}
-
-			special_type_slot_5 = {
-				required = no
-				allowed_module_categories = {
-					plane_special_module_ASW
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_large
-					plane_special_module_radial_engine
-					mine_warfare_defense
-				}
-			}
-			special_type_slot_6 = {
-				required = no
-				allowed_module_categories = {
-					plane_special_module_ASW
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_large
-					plane_special_module_radial_engine
-					mine_warfare_defense
-				}
-			}			
-			special_type_slot_7 = {
-				required = no
-				allowed_module_categories = {
-				plane_construction_type_module_large
-				}
-			}						
 		}
 		module_count_limit = {
 			module = high_octane_fuel_large
@@ -5732,6 +5565,8 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_large
+					plane_nose_engine
+					plane_pullpush_engine
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -5741,7 +5576,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_large
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -5749,9 +5584,9 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					cas_weapon
-					plane_armor_module_small
+					plane_armor_module_large
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -5761,7 +5596,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_large
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -5776,7 +5611,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -5795,6 +5630,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -5856,6 +5692,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -5891,7 +5729,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_rear_engine
 				}
 			}
 
@@ -5959,18 +5797,15 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -6019,6 +5854,8 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_large
+					plane_nose_engine
+					plane_pullpush_engine
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -6028,7 +5865,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_large
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -6036,9 +5873,9 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					cas_weapon
-					plane_armor_module_small
+					plane_armor_module_large
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -6048,7 +5885,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_large
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -6063,7 +5900,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -6082,6 +5919,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -6143,6 +5981,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -6178,7 +6018,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_rear_engine
 				}
 			}
 
@@ -6246,18 +6086,15 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -6306,6 +6143,8 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_large
+					plane_nose_engine
+					plane_pullpush_engine
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -6315,7 +6154,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_large
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -6323,9 +6162,9 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					cas_weapon
-					plane_armor_module_small
+					plane_armor_module_large
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -6335,7 +6174,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_large
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -6350,7 +6189,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -6369,6 +6208,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -6430,6 +6270,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -6465,7 +6307,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_rear_engine
 				}
 			}
 
@@ -6533,18 +6375,15 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 
@@ -6593,6 +6432,8 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					plane_armor_module_large
+					plane_nose_engine
+					plane_pullpush_engine
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -6602,7 +6443,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_large
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -6610,9 +6451,9 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					cas_weapon
-					plane_armor_module_small
+					plane_armor_module_large
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -6622,7 +6463,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_large
 					mine_warfare_offense
-
+					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -6637,7 +6478,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
@@ -6656,6 +6497,7 @@ equipments = {
 					nav_bomber_weapon
 					tac_weapon
 					armor_plate_module
+					strat_weapon
 				}
 			}
 			fixed_front_cockpit_slot = {
@@ -6717,6 +6559,8 @@ equipments = {
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
 					schraege_cat
+					tac_weapon
+					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -6752,7 +6596,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					remote_control_turret_system_category
-
+					plane_rear_engine
 				}
 			}
 
@@ -6820,18 +6664,15 @@ equipments = {
 				}
 			}
 			engine_nb_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					plane_engine_number_1
-					plane_engine_number_2
 				}
 			}
 			aircraft_role_slot = {
 				required = yes
 				allowed_module_categories = {
-					aircraft_role_small
 					aircraft_role_medium
-					aircraft_role_heavy
+					aircraft_role_large
 				}
 			} # Role
 

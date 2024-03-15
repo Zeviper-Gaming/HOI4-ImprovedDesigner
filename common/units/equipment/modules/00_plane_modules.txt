@@ -3,60 +3,108 @@ equipment_modules = {
 		has_dlc = "By Blood Alone"
 	}
 	### Engines
-	engine_1x1 = {
-		abbreviation = "e1"
-		category = plane_engine_number_1
+	engine_nose = {
+		abbreviation = "eng_nos"
+		category = plane_nose_engine
 		sfx = sfx_ui_sd_module_engine
 
-		multiply_stats = {
-			thrust = 0
-			build_cost_ic = 0
-			fuel_consumption = 0
-		}
-	}
-	engine_2x1 = {
-		abbreviation = "e2"
-		category = plane_engine_number_2
-		sfx = sfx_ui_sd_module_engine
-
-		multiply_stats = {
-			thrust = 0.9
-			build_cost_ic = 1
-			fuel_consumption = 1
-		}
-	}
-	engine_3x1 = {
-		abbreviation = "e3"
-		category = plane_engine_number_3
-		sfx = sfx_ui_sd_module_engine
-
-		multiply_stats = {
-			thrust = 1.8
+		add_stats = {
 			build_cost_ic = 2
+		}
+		multiply_stats = {
+			thrust = 1
+			fuel_consumption = 1
+			maximum_speed = 0.05
+		}
+		xp_cost = 2
+	}
+	engine_pull_push = {
+		abbreviation = "eng_pp"
+		category = plane_nose_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 5
+		}
+		multiply_stats = {
+			thrust = 2
+			fuel_consumption = 2
+			maximum_speed = 0.07
+		}
+		xp_cost = 2
+	}
+	engine_canon_nose = {
+		abbreviation = "eng_nos_g"
+		category = plane_nose_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 7
+			air_attack = 8
+		}
+		multiply_stats = {
+			thrust = 0.8
+			fuel_consumption = 0.8
+			maximum_speed = 0.05
+		}
+		xp_cost = 2
+	}
+	engine_wing = {
+		abbreviation = "eng_wing"
+		category = plane_wing_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 6
+		}
+		multiply_stats = {
+			thrust = 2
 			fuel_consumption = 2
 		}
+		xp_cost = 2
 	}
-	engine_4x1 = {
-		abbreviation = "e4"
-		category = plane_engine_number_4
+	engine_wing_tandem = {
+		abbreviation = "eng_wing_tandem"
+		category = plane_wing_engine
 		sfx = sfx_ui_sd_module_engine
 
+		add_stats = {
+			build_cost_ic = 15
+		}
 		multiply_stats = {
-			thrust = 2.8
+			thrust = 4
+			fuel_consumption = 4
+		}
+		xp_cost = 2
+	}
+	engine_rear = {
+		abbreviation = "eng_rear"
+		category = plane_rear_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 2
+			maximum_speed = 50
+		}
+		multiply_stats = {
+			thrust = 1
+			fuel_consumption = 1
+		}
+		xp_cost = 2
+	}
+	engine_top = {
+		abbreviation = "eng_top"
+		category = plane_top_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
 			build_cost_ic = 3
-			fuel_consumption = 3
 		}
-	}
-	engine_6x1 = {
-		abbreviation = "e6"
-		category = plane_engine_number_6
-		sfx = sfx_ui_sd_module_engine
-
 		multiply_stats = {
-			thrust = 4.5
-			build_cost_ic = 5
-			fuel_consumption = 5
+			thrust = 1
+			fuel_consumption = 1
 		}
+		xp_cost = 2
 	}
 
 	rotating_engine_1 = {
@@ -68,6 +116,10 @@ equipment_modules = {
 			thrust = 11
 			build_cost_ic = 12
 			fuel_consumption = 0.16
+		}
+		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -82,6 +134,10 @@ equipment_modules = {
 			thrust = 16
 			build_cost_ic = 14
 			fuel_consumption = 0.36
+		}
+		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 		}
 		can_convert_from = {
 			module = rotating_engine_1
@@ -102,6 +158,8 @@ equipment_modules = {
 			fuel_consumption = 0.16
 		}
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 			maximum_speed = +0.15
 		}
 		can_convert_from = {
@@ -123,6 +181,8 @@ equipment_modules = {
 			fuel_consumption = 0.16
 		}
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 			maximum_speed = 0.25
 		}
 		can_convert_from = {
@@ -146,6 +206,8 @@ equipment_modules = {
 			fuel_consumption = 0.16
 		}
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -164,6 +226,8 @@ equipment_modules = {
 			fuel_consumption = 0.16
 		}
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 			air_agility = -0.1
 		}
 		can_convert_from = {
@@ -187,6 +251,8 @@ equipment_modules = {
 			reliability = +0.2
 		}
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 			maximum_speed = 0.25
 			air_agility = -0.1
 		}
@@ -211,6 +277,8 @@ equipment_modules = {
 			reliability = +0.2
 		}
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 			maximum_speed = 0.4
 			air_agility = -0.1
 		}
@@ -235,6 +303,8 @@ equipment_modules = {
 			air_defence = +5
 		}
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 			maximum_speed = 0.15
 		}
 		forbid_module_categories = {
@@ -253,6 +323,8 @@ equipment_modules = {
 			air_defence = +5
 		}
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 			maximum_speed = 0.25
 		}
 		forbid_module_categories = {
@@ -271,6 +343,8 @@ equipment_modules = {
 			air_defence = +5
 		}
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 			maximum_speed = 0.35
 		}
 		forbid_module_categories = {
@@ -289,6 +363,8 @@ equipment_modules = {
 			air_defence = +5
 		}
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 			maximum_speed = 0.45
 		}
 		forbid_module_categories = {
@@ -308,6 +384,8 @@ equipment_modules = {
 			air_defence = +5
 		}
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 			maximum_speed = 0.15
 		}
 		forbid_module_categories = {
@@ -326,6 +404,8 @@ equipment_modules = {
 			air_defence = +5
 		}
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 			maximum_speed = 0.25
 		}
 		forbid_module_categories = {
@@ -344,6 +424,8 @@ equipment_modules = {
 			air_defence = +5
 		}
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 			maximum_speed = 0.35
 		}
 		forbid_module_categories = {
@@ -362,6 +444,8 @@ equipment_modules = {
 			air_defence = +5
 		}
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 			maximum_speed = 0.45
 		}
 		forbid_module_categories = {
@@ -382,6 +466,8 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 			maximum_speed = 0.65
 		}
 
@@ -410,6 +496,8 @@ equipment_modules = {
 
 		}
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 			air_range = -0.85
 			maximum_speed = 0.55
 		}
@@ -437,6 +525,8 @@ equipment_modules = {
 			build_cost_ic = 16
 		}
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 			air_range = -0.75
 			maximum_speed = 0.60
 		}
@@ -465,6 +555,8 @@ equipment_modules = {
 			build_cost_ic = 17
 		}
 		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
 			air_range = -0.7
 			maximum_speed = 0.65
 		}
@@ -583,59 +675,6 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			build_cost_ic = 0.65
-		}
-	}
-	
-	# mounted canon
-	# todo -- réfléchir a les garder ?
-	aircraft_engine_mounted_cannon_1 = {
-		abbreviation = "ac21"
-		category = engine_mounted_cannons
-		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = { fighter heavy_fighter }
-		add_stats = {
-			air_attack = 14
-			build_cost_ic = 4
-			weight = 5
-		}
-		xp_cost = 1
-		allow_mission_type = {
-			air_superiority
-			interception
-		}
-		mission_type_stats = {
-			limit = {
-				cas
-				attack_logistics
-			}
-			add_stats = {
-				air_ground_attack = 4
-			}
-		}
-	}
-	aircraft_engine_mounted_cannon_2 = {
-		abbreviation = "ac21"
-		category = engine_mounted_cannons
-		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = { fighter heavy_fighter }
-		add_stats = {
-			air_attack = 16
-			build_cost_ic = 4
-			weight = 6
-		}
-		xp_cost = 1
-		allow_mission_type = {
-			air_superiority
-			interception
-		}
-		mission_type_stats = {
-			limit = {
-				cas
-				attack_logistics
-			}
-			add_stats = {
-				air_ground_attack = 6
-			}
 		}
 	}
 	
@@ -3167,7 +3206,6 @@ equipment_modules = {
 		add_stats = {
 			reliability = -0.05
 		}
-
 		multiply_stats = {
 			thrust = 0.1
 			air_range = 0.5
@@ -3271,6 +3309,11 @@ equipment_modules = {
 	}
 	
 	# empennage kind
+	adi_classic_tail = {
+		abbreviation = "adi_ct"
+		category = plane_empennage
+		sfx = sfx_ui_sd_module_turret
+	}
 	adi_t_tail = {
 		abbreviation = "adi_tt"
 		category = plane_empennage
@@ -3278,7 +3321,6 @@ equipment_modules = {
 
 		add_stats = {
 			reliability = -0.08
-			weight = 1
 		}
 
 		multiply_stats = {
@@ -3295,11 +3337,12 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			maximum_speed = 75
 			build_cost_ic = 1.5
 			reliability = 0.05
 		}
-
+		multiply_stats = {
+			maximum_speed = 0.08
+		}
 		mission_type_stats = {
 			limit = {
 				cas
@@ -3416,7 +3459,7 @@ equipment_modules = {
 	}
 	tac_bomb_role = {
 		abbreviation = "r_tac_bomb"
-		category = aircraft_role_heavy
+		category = aircraft_role_large
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = tactical_bomber
 
@@ -3424,7 +3467,7 @@ equipment_modules = {
 	}
 	maritime_pat_role = {
 		abbreviation = "r_mar_pat"
-		category = aircraft_role_heavy
+		category = aircraft_role_large
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = maritime_patrol_plane
 
@@ -3432,7 +3475,7 @@ equipment_modules = {
 	}
 	strat_bomb_role = {
 		abbreviation = "r_strat_bomb"
-		category = aircraft_role_heavy
+		category = aircraft_role_large
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = strategic_bomber
 

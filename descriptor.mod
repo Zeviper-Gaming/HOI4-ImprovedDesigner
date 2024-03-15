@@ -1,10 +1,10 @@
 version="Alpha"
 tags={
 	"Technologies"
-	"Graphics"
 	"Military"
 	"Balance"
 }
+picture = "Thumbnail.png"
 name="ZV Improved Airplanes designer"
 dependencies={
 }

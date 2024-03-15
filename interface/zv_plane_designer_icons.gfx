@@ -1,5 +1,5 @@
 spriteTypes = {
-
+# IMAGES ZV
 ###################################################
 # Contains GFX for the equipment modules and slots shown on top of the blue print
 #
@@ -84,6 +84,10 @@ spriteTypes = {
 		name = "GFX_EMSI_fixed_turret_tail_slot"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/slot_turrets.dds"
 	}
+	spriteType = {
+		name = "GFX_EMSI_engine_nb_slot"
+		textureFile = "gfx/interface/equipmentdesigner/planes/designer/.dds"
+	}
 
 	# WINGS
 	spriteType = {
@@ -141,4 +145,122 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_biplan.dds"
 	}
 
+	# ENGINES PLACEMENT
+	spriteType = {
+		name = "GFX_EMI_engine_nose"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_nose.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_plane_nose_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_nose.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_engine_canon_nose"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_nose_cannon.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_engine_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_wing.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_engine_wing_tandem"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_wing.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_plane_wing_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_wing.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_engine_rear"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_tail.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_plane_rear_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_tail.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_engine_top"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_top.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_plane_top_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_top.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_engine_pull_push"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_pull_push.dds"
+	}
+	# Tail
+	spriteType = {
+		name = "GFX_EMI_adi_t_tail"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/empennage_t_tail.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_adi_twin_boom"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/empennage_twin_boom.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_adi_twin_tail"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/empennage_twin_tail.dds"
+	}
+
+	# FUSELAGE
+	spriteType = {
+		name = "GFX_EMI_fuselage_flying_wing"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_flying_wing.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_twin"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_twin.dds"
+	}
+
+	# ROLE
+	spriteType = {
+		name = "GFX_EMI_fighter_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/fighter.dds" 
+	}
+	spriteType = {
+		name = "GFX_EMI_interceptor_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/heavy_fighter.dds" 
+	}
+	spriteType = {
+		name = "GFX_EMI_cas_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/cas.dds" 
+	}
+	spriteType = {
+		name = "GFX_EMI_naval_bomber_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/naval_bomber.dds" 
+	}
+	spriteType = {
+		name = "GFX_EMI_suicide_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/naval_bomber.dds" 
+	}
+	spriteType = {
+		name = "GFX_EMI_scout_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/scout_plane.dds" 
+	}
+	spriteType = {
+		name = "GFX_EMI_tac_bomb_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/tactical_bomber.dds" 
+	}
+	spriteType = {
+		name = "GFX_EMI_maritime_pat_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/maritime_patrol.dds" 
+	}	
+	spriteType = {
+		name = "GFX_EMI_strat_bomb_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/strategic_bomber.dds" 
+	}
+	spriteType = {
+		name = "GFX_SMI_aircraft_role_small"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_aircraft_role_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/heavy_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_aircraft_role_large"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/strategic_bomber.dds"
+	}
 }
