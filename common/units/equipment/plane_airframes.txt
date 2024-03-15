@@ -120,15 +120,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -159,6 +150,15 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_small
 					plane_special_module_small
 					plane_special_module_bomb_sights
@@ -172,7 +172,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -626,15 +626,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -665,6 +656,15 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_small
 					plane_special_module_small
 					plane_special_module_bomb_sights
@@ -678,7 +678,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -912,15 +912,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -951,6 +942,15 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_small
 					plane_special_module_small
 					plane_special_module_bomb_sights
@@ -964,7 +964,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1198,15 +1198,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -1237,6 +1228,15 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_small
 					plane_special_module_small
 					plane_special_module_bomb_sights
@@ -1250,7 +1250,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1484,15 +1484,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -1523,6 +1514,15 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_small
 					plane_special_module_small
 					plane_special_module_bomb_sights
@@ -1536,7 +1536,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -1794,15 +1794,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -1833,6 +1824,15 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_small
 					plane_special_module_small
 					plane_special_module_bomb_sights
@@ -1846,7 +1846,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2298,15 +2298,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -2337,6 +2328,15 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_small
 					plane_special_module_small
 					plane_special_module_bomb_sights
@@ -2350,7 +2350,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2583,15 +2583,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -2622,6 +2613,15 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_small
 					plane_special_module_small
 					plane_special_module_bomb_sights
@@ -2635,7 +2635,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -2869,15 +2869,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -2908,6 +2899,15 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_small
 					plane_special_module_small
 					plane_special_module_bomb_sights
@@ -2921,7 +2921,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3154,15 +3154,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -3193,6 +3184,15 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_small
 					plane_special_module_small
 					plane_special_module_bomb_sights
@@ -3206,7 +3206,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_small
@@ -3471,16 +3471,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -3511,6 +3501,16 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+					strat_weapon
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_medium
 					plane_special_module_medium
 					plane_special_module_bomb_sights
@@ -3524,7 +3524,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_medium
@@ -3984,16 +3984,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -4024,6 +4014,16 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+					strat_weapon
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_medium
 					plane_special_module_medium
 					plane_special_module_bomb_sights
@@ -4037,7 +4037,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_medium
@@ -4275,16 +4275,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -4315,6 +4305,16 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+					strat_weapon
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_medium
 					plane_special_module_medium
 					plane_special_module_bomb_sights
@@ -4328,7 +4328,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_medium
@@ -4566,16 +4566,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -4606,6 +4596,16 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+					strat_weapon
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_medium
 					plane_special_module_medium
 					plane_special_module_bomb_sights
@@ -4619,7 +4619,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_medium
@@ -4857,16 +4857,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -4897,6 +4887,16 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+					strat_weapon
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_medium
 					plane_special_module_medium
 					plane_special_module_bomb_sights
@@ -4910,7 +4910,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_medium
@@ -5163,16 +5163,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -5203,6 +5193,16 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+					strat_weapon
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_large
 					plane_special_module_large
 					plane_special_module_bomb_sights
@@ -5216,7 +5216,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_large
@@ -5623,16 +5623,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -5663,6 +5653,16 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+					strat_weapon
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_large
 					plane_special_module_large
 					plane_special_module_bomb_sights
@@ -5676,7 +5676,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_large
@@ -5912,16 +5912,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -5952,6 +5942,16 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+					strat_weapon
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_large
 					plane_special_module_large
 					plane_special_module_bomb_sights
@@ -5965,7 +5965,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_large
@@ -6201,16 +6201,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -6241,6 +6231,16 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+					strat_weapon
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_large
 					plane_special_module_large
 					plane_special_module_bomb_sights
@@ -6254,7 +6254,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_large
@@ -6490,16 +6490,6 @@ equipments = {
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
@@ -6530,6 +6520,16 @@ equipments = {
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
+					cas_weapon
+					nav_bomber_weapon
+					tac_weapon
+					armor_plate_module
+					strat_weapon
+				}
+			}
+			fixed_mid_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 					plane_armor_module_large
 					plane_special_module_large
 					plane_special_module_bomb_sights
@@ -6543,7 +6543,7 @@ equipments = {
 					recon_camera
 				}
 			}
-			fixed_mid_fuselage_slot = {
+			fixed_rear_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
 					plane_armor_module_large
