@@ -2080,11 +2080,18 @@ technologies = {
 			wing_high_rect
 			wing_bi_rect
 
-			fuselage_twin
-			fuselage_bi
-			fuselage_jug
-			fuselage_drop
-			
+			fuselage_classic_small
+			fuselage_classic_medium
+			fuselage_classic_large
+			fuselage_jug_small
+			fuselage_jug_medium
+			fuselage_jug_large
+			fuselage_drop_small
+			fuselage_drop_medium
+			fuselage_bi_small
+			fuselage_bi_medium
+			fuselage_twin_small
+
 			adi_t_tail
 			adi_twin_boom
 			adi_twin_tail
@@ -2096,7 +2103,9 @@ technologies = {
 			fuselage_inverted_gull_wing
 			# todo deplacer dans d'autres techs
 			swept_wing
-			fuselage_flying_wing
+			fuselage_flying_wing_small
+			fuselage_flying_wing_medium
+			fuselage_flying_wing_large
 
 			maritime_pat_role
 		}
