@@ -95,6 +95,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_effil.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_wing_W_rect"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_rect.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_wing_low_effil"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/wing_effil.dds"
 	}

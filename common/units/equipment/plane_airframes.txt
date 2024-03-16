@@ -170,6 +170,7 @@ equipments = {
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
 					recon_camera
+					schraege_cat
 				}
 			}
 			fixed_rear_fuselage_slot = {
@@ -187,7 +188,6 @@ equipments = {
 					plane_special_module_ASW
 					remote_control_turret_system_category
 					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -3522,6 +3522,7 @@ equipments = {
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
 					recon_camera
+					schraege_cat
 				}
 			}
 			fixed_rear_fuselage_slot = {
@@ -3541,7 +3542,6 @@ equipments = {
 					plane_special_module_defense_turret
 					schraege_cat
 					tac_weapon
-					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -5214,6 +5214,7 @@ equipments = {
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
 					recon_camera
+					strat_weapon
 				}
 			}
 			fixed_rear_fuselage_slot = {
@@ -5233,7 +5234,6 @@ equipments = {
 					plane_special_module_defense_turret
 					schraege_cat
 					tac_weapon
-					strat_weapon
 				}
 			}
 			fixed_intern_slot_1 = {
@@ -5292,7 +5292,6 @@ equipments = {
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
 				}
 			} # Empennage
 			construction_slot_0 = {

@@ -2070,6 +2070,7 @@ technologies = {
 			
 			# todo find pictures for just below
 			wing_W_effil
+			wing_W_rect
 			wing_low_effil
 			wing_high_effil
             wing_high_ellip

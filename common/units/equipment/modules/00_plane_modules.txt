@@ -3030,6 +3030,35 @@ equipment_modules = {
 			convert_cost_ic = 1
 		}
 	}
+	wing_W_rect = {
+		abbreviation = "W_rect"
+		category = wing_W
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 2
+			reliability = 0.1
+		}
+		multiply_stats = {
+			air_attack = 0.07
+			air_agility = 0.07
+			weight = -0.05
+		}
+		xp_cost = 1
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+			}
+			multiply_stats = {
+				air_ground_attack = 0.10
+			}
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 1
+		}
+	}
 	#
 	wing_high_effil = {
 		abbreviation = "high_effil"
@@ -3150,6 +3179,55 @@ equipment_modules = {
 	}
 
 	# Fuselage structure
+	fuselage_classic = {
+		abbreviation = "fus_classic"
+		category = adi_fuselage_kind
+		sfx = sfx_ui_sd_module_turret
+		
+		xp_cost = 5
+
+		allowed_module_categories = {
+			tail_slot = {
+				plane_empennage
+			}
+		}
+	}
+	fuselage_jug = {
+		abbreviation = "fus_jug"
+		category = adi_fuselage_kind
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.1
+		}
+		multiply_stats = {
+			build_cost_ic = -0.1
+			air_defense = 0.1
+		}
+		xp_cost = 1
+		allowed_module_categories = {
+			tail_slot = {
+				plane_empennage
+			}
+		}
+	}
+	fuselage_drop = {
+		abbreviation = "fus_drop"
+		category = adi_fuselage_kind
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0
+		}
+		multiply_stats = {
+			build_cost_ic = 0.15
+			air_agility = 0.1
+		}
+		xp_cost = 3
+		allowed_module_categories = {
+			tail_slot = {
+				plane_empennage
+			}
+		}
+	}
 	fuselage_bi = {
 		abbreviation = "fus_bi"
 		category = adi_fuselage_kind
@@ -3167,36 +3245,10 @@ equipment_modules = {
 		xp_cost = 5
 
 		allowed_module_categories = {
-			aircraft_empennage = {
-				plane_empennage
+			tail_slot = {
+				plane_twin_empennage
 			}
 		}
-	}
-	fuselage_jug = {
-		abbreviation = "fus_jug"
-		category = adi_fuselage_kind
-		sfx = sfx_ui_sd_module_turret
-		add_stats = {
-			reliability = 0.1
-		}
-		multiply_stats = {
-			build_cost_ic = -0.1
-			air_defense = 0.1
-		}
-		xp_cost = 1
-	}
-	fuselage_drop = {
-		abbreviation = "fus_drop"
-		category = adi_fuselage_kind
-		sfx = sfx_ui_sd_module_turret
-		add_stats = {
-			reliability = 0
-		}
-		multiply_stats = {
-			build_cost_ic = 0.15
-			air_agility = 0.1
-		}
-		xp_cost = 3
 	}
 	fuselage_twin = {
 		abbreviation = "adi_twin"
@@ -3215,8 +3267,8 @@ equipment_modules = {
 		xp_cost = 5
 
 		allowed_module_categories = {
-			aircraft_empennage = {
-				plane_empennage
+			tail_slot = {
+				plane_twin_empennage
 			}
 		}
 	}
@@ -3243,7 +3295,7 @@ equipment_modules = {
 		dismantle_cost_ic = 2.5
 
 		allowed_module_categories = {
-			aircraft_empennage = {
+			tail_slot = {
 				plane_empennage
 			}
 		}
@@ -3264,6 +3316,11 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 2
 		xp_cost = 1
+		allowed_module_categories = {
+			tail_slot = {
+				plane_empennage
+			}
+		}
 	} # todo refract it
 	fuselage_flying_wing = {
 		abbreviation = "adi_fly_w"
@@ -3333,7 +3390,7 @@ equipment_modules = {
 	}
 	adi_twin_boom = {
 		abbreviation = "adi_tb"
-		category = plane_empennage
+		category = plane_twin_empennage
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
