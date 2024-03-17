@@ -207,14 +207,30 @@ spriteTypes = {
 		name = "GFX_EMI_adi_twin_tail"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/empennage_twin_tail.dds"
 	}
+	spriteType = {
+		name = "EQ_MOD_CAT_plane_empennage_TITLE"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/empennage_twin_tail.dds"
+	}
+	spriteType = {
+		name = "EQ_MOD_CAT_plane_twin_empennage_TITLE"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/empennage_twin_tail.dds"
+	}
 
 	# FUSELAGE
 	spriteType = {
-		name = "GFX_EMI_fuselage_flying_wing"
+		name = "GFX_EMI_fuselage_flying_wing_small"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_flying_wing.dds"
 	}
 	spriteType = {
-		name = "GFX_EMI_fuselage_twin"
+		name = "GFX_EMI_fuselage_flying_wing_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_flying_wing.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_flying_wing_large"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_flying_wing.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_twin_small"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_twin.dds"
 	}
 
@@ -225,7 +241,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_EMI_interceptor_role"
-		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/heavy_fighter.dds" 
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_fighter_role"
+		textureFile = "gfx/interface/equipmentdesigner/planes/role_icons/heavy_fighter.dds"
 	}
 	spriteType = {
 		name = "GFX_EMI_cas_role"
