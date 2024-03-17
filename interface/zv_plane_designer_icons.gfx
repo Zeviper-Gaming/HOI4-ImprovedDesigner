@@ -233,6 +233,38 @@ spriteTypes = {
 		name = "GFX_EMI_fuselage_twin_small"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_twin.dds"
 	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_classic_small"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_classic.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_classic_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_classic.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_classic_large"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_classic.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_jug_small"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_jug.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_jug_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_jug.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_jug_large"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_jug.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_drop_small"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_drop.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_drop_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_drop.dds"
+	}
 
 	# ROLE
 	spriteType = {
