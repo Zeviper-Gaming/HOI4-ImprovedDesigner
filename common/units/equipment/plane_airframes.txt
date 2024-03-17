@@ -2796,7 +2796,7 @@ equipments = {
 			fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					fuselage_kind_small
+					fuselage_kind_medium
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
@@ -3242,7 +3242,7 @@ equipments = {
 			fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					fuselage_kind_small
+					fuselage_kind_medium
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
@@ -3466,7 +3466,7 @@ equipments = {
 			fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					fuselage_kind_small
+					fuselage_kind_medium
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
@@ -3690,7 +3690,7 @@ equipments = {
 			fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					fuselage_kind_small
+					fuselage_kind_medium
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
@@ -3914,7 +3914,7 @@ equipments = {
 			fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					fuselage_kind_small
+					fuselage_kind_medium
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
@@ -4153,7 +4153,7 @@ equipments = {
 			fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					fuselage_kind_small
+					fuselage_kind_large
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
@@ -4545,7 +4545,7 @@ equipments = {
 			fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					fuselage_kind_small
+					fuselage_kind_large
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
@@ -4766,7 +4766,7 @@ equipments = {
 			fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					fuselage_kind_small
+					fuselage_kind_large
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
@@ -4987,7 +4987,7 @@ equipments = {
 			fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					fuselage_kind_small
+					fuselage_kind_large
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
@@ -5208,7 +5208,7 @@ equipments = {
 			fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					fuselage_kind_small
+					fuselage_kind_large
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
