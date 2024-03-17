@@ -173,7 +173,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_small
 				}
@@ -181,7 +181,7 @@ equipments = {
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -605,7 +605,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_small
 				}
@@ -613,7 +613,7 @@ equipments = {
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -818,7 +818,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_small
 				}
@@ -826,7 +826,7 @@ equipments = {
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -1031,7 +1031,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_small
 				}
@@ -1039,7 +1039,7 @@ equipments = {
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -1244,7 +1244,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_small
 				}
@@ -1252,7 +1252,7 @@ equipments = {
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -1481,7 +1481,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_small
 				}
@@ -1489,7 +1489,7 @@ equipments = {
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -1912,7 +1912,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_small
 				}
@@ -1920,7 +1920,7 @@ equipments = {
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -2124,7 +2124,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_small
 				}
@@ -2132,7 +2132,7 @@ equipments = {
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -2337,7 +2337,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_small
 				}
@@ -2345,7 +2345,7 @@ equipments = {
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -2549,7 +2549,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_small
 				}
@@ -2557,7 +2557,7 @@ equipments = {
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -2794,7 +2794,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_medium
 				}
@@ -2802,7 +2802,7 @@ equipments = {
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -3240,7 +3240,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_medium
 				}
@@ -3248,7 +3248,7 @@ equipments = {
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -3464,7 +3464,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_medium
 				}
@@ -3472,7 +3472,7 @@ equipments = {
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -3688,7 +3688,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_medium
 				}
@@ -3696,7 +3696,7 @@ equipments = {
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -3912,7 +3912,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_medium
 				}
@@ -3920,7 +3920,7 @@ equipments = {
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -4151,7 +4151,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_large
 				}
@@ -4543,7 +4543,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_large
 				}
@@ -4764,7 +4764,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_large
 				}
@@ -4985,7 +4985,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_large
 				}
@@ -5206,7 +5206,7 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					fuselage_kind_large
 				}
