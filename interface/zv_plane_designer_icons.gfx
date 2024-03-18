@@ -234,6 +234,14 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_twin.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_fuselage_bi_small"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage-bi.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_fuselage_bi_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage-bi.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_fuselage_classic_small"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/fuselage_classic.dds"
 	}
