@@ -16,7 +16,7 @@ equipment_modules = {
 			fuel_consumption = 1
 			maximum_speed = 0.05
 		}
-		xp_cost = 2
+		xp_cost = 1
 	}
 	engine_pull_push = {
 		abbreviation = "eng_pp"
@@ -39,7 +39,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			build_cost_ic = 7
+			build_cost_ic = 4
 			air_attack = 8
 		}
 		multiply_stats = {
@@ -61,7 +61,7 @@ equipment_modules = {
 			thrust = 2
 			fuel_consumption = 2
 		}
-		xp_cost = 2
+		xp_cost = 1
 	}
 	engine_wing_tandem = {
 		abbreviation = "eng_wing_tandem"
@@ -75,7 +75,7 @@ equipment_modules = {
 			thrust = 4
 			fuel_consumption = 4
 		}
-		xp_cost = 2
+		xp_cost = 4
 	}
 	engine_rear = {
 		abbreviation = "eng_rear"
@@ -83,12 +83,12 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			build_cost_ic = 2
-			maximum_speed = 50
+			build_cost_ic = 3
 		}
 		multiply_stats = {
 			thrust = 1
 			fuel_consumption = 1
+			maximum_speed = 0.05
 		}
 		xp_cost = 2
 	}
@@ -98,7 +98,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			build_cost_ic = 3
+			build_cost_ic = 4
 		}
 		multiply_stats = {
 			thrust = 1
@@ -124,7 +124,7 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
-	}
+	} # todo check from here
 	rotating_engine_2 = {
 		abbreviation = "rot_2"
 		category = plane_engine_rotating
