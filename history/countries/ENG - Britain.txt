@@ -1690,8 +1690,8 @@ if = {
 				wings_slot = low_trapezoid_wing
 				tail_slot = adi_t_tail
 				fuselage_slot = empty
-				fixed_under_fuselage_slot = dive_brakes_small
-				fixed_under_fuselage_slot = fuel_tanks_small
+				fixed_front_fuselage_slot = dive_brakes_small
+				fixed_front_fuselage_slot = fuel_tanks_small
 			}
 			icon = "GFX_ENG_CAS1_medium"
 		}
@@ -1823,7 +1823,7 @@ if = {
 				fixed_wing_slot_1 = empty
 				fixed_front_cockpit_slot = lmg_defense_turret_2x
 				fixed_rear_cockpit_slot = lmg_defense_turret_2x
-				fixed_front_fuselage_slot = lmg_defense_turret_2x
+				fixed_mid_fuselage_slot = lmg_defense_turret_2x
 				fixed_intern_slot_1 = self_sealing_fuel_tanks_large
 
 			}
@@ -1843,8 +1843,8 @@ if = {
 				fixed_wing_slot_1 = large_bomb_bay
 				fixed_front_cockpit_slot = lmg_defense_turret_2x
 				fixed_rear_cockpit_slot = lmg_defense_turret
-				fixed_front_fuselage_slot = empty
 				fixed_mid_fuselage_slot = empty
+				fixed_rear_fuselage_slot = empty
 				fixed_intern_slot_1 = self_sealing_fuel_tanks_large
 
 			}

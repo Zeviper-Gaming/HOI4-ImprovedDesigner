@@ -1241,7 +1241,7 @@ if = {
 				engine_type_slot = engine_3_4x
 				fixed_front_cockpit_slot = hmg_defense_turret_2x
 				fixed_rear_cockpit_slot = hmg_defense_turret_2x
-				fixed_front_fuselage_slot = bomb_sights_1
+				fixed_mid_fuselage_slot = bomb_sights_1
 			}
 		}
 	} # planes

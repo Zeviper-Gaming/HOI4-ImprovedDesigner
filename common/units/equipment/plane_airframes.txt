@@ -103,127 +103,62 @@ equipments = {
 
 				}
 			}
+
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_ASW
-					plane_special_module_engine_small
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_small
-					plane_special_module_engine_small
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
-
 
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_rear_engine
 				}
 			}
 
@@ -238,15 +173,15 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_small
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -263,19 +198,11 @@ equipments = {
 			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 
@@ -318,7 +245,6 @@ equipments = {
 			}
 
 		}
-
 
 		module_count_limit = {
 			module = guided_anti_ship_missile
@@ -609,127 +535,62 @@ equipments = {
 
 				}
 			}
+
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_ASW
-					plane_special_module_engine_small
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_small
-					plane_special_module_engine_small
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
-
 
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_rear_engine
 				}
 			}
 
@@ -744,15 +605,15 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_small
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -769,19 +630,11 @@ equipments = {
 			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 
@@ -895,127 +748,62 @@ equipments = {
 
 				}
 			}
+
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_ASW
-					plane_special_module_engine_small
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_small
-					plane_special_module_engine_small
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
-
 
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_rear_engine
 				}
 			}
 
@@ -1030,15 +818,15 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_small
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -1055,19 +843,11 @@ equipments = {
 			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 
@@ -1181,127 +961,62 @@ equipments = {
 
 				}
 			}
+
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_ASW
-					plane_special_module_engine_small
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_small
-					plane_special_module_engine_small
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
-
 
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_rear_engine
 				}
 			}
 
@@ -1316,15 +1031,15 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_small
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -1341,19 +1056,11 @@ equipments = {
 			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 
@@ -1467,127 +1174,62 @@ equipments = {
 
 				}
 			}
+
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_ASW
-					plane_special_module_engine_small
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_small
-					plane_special_module_engine_small
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
-
 
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_rear_engine
 				}
 			}
 
@@ -1602,15 +1244,15 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_small
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -1627,19 +1269,11 @@ equipments = {
 			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 
@@ -1777,127 +1411,62 @@ equipments = {
 
 				}
 			}
+
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_ASW
-					plane_special_module_engine_small
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_small
-					plane_special_module_engine_small
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
-
 
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_rear_engine
 				}
 			}
 
@@ -1912,15 +1481,15 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_small
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -1937,19 +1506,11 @@ equipments = {
 			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 
@@ -2281,127 +1842,62 @@ equipments = {
 
 				}
 			}
+
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_ASW
-					plane_special_module_engine_small
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_small
-					plane_special_module_engine_small
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
-
 
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_rear_engine
 				}
 			}
 
@@ -2416,15 +1912,15 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_small
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -2441,19 +1937,11 @@ equipments = {
 			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 
@@ -2566,127 +2054,62 @@ equipments = {
 
 				}
 			}
+
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_ASW
-					plane_special_module_engine_small
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_small
-					plane_special_module_engine_small
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
-
 
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_rear_engine
 				}
 			}
 
@@ -2701,15 +2124,15 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_small
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -2726,19 +2149,11 @@ equipments = {
 			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 
@@ -2852,127 +2267,62 @@ equipments = {
 
 				}
 			}
+
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_ASW
-					plane_special_module_engine_small
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_small
-					plane_special_module_engine_small
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
-
 
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_rear_engine
 				}
 			}
 
@@ -2987,15 +2337,15 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_small
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -3012,19 +2362,11 @@ equipments = {
 			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 
@@ -3137,127 +2479,62 @@ equipments = {
 
 				}
 			}
+
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_ASW
-					plane_special_module_engine_small
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_small
-					plane_special_module_engine_small
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_small
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_small
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
-
 
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_rear_engine
 				}
 			}
 
@@ -3272,15 +2549,15 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_small
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -3297,19 +2574,11 @@ equipments = {
 			fixed_intern_slot_3 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 			fixed_intern_slot_4 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_small
-					plane_construction_type_module_small
-					plane_special_module_small
-					plane_armor_module_small
 				}
 			}
 
@@ -3457,109 +2726,48 @@ equipments = {
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
 
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_special_module_medium
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_medium
-					plane_special_module_ASW
-					plane_special_module_engine_medium
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_construction_type_module_medium
-					plane_special_module_medium
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_special_module_medium
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_medium
-					plane_special_module_engine_medium
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_special_module_medium
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_medium
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
-					tac_weapon
-					strat_weapon
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_medium
-					plane_construction_type_module_medium
-					plane_special_module_medium
-					plane_armor_module_medium
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_medium
-					plane_construction_type_module_medium
-					plane_special_module_medium
-					plane_armor_module_medium
 				}
 			}
 
@@ -3567,17 +2775,11 @@ equipments = {
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 
@@ -3592,15 +2794,15 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_medium
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -3970,109 +3172,48 @@ equipments = {
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
 
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_special_module_medium
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_medium
-					plane_special_module_ASW
-					plane_special_module_engine_medium
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_construction_type_module_medium
-					plane_special_module_medium
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_special_module_medium
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_medium
-					plane_special_module_engine_medium
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_special_module_medium
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_medium
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
-					tac_weapon
-					strat_weapon
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_medium
-					plane_construction_type_module_medium
-					plane_special_module_medium
-					plane_armor_module_medium
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_medium
-					plane_construction_type_module_medium
-					plane_special_module_medium
-					plane_armor_module_medium
 				}
 			}
 
@@ -4080,17 +3221,11 @@ equipments = {
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 
@@ -4105,15 +3240,15 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_medium
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -4261,109 +3396,48 @@ equipments = {
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
 
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_special_module_medium
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_medium
-					plane_special_module_ASW
-					plane_special_module_engine_medium
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_construction_type_module_medium
-					plane_special_module_medium
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_special_module_medium
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_medium
-					plane_special_module_engine_medium
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_special_module_medium
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_medium
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
-					tac_weapon
-					strat_weapon
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_medium
-					plane_construction_type_module_medium
-					plane_special_module_medium
-					plane_armor_module_medium
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_medium
-					plane_construction_type_module_medium
-					plane_special_module_medium
-					plane_armor_module_medium
 				}
 			}
 
@@ -4371,17 +3445,11 @@ equipments = {
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 
@@ -4396,15 +3464,15 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_medium
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -4552,109 +3620,48 @@ equipments = {
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
 
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_special_module_medium
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_medium
-					plane_special_module_ASW
-					plane_special_module_engine_medium
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_construction_type_module_medium
-					plane_special_module_medium
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_special_module_medium
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_medium
-					plane_special_module_engine_medium
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_special_module_medium
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_medium
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
-					tac_weapon
-					strat_weapon
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_medium
-					plane_construction_type_module_medium
-					plane_special_module_medium
-					plane_armor_module_medium
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_medium
-					plane_construction_type_module_medium
-					plane_special_module_medium
-					plane_armor_module_medium
 				}
 			}
 
@@ -4662,17 +3669,11 @@ equipments = {
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 
@@ -4687,15 +3688,15 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_medium
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -4843,109 +3844,48 @@ equipments = {
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
 
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_special_module_medium
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_medium
-					plane_special_module_ASW
-					plane_special_module_engine_medium
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_construction_type_module_medium
-					plane_special_module_medium
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_special_module_medium
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_medium
-					plane_special_module_engine_medium
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_medium
-					plane_special_module_medium
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_medium
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
-					tac_weapon
-					strat_weapon
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_medium
-					plane_construction_type_module_medium
-					plane_special_module_medium
-					plane_armor_module_medium
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_medium
-					plane_construction_type_module_medium
-					plane_special_module_medium
-					plane_armor_module_medium
 				}
 			}
 
@@ -4953,17 +3893,11 @@ equipments = {
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 
@@ -4978,15 +3912,15 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_medium
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
+					
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -5149,109 +4083,48 @@ equipments = {
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
 
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_special_module_large
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_large
-					plane_special_module_ASW
-					plane_special_module_engine_large
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_construction_type_module_large
-					plane_special_module_large
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_special_module_large
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_large
-					plane_special_module_engine_large
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_special_module_large
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_large
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
-					tac_weapon
-					strat_weapon
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_large
-					plane_construction_type_module_large
-					plane_special_module_large
-					plane_armor_module_large
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_large
-					plane_construction_type_module_large
-					plane_special_module_large
-					plane_armor_module_large
 				}
 			}
 
@@ -5259,17 +4132,11 @@ equipments = {
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_rear_engine
 				}
 			}
 
@@ -5284,15 +4151,14 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_large
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -5609,109 +4475,48 @@ equipments = {
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
 
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_special_module_large
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_large
-					plane_special_module_ASW
-					plane_special_module_engine_large
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_construction_type_module_large
-					plane_special_module_large
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_special_module_large
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_large
-					plane_special_module_engine_large
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_special_module_large
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_large
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
-					tac_weapon
-					strat_weapon
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_large
-					plane_construction_type_module_large
-					plane_special_module_large
-					plane_armor_module_large
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_large
-					plane_construction_type_module_large
-					plane_special_module_large
-					plane_armor_module_large
 				}
 			}
 
@@ -5719,17 +4524,11 @@ equipments = {
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_rear_engine
 				}
 			}
 
@@ -5744,15 +4543,14 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_large
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -5898,109 +4696,48 @@ equipments = {
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
 
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_special_module_large
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_large
-					plane_special_module_ASW
-					plane_special_module_engine_large
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_construction_type_module_large
-					plane_special_module_large
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_special_module_large
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_large
-					plane_special_module_engine_large
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_special_module_large
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_large
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
-					tac_weapon
-					strat_weapon
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_large
-					plane_construction_type_module_large
-					plane_special_module_large
-					plane_armor_module_large
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_large
-					plane_construction_type_module_large
-					plane_special_module_large
-					plane_armor_module_large
 				}
 			}
 
@@ -6008,17 +4745,11 @@ equipments = {
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_rear_engine
 				}
 			}
 
@@ -6033,15 +4764,14 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_large
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -6187,109 +4917,48 @@ equipments = {
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
 
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_special_module_large
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_large
-					plane_special_module_ASW
-					plane_special_module_engine_large
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_construction_type_module_large
-					plane_special_module_large
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_special_module_large
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_large
-					plane_special_module_engine_large
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_special_module_large
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_large
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
-					tac_weapon
-					strat_weapon
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_large
-					plane_construction_type_module_large
-					plane_special_module_large
-					plane_armor_module_large
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_large
-					plane_construction_type_module_large
-					plane_special_module_large
-					plane_armor_module_large
 				}
 			}
 
@@ -6297,17 +4966,11 @@ equipments = {
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_rear_engine
 				}
 			}
 
@@ -6322,15 +4985,14 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_large
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
 				}
 			} # Empennage
 			construction_slot_0 = {
@@ -6476,109 +5138,48 @@ equipments = {
 			fixed_turret_back_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_top_engine
 				}
 			}
 			fixed_turret_nose_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
 
 				}
 			}
 			# Ligne 4 - Special modules
-			fixed_under_fuselage_slot = {
-				required = no
-				allowed_module_categories = {
-					cas_weapon
-					nav_bomber_weapon
-					tac_weapon
-					armor_plate_module
-					strat_weapon
-				}
-			}
 			fixed_front_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_special_module_large
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_large
-					plane_special_module_ASW
-					plane_special_module_engine_large
-					recon_camera
 				}
 			}
 			fixed_rear_cockpit_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_construction_type_module_large
-					plane_special_module_large
-					plane_special_module_radio_navigation
-					plane_special_module_defense_turret
-					schraege_cat
 				}
 			}
 			fixed_front_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_special_module_large
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_construction_type_module_large
-					plane_special_module_engine_large
-					cas_weapon
-					tac_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-					recon_camera
 				}
 			}
 			fixed_mid_fuselage_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_armor_module_large
-					plane_special_module_large
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_gunsight
-					plane_construction_type_module_large
-					plane_special_module_jet
-					plane_special_module_ASW
-					remote_control_turret_system_category
-					plane_special_module_defense_turret
-					schraege_cat
-					tac_weapon
-					strat_weapon
+				}
+			}
+			fixed_rear_fuselage_slot = {
+				required = no
+				allowed_module_categories = {
 				}
 			}
 			fixed_intern_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_large
-					plane_construction_type_module_large
-					plane_special_module_large
-					plane_armor_module_large
 				}
 			}
 			fixed_intern_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_engine_large
-					plane_construction_type_module_large
-					plane_special_module_large
-					plane_armor_module_large
 				}
 			}
 
@@ -6586,17 +5187,11 @@ equipments = {
 			fixed_turret_belly_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-
 				}
 			}
 			fixed_turret_tail_slot = {
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
-					remote_control_turret_system_category
-					plane_rear_engine
 				}
 			}
 
@@ -6611,15 +5206,14 @@ equipments = {
 				}
 			} # Type d'ailes
 			fuselage_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
-					adi_fuselage_kind
+					fuselage_kind_large
 				}
 			} # Fuselage de l'avion
 			tail_slot = {
 				required = yes
 				allowed_module_categories = {
-					plane_empennage
 				}
 			} # Empennage
 			construction_slot_0 = {
