@@ -36,25 +36,25 @@ spriteTypes = {
 		name = "GFX_EMSI_fixed_flaps_slot"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/plane_module_wing_slot_4.dds"
 	}
-	#spriteType = {
-	#	name = "GFX_EMSI_fixed_under_fuselage_slot"
-	#	textureFile = "gfx/interface/equipmentdesigner/planes/designer/" # todo add pic
-	#}
 	spriteType = {
 		name = "GFX_EMSI_fixed_front_cockpit_slot"
-		textureFile = "gfx/interface/equipmentdesigner/planes/designer/plane_module_slot_front_cockpit.dds"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/front-cockpit-small.dds"
 	}
 	spriteType = {
 		name = "GFX_EMSI_fixed_rear_cockpit_slot"
-		textureFile = "gfx/interface/equipmentdesigner/planes/designer/plane_module_slot_rear_cockpit.dds"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/rear-cockpit-small.dds"
 	}
-	#spriteType = {
-	#	name = "GFX_EMSI_fixed_front_fuselage_slot"
-	#	textureFile = "gfx/interface/equipmentdesigner/planes/designer/" # todo add pic
-	#}
+	spriteType = {
+		name = "GFX_EMSI_fixed_front_fuselage_slot"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/front-fuselage-small.dds"
+	}
 	spriteType = {
 		name = "GFX_EMSI_fixed_mid_fuselage_slot"
-		textureFile = "gfx/interface/equipmentdesigner/planes/designer/plane_module_slot_middle.dds"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/mid-fuselage-small.dds"
+	}
+	spriteType = {
+		name = "GFX_EMSI_fixed_rear_fuselage_slot"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/rear-fuselage-small.dds"
 	}
 	spriteType = {
 		name = "GFX_EMSI_wings_slot"
