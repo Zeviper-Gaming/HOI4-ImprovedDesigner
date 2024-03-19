@@ -73,7 +73,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -93,7 +92,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -505,7 +503,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -525,7 +522,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -718,7 +714,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -738,7 +733,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -931,7 +925,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -951,7 +944,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -1144,7 +1136,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -1164,7 +1155,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -1381,7 +1371,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -1401,7 +1390,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -1812,7 +1800,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -1832,7 +1819,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -2024,7 +2010,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -2044,7 +2029,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -2237,7 +2221,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -2257,7 +2240,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
@@ -2449,7 +2431,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -2469,7 +2450,6 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
 				}
 			}
 			fixed_flaps_slot = {
