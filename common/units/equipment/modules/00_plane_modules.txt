@@ -2915,7 +2915,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
             maximum_speed = -0.1
-            weight = 0.05
+            weight = -0.05
 		}
 		xp_cost = 1
 		mission_type_stats = {
@@ -2944,7 +2944,7 @@ equipment_modules = {
 			air_attack = 0.05
 			air_agility = 0.05
             maximum_speed = 0.05
-            weight = -0.05
+            weight = +0.05
 		}
 		xp_cost = 1
 		mission_type_stats = {

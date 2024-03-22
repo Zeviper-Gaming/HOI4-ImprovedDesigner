@@ -1271,7 +1271,8 @@ if = {
 			}
 		}
 	}
-	if = {
+# UK 1936 planes
+if = {
 		limit = {
 			has_dlc = "By Blood Alone"
 		}
@@ -1279,12 +1280,12 @@ if = {
 			name = "Hawker Fury" #also covers Gloster Gauntlet, Hawker Demon
 			type = small_plane_airframe_0
 			modules = {
-				fixed_main_weapon_slot = light_mg_2x
+				fixed_main_weapon_slot = engine_nose
+				fixed_wing_slot_1 = light_mg_2x
 				engine_type_slot = rotating_engine_1
-				engine_nb_slot = engine_1x1
-				wings_slot = biplane_wing
-				tail_slot = adi_t_tail
-				fuselage_slot = empty
+				wings_slot = wing_bi_rect
+				tail_slot = adi_classic_tail
+				fuselage_slot = fuselage_classic_small
 			}
 			obsolete = yes
 		}
@@ -1293,12 +1294,12 @@ if = {
 			name = "Hawker Nimrod" 
 			type = cv_small_plane_airframe_0
 			modules = {
-				fixed_main_weapon_slot = light_mg_2x
+				fixed_main_weapon_slot = engine_nose
+				fixed_wing_slot_1 = light_mg_2x
 				engine_type_slot = rotating_engine_1
-				engine_nb_slot = engine_1x1
-				wings_slot = biplane_wing
-				tail_slot = adi_t_tail
-				fuselage_slot = empty
+				wings_slot = wing_bi_rect
+				tail_slot = adi_classic_tail
+				fuselage_slot = fuselage_classic_small
 			}
 			obsolete = yes
 		}
@@ -1307,12 +1308,12 @@ if = {
 			name = "Gloster Gladiator" 
 			type = small_plane_airframe_0
 			modules = {
-				fixed_main_weapon_slot = light_mg_4x
+				fixed_main_weapon_slot = engine_nose
+				fixed_wing_slot_1 = light_mg_4x
 				engine_type_slot = rotating_engine_1
-				engine_nb_slot = engine_1x1
-				wings_slot = biplane_wing
-				tail_slot = adi_t_tail
-				fuselage_slot = empty
+				wings_slot = wing_bi_rect
+				tail_slot = adi_classic_tail
+				fuselage_slot = fuselage_classic_small
 			}
 		}
 
@@ -1320,12 +1321,12 @@ if = {
 			name = "Fairey Gordon" 
 			type = small_plane_cas_airframe_0
 			modules = {
-				fixed_main_weapon_slot = bomb_locks
+				fixed_main_weapon_slot = engine_nose
+				fixed_wing_slot_1 = bomb_locks
 				engine_type_slot = rotating_engine_1
-				engine_nb_slot = engine_1x1
-				wings_slot = biplane_wing
-				tail_slot = adi_t_tail
-				fuselage_slot = empty
+				wings_slot = wing_bi_rect
+				tail_slot = adi_classic_tail
+				fuselage_slot = fuselage_classic_small
 
 			}
 			obsolete = yes
@@ -1335,12 +1336,12 @@ if = {
 			name = "Vickers Vildebeest" 
 			type = small_plane_naval_bomber_airframe_0
 			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
+				fixed_main_weapon_slot = engine_nose
+				fixed_front_fuselage_slot = torpedo_mounting
 				engine_type_slot = rotating_engine_1
-				engine_nb_slot = engine_1x1
-				wings_slot = biplane_wing
-				tail_slot = adi_t_tail
-				fuselage_slot = empty
+				wings_slot = wing_bi_rect
+				tail_slot = adi_classic_tail
+				fuselage_slot = fuselage_classic_small
 			}
 			icon = "GFX_ENG_naval_bomber1_medium" #TODO GABRIEL: change if art in before release
 		}
@@ -1348,12 +1349,12 @@ if = {
 			name = "Blackburn Shark" 
 			type = cv_small_plane_naval_bomber_airframe_0
 			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
+				fixed_main_weapon_slot = engine_nose
+				fixed_front_fuselage_slot = torpedo_mounting
 				engine_type_slot = rotating_engine_1
-				engine_nb_slot = engine_1x1
-				wings_slot = biplane_wing
-				tail_slot = adi_t_tail
-				fuselage_slot = empty
+				wings_slot = wing_bi_rect
+				tail_slot = adi_classic_tail
+				fuselage_slot = fuselage_classic_small
 			}
 			icon = "GFX_ENG_naval_bomber1_medium"
 		}
@@ -1361,12 +1362,12 @@ if = {
 			name = "Handley Page Heyford" 
 			type = medium_plane_airframe_0
 			modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
+				fixed_front_fuselage_slot = medium_bomb_bay
+				fixed_wing_slot_2 = engine_wing
 				engine_type_slot = rotating_engine_1
-				engine_nb_slot = engine_2x1
-				wings_slot = biplane_wing
-				tail_slot = adi_twin_tail
-				fuselage_slot = empty
+				wings_slot = wing_bi_rect
+				tail_slot = adi_classic_tail
+				fuselage_slot = fuselage_classic_medium
 			}
 			obsolete = yes
 		}
@@ -1374,13 +1375,13 @@ if = {
 			name = "Bristol Blenheim" 
 			type = medium_plane_airframe_1
 			modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
+				fixed_front_fuselage_slot = medium_bomb_bay
+				fixed_wing_slot_2 = engine_wing
 				engine_type_slot = rotating_engine_2
-				engine_nb_slot = engine_2x1
-				fixed_auxiliary_weapon_slot_4 = lmg_defense_turret
-				wings_slot = low_trapezoid_wing
-				tail_slot = adi_t_tail
-				fuselage_slot = empty
+				fixed_turret_back_slot = lmg_defense_turret
+				wings_slot = wing_low_effil
+				tail_slot = adi_classic_tail
+				fuselage_slot = fuselage_classic_medium
 			}
 			icon = "GFX_ENG_heavy_fighter1_medium"
 		}
