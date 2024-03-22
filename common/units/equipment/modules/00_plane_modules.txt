@@ -7,7 +7,7 @@ equipment_modules = {
 		abbreviation = "eng_nos"
 		category = plane_nose_engine
 		sfx = sfx_ui_sd_module_engine
-
+		add_equipment_type = { fighter heavy_fighter cas tactical_bomber naval_bomber maritime_patrol_plane scout_plane suicide strategic_bomber}
 		add_stats = {
 			build_cost_ic = 2
 		}
@@ -22,7 +22,7 @@ equipment_modules = {
 		abbreviation = "eng_pp"
 		category = plane_nose_engine
 		sfx = sfx_ui_sd_module_engine
-
+		add_equipment_type = { fighter heavy_fighter cas tactical_bomber naval_bomber maritime_patrol_plane scout_plane suicide strategic_bomber}
 		add_stats = {
 			build_cost_ic = 5
 		}
@@ -37,7 +37,7 @@ equipment_modules = {
 		abbreviation = "eng_nos_g"
 		category = plane_nose_engine
 		sfx = sfx_ui_sd_module_engine
-
+		add_equipment_type = { fighter heavy_fighter cas tactical_bomber naval_bomber maritime_patrol_plane scout_plane suicide strategic_bomber}
 		add_stats = {
 			build_cost_ic = 4
 			air_attack = 8
@@ -53,7 +53,7 @@ equipment_modules = {
 		abbreviation = "eng_wing"
 		category = plane_wing_engine
 		sfx = sfx_ui_sd_module_engine
-
+		add_equipment_type = { fighter heavy_fighter cas tactical_bomber naval_bomber maritime_patrol_plane scout_plane suicide strategic_bomber}
 		add_stats = {
 			build_cost_ic = 6
 		}
@@ -67,7 +67,7 @@ equipment_modules = {
 		abbreviation = "eng_wing_tandem"
 		category = plane_wing_engine
 		sfx = sfx_ui_sd_module_engine
-
+		add_equipment_type = { fighter heavy_fighter cas tactical_bomber naval_bomber maritime_patrol_plane scout_plane suicide strategic_bomber}
 		add_stats = {
 			build_cost_ic = 15
 		}
@@ -81,7 +81,7 @@ equipment_modules = {
 		abbreviation = "eng_rear"
 		category = plane_rear_engine
 		sfx = sfx_ui_sd_module_engine
-
+		add_equipment_type = { fighter heavy_fighter cas tactical_bomber naval_bomber maritime_patrol_plane scout_plane suicide strategic_bomber}
 		add_stats = {
 			build_cost_ic = 3
 		}
@@ -96,7 +96,7 @@ equipment_modules = {
 		abbreviation = "eng_top"
 		category = plane_top_engine
 		sfx = sfx_ui_sd_module_engine
-
+		add_equipment_type = { fighter heavy_fighter cas tactical_bomber naval_bomber maritime_patrol_plane scout_plane suicide strategic_bomber}
 		add_stats = {
 			build_cost_ic = 4
 		}
