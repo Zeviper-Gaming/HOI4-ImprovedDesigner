@@ -1670,7 +1670,7 @@ equipment_modules = {
 	# fuel tanks
 	fuel_tanks_small = {
 		abbreviation = "fts"
-		category = plane_special_module_small
+		category = plane_fuel_module_small
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1686,7 +1686,7 @@ equipment_modules = {
 	}
 	self_sealing_fuel_tanks_small = {
 		abbreviation = "ssf"
-		category = plane_special_module_small
+		category = plane_fuel_module_small
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1703,7 +1703,7 @@ equipment_modules = {
 	
 	floats = {
 		abbreviation = "flo"
-		category = plane_special_module_small
+		category = plane_fuel_module_small
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1722,7 +1722,7 @@ equipment_modules = {
 	}
 	high_octane_fuel_small = {
 		abbreviation = "hof"
-		category = plane_special_module_small
+		category = plane_special_module_engine_small
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1738,7 +1738,7 @@ equipment_modules = {
 	}
 	auto_extinguisher_system_small = {
 		abbreviation = "aps"
-		category = plane_special_module_small
+		category = plane_special_module_engine_small
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1918,7 +1918,7 @@ equipment_modules = {
 	# fuel tanks
 	fuel_tanks_medium = {
 		abbreviation = "ftm"
-		category = plane_special_module_medium
+		category = plane_fuel_module_medium
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1934,7 +1934,7 @@ equipment_modules = {
 	}
 	self_sealing_fuel_tanks_medium = {
 		abbreviation = "ssm"
-		category = plane_special_module_medium
+		category = plane_fuel_module_medium
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1950,7 +1950,7 @@ equipment_modules = {
 	}
 	high_octane_fuel_medium = {
 		abbreviation = "hof"
-		category = plane_special_module_medium
+		category = plane_special_module_engine_medium
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1966,7 +1966,7 @@ equipment_modules = {
 	}
 	auto_extinguisher_system_medium = {
 		abbreviation = "apm"
-		category = plane_special_module_medium
+		category = plane_special_module_engine_medium
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -2162,7 +2162,7 @@ equipment_modules = {
 	# fuel tanks
 	fuel_tanks_large = {
 		abbreviation = "ftl"
-		category = plane_special_module_large
+		category = plane_fuel_module_large
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -2178,7 +2178,7 @@ equipment_modules = {
 	}
 	self_sealing_fuel_tanks_large = {
 		abbreviation = "ssl"
-		category = plane_special_module_large
+		category = plane_fuel_module_large
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -2194,7 +2194,7 @@ equipment_modules = {
 	}
 	flying_boat_large = {
 		abbreviation = "flbl"
-		category = plane_special_module_large
+		category = plane_fuel_module_large
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -2211,7 +2211,7 @@ equipment_modules = {
 	}
 	high_octane_fuel_large = {
 		abbreviation = "hof"
-		category = plane_special_module_large
+		category = plane_special_module_engine_large
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -2227,7 +2227,7 @@ equipment_modules = {
 	}
 	auto_extinguisher_system_large = {
 		abbreviation = "apl"
-		category = plane_special_module_large
+		category = plane_special_module_engine_large
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -3205,6 +3205,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_small
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_small
@@ -3322,6 +3323,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_small
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_small
@@ -3439,6 +3441,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_small
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_small
@@ -3560,6 +3563,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_small
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_small
@@ -3670,6 +3674,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_small
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_small
@@ -3807,6 +3812,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_small
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_small
@@ -3909,6 +3915,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_medium
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_medium
@@ -4027,6 +4034,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_medium
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_medium
@@ -4145,6 +4153,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_medium
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_medium
@@ -4267,6 +4276,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_medium
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_medium
@@ -4388,6 +4398,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_medium
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_medium
@@ -4528,6 +4539,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_medium
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_medium
@@ -4632,6 +4644,7 @@ equipment_modules = {
 				tac_weapon
 				strat_weapon
 				armor_plate_module
+				plane_fuel_module_large
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_large
@@ -4751,6 +4764,7 @@ equipment_modules = {
 				tac_weapon
 				strat_weapon
 				armor_plate_module
+				plane_fuel_module_large
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_large
@@ -4880,6 +4894,7 @@ equipment_modules = {
 				tac_weapon
 				strat_weapon
 				armor_plate_module
+				plane_fuel_module_large
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_large
@@ -5021,6 +5036,7 @@ equipment_modules = {
 				tac_weapon
 				armor_plate_module
 				strat_weapon
+				plane_fuel_module_large
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_medium
