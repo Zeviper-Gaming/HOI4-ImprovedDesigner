@@ -905,15 +905,12 @@ if = {
 		name = "Do 23"
 		type = medium_plane_airframe_0
 		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = empty
-			fixed_auxiliary_weapon_slot_2 = empty
-			fixed_auxiliary_weapon_slot_3 = empty
-			engine_type_slot = engine_1_2x
-			special_type_slot_1 = empty
-			special_type_slot_2 = empty
-			special_type_slot_3 = empty
-			special_type_slot_4 = empty
+            fixed_front_fuselage_slot = medium_bomb_bay
+			wings_slot = engine_wing
+			engine_type_slot = V_engine_1
+			wings_slot = wing_high_rect
+			fuselage_slot = fuselage_classic_medium
+			tail_slot = adi_classic_tail
 		}
 		obsolete = yes
 	}
@@ -922,15 +919,15 @@ if = {
 		type = medium_plane_airframe_0
 		design_team = mio:GER_junkers_organization
 		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = empty
-			fixed_auxiliary_weapon_slot_2 = empty
-			fixed_auxiliary_weapon_slot_3 = empty
-			engine_type_slot = engine_2_2x
-			special_type_slot_1 = lmg_defense_turret_2x
-			special_type_slot_2 = fuel_tanks_medium
-			special_type_slot_3 = empty
-			special_type_slot_4 = empty
+			fixed_front_fuselage_slot = medium_bomb_bay
+			wings_slot = engine_wing
+			fixed_intern_slot_1 = fuel_tanks_medium
+			fixed_turret_back_slot = lmg_defense_turret
+			fixed_turret_belly_slot = lmg_defense_turret
+			engine_type_slot = rotating_engine_2
+			wings_slot = wing_low_rect
+			fuselage_slot = fuselage_classic_medium
+			tail_slot = adi_classic_tail
 		}
 		obsolete = yes
 	}
@@ -940,17 +937,15 @@ if = {
 		type = medium_plane_airframe_1
 		design_team = mio:GER_heinkel_organization
 		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_2 = empty
-			fixed_auxiliary_weapon_slot_3 = empty
-			fixed_auxiliary_weapon_slot_5 = lmg_defense_turret_2x
-			fixed_auxiliary_weapon_slot_6 = lmg_defense_turret_2x			
-			engine_type_slot = engine_2_2x
-			special_type_slot_1 = empty
-			special_type_slot_2 = empty
-			special_type_slot_3 = empty
-			special_type_slot_4 = empty
+			fixed_front_fuselage_slot = medium_bomb_bay
+			fixed_mid_fuselage_slot = medium_bomb_bay
+			fixed_turret_nose_slot = lmg_defense_turret
+			fixed_turret_back_slot = lmg_defense_turret
+			fixed_turret_belly_slot = lmg_defense_turret_2x
+			engine_type_slot = V_engine_1
+			wings_slot = wing_low_effil
+			fuselage_slot = fuselage_classic_medium
+			tail_slot = adi_classic_tail
 		}
 		icon = "GFX_GER_tactical_bomber1_medium"
 	}
@@ -959,9 +954,14 @@ if = {
 		name = "Do 17"
 		type = small_plane_cas_airframe_0
 		modules = {
-			fixed_main_weapon_slot = small_bomb_bay
-			engine_type_slot = engine_1_2x
-			special_type_slot_1 = lmg_defense_turret_2x
+			fixed_front_fuselage_slot = small_bomb_bay
+			engine_type_slot = radial_engine_1
+			fixed_turret_belly_slot = lmg_defense_turret
+			fixed_turret_back_slot = lmg_defense_turret
+			fixed_wing_slot_1 = engine_wing
+			wings_slot = wing_high_rect
+			fuselage_slot = fuselage_classic_small
+			tail_slot = adi_twin_tail
 		}
 		icon = "GFX_GER_medium_plane_1_medium"
 	}
@@ -970,9 +970,12 @@ if = {
 		name = "He 51" #also covers Ar 68
 		type = small_plane_airframe_0
 		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
+			fixed_main_weapon_slot = engine_nose
+			fixed_front_cockpit_slot = light_mg_2x
+			engine_type_slot = radial_engine_1
+			wings_slot = wing_bi_rect
+			fuselage_slot = fuselage_classic_small
+			tail_slot = adi_classic_tail
 		}
 		obsolete = yes
 	}
@@ -980,9 +983,12 @@ if = {
 		name = "Hs 123"
 		type = small_plane_cas_airframe_0
 		modules = {
-			fixed_main_weapon_slot = bomb_locks
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
+			fixed_main_weapon_slot = engine_nose
+			fixed_wing_slot_1 = bomb_locks
+			engine_type_slot = radial_engine_1
+			wings_slot = wing_bi_rect
+			fuselage_slot = fuselage_classic_small
+			tail_slot = adi_classic_tail
 		}
 		obsolete = yes
 	}
@@ -991,9 +997,12 @@ if = {
 		type = small_plane_airframe_1
 		design_team = mio:GER_messerschmitt_organization
 		modules = {
-			fixed_main_weapon_slot = light_mg_4x
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = empty
+			fixed_front_fuselage_slot = light_mg_2x
+			fixed_wing_slot_1 = light_mg_2x
+			engine_type_slot = V_engine_1
+			wings_slot = wing_low_effil
+			fuselage_slot = fuselage_classic_small
+			tail_slot = adi_classic_tail
 		}
 		icon = "GFX_GER_fighter1_medium"
 	}
@@ -1002,10 +1011,15 @@ if = {
 		type = small_plane_cas_airframe_1
 		design_team = mio:GER_junkers_organization
 		modules = {
-			fixed_main_weapon_slot = bomb_locks
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = lmg_defense_turret
-			special_type_slot_2 = dive_brakes_small
+			fixed_front_cockpit_slot = bomb_locks
+			fixed_wing_slot_1 = light_mg_2x
+			fixed_wing_slot_2 = bomb_locks
+			engine_type_slot = V_engine_1
+			fixed_rear_cockpit_slot = lmg_defense_turret
+			fixed_flaps_slot = dive_brakes_small
+			wings_slot = wing_W_effil
+			fuselage_slot = fuselage_classic_small
+			tail_slot = adi_classic_tail
 		}
 		icon = "GFX_GER_CAS1_medium"
 	}
@@ -1014,10 +1028,13 @@ if = {
 		type = small_plane_naval_bomber_airframe_1
 		design_team = mio:GER_dornier_organization
 		modules = {
-			fixed_main_weapon_slot = torpedo_mounting
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = lmg_defense_turret
-			special_type_slot_2 = floats
+			fixed_front_fuselage_slot = torpedo_mounting
+			engine_type_slot = V_engine_1
+			fixed_rear_cockpit_slot = lmg_defense_turret
+			fixed_wing_slot_1 = floats
+			wings_slot = wing_high_rect
+			fuselage_slot = fuselage_classic_small
+			tail_slot = adi_classic_tail
 		}
 		icon = "GFX_GER_naval_bomber1_medium"
 	}

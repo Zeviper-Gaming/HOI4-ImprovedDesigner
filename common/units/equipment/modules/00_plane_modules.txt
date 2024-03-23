@@ -3241,24 +3241,28 @@ equipment_modules = {
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -3359,24 +3363,28 @@ equipment_modules = {
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -3477,24 +3485,28 @@ equipment_modules = {
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -3588,24 +3600,28 @@ equipment_modules = {
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -3708,24 +3724,28 @@ equipment_modules = {
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -3837,24 +3857,28 @@ equipment_modules = {
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -3952,24 +3976,28 @@ equipment_modules = {
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -4071,24 +4099,28 @@ equipment_modules = {
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -4190,24 +4222,28 @@ equipment_modules = {
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -4312,24 +4348,28 @@ equipment_modules = {
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -4435,24 +4475,28 @@ equipment_modules = {
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -4565,24 +4609,28 @@ equipment_modules = {
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -4681,24 +4729,28 @@ equipment_modules = {
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -4801,24 +4853,28 @@ equipment_modules = {
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -4931,24 +4987,28 @@ equipment_modules = {
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -5062,24 +5122,28 @@ equipment_modules = {
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
