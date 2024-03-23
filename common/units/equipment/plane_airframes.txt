@@ -235,7 +235,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -329,11 +328,6 @@ equipments = {
 
 		module_count_limit = {
 			category = plane_special_module_air_air_radar
-			count < 2
-		}
-
-		module_count_limit = {
-			category = plane_special_module_defense_turret
 			count < 2
 		}
 		
@@ -668,7 +662,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -882,7 +875,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -1096,7 +1088,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -1310,7 +1301,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -1548,7 +1538,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -1980,7 +1969,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -2193,7 +2181,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -2407,7 +2394,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -2620,7 +2606,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -2877,7 +2862,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -2967,11 +2951,6 @@ equipments = {
 			category = plane_special_module_air_air_radar
 			count < 2
 		}
-
-		module_count_limit = {
-			category = plane_special_module_defense_turret
-			count < 3
-		}
 		module_count_limit = {
 			module = high_octane_fuel_medium
 			count < 2
@@ -2990,11 +2969,7 @@ equipments = {
 			module = water_injection_medium
 			count < 2
 		}
-		
-		module_count_limit = {
-			module = remote_control_turret_system
-			count < 2
-		}
+
 		module_count_limit = {
 			module = reflex_gunsight_1
 			count < 2
@@ -3326,7 +3301,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -3553,7 +3527,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -3780,7 +3753,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -4007,7 +3979,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -4247,7 +4218,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -4642,7 +4612,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -4866,7 +4835,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -5090,7 +5058,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -5314,7 +5281,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {

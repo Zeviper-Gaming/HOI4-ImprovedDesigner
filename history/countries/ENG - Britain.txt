@@ -1286,6 +1286,7 @@ if = {
 				wings_slot = wing_bi_rect
 				tail_slot = adi_classic_tail
 				fuselage_slot = fuselage_classic_small
+				aircraft_role_slot = fighter_role
 			}
 			obsolete = yes
 		}
@@ -1300,6 +1301,7 @@ if = {
 				wings_slot = wing_bi_rect
 				tail_slot = adi_classic_tail
 				fuselage_slot = fuselage_classic_small
+				aircraft_role_slot = fighter_role
 			}
 			obsolete = yes
 		}
@@ -1314,6 +1316,7 @@ if = {
 				wings_slot = wing_bi_rect
 				tail_slot = adi_classic_tail
 				fuselage_slot = fuselage_classic_small
+				aircraft_role_slot = fighter_role
 			}
 		}
 
@@ -1327,6 +1330,7 @@ if = {
 				wings_slot = wing_bi_rect
 				tail_slot = adi_classic_tail
 				fuselage_slot = fuselage_classic_small
+				aircraft_role_slot = cas_role
 
 			}
 			obsolete = yes
@@ -1342,6 +1346,7 @@ if = {
 				wings_slot = wing_bi_rect
 				tail_slot = adi_classic_tail
 				fuselage_slot = fuselage_classic_small
+				aircraft_role_slot = naval_bomber_role
 			}
 			icon = "GFX_ENG_naval_bomber1_medium" #TODO GABRIEL: change if art in before release
 		}
@@ -1355,6 +1360,7 @@ if = {
 				wings_slot = wing_bi_rect
 				tail_slot = adi_classic_tail
 				fuselage_slot = fuselage_classic_small
+				aircraft_role_slot = naval_bomber_role
 			}
 			icon = "GFX_ENG_naval_bomber1_medium"
 		}
@@ -1368,6 +1374,7 @@ if = {
 				wings_slot = wing_bi_rect
 				tail_slot = adi_classic_tail
 				fuselage_slot = fuselage_classic_medium
+				aircraft_role_slot = tac_bomb_role
 			}
 			obsolete = yes
 		}
@@ -1382,6 +1389,7 @@ if = {
 				wings_slot = wing_low_effil
 				tail_slot = adi_classic_tail
 				fuselage_slot = fuselage_classic_medium
+				aircraft_role_slot = strat_bomb_role
 			}
 			icon = "GFX_ENG_heavy_fighter1_medium"
 		}

@@ -16,6 +16,11 @@ equipment_modules = {
 			fuel_consumption = 1
 			maximum_speed = 0.05
 		}
+		allowed_module_categories = {
+			engine_power_slot = {
+				plane_engine_power
+			}
+		}
 		xp_cost = 1
 	}
 	engine_pull_push = {
@@ -30,6 +35,11 @@ equipment_modules = {
 			thrust = 2
 			fuel_consumption = 2
 			maximum_speed = 0.07
+		}
+		allowed_module_categories = {
+			engine_power_slot = {
+				plane_engine_power
+			}
 		}
 		xp_cost = 2
 	}
@@ -47,6 +57,11 @@ equipment_modules = {
 			fuel_consumption = 0.8
 			maximum_speed = 0.05
 		}
+		allowed_module_categories = {
+			engine_power_slot = {
+				plane_engine_power
+			}
+		}
 		xp_cost = 2
 	}
 	engine_wing = {
@@ -61,6 +76,11 @@ equipment_modules = {
 			thrust = 2
 			fuel_consumption = 2
 		}
+		allowed_module_categories = {
+			engine_power_slot = {
+				plane_engine_power
+			}
+		}
 		xp_cost = 1
 	}
 	engine_wing_tandem = {
@@ -74,6 +94,11 @@ equipment_modules = {
 		multiply_stats = {
 			thrust = 4
 			fuel_consumption = 4
+		}
+		allowed_module_categories = {
+			engine_power_slot = {
+				plane_engine_power
+			}
 		}
 		xp_cost = 4
 	}
@@ -90,6 +115,11 @@ equipment_modules = {
 			fuel_consumption = 1
 			maximum_speed = 0.05
 		}
+		allowed_module_categories = {
+			engine_power_slot = {
+				plane_engine_power
+			}
+		}
 		xp_cost = 2
 	}
 	engine_top = {
@@ -103,6 +133,11 @@ equipment_modules = {
 		multiply_stats = {
 			thrust = 1
 			fuel_consumption = 1
+		}
+		allowed_module_categories = {
+			engine_power_slot = {
+				plane_engine_power
+			}
 		}
 		xp_cost = 2
 	}
@@ -3191,6 +3226,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_small
 				recon_camera
+				fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_small
@@ -3313,6 +3349,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_small
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_small
@@ -3435,6 +3472,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_small
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_small
@@ -3561,6 +3599,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_small
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_small
@@ -3676,6 +3715,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_small
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_small
@@ -3818,6 +3858,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_small
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_small
@@ -3925,6 +3966,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_medium
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_medium
@@ -4048,6 +4090,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_medium
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_medium
@@ -4171,6 +4214,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_medium
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_medium
@@ -4298,6 +4342,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_medium
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_medium
@@ -4424,6 +4469,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_medium
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_medium
@@ -4569,6 +4615,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_medium
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_medium
@@ -4677,6 +4724,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_large
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_large
@@ -4801,6 +4849,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_large
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_large
@@ -4935,6 +4984,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_large
 				recon_camera
+				fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_large
@@ -5081,6 +5131,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_large
 				recon_camera
+				fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_large
