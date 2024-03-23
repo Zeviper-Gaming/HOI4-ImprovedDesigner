@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83dced2f-fa07-481c-a85b-2ad3daf41f17" name="Changes" comment="[0.13.6] - fix MB 200 design&#10;&#10;set fuselage to medium">
+    <list default="true" id="83dced2f-fa07-481c-a85b-2ad3daf41f17" name="Changes" comment="[0.13.9] - GER planes&#10;&#10;- update GER 1936 planes&#10;- add fuels tanks on intern modules">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/history/countries/ENG - Britain.txt" beforeDir="false" afterPath="$PROJECT_DIR$/history/countries/ENG - Britain.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/descriptor.mod" beforeDir="false" afterPath="$PROJECT_DIR$/descriptor.mod" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711083989308</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[0.13.8b] - create gitignore">
+      <option name="closed" value="true" />
+      <created>1711118644191</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711118644191</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[0.13.9] - GER planes&#10;&#10;- update GER 1936 planes&#10;- add fuels tanks on intern modules">
+      <option name="closed" value="true" />
+      <created>1711172889204</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711172889204</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +115,8 @@
     <MESSAGE value="[0.13.5] - test" />
     <MESSAGE value="[0.13.5] - fix #58&#10;&#10;- add all planes category for all engines placement modules" />
     <MESSAGE value="[0.13.6] - fix MB 200 design&#10;&#10;set fuselage to medium" />
-    <option name="LAST_COMMIT_MESSAGE" value="[0.13.6] - fix MB 200 design&#10;&#10;set fuselage to medium" />
+    <MESSAGE value="[0.13.8b] - create gitignore" />
+    <MESSAGE value="[0.13.9] - GER planes&#10;&#10;- update GER 1936 planes&#10;- add fuels tanks on intern modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="[0.13.9] - GER planes&#10;&#10;- update GER 1936 planes&#10;- add fuels tanks on intern modules" />
   </component>
 </project>
