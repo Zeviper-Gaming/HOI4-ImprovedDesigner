@@ -640,130 +640,62 @@ if = {
 			fuselage_slot = fuselage_classic_small
 		}
 		icon = "GFX_USA_light_plane_4_medium"
-	}	
-	create_equipment_variant = {
-		name = "P-35A" #
-		type = small_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			fixed_wing_slot_1 = empty
-			fixed_front_cockpit_slot = empty
-
-			engine_type_slot = radial_engine_2
-			engine_nb_slot = engine_1x1
-			wings_slot = low_dihedral_wing
-			tail_slot = adi_t_tail
-			fuselage_slot = empty
-		}
-		icon = "GFX_USA_fighter1_medium"
 	}
 	create_equipment_variant = {
 		name = "B-6A" #also covers other Keystone bombers
 		type = medium_plane_airframe_0
 		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_front_cockpit_slot = lmg_defense_turret
-
+			fixed_front_fuselage_slot = medium_bomb_bay
+			fixed_rear_cockpit_slot = lmg_defense_turret
+			fixed_wing_slot_1 = engine_wing
 			engine_type_slot = radial_engine_1
-			engine_nb_slot = engine_2x1
-			wings_slot = biplane_wing
-			tail_slot = adi_t_tail
-			fuselage_slot = empty
+			wings_slot = wing_bi_rect
+			tail_slot = adi_classic_tail
+			fuselage_slot = fuselage_classic_medium
 		}
 		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "B-10" #
-		type = medium_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_front_cockpit_slot = lmg_defense_turret
-
-			engine_type_slot = radial_engine_1
-			engine_nb_slot = engine_2x1
-			wings_slot = low_trapezoid_wing
-			tail_slot = adi_t_tail
-			fuselage_slot = empty
-		}
-		icon = "GFX_medium_plane_1_medium"
 	}
 	create_equipment_variant = {
 		name = "B-18" #
 		type = medium_plane_airframe_1
 		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_front_cockpit_slot = lmg_defense_turret
-
+			fixed_front_fuselage_slot = medium_bomb_bay
+			fixed_turret_nose_slot = lmg_defense_turret
+			fixed_turret_back_slot = lmg_defense_turret
+			fixed_wing_slot_1 = engine_wing
 			engine_type_slot = radial_engine_1
-			engine_nb_slot = engine_2x1
-			wings_slot = low_trapezoid_wing
-			tail_slot = adi_t_tail
-			fuselage_slot = empty
+			wings_slot = wing_low_effil
+			tail_slot = adi_classic_tail
+			fuselage_slot = fuselage_classic_medium
 		}
 		icon = "GFX_USA_early_bomber_medium"
-	}
-	create_equipment_variant = {
-		name = "P2Y" #
-		type = medium_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_wing_slot_1 = bomb_locks
-			fixed_front_cockpit_slot = lmg_defense_turret
-
-			engine_type_slot = radial_engine_1
-			engine_nb_slot = engine_2x1
-			wings_slot = high_rectangular_wing
-			tail_slot = adi_twin_tail
-			fuselage_slot = flying_boat_medium
-		}
-		obsolete = yes
-		icon = "GFX_USA_naval_bomber1_medium"
 	}
 	create_equipment_variant = {
 		name = "PBY" #
 		type = medium_plane_airframe_1
 		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_wing_slot_1 = torpedo_mounting
+			fixed_front_fuselage_slot = medium_bomb_bay
+			fixed_wing_slot_1 = engine_wing
 			fixed_wing_slot_2 = torpedo_mounting
-			fixed_rear_cockpit_slot = lmg_defense_turret
+			fixed_turret_back_slot = lmg_defense_turret
 
 			engine_type_slot = radial_engine_2
-			engine_nb_slot = engine_2x1
-			wings_slot = high_rectangular_wing
-			tail_slot = adi_twin_tail
+			wings_slot = wing_high_rect
+			tail_slot = adi_classic_tail
 			fuselage_slot = flying_boat_medium
 		}
 		icon = "GFX_USA_naval_bomber1_medium"
 	}
 	create_equipment_variant = {
-		name = "F4B" #also covers F2F
-		type = cv_small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			fixed_front_cockpit_slot = empty
-
-			engine_type_slot = radial_engine_1
-			engine_nb_slot = engine_1x1
-			wings_slot = biplane_wing
-			tail_slot = adi_twin_tail
-			fuselage_slot = empty
-		}
-		obsolete = yes
-		icon = "GFX_USA_cv_fighter1_medium"
-	}
-	create_equipment_variant = {
 		name = "F3F" #
 		type = cv_small_plane_airframe_0
 		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			fixed_front_cockpit_slot = empty
-
+			fixed_front_cockpit_slot = light_mg_2x
+			fixed_main_weapon_slot = engine_nose
 			engine_type_slot = radial_engine_1
-			engine_nb_slot = engine_1x1
-			wings_slot = biplane_wing
-			tail_slot = adi_twin_tail
-			fuselage_slot = empty
+			wings_slot = wing_bi_rect
+			tail_slot = adi_classic_tail
+			fuselage_slot = fuselage_classic_small
 		}
 		icon = "GFX_USA_cv_fighter1_medium"
 	}
