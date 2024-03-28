@@ -24,7 +24,7 @@ equipments = {
 		picture = archetype_fighter_equipment
 		is_buildable = no
 		type = fighter
-		type_override = fixed_main_weapon_slot
+		
 		allowed_types = {
 			fighter
 			interceptor
@@ -1330,7 +1330,7 @@ equipments = {
 		is_buildable = no
 		type = fighter
 		ai_type = cv_fighter
-		type_override = fixed_main_weapon_slot
+		
 		allowed_types = {
 			fighter
 			interceptor
@@ -2642,7 +2642,7 @@ equipments = {
 		picture = archetype_strat_bomber_equipment
 		is_buildable = no
 		type = tactical_bomber
-		type_override = fixed_main_weapon_slot
+		
 		allowed_types = {
 			tactical_bomber
 			heavy_fighter
@@ -4005,7 +4005,7 @@ equipments = {
 		picture = archetype_strat_bomber_equipment
 		is_buildable = no
 		type = strategic_bomber
-		type_override = fixed_main_weapon_slot
+		
 		allowed_types = {
 			strategic_bomber
 			maritime_patrol_plane
