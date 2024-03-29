@@ -2938,6 +2938,10 @@ equipment_modules = {
 			module_category = wing_low
 			convert_cost_ic = 1
 		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 2
+		}
 
 	}
 	wing_low_rect = {
@@ -2965,6 +2969,10 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = wing_low
 			convert_cost_ic = 1
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 2
 		}
 
 	}
@@ -2995,6 +3003,10 @@ equipment_modules = {
 			module_category = wing_low
 			convert_cost_ic = 1
 		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 2
+		}
 
 	}
 	wing_low_ellip = {
@@ -3023,6 +3035,10 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = wing_low
 			convert_cost_ic = 1
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 2
 		}
 
 	}
@@ -3054,6 +3070,10 @@ equipment_modules = {
 			module_category = wing_W
 			convert_cost_ic = 1
 		}
+		can_convert_from = {
+			module_category = wing_low
+			convert_cost_ic = 2
+		}
 	}
 	wing_W_rect = {
 		abbreviation = "W_rect"
@@ -3082,6 +3102,10 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = wing_W
 			convert_cost_ic = 1
+		}
+		can_convert_from = {
+			module_category = wing_low
+			convert_cost_ic = 2
 		}
 	}
 	#
@@ -4802,19 +4826,23 @@ equipment_modules = {
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 				plane_top_engine
 			}
 			fixed_turret_nose_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			fixed_turret_belly_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			fixed_turret_tail_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			tail_slot = {
@@ -4927,19 +4955,23 @@ equipment_modules = {
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 				plane_top_engine
 			}
 			fixed_turret_nose_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			fixed_turret_belly_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			fixed_turret_tail_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			tail_slot = {
@@ -5062,19 +5094,23 @@ equipment_modules = {
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 				plane_top_engine
 			}
 			fixed_turret_nose_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			fixed_turret_belly_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			fixed_turret_tail_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			tail_slot = {
@@ -5198,19 +5234,23 @@ equipment_modules = {
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 				plane_top_engine
 			}
 			fixed_turret_nose_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			fixed_turret_belly_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			fixed_turret_tail_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			tail_slot = {
