@@ -7,7 +7,7 @@ equipment_modules = {
 		abbreviation = "eng_nos"
 		category = plane_nose_engine
 		sfx = sfx_ui_sd_module_engine
-
+		add_equipment_type = { fighter heavy_fighter cas tactical_bomber naval_bomber maritime_patrol_plane scout_plane suicide strategic_bomber}
 		add_stats = {
 			build_cost_ic = 2
 		}
@@ -16,13 +16,18 @@ equipment_modules = {
 			fuel_consumption = 1
 			maximum_speed = 0.05
 		}
-		xp_cost = 2
+		allowed_module_categories = {
+			engine_power_slot = {
+				plane_engine_power
+			}
+		}
+		xp_cost = 1
 	}
 	engine_pull_push = {
 		abbreviation = "eng_pp"
 		category = plane_nose_engine
 		sfx = sfx_ui_sd_module_engine
-
+		add_equipment_type = { fighter heavy_fighter cas tactical_bomber naval_bomber maritime_patrol_plane scout_plane suicide strategic_bomber}
 		add_stats = {
 			build_cost_ic = 5
 		}
@@ -31,15 +36,20 @@ equipment_modules = {
 			fuel_consumption = 2
 			maximum_speed = 0.07
 		}
+		allowed_module_categories = {
+			engine_power_slot = {
+				plane_engine_power
+			}
+		}
 		xp_cost = 2
 	}
 	engine_canon_nose = {
 		abbreviation = "eng_nos_g"
 		category = plane_nose_engine
 		sfx = sfx_ui_sd_module_engine
-
+		add_equipment_type = { fighter heavy_fighter cas tactical_bomber naval_bomber maritime_patrol_plane scout_plane suicide strategic_bomber}
 		add_stats = {
-			build_cost_ic = 7
+			build_cost_ic = 4
 			air_attack = 8
 		}
 		multiply_stats = {
@@ -47,13 +57,18 @@ equipment_modules = {
 			fuel_consumption = 0.8
 			maximum_speed = 0.05
 		}
+		allowed_module_categories = {
+			engine_power_slot = {
+				plane_engine_power
+			}
+		}
 		xp_cost = 2
 	}
 	engine_wing = {
 		abbreviation = "eng_wing"
 		category = plane_wing_engine
 		sfx = sfx_ui_sd_module_engine
-
+		add_equipment_type = { fighter heavy_fighter cas tactical_bomber naval_bomber maritime_patrol_plane scout_plane suicide strategic_bomber}
 		add_stats = {
 			build_cost_ic = 6
 		}
@@ -61,13 +76,18 @@ equipment_modules = {
 			thrust = 2
 			fuel_consumption = 2
 		}
-		xp_cost = 2
+		allowed_module_categories = {
+			engine_power_slot = {
+				plane_engine_power
+			}
+		}
+		xp_cost = 1
 	}
 	engine_wing_tandem = {
 		abbreviation = "eng_wing_tandem"
 		category = plane_wing_engine
 		sfx = sfx_ui_sd_module_engine
-
+		add_equipment_type = { fighter heavy_fighter cas tactical_bomber naval_bomber maritime_patrol_plane scout_plane suicide strategic_bomber}
 		add_stats = {
 			build_cost_ic = 15
 		}
@@ -75,20 +95,30 @@ equipment_modules = {
 			thrust = 4
 			fuel_consumption = 4
 		}
-		xp_cost = 2
+		allowed_module_categories = {
+			engine_power_slot = {
+				plane_engine_power
+			}
+		}
+		xp_cost = 4
 	}
 	engine_rear = {
 		abbreviation = "eng_rear"
 		category = plane_rear_engine
 		sfx = sfx_ui_sd_module_engine
-
+		add_equipment_type = { fighter heavy_fighter cas tactical_bomber naval_bomber maritime_patrol_plane scout_plane suicide strategic_bomber}
 		add_stats = {
-			build_cost_ic = 2
-			maximum_speed = 50
+			build_cost_ic = 3
 		}
 		multiply_stats = {
 			thrust = 1
 			fuel_consumption = 1
+			maximum_speed = 0.05
+		}
+		allowed_module_categories = {
+			engine_power_slot = {
+				plane_engine_power
+			}
 		}
 		xp_cost = 2
 	}
@@ -96,13 +126,18 @@ equipment_modules = {
 		abbreviation = "eng_top"
 		category = plane_top_engine
 		sfx = sfx_ui_sd_module_engine
-
+		add_equipment_type = { fighter heavy_fighter cas tactical_bomber naval_bomber maritime_patrol_plane scout_plane suicide strategic_bomber}
 		add_stats = {
-			build_cost_ic = 3
+			build_cost_ic = 4
 		}
 		multiply_stats = {
 			thrust = 1
 			fuel_consumption = 1
+		}
+		allowed_module_categories = {
+			engine_power_slot = {
+				plane_engine_power
+			}
 		}
 		xp_cost = 2
 	}
@@ -124,7 +159,7 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
-	}
+	} # todo check from here
 	rotating_engine_2 = {
 		abbreviation = "rot_2"
 		category = plane_engine_rotating
@@ -1670,7 +1705,7 @@ equipment_modules = {
 	# fuel tanks
 	fuel_tanks_small = {
 		abbreviation = "fts"
-		category = plane_special_module_small
+		category = plane_fuel_module_small
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1686,7 +1721,7 @@ equipment_modules = {
 	}
 	self_sealing_fuel_tanks_small = {
 		abbreviation = "ssf"
-		category = plane_special_module_small
+		category = plane_fuel_module_small
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1703,7 +1738,7 @@ equipment_modules = {
 	
 	floats = {
 		abbreviation = "flo"
-		category = plane_special_module_small
+		category = plane_fuel_module_small
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1722,7 +1757,7 @@ equipment_modules = {
 	}
 	high_octane_fuel_small = {
 		abbreviation = "hof"
-		category = plane_special_module_small
+		category = plane_special_module_engine_small
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1738,7 +1773,7 @@ equipment_modules = {
 	}
 	auto_extinguisher_system_small = {
 		abbreviation = "aps"
-		category = plane_special_module_small
+		category = plane_special_module_engine_small
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1918,7 +1953,7 @@ equipment_modules = {
 	# fuel tanks
 	fuel_tanks_medium = {
 		abbreviation = "ftm"
-		category = plane_special_module_medium
+		category = plane_fuel_module_medium
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1934,7 +1969,7 @@ equipment_modules = {
 	}
 	self_sealing_fuel_tanks_medium = {
 		abbreviation = "ssm"
-		category = plane_special_module_medium
+		category = plane_fuel_module_medium
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1950,7 +1985,7 @@ equipment_modules = {
 	}
 	high_octane_fuel_medium = {
 		abbreviation = "hof"
-		category = plane_special_module_medium
+		category = plane_special_module_engine_medium
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1966,7 +2001,7 @@ equipment_modules = {
 	}
 	auto_extinguisher_system_medium = {
 		abbreviation = "apm"
-		category = plane_special_module_medium
+		category = plane_special_module_engine_medium
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -2162,7 +2197,7 @@ equipment_modules = {
 	# fuel tanks
 	fuel_tanks_large = {
 		abbreviation = "ftl"
-		category = plane_special_module_large
+		category = plane_fuel_module_large
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -2178,7 +2213,7 @@ equipment_modules = {
 	}
 	self_sealing_fuel_tanks_large = {
 		abbreviation = "ssl"
-		category = plane_special_module_large
+		category = plane_fuel_module_large
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -2194,7 +2229,7 @@ equipment_modules = {
 	}
 	flying_boat_large = {
 		abbreviation = "flbl"
-		category = plane_special_module_large
+		category = plane_fuel_module_large
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -2211,7 +2246,7 @@ equipment_modules = {
 	}
 	high_octane_fuel_large = {
 		abbreviation = "hof"
-		category = plane_special_module_large
+		category = plane_special_module_engine_large
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -2227,7 +2262,7 @@ equipment_modules = {
 	}
 	auto_extinguisher_system_large = {
 		abbreviation = "apl"
-		category = plane_special_module_large
+		category = plane_special_module_engine_large
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -2903,6 +2938,10 @@ equipment_modules = {
 			module_category = wing_low
 			convert_cost_ic = 1
 		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 2
+		}
 
 	}
 	wing_low_rect = {
@@ -2915,35 +2954,6 @@ equipment_modules = {
 		}
 		multiply_stats = {
             maximum_speed = -0.1
-            weight = 0.05
-		}
-		xp_cost = 1
-		mission_type_stats = {
-			limit = {
-				interception
-				air_superiority
-			}
-			multiply_stats = {
-				air_attack = 0.05
-			}
-		}
-		can_convert_from = {
-			module_category = wing_low
-			convert_cost_ic = 1
-		}
-
-	}
-	wing_low_trapez = {
-		abbreviation = "low_trapez"
-		category = wing_low
-		sfx = sfx_ui_sd_module_turret
-
-		add_stats = {
-		}
-		multiply_stats = {
-			air_attack = 0.05
-			air_agility = 0.05
-            maximum_speed = 0.05
             weight = -0.05
 		}
 		xp_cost = 1
@@ -2959,6 +2969,43 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = wing_low
 			convert_cost_ic = 1
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 2
+		}
+
+	}
+	wing_low_trapez = {
+		abbreviation = "low_trapez"
+		category = wing_low
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+		}
+		multiply_stats = {
+			air_attack = 0.05
+			air_agility = 0.05
+            maximum_speed = 0.05
+            weight = +0.05
+		}
+		xp_cost = 1
+		mission_type_stats = {
+			limit = {
+				interception
+				air_superiority
+			}
+			multiply_stats = {
+				air_attack = 0.05
+			}
+		}
+		can_convert_from = {
+			module_category = wing_low
+			convert_cost_ic = 1
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 2
 		}
 
 	}
@@ -2988,6 +3035,10 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = wing_low
 			convert_cost_ic = 1
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 2
 		}
 
 	}
@@ -3019,6 +3070,10 @@ equipment_modules = {
 			module_category = wing_W
 			convert_cost_ic = 1
 		}
+		can_convert_from = {
+			module_category = wing_low
+			convert_cost_ic = 2
+		}
 	}
 	wing_W_rect = {
 		abbreviation = "W_rect"
@@ -3047,6 +3102,10 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = wing_W
 			convert_cost_ic = 1
+		}
+		can_convert_from = {
+			module_category = wing_low
+			convert_cost_ic = 2
 		}
 	}
 	#
@@ -3191,6 +3250,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_small
 				recon_camera
+				fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_small
@@ -3205,6 +3265,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_small
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_small
@@ -3240,24 +3301,28 @@ equipment_modules = {
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -3308,6 +3373,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_small
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_small
@@ -3322,6 +3388,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_small
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_small
@@ -3357,24 +3424,28 @@ equipment_modules = {
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -3425,6 +3496,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_small
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_small
@@ -3439,6 +3511,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_small
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_small
@@ -3474,24 +3547,28 @@ equipment_modules = {
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -3546,6 +3623,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_small
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_small
@@ -3560,6 +3638,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_small
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_small
@@ -3584,24 +3663,28 @@ equipment_modules = {
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -3656,6 +3739,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_small
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_small
@@ -3670,6 +3754,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_small
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_small
@@ -3703,24 +3788,28 @@ equipment_modules = {
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -3793,6 +3882,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_small
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_small
@@ -3807,6 +3897,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_small
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_small
@@ -3831,24 +3922,28 @@ equipment_modules = {
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
 				plane_armor_module_small
+				plane_fuel_module_small
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -3895,6 +3990,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_medium
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_medium
@@ -3909,6 +4005,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_medium
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_medium
@@ -3945,24 +4042,28 @@ equipment_modules = {
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -4013,6 +4114,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_medium
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_medium
@@ -4027,6 +4129,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_medium
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_medium
@@ -4063,24 +4166,28 @@ equipment_modules = {
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -4131,6 +4238,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_medium
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_medium
@@ -4145,6 +4253,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_medium
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_medium
@@ -4181,24 +4290,28 @@ equipment_modules = {
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -4253,6 +4366,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_medium
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_medium
@@ -4267,6 +4381,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_medium
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_medium
@@ -4302,24 +4417,28 @@ equipment_modules = {
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -4374,6 +4493,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_medium
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_medium
@@ -4388,6 +4508,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_medium
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_medium
@@ -4424,24 +4545,28 @@ equipment_modules = {
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -4514,6 +4639,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_medium
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_medium
@@ -4528,6 +4654,7 @@ equipment_modules = {
 				nav_bomber_weapon
 				tac_weapon
 				armor_plate_module
+				plane_fuel_module_medium
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_medium
@@ -4553,24 +4680,28 @@ equipment_modules = {
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
 				plane_armor_module_medium
+				plane_fuel_module_medium
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
@@ -4617,6 +4748,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_large
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_large
@@ -4632,6 +4764,7 @@ equipment_modules = {
 				tac_weapon
 				strat_weapon
 				armor_plate_module
+				plane_fuel_module_large
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_large
@@ -4668,40 +4801,48 @@ equipment_modules = {
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 				plane_top_engine
 			}
 			fixed_turret_nose_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			fixed_turret_belly_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			fixed_turret_tail_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			tail_slot = {
@@ -4736,6 +4877,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_large
 				recon_camera
+			fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_large
@@ -4751,6 +4893,7 @@ equipment_modules = {
 				tac_weapon
 				strat_weapon
 				armor_plate_module
+				plane_fuel_module_large
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_large
@@ -4787,40 +4930,48 @@ equipment_modules = {
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 				plane_top_engine
 			}
 			fixed_turret_nose_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			fixed_turret_belly_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			fixed_turret_tail_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			tail_slot = {
@@ -4865,6 +5016,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_large
 				recon_camera
+				fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_large
@@ -4880,6 +5032,7 @@ equipment_modules = {
 				tac_weapon
 				strat_weapon
 				armor_plate_module
+				plane_fuel_module_large
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_large
@@ -4916,40 +5069,48 @@ equipment_modules = {
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 				plane_top_engine
 			}
 			fixed_turret_nose_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			fixed_turret_belly_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			fixed_turret_tail_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			tail_slot = {
@@ -5006,6 +5167,7 @@ equipment_modules = {
 				plane_special_module_ASW
 				plane_special_module_engine_large
 				recon_camera
+				fighter_weapon
 			}
 			fixed_rear_cockpit_slot = {
 				plane_armor_module_large
@@ -5021,6 +5183,7 @@ equipment_modules = {
 				tac_weapon
 				armor_plate_module
 				strat_weapon
+				plane_fuel_module_large
 			}
 			fixed_mid_fuselage_slot = {
 				plane_armor_module_medium
@@ -5046,40 +5209,48 @@ equipment_modules = {
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_2 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_3 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_4 = {
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
 				plane_armor_module_large
+				plane_fuel_module_large
 			}
 			fixed_turret_back_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 				plane_top_engine
 			}
 			fixed_turret_nose_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			fixed_turret_belly_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			fixed_turret_tail_slot = {
 				plane_special_module_defense_turret
+				plane_special_module_defense_turret_x2
 				remote_control_turret_system_category
 			}
 			tail_slot = {
@@ -5239,7 +5410,7 @@ equipment_modules = {
 	}
 	tac_bomb_role = {
 		abbreviation = "r_tac_bomb"
-		category = aircraft_role_large
+		category = aircraft_role_medium
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = tactical_bomber
 

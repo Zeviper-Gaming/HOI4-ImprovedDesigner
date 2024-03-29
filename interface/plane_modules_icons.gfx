@@ -63,47 +63,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/fuselage_flying_wing.dds"
 		legacy_lazy_load = no
 	}
-	spriteType = {
-		name = "GFX_EMI_fuselage_low_rectangular_wing"  #todo
-		textureFile = "gfx/interface/equipmentdesigner/planes/modules/.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_fuselage_low_dihedral"  #todo
-		textureFile = "gfx/interface/equipmentdesigner/planes/modules/.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_fuselage_high_rectangular_wing"  #todo
-		textureFile = "gfx/interface/equipmentdesigner/planes/modules/.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_fuselage_high_gull"  #todo
-		textureFile = "gfx/interface/equipmentdesigner/planes/modules/.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_fuselage_high_anhedral"  #todo
-		textureFile = "gfx/interface/equipmentdesigner/planes/modules/.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_fuselage_high_dihedral"  #todo
-		textureFile = "gfx/interface/equipmentdesigner/planes/modules/.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_fuselage_biplane"  #todo
-		textureFile = "gfx/interface/equipmentdesigner/planes/modules/.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_fuselage_swept_wing"  #todo
-		textureFile = "gfx/interface/equipmentdesigner/planes/modules/.dds"
-		legacy_lazy_load = no
-	}
-	
 	
 	
 		#### MODULES ####

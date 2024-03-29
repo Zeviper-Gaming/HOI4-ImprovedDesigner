@@ -24,7 +24,7 @@ equipments = {
 		picture = archetype_fighter_equipment
 		is_buildable = no
 		type = fighter
-		type_override = fixed_main_weapon_slot
+		
 		allowed_types = {
 			fighter
 			interceptor
@@ -63,7 +63,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -73,7 +73,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -84,6 +84,7 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -93,7 +94,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_flaps_slot = {
@@ -234,7 +235,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -328,11 +328,6 @@ equipments = {
 
 		module_count_limit = {
 			category = plane_special_module_air_air_radar
-			count < 2
-		}
-
-		module_count_limit = {
-			category = plane_special_module_defense_turret
 			count < 2
 		}
 		
@@ -438,13 +433,11 @@ equipments = {
 			count < 2
 		}
 		default_modules = {
-			fixed_main_weapon_slot = empty
-			fixed_auxiliary_weapon_slot_1 = empty
-			engine_nb_slot = engine_1x1
+			fixed_main_weapon_slot = engine_nose
 			engine_type_slot = rotating_engine_1
-			special_type_slot_1 = empty
-			special_type_slot_2 = empty
-			special_type_slot_8 = empty
+			wings_slot = wing_low_effil
+			fuselage_slot = fuselage_classic_small
+			tail_slot = adi_classic_tail
 		}
 	}
 
@@ -495,7 +488,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -505,7 +498,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -516,6 +509,7 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -525,7 +519,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_flaps_slot = {
@@ -666,7 +660,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -708,7 +701,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -718,7 +711,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -729,6 +722,7 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -738,7 +732,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_flaps_slot = {
@@ -879,7 +873,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -921,7 +914,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -931,7 +924,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -942,6 +935,7 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -951,7 +945,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_flaps_slot = {
@@ -1092,7 +1086,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -1134,7 +1127,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -1144,7 +1137,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -1155,6 +1148,7 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -1164,7 +1158,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_flaps_slot = {
@@ -1305,7 +1299,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -1335,7 +1328,7 @@ equipments = {
 		is_buildable = no
 		type = fighter
 		ai_type = cv_fighter
-		type_override = fixed_main_weapon_slot
+		
 		allowed_types = {
 			fighter
 			interceptor
@@ -1371,7 +1364,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -1381,7 +1374,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -1392,6 +1385,7 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -1401,7 +1395,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_flaps_slot = {
@@ -1542,7 +1536,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -1745,11 +1738,11 @@ equipments = {
 			count < 2
 		}		
 		default_modules = {
-			fixed_main_weapon_slot = empty
-			fixed_auxiliary_weapon_slot_1 = empty
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-			special_type_slot_2 = empty
+			fixed_main_weapon_slot = engine_nose
+			engine_type_slot = rotating_engine_1
+			wings_slot = wing_low_effil
+			fuselage_slot = fuselage_classic_small
+			tail_slot = adi_classic_tail
 		}
 	}
 
@@ -1802,7 +1795,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -1812,7 +1805,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -1823,6 +1816,7 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -1832,7 +1826,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_flaps_slot = {
@@ -1973,7 +1967,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -2014,7 +2007,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -2024,7 +2017,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -2035,6 +2028,7 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -2044,7 +2038,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_flaps_slot = {
@@ -2185,7 +2179,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -2227,7 +2220,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -2237,7 +2230,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -2248,6 +2241,7 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -2257,7 +2251,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_flaps_slot = {
@@ -2398,7 +2392,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -2439,7 +2432,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -2449,7 +2442,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -2460,6 +2453,7 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -2469,7 +2463,7 @@ equipments = {
 					cas_weapon
 					plane_armor_module_small
 					mine_warfare_offense
-					plane_wing_engine
+					plane_fuel_module_small
 				}
 			}
 			fixed_flaps_slot = {
@@ -2610,7 +2604,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -2647,7 +2640,7 @@ equipments = {
 		picture = archetype_strat_bomber_equipment
 		is_buildable = no
 		type = tactical_bomber
-		type_override = fixed_main_weapon_slot
+		
 		allowed_types = {
 			tactical_bomber
 			heavy_fighter
@@ -2682,7 +2675,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_medium
 					plane_nose_engine
-					plane_pullpush_engine
+					
 
 				}
 			}
@@ -2694,6 +2687,8 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_medium
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -2704,6 +2699,7 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon					plane_fuel_module_medium
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -2714,6 +2710,8 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_medium
 				}
 			}
 			fixed_flaps_slot = {
@@ -2864,7 +2862,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -2954,11 +2951,6 @@ equipments = {
 			category = plane_special_module_air_air_radar
 			count < 2
 		}
-
-		module_count_limit = {
-			category = plane_special_module_defense_turret
-			count < 3
-		}
 		module_count_limit = {
 			module = high_octane_fuel_medium
 			count < 2
@@ -2977,11 +2969,7 @@ equipments = {
 			module = water_injection_medium
 			count < 2
 		}
-		
-		module_count_limit = {
-			module = remote_control_turret_system
-			count < 2
-		}
+
 		module_count_limit = {
 			module = reflex_gunsight_1
 			count < 2
@@ -3071,11 +3059,11 @@ equipments = {
 			count < 2
 		}			
 		default_modules = {
-			fixed_main_weapon_slot = empty
-			fixed_auxiliary_weapon_slot_1 = empty
-			engine_type_slot = engine_1_2x
-			special_type_slot_1 = empty
-			special_type_slot_2 = empty
+			fixed_main_weapon_slot = engine_nose
+			engine_type_slot = rotating_engine_1
+			wings_slot = wing_low_effil
+			fuselage_slot = fuselage_classic_medium
+			tail_slot = adi_classic_tail
 		}
 	}
 
@@ -3128,7 +3116,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_medium
 					plane_nose_engine
-					plane_pullpush_engine
+					
 
 				}
 			}
@@ -3140,6 +3128,8 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_medium
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -3150,6 +3140,8 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_medium
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -3160,6 +3152,8 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_medium
 				}
 			}
 			fixed_flaps_slot = {
@@ -3310,7 +3304,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -3352,7 +3345,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_medium
 					plane_nose_engine
-					plane_pullpush_engine
+					
 
 				}
 			}
@@ -3364,6 +3357,8 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_medium
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -3374,6 +3369,8 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_medium
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -3384,6 +3381,8 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_medium
 				}
 			}
 			fixed_flaps_slot = {
@@ -3534,7 +3533,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -3576,7 +3574,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_medium
 					plane_nose_engine
-					plane_pullpush_engine
+					
 
 				}
 			}
@@ -3588,6 +3586,8 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_medium
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -3598,6 +3598,8 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_medium
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -3608,6 +3610,8 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_medium
 				}
 			}
 			fixed_flaps_slot = {
@@ -3758,7 +3762,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -3800,7 +3803,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_medium
 					plane_nose_engine
-					plane_pullpush_engine
+					
 
 				}
 			}
@@ -3812,6 +3815,8 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_medium
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -3822,6 +3827,8 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_medium
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -3832,6 +3839,8 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_medium
 				}
 			}
 			fixed_flaps_slot = {
@@ -3982,7 +3991,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -4009,7 +4017,7 @@ equipments = {
 		picture = archetype_strat_bomber_equipment
 		is_buildable = no
 		type = strategic_bomber
-		type_override = fixed_main_weapon_slot
+		
 		allowed_types = {
 			strategic_bomber
 			maritime_patrol_plane
@@ -4040,7 +4048,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_large
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -4051,6 +4059,8 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_large
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -4061,6 +4071,8 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_large
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -4071,6 +4083,8 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_large
 				}
 			}
 			fixed_flaps_slot = {
@@ -4219,7 +4233,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -4378,11 +4391,11 @@ equipments = {
 			count < 2
 		}		
 		default_modules = {
-			fixed_main_weapon_slot = empty
-			fixed_auxiliary_weapon_slot_1 = empty
-			engine_type_slot = engine_1_4x
-			special_type_slot_1 = empty
-			special_type_slot_2 = empty
+			wings_slot_1 = engine_nose
+			engine_type_slot = rotating_engine_1
+			wings_slot = wing_low_effil
+			fuselage_slot = fuselage_classic_large
+			tail_slot = adi_classic_tail
 		}
 	}
 
@@ -4432,7 +4445,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_large
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -4443,6 +4456,8 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_large
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -4453,6 +4468,8 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_large
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -4463,6 +4480,8 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_large
 				}
 			}
 			fixed_flaps_slot = {
@@ -4611,7 +4630,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -4653,7 +4671,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_large
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -4664,6 +4682,8 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_large
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -4674,6 +4694,8 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_large
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -4684,6 +4706,8 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_large
 				}
 			}
 			fixed_flaps_slot = {
@@ -4832,7 +4856,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -4874,7 +4897,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_large
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -4885,6 +4908,8 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_large
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -4895,6 +4920,8 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_large
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -4905,6 +4932,8 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_large
 				}
 			}
 			fixed_flaps_slot = {
@@ -5053,7 +5082,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
@@ -5095,7 +5123,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_large
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -5106,6 +5134,8 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_large
 				}
 			}
 			fixed_wing_slot_2 = {
@@ -5116,6 +5146,8 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_large
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -5126,6 +5158,8 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
+					plane_fuel_module_large
 				}
 			}
 			fixed_flaps_slot = {
@@ -5274,7 +5308,6 @@ equipments = {
 			engine_power_slot = {
 				required = no
 				allowed_module_categories ={
-					plane_engine_power
 				}
 			}
 			Reliability_slot = {
