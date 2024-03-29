@@ -1348,7 +1348,7 @@ if = {
 				fuselage_slot = fuselage_classic_small
 				aircraft_role_slot = naval_bomber_role
 			}
-			icon = "GFX_ENG_naval_bomber1_medium" #TODO GABRIEL: change if art in before release
+			icon = "GFX_ENG_naval_bomber1_medium"
 		}
 		create_equipment_variant = {
 			name = "Blackburn Shark" 
