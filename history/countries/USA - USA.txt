@@ -567,7 +567,7 @@ if = {
 		modules = {
 			fixed_wing_slot_1 = bomb_locks
 			fixed_front_cockpit_slot = light_mg_2x
-			main_armament_slot = engine_nose
+			fixed_main_weapon_slot = engine_nose
 			fixed_front_fuselage_slot = floats
 
 			engine_type_slot = radial_engine_1
@@ -583,7 +583,7 @@ if = {
 		name = "SBU Corsair" #
 		type = cv_small_plane_cas_airframe_0
 		modules = {
-			main_armament_slot = engine_nose
+			fixed_main_weapon_slot = engine_nose
 			fixed_wing_slot_1 = bomb_locks
 			fixed_flaps_slot = dive_brakes_small
 
@@ -599,7 +599,7 @@ if = {
 		name = "BM-2" #
 		type = cv_small_plane_naval_bomber_airframe_0
 		modules = {
-			main_armament_slot = engine_nose
+			fixed_main_weapon_slot = engine_nose
 			fixed_front_fuselage_slot = torpedo_mounting
 
 			engine_type_slot = radial_engine_1
@@ -615,7 +615,7 @@ if = {
 		name = "A-17" #
 		type = small_plane_cas_airframe_1
 		modules = {
-			main_armament_slot = engine_nose
+			fixed_main_weapon_slot = engine_nose
 			fixed_front_fuselage_slot = small_bomb_bay
 			fixed_wing_slot_1 = light_mg_4x
 
