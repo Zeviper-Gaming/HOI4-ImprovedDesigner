@@ -591,6 +591,7 @@ if = {
 			wings_slot = wing_bi_rect
 			tail_slot = adi_classic_tail
 			fuselage_slot = fuselage_classic_small
+			aircraft_role_slot = cas_role
 		}
 		obsolete = yes
 	}
@@ -622,6 +623,7 @@ if = {
 			wings_slot = wing_low_effil
 			tail_slot = adi_classic_tail
 			fuselage_slot = fuselage_classic_small
+			aircraft_role_slot = cas_role
 		}
 		icon = "GFX_USA_CAS1_medium"
 	}
@@ -638,6 +640,7 @@ if = {
 			wings_slot = wing_low_effil
 			tail_slot = adi_classic_tail
 			fuselage_slot = fuselage_classic_small
+			aircraft_role_slot = fighter_role
 		}
 		icon = "GFX_USA_light_plane_4_medium"
 	}
@@ -652,6 +655,7 @@ if = {
 			wings_slot = wing_bi_rect
 			tail_slot = adi_classic_tail
 			fuselage_slot = fuselage_classic_medium
+			aircraft_role_slot = tac_bomb_role
 		}
 		obsolete = yes
 	}
@@ -667,6 +671,7 @@ if = {
 			wings_slot = wing_low_effil
 			tail_slot = adi_classic_tail
 			fuselage_slot = fuselage_classic_medium
+			aircraft_role_slot = tac_bomb_role
 		}
 		icon = "GFX_USA_early_bomber_medium"
 	}
@@ -683,6 +688,7 @@ if = {
 			wings_slot = wing_high_rect
 			tail_slot = adi_classic_tail
 			fuselage_slot = flying_boat_medium
+			aircraft_role_slot = naval_bomber_role
 		}
 		icon = "GFX_USA_naval_bomber1_medium"
 	}
@@ -696,6 +702,7 @@ if = {
 			wings_slot = wing_bi_rect
 			tail_slot = adi_classic_tail
 			fuselage_slot = fuselage_classic_small
+			aircraft_role_slot = fighter_role
 		}
 		icon = "GFX_USA_cv_fighter1_medium"
 	}

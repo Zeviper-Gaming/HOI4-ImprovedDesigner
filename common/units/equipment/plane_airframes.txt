@@ -2689,6 +2689,7 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_medium
 				}
 			}
@@ -2700,7 +2701,7 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
-					plane_fuel_module_medium
+					nav_bomber_weapon					plane_fuel_module_medium
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -2711,6 +2712,7 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_medium
 				}
 			}
@@ -3128,6 +3130,7 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_medium
 				}
 			}
@@ -3139,6 +3142,7 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_medium
 				}
 			}
@@ -3150,6 +3154,7 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_medium
 				}
 			}
@@ -3354,6 +3359,7 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_medium
 				}
 			}
@@ -3365,6 +3371,7 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_medium
 				}
 			}
@@ -3376,6 +3383,7 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_medium
 				}
 			}
@@ -3580,6 +3588,7 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_medium
 				}
 			}
@@ -3591,6 +3600,7 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_medium
 				}
 			}
@@ -3602,6 +3612,7 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_medium
 				}
 			}
@@ -3806,6 +3817,7 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_medium
 				}
 			}
@@ -3817,6 +3829,7 @@ equipments = {
 					plane_armor_module_small
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_medium
 				}
 			}
@@ -3828,6 +3841,7 @@ equipments = {
 					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_medium
 				}
 			}
@@ -4047,6 +4061,7 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_large
 				}
 			}
@@ -4058,6 +4073,7 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_large
 				}
 			}
@@ -4069,6 +4085,7 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_large
 				}
 			}
@@ -4441,6 +4458,7 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_large
 				}
 			}
@@ -4452,6 +4470,7 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_large
 				}
 			}
@@ -4463,6 +4482,7 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_large
 				}
 			}
@@ -4664,6 +4684,7 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_large
 				}
 			}
@@ -4675,6 +4696,7 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_large
 				}
 			}
@@ -4686,6 +4708,7 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_large
 				}
 			}
@@ -4887,6 +4910,7 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_large
 				}
 			}
@@ -4898,6 +4922,7 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_large
 				}
 			}
@@ -4909,6 +4934,7 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_large
 				}
 			}
@@ -5110,6 +5136,7 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_large
 				}
 			}
@@ -5121,6 +5148,7 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_large
 				}
 			}
@@ -5132,6 +5160,7 @@ equipments = {
 					plane_armor_module_large
 					mine_warfare_offense
 					plane_wing_engine
+					nav_bomber_weapon
 					plane_fuel_module_large
 				}
 			}
