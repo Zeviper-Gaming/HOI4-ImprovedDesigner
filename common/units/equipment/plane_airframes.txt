@@ -63,7 +63,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -433,13 +433,11 @@ equipments = {
 			count < 2
 		}
 		default_modules = {
-			fixed_main_weapon_slot = empty
-			fixed_auxiliary_weapon_slot_1 = empty
-			engine_nb_slot = engine_1x1
+			fixed_main_weapon_slot = engine_nose
 			engine_type_slot = rotating_engine_1
-			special_type_slot_1 = empty
-			special_type_slot_2 = empty
-			special_type_slot_8 = empty
+			wings_slot = wing_low_effil
+			fuselage_slot = fuselage_classic_small
+			tail_slot = adi_classic_tail
 		}
 	}
 
@@ -490,7 +488,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -703,7 +701,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -916,7 +914,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -1129,7 +1127,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -1366,7 +1364,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -1740,11 +1738,11 @@ equipments = {
 			count < 2
 		}		
 		default_modules = {
-			fixed_main_weapon_slot = empty
-			fixed_auxiliary_weapon_slot_1 = empty
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-			special_type_slot_2 = empty
+			fixed_main_weapon_slot = engine_nose
+			engine_type_slot = rotating_engine_1
+			wings_slot = wing_low_effil
+			fuselage_slot = fuselage_classic_small
+			tail_slot = adi_classic_tail
 		}
 	}
 
@@ -1797,7 +1795,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -2009,7 +2007,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -2222,7 +2220,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -2434,7 +2432,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_small
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -2677,7 +2675,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_medium
 					plane_nose_engine
-					plane_pullpush_engine
+					
 
 				}
 			}
@@ -3061,11 +3059,11 @@ equipments = {
 			count < 2
 		}			
 		default_modules = {
-			fixed_main_weapon_slot = empty
-			fixed_auxiliary_weapon_slot_1 = empty
-			engine_type_slot = engine_1_2x
-			special_type_slot_1 = empty
-			special_type_slot_2 = empty
+			fixed_main_weapon_slot = engine_nose
+			engine_type_slot = rotating_engine_1
+			wings_slot = wing_low_effil
+			fuselage_slot = fuselage_classic_medium
+			tail_slot = adi_classic_tail
 		}
 	}
 
@@ -3118,7 +3116,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_medium
 					plane_nose_engine
-					plane_pullpush_engine
+					
 
 				}
 			}
@@ -3347,7 +3345,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_medium
 					plane_nose_engine
-					plane_pullpush_engine
+					
 
 				}
 			}
@@ -3576,7 +3574,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_medium
 					plane_nose_engine
-					plane_pullpush_engine
+					
 
 				}
 			}
@@ -3805,7 +3803,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_medium
 					plane_nose_engine
-					plane_pullpush_engine
+					
 
 				}
 			}
@@ -4050,7 +4048,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_large
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -4393,11 +4391,11 @@ equipments = {
 			count < 2
 		}		
 		default_modules = {
-			fixed_main_weapon_slot = empty
-			fixed_auxiliary_weapon_slot_1 = empty
-			engine_type_slot = engine_1_4x
-			special_type_slot_1 = empty
-			special_type_slot_2 = empty
+			wings_slot_1 = engine_nose
+			engine_type_slot = rotating_engine_1
+			wings_slot = wing_low_effil
+			fuselage_slot = fuselage_classic_large
+			tail_slot = adi_classic_tail
 		}
 	}
 
@@ -4447,7 +4445,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_large
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -4673,7 +4671,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_large
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -4899,7 +4897,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_large
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
@@ -5125,7 +5123,7 @@ equipments = {
 					fighter_weapon
 					plane_armor_module_large
 					plane_nose_engine
-					plane_pullpush_engine
+					
 				}
 			}
 			fixed_wing_slot_1 = {
