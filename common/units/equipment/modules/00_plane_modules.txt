@@ -1804,7 +1804,61 @@ equipment_modules = {
 		xp_cost = 1
 		dismantle_cost_ic = 0.5
 	}
-	
+	wep_small = {
+		abbreviation = "ws"
+		category = plane_special_module_engine_small
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1
+			reliability = -0.05
+		}
+
+		multiply_stats = {
+			air_attack = 0.07
+			air_defence = 0.02
+			fuel_consumption = +0.05
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+	}
+	wep_medium = {
+		abbreviation = "wm"
+		category = plane_special_module_engine_medium
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1.5
+			reliability = -0.05
+		}
+
+		multiply_stats = {
+			air_attack = 0.04
+			air_defence = 0.04
+			fuel_consumption = +0.05
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+	}
+	wep_large = {
+		abbreviation = "wl"
+		category = plane_special_module_engine_large
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 2
+			reliability = -0.05
+		}
+
+		multiply_stats = {
+			air_attack = 0.02
+			air_defence = 0.07
+			fuel_consumption = +0.05
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+	}
+
 	# aero
 	dive_brakes_small = {
 		abbreviation = "dbs"
@@ -1867,8 +1921,47 @@ equipment_modules = {
 		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
 		xp_cost = 1
 	}
-	# todo - add combats flaps
-	# todo - add flaps
+	combat_flaps_small = {
+		abbreviation = "flaps_S"
+		category = plane_aero_module_small
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1
+		}
+
+		mission_type_stats = {
+			limit = {
+				air_superiority
+			}
+			add_stats = {
+				air_agility = 0.1
+			}
+		}
+
+		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
+		xp_cost = 1
+	}
+	combat_flaps_medium = {
+		abbreviation = "flaps_M"
+		category = plane_aero_module_medium
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1
+		}
+		mission_type_stats = {
+			limit = {
+				air_superiority
+			}
+			add_stats = {
+				air_agility = 0.1
+			}
+		}
+
+		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
+		xp_cost = 1
+	}
 	
  ######  ########  ########  ######  ####    ###    ##          ##     ##  #######  ########  ##     ## ##       ########  ######                ##     ## ######## ########  #### ##     ## ##     ## 
 ##    ## ##     ## ##       ##    ##  ##    ## ##   ##          ###   ### ##     ## ##     ## ##     ## ##       ##       ##    ##               ###   ### ##       ##     ##  ##  ##     ## ###   ### 

@@ -299,10 +299,14 @@ construction_slot_3:0 "Modules de constructions"
  aerodynamic_pylons_small_desc:0 "Drag, oddly enough, does not help you fly faster, especially if you hang a couple of bombs under the wings."  
  aerodynamic_pylons_medium:0 "Aerodynamic pylons"
  aerodynamic_pylons_medium_desc:0 "Drag, oddly enough, does not help you fly faster, especially if you hang a couple of bombs under the wings." 
-
+ wep_small:0 "WEP"
+ wep_medium:0 "WEP"
+ wep_large:0 "WEP"
  drop_tanks_medium:0 "Drop tanks"
  drop_tanks_medium_desc:0 "A lot of fuel is always better than a no fuel, more range is better than being shot. Being a airdesigner is that simple don't you know?"
- 
+ combat_flaps_small:0 "Volets de combat"
+ combat_flaps_medium:0 "Volets de combat"
+
  #EQ_MOD_SLOT_special_type_slot_7_TITLE:0 "Construction Type"
  #EQ_MOD_SLOT_special_type_slot_8_TITLE:0 "Gunsight"
  

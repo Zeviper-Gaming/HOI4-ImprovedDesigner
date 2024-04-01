@@ -64,6 +64,7 @@ technologies = {
 			cv_small_plane_cas_airframe_1
 			cv_small_plane_naval_bomber_airframe_1
 			cv_small_plane_suicide_airframe_1
+			combat_flaps_small
 		}
 	
 		path = {
@@ -378,6 +379,7 @@ technologies = {
 			medium_plane_airframe_1
 			medium_plane_fighter_airframe_1
 			medium_plane_scout_plane_airframe_1
+			combat_flaps_medium
 		}
 	
 		path = {
@@ -1483,6 +1485,10 @@ technologies = {
 			
 			early_supercharger
 			early_turbocharger
+
+			wep_small
+			wep_medium
+			wep_large
 		}
 		
 		research_cost = 1
@@ -1681,6 +1687,10 @@ technologies = {
 			
 			early_supercharger
 			early_turbocharger
+
+			wep_small
+			wep_medium
+			wep_large
 		}
 		
 		research_cost = 1
