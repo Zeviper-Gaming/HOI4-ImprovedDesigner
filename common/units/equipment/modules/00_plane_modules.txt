@@ -1622,6 +1622,40 @@ equipment_modules = {
 		xp_cost = 3
 	}
 
+	# Pales
+	3_blades_prop = {
+		abbreviation = "prop3"
+		category = propreller_blade_module
+		sfx = sfx_ui_sd_module_turret
+
+		multiply_stats = {
+			thrust = -0.1
+			fuel_consumption = -0.15
+			maximum_speed = -0.1
+		}
+		can_convert_from = {
+			module_category = propreller_blade_module
+			convert_cost_ic = 1
+		}
+		xp_cost = 1
+	}
+	5_blades_prop = {
+		abbreviation = "prop3"
+		category = propreller_blade_module
+		sfx = sfx_ui_sd_module_turret
+
+		multiply_stats = {
+			thrust = +0.1
+			fuel_consumption = +0.15
+			maximum_speed = +0.1
+		}
+		can_convert_from = {
+			module_category = propreller_blade_module
+			convert_cost_ic = 1
+		}
+		xp_cost = 1
+	}
+
  ######  ########  ########  ######  ####    ###    ##          ##     ##  #######  ########  ##     ## ##       ########  ######                 ######  ##     ##    ###    ##       ##       
 ##    ## ##     ## ##       ##    ##  ##    ## ##   ##          ###   ### ##     ## ##     ## ##     ## ##       ##       ##    ##               ##    ## ###   ###   ## ##   ##       ##       
 ##       ##     ## ##       ##        ##   ##   ##  ##          #### #### ##     ## ##     ## ##     ## ##       ##       ##                     ##       #### ####  ##   ##  ##       ##       

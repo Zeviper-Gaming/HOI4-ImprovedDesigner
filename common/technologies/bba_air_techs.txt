@@ -1404,6 +1404,9 @@ technologies = {
 			engine_power_120
 			engine_power_140
 			engine_power_160
+
+			3_blades_prop
+			5_blades_prop
 		}
 		
 		research_cost = 1

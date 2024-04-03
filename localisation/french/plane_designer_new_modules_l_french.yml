@@ -240,8 +240,12 @@ construction_slot_3:0 "Modules de constructions"
  EQ_MOD_CAT_plane_special_module_engine_TITLE:0 "Special Modules Engine"
  EQ_MOD_CAT_plane_construction_type_module_small_TITLE:0 "Construction Type" 
  EQ_MOD_CAT_plane_construction_type_module_medium_TITLE:0 "Construction Type"
- EQ_MOD_CAT_plane_construction_type_module_large_TITLE:0 "Construction Type" 
- 
+ EQ_MOD_CAT_plane_construction_type_module_large_TITLE:0 "Construction Type"
+
+ EQ_MOD_CAT_propreller_blade_module_TITLE:0 "Nombre de pales"
+ 3_blades_prop:0 "3 pâles"
+ 5_blades_prop:0 "5 pâles"
+
  EQ_MOD_CAT_engine_mounted_cannons_TITLE:0 "Engine-Mounted Cannons" 
  EQ_MOD_CAT_plane_special_module_ASW_TITLE:0 "Anti-submarine warfare" 
  EQ_MOD_CAT_plane_special_module_cargo_TITLE:0 "Cargo compartment"  
@@ -306,6 +310,8 @@ construction_slot_3:0 "Modules de constructions"
  drop_tanks_medium_desc:0 "A lot of fuel is always better than a no fuel, more range is better than being shot. Being a airdesigner is that simple don't you know?"
  combat_flaps_small:0 "Volets de combat"
  combat_flaps_medium:0 "Volets de combat"
+
+
 
  #EQ_MOD_SLOT_special_type_slot_7_TITLE:0 "Construction Type"
  #EQ_MOD_SLOT_special_type_slot_8_TITLE:0 "Gunsight"
