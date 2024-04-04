@@ -194,6 +194,103 @@ spriteTypes = {
 		name = "GFX_EMI_engine_pull_push"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/motor_pull_push.dds"
 	}
+
+	# Engines types category
+	spriteType = {
+		name = "EQ_MOD_CAT_plane_engine_rotating_TITLE"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-motor-rotary.jpg"
+	}
+	spriteType = {
+		name = "EQ_MOD_CAT_plane_engine_radial_TITLE"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-radial.jpg"
+	}
+	spriteType = {
+		name = "EQ_MOD_CAT_plane_engine_V_TITLE"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-v.jpg"
+	}
+	spriteType = {
+		name = "EQ_MOD_CAT_plane_engine_inline_TITLE"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-inline.jpg"
+	}
+	# Engine type
+	spriteType = {
+		name = "GFX_EMI_rotating_engine_1"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-motor-rotary_1.jpg"
+	}
+	spriteType = {
+		name = "GFX_EMI_rotating_engine_2"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-motor-rotary_2.jpg"
+	}
+	spriteType = {
+		name = "GFX_EMI_rotating_engine_3"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-motor-rotary_3.jpg"
+	}
+	spriteType = {
+		name = "GFX_EMI_rotating_engine_4"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-motor-rotary_4.jpg"
+	}
+	spriteType = {
+		name = "GFX_EMI_radial_engine_1"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-radial_1.jpg"
+	}
+	spriteType = {
+		name = "GFX_EMI_radial_engine_2"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-radial_2.jpg"
+	}
+	spriteType = {
+		name = "GFX_EMI_radial_engine_3"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-radial_3.jpg"
+	}
+	spriteType = {
+		name = "GFX_EMI_radial_engine_4"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-radial_4.jpg"
+	}
+	spriteType = {
+		name = "GFX_EMI_V_engine_1"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-v_1.jpg"
+	}
+	spriteType = {
+		name = "GFX_EMI_V_engine_2"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-v_2.jpg"
+	}
+	spriteType = {
+		name = "GFX_EMI_V_engine_3"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-v_3.jpg"
+	}
+	spriteType = {
+		name = "GFX_EMI_V_engine_4"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-v_4.jpg"
+	}
+	spriteType = {
+		name = "GFX_EMI_inline_engine_1"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-inline_1.jpg"
+	}
+	spriteType = {
+		name = "GFX_EMI_inline_engine_2"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-inline_2.jpg"
+	}
+	spriteType = {
+		name = "GFX_EMI_inline_engine_3"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-inline_3.jpg"
+	}
+	spriteType = {
+		name = "GFX_EMI_inline_engine_4"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/engine-inline_4.jpg"
+	}
+	# Prop blades
+	spriteType = {
+		name = "GFX_EMI_propreller_blade_module"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/2_blades_prop.jpg"
+	}
+	spriteType = {
+		name = "GFX_EMI_2_blades_module"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/2_blades_prop.jpg"
+	}
+	spriteType = {
+		name = "GFX_EMI_4_blades_module"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/4_blades_prop.jpg"
+	}
+
 	# Tail
 	spriteType = {
 		name = "GFX_EMI_adi_t_tail"
@@ -206,6 +303,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_adi_twin_tail"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/empennage_twin_tail.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_adi_classic_tail"
+		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/empennage_classic_tail.dds"
 	}
 	spriteType = {
 		name = "EQ_MOD_CAT_plane_empennage_TITLE"
