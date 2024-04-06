@@ -3361,7 +3361,7 @@ equipment_modules = {
 		category = fuselage_kind_small
 		sfx = sfx_ui_sd_module_turret
 		
-		xp_cost = 5
+		xp_cost = 1
 
 		allowed_module_categories = {
 
@@ -3482,14 +3482,12 @@ equipment_modules = {
 		abbreviation = "fus_jug"
 		category = fuselage_kind_small
 		sfx = sfx_ui_sd_module_turret
-		add_stats = {
-			reliability = 0.1
-		}
+
 		multiply_stats = {
 			build_cost_ic = -0.1
-			air_defense = 0.1
+			air_defence = 0.1
 		}
-		xp_cost = 1
+		xp_cost = 3
 		allowed_module_categories = {
 
 			# Ligne 4 - Special modules
@@ -3609,14 +3607,11 @@ equipment_modules = {
 		abbreviation = "fus_drop_s"
 		category = fuselage_kind_small
 		sfx = sfx_ui_sd_module_turret
-		add_stats = {
-			reliability = 0
-		}
 		multiply_stats = {
 			build_cost_ic = 0.15
-			air_agility = 0.1
+			maximum_speed = 0.1
 		}
-		xp_cost = 3
+		xp_cost = 5
 		allowed_module_categories = {
 
 			# Ligne 4 - Special modules
@@ -4125,7 +4120,7 @@ equipment_modules = {
 		category = fuselage_kind_medium
 		sfx = sfx_ui_sd_module_turret
 
-		xp_cost = 5
+		xp_cost = 1
 
 		allowed_module_categories = {
 
@@ -4247,14 +4242,11 @@ equipment_modules = {
 		abbreviation = "fus_jug_m"
 		category = fuselage_kind_medium
 		sfx = sfx_ui_sd_module_turret
-		add_stats = {
-			reliability = 0.1
-		}
 		multiply_stats = {
 			build_cost_ic = -0.1
-			air_defense = 0.1
+			air_defence = 0.1
 		}
-		xp_cost = 1
+		xp_cost = 3
 		allowed_module_categories = {
 
 			# Ligne 4 - Special modules
@@ -4375,14 +4367,12 @@ equipment_modules = {
 		abbreviation = "fus_drop_m"
 		category = fuselage_kind_medium
 		sfx = sfx_ui_sd_module_turret
-		add_stats = {
-			reliability = 0
-		}
+
 		multiply_stats = {
 			build_cost_ic = 0.15
-			air_agility = 0.1
+			maximum_speed = 0.1
 		}
-		xp_cost = 3
+		xp_cost = 5
 		allowed_module_categories = {
 
 			# Ligne 4 - Special modules
@@ -5034,12 +5024,9 @@ equipment_modules = {
 		abbreviation = "fus_jug_l"
 		category = fuselage_kind_large
 		sfx = sfx_ui_sd_module_turret
-		add_stats = {
-			reliability = 0.1
-		}
 		multiply_stats = {
 			build_cost_ic = -0.1
-			air_defense = 0.1
+			air_defence = 0.1
 		}
 		xp_cost = 1
 		allowed_module_categories = {

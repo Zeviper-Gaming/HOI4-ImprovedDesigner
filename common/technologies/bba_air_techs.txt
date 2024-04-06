@@ -226,6 +226,7 @@ technologies = {
 			cv_small_plane_cas_airframe_3
 			cv_small_plane_naval_bomber_airframe_3
 			cv_small_plane_suicide_airframe_3
+			fuselage_flying_wing_small
 		}
 		
 		path = {
@@ -499,6 +500,7 @@ technologies = {
 			medium_plane_airframe_3
 			medium_plane_fighter_airframe_3
 			medium_plane_scout_plane_airframe_3
+			fuselage_flying_wing_medium
 		}
 		
 		path = {
@@ -709,6 +711,7 @@ technologies = {
 		enable_equipments = {
 			large_plane_airframe_3
 			large_plane_maritime_patrol_plane_airframe_3
+			fuselage_flying_wing_large
 		}
 		
 		path = {
@@ -2116,9 +2119,6 @@ technologies = {
 			fuselage_inverted_gull_wing
 			# todo deplacer dans d'autres techs
 			swept_wing
-			fuselage_flying_wing_small
-			fuselage_flying_wing_medium
-			fuselage_flying_wing_large
 
 			maritime_pat_role
 		}

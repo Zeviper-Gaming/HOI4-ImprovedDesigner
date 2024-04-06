@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83dced2f-fa07-481c-a85b-2ad3daf41f17" name="Changes" comment="[0.13.9] - GER planes&#10;&#10;- update GER 1936 planes&#10;- add fuels tanks on intern modules">
+    <list default="true" id="83dced2f-fa07-481c-a85b-2ad3daf41f17" name="Changes" comment="[0.14.7] - small fix and balancing&#10;&#10;- fix air_defence&#10;- new xp cost for jug,classic,drop fuselage&#10;- drop have bonus in air speed but no in agility">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/descriptor.mod" beforeDir="false" afterPath="$PROJECT_DIR$/descriptor.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/technologies/bba_air_techs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/common/technologies/bba_air_techs.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,55 @@
       <option name="project" value="LOCAL" />
       <updated>1711172889204</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[0.14.1] - change empennages&#10;&#10;Change stats for tails">
+      <option name="closed" value="true" />
+      <created>1711796965269</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711796965269</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[0.14.5] - add pics and modules&#10;&#10;- replace x3 blades by x2 and x5 blades by x4&#10;- add x2 and x4 prop blades for fuselages&#10;- add blades prop pics&#10;- add engine types pics (jpg format) (dds was replaced for test)&#10;- add pic for classic tail">
+      <option name="closed" value="true" />
+      <created>1712208657467</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712208657467</updated>
+    </task>
+    <task id="LOCAL-00009" summary="[0.14.5] - add pics and modules&#10;&#10;- replace x3 blades by x2 and x5 blades by x4&#10;- add x2 and x4 prop blades for fuselages&#10;- add blades prop pics&#10;- add engine types pics (jpg format) (dds was replaced for test)&#10;- add pic for classic tail">
+      <option name="closed" value="true" />
+      <created>1712208690004</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712208690004</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[0.14.6] - small fix&#10;&#10;- fix pics path">
+      <option name="closed" value="true" />
+      <created>1712239960136</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712239960136</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[0.14.6] - small fix&#10;&#10;- fix pics path">
+      <option name="closed" value="true" />
+      <created>1712243301464</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712243301464</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[0.14.7] - small fix and balancing&#10;&#10;- fix air_defence&#10;- new xp cost for jug,classic,drop fuselage&#10;- drop have bonus in air speed but no in agility">
+      <option name="closed" value="true" />
+      <created>1712398593819</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712398593819</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,6 +165,10 @@
     <MESSAGE value="[0.13.6] - fix MB 200 design&#10;&#10;set fuselage to medium" />
     <MESSAGE value="[0.13.8b] - create gitignore" />
     <MESSAGE value="[0.13.9] - GER planes&#10;&#10;- update GER 1936 planes&#10;- add fuels tanks on intern modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="[0.13.9] - GER planes&#10;&#10;- update GER 1936 planes&#10;- add fuels tanks on intern modules" />
+    <MESSAGE value="[0.14.1] - change empennages&#10;&#10;Change stats for tails" />
+    <MESSAGE value="[0.14.5] - add pics and modules&#10;&#10;- replace x3 blades by x2 and x5 blades by x4&#10;- add x2 and x4 prop blades for fuselages&#10;- add blades prop pics&#10;- add engine types pics (jpg format) (dds was replaced for test)&#10;- add pic for classic tail" />
+    <MESSAGE value="[0.14.6] - small fix&#10;&#10;- fix pics path" />
+    <MESSAGE value="[0.14.7] - small fix and balancing&#10;&#10;- fix air_defence&#10;- new xp cost for jug,classic,drop fuselage&#10;- drop have bonus in air speed but no in agility" />
+    <option name="LAST_COMMIT_MESSAGE" value="[0.14.7] - small fix and balancing&#10;&#10;- fix air_defence&#10;- new xp cost for jug,classic,drop fuselage&#10;- drop have bonus in air speed but no in agility" />
   </component>
 </project>
