@@ -279,7 +279,7 @@ spriteTypes = {
 	}
 	# Prop blades
 	spriteType = {
-		name = "EQ_MOD_CAT_propreller_blade_module"
+		name = "EQ_MOD_CAT_propreller_blade_module_TITLE"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/2-blades-prop.dds"
 	}
 	spriteType = {

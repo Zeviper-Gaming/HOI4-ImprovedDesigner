@@ -36,6 +36,8 @@
  EQ_MOD_CAT_wing_W_TITLE:0 "Aile en W"
  EQ_MOD_CAT_wing_W_TITLE_desc:0 "Utile pour le CAS, l'attaque aérienne et l'agilité"
  EQ_MOD_CAT_wing_biplan_TITLE:0 "Configuration biplan"
+ EQ_MOD_CAT_plane_empennage_TITLE:0 "Empennages"
+ EQ_MOD_CAT_plane_twin_empennage_TITLE:0 "Empennages doubles"
 
  EQ_MOD_CAT_aircraft_role_small_TITLE:0 "Role pour avion petits"
  EQ_MOD_CAT_aircraft_role_medium_TITLE:0 "Roles pour avions moyens"
@@ -184,6 +186,13 @@ EQ_MOD_CAT_plane_engine_rotating_TITLE:0 "Moteurs Rotatifs"
 EQ_MOD_CAT_plane_engine_inline_TITLE:0 "Moteurs en ligne"
 EQ_MOD_CAT_plane_engine_radial_TITLE:0 "Moteurs radiaux"
 EQ_MOD_CAT_plane_engine_V_TITLE:0 "Moteurs en V"
+
+EQ_MOD_CAT_plane_fuel_module_small_TITLE:0 "Fuel modules"
+EQ_MOD_CAT_plane_special_module_engine_small_TITLE:0 "Modules de moteurs"
+EQ_MOD_CAT_plane_fuel_module_medium_TITLE:0 "Fuel modules"
+EQ_MOD_CAT_plane_special_module_engine_medium_TITLE:0 "Modules de moteurs"
+EQ_MOD_CAT_plane_fuel_module_large_TITLE:0 "Fuel modules"
+EQ_MOD_CAT_plane_special_module_engine_large_TITLE:0 "Modules de moteurs"
 
 construction_slot_0:0 "Modules de constructions"
 construction_slot_1:0 "Modules de constructions"
