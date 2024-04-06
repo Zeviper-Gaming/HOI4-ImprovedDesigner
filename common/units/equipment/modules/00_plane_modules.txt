@@ -5538,8 +5538,11 @@ equipment_modules = {
 		category = aircraft_role_small
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
-
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_small
+			xp = 1
+		}
 	}
 	heavy_fighter_role = {
 		abbreviation = "r_figt"
@@ -5548,6 +5551,10 @@ equipment_modules = {
 		add_equipment_type = heavy_fighter
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_medium
+			xp = 1
+		}
 	}
 	interceptor_role = {
 		abbreviation = "r_inter"
@@ -5556,6 +5563,10 @@ equipment_modules = {
 		add_equipment_type = interceptor
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_small
+			xp = 1
+		}
 	}
 	cas_role = {
 		abbreviation = "r_cas"
@@ -5564,6 +5575,10 @@ equipment_modules = {
 		add_equipment_type = cas
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_small
+			xp = 1
+		}
 	}
 	naval_bomber_role = {
 		abbreviation = "r_nav_b"
@@ -5572,6 +5587,10 @@ equipment_modules = {
 		add_equipment_type = naval_bomber
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_medium
+			xp = 1
+		}
 	}
 	suicide_role = {
 		abbreviation = "r_suic"
@@ -5580,6 +5599,10 @@ equipment_modules = {
 		add_equipment_type = suicide
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_small
+			xp = 1
+		}
 	}
 	scout_role = {
 		abbreviation = "r_scout"
@@ -5588,6 +5611,10 @@ equipment_modules = {
 		add_equipment_type = scout_plane
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_medium
+			xp = 1
+		}
 	}
 	tac_bomb_role = {
 		abbreviation = "r_tac_bomb"
@@ -5596,6 +5623,10 @@ equipment_modules = {
 		add_equipment_type = tactical_bomber
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_medium
+			xp = 1
+		}
 	}
 	maritime_pat_role = {
 		abbreviation = "r_mar_pat"
@@ -5604,6 +5635,10 @@ equipment_modules = {
 		add_equipment_type = maritime_patrol_plane
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_large
+			xp = 1
+		}
 	}
 	strat_bomb_role = {
 		abbreviation = "r_strat_bomb"
@@ -5612,6 +5647,10 @@ equipment_modules = {
 		add_equipment_type = strategic_bomber
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_large
+			xp = 1
+		}
 	}
 
 ########  ######## ######## ######## ##    ##  ######  #### ##     ## ########    ######## ##     ## ########  ########  ######## ########  ######  
