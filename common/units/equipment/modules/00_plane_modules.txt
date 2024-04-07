@@ -5622,7 +5622,7 @@ equipment_modules = {
 		}
 		mission_type_stats = {
 			limit = {
-				air_superiority
+				strategic_bomber
 			}
 			multiply_stats = {
 				air_attack = -0.1
@@ -5682,6 +5682,24 @@ equipment_modules = {
 			module_category = aircraft_role_medium
 			xp = 1
 		}
+		mission_type_stats = {
+			limit = {
+				recon
+				naval_patrol
+			}
+			multiply_stats = {
+				surface_detection = 0.1
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				air_superiority
+				interception
+			}
+			multiply_stats = {
+				air_attack = -0.1
+			}
+		}
 	}
 	tac_bomb_role = {
 		abbreviation = "r_tac_bomb"
@@ -5693,6 +5711,23 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = aircraft_role_medium
 			xp = 1
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+				cas
+			}
+			multiply_stats = {
+				air_ground_attack = -0.1
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				strategic_bomber
+			}
+			multiply_stats = {
+				air_bombing = 0.1
+			}
 		}
 	}
 	maritime_pat_role = {
@@ -5717,6 +5752,23 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = aircraft_role_large
 			xp = 1
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+				cas
+			}
+			multiply_stats = {
+				air_ground_attack = 0.1
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				strategic_bomber
+			}
+			multiply_stats = {
+				air_bombing = 0.15
+			}
 		}
 	}
 
