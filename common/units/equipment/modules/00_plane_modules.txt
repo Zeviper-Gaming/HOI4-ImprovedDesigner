@@ -5555,6 +5555,22 @@ equipment_modules = {
 			module_category = aircraft_role_medium
 			xp = 1
 		}
+		mission_type_stats = {
+			limit = {
+				air_superiority
+			}
+			multiply_stats = {
+				air_attack = 0.1
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			multiply_stats = {
+				air_attack = -0.1
+			}
+		}
 	}
 	interceptor_role = {
 		abbreviation = "r_inter"
@@ -5566,6 +5582,22 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = aircraft_role_small
 			xp = 1
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			multiply_stats = {
+				air_attack = 0.1
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				air_superiority
+			}
+			multiply_stats = {
+				air_attack = -0.1
+			}
 		}
 	}
 	cas_role = {
@@ -5579,6 +5611,23 @@ equipment_modules = {
 			module_category = aircraft_role_small
 			xp = 1
 		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+				cas
+			}
+			multiply_stats = {
+				air_ground_attack = 0.1
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				air_superiority
+			}
+			multiply_stats = {
+				air_attack = -0.1
+			}
+		}
 	}
 	naval_bomber_role = {
 		abbreviation = "r_nav_b"
@@ -5590,6 +5639,24 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = aircraft_role_medium
 			xp = 1
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+			}
+			multiply_stats = {
+				naval_strike_attack = 0.1
+				naval_strike_targetting = 0.05
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				air_superiority
+			}
+			multiply_stats = {
+				air_attack = -0.1
+			}
 		}
 	}
 	suicide_role = {
