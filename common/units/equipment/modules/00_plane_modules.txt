@@ -3376,7 +3376,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_small
 				plane_special_module_ASW
-				plane_special_module_engine_small
+
 				recon_camera
 				fighter_weapon
 			}
@@ -3401,7 +3401,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_small
-				plane_special_module_engine_small
+				plane_fuel_module_small
 				cas_weapon
 				tac_weapon
 				nav_bomber_weapon
@@ -3423,6 +3423,7 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_1 = {
 				propreller_blade_module
@@ -3501,7 +3502,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_small
 				plane_special_module_ASW
-				plane_special_module_engine_small
+
 				recon_camera
 			fighter_weapon
 			}
@@ -3526,7 +3527,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_small
-				plane_special_module_engine_small
+				plane_fuel_module_small
 				cas_weapon
 				tac_weapon
 				nav_bomber_weapon
@@ -3548,6 +3549,7 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_1 = {
 				propreller_blade_module
@@ -3625,7 +3627,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_small
 				plane_special_module_ASW
-				plane_special_module_engine_small
+
 				recon_camera
 			fighter_weapon
 			}
@@ -3650,7 +3652,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_small
-				plane_special_module_engine_small
+				plane_fuel_module_small
 				cas_weapon
 				tac_weapon
 				nav_bomber_weapon
@@ -3672,6 +3674,7 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_1 = {
 				propreller_blade_module
@@ -3756,7 +3759,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_small
 				plane_special_module_ASW
-				plane_special_module_engine_small
+
 				recon_camera
 			fighter_weapon
 			}
@@ -3789,6 +3792,7 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_small
 			}
 			fixed_rear_fuselage_slot = {
 
@@ -3876,7 +3880,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_small
 				plane_special_module_ASW
-				plane_special_module_engine_small
+
 				recon_camera
 			fighter_weapon
 			}
@@ -3901,7 +3905,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_small
-				plane_special_module_engine_small
+				plane_fuel_module_small
 				cas_weapon
 				tac_weapon
 				nav_bomber_weapon
@@ -3921,6 +3925,7 @@ equipment_modules = {
 				plane_special_module_jet
 				plane_special_module_ASW
 				plane_rear_engine
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_1 = {
 				propreller_blade_module
@@ -4023,7 +4028,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_small
 				plane_special_module_ASW
-				plane_special_module_engine_small
+
 				recon_camera
 			fighter_weapon
 			}
@@ -4056,6 +4061,7 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_small
 			}
 			fixed_rear_fuselage_slot = {
 
@@ -4135,7 +4141,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_medium
 				plane_special_module_ASW
-				plane_special_module_engine_medium
+
 				recon_camera
 			fighter_weapon
 			}
@@ -4160,7 +4166,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_medium
-				plane_special_module_engine_medium
+				plane_fuel_module_medium
 				cas_weapon
 				tac_weapon
 				strat_weapon
@@ -4183,6 +4189,7 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_1 = {
 				propreller_blade_module
@@ -4260,7 +4267,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_medium
 				plane_special_module_ASW
-				plane_special_module_engine_medium
+
 				recon_camera
 			fighter_weapon
 			}
@@ -4285,7 +4292,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_medium
-				plane_special_module_engine_medium
+				plane_fuel_module_medium
 				cas_weapon
 				tac_weapon
 				strat_weapon
@@ -4308,6 +4315,7 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_1 = {
 				propreller_blade_module
@@ -4386,7 +4394,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_medium
 				plane_special_module_ASW
-				plane_special_module_engine_medium
+
 				recon_camera
 			fighter_weapon
 			}
@@ -4411,7 +4419,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_medium
-				plane_special_module_engine_medium
+				plane_fuel_module_medium
 				cas_weapon
 				tac_weapon
 				strat_weapon
@@ -4434,6 +4442,7 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_1 = {
 				propreller_blade_module
@@ -4518,7 +4527,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_medium
 				plane_special_module_ASW
-				plane_special_module_engine_medium
+
 				recon_camera
 			fighter_weapon
 			}
@@ -4543,7 +4552,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_medium
-				plane_special_module_engine_medium
+				plane_fuel_module_medium
 				cas_weapon
 				tac_weapon
 				nav_bomber_weapon
@@ -4565,6 +4574,7 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_1 = {
 				propreller_blade_module
@@ -4649,7 +4659,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_medium
 				plane_special_module_ASW
-				plane_special_module_engine_medium
+
 				recon_camera
 			fighter_weapon
 			}
@@ -4674,7 +4684,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_medium
-				plane_special_module_engine_medium
+				plane_fuel_module_medium
 				cas_weapon
 				tac_weapon
 				strat_weapon
@@ -4697,6 +4707,7 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_1 = {
 				propreller_blade_module
@@ -4799,7 +4810,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_medium
 				plane_special_module_ASW
-				plane_special_module_engine_medium
+
 				recon_camera
 			fighter_weapon
 			}
@@ -4824,7 +4835,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_medium
-				plane_special_module_engine_medium
+				plane_fuel_module_medium
 				cas_weapon
 				tac_weapon
 				strat_weapon
@@ -4912,7 +4923,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_large
 				plane_special_module_ASW
-				plane_special_module_engine_large
+
 				recon_camera
 			fighter_weapon
 			}
@@ -4938,7 +4949,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_large
-				plane_special_module_engine_large
+				plane_fuel_module_large
 				cas_weapon
 				tac_weapon
 				strat_weapon
@@ -4961,6 +4972,7 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_1 = {
 				propreller_blade_module
@@ -5042,7 +5054,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_large
 				plane_special_module_ASW
-				plane_special_module_engine_large
+
 				recon_camera
 			fighter_weapon
 			}
@@ -5068,7 +5080,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_large
-				plane_special_module_engine_large
+				plane_fuel_module_large
 				cas_weapon
 				tac_weapon
 				strat_weapon
@@ -5091,6 +5103,7 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_1 = {
 				propreller_blade_module
@@ -5185,7 +5198,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_large
 				plane_special_module_ASW
-				plane_special_module_engine_large
+
 				recon_camera
 				fighter_weapon
 			}
@@ -5211,7 +5224,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_large
-				plane_special_module_engine_large
+				plane_fuel_module_large
 				cas_weapon
 				tac_weapon
 				strat_weapon
@@ -5234,6 +5247,7 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_1 = {
 				propreller_blade_module
@@ -5340,7 +5354,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_large
 				plane_special_module_ASW
-				plane_special_module_engine_large
+
 				recon_camera
 				fighter_weapon
 			}
@@ -5366,7 +5380,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_medium
-				plane_special_module_engine_medium
+				plane_fuel_module_large
 				cas_weapon
 				tac_weapon
 				strat_weapon
