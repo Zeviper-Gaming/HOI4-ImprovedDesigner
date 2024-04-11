@@ -5661,7 +5661,6 @@ equipment_modules = {
 			}
 			multiply_stats = {
 				naval_strike_attack = 0.1
-				naval_strike_targetting = 0.05
 			}
 		}
 		mission_type_stats = {

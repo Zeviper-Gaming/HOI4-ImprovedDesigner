@@ -197,19 +197,19 @@ spriteTypes = {
 
 	# Engines types category
 	spriteType = {
-		name = "EQ_MOD_CAT_plane_engine_rotating_TITLE"
+		name = "GFX_EMI_plane_engine_rotating"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/engine-motor-rotary.jpg"
 	}
 	spriteType = {
-		name = "EQ_MOD_CAT_plane_engine_radial_TITLE"
+		name = "GFX_EMI_plane_engine_radial"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/engine-radial.jpg"
 	}
 	spriteType = {
-		name = "EQ_MOD_CAT_plane_engine_V_TITLE"
+		name = "GFX_EMI_plane_engine_V"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/engine-v.jpg"
 	}
 	spriteType = {
-		name = "EQ_MOD_CAT_plane_engine_inline_TITLE"
+		name = "GFX_EMI_plane_engine_inline"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/engine-inline.jpg"
 	}
 	# Engine type
@@ -279,7 +279,7 @@ spriteTypes = {
 	}
 	# Prop blades
 	spriteType = {
-		name = "EQ_MOD_CAT_propreller_blade_module_TITLE"
+		name = "GFX_EMI_propreller_blade_module"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/2-blades-prop.dds"
 	}
 	spriteType = {
@@ -309,11 +309,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/empennage_classic_tail.dds"
 	}
 	spriteType = {
-		name = "EQ_MOD_CAT_plane_empennage_TITLE"
+		name = "GFX_EMI_plane_empennage"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/empennage_twin_tail.dds"
 	}
 	spriteType = {
-		name = "EQ_MOD_CAT_plane_twin_empennage_TITLE"
+		name = "GFX_EMI_plane_twin_empennage"
 		textureFile = "gfx/interface/equipmentdesigner/planes/constructions/empennage_twin_tail.dds"
 	}
 
