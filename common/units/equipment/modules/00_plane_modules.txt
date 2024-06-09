@@ -75,6 +75,7 @@ equipment_modules = {
 		multiply_stats = {
 			thrust = 2
 			fuel_consumption = 2
+			air_agility = -0.2
 		}
 		allowed_module_categories = {
 			engine_power_slot = {
@@ -94,6 +95,7 @@ equipment_modules = {
 		multiply_stats = {
 			thrust = 4
 			fuel_consumption = 4
+			air_agility = -0.30
 		}
 		allowed_module_categories = {
 			engine_power_slot = {
@@ -133,6 +135,7 @@ equipment_modules = {
 		multiply_stats = {
 			thrust = 1
 			fuel_consumption = 1
+			air_agility = -0.15
 		}
 		allowed_module_categories = {
 			engine_power_slot = {
