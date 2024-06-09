@@ -3073,6 +3073,14 @@ equipment_modules = {
 			module_category = wing_W
 			convert_cost_ic = 2
 		}
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
+		}
 
 	}
 	wing_low_rect = {
@@ -3104,6 +3112,14 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = wing_W
 			convert_cost_ic = 2
+		}
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
 		}
 
 	}
@@ -3138,6 +3154,14 @@ equipment_modules = {
 			module_category = wing_W
 			convert_cost_ic = 2
 		}
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
+		}
 
 	}
 	wing_low_ellip = {
@@ -3171,7 +3195,14 @@ equipment_modules = {
 			module_category = wing_W
 			convert_cost_ic = 2
 		}
-
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
+		}
 	}
 	#
 	wing_W_effil = {
@@ -3204,6 +3235,14 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = wing_low
 			convert_cost_ic = 2
+		}
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
 		}
 	}
 	wing_W_rect = {
@@ -3238,6 +3277,14 @@ equipment_modules = {
 			module_category = wing_low
 			convert_cost_ic = 2
 		}
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
+		}
 	}
 	#
 	wing_high_effil = {
@@ -3267,6 +3314,18 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = wing_high
 			convert_cost_ic = 1
+		}
+		can_convert_from = {
+			module_category = wing_low
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
 		}
 	}
 	wing_high_rect = {
@@ -3298,6 +3357,18 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = wing_high
 			convert_cost_ic = 1
+		}
+		can_convert_from = {
+			module_category = wing_low
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
 		}
 	}
 	wing_high_ellip = {
@@ -3332,6 +3403,18 @@ equipment_modules = {
 			module_category = wing_high
 			convert_cost_ic = 1
 		}
+		can_convert_from = {
+			module_category = wing_low
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
+		}
 	}
 	#
 	wing_bi_rect = {
@@ -3352,6 +3435,18 @@ equipment_modules = {
 		}
 		xp_cost = 1
 
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module_category = wing_low
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 15
+		}
 		can_convert_from = {
 			module_category = wing_biplan
 			convert_cost_ic = 1
