@@ -22,6 +22,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 1
+		dismantle_cost_ic = 5
 	}
 	engine_pull_push = {
 		abbreviation = "eng_pp"
@@ -42,6 +43,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 2
+		dismantle_cost_ic = 8
 	}
 	engine_canon_nose = {
 		abbreviation = "eng_nos_g"
@@ -63,6 +65,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 2
+		dismantle_cost_ic = 8
 	}
 	engine_wing = {
 		abbreviation = "eng_wing"
@@ -83,6 +86,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 1
+		dismantle_cost_ic = 12
 	}
 	engine_wing_tandem = {
 		abbreviation = "eng_wing_tandem"
@@ -103,6 +107,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 4
+		dismantle_cost_ic = 15
 	}
 	engine_rear = {
 		abbreviation = "eng_rear"
@@ -123,6 +128,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 2
+		dismantle_cost_ic = 8
 	}
 	engine_top = {
 		abbreviation = "eng_top"
@@ -143,6 +149,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 2
+		dismantle_cost_ic = 8
 	}
 
 	rotating_engine_1 = {
@@ -162,6 +169,10 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
+		can_convert_from = {
+			module = radial_engine_1
+			convert_cost_ic = 1.5
+		}
 	} # todo check from here
 	rotating_engine_2 = {
 		abbreviation = "rot_2"
@@ -180,6 +191,10 @@ equipment_modules = {
 		can_convert_from = {
 			module = rotating_engine_1
 			convert_cost_ic = 1.5
+		}
+		can_convert_from = {
+			module = radial_engine_2
+			convert_cost_ic = 2.5
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -201,8 +216,16 @@ equipment_modules = {
 			maximum_speed = +0.15
 		}
 		can_convert_from = {
+			module = rotating_engine_1
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
 			module = rotating_engine_2
 			convert_cost_ic = 2.5
+		}
+		can_convert_from = {
+			module = radial_engine_3
+			convert_cost_ic = 3.5
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -224,8 +247,20 @@ equipment_modules = {
 			maximum_speed = 0.25
 		}
 		can_convert_from = {
+			module = rotating_engine_1
+			convert_cost_ic = 8
+		}
+		can_convert_from = {
+			module = rotating_engine_2
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
 			module = rotating_engine_3
 			convert_cost_ic = 3
+		}
+		can_convert_from = {
+			module = radial_engine_4
+			convert_cost_ic = 5
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -246,6 +281,10 @@ equipment_modules = {
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
+		}
+		can_convert_from = {
+			module = rotating_engine_1
+			convert_cost_ic = 1.5
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -272,6 +311,10 @@ equipment_modules = {
 			module = radial_engine_1
 			convert_cost_ic = 1.5
 		}
+		can_convert_from = {
+			module = rotating_engine_2
+			convert_cost_ic = 2.5
+		}
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
@@ -295,8 +338,16 @@ equipment_modules = {
 			air_agility = -0.1
 		}
 		can_convert_from = {
+			module = radial_engine_1
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
 			module = radial_engine_2
 			convert_cost_ic = 2.5
+		}
+		can_convert_from = {
+			module = rotating_engine_3
+			convert_cost_ic = 3.5
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -321,8 +372,20 @@ equipment_modules = {
 			air_agility = -0.1
 		}
 		can_convert_from = {
+			module = radial_engine_1
+			convert_cost_ic = 8
+		}
+		can_convert_from = {
+			module = radial_engine_2
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
 			module = radial_engine_3
 			convert_cost_ic = 3
+		}
+		can_convert_from = {
+			module = rotating_engine_4
+			convert_cost_ic = 5
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -348,6 +411,10 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
+		can_convert_from = {
+			module = V_engine_1
+			convert_cost_ic = 1.5
+		}
 	}
 	inline_engine_2 = {
 		abbreviation = "ine_2"
@@ -367,6 +434,14 @@ equipment_modules = {
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
+		}
+		can_convert_from = {
+			module = inline_engine_1
+			convert_cost_ic = 1.5
+		}
+		can_convert_from = {
+			module = V_engine_2
+			convert_cost_ic = 2.5
 		}
 	}
 	inline_engine_3 = {
@@ -388,6 +463,18 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
+		can_convert_from = {
+			module = inline_engine_1
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = inline_engine_2
+			convert_cost_ic = 2.5
+		}
+		can_convert_from = {
+			module = V_engine_3
+			convert_cost_ic = 3.5
+		}
 	}
 	inline_engine_4 = {
 		abbreviation = "ine_4"
@@ -407,6 +494,22 @@ equipment_modules = {
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
+		}
+		can_convert_from = {
+			module = inline_engine_1
+			convert_cost_ic = 8
+		}
+		can_convert_from = {
+			module = inline_engine_2
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = inline_engine_3
+			convert_cost_ic = 3
+		}
+		can_convert_from = {
+			module = V_engine_4
+			convert_cost_ic = 5
 		}
 	}
 	
@@ -429,6 +532,10 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
+		can_convert_from = {
+			module = radial_engine_1
+			convert_cost_ic = 1.5
+		}
 	}
 	V_engine_2 = {
 		abbreviation = "V_2"
@@ -448,6 +555,14 @@ equipment_modules = {
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
+		}
+		can_convert_from = {
+			module = V_engine_1
+			convert_cost_ic = 1.5
+		}
+		can_convert_from = {
+			module = radial_engine_2
+			convert_cost_ic = 2.5
 		}
 	}
 	V_engine_3 = {
@@ -469,6 +584,18 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
+		can_convert_from = {
+			module = V_engine_1
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = V_engine_2
+			convert_cost_ic = 2.5
+		}
+		can_convert_from = {
+			module = radial_engine_3
+			convert_cost_ic = 3.5
+		}
 	}
 	V_engine_4 = {
 		abbreviation = "V_4"
@@ -488,6 +615,22 @@ equipment_modules = {
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
+		}
+		can_convert_from = {
+			module = V_engine_1
+			convert_cost_ic = 8
+		}
+		can_convert_from = {
+			module = V_engine_2
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = V_engine_3
+			convert_cost_ic = 3
+		}
+		can_convert_from = {
+			module = radial_engine_4
+			convert_cost_ic = 5
 		}
 	}
 	
