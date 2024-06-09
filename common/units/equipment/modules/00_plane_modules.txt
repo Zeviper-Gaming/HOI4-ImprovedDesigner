@@ -3458,9 +3458,7 @@ equipment_modules = {
 		abbreviation = "fus_classic_s"
 		category = fuselage_kind_small
 		sfx = sfx_ui_sd_module_turret
-		
 		xp_cost = 1
-
 		allowed_module_categories = {
 
 			# Ligne 4 - Special modules
@@ -3575,6 +3573,26 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_jug_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_drop_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_bi_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_twin_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 20
 		}
 	}
 	fuselage_jug_small = {
@@ -3702,6 +3720,26 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_classic_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_drop_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_bi_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_twin_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 20
+		}
 	}
 	fuselage_drop_small = {
 		abbreviation = "fus_drop_s"
@@ -3827,6 +3865,27 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
+
+		can_convert_from = {
+			module = fuselage_classic_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_jug_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_bi_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_twin_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 20
+		}
 	}
 	fuselage_bi_small = {
 		abbreviation = "fus_bi_s"
@@ -3947,6 +4006,27 @@ equipment_modules = {
 			tail_slot = {
 				plane_twin_empennage
 			}
+		}
+
+		can_convert_from = {
+			module = fuselage_classic_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_jug_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_drop_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_twin_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
 		}
 	}
 	fuselage_twin_small = {
@@ -4077,6 +4157,26 @@ equipment_modules = {
 			tail_slot = {
 				plane_twin_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_jug_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_drop_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_classic_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_bi_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
 		}
 	}
 	fuselage_flying_wing_small = {
@@ -4217,6 +4317,26 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_jug_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_drop_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_classic_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_bi_small
+			convert_cost_ic = 20
+		}
+		can_convert_from = {
+			module = fuselage_twin_small
+			convert_cost_ic = 20
+		}
 	}
 	# MEDIUM FUSELAGE
 	fuselage_classic_medium = {
@@ -4341,6 +4461,26 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_jug_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_drop_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_bi_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = flying_boat_medium
+			convert_cost_ic = 15
 		}
 	}
 	fuselage_jug_medium = {
@@ -4468,6 +4608,26 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_classic_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_drop_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_bi_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = flying_boat_medium
+			convert_cost_ic = 15
+		}
 	}
 	fuselage_drop_medium = {
 		abbreviation = "fus_drop_m"
@@ -4594,6 +4754,26 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_jug_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_classic_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_bi_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = flying_boat_medium
+			convert_cost_ic = 15
 		}
 	}
 	fuselage_bi_medium = {
@@ -4727,6 +4907,26 @@ equipment_modules = {
 				plane_twin_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_jug_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_drop_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_classic_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = flying_boat_medium
+			convert_cost_ic = 25
+		}
 	}
 	flying_boat_medium = {
 		abbreviation = "flbm"
@@ -4859,6 +5059,26 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_classic_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_jug_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_drop_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_bi_medium
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
 		}
 	}
 	fuselage_flying_wing_medium = {
@@ -4999,6 +5219,26 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_classic_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_jug_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_drop_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_bi_medium
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = flying_boat_medium
+			convert_cost_ic = 25
+		}
 	}
 	# LARGE FUSELAGE
 	fuselage_classic_large = {
@@ -5128,6 +5368,18 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_jug_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = flying_boat_large
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_large
+			convert_cost_ic = 35
 		}
 	}
 	fuselage_jug_large = {
@@ -5259,6 +5511,18 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_classic_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = flying_boat_large
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_large
+			convert_cost_ic = 35
 		}
 	}
 	flying_boat_large = {
@@ -5404,6 +5668,18 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_jug_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_classic_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_large
+			convert_cost_ic = 35
+		}
 	}
 	fuselage_flying_wing_large = {
 		abbreviation = "adi_fly_w_l"
@@ -5547,6 +5823,18 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_jug_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_classic_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = flying_boat_large
+			convert_cost_ic = 35
 		}
 	}
 
