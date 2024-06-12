@@ -158,9 +158,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 11
-			build_cost_ic = 12
-			fuel_consumption = 0.16
+			thrust = 10
+			build_cost_ic = 10
+			fuel_consumption = 0.13
 		}
 		multiply_stats = {
 			thrust = -1
@@ -180,9 +180,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 16
-			build_cost_ic = 14
-			fuel_consumption = 0.36
+			thrust = 12
+			build_cost_ic = 12
+			fuel_consumption = 0.16
 		}
 		multiply_stats = {
 			thrust = -1
@@ -206,9 +206,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 25
-			build_cost_ic = 16
-			fuel_consumption = 0.16
+			thrust = 14
+			build_cost_ic = 14
+			fuel_consumption = 0.21
 		}
 		multiply_stats = {
 			thrust = -1
@@ -237,9 +237,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 30
-			build_cost_ic = 18
-			fuel_consumption = 0.16
+			thrust = 18
+			build_cost_ic = 14
+			fuel_consumption = 0.24
 		}
 		multiply_stats = {
 			thrust = -1
@@ -272,11 +272,11 @@ equipment_modules = {
 		category = plane_engine_radial
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			reliability = +0.2
-			air_defence = +3
-			thrust = 13
-			build_cost_ic = 13
-			fuel_consumption = 0.16
+			reliability = +0.1
+			air_defence = +1
+			thrust = 15
+			build_cost_ic = 15
+			fuel_consumption = 0.19
 		}
 		multiply_stats = {
 			thrust = -1
@@ -298,9 +298,9 @@ equipment_modules = {
 		add_stats = {
 			reliability = +0.2
 			air_defence = +3
-			thrust = 15
-			build_cost_ic = 14
-			fuel_consumption = 0.16
+			thrust = 16
+			build_cost_ic = 16
+			fuel_consumption = 0.21
 		}
 		multiply_stats = {
 			thrust = -1
@@ -325,9 +325,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 20
-			build_cost_ic = 15
-			fuel_consumption = 0.16
+			thrust = 18
+			build_cost_ic = 18
+			fuel_consumption = 0.24
 			air_defence = +3
 			reliability = +0.2
 		}
@@ -359,9 +359,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 25
-			build_cost_ic = 16
-			fuel_consumption = 0.16
+			thrust = 22
+			build_cost_ic = 22
+			fuel_consumption = 0.29
 			air_defence = +3
 			reliability = +0.2
 		}
@@ -398,8 +398,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
 			thrust = 18
-			build_cost_ic = 15
-			fuel_consumption = 0.16
+			build_cost_ic = 18
+			fuel_consumption = 0.26
 			reliability = -0.1
 			air_defence = +5
 		}
@@ -422,8 +422,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
 			thrust = 22
-			build_cost_ic = 16
-			fuel_consumption = 0.16
+			build_cost_ic = 22
+			fuel_consumption = 0.29
 			reliability = -0.1
 			air_defence = +5
 		}
@@ -449,9 +449,9 @@ equipment_modules = {
 		category = plane_engine_inline
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 35
-			build_cost_ic = 18
-			fuel_consumption = 0.18
+			thrust = 24
+			build_cost_ic = 24
+			fuel_consumption = 0.35
 			reliability = -0.1
 			air_defence = +5
 		}
@@ -481,9 +481,9 @@ equipment_modules = {
 		category = plane_engine_inline
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 43
-			build_cost_ic = 20
-			fuel_consumption = 0.20
+			thrust = 27
+			build_cost_ic = 27
+			fuel_consumption = 0.40
 			reliability = -0.1
 			air_defence = +5
 		}
@@ -518,9 +518,9 @@ equipment_modules = {
 		category = plane_engine_V
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 22
-			build_cost_ic = 17
-			fuel_consumption = 0.18
+			thrust = 24
+			build_cost_ic = 26
+			fuel_consumption = 0.35
 			reliability = -0.15
 			air_defence = +5
 		}
@@ -542,9 +542,9 @@ equipment_modules = {
 		category = plane_engine_V
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 28
-			build_cost_ic = 19
-			fuel_consumption = 0.18
+			thrust = 27
+			build_cost_ic = 30
+			fuel_consumption = 0.40
 			reliability = -0.15
 			air_defence = +5
 		}
@@ -570,9 +570,9 @@ equipment_modules = {
 		category = plane_engine_V
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 40
-			build_cost_ic = 22
-			fuel_consumption = 0.20
+			thrust = 30
+			build_cost_ic = 34
+			fuel_consumption = 0.45
 			reliability = -0.15
 			air_defence = +5
 		}
@@ -602,9 +602,9 @@ equipment_modules = {
 		category = plane_engine_V
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 48
-			build_cost_ic = 25
-			fuel_consumption = 0.22
+			thrust = 34
+			build_cost_ic = 36
+			fuel_consumption = 0.48
 			reliability = -0.15
 			air_defence = +5
 		}
