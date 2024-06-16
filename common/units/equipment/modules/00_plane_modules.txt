@@ -22,6 +22,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 1
+		dismantle_cost_ic = 5
 	}
 	engine_pull_push = {
 		abbreviation = "eng_pp"
@@ -42,6 +43,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 2
+		dismantle_cost_ic = 8
 	}
 	engine_canon_nose = {
 		abbreviation = "eng_nos_g"
@@ -63,6 +65,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 2
+		dismantle_cost_ic = 8
 	}
 	engine_wing = {
 		abbreviation = "eng_wing"
@@ -75,6 +78,7 @@ equipment_modules = {
 		multiply_stats = {
 			thrust = 2
 			fuel_consumption = 2
+			air_agility = -0.2
 		}
 		allowed_module_categories = {
 			engine_power_slot = {
@@ -82,6 +86,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 1
+		dismantle_cost_ic = 12
 	}
 	engine_wing_tandem = {
 		abbreviation = "eng_wing_tandem"
@@ -94,6 +99,7 @@ equipment_modules = {
 		multiply_stats = {
 			thrust = 4
 			fuel_consumption = 4
+			air_agility = -0.30
 		}
 		allowed_module_categories = {
 			engine_power_slot = {
@@ -101,6 +107,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 4
+		dismantle_cost_ic = 15
 	}
 	engine_rear = {
 		abbreviation = "eng_rear"
@@ -121,6 +128,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 2
+		dismantle_cost_ic = 8
 	}
 	engine_top = {
 		abbreviation = "eng_top"
@@ -133,6 +141,7 @@ equipment_modules = {
 		multiply_stats = {
 			thrust = 1
 			fuel_consumption = 1
+			air_agility = -0.15
 		}
 		allowed_module_categories = {
 			engine_power_slot = {
@@ -140,6 +149,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 2
+		dismantle_cost_ic = 8
 	}
 
 	rotating_engine_1 = {
@@ -148,9 +158,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 11
-			build_cost_ic = 12
-			fuel_consumption = 0.16
+			thrust = 10
+			build_cost_ic = 10
+			fuel_consumption = 0.13
 		}
 		multiply_stats = {
 			thrust = -1
@@ -159,6 +169,10 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
+		can_convert_from = {
+			module = radial_engine_1
+			convert_cost_ic = 1.5
+		}
 	} # todo check from here
 	rotating_engine_2 = {
 		abbreviation = "rot_2"
@@ -166,9 +180,103 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 16
+			thrust = 12
+			build_cost_ic = 12
+			fuel_consumption = 0.16
+		}
+		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
+		}
+		can_convert_from = {
+			module = rotating_engine_1
+			convert_cost_ic = 1.5
+		}
+		can_convert_from = {
+			module = radial_engine_2
+			convert_cost_ic = 2.5
+		}
+		forbid_module_categories = {
+		plane_special_module_jet
+		}
+	}
+	rotating_engine_3 = {
+		abbreviation = "rot_3"
+		category = plane_engine_rotating
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 14
 			build_cost_ic = 14
-			fuel_consumption = 0.36
+			fuel_consumption = 0.21
+		}
+		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
+			maximum_speed = +0.15
+		}
+		can_convert_from = {
+			module = rotating_engine_1
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = rotating_engine_2
+			convert_cost_ic = 2.5
+		}
+		can_convert_from = {
+			module = radial_engine_3
+			convert_cost_ic = 3.5
+		}
+		forbid_module_categories = {
+		plane_special_module_jet
+		}
+	}
+	rotating_engine_4 = {
+		abbreviation = "rot_3"
+		category = plane_engine_rotating
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 18
+			build_cost_ic = 14
+			fuel_consumption = 0.24
+		}
+		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
+			maximum_speed = 0.25
+		}
+		can_convert_from = {
+			module = rotating_engine_1
+			convert_cost_ic = 8
+		}
+		can_convert_from = {
+			module = rotating_engine_2
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = rotating_engine_3
+			convert_cost_ic = 3
+		}
+		can_convert_from = {
+			module = radial_engine_4
+			convert_cost_ic = 5
+		}
+		forbid_module_categories = {
+		plane_special_module_jet
+		}
+	}
+
+	radial_engine_1 = {
+		abbreviation = "rad_1"
+		category = plane_engine_radial
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = +0.1
+			air_defence = +1
+			thrust = 15
+			build_cost_ic = 15
+			fuel_consumption = 0.19
 		}
 		multiply_stats = {
 			thrust = -1
@@ -182,72 +290,6 @@ equipment_modules = {
 		plane_special_module_jet
 		}
 	}
-	rotating_engine_3 = {
-		abbreviation = "rot_3"
-		category = plane_engine_rotating
-		sfx = sfx_ui_sd_module_engine
-
-		add_stats = {
-			thrust = 25
-			build_cost_ic = 16
-			fuel_consumption = 0.16
-		}
-		multiply_stats = {
-			thrust = -1
-			fuel_consumption = -1
-			maximum_speed = +0.15
-		}
-		can_convert_from = {
-			module = rotating_engine_2
-			convert_cost_ic = 2.5
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		}
-	}
-	rotating_engine_4 = {
-		abbreviation = "rot_3"
-		category = plane_engine_rotating
-		sfx = sfx_ui_sd_module_engine
-
-		add_stats = {
-			thrust = 30
-			build_cost_ic = 18
-			fuel_consumption = 0.16
-		}
-		multiply_stats = {
-			thrust = -1
-			fuel_consumption = -1
-			maximum_speed = 0.25
-		}
-		can_convert_from = {
-			module = rotating_engine_3
-			convert_cost_ic = 3
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		}
-	}
-
-	radial_engine_1 = {
-		abbreviation = "rad_1"
-		category = plane_engine_radial
-		sfx = sfx_ui_sd_module_engine
-		add_stats = {
-			reliability = +0.2
-			air_defence = +3
-			thrust = 13
-			build_cost_ic = 13
-			fuel_consumption = 0.16
-		}
-		multiply_stats = {
-			thrust = -1
-			fuel_consumption = -1
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		}
-	}
 	radial_engine_2 = {
 		abbreviation = "rad_2"
 		category = plane_engine_radial
@@ -256,9 +298,9 @@ equipment_modules = {
 		add_stats = {
 			reliability = +0.2
 			air_defence = +3
-			thrust = 15
-			build_cost_ic = 14
-			fuel_consumption = 0.16
+			thrust = 16
+			build_cost_ic = 16
+			fuel_consumption = 0.21
 		}
 		multiply_stats = {
 			thrust = -1
@@ -268,6 +310,10 @@ equipment_modules = {
 		can_convert_from = {
 			module = radial_engine_1
 			convert_cost_ic = 1.5
+		}
+		can_convert_from = {
+			module = rotating_engine_2
+			convert_cost_ic = 2.5
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -279,9 +325,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 20
-			build_cost_ic = 15
-			fuel_consumption = 0.16
+			thrust = 18
+			build_cost_ic = 18
+			fuel_consumption = 0.24
 			air_defence = +3
 			reliability = +0.2
 		}
@@ -292,8 +338,16 @@ equipment_modules = {
 			air_agility = -0.1
 		}
 		can_convert_from = {
+			module = radial_engine_1
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
 			module = radial_engine_2
 			convert_cost_ic = 2.5
+		}
+		can_convert_from = {
+			module = rotating_engine_3
+			convert_cost_ic = 3.5
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -305,9 +359,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 25
-			build_cost_ic = 16
-			fuel_consumption = 0.16
+			thrust = 22
+			build_cost_ic = 22
+			fuel_consumption = 0.29
 			air_defence = +3
 			reliability = +0.2
 		}
@@ -318,8 +372,20 @@ equipment_modules = {
 			air_agility = -0.1
 		}
 		can_convert_from = {
+			module = radial_engine_1
+			convert_cost_ic = 8
+		}
+		can_convert_from = {
+			module = radial_engine_2
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
 			module = radial_engine_3
 			convert_cost_ic = 3
+		}
+		can_convert_from = {
+			module = rotating_engine_4
+			convert_cost_ic = 5
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -332,8 +398,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
 			thrust = 18
-			build_cost_ic = 15
-			fuel_consumption = 0.16
+			build_cost_ic = 18
+			fuel_consumption = 0.26
 			reliability = -0.1
 			air_defence = +5
 		}
@@ -344,6 +410,10 @@ equipment_modules = {
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
+		}
+		can_convert_from = {
+			module = V_engine_1
+			convert_cost_ic = 1.5
 		}
 	}
 	inline_engine_2 = {
@@ -352,8 +422,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
 			thrust = 22
-			build_cost_ic = 16
-			fuel_consumption = 0.16
+			build_cost_ic = 22
+			fuel_consumption = 0.29
 			reliability = -0.1
 			air_defence = +5
 		}
@@ -365,15 +435,23 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
+		can_convert_from = {
+			module = inline_engine_1
+			convert_cost_ic = 1.5
+		}
+		can_convert_from = {
+			module = V_engine_2
+			convert_cost_ic = 2.5
+		}
 	}
 	inline_engine_3 = {
 		abbreviation = "ine_3"
 		category = plane_engine_inline
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 35
-			build_cost_ic = 18
-			fuel_consumption = 0.18
+			thrust = 24
+			build_cost_ic = 24
+			fuel_consumption = 0.35
 			reliability = -0.1
 			air_defence = +5
 		}
@@ -385,15 +463,27 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
+		can_convert_from = {
+			module = inline_engine_1
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = inline_engine_2
+			convert_cost_ic = 2.5
+		}
+		can_convert_from = {
+			module = V_engine_3
+			convert_cost_ic = 3.5
+		}
 	}
 	inline_engine_4 = {
 		abbreviation = "ine_4"
 		category = plane_engine_inline
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 43
-			build_cost_ic = 20
-			fuel_consumption = 0.20
+			thrust = 27
+			build_cost_ic = 27
+			fuel_consumption = 0.40
 			reliability = -0.1
 			air_defence = +5
 		}
@@ -405,6 +495,22 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
+		can_convert_from = {
+			module = inline_engine_1
+			convert_cost_ic = 8
+		}
+		can_convert_from = {
+			module = inline_engine_2
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = inline_engine_3
+			convert_cost_ic = 3
+		}
+		can_convert_from = {
+			module = V_engine_4
+			convert_cost_ic = 5
+		}
 	}
 	
 	V_engine_1 = {
@@ -412,9 +518,9 @@ equipment_modules = {
 		category = plane_engine_V
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 22
-			build_cost_ic = 17
-			fuel_consumption = 0.18
+			thrust = 24
+			build_cost_ic = 26
+			fuel_consumption = 0.35
 			reliability = -0.15
 			air_defence = +5
 		}
@@ -426,15 +532,19 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
+		can_convert_from = {
+			module = radial_engine_1
+			convert_cost_ic = 1.5
+		}
 	}
 	V_engine_2 = {
 		abbreviation = "V_2"
 		category = plane_engine_V
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 28
-			build_cost_ic = 19
-			fuel_consumption = 0.18
+			thrust = 27
+			build_cost_ic = 30
+			fuel_consumption = 0.40
 			reliability = -0.15
 			air_defence = +5
 		}
@@ -446,15 +556,23 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
+		can_convert_from = {
+			module = V_engine_1
+			convert_cost_ic = 1.5
+		}
+		can_convert_from = {
+			module = radial_engine_2
+			convert_cost_ic = 2.5
+		}
 	}
 	V_engine_3 = {
 		abbreviation = "V_3"
 		category = plane_engine_V
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 40
-			build_cost_ic = 22
-			fuel_consumption = 0.20
+			thrust = 30
+			build_cost_ic = 34
+			fuel_consumption = 0.45
 			reliability = -0.15
 			air_defence = +5
 		}
@@ -466,15 +584,27 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
+		can_convert_from = {
+			module = V_engine_1
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = V_engine_2
+			convert_cost_ic = 2.5
+		}
+		can_convert_from = {
+			module = radial_engine_3
+			convert_cost_ic = 3.5
+		}
 	}
 	V_engine_4 = {
 		abbreviation = "V_4"
 		category = plane_engine_V
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 48
-			build_cost_ic = 25
-			fuel_consumption = 0.22
+			thrust = 34
+			build_cost_ic = 36
+			fuel_consumption = 0.48
 			reliability = -0.15
 			air_defence = +5
 		}
@@ -485,6 +615,22 @@ equipment_modules = {
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
+		}
+		can_convert_from = {
+			module = V_engine_1
+			convert_cost_ic = 8
+		}
+		can_convert_from = {
+			module = V_engine_2
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = V_engine_3
+			convert_cost_ic = 3
+		}
+		can_convert_from = {
+			module = radial_engine_4
+			convert_cost_ic = 5
 		}
 	}
 	
@@ -3070,6 +3216,14 @@ equipment_modules = {
 			module_category = wing_W
 			convert_cost_ic = 2
 		}
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
+		}
 
 	}
 	wing_low_rect = {
@@ -3101,6 +3255,14 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = wing_W
 			convert_cost_ic = 2
+		}
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
 		}
 
 	}
@@ -3135,6 +3297,14 @@ equipment_modules = {
 			module_category = wing_W
 			convert_cost_ic = 2
 		}
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
+		}
 
 	}
 	wing_low_ellip = {
@@ -3168,7 +3338,14 @@ equipment_modules = {
 			module_category = wing_W
 			convert_cost_ic = 2
 		}
-
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
+		}
 	}
 	#
 	wing_W_effil = {
@@ -3201,6 +3378,14 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = wing_low
 			convert_cost_ic = 2
+		}
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
 		}
 	}
 	wing_W_rect = {
@@ -3235,6 +3420,14 @@ equipment_modules = {
 			module_category = wing_low
 			convert_cost_ic = 2
 		}
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
+		}
 	}
 	#
 	wing_high_effil = {
@@ -3264,6 +3457,18 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = wing_high
 			convert_cost_ic = 1
+		}
+		can_convert_from = {
+			module_category = wing_low
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
 		}
 	}
 	wing_high_rect = {
@@ -3295,6 +3500,18 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = wing_high
 			convert_cost_ic = 1
+		}
+		can_convert_from = {
+			module_category = wing_low
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
 		}
 	}
 	wing_high_ellip = {
@@ -3329,6 +3546,18 @@ equipment_modules = {
 			module_category = wing_high
 			convert_cost_ic = 1
 		}
+		can_convert_from = {
+			module_category = wing_low
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
+		}
 	}
 	#
 	wing_bi_rect = {
@@ -3350,6 +3579,18 @@ equipment_modules = {
 		xp_cost = 1
 
 		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module_category = wing_low
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
 			module_category = wing_biplan
 			convert_cost_ic = 1
 		}
@@ -3360,9 +3601,7 @@ equipment_modules = {
 		abbreviation = "fus_classic_s"
 		category = fuselage_kind_small
 		sfx = sfx_ui_sd_module_turret
-		
 		xp_cost = 1
-
 		allowed_module_categories = {
 
 			# Ligne 4 - Special modules
@@ -3477,6 +3716,26 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_jug_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_drop_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_bi_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_twin_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 20
 		}
 	}
 	fuselage_jug_small = {
@@ -3604,6 +3863,26 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_classic_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_drop_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_bi_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_twin_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 20
+		}
 	}
 	fuselage_drop_small = {
 		abbreviation = "fus_drop_s"
@@ -3729,6 +4008,27 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
+
+		can_convert_from = {
+			module = fuselage_classic_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_jug_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_bi_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_twin_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 20
+		}
 	}
 	fuselage_bi_small = {
 		abbreviation = "fus_bi_s"
@@ -3849,6 +4149,27 @@ equipment_modules = {
 			tail_slot = {
 				plane_twin_empennage
 			}
+		}
+
+		can_convert_from = {
+			module = fuselage_classic_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_jug_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_drop_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_twin_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
 		}
 	}
 	fuselage_twin_small = {
@@ -3979,6 +4300,26 @@ equipment_modules = {
 			tail_slot = {
 				plane_twin_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_jug_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_drop_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_classic_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_bi_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
 		}
 	}
 	fuselage_flying_wing_small = {
@@ -4119,6 +4460,26 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_jug_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_drop_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_classic_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_bi_small
+			convert_cost_ic = 20
+		}
+		can_convert_from = {
+			module = fuselage_twin_small
+			convert_cost_ic = 20
+		}
 	}
 	# MEDIUM FUSELAGE
 	fuselage_classic_medium = {
@@ -4243,6 +4604,26 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_jug_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_drop_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_bi_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = flying_boat_medium
+			convert_cost_ic = 15
 		}
 	}
 	fuselage_jug_medium = {
@@ -4370,6 +4751,26 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_classic_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_drop_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_bi_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = flying_boat_medium
+			convert_cost_ic = 15
+		}
 	}
 	fuselage_drop_medium = {
 		abbreviation = "fus_drop_m"
@@ -4496,6 +4897,26 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_jug_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_classic_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_bi_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = flying_boat_medium
+			convert_cost_ic = 15
 		}
 	}
 	fuselage_bi_medium = {
@@ -4629,6 +5050,26 @@ equipment_modules = {
 				plane_twin_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_jug_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_drop_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_classic_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = flying_boat_medium
+			convert_cost_ic = 25
+		}
 	}
 	flying_boat_medium = {
 		abbreviation = "flbm"
@@ -4761,6 +5202,26 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_classic_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_jug_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_drop_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_bi_medium
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
 		}
 	}
 	fuselage_flying_wing_medium = {
@@ -4901,6 +5362,26 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_classic_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_jug_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_drop_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_bi_medium
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = flying_boat_medium
+			convert_cost_ic = 25
+		}
 	}
 	# LARGE FUSELAGE
 	fuselage_classic_large = {
@@ -5030,6 +5511,18 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_jug_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = flying_boat_large
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_large
+			convert_cost_ic = 35
 		}
 	}
 	fuselage_jug_large = {
@@ -5161,6 +5654,18 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_classic_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = flying_boat_large
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_large
+			convert_cost_ic = 35
 		}
 	}
 	flying_boat_large = {
@@ -5306,6 +5811,18 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_jug_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_classic_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_large
+			convert_cost_ic = 35
+		}
 	}
 	fuselage_flying_wing_large = {
 		abbreviation = "adi_fly_w_l"
@@ -5449,6 +5966,18 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_jug_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_classic_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = flying_boat_large
+			convert_cost_ic = 35
 		}
 	}
 
@@ -5661,7 +6190,6 @@ equipment_modules = {
 			}
 			multiply_stats = {
 				naval_strike_attack = 0.1
-				naval_strike_targetting = 0.05
 			}
 		}
 		mission_type_stats = {
