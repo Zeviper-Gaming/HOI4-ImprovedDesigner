@@ -232,7 +232,7 @@ equipment_modules = {
 		}
 	}
 	rotating_engine_4 = {
-		abbreviation = "rot_3"
+		abbreviation = "rot_4"
 		category = plane_engine_rotating
 		sfx = sfx_ui_sd_module_engine
 
@@ -861,7 +861,7 @@ equipment_modules = {
 
 	# Pales
 	2_blades_prop = {
-		abbreviation = "prop3"
+		abbreviation = "prop2"
 		category = propreller_blade_module
 		sfx = sfx_ui_sd_module_turret
 
@@ -877,7 +877,7 @@ equipment_modules = {
 		xp_cost = 1
 	}
 	4_blades_prop = {
-		abbreviation = "prop3"
+		abbreviation = "prop4"
 		category = propreller_blade_module
 		sfx = sfx_ui_sd_module_turret
 
@@ -1104,7 +1104,7 @@ equipment_modules = {
 		}
 	}
 	imp_heavy_mg_2x = {
-		abbreviation = "hmg2"
+		abbreviation = "imp_hmg2"
 		category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { fighter heavy_fighter }
@@ -1121,7 +1121,7 @@ equipment_modules = {
 		}
 	}
 	imp_heavy_mg_4x = {
-		abbreviation = "hmg4"
+		abbreviation = "imp_hmg4"
 		category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { fighter heavy_fighter }
@@ -1852,7 +1852,7 @@ equipment_modules = {
 		xp_cost = 1
 	}
 	aircraft_lightweight_construction_small = {
-		abbreviation = "flo"
+		abbreviation = "light_small"
 		category = plane_construction_type_module_small
 		sfx = sfx_ui_sd_module_turret
 
@@ -1869,7 +1869,7 @@ equipment_modules = {
 		xp_cost = 1
 	}
 	aircraft_reinforced_construction_small = {
-		abbreviation = "flo"
+		abbreviation = "reinforc_small"
 		category = plane_construction_type_module_small
 		sfx = sfx_ui_sd_module_turret
 
@@ -1918,7 +1918,7 @@ equipment_modules = {
 	}
 	
 	floats = {
-		abbreviation = "flo"
+		abbreviation = "floats"
 		category = plane_fuel_module_small
 		sfx = sfx_ui_sd_module_turret
 
@@ -2193,7 +2193,7 @@ equipment_modules = {
 		}
 	}
 	aircraft_lightweight_construction_medium = {
-		abbreviation = "flo"
+		abbreviation = "light_medium"
 		category = plane_construction_type_module_medium
 		sfx = sfx_ui_sd_module_turret
 		
@@ -2210,7 +2210,7 @@ equipment_modules = {
 		xp_cost = 1
 	}
 	aircraft_reinforced_construction_medium = {
-		abbreviation = "flo"
+		abbreviation = "reinforc_medium"
 		category = plane_construction_type_module_medium
 		sfx = sfx_ui_sd_module_turret
 		
@@ -2435,7 +2435,7 @@ equipment_modules = {
 		xp_cost = 1
 	}
 	aircraft_reinforced_construction_large = {
-		abbreviation = "flo"
+		abbreviation = "reinforc_large"
 		category = plane_construction_type_module_large
 		sfx = sfx_ui_sd_module_turret
 
