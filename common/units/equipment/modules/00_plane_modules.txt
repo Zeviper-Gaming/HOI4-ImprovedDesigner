@@ -1298,7 +1298,7 @@ equipment_modules = {
 	}
 	small_bomb_bay = {
 		abbreviation = "sbb"
-		category = cas_weapon
+		category = tac_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { cas tactical_bomber }
 

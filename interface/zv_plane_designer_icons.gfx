@@ -290,6 +290,16 @@ spriteTypes = {
 		name = "GFX_EMI_4_blades_module"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/4-blades-prop.dds"
 	}
+	spriteType = {
+    name = "GFX_plane_fuel_module_small"
+    textureFile = "gfx/interface/equipmentdesigner/planes/modules/fuel_module_small.dds"
+}
+
+spriteType = {
+    name = "GFX_plane_special_engine_small"
+    textureFile = "gfx/interface/equipmentdesigner/planes/modules/special_engine_small.dds"
+}
+
 
 	# Tail
 	spriteType = {
