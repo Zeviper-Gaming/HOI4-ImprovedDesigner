@@ -160,6 +160,7 @@ equipment_modules = {
 			thrust = 10
 			build_cost_ic = 10
 			fuel_consumption = 0.13
+			air_defence = 1
 		}
 		multiply_stats = {
 			thrust = -1
@@ -182,6 +183,8 @@ equipment_modules = {
 			thrust = 12
 			build_cost_ic = 12
 			fuel_consumption = 0.16
+			air_defence = 1
+			maximum_speed = 4
 		}
 		multiply_stats = {
 			thrust = -1
@@ -208,11 +211,12 @@ equipment_modules = {
 			thrust = 14
 			build_cost_ic = 14
 			fuel_consumption = 0.21
+			air_defence = 1
+			maximum_speed = 8
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = +0.15
 		}
 		can_convert_from = {
 			module = rotating_engine_1
@@ -239,11 +243,12 @@ equipment_modules = {
 			thrust = 18
 			build_cost_ic = 14
 			fuel_consumption = 0.24
+			air_defence = 1
+			maximum_speed = 12
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.25
 		}
 		can_convert_from = {
 			module = rotating_engine_1
@@ -272,10 +277,12 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
 			reliability = +0.1
-			air_defence = +1
+			air_defence = 4
 			thrust = 15
 			build_cost_ic = 15
 			fuel_consumption = 0.19
+			air_agility = -1
+			maximum_speed = 4
 		}
 		multiply_stats = {
 			thrust = -1
@@ -296,15 +303,16 @@ equipment_modules = {
 
 		add_stats = {
 			reliability = +0.2
-			air_defence = +3
+			air_defence = 4
 			thrust = 16
 			build_cost_ic = 16
 			fuel_consumption = 0.21
+			air_agility = -1
+			maximum_speed = 10
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			air_agility = -0.1
 		}
 		can_convert_from = {
 			module = radial_engine_1
@@ -327,14 +335,14 @@ equipment_modules = {
 			thrust = 18
 			build_cost_ic = 18
 			fuel_consumption = 0.24
-			air_defence = +3
+			air_defence = 4
 			reliability = +0.2
+			air_agility = -2
+			maximum_speed = 16
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.25
-			air_agility = -0.1
 		}
 		can_convert_from = {
 			module = radial_engine_1
@@ -361,14 +369,14 @@ equipment_modules = {
 			thrust = 22
 			build_cost_ic = 22
 			fuel_consumption = 0.29
-			air_defence = +3
+			air_defence = 4
 			reliability = +0.2
+			air_agility = -2
+			maximum_speed = 22
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.4
-			air_agility = -0.1
 		}
 		can_convert_from = {
 			module = radial_engine_1
@@ -400,12 +408,13 @@ equipment_modules = {
 			build_cost_ic = 18
 			fuel_consumption = 0.26
 			reliability = -0.1
-			air_defence = +5
+			air_defence = -3
+			air_agility = -2
+			maximum_speed = 8
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.15
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -424,12 +433,13 @@ equipment_modules = {
 			build_cost_ic = 22
 			fuel_consumption = 0.29
 			reliability = -0.1
-			air_defence = +5
+			air_defence = -3
+			air_agility = -3
+			maximum_speed = 16
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.25
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -452,12 +462,13 @@ equipment_modules = {
 			build_cost_ic = 24
 			fuel_consumption = 0.35
 			reliability = -0.1
-			air_defence = +5
+			air_defence = -3
+			air_agility = -3
+			maximum_speed = 24
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.35
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -484,12 +495,13 @@ equipment_modules = {
 			build_cost_ic = 27
 			fuel_consumption = 0.40
 			reliability = -0.1
-			air_defence = +5
+			air_defence = -3
+			air_agility = -4
+			maximum_speed = 30
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.45
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -521,12 +533,13 @@ equipment_modules = {
 			build_cost_ic = 26
 			fuel_consumption = 0.35
 			reliability = -0.15
-			air_defence = +5
+			air_defence = -5
+			air_agility = -3
+			maximum_speed = 10
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.15
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -545,12 +558,13 @@ equipment_modules = {
 			build_cost_ic = 30
 			fuel_consumption = 0.40
 			reliability = -0.15
-			air_defence = +5
+			air_defence = -5
+			air_agility = -4
+			maximum_speed = 18
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.25
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -573,12 +587,13 @@ equipment_modules = {
 			build_cost_ic = 34
 			fuel_consumption = 0.45
 			reliability = -0.15
-			air_defence = +5
+			air_defence = -5
+			air_agility = -5
+			maximum_speed = 26
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.35
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -605,12 +620,13 @@ equipment_modules = {
 			build_cost_ic = 36
 			fuel_consumption = 0.48
 			reliability = -0.15
-			air_defence = +5
+			air_defence = -5
+			air_agility = -6
+			maximum_speed = 34
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.45
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
