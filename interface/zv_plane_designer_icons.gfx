@@ -290,15 +290,33 @@ spriteTypes = {
 		name = "GFX_EMI_4_blades_module"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/4-blades-prop.dds"
 	}
+	# Fuel module category icons (small/medium/large)
 	spriteType = {
-    name = "GFX_plane_fuel_module_small"
-    textureFile = "gfx/interface/equipmentdesigner/planes/modules/fuel_module_small.dds"
-}
+		name = "GFX_EMI_plane_fuel_module_small"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_drop_tanks_medium_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_plane_fuel_module_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_drop_tanks_medium_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_plane_fuel_module_large"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_drop_tanks_medium_icon.dds"
+	}
 
-spriteType = {
-    name = "GFX_plane_special_engine_small"
-    textureFile = "gfx/interface/equipmentdesigner/planes/modules/special_engine_small.dds"
-}
+	# Engine special module category icons (small/medium/large)
+	spriteType = {
+		name = "GFX_EMI_plane_special_module_engine_small"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/bba_tech_engine_additions_category.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_plane_special_module_engine_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/bba_tech_engine_additions_category.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_plane_special_module_engine_large"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/bba_tech_engine_additions_category.dds"
+	}
 
 
 	# Tail
