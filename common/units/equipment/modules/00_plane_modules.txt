@@ -828,7 +828,45 @@ equipment_modules = {
 			maximum_speed = 0.3
 		}
 	}
-	
+
+	# Pales (nombre de pales de l'helice)
+	prop_2_blades = {
+		abbreviation = "prop2"
+		category = propreller_blade_module
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = -4
+		}
+		multiply_stats = {
+			thrust = -0.1
+			fuel_consumption = -0.15
+		}
+		can_convert_from = {
+			module_category = propreller_blade_module
+			convert_cost_ic = 1
+		}
+		xp_cost = 1
+	}
+	prop_4_blades = {
+		abbreviation = "prop4"
+		category = propreller_blade_module
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 4
+		}
+		multiply_stats = {
+			thrust = 0.1
+			fuel_consumption = 0.15
+		}
+		can_convert_from = {
+			module_category = propreller_blade_module
+			convert_cost_ic = 1
+		}
+		xp_cost = 1
+	}
+
 	reliability_85 = {
 		abbreviation = "r85"
 		category = plane_engine_reliability

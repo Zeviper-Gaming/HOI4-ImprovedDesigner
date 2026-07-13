@@ -261,8 +261,8 @@ construction_slot_3:0 "Modules de constructions"
  EQ_MOD_CAT_plane_construction_type_module_large_TITLE:0 "Construction Type"
 
  EQ_MOD_CAT_propreller_blade_module_TITLE:0 "Nombre de pales"
- 2_blades_prop:0 "Hélice à 2 pâles"
- 4_blades_prop:0 "Hélice à 4 pâles"
+ prop_2_blades:0 "Hélice à 2 pâles"
+ prop_4_blades:0 "Hélice à 4 pâles"
 
  EQ_MOD_CAT_engine_mounted_cannons_TITLE:0 "Engine-Mounted Cannons" 
  EQ_MOD_CAT_plane_special_module_ASW_TITLE:0 "Anti-submarine warfare" 

@@ -1407,8 +1407,11 @@ technologies = {
 			engine_power_120
 			engine_power_140
 			engine_power_160
+
+			prop_2_blades
+			prop_4_blades
 		}
-		
+
 		research_cost = 1
 		start_year = 1922
 
