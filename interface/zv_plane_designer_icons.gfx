@@ -290,6 +290,10 @@ spriteTypes = {
 		name = "GFX_EMI_prop_4_blades"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/4-blades-props.png"
 	}
+	spriteType = {
+		name = "GFX_EMI_prop_5_blades"
+		textureFile = "gfx/interface/equipmentdesigner/planes/designer/5-blades-prop.png"
+	}
 	# Fuel module category icons (small/medium/large)
 	spriteType = {
 		name = "GFX_EMI_plane_fuel_module_small"

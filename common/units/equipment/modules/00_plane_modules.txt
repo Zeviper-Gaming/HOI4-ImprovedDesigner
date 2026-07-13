@@ -866,6 +866,30 @@ equipment_modules = {
 		}
 		xp_cost = 1
 	}
+	prop_5_blades = {
+		abbreviation = "prop5"
+		category = propreller_blade_module
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 6
+			air_agility = -2
+			build_cost_ic = 2
+		}
+		multiply_stats = {
+			thrust = 0.15
+			fuel_consumption = 0.22
+		}
+		can_convert_from = {
+			module_category = propreller_blade_module
+			convert_cost_ic = 1.5
+		}
+		can_convert_from = {
+			module = prop_4_blades
+			convert_cost_ic = 1
+		}
+		xp_cost = 1
+	}
 
 	reliability_85 = {
 		abbreviation = "r85"

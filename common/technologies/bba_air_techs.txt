@@ -1631,8 +1631,10 @@ technologies = {
 		enable_equipment_modules = {
 			V_engine_4
 			inline_engine_4
+
+			prop_5_blades
 		}
-		
+
 		research_cost = 1.5
 		start_year = 1944
 
