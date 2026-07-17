@@ -2704,10 +2704,11 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					cas_weapon
-					plane_armor_module_small
+					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
-					nav_bomber_weapon					plane_fuel_module_medium
+					nav_bomber_weapon
+					plane_fuel_module_medium
 				}
 			}
 			fixed_wing_slot_3 = {
@@ -3149,7 +3150,7 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					cas_weapon
-					plane_armor_module_small
+					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
 					nav_bomber_weapon
@@ -3378,7 +3379,7 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					cas_weapon
-					plane_armor_module_small
+					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
 					nav_bomber_weapon
@@ -3607,7 +3608,7 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					cas_weapon
-					plane_armor_module_small
+					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
 					nav_bomber_weapon
@@ -3836,7 +3837,7 @@ equipments = {
 				allowed_module_categories = {
 					fighter_weapon
 					cas_weapon
-					plane_armor_module_small
+					plane_armor_module_medium
 					mine_warfare_offense
 					plane_wing_engine
 					nav_bomber_weapon

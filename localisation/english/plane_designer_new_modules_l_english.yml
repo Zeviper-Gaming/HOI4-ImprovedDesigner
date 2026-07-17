@@ -331,5 +331,15 @@ construction_slot_3:0 "Modules de constructions"
  NACA_cowling_desc: "The cowling consists of a symmetric, circular airfoil that is wrapped around the engine.It is a major advance in aerodynamic drag reduction for radial engines."
  EQ_MOD_CAT_plane_special_module_radial_engine_TITLE: "Radial Engine Special"
 
- 
+ EQ_MOD_CAT_plane_armor_module_small_TITLE: "Positional Armor"
+ EQ_MOD_CAT_plane_armor_module_medium_TITLE: "Positional Armor"
+ EQ_MOD_CAT_plane_armor_module_large_TITLE: "Positional Armor"
+
+ positional_armor_small: "Positional Armor"
+ positional_armor_small_desc: "Modular armor plates bolted onto structural hardpoints across the airframe, offering localized protection without the weight of a full armor overhaul."
+ positional_armor_medium: "Positional Armor"
+ positional_armor_medium_desc: "Modular armor plates bolted onto structural hardpoints across the airframe, offering localized protection without the weight of a full armor overhaul."
+ positional_armor_large: "Positional Armor"
+ positional_armor_large_desc: "Modular armor plates bolted onto structural hardpoints across the airframe, offering localized protection without the weight of a full armor overhaul."
+
 

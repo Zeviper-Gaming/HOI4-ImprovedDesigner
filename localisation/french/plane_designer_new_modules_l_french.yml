@@ -392,5 +392,15 @@ construction_slot_3:0 "Modules de constructions"
  NACA_cowling_desc:0 "The cowling consists of a symmetric, circular airfoil that is wrapped around the engine.It is a major advance in aerodynamic drag reduction for radial engines."
  EQ_MOD_CAT_plane_special_module_radial_engine_TITLE:0 "Radial Engine Special"
 
- 
+ EQ_MOD_CAT_plane_armor_module_small_TITLE:0 "Blindage Positionnel"
+ EQ_MOD_CAT_plane_armor_module_medium_TITLE:0 "Blindage Positionnel"
+ EQ_MOD_CAT_plane_armor_module_large_TITLE:0 "Blindage Positionnel"
+
+ positional_armor_small:0 "Blindage Positionnel"
+ positional_armor_small_desc:0 "Des plaques de blindage modulaires boulonnées aux points de structure de l'appareil, offrant une protection ciblée sans le poids d'une refonte complète de la cellule."
+ positional_armor_medium:0 "Blindage Positionnel"
+ positional_armor_medium_desc:0 "Des plaques de blindage modulaires boulonnées aux points de structure de l'appareil, offrant une protection ciblée sans le poids d'une refonte complète de la cellule."
+ positional_armor_large:0 "Blindage Positionnel"
+ positional_armor_large_desc:0 "Des plaques de blindage modulaires boulonnées aux points de structure de l'appareil, offrant une protection ciblée sans le poids d'une refonte complète de la cellule."
+
 

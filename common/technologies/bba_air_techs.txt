@@ -1078,6 +1078,9 @@ technologies = {
 			armor_plate_small
 			armor_plate_medium
 			armor_plate_large
+			positional_armor_small
+			positional_armor_medium
+			positional_armor_large
 			auto_extinguisher_system_small
 			auto_extinguisher_system_medium
 			auto_extinguisher_system_large

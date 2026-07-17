@@ -712,7 +712,37 @@ spriteTypes = {
 		name = "GFX_EMI_plane_construction_type_module_large"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_construction_type_module_category_icon.dds"
 		legacy_lazy_load = no
-	}	
+	}
+	spriteType = {
+		name = "GFX_EMI_plane_armor_module_small"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_construction_type_module_category_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_plane_armor_module_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_construction_type_module_category_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_plane_armor_module_large"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_construction_type_module_category_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_positional_armor_small"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_construction_type_module_category_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_positional_armor_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_construction_type_module_category_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_positional_armor_large"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_construction_type_module_category_icon.dds"
+		legacy_lazy_load = no
+	}
 	spriteType = {
 		name = "GFX_EMI_turbocharger"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/bba_tech_turbocharger.dds"

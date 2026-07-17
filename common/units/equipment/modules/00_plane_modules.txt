@@ -1873,6 +1873,23 @@ equipment_modules = {
 		xp_cost = 1
 		dismantle_cost_ic = 0.5
 	}
+	positional_armor_small = {
+		abbreviation = "pma_s"
+		category = plane_armor_module_small
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_defence = 2
+			build_cost_ic = 0.5
+			weight = 1
+		}
+
+		multiply_stats = {
+			air_range = -0.02
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.25
+	}
 	non_strategic_materials_small = {
 		abbreviation = "nsms"
 		category = plane_construction_type_module_small
@@ -2213,6 +2230,23 @@ equipment_modules = {
 		xp_cost = 1
 		dismantle_cost_ic = 1
 	}
+	positional_armor_medium = {
+		abbreviation = "pma_m"
+		category = plane_armor_module_medium
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_defence = 3
+			build_cost_ic = 1
+			weight = 2
+		}
+
+		multiply_stats = {
+			air_range = -0.03
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+	}
 	non_strategic_materials_medium = {
 		abbreviation = "nsmm"
 		category = plane_construction_type_module_medium
@@ -2454,6 +2488,23 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1
+	}
+	positional_armor_large = {
+		abbreviation = "pma_l"
+		category = plane_armor_module_large
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_defence = 4
+			build_cost_ic = 1.5
+			weight = 4
+		}
+
+		multiply_stats = {
+			air_range = -0.04
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
 	}
 	non_strategic_materials_large = {
 		abbreviation = "nsml"
@@ -5933,11 +5984,11 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_mid_fuselage_slot = {
-				plane_armor_module_medium
-				plane_special_module_medium
+				plane_armor_module_large
+				plane_special_module_large
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
-				plane_construction_type_module_medium
+				plane_construction_type_module_large
 				plane_fuel_module_large
 				cas_weapon
 				tac_weapon
