@@ -433,7 +433,7 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			category = propreller_blade_module
+			category = propeller_blade_module
 			count < 2
 		}
 		default_modules = {
@@ -1742,7 +1742,7 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			category = propreller_blade_module
+			category = propeller_blade_module
 			count < 2
 		}
 		default_modules = {
@@ -3067,7 +3067,7 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			category = propreller_blade_module
+			category = propeller_blade_module
 			count < 2
 		}
 		default_modules = {
@@ -4403,7 +4403,7 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			category = propreller_blade_module
+			category = propeller_blade_module
 			count < 2
 		}
 		default_modules = {

@@ -829,10 +829,10 @@ equipment_modules = {
 		}
 	}
 
-	# Pales (nombre de pales de l'helice)
+	# Pales (nombre de pales de l'hélice)
 	prop_2_blades = {
 		abbreviation = "prop2"
-		category = propreller_blade_module
+		category = propeller_blade_module
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
@@ -843,14 +843,14 @@ equipment_modules = {
 			fuel_consumption = -0.15
 		}
 		can_convert_from = {
-			module_category = propreller_blade_module
+			module_category = propeller_blade_module
 			convert_cost_ic = 1
 		}
 		xp_cost = 1
 	}
 	prop_4_blades = {
 		abbreviation = "prop4"
-		category = propreller_blade_module
+		category = propeller_blade_module
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
@@ -861,14 +861,14 @@ equipment_modules = {
 			fuel_consumption = 0.15
 		}
 		can_convert_from = {
-			module_category = propreller_blade_module
+			module_category = propeller_blade_module
 			convert_cost_ic = 1
 		}
 		xp_cost = 1
 	}
 	prop_5_blades = {
 		abbreviation = "prop5"
-		category = propreller_blade_module
+		category = propeller_blade_module
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
@@ -881,7 +881,7 @@ equipment_modules = {
 			fuel_consumption = 0.22
 		}
 		can_convert_from = {
-			module_category = propreller_blade_module
+			module_category = propeller_blade_module
 			convert_cost_ic = 1.5
 		}
 		can_convert_from = {
@@ -3705,7 +3705,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_1 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3713,7 +3713,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3721,7 +3721,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3729,7 +3729,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3851,7 +3851,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_1 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3859,7 +3859,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3867,7 +3867,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3875,7 +3875,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3998,7 +3998,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_1 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -4006,7 +4006,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -4014,7 +4014,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -4022,7 +4022,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -4140,7 +4140,7 @@ equipment_modules = {
 
 			}
 			fixed_intern_slot_1 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -4148,7 +4148,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -4156,7 +4156,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -4164,7 +4164,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -4291,7 +4291,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_1 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -4299,7 +4299,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -4307,7 +4307,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -4315,7 +4315,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -4450,7 +4450,7 @@ equipment_modules = {
 
 			}
 			fixed_intern_slot_1 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -4458,7 +4458,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -4466,7 +4466,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -4474,7 +4474,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -4595,7 +4595,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_1 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4603,7 +4603,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4611,7 +4611,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4619,7 +4619,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4741,7 +4741,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_1 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4749,7 +4749,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4757,7 +4757,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4765,7 +4765,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4890,7 +4890,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_1 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4898,7 +4898,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4906,7 +4906,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4914,7 +4914,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -5042,7 +5042,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_1 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -5050,7 +5050,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -5058,7 +5058,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -5066,7 +5066,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -5195,7 +5195,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_1 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -5203,7 +5203,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -5211,7 +5211,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -5219,7 +5219,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -5354,7 +5354,7 @@ equipment_modules = {
 
 			}
 			fixed_intern_slot_1 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -5362,7 +5362,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -5370,7 +5370,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -5378,7 +5378,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -5500,7 +5500,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_1 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5508,7 +5508,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_2 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5516,7 +5516,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_3 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5524,7 +5524,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_4 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5643,7 +5643,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_1 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5651,7 +5651,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_2 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5659,7 +5659,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_3 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5667,7 +5667,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_4 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5796,7 +5796,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_1 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5804,7 +5804,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_2 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5812,7 +5812,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_3 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5820,7 +5820,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_4 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5952,7 +5952,7 @@ equipment_modules = {
 
 			}
 			fixed_intern_slot_1 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5960,7 +5960,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_2 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5968,7 +5968,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_3 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5976,7 +5976,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_4 = {
-				propreller_blade_module
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large

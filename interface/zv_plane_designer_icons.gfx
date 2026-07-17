@@ -279,7 +279,7 @@ spriteTypes = {
 	}
 	# Prop blades
 	spriteType = {
-		name = "GFX_EMI_propreller_blade_module"
+		name = "GFX_EMI_propeller_blade_module"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/2-blades-prop.png"
 	}
 	spriteType = {
