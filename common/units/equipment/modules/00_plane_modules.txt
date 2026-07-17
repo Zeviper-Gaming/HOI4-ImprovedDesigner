@@ -14,7 +14,6 @@ equipment_modules = {
 		multiply_stats = {
 			thrust = 1
 			fuel_consumption = 1
-			maximum_speed = 0.05
 		}
 		allowed_module_categories = {
 			engine_power_slot = {
@@ -22,6 +21,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 1
+		dismantle_cost_ic = 5
 	}
 	engine_pull_push = {
 		abbreviation = "eng_pp"
@@ -30,11 +30,11 @@ equipment_modules = {
 		add_equipment_type = { fighter heavy_fighter cas tactical_bomber naval_bomber maritime_patrol_plane scout_plane suicide strategic_bomber}
 		add_stats = {
 			build_cost_ic = 5
+			maximum_speed = 3
 		}
 		multiply_stats = {
 			thrust = 2
 			fuel_consumption = 2
-			maximum_speed = 0.07
 		}
 		allowed_module_categories = {
 			engine_power_slot = {
@@ -42,6 +42,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 2
+		dismantle_cost_ic = 8
 	}
 	engine_canon_nose = {
 		abbreviation = "eng_nos_g"
@@ -51,11 +52,11 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 4
 			air_attack = 8
+			maximum_speed = 1
 		}
 		multiply_stats = {
 			thrust = 0.8
 			fuel_consumption = 0.8
-			maximum_speed = 0.05
 		}
 		allowed_module_categories = {
 			engine_power_slot = {
@@ -63,6 +64,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 2
+		dismantle_cost_ic = 8
 	}
 	engine_wing = {
 		abbreviation = "eng_wing"
@@ -75,6 +77,7 @@ equipment_modules = {
 		multiply_stats = {
 			thrust = 2
 			fuel_consumption = 2
+			air_agility = -0.2
 		}
 		allowed_module_categories = {
 			engine_power_slot = {
@@ -82,6 +85,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 1
+		dismantle_cost_ic = 12
 	}
 	engine_wing_tandem = {
 		abbreviation = "eng_wing_tandem"
@@ -94,6 +98,7 @@ equipment_modules = {
 		multiply_stats = {
 			thrust = 4
 			fuel_consumption = 4
+			air_agility = -0.30
 		}
 		allowed_module_categories = {
 			engine_power_slot = {
@@ -101,6 +106,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 4
+		dismantle_cost_ic = 15
 	}
 	engine_rear = {
 		abbreviation = "eng_rear"
@@ -109,11 +115,11 @@ equipment_modules = {
 		add_equipment_type = { fighter heavy_fighter cas tactical_bomber naval_bomber maritime_patrol_plane scout_plane suicide strategic_bomber}
 		add_stats = {
 			build_cost_ic = 3
+			maximum_speed = 1
 		}
 		multiply_stats = {
 			thrust = 1
 			fuel_consumption = 1
-			maximum_speed = 0.05
 		}
 		allowed_module_categories = {
 			engine_power_slot = {
@@ -121,6 +127,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 2
+		dismantle_cost_ic = 8
 	}
 	engine_top = {
 		abbreviation = "eng_top"
@@ -133,6 +140,7 @@ equipment_modules = {
 		multiply_stats = {
 			thrust = 1
 			fuel_consumption = 1
+			air_agility = -0.15
 		}
 		allowed_module_categories = {
 			engine_power_slot = {
@@ -140,6 +148,7 @@ equipment_modules = {
 			}
 		}
 		xp_cost = 2
+		dismantle_cost_ic = 8
 	}
 
 	rotating_engine_1 = {
@@ -148,9 +157,10 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 11
-			build_cost_ic = 12
-			fuel_consumption = 0.16
+			thrust = 10
+			build_cost_ic = 10
+			fuel_consumption = 0.13
+			air_defence = 1
 		}
 		multiply_stats = {
 			thrust = -1
@@ -159,6 +169,10 @@ equipment_modules = {
 		forbid_module_categories = {
 		plane_special_module_jet
 		}
+		can_convert_from = {
+			module = radial_engine_1
+			convert_cost_ic = 1.5
+		}
 	} # todo check from here
 	rotating_engine_2 = {
 		abbreviation = "rot_2"
@@ -166,9 +180,109 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 16
+			thrust = 12
+			build_cost_ic = 12
+			fuel_consumption = 0.16
+			air_defence = 1
+			maximum_speed = 4
+		}
+		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
+		}
+		can_convert_from = {
+			module = rotating_engine_1
+			convert_cost_ic = 1.5
+		}
+		can_convert_from = {
+			module = radial_engine_2
+			convert_cost_ic = 2.5
+		}
+		forbid_module_categories = {
+		plane_special_module_jet
+		}
+	}
+	rotating_engine_3 = {
+		abbreviation = "rot_3"
+		category = plane_engine_rotating
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 14
 			build_cost_ic = 14
-			fuel_consumption = 0.36
+			fuel_consumption = 0.21
+			air_defence = 1
+			maximum_speed = 8
+		}
+		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
+		}
+		can_convert_from = {
+			module = rotating_engine_1
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = rotating_engine_2
+			convert_cost_ic = 2.5
+		}
+		can_convert_from = {
+			module = radial_engine_3
+			convert_cost_ic = 3.5
+		}
+		forbid_module_categories = {
+		plane_special_module_jet
+		}
+	}
+	rotating_engine_4 = {
+		abbreviation = "rot_4"
+		category = plane_engine_rotating
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 18
+			build_cost_ic = 14
+			fuel_consumption = 0.24
+			air_defence = 1
+			maximum_speed = 12
+		}
+		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
+		}
+		can_convert_from = {
+			module = rotating_engine_1
+			convert_cost_ic = 8
+		}
+		can_convert_from = {
+			module = rotating_engine_2
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = rotating_engine_3
+			convert_cost_ic = 3
+		}
+		can_convert_from = {
+			module = radial_engine_4
+			convert_cost_ic = 5
+		}
+		forbid_module_categories = {
+		plane_special_module_jet
+		}
+	}
+
+	radial_engine_1 = {
+		abbreviation = "rad_1"
+		category = plane_engine_radial
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = +0.1
+			air_defence = 4
+			thrust = 15
+			build_cost_ic = 15
+			fuel_consumption = 0.19
+			air_agility = -1
+			maximum_speed = 4
 		}
 		multiply_stats = {
 			thrust = -1
@@ -182,72 +296,6 @@ equipment_modules = {
 		plane_special_module_jet
 		}
 	}
-	rotating_engine_3 = {
-		abbreviation = "rot_3"
-		category = plane_engine_rotating
-		sfx = sfx_ui_sd_module_engine
-
-		add_stats = {
-			thrust = 25
-			build_cost_ic = 16
-			fuel_consumption = 0.16
-		}
-		multiply_stats = {
-			thrust = -1
-			fuel_consumption = -1
-			maximum_speed = +0.15
-		}
-		can_convert_from = {
-			module = rotating_engine_2
-			convert_cost_ic = 2.5
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		}
-	}
-	rotating_engine_4 = {
-		abbreviation = "rot_3"
-		category = plane_engine_rotating
-		sfx = sfx_ui_sd_module_engine
-
-		add_stats = {
-			thrust = 30
-			build_cost_ic = 18
-			fuel_consumption = 0.16
-		}
-		multiply_stats = {
-			thrust = -1
-			fuel_consumption = -1
-			maximum_speed = 0.25
-		}
-		can_convert_from = {
-			module = rotating_engine_3
-			convert_cost_ic = 3
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		}
-	}
-
-	radial_engine_1 = {
-		abbreviation = "rad_1"
-		category = plane_engine_radial
-		sfx = sfx_ui_sd_module_engine
-		add_stats = {
-			reliability = +0.2
-			air_defence = +3
-			thrust = 16
-			build_cost_ic = 13
-			fuel_consumption = 0.16
-		}
-		multiply_stats = {
-			thrust = -1
-			fuel_consumption = -1
-		}
-		forbid_module_categories = {
-		plane_special_module_jet
-		}
-	}
 	radial_engine_2 = {
 		abbreviation = "rad_2"
 		category = plane_engine_radial
@@ -255,19 +303,24 @@ equipment_modules = {
 
 		add_stats = {
 			reliability = +0.2
-			air_defence = +3
-			thrust = 18
-			build_cost_ic = 14
-			fuel_consumption = 0.16
+			air_defence = 4
+			thrust = 16
+			build_cost_ic = 16
+			fuel_consumption = 0.21
+			air_agility = -1
+			maximum_speed = 10
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			air_agility = -0.1
 		}
 		can_convert_from = {
 			module = radial_engine_1
 			convert_cost_ic = 1.5
+		}
+		can_convert_from = {
+			module = rotating_engine_2
+			convert_cost_ic = 2.5
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -279,21 +332,29 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 27
-			build_cost_ic = 15
-			fuel_consumption = 0.16
-			air_defence = +3
+			thrust = 18
+			build_cost_ic = 18
+			fuel_consumption = 0.24
+			air_defence = 4
 			reliability = +0.2
+			air_agility = -2
+			maximum_speed = 16
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.25
-			air_agility = -0.1
+		}
+		can_convert_from = {
+			module = radial_engine_1
+			convert_cost_ic = 5
 		}
 		can_convert_from = {
 			module = radial_engine_2
 			convert_cost_ic = 2.5
+		}
+		can_convert_from = {
+			module = rotating_engine_3
+			convert_cost_ic = 3.5
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -305,21 +366,33 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 34
-			build_cost_ic = 16
-			fuel_consumption = 0.16
-			air_defence = +3
+			thrust = 22
+			build_cost_ic = 22
+			fuel_consumption = 0.29
+			air_defence = 4
 			reliability = +0.2
+			air_agility = -2
+			maximum_speed = 22
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.4
-			air_agility = -0.1
+		}
+		can_convert_from = {
+			module = radial_engine_1
+			convert_cost_ic = 8
+		}
+		can_convert_from = {
+			module = radial_engine_2
+			convert_cost_ic = 5
 		}
 		can_convert_from = {
 			module = radial_engine_3
 			convert_cost_ic = 3
+		}
+		can_convert_from = {
+			module = rotating_engine_4
+			convert_cost_ic = 5
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
@@ -332,18 +405,23 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
 			thrust = 18
-			build_cost_ic = 15
-			fuel_consumption = 0.16
+			build_cost_ic = 18
+			fuel_consumption = 0.26
 			reliability = -0.1
-			air_defence = +5
+			air_defence = -3
+			air_agility = -2
+			maximum_speed = 8
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.15
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
+		}
+		can_convert_from = {
+			module = V_engine_1
+			convert_cost_ic = 1.5
 		}
 	}
 	inline_engine_2 = {
@@ -352,18 +430,27 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
 			thrust = 22
-			build_cost_ic = 16
-			fuel_consumption = 0.16
+			build_cost_ic = 22
+			fuel_consumption = 0.29
 			reliability = -0.1
-			air_defence = +5
+			air_defence = -3
+			air_agility = -3
+			maximum_speed = 16
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.25
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
+		}
+		can_convert_from = {
+			module = inline_engine_1
+			convert_cost_ic = 1.5
+		}
+		can_convert_from = {
+			module = V_engine_2
+			convert_cost_ic = 2.5
 		}
 	}
 	inline_engine_3 = {
@@ -371,19 +458,32 @@ equipment_modules = {
 		category = plane_engine_inline
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 35
-			build_cost_ic = 18
-			fuel_consumption = 0.18
+			thrust = 24
+			build_cost_ic = 24
+			fuel_consumption = 0.35
 			reliability = -0.1
-			air_defence = +5
+			air_defence = -3
+			air_agility = -3
+			maximum_speed = 24
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.35
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
+		}
+		can_convert_from = {
+			module = inline_engine_1
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = inline_engine_2
+			convert_cost_ic = 2.5
+		}
+		can_convert_from = {
+			module = V_engine_3
+			convert_cost_ic = 3.5
 		}
 	}
 	inline_engine_4 = {
@@ -391,19 +491,36 @@ equipment_modules = {
 		category = plane_engine_inline
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 43
-			build_cost_ic = 20
-			fuel_consumption = 0.20
+			thrust = 27
+			build_cost_ic = 27
+			fuel_consumption = 0.40
 			reliability = -0.1
-			air_defence = +5
+			air_defence = -3
+			air_agility = -4
+			maximum_speed = 30
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.45
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
+		}
+		can_convert_from = {
+			module = inline_engine_1
+			convert_cost_ic = 8
+		}
+		can_convert_from = {
+			module = inline_engine_2
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = inline_engine_3
+			convert_cost_ic = 3
+		}
+		can_convert_from = {
+			module = V_engine_4
+			convert_cost_ic = 5
 		}
 	}
 	
@@ -412,19 +529,24 @@ equipment_modules = {
 		category = plane_engine_V
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 22
-			build_cost_ic = 17
-			fuel_consumption = 0.18
+			thrust = 24
+			build_cost_ic = 26
+			fuel_consumption = 0.35
 			reliability = -0.15
-			air_defence = +5
+			air_defence = -5
+			air_agility = -3
+			maximum_speed = 10
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.15
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
+		}
+		can_convert_from = {
+			module = radial_engine_1
+			convert_cost_ic = 1.5
 		}
 	}
 	V_engine_2 = {
@@ -432,19 +554,28 @@ equipment_modules = {
 		category = plane_engine_V
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 28
-			build_cost_ic = 19
-			fuel_consumption = 0.18
+			thrust = 27
+			build_cost_ic = 30
+			fuel_consumption = 0.40
 			reliability = -0.15
-			air_defence = +5
+			air_defence = -5
+			air_agility = -4
+			maximum_speed = 18
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.25
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
+		}
+		can_convert_from = {
+			module = V_engine_1
+			convert_cost_ic = 1.5
+		}
+		can_convert_from = {
+			module = radial_engine_2
+			convert_cost_ic = 2.5
 		}
 	}
 	V_engine_3 = {
@@ -452,19 +583,32 @@ equipment_modules = {
 		category = plane_engine_V
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 40
-			build_cost_ic = 22
-			fuel_consumption = 0.20
+			thrust = 30
+			build_cost_ic = 34
+			fuel_consumption = 0.45
 			reliability = -0.15
-			air_defence = +5
+			air_defence = -5
+			air_agility = -5
+			maximum_speed = 26
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.35
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
+		}
+		can_convert_from = {
+			module = V_engine_1
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = V_engine_2
+			convert_cost_ic = 2.5
+		}
+		can_convert_from = {
+			module = radial_engine_3
+			convert_cost_ic = 3.5
 		}
 	}
 	V_engine_4 = {
@@ -472,19 +616,36 @@ equipment_modules = {
 		category = plane_engine_V
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 48
-			build_cost_ic = 25
-			fuel_consumption = 0.22
+			thrust = 34
+			build_cost_ic = 36
+			fuel_consumption = 0.48
 			reliability = -0.15
-			air_defence = +5
+			air_defence = -5
+			air_agility = -6
+			maximum_speed = 34
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
-			maximum_speed = 0.45
 		}
 		forbid_module_categories = {
 		plane_special_module_jet
+		}
+		can_convert_from = {
+			module = V_engine_1
+			convert_cost_ic = 8
+		}
+		can_convert_from = {
+			module = V_engine_2
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = V_engine_3
+			convert_cost_ic = 3
+		}
+		can_convert_from = {
+			module = radial_engine_4
+			convert_cost_ic = 5
 		}
 	}
 	
@@ -667,7 +828,69 @@ equipment_modules = {
 			maximum_speed = 0.3
 		}
 	}
-	
+
+	# Pales (nombre de pales de l'hélice)
+	prop_2_blades = {
+		abbreviation = "prop2"
+		category = propeller_blade_module
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = -4
+		}
+		multiply_stats = {
+			thrust = -0.1
+			fuel_consumption = -0.15
+		}
+		can_convert_from = {
+			module_category = propeller_blade_module
+			convert_cost_ic = 1
+		}
+		xp_cost = 1
+	}
+	prop_4_blades = {
+		abbreviation = "prop4"
+		category = propeller_blade_module
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 4
+		}
+		multiply_stats = {
+			thrust = 0.1
+			fuel_consumption = 0.15
+		}
+		can_convert_from = {
+			module_category = propeller_blade_module
+			convert_cost_ic = 1
+		}
+		xp_cost = 1
+	}
+	prop_5_blades = {
+		abbreviation = "prop5"
+		category = propeller_blade_module
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 6
+			air_agility = -2
+			build_cost_ic = 2
+		}
+		multiply_stats = {
+			thrust = 0.15
+			fuel_consumption = 0.22
+		}
+		can_convert_from = {
+			module_category = propeller_blade_module
+			convert_cost_ic = 1.5
+		}
+		can_convert_from = {
+			module = prop_4_blades
+			convert_cost_ic = 1
+		}
+		xp_cost = 1
+	}
+
 	reliability_85 = {
 		abbreviation = "r85"
 		category = plane_engine_reliability
@@ -712,6 +935,7 @@ equipment_modules = {
 			build_cost_ic = 0.65
 		}
 	}
+
 	
 ##      ## ########    ###    ########   #######  ##    ##  ######  
 ##  ##  ## ##         ## ##   ##     ## ##     ## ###   ## ##    ## 
@@ -924,7 +1148,7 @@ equipment_modules = {
 		}
 	}
 	imp_heavy_mg_2x = {
-		abbreviation = "hmg2"
+		abbreviation = "imp_hmg2"
 		category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { fighter heavy_fighter }
@@ -941,7 +1165,7 @@ equipment_modules = {
 		}
 	}
 	imp_heavy_mg_4x = {
-		abbreviation = "hmg4"
+		abbreviation = "imp_hmg4"
 		category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { fighter heavy_fighter }
@@ -1151,7 +1375,7 @@ equipment_modules = {
 	}
 	small_bomb_bay = {
 		abbreviation = "sbb"
-		category = cas_weapon
+		category = tac_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { cas tactical_bomber }
 
@@ -1622,6 +1846,7 @@ equipment_modules = {
 		xp_cost = 3
 	}
 
+
  ######  ########  ########  ######  ####    ###    ##          ##     ##  #######  ########  ##     ## ##       ########  ######                 ######  ##     ##    ###    ##       ##       
 ##    ## ##     ## ##       ##    ##  ##    ## ##   ##          ###   ### ##     ## ##     ## ##     ## ##       ##       ##    ##               ##    ## ###   ###   ## ##   ##       ##       
 ##       ##     ## ##       ##        ##   ##   ##  ##          #### #### ##     ## ##     ## ##     ## ##       ##       ##                     ##       #### ####  ##   ##  ##       ##       
@@ -1671,7 +1896,7 @@ equipment_modules = {
 		xp_cost = 1
 	}
 	aircraft_lightweight_construction_small = {
-		abbreviation = "flo"
+		abbreviation = "light_small"
 		category = plane_construction_type_module_small
 		sfx = sfx_ui_sd_module_turret
 
@@ -1688,7 +1913,7 @@ equipment_modules = {
 		xp_cost = 1
 	}
 	aircraft_reinforced_construction_small = {
-		abbreviation = "flo"
+		abbreviation = "reinforc_small"
 		category = plane_construction_type_module_small
 		sfx = sfx_ui_sd_module_turret
 
@@ -1737,7 +1962,7 @@ equipment_modules = {
 	}
 	
 	floats = {
-		abbreviation = "flo"
+		abbreviation = "floats"
 		category = plane_fuel_module_small
 		sfx = sfx_ui_sd_module_turret
 
@@ -1747,9 +1972,9 @@ equipment_modules = {
 			air_agility = -5
 			surface_detection = 5
 			sub_detection = 3
+			maximum_speed = -18
 		}
 		multiply_stats = {
-			maximum_speed = -0.3
 			air_range = 0.15
 		}
 		dismantle_cost_ic = 1
@@ -1762,9 +1987,9 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 2
+			maximum_speed = 3
 		}
 		multiply_stats = {
-			maximum_speed = 0.05
 			fuel_consumption = 0.15
 			thrust = 0.1
 		}
@@ -1795,16 +2020,70 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 1
 			weight = 1
+			maximum_speed = 3
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.05
 			fuel_consumption = -0.15
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.5
 	}
-	
+	wep_small = {
+		abbreviation = "ws"
+		category = plane_special_module_engine_small
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1
+			reliability = -0.05
+		}
+
+		multiply_stats = {
+			air_attack = 0.07
+			air_defence = 0.02
+			fuel_consumption = +0.05
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+	}
+	wep_medium = {
+		abbreviation = "wm"
+		category = plane_special_module_engine_medium
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1.5
+			reliability = -0.05
+		}
+
+		multiply_stats = {
+			air_attack = 0.04
+			air_defence = 0.04
+			fuel_consumption = +0.05
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+	}
+	wep_large = {
+		abbreviation = "wl"
+		category = plane_special_module_engine_large
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 2
+			reliability = -0.05
+		}
+
+		multiply_stats = {
+			air_attack = 0.02
+			air_defence = 0.07
+			fuel_consumption = +0.05
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+	}
+
 	# aero
 	dive_brakes_small = {
 		abbreviation = "dbs"
@@ -1867,8 +2146,47 @@ equipment_modules = {
 		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
 		xp_cost = 1
 	}
-	# todo - add combats flaps
-	# todo - add flaps
+	combat_flaps_small = {
+		abbreviation = "flaps_S"
+		category = plane_aero_module_small
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1
+		}
+
+		mission_type_stats = {
+			limit = {
+				air_superiority
+			}
+			add_stats = {
+				air_agility = 0.1
+			}
+		}
+
+		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
+		xp_cost = 1
+	}
+	combat_flaps_medium = {
+		abbreviation = "flaps_M"
+		category = plane_aero_module_medium
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1
+		}
+		mission_type_stats = {
+			limit = {
+				air_superiority
+			}
+			add_stats = {
+				air_agility = 0.1
+			}
+		}
+
+		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
+		xp_cost = 1
+	}
 	
  ######  ########  ########  ######  ####    ###    ##          ##     ##  #######  ########  ##     ## ##       ########  ######                ##     ## ######## ########  #### ##     ## ##     ## 
 ##    ## ##     ## ##       ##    ##  ##    ## ##   ##          ###   ### ##     ## ##     ## ##     ## ##       ##       ##    ##               ###   ### ##       ##     ##  ##  ##     ## ###   ### 
@@ -1919,7 +2237,7 @@ equipment_modules = {
 		}
 	}
 	aircraft_lightweight_construction_medium = {
-		abbreviation = "flo"
+		abbreviation = "light_medium"
 		category = plane_construction_type_module_medium
 		sfx = sfx_ui_sd_module_turret
 		
@@ -1936,7 +2254,7 @@ equipment_modules = {
 		xp_cost = 1
 	}
 	aircraft_reinforced_construction_medium = {
-		abbreviation = "flo"
+		abbreviation = "reinforc_medium"
 		category = plane_construction_type_module_medium
 		sfx = sfx_ui_sd_module_turret
 		
@@ -1990,9 +2308,9 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 2
+			maximum_speed = 3
 		}
 		multiply_stats = {
-			maximum_speed = 0.05
 			fuel_consumption = 0.15
 			thrust = 0.1
 		}
@@ -2023,9 +2341,9 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 2
 			weight = 2
+			maximum_speed = 3
 		}
 		multiply_stats = {
-			maximum_speed = 0.05
 			fuel_consumption = -0.2
 		}
 		xp_cost = 2
@@ -2161,7 +2479,7 @@ equipment_modules = {
 		xp_cost = 1
 	}
 	aircraft_reinforced_construction_large = {
-		abbreviation = "flo"
+		abbreviation = "reinforc_large"
 		category = plane_construction_type_module_large
 		sfx = sfx_ui_sd_module_turret
 
@@ -2184,10 +2502,10 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 3
 			weight = 3
+			maximum_speed = 3
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.05
 			fuel_consumption = -0.2
 		}
 		xp_cost = 3
@@ -2236,9 +2554,9 @@ equipment_modules = {
 			build_cost_ic = 4
 			surface_detection = 12
 			sub_detection = 5
+			maximum_speed = -20
 		}
 		multiply_stats = {
-			maximum_speed = -0.4
 			air_range = 0.15
 		}
 		xp_cost = 1
@@ -2251,9 +2569,9 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 2
+			maximum_speed = 3
 		}
 		multiply_stats = {
-			maximum_speed = 0.05
 			fuel_consumption = 0.15
 			thrust = 0.1
 		}
@@ -2709,9 +3027,9 @@ equipment_modules = {
 		
 		add_stats = {
 			build_cost_ic = 3
+			maximum_speed = 3
 		}
 		multiply_stats = {
-			maximum_speed = 0.05
 			thrust = 0.1
 			fuel_consumption = -0.05
 		}
@@ -2722,12 +3040,12 @@ equipment_modules = {
 		abbreviation = "spch"
 		category = plane_special_module_engine
 		sfx = sfx_ui_sd_module_turret
-		
+
 		add_stats = {
 			build_cost_ic = 2
+			maximum_speed = 5
 		}
 		multiply_stats = {
-			maximum_speed = 0.07
 			fuel_consumption = 0.1
 			thrust = 0.07
 		}
@@ -2741,9 +3059,9 @@ equipment_modules = {
 		
 		add_stats = {
 			build_cost_ic = 3
+			maximum_speed = 7
 		}
 		multiply_stats = {
-			maximum_speed = 0.1
 			thrust = 0.15
 			fuel_consumption = -0.07
 		}
@@ -2757,9 +3075,9 @@ equipment_modules = {
 		
 		add_stats = {
 			build_cost_ic = 2
+			maximum_speed = 10
 		}
 		multiply_stats = {
-			maximum_speed = 0.15
 			fuel_consumption = 0.15
 			thrust = 0.10
 		}
@@ -2790,9 +3108,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 3
 			weight = 1
-		}
-		multiply_stats = {
-			maximum_speed = 0.05
+			maximum_speed = 2
 		}
 		mission_type_stats = {
 			limit = {
@@ -2942,6 +3258,14 @@ equipment_modules = {
 			module_category = wing_W
 			convert_cost_ic = 2
 		}
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
+		}
 
 	}
 	wing_low_rect = {
@@ -2951,9 +3275,9 @@ equipment_modules = {
 
 		add_stats = {
 			reliability = 0.05
+			maximum_speed = -4
 		}
 		multiply_stats = {
-            maximum_speed = -0.1
             weight = -0.05
 		}
 		xp_cost = 1
@@ -2974,6 +3298,14 @@ equipment_modules = {
 			module_category = wing_W
 			convert_cost_ic = 2
 		}
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
+		}
 
 	}
 	wing_low_trapez = {
@@ -2982,11 +3314,11 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
+			maximum_speed = 2
 		}
 		multiply_stats = {
 			air_attack = 0.05
 			air_agility = 0.05
-            maximum_speed = 0.05
             weight = +0.05
 		}
 		xp_cost = 1
@@ -3006,6 +3338,14 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = wing_W
 			convert_cost_ic = 2
+		}
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
 		}
 
 	}
@@ -3040,7 +3380,14 @@ equipment_modules = {
 			module_category = wing_W
 			convert_cost_ic = 2
 		}
-
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
+		}
 	}
 	#
 	wing_W_effil = {
@@ -3073,6 +3420,14 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = wing_low
 			convert_cost_ic = 2
+		}
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
 		}
 	}
 	wing_W_rect = {
@@ -3107,6 +3462,14 @@ equipment_modules = {
 			module_category = wing_low
 			convert_cost_ic = 2
 		}
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
+		}
 	}
 	#
 	wing_high_effil = {
@@ -3119,9 +3482,7 @@ equipment_modules = {
 			reliability = 0.10
 			sub_detection = 2
 			surface_detection = 5
-		}
-		multiply_stats = {
-            maximum_speed = -0.15
+			maximum_speed = -6
 		}
 		xp_cost = 1
 		mission_type_stats = {
@@ -3137,6 +3498,18 @@ equipment_modules = {
 			module_category = wing_high
 			convert_cost_ic = 1
 		}
+		can_convert_from = {
+			module_category = wing_low
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
+		}
 	}
 	wing_high_rect = {
 		abbreviation = "high_rect"
@@ -3147,10 +3520,10 @@ equipment_modules = {
 			reliability = 0.15
 			sub_detection = 2
 			surface_detection = 5
+			maximum_speed = -8
 		}
 		multiply_stats = {
 			air_agility = 0.05
-            maximum_speed = -0.20
             weight = -0.05
 
 		}
@@ -3168,6 +3541,18 @@ equipment_modules = {
 			module_category = wing_high
 			convert_cost_ic = 1
 		}
+		can_convert_from = {
+			module_category = wing_low
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
+		}
 	}
 	wing_high_ellip = {
 		abbreviation = "high_ellip"
@@ -3179,11 +3564,11 @@ equipment_modules = {
 			reliability = 0.10
 			sub_detection = 2
 			surface_detection = 5
+			maximum_speed = -4
 		}
 		multiply_stats = {
 			air_attack = 0.05
 			air_agility = 0.1
-            maximum_speed = -0.10
             weight = -0.07 # big area
 
 		}
@@ -3201,6 +3586,18 @@ equipment_modules = {
 			module_category = wing_high
 			convert_cost_ic = 1
 		}
+		can_convert_from = {
+			module_category = wing_low
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module_category = wing_biplan
+			convert_cost_ic = 15
+		}
 	}
 	#
 	wing_bi_rect = {
@@ -3213,14 +3610,26 @@ equipment_modules = {
 			reliability = 0.20
 			sub_detection = 2
 			surface_detection = 5
+			maximum_speed = -10
 		}
 		multiply_stats = {
 			air_agility = 0.15
-            maximum_speed = -0.25
             weight = -0.10
 		}
 		xp_cost = 1
 
+		can_convert_from = {
+			module_category = wing_high
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module_category = wing_low
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module_category = wing_W
+			convert_cost_ic = 15
+		}
 		can_convert_from = {
 			module_category = wing_biplan
 			convert_cost_ic = 1
@@ -3232,9 +3641,7 @@ equipment_modules = {
 		abbreviation = "fus_classic_s"
 		category = fuselage_kind_small
 		sfx = sfx_ui_sd_module_turret
-		
-		xp_cost = 5
-
+		xp_cost = 1
 		allowed_module_categories = {
 
 			# Ligne 4 - Special modules
@@ -3248,7 +3655,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_small
 				plane_special_module_ASW
-				plane_special_module_engine_small
+
 				recon_camera
 				fighter_weapon
 			}
@@ -3273,7 +3680,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_small
-				plane_special_module_engine_small
+				plane_fuel_module_small
 				cas_weapon
 				tac_weapon
 				nav_bomber_weapon
@@ -3295,8 +3702,10 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_1 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3304,6 +3713,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3311,6 +3721,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3318,6 +3729,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3344,141 +3756,36 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_jug_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_drop_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_bi_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_twin_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 20
 		}
 	}
 	fuselage_jug_small = {
 		abbreviation = "fus_jug"
 		category = fuselage_kind_small
 		sfx = sfx_ui_sd_module_turret
-		add_stats = {
-			reliability = 0.1
-		}
+
 		multiply_stats = {
 			build_cost_ic = -0.1
-			air_defense = 0.1
-		}
-		xp_cost = 1
-		allowed_module_categories = {
-
-			# Ligne 4 - Special modules
-			fixed_front_cockpit_slot = {
-				plane_armor_module_small
-				plane_special_module_small
-				plane_special_module_bomb_sights
-				plane_special_module_radio_navigation
-				plane_special_module_air_ground_radar
-				plane_special_module_air_air_radar
-				plane_special_module_gunsight
-				plane_construction_type_module_small
-				plane_special_module_ASW
-				plane_special_module_engine_small
-				recon_camera
-			fighter_weapon
-			}
-			fixed_rear_cockpit_slot = {
-				plane_armor_module_small
-				plane_construction_type_module_small
-				plane_special_module_small
-				plane_special_module_radio_navigation
-				plane_special_module_defense_turret
-				schraege_cat
-			}
-			fixed_front_fuselage_slot = {
-				cas_weapon
-				nav_bomber_weapon
-				tac_weapon
-				armor_plate_module
-				plane_fuel_module_small
-			}
-			fixed_mid_fuselage_slot = {
-				plane_armor_module_small
-				plane_special_module_small
-				plane_special_module_bomb_sights
-				plane_special_module_radio_navigation
-				plane_construction_type_module_small
-				plane_special_module_engine_small
-				cas_weapon
-				tac_weapon
-				nav_bomber_weapon
-				kamikaze_bomber_weapon
-				recon_camera
-				schraege_cat
-			}
-			fixed_rear_fuselage_slot = {
-				plane_armor_module_small
-				plane_special_module_small
-				plane_special_module_bomb_sights
-				plane_special_module_radio_navigation
-				plane_special_module_air_ground_radar
-				plane_special_module_air_air_radar
-				plane_special_module_gunsight
-				plane_construction_type_module_small
-				plane_special_module_jet
-				plane_special_module_ASW
-				remote_control_turret_system_category
-				plane_special_module_defense_turret
-				plane_rear_engine
-			}
-			fixed_intern_slot_1 = {
-				plane_special_module_engine_small
-				plane_construction_type_module_small
-				plane_special_module_small
-				plane_armor_module_small
-				plane_fuel_module_small
-			}
-			fixed_intern_slot_2 = {
-				plane_special_module_engine_small
-				plane_construction_type_module_small
-				plane_special_module_small
-				plane_armor_module_small
-				plane_fuel_module_small
-			}
-			fixed_intern_slot_3 = {
-				plane_special_module_engine_small
-				plane_construction_type_module_small
-				plane_special_module_small
-				plane_armor_module_small
-				plane_fuel_module_small
-			}
-			fixed_intern_slot_4 = {
-				plane_special_module_engine_small
-				plane_construction_type_module_small
-				plane_special_module_small
-				plane_armor_module_small
-				plane_fuel_module_small
-			}
-			fixed_turret_back_slot = {
-				plane_special_module_defense_turret
-				remote_control_turret_system_category
-				plane_top_engine
-			}
-			fixed_turret_nose_slot = {
-				plane_special_module_defense_turret
-				remote_control_turret_system_category
-			}
-			fixed_turret_belly_slot = {
-				plane_special_module_defense_turret
-				remote_control_turret_system_category
-			}
-			fixed_turret_tail_slot = {
-				plane_special_module_defense_turret
-				remote_control_turret_system_category
-			}
-			tail_slot = {
-				plane_empennage
-			}
-		}
-	}
-	fuselage_drop_small = {
-		abbreviation = "fus_drop_s"
-		category = fuselage_kind_small
-		sfx = sfx_ui_sd_module_turret
-		add_stats = {
-			reliability = 0
-		}
-		multiply_stats = {
-			build_cost_ic = 0.15
-			air_agility = 0.1
+			air_defence = 0.1
 		}
 		xp_cost = 3
 		allowed_module_categories = {
@@ -3494,7 +3801,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_small
 				plane_special_module_ASW
-				plane_special_module_engine_small
+
 				recon_camera
 			fighter_weapon
 			}
@@ -3519,7 +3826,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_small
-				plane_special_module_engine_small
+				plane_fuel_module_small
 				cas_weapon
 				tac_weapon
 				nav_bomber_weapon
@@ -3541,8 +3848,10 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_1 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3550,6 +3859,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3557,6 +3867,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3564,6 +3875,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3590,6 +3902,174 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_classic_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_drop_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_bi_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_twin_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 20
+		}
+	}
+	fuselage_drop_small = {
+		abbreviation = "fus_drop_s"
+		category = fuselage_kind_small
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			maximum_speed = 5
+		}
+		multiply_stats = {
+			build_cost_ic = 0.15
+		}
+		xp_cost = 5
+		allowed_module_categories = {
+
+			# Ligne 4 - Special modules
+			fixed_front_cockpit_slot = {
+				plane_armor_module_small
+				plane_special_module_small
+				plane_special_module_bomb_sights
+				plane_special_module_radio_navigation
+				plane_special_module_air_ground_radar
+				plane_special_module_air_air_radar
+				plane_special_module_gunsight
+				plane_construction_type_module_small
+				plane_special_module_ASW
+
+				recon_camera
+			fighter_weapon
+			}
+			fixed_rear_cockpit_slot = {
+				plane_armor_module_small
+				plane_construction_type_module_small
+				plane_special_module_small
+				plane_special_module_radio_navigation
+				plane_special_module_defense_turret
+				schraege_cat
+			}
+			fixed_front_fuselage_slot = {
+				cas_weapon
+				nav_bomber_weapon
+				tac_weapon
+				armor_plate_module
+				plane_fuel_module_small
+			}
+			fixed_mid_fuselage_slot = {
+				plane_armor_module_small
+				plane_special_module_small
+				plane_special_module_bomb_sights
+				plane_special_module_radio_navigation
+				plane_construction_type_module_small
+				plane_fuel_module_small
+				cas_weapon
+				tac_weapon
+				nav_bomber_weapon
+				kamikaze_bomber_weapon
+				recon_camera
+				schraege_cat
+			}
+			fixed_rear_fuselage_slot = {
+				plane_armor_module_small
+				plane_special_module_small
+				plane_special_module_bomb_sights
+				plane_special_module_radio_navigation
+				plane_special_module_air_ground_radar
+				plane_special_module_air_air_radar
+				plane_special_module_gunsight
+				plane_construction_type_module_small
+				plane_special_module_jet
+				plane_special_module_ASW
+				remote_control_turret_system_category
+				plane_special_module_defense_turret
+				plane_rear_engine
+				plane_fuel_module_small
+			}
+			fixed_intern_slot_1 = {
+				propeller_blade_module
+				plane_special_module_engine_small
+				plane_construction_type_module_small
+				plane_special_module_small
+				plane_armor_module_small
+				plane_fuel_module_small
+			}
+			fixed_intern_slot_2 = {
+				propeller_blade_module
+				plane_special_module_engine_small
+				plane_construction_type_module_small
+				plane_special_module_small
+				plane_armor_module_small
+				plane_fuel_module_small
+			}
+			fixed_intern_slot_3 = {
+				propeller_blade_module
+				plane_special_module_engine_small
+				plane_construction_type_module_small
+				plane_special_module_small
+				plane_armor_module_small
+				plane_fuel_module_small
+			}
+			fixed_intern_slot_4 = {
+				propeller_blade_module
+				plane_special_module_engine_small
+				plane_construction_type_module_small
+				plane_special_module_small
+				plane_armor_module_small
+				plane_fuel_module_small
+			}
+			fixed_turret_back_slot = {
+				plane_special_module_defense_turret
+				remote_control_turret_system_category
+				plane_top_engine
+			}
+			fixed_turret_nose_slot = {
+				plane_special_module_defense_turret
+				remote_control_turret_system_category
+			}
+			fixed_turret_belly_slot = {
+				plane_special_module_defense_turret
+				remote_control_turret_system_category
+			}
+			fixed_turret_tail_slot = {
+				plane_special_module_defense_turret
+				remote_control_turret_system_category
+			}
+			tail_slot = {
+				plane_empennage
+			}
+		}
+
+		can_convert_from = {
+			module = fuselage_classic_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_jug_small
+			convert_cost_ic = 5
+		}
+		can_convert_from = {
+			module = fuselage_bi_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_twin_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 20
 		}
 	}
 	fuselage_bi_small = {
@@ -3621,7 +4101,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_small
 				plane_special_module_ASW
-				plane_special_module_engine_small
+
 				recon_camera
 			fighter_weapon
 			}
@@ -3654,11 +4134,13 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_small
 			}
 			fixed_rear_fuselage_slot = {
 
 			}
 			fixed_intern_slot_1 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3666,6 +4148,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3673,6 +4156,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3680,6 +4164,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3706,6 +4191,27 @@ equipment_modules = {
 			tail_slot = {
 				plane_twin_empennage
 			}
+		}
+
+		can_convert_from = {
+			module = fuselage_classic_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_jug_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_drop_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_twin_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
 		}
 	}
 	fuselage_twin_small = {
@@ -3737,7 +4243,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_small
 				plane_special_module_ASW
-				plane_special_module_engine_small
+
 				recon_camera
 			fighter_weapon
 			}
@@ -3762,7 +4268,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_small
-				plane_special_module_engine_small
+				plane_fuel_module_small
 				cas_weapon
 				tac_weapon
 				nav_bomber_weapon
@@ -3782,8 +4288,10 @@ equipment_modules = {
 				plane_special_module_jet
 				plane_special_module_ASW
 				plane_rear_engine
+				plane_fuel_module_small
 			}
 			fixed_intern_slot_1 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3791,6 +4299,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3798,6 +4307,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3805,6 +4315,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3832,6 +4343,26 @@ equipment_modules = {
 				plane_twin_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_jug_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_drop_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_classic_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_bi_small
+			convert_cost_ic = 10
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
+		}
 	}
 	fuselage_flying_wing_small = {
 		abbreviation = "adi_fly_w_s"
@@ -3842,12 +4373,12 @@ equipment_modules = {
 			reliability = -0.1
 			build_cost_ic = -1.5
 			thrust = 3
+			maximum_speed = 2
 		}
 
 		multiply_stats = {
 			air_range = 0.15
 			air_agility = -0.15
-			maximum_speed = 0.05
 		}
 
 		mission_type_stats = {
@@ -3880,7 +4411,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_small
 				plane_special_module_ASW
-				plane_special_module_engine_small
+
 				recon_camera
 			fighter_weapon
 			}
@@ -3913,11 +4444,13 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_small
 			}
 			fixed_rear_fuselage_slot = {
 
 			}
 			fixed_intern_slot_1 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3925,6 +4458,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_2 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3932,6 +4466,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_3 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3939,6 +4474,7 @@ equipment_modules = {
 				plane_fuel_module_small
 			}
 			fixed_intern_slot_4 = {
+				propeller_blade_module
 				plane_special_module_engine_small
 				plane_construction_type_module_small
 				plane_special_module_small
@@ -3965,6 +4501,26 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_jug_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_drop_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_classic_small
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_bi_small
+			convert_cost_ic = 20
+		}
+		can_convert_from = {
+			module = fuselage_twin_small
+			convert_cost_ic = 20
 		}
 	}
 	# MEDIUM FUSELAGE
@@ -3973,7 +4529,7 @@ equipment_modules = {
 		category = fuselage_kind_medium
 		sfx = sfx_ui_sd_module_turret
 
-		xp_cost = 5
+		xp_cost = 1
 
 		allowed_module_categories = {
 
@@ -3988,7 +4544,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_medium
 				plane_special_module_ASW
-				plane_special_module_engine_medium
+
 				recon_camera
 			fighter_weapon
 			}
@@ -4013,7 +4569,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_medium
-				plane_special_module_engine_medium
+				plane_fuel_module_medium
 				cas_weapon
 				tac_weapon
 				strat_weapon
@@ -4036,8 +4592,10 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_1 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4045,6 +4603,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4052,6 +4611,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4059,6 +4619,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4085,142 +4646,35 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_jug_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_drop_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_bi_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = flying_boat_medium
+			convert_cost_ic = 15
 		}
 	}
 	fuselage_jug_medium = {
 		abbreviation = "fus_jug_m"
 		category = fuselage_kind_medium
 		sfx = sfx_ui_sd_module_turret
-		add_stats = {
-			reliability = 0.1
-		}
 		multiply_stats = {
 			build_cost_ic = -0.1
-			air_defense = 0.1
-		}
-		xp_cost = 1
-		allowed_module_categories = {
-
-			# Ligne 4 - Special modules
-			fixed_front_cockpit_slot = {
-				plane_armor_module_medium
-				plane_special_module_medium
-				plane_special_module_bomb_sights
-				plane_special_module_radio_navigation
-				plane_special_module_air_ground_radar
-				plane_special_module_air_air_radar
-				plane_special_module_gunsight
-				plane_construction_type_module_medium
-				plane_special_module_ASW
-				plane_special_module_engine_medium
-				recon_camera
-			fighter_weapon
-			}
-			fixed_rear_cockpit_slot = {
-				plane_armor_module_medium
-				plane_construction_type_module_medium
-				plane_special_module_medium
-				plane_special_module_radio_navigation
-				plane_special_module_defense_turret
-				schraege_cat
-			}
-			fixed_front_fuselage_slot = {
-				cas_weapon
-				nav_bomber_weapon
-				tac_weapon
-				armor_plate_module
-				plane_fuel_module_medium
-			}
-			fixed_mid_fuselage_slot = {
-				plane_armor_module_medium
-				plane_special_module_medium
-				plane_special_module_bomb_sights
-				plane_special_module_radio_navigation
-				plane_construction_type_module_medium
-				plane_special_module_engine_medium
-				cas_weapon
-				tac_weapon
-				strat_weapon
-				nav_bomber_weapon
-				kamikaze_bomber_weapon
-				recon_camera
-				schraege_cat
-			}
-			fixed_rear_fuselage_slot = {
-				plane_armor_module_medium
-				plane_special_module_medium
-				plane_special_module_bomb_sights
-				plane_special_module_radio_navigation
-				plane_special_module_air_ground_radar
-				plane_special_module_air_air_radar
-				plane_special_module_gunsight
-				plane_construction_type_module_medium
-				plane_special_module_jet
-				plane_special_module_ASW
-				remote_control_turret_system_category
-				plane_special_module_defense_turret
-				plane_rear_engine
-			}
-			fixed_intern_slot_1 = {
-				plane_special_module_engine_medium
-				plane_construction_type_module_medium
-				plane_special_module_medium
-				plane_armor_module_medium
-				plane_fuel_module_medium
-			}
-			fixed_intern_slot_2 = {
-				plane_special_module_engine_medium
-				plane_construction_type_module_medium
-				plane_special_module_medium
-				plane_armor_module_medium
-				plane_fuel_module_medium
-			}
-			fixed_intern_slot_3 = {
-				plane_special_module_engine_medium
-				plane_construction_type_module_medium
-				plane_special_module_medium
-				plane_armor_module_medium
-				plane_fuel_module_medium
-			}
-			fixed_intern_slot_4 = {
-				plane_special_module_engine_medium
-				plane_construction_type_module_medium
-				plane_special_module_medium
-				plane_armor_module_medium
-				plane_fuel_module_medium
-			}
-			fixed_turret_back_slot = {
-				plane_special_module_defense_turret
-				remote_control_turret_system_category
-				plane_top_engine
-			}
-			fixed_turret_nose_slot = {
-				plane_special_module_defense_turret
-				remote_control_turret_system_category
-			}
-			fixed_turret_belly_slot = {
-				plane_special_module_defense_turret
-				remote_control_turret_system_category
-			}
-			fixed_turret_tail_slot = {
-				plane_special_module_defense_turret
-				remote_control_turret_system_category
-			}
-			tail_slot = {
-				plane_empennage
-			}
-		}
-	}
-	fuselage_drop_medium = {
-		abbreviation = "fus_drop_m"
-		category = fuselage_kind_medium
-		sfx = sfx_ui_sd_module_turret
-		add_stats = {
-			reliability = 0
-		}
-		multiply_stats = {
-			build_cost_ic = 0.15
-			air_agility = 0.1
+			air_defence = 0.1
 		}
 		xp_cost = 3
 		allowed_module_categories = {
@@ -4236,7 +4690,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_medium
 				plane_special_module_ASW
-				plane_special_module_engine_medium
+
 				recon_camera
 			fighter_weapon
 			}
@@ -4261,7 +4715,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_medium
-				plane_special_module_engine_medium
+				plane_fuel_module_medium
 				cas_weapon
 				tac_weapon
 				strat_weapon
@@ -4284,8 +4738,10 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_1 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4293,6 +4749,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4300,6 +4757,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4307,6 +4765,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4333,6 +4792,175 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_classic_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_drop_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_bi_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = flying_boat_medium
+			convert_cost_ic = 15
+		}
+	}
+	fuselage_drop_medium = {
+		abbreviation = "fus_drop_m"
+		category = fuselage_kind_medium
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			maximum_speed = 5
+		}
+		multiply_stats = {
+			build_cost_ic = 0.15
+		}
+		xp_cost = 5
+		allowed_module_categories = {
+
+			# Ligne 4 - Special modules
+			fixed_front_cockpit_slot = {
+				plane_armor_module_medium
+				plane_special_module_medium
+				plane_special_module_bomb_sights
+				plane_special_module_radio_navigation
+				plane_special_module_air_ground_radar
+				plane_special_module_air_air_radar
+				plane_special_module_gunsight
+				plane_construction_type_module_medium
+				plane_special_module_ASW
+
+				recon_camera
+			fighter_weapon
+			}
+			fixed_rear_cockpit_slot = {
+				plane_armor_module_medium
+				plane_construction_type_module_medium
+				plane_special_module_medium
+				plane_special_module_radio_navigation
+				plane_special_module_defense_turret
+				schraege_cat
+			}
+			fixed_front_fuselage_slot = {
+				cas_weapon
+				nav_bomber_weapon
+				tac_weapon
+				armor_plate_module
+				plane_fuel_module_medium
+			}
+			fixed_mid_fuselage_slot = {
+				plane_armor_module_medium
+				plane_special_module_medium
+				plane_special_module_bomb_sights
+				plane_special_module_radio_navigation
+				plane_construction_type_module_medium
+				plane_fuel_module_medium
+				cas_weapon
+				tac_weapon
+				strat_weapon
+				nav_bomber_weapon
+				kamikaze_bomber_weapon
+				recon_camera
+				schraege_cat
+			}
+			fixed_rear_fuselage_slot = {
+				plane_armor_module_medium
+				plane_special_module_medium
+				plane_special_module_bomb_sights
+				plane_special_module_radio_navigation
+				plane_special_module_air_ground_radar
+				plane_special_module_air_air_radar
+				plane_special_module_gunsight
+				plane_construction_type_module_medium
+				plane_special_module_jet
+				plane_special_module_ASW
+				remote_control_turret_system_category
+				plane_special_module_defense_turret
+				plane_rear_engine
+				plane_fuel_module_medium
+			}
+			fixed_intern_slot_1 = {
+				propeller_blade_module
+				plane_special_module_engine_medium
+				plane_construction_type_module_medium
+				plane_special_module_medium
+				plane_armor_module_medium
+				plane_fuel_module_medium
+			}
+			fixed_intern_slot_2 = {
+				propeller_blade_module
+				plane_special_module_engine_medium
+				plane_construction_type_module_medium
+				plane_special_module_medium
+				plane_armor_module_medium
+				plane_fuel_module_medium
+			}
+			fixed_intern_slot_3 = {
+				propeller_blade_module
+				plane_special_module_engine_medium
+				plane_construction_type_module_medium
+				plane_special_module_medium
+				plane_armor_module_medium
+				plane_fuel_module_medium
+			}
+			fixed_intern_slot_4 = {
+				propeller_blade_module
+				plane_special_module_engine_medium
+				plane_construction_type_module_medium
+				plane_special_module_medium
+				plane_armor_module_medium
+				plane_fuel_module_medium
+			}
+			fixed_turret_back_slot = {
+				plane_special_module_defense_turret
+				remote_control_turret_system_category
+				plane_top_engine
+			}
+			fixed_turret_nose_slot = {
+				plane_special_module_defense_turret
+				remote_control_turret_system_category
+			}
+			fixed_turret_belly_slot = {
+				plane_special_module_defense_turret
+				remote_control_turret_system_category
+			}
+			fixed_turret_tail_slot = {
+				plane_special_module_defense_turret
+				remote_control_turret_system_category
+			}
+			tail_slot = {
+				plane_empennage
+			}
+		}
+		can_convert_from = {
+			module = fuselage_jug_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_classic_medium
+			convert_cost_ic = 7
+		}
+		can_convert_from = {
+			module = fuselage_bi_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = flying_boat_medium
+			convert_cost_ic = 15
 		}
 	}
 	fuselage_bi_medium = {
@@ -4364,7 +4992,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_medium
 				plane_special_module_ASW
-				plane_special_module_engine_medium
+
 				recon_camera
 			fighter_weapon
 			}
@@ -4389,7 +5017,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_medium
-				plane_special_module_engine_medium
+				plane_fuel_module_medium
 				cas_weapon
 				tac_weapon
 				nav_bomber_weapon
@@ -4411,8 +5039,10 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_1 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4420,6 +5050,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4427,6 +5058,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4434,6 +5066,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4461,6 +5094,26 @@ equipment_modules = {
 				plane_twin_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_jug_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_drop_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_classic_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = flying_boat_medium
+			convert_cost_ic = 25
+		}
 	}
 	flying_boat_medium = {
 		abbreviation = "flbm"
@@ -4471,9 +5124,9 @@ equipment_modules = {
 			build_cost_ic = 4
 			surface_detection = 8
 			sub_detection = 3
+			maximum_speed = -20
 		}
 		multiply_stats = {
-			maximum_speed = -0.4
 			air_range = 0.15
 		}
 		dismantle_cost_ic = 2
@@ -4491,7 +5144,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_medium
 				plane_special_module_ASW
-				plane_special_module_engine_medium
+
 				recon_camera
 			fighter_weapon
 			}
@@ -4516,7 +5169,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_medium
-				plane_special_module_engine_medium
+				plane_fuel_module_medium
 				cas_weapon
 				tac_weapon
 				strat_weapon
@@ -4539,8 +5192,10 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_medium
 			}
 			fixed_intern_slot_1 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4548,6 +5203,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4555,6 +5211,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4562,6 +5219,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4589,6 +5247,26 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_classic_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_jug_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_drop_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_bi_medium
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_small
+			convert_cost_ic = 25
+		}
 	}
 	fuselage_flying_wing_medium = {
 		abbreviation = "adi_fly_w_m"
@@ -4599,12 +5277,12 @@ equipment_modules = {
 			reliability = -0.1
 			build_cost_ic = -1.5
 			thrust = 3
+			maximum_speed = 2
 		}
 
 		multiply_stats = {
 			air_range = 0.15
 			air_agility = -0.15
-			maximum_speed = 0.05
 		}
 
 		mission_type_stats = {
@@ -4637,7 +5315,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_medium
 				plane_special_module_ASW
-				plane_special_module_engine_medium
+
 				recon_camera
 			fighter_weapon
 			}
@@ -4662,7 +5340,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_medium
-				plane_special_module_engine_medium
+				plane_fuel_module_medium
 				cas_weapon
 				tac_weapon
 				strat_weapon
@@ -4676,6 +5354,7 @@ equipment_modules = {
 
 			}
 			fixed_intern_slot_1 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4683,6 +5362,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_2 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4690,6 +5370,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_3 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4697,6 +5378,7 @@ equipment_modules = {
 				plane_fuel_module_medium
 			}
 			fixed_intern_slot_4 = {
+				propeller_blade_module
 				plane_special_module_engine_medium
 				plane_construction_type_module_medium
 				plane_special_module_medium
@@ -4723,6 +5405,26 @@ equipment_modules = {
 			tail_slot = {
 				plane_empennage
 			}
+		}
+		can_convert_from = {
+			module = fuselage_classic_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_jug_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_drop_medium
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_bi_medium
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = flying_boat_medium
+			convert_cost_ic = 25
 		}
 	}
 	# LARGE FUSELAGE
@@ -4746,7 +5448,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_large
 				plane_special_module_ASW
-				plane_special_module_engine_large
+
 				recon_camera
 			fighter_weapon
 			}
@@ -4772,7 +5474,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_large
-				plane_special_module_engine_large
+				plane_fuel_module_large
 				cas_weapon
 				tac_weapon
 				strat_weapon
@@ -4795,8 +5497,10 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_1 = {
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -4804,6 +5508,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_2 = {
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -4811,6 +5516,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_3 = {
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -4818,6 +5524,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_4 = {
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -4849,17 +5556,26 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_jug_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = flying_boat_large
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_large
+			convert_cost_ic = 35
+		}
 	}
 	fuselage_jug_large = {
 		abbreviation = "fus_jug_l"
 		category = fuselage_kind_large
 		sfx = sfx_ui_sd_module_turret
-		add_stats = {
-			reliability = 0.1
-		}
 		multiply_stats = {
 			build_cost_ic = -0.1
-			air_defense = 0.1
+			air_defence = 0.1
 		}
 		xp_cost = 1
 		allowed_module_categories = {
@@ -4875,7 +5591,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_large
 				plane_special_module_ASW
-				plane_special_module_engine_large
+
 				recon_camera
 			fighter_weapon
 			}
@@ -4901,7 +5617,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_large
-				plane_special_module_engine_large
+				plane_fuel_module_large
 				cas_weapon
 				tac_weapon
 				strat_weapon
@@ -4924,8 +5640,10 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_1 = {
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -4933,6 +5651,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_2 = {
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -4940,6 +5659,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_3 = {
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -4947,6 +5667,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_4 = {
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -4978,6 +5699,18 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_classic_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = flying_boat_large
+			convert_cost_ic = 25
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_large
+			convert_cost_ic = 35
+		}
 	}
 	flying_boat_large = {
 		abbreviation = "flbl"
@@ -4988,10 +5721,7 @@ equipment_modules = {
 			build_cost_ic = 4
 			surface_detection = 10
 			sub_detection = 4
-		}
-
-		multiply_stats = {
-			maximum_speed = -0.25
+			maximum_speed = -13
 		}
 
 		allow_mission_type = {
@@ -5014,7 +5744,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_large
 				plane_special_module_ASW
-				plane_special_module_engine_large
+
 				recon_camera
 				fighter_weapon
 			}
@@ -5040,7 +5770,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_large
-				plane_special_module_engine_large
+				plane_fuel_module_large
 				cas_weapon
 				tac_weapon
 				strat_weapon
@@ -5063,8 +5793,10 @@ equipment_modules = {
 				remote_control_turret_system_category
 				plane_special_module_defense_turret
 				plane_rear_engine
+				plane_fuel_module_large
 			}
 			fixed_intern_slot_1 = {
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5072,6 +5804,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_2 = {
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5079,6 +5812,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_3 = {
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5086,6 +5820,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_4 = {
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5117,6 +5852,18 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_jug_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_classic_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_flying_wing_large
+			convert_cost_ic = 35
+		}
 	}
 	fuselage_flying_wing_large = {
 		abbreviation = "adi_fly_w_l"
@@ -5127,12 +5874,12 @@ equipment_modules = {
 			reliability = -0.1
 			build_cost_ic = -1.5
 			thrust = 3
+			maximum_speed = 2
 		}
 
 		multiply_stats = {
 			air_range = 0.15
 			air_agility = -0.15
-			maximum_speed = 0.05
 		}
 
 		mission_type_stats = {
@@ -5165,7 +5912,7 @@ equipment_modules = {
 				plane_special_module_gunsight
 				plane_construction_type_module_large
 				plane_special_module_ASW
-				plane_special_module_engine_large
+
 				recon_camera
 				fighter_weapon
 			}
@@ -5191,7 +5938,7 @@ equipment_modules = {
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
 				plane_construction_type_module_medium
-				plane_special_module_engine_medium
+				plane_fuel_module_large
 				cas_weapon
 				tac_weapon
 				strat_weapon
@@ -5205,6 +5952,7 @@ equipment_modules = {
 
 			}
 			fixed_intern_slot_1 = {
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5212,6 +5960,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_2 = {
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5219,6 +5968,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_3 = {
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5226,6 +5976,7 @@ equipment_modules = {
 				plane_fuel_module_large
 			}
 			fixed_intern_slot_4 = {
+				propeller_blade_module
 				plane_special_module_engine_large
 				plane_construction_type_module_large
 				plane_special_module_large
@@ -5257,6 +6008,18 @@ equipment_modules = {
 				plane_empennage
 			}
 		}
+		can_convert_from = {
+			module = fuselage_jug_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = fuselage_classic_large
+			convert_cost_ic = 15
+		}
+		can_convert_from = {
+			module = flying_boat_large
+			convert_cost_ic = 35
+		}
 	}
 
 	# empennage kind
@@ -5271,16 +6034,18 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			reliability = -0.08
+			reliability = -0.03
+			weight = 1
+			build_cost_ic = 1
+			maximum_speed = -4
 		}
 
 		multiply_stats = {
-			air_agility = 0.5
-			air_range = 0.1
+			air_agility = 0.10
 		}
 
 		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
-		xp_cost = 5
+		xp_cost = 2
 	}
 	adi_twin_boom = {
 		abbreviation = "adi_tb"
@@ -5290,9 +6055,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 1.5
 			reliability = 0.05
-		}
-		multiply_stats = {
-			maximum_speed = 0.08
+			maximum_speed = 3
 		}
 		mission_type_stats = {
 			limit = {
@@ -5326,7 +6089,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 2.5
-			thrust = 2
+
 		}
 		multiply_stats = {
 			air_agility = 0.1
@@ -5343,7 +6106,7 @@ equipment_modules = {
 				naval_patrol
 			}
 			multiply_stats = {
-				air_attack = 0.3
+				air_attack = 0.2
 			}
 		}
 
@@ -5357,8 +6120,11 @@ equipment_modules = {
 		category = aircraft_role_small
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
-
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_small
+			xp = 1
+		}
 	}
 	heavy_fighter_role = {
 		abbreviation = "r_figt"
@@ -5367,6 +6133,26 @@ equipment_modules = {
 		add_equipment_type = heavy_fighter
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_medium
+			xp = 1
+		}
+		mission_type_stats = {
+			limit = {
+				air_superiority
+			}
+			multiply_stats = {
+				air_attack = 0.1
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			multiply_stats = {
+				air_attack = -0.1
+			}
+		}
 	}
 	interceptor_role = {
 		abbreviation = "r_inter"
@@ -5375,6 +6161,26 @@ equipment_modules = {
 		add_equipment_type = interceptor
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_small
+			xp = 1
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			multiply_stats = {
+				air_attack = 0.1
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				air_superiority
+			}
+			multiply_stats = {
+				air_attack = -0.1
+			}
+		}
 	}
 	cas_role = {
 		abbreviation = "r_cas"
@@ -5383,6 +6189,27 @@ equipment_modules = {
 		add_equipment_type = cas
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_small
+			xp = 1
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+				cas
+			}
+			multiply_stats = {
+				air_ground_attack = 0.1
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				strategic_bomber
+			}
+			multiply_stats = {
+				air_ground_attack = -0.1
+			}
+		}
 	}
 	naval_bomber_role = {
 		abbreviation = "r_nav_b"
@@ -5391,6 +6218,27 @@ equipment_modules = {
 		add_equipment_type = naval_bomber
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_medium
+			xp = 1
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+			}
+			multiply_stats = {
+				naval_strike_attack = 0.1
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				air_superiority
+			}
+			multiply_stats = {
+				air_attack = -0.1
+			}
+		}
 	}
 	suicide_role = {
 		abbreviation = "r_suic"
@@ -5399,6 +6247,10 @@ equipment_modules = {
 		add_equipment_type = suicide
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_small
+			xp = 1
+		}
 	}
 	scout_role = {
 		abbreviation = "r_scout"
@@ -5407,6 +6259,28 @@ equipment_modules = {
 		add_equipment_type = scout_plane
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_medium
+			xp = 1
+		}
+		mission_type_stats = {
+			limit = {
+				recon
+				naval_patrol
+			}
+			multiply_stats = {
+				surface_detection = 0.1
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				air_superiority
+				interception
+			}
+			multiply_stats = {
+				air_attack = -0.1
+			}
+		}
 	}
 	tac_bomb_role = {
 		abbreviation = "r_tac_bomb"
@@ -5415,6 +6289,27 @@ equipment_modules = {
 		add_equipment_type = tactical_bomber
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_medium
+			xp = 1
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+				cas
+			}
+			multiply_stats = {
+				air_ground_attack = -0.1
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				strategic_bomber
+			}
+			multiply_stats = {
+				air_bombing = 0.1
+			}
+		}
 	}
 	maritime_pat_role = {
 		abbreviation = "r_mar_pat"
@@ -5423,6 +6318,10 @@ equipment_modules = {
 		add_equipment_type = maritime_patrol_plane
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_large
+			xp = 1
+		}
 	}
 	strat_bomb_role = {
 		abbreviation = "r_strat_bomb"
@@ -5431,6 +6330,27 @@ equipment_modules = {
 		add_equipment_type = strategic_bomber
 
 		xp_cost = 0
+		can_convert_from = {
+			module_category = aircraft_role_large
+			xp = 1
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+				cas
+			}
+			multiply_stats = {
+				air_ground_attack = -0.1
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				strategic_bomber
+			}
+			multiply_stats = {
+				air_bombing = 0.15
+			}
+		}
 	}
 
 ########  ######## ######## ######## ##    ##  ######  #### ##     ## ########    ######## ##     ## ########  ########  ######## ########  ######  
@@ -5452,6 +6372,7 @@ equipment_modules = {
 			weight = 1
 			air_attack = 1
 			air_defence = 1
+			maximum_speed = -1
 		}
 
 		mission_type_stats = {
@@ -5468,10 +6389,6 @@ equipment_modules = {
 			add_stats = {
 				air_agility = 0.5
 			}
-		}
-
-		multiply_stats ={
-			maximum_speed = -0.03
 		}
 
 		dismantle_cost_ic = 1
@@ -5500,6 +6417,7 @@ equipment_modules = {
 			weight = 2
 			air_attack = 1.5
 			air_defence = 2
+			maximum_speed = -1
 		}
 
 		mission_type_stats = {
@@ -5515,10 +6433,6 @@ equipment_modules = {
 			add_stats = {
 				air_agility = 1
 			}
-		}
-
-		multiply_stats ={
-			maximum_speed = -0.035
 		}
 
 		dismantle_cost_ic = 1
@@ -5547,6 +6461,7 @@ equipment_modules = {
 			weight = 4
 			air_attack = 3
 			air_defence = 4
+			maximum_speed = -1
 		}
 
 		mission_type_stats = {
@@ -5562,10 +6477,6 @@ equipment_modules = {
 			add_stats = {
 				air_agility = 2
 			}
-		}
-
-		multiply_stats ={
-			maximum_speed = -0.037
 		}
 
 		dismantle_cost_ic = 1
@@ -5590,6 +6501,7 @@ equipment_modules = {
 			weight = 2
 			air_attack = 1.5
 			air_defence = 2
+			maximum_speed = -2
 		}
 
 		mission_type_stats = {
@@ -5606,10 +6518,6 @@ equipment_modules = {
 			add_stats = {
 				air_agility = 1
 			}
-		}
-
-		multiply_stats ={
-			maximum_speed = -0.06
 		}
 
 		dismantle_cost_ic = 2
@@ -5638,6 +6546,7 @@ equipment_modules = {
 			weight = 8
 			air_attack = 6
 			air_defence = 8
+			maximum_speed = -3
 		}
 
 		mission_type_stats = {
@@ -5653,10 +6562,6 @@ equipment_modules = {
 			add_stats = {
 				air_agility = 4
 			}
-		}
-
-		multiply_stats ={
-			maximum_speed = -0.075
 		}
 
 		dismantle_cost_ic = 2
@@ -5681,6 +6586,7 @@ equipment_modules = {
 			weight = 4
 			air_attack = 3
 			air_defence = 4
+			maximum_speed = -2
 		}
 
 		mission_type_stats = {
@@ -5696,10 +6602,6 @@ equipment_modules = {
 			add_stats = {
 				air_agility = 2
 			}
-		}
-
-		multiply_stats ={
-			maximum_speed = -0.07
 		}
 
 		dismantle_cost_ic = 2
