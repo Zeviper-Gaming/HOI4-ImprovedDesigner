@@ -1289,8 +1289,11 @@ technologies = {
 			cannon_defense_turret
 			cannon_defense_turret_2x
 			aircraft_engine_mounted_cannon_2
-			
+
 			adi_schraege_musik
+
+			aircraft_rotary_cannon_1
+			aircraft_rotary_cannon_2
 		}
 		
 		research_cost = 1.5
@@ -2088,7 +2091,16 @@ technologies = {
 			supply_drops
 			troop_compartment
 			NACA_cowling
-			
+
+			rubber_wheels
+			big_rubber_wheels
+			fixed_wheels
+			big_fixed_wheels
+			plastic_wheels
+			metal_skin
+			fabric_skin
+			wooden_skin
+
 			# todo find pictures for just below
 			wing_W_effil
 			wing_W_rect

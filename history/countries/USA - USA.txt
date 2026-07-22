@@ -568,7 +568,7 @@ if = {
 			fixed_wing_slot_1 = bomb_locks
 			fixed_front_cockpit_slot = light_mg_2x
 			fixed_main_weapon_slot = engine_nose
-			fixed_front_fuselage_slot = floats
+			wheels_slot = floats
 
 			engine_type_slot = radial_engine_1
 

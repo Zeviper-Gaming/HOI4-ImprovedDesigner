@@ -212,6 +212,31 @@ spriteTypes = {
 		name = "GFX_EMI_plane_engine_inline"
 		textureFile = "gfx/interface/equipmentdesigner/planes/designer/engine-inline.jpg"
 	}
+	# Supercharger category (icône d'onglet pour la catégorie plane_supercharger)
+	spriteType = {
+		name = "GFX_EMI_plane_supercharger"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/bba_tech_supercharger.dds"
+	}
+
+	# Wheels & Skins (port BBA)
+	spriteType = { name = "GFX_EMI_rubber_wheels"      textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_wheel_rubber.dds" }
+	spriteType = { name = "GFX_EMI_big_rubber_wheels"  textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_wheel_rubber.dds" }
+	spriteType = { name = "GFX_EMI_fixed_wheels"       textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_wheel_fixed.dds" }
+	spriteType = { name = "GFX_EMI_big_fixed_wheels"   textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_wheel_fixed.dds" }
+	spriteType = { name = "GFX_EMI_plastic_wheels"     textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_wheel_plastic.dds" }
+	spriteType = { name = "GFX_EMI_metal_skin"         textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_skin_metal.dds" }
+	spriteType = { name = "GFX_EMI_fabric_skin"        textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_skin_fabric.dds" }
+	spriteType = { name = "GFX_EMI_wooden_skin"        textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_skin_wood.dds" }
+	# Category tab icons
+	spriteType = { name = "GFX_EMI_plane_wheels"       textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_wheel_rubber.dds" }
+	spriteType = { name = "GFX_EMI_plane_large_wheels" textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_wheel_rubber.dds" }
+	spriteType = { name = "GFX_EMI_plane_small_wheels" textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_wheel_fixed.dds" }
+	spriteType = { name = "GFX_EMI_plane_skin"         textureFile = "gfx/interface/equipmentdesigner/planes/modules/plane_skin_metal.dds" }
+
+	# Rotary cannons (port BBA)
+	spriteType = { name = "GFX_EMI_aircraft_rotary_cannon_1" textureFile = "gfx/interface/equipmentdesigner/planes/modules/rotary_cannon.dds" }
+	spriteType = { name = "GFX_EMI_aircraft_rotary_cannon_2" textureFile = "gfx/interface/equipmentdesigner/planes/modules/rotary_cannon.dds" }
+	spriteType = { name = "GFX_EMI_rotary_cannon"            textureFile = "gfx/interface/equipmentdesigner/planes/modules/rotary_cannon.dds" }
 	# Engine type
 	spriteType = {
 		name = "GFX_EMI_rotating_engine_1"

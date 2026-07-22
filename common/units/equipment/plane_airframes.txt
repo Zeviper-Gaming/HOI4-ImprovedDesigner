@@ -188,7 +188,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -241,6 +241,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -617,7 +636,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -670,6 +689,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -830,7 +868,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -883,6 +921,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -1043,7 +1100,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -1096,6 +1153,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -1256,7 +1332,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -1309,6 +1385,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -1493,7 +1588,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -1546,6 +1641,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -1928,7 +2042,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -1981,6 +2095,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -2140,7 +2273,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -2193,6 +2326,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -2353,7 +2505,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -2406,6 +2558,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -2565,7 +2736,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -2618,6 +2789,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -2815,7 +3005,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -2877,6 +3067,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -3261,7 +3470,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -3323,6 +3532,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -3490,7 +3718,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -3552,6 +3780,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -3719,7 +3966,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -3781,6 +4028,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -3948,7 +4214,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -4010,6 +4276,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -4191,7 +4476,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -4252,6 +4537,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -4592,7 +4896,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -4653,6 +4957,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -4818,7 +5141,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -4879,6 +5202,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -5044,7 +5386,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -5105,6 +5447,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
@@ -5270,7 +5631,7 @@ equipments = {
 			construction_slot_0 = {
 				required = no
 				allowed_module_categories = {
-					construction_module
+					propeller_blade_module
 				}
 			}
 			construction_slot_1 = {
@@ -5331,6 +5692,25 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_engine_reliability
+				}
+			}
+			supercharger_type_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			wheels_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wheels
+					plane_large_wheels
+					plane_small_wheels
+				}
+			}
+			skin_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_skin
 				}
 			}
 
