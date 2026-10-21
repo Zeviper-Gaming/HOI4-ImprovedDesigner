@@ -20,7 +20,7 @@ technologies = {
 		start_year = 1922
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 3 y = 2 }
+			position = { x = 0 y = 2 }
 		}
 		categories = { air_equipment }
 		ai_will_do = { factor = 0 }
