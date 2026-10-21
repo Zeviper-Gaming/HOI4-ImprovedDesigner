@@ -313,7 +313,11 @@ equipments = {
 				}
 			}
 		}
-		# ZV: limites vanilla retirées ; limites du mod ci-dessous (phase 1 : tailles)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
+		# ZV: limites vanilla retirées ; limites du mod ci-dessous
 		module_count_limit = {	# ZV: Fuselage classique (M) — référence interdit sur cette cellule
 			module = zv_fuselage_classic_m
 			count < 1
@@ -321,6 +325,192 @@ equipments = {
 		module_count_limit = {	# ZV: Fuselage classique (L) — référence interdit sur cette cellule
 			module = zv_fuselage_classic_l
 			count < 1
+		}
+		module_count_limit = {	# ZV: Trimoteur (ailes + nez) — classe A interdit sur cette cellule
+			module = zv_engine_config_tri_a
+			count < 1
+		}
+		module_count_limit = {	# ZV: Trimoteur (ailes + nez) — classe B interdit sur cette cellule
+			module = zv_engine_config_tri_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Trimoteur (ailes + nez) — classe C interdit sur cette cellule
+			module = zv_engine_config_tri_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur (2 × ailes) — classe A interdit sur cette cellule
+			module = zv_engine_config_quad_a
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur (2 × ailes) — classe B interdit sur cette cellule
+			module = zv_engine_config_quad_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur (2 × ailes) — classe C interdit sur cette cellule
+			module = zv_engine_config_quad_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur (2 × ailes) — classe D interdit sur cette cellule
+			module = zv_engine_config_quad_d
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur en tandem (2 par aile, l'un derrière l'autre) — classe A interdit sur cette cellule
+			module = zv_engine_config_quad_tandem_a
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur en tandem (2 par aile, l'un derrière l'autre) — classe B interdit sur cette cellule
+			module = zv_engine_config_quad_tandem_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur en tandem (2 par aile, l'un derrière l'autre) — classe C interdit sur cette cellule
+			module = zv_engine_config_quad_tandem_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Pentamoteur (nez + 2 × ailes) — classe A interdit sur cette cellule
+			module = zv_engine_config_quint_a
+			count < 1
+		}
+		module_count_limit = {	# ZV: Pentamoteur (nez + 2 × ailes) — classe B interdit sur cette cellule
+			module = zv_engine_config_quint_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Pentamoteur (nez + 2 × ailes) — classe C interdit sur cette cellule
+			module = zv_engine_config_quint_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hexamoteur (3 × ailes) — classe A interdit sur cette cellule
+			module = zv_engine_config_hexa_a
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hexamoteur (3 × ailes) — classe B interdit sur cette cellule
+			module = zv_engine_config_hexa_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hexamoteur (3 × ailes) — classe C interdit sur cette cellule
+			module = zv_engine_config_hexa_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hexamoteur (3 × ailes) — classe D interdit sur cette cellule
+			module = zv_engine_config_hexa_d
+			count < 1
+		}
+		module_count_limit = {	# ZV: Essence à haut indice d'octane (M) interdit sur cette cellule
+			module = zv_high_octane_fuel_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Essence à haut indice d'octane (L) interdit sur cette cellule
+			module = zv_high_octane_fuel_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Injection d'eau-méthanol (M) interdit sur cette cellule
+			module = zv_water_injection_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Injection d'eau-méthanol (L) interdit sur cette cellule
+			module = zv_water_injection_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Régime d'urgence WEP (M) interdit sur cette cellule
+			module = zv_wep_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Régime d'urgence WEP (L) interdit sur cette cellule
+			module = zv_wep_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Une seule suralimentation par design (limite partagée). (zv_limit_supercharger)
+			module = zv_early_supercharger
+			module = zv_early_turbocharger
+			module = zv_supercharger
+			module = zv_turbocharger
+			module = zv_improved_supercharger
+			module = zv_two_stage_supercharger
+			module = zv_improved_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Régime d'urgence par design (09)
+			category = zv_cat_regime_d_urgence
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Refroidissement par design (09)
+			category = zv_cat_refroidissement
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Carénage moteur par design (09)
+			category = zv_cat_carenage_moteur
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Prise d'air par design (09)
+			category = zv_cat_prise_d_air
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Améliorations de réacteur par design (09)
+			category = zv_cat_ameliorations_de_reacteur
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_early_supercharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_early_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_supercharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_improved_supercharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_two_stage_supercharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_improved_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_high_octane_fuel_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_high_octane_fuel_m
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_high_octane_fuel_l
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_water_injection_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_water_injection_m
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_water_injection_l
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_gm1
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_direct_injection
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_anti_g_carburettor
+			count < 2
 		}
 		# ZV: les 18 module_count_limit vanilla sont retirés
 
@@ -343,6 +533,10 @@ equipments = {
 		weight = 3
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	small_plane_airframe_1 = { #Basic
@@ -367,6 +561,10 @@ equipments = {
 			rubber = 1
 		}
 		module_slots = inherit	# ZV: mêmes slots à tous les paliers (02 §1.4)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 	small_plane_airframe_2 = { #Improved
 		abbreviation = "afs2"
@@ -390,6 +588,10 @@ equipments = {
 			rubber = 1
 		}
 		module_slots = inherit	# ZV: mêmes slots à tous les paliers (02 §1.4)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	small_plane_airframe_3 = { #Advanced
@@ -414,6 +616,10 @@ equipments = {
 			rubber = 1
 		}
 		module_slots = inherit	# ZV: mêmes slots à tous les paliers (02 §1.4)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	small_plane_airframe_4 = { #modern
@@ -438,6 +644,10 @@ equipments = {
 			rubber = 1
 		}
 		module_slots = inherit	# ZV: mêmes slots à tous les paliers (02 §1.4)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	small_plane_airframe_5 = { #supersonic
@@ -464,6 +674,10 @@ equipments = {
 		module_slots = inherit	# ZV: mêmes slots à tous les paliers (02 §1.4)
 
 		# ZV: default_modules vanilla retiré (slots vides, D-25)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	cv_small_plane_airframe = {
@@ -759,7 +973,11 @@ equipments = {
 				}
 			}
 		}
-		# ZV: limites vanilla retirées ; limites du mod ci-dessous (phase 1 : tailles)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
+		# ZV: limites vanilla retirées ; limites du mod ci-dessous
 		module_count_limit = {	# ZV: Fuselage classique (M) — référence interdit sur cette cellule
 			module = zv_fuselage_classic_m
 			count < 1
@@ -767,6 +985,192 @@ equipments = {
 		module_count_limit = {	# ZV: Fuselage classique (L) — référence interdit sur cette cellule
 			module = zv_fuselage_classic_l
 			count < 1
+		}
+		module_count_limit = {	# ZV: Trimoteur (ailes + nez) — classe A interdit sur cette cellule
+			module = zv_engine_config_tri_a
+			count < 1
+		}
+		module_count_limit = {	# ZV: Trimoteur (ailes + nez) — classe B interdit sur cette cellule
+			module = zv_engine_config_tri_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Trimoteur (ailes + nez) — classe C interdit sur cette cellule
+			module = zv_engine_config_tri_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur (2 × ailes) — classe A interdit sur cette cellule
+			module = zv_engine_config_quad_a
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur (2 × ailes) — classe B interdit sur cette cellule
+			module = zv_engine_config_quad_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur (2 × ailes) — classe C interdit sur cette cellule
+			module = zv_engine_config_quad_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur (2 × ailes) — classe D interdit sur cette cellule
+			module = zv_engine_config_quad_d
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur en tandem (2 par aile, l'un derrière l'autre) — classe A interdit sur cette cellule
+			module = zv_engine_config_quad_tandem_a
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur en tandem (2 par aile, l'un derrière l'autre) — classe B interdit sur cette cellule
+			module = zv_engine_config_quad_tandem_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur en tandem (2 par aile, l'un derrière l'autre) — classe C interdit sur cette cellule
+			module = zv_engine_config_quad_tandem_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Pentamoteur (nez + 2 × ailes) — classe A interdit sur cette cellule
+			module = zv_engine_config_quint_a
+			count < 1
+		}
+		module_count_limit = {	# ZV: Pentamoteur (nez + 2 × ailes) — classe B interdit sur cette cellule
+			module = zv_engine_config_quint_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Pentamoteur (nez + 2 × ailes) — classe C interdit sur cette cellule
+			module = zv_engine_config_quint_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hexamoteur (3 × ailes) — classe A interdit sur cette cellule
+			module = zv_engine_config_hexa_a
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hexamoteur (3 × ailes) — classe B interdit sur cette cellule
+			module = zv_engine_config_hexa_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hexamoteur (3 × ailes) — classe C interdit sur cette cellule
+			module = zv_engine_config_hexa_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hexamoteur (3 × ailes) — classe D interdit sur cette cellule
+			module = zv_engine_config_hexa_d
+			count < 1
+		}
+		module_count_limit = {	# ZV: Essence à haut indice d'octane (M) interdit sur cette cellule
+			module = zv_high_octane_fuel_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Essence à haut indice d'octane (L) interdit sur cette cellule
+			module = zv_high_octane_fuel_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Injection d'eau-méthanol (M) interdit sur cette cellule
+			module = zv_water_injection_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Injection d'eau-méthanol (L) interdit sur cette cellule
+			module = zv_water_injection_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Régime d'urgence WEP (M) interdit sur cette cellule
+			module = zv_wep_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Régime d'urgence WEP (L) interdit sur cette cellule
+			module = zv_wep_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Une seule suralimentation par design (limite partagée). (zv_limit_supercharger)
+			module = zv_early_supercharger
+			module = zv_early_turbocharger
+			module = zv_supercharger
+			module = zv_turbocharger
+			module = zv_improved_supercharger
+			module = zv_two_stage_supercharger
+			module = zv_improved_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Régime d'urgence par design (09)
+			category = zv_cat_regime_d_urgence
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Refroidissement par design (09)
+			category = zv_cat_refroidissement
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Carénage moteur par design (09)
+			category = zv_cat_carenage_moteur
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Prise d'air par design (09)
+			category = zv_cat_prise_d_air
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Améliorations de réacteur par design (09)
+			category = zv_cat_ameliorations_de_reacteur
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_early_supercharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_early_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_supercharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_improved_supercharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_two_stage_supercharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_improved_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_high_octane_fuel_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_high_octane_fuel_m
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_high_octane_fuel_l
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_water_injection_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_water_injection_m
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_water_injection_l
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_gm1
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_direct_injection
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_anti_g_carburettor
+			count < 2
 		}
 
 		# ZV: les 18 module_count_limit vanilla sont retirés
@@ -792,6 +1196,10 @@ equipments = {
 		naval_strike_targetting = 1
 
 		lend_lease_cost = 8
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	cv_small_plane_airframe_1 = { #Basic
@@ -816,6 +1224,10 @@ equipments = {
 			rubber = 1
 		}
 		module_slots = inherit	# ZV: mêmes slots à tous les paliers (02 §1.4)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 	cv_small_plane_airframe_2 = { #Improved
 		abbreviation = "afc2"
@@ -839,6 +1251,10 @@ equipments = {
 			rubber = 1
 		}
 		module_slots = inherit	# ZV: mêmes slots à tous les paliers (02 §1.4)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	cv_small_plane_airframe_3 = { #Advanced
@@ -863,6 +1279,10 @@ equipments = {
 			rubber = 1
 		}
 		module_slots = inherit	# ZV: mêmes slots à tous les paliers (02 §1.4)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	cv_small_plane_airframe_4 = { #modern
@@ -886,6 +1306,10 @@ equipments = {
 			rubber = 1
 		}
 		module_slots = inherit	# ZV: mêmes slots à tous les paliers (02 §1.4)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	medium_plane_airframe = {
@@ -1309,7 +1733,11 @@ equipments = {
 				}
 			}
 		}
-		# ZV: limites vanilla retirées ; limites du mod ci-dessous (phase 1 : tailles)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
+		# ZV: limites vanilla retirées ; limites du mod ci-dessous
 		module_count_limit = {	# ZV: Fuselage classique (S) — référence interdit sur cette cellule
 			module = zv_fuselage_classic_s
 			count < 1
@@ -1317,6 +1745,180 @@ equipments = {
 		module_count_limit = {	# ZV: Fuselage classique (L) — référence interdit sur cette cellule
 			module = zv_fuselage_classic_l
 			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur (2 × ailes) — classe A interdit sur cette cellule
+			module = zv_engine_config_quad_a
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur (2 × ailes) — classe B interdit sur cette cellule
+			module = zv_engine_config_quad_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur (2 × ailes) — classe C interdit sur cette cellule
+			module = zv_engine_config_quad_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur (2 × ailes) — classe D interdit sur cette cellule
+			module = zv_engine_config_quad_d
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur en tandem (2 par aile, l'un derrière l'autre) — classe A interdit sur cette cellule
+			module = zv_engine_config_quad_tandem_a
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur en tandem (2 par aile, l'un derrière l'autre) — classe B interdit sur cette cellule
+			module = zv_engine_config_quad_tandem_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Quadrimoteur en tandem (2 par aile, l'un derrière l'autre) — classe C interdit sur cette cellule
+			module = zv_engine_config_quad_tandem_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Pentamoteur (nez + 2 × ailes) — classe A interdit sur cette cellule
+			module = zv_engine_config_quint_a
+			count < 1
+		}
+		module_count_limit = {	# ZV: Pentamoteur (nez + 2 × ailes) — classe B interdit sur cette cellule
+			module = zv_engine_config_quint_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Pentamoteur (nez + 2 × ailes) — classe C interdit sur cette cellule
+			module = zv_engine_config_quint_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hexamoteur (3 × ailes) — classe A interdit sur cette cellule
+			module = zv_engine_config_hexa_a
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hexamoteur (3 × ailes) — classe B interdit sur cette cellule
+			module = zv_engine_config_hexa_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hexamoteur (3 × ailes) — classe C interdit sur cette cellule
+			module = zv_engine_config_hexa_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hexamoteur (3 × ailes) — classe D interdit sur cette cellule
+			module = zv_engine_config_hexa_d
+			count < 1
+		}
+		module_count_limit = {	# ZV: Essence à haut indice d'octane (S) interdit sur cette cellule
+			module = zv_high_octane_fuel_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Essence à haut indice d'octane (L) interdit sur cette cellule
+			module = zv_high_octane_fuel_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Injection d'eau-méthanol (S) interdit sur cette cellule
+			module = zv_water_injection_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Injection d'eau-méthanol (L) interdit sur cette cellule
+			module = zv_water_injection_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Régime d'urgence WEP (S) interdit sur cette cellule
+			module = zv_wep_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Régime d'urgence WEP (L) interdit sur cette cellule
+			module = zv_wep_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Une seule suralimentation par design (limite partagée). (zv_limit_supercharger)
+			module = zv_early_supercharger
+			module = zv_early_turbocharger
+			module = zv_supercharger
+			module = zv_turbocharger
+			module = zv_improved_supercharger
+			module = zv_two_stage_supercharger
+			module = zv_improved_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Régime d'urgence par design (09)
+			category = zv_cat_regime_d_urgence
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Refroidissement par design (09)
+			category = zv_cat_refroidissement
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Carénage moteur par design (09)
+			category = zv_cat_carenage_moteur
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Prise d'air par design (09)
+			category = zv_cat_prise_d_air
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Améliorations de réacteur par design (09)
+			category = zv_cat_ameliorations_de_reacteur
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_early_supercharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_early_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_supercharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_improved_supercharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_two_stage_supercharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_improved_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_high_octane_fuel_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_high_octane_fuel_m
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_high_octane_fuel_l
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_water_injection_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_water_injection_m
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_water_injection_l
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_gm1
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_direct_injection
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_anti_g_carburettor
+			count < 2
 		}
 
 		# ZV: les 17 module_count_limit vanilla sont retirés
@@ -1342,6 +1944,10 @@ equipments = {
 		naval_strike_targetting = 1
 
 		lend_lease_cost = 10
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	medium_plane_airframe_1 = { #Basic
@@ -1366,6 +1972,10 @@ equipments = {
 			rubber = 1
 		}
 		module_slots = inherit	# ZV: mêmes slots à tous les paliers (02 §1.4)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	medium_plane_airframe_2 = { #Improved
@@ -1390,6 +2000,10 @@ equipments = {
 			rubber = 1
 		}
 		module_slots = inherit	# ZV: mêmes slots à tous les paliers (02 §1.4)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	medium_plane_airframe_3 = { #Advanced
@@ -1414,6 +2028,10 @@ equipments = {
 			rubber = 1
 		}
 		module_slots = inherit	# ZV: mêmes slots à tous les paliers (02 §1.4)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	medium_plane_airframe_4 = { #Modern
@@ -1438,6 +2056,10 @@ equipments = {
 			rubber = 1
 		}
 		module_slots = inherit	# ZV: mêmes slots à tous les paliers (02 §1.4)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	large_plane_airframe = {
@@ -1965,7 +2587,11 @@ equipments = {
 				}
 			}
 		}
-		# ZV: limites vanilla retirées ; limites du mod ci-dessous (phase 1 : tailles)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
+		# ZV: limites vanilla retirées ; limites du mod ci-dessous
 		module_count_limit = {	# ZV: Fuselage classique (S) — référence interdit sur cette cellule
 			module = zv_fuselage_classic_s
 			count < 1
@@ -1977,6 +2603,172 @@ equipments = {
 		module_count_limit = {	# ZV: Moteur de nez simple — classe A interdit sur cette cellule
 			module = zv_engine_config_nose_a
 			count < 1
+		}
+		module_count_limit = {	# ZV: Moteur de nez simple — classe B interdit sur cette cellule
+			module = zv_engine_config_nose_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Moteur de nez simple — classe C interdit sur cette cellule
+			module = zv_engine_config_nose_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Bimoteur de nez (VB 10) — classe A interdit sur cette cellule
+			module = zv_engine_config_twin_nose_a
+			count < 1
+		}
+		module_count_limit = {	# ZV: Bimoteur de nez (VB 10) — classe B interdit sur cette cellule
+			module = zv_engine_config_twin_nose_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Bimoteur de nez (VB 10) — classe C interdit sur cette cellule
+			module = zv_engine_config_twin_nose_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tandem nez-queue (Do 335) — classe A interdit sur cette cellule
+			module = zv_engine_config_tandem_a
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tandem nez-queue (Do 335) — classe B interdit sur cette cellule
+			module = zv_engine_config_tandem_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tandem nez-queue (Do 335) — classe C interdit sur cette cellule
+			module = zv_engine_config_tandem_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Moteur de queue (propulsif) — classe A interdit sur cette cellule
+			module = zv_engine_config_tail_a
+			count < 1
+		}
+		module_count_limit = {	# ZV: Moteur de queue (propulsif) — classe B interdit sur cette cellule
+			module = zv_engine_config_tail_b
+			count < 1
+		}
+		module_count_limit = {	# ZV: Moteur de queue (propulsif) — classe C interdit sur cette cellule
+			module = zv_engine_config_tail_c
+			count < 1
+		}
+		module_count_limit = {	# ZV: Moteur de queue (propulsif) — classe D interdit sur cette cellule
+			module = zv_engine_config_tail_d
+			count < 1
+		}
+		module_count_limit = {	# ZV: Essence à haut indice d'octane (S) interdit sur cette cellule
+			module = zv_high_octane_fuel_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Essence à haut indice d'octane (M) interdit sur cette cellule
+			module = zv_high_octane_fuel_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Injection d'eau-méthanol (S) interdit sur cette cellule
+			module = zv_water_injection_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Injection d'eau-méthanol (M) interdit sur cette cellule
+			module = zv_water_injection_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Régime d'urgence WEP (S) interdit sur cette cellule
+			module = zv_wep_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Régime d'urgence WEP (M) interdit sur cette cellule
+			module = zv_wep_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Une seule suralimentation par design (limite partagée). (zv_limit_supercharger)
+			module = zv_early_supercharger
+			module = zv_early_turbocharger
+			module = zv_supercharger
+			module = zv_turbocharger
+			module = zv_improved_supercharger
+			module = zv_two_stage_supercharger
+			module = zv_improved_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Régime d'urgence par design (09)
+			category = zv_cat_regime_d_urgence
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Refroidissement par design (09)
+			category = zv_cat_refroidissement
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Carénage moteur par design (09)
+			category = zv_cat_carenage_moteur
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Prise d'air par design (09)
+			category = zv_cat_prise_d_air
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Améliorations de réacteur par design (09)
+			category = zv_cat_ameliorations_de_reacteur
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_early_supercharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_early_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_supercharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_improved_supercharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_two_stage_supercharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_improved_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_high_octane_fuel_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_high_octane_fuel_m
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_high_octane_fuel_l
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_water_injection_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_water_injection_m
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_water_injection_l
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_gm1
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_direct_injection
+			count < 2
+		}
+		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
+			module = zv_anti_g_carburettor
+			count < 2
 		}
 
 		# ZV: les 15 module_count_limit vanilla sont retirés
@@ -1999,6 +2791,10 @@ equipments = {
 		weight = 16
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	large_plane_airframe_1 = { #Basic
@@ -2023,6 +2819,10 @@ equipments = {
 			rubber = 2
 		}
 		module_slots = inherit	# ZV: mêmes slots à tous les paliers (02 §1.4)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	large_plane_airframe_2 = { #Improved
@@ -2047,6 +2847,10 @@ equipments = {
 			rubber = 2
 		}
 		module_slots = inherit	# ZV: mêmes slots à tous les paliers (02 §1.4)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	large_plane_airframe_3 = { #Advanced
@@ -2071,6 +2875,10 @@ equipments = {
 			rubber = 2
 		}
 		module_slots = inherit	# ZV: mêmes slots à tous les paliers (02 §1.4)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 
 	large_plane_airframe_4 = { #Modern
@@ -2095,5 +2903,9 @@ equipments = {
 			rubber = 2
 		}
 		module_slots = inherit	# ZV: mêmes slots à tous les paliers (02 §1.4)
+		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
+			zv_engine_power_upgrade
+			zv_reliability_upgrade
+		}
 	}
 }

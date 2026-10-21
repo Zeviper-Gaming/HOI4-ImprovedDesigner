@@ -57,6 +57,52 @@ MISSIONS = {
     "kamikaze naval": "naval_kamikaze",
 }
 
+# Groupes de missions écrits en toutes lettres dans le 05 (« en … : »). Les autres formulations
+# se découpent sur « , » et « et » puis passent par MISSIONS.
+# « missions de bombardier » = liste vanilla des tourelles (00_plane_modules.txt, lmg_defense_turret).
+_BOMBARDIER = ["naval_bomber", "port_strike", "strategic_bomber", "naval_patrol", "cas",
+               "attack_logistics", "naval_mines_planting"]
+MISSION_GROUPS = {
+    "combat aérien (supériorité, interception)": ["air_superiority", "interception"],
+    "attaque au sol (appui rapproché, attaque logistique)": ["cas", "attack_logistics"],
+    "missions de bombardier (attaque, frappe navale et stratégique, patrouille, mines)": _BOMBARDIER,
+    "missions avec charge": _BOMBARDIER,          # 💡 charge emportée = mêmes missions que les tourelles
+    "attaque au sol et frappe navale": ["cas", "attack_logistics", "naval_bomber", "port_strike"],
+    "attaque à basse altitude (sol, mer, patrouille)": ["cas", "attack_logistics", "naval_bomber",
+                                                        "port_strike", "naval_patrol"],
+}
+MISSIONS.update({"ravitaillement aérien": "air_supply", "parachutage": "paradrop"})  # quad_engine_airframe.txt
+
+# Ressources (libellés du 05 -> clés de build_cost_resources, 00_plane_modules.txt).
+RESOURCES = {"chrome": "chromium", "tungstène": "tungsten", "aluminium": "aluminium",
+             "caoutchouc": "rubber", "acier": "steel", "pétrole": "oil"}
+
+# Une seule par design (09, « Limites à ajouter ») ; Alimentation : 2 places (slots Modules Moteurs).
+ONE_PER_DESIGN = ["Radio", "Blindage du cockpit", "Réservoir interne", "Radar", "Viseur de bombardement",
+                  "Navigation", "Alerte radar", "Régime d'urgence", "Refroidissement", "Carénage moteur",
+                  "Prise d'air", "Améliorations de réacteur"]
+ONE_OF_EACH = ["Alimentation"]        # 05 : un exemplaire de chaque module au plus
+SHARED_LIMIT_TEXT = {                 # limites partagées citées dans la colonne « limite » du 05
+    "Une seule suralimentation par design (limite partagée).": ("zv_limit_supercharger", 2),
+}
+
+# Curseurs (décision du 22/10/2026, 05 « Réglages ») : 0 à 10, cran 5 = usine. Effet PAR CRAN.
+# « add » = add_stats ; « mult » = multiplicateur (clé au premier niveau de l'upgrade, comme
+# air_upgrades.txt). Le cran 5 est neutralisé en retirant 5 crans dans chaque module de moteur.
+CURSEURS = {
+    "zv_engine_power_upgrade": {
+        "nom": "Puissance", "abbr": "zvp",
+        "add": {"thrust": 0.2, "fuel_consumption": 0.01, "reliability": -0.03, "build_cost_ic": 0.2},
+        "mult": {"maximum_speed": 0.008},
+    },
+    "zv_reliability_upgrade": {
+        "nom": "Fiabilité", "abbr": "zvf",
+        "add": {"reliability": 0.025},
+        "mult": {"build_cost_ic": 0.02},
+    },
+}
+CURSEUR_MAX, CURSEUR_USINE = 10, 5
+
 # Catégorie des 13 modules fantômes : aucun slot ne l'accepte (décision D-14).
 PHANTOM_CATEGORY = "zv_cat_phantom"
 
@@ -70,7 +116,13 @@ KIT_PHASE_1 = [
     "zv_engine_inline_1", "zv_engine_config_nose_a", "zv_engine_config_twin_wing_a",
     "zv_role_fighter_small", "zv_light_mg_2x",
 ]
-MODULES = KIT_PHASE_1
+# Phase 2 : moteurs, configurations, hélices et accessoires de moteur (les 8 modules de réglage
+# ne sont pas générés : ce sont les curseurs).
+PHASE_2_CATEGORIES = ["Moteur", "Motorisation", "Hélice", "Module d'hélice", "Alimentation",
+                      "Régime d'urgence", "Refroidissement", "Carénage moteur", "Prise d'air",
+                      "Améliorations de réacteur"]
+MODULES = KIT_PHASE_1            # complété par gen_mod.py avec les catégories des phases faites
+PHASES_CATEGORIES = PHASE_2_CATEGORIES
 
 # Icônes PROVISOIRES (cahier §6) : sprite vanilla dont on reprend l'image, en attendant les
 # vraies icônes (phase 8). Clé = module du mod, valeur = sprite de interface/plane_modules_icons.gfx.
@@ -89,6 +141,27 @@ ICONES_PROVISOIRES = {
     "zv_role_fighter_small": "GFX_EMI_fighter_weapon",
     "zv_light_mg_2x": "GFX_EMI_light_mg_2x",
 }
+
+# Icônes provisoires par règle, quand le module n'est pas dans ICONES_PROVISOIRES :
+# (expression sur l'identifiant, sprite vanilla), la première qui correspond l'emporte.
+ICONES_REGLES = [
+    (r"zv_engine_(rotary|radial|inline|v|flat|diesel)_(\d)", lambda m: f"GFX_EMI_engine_{min(int(m[2]), 4)}_1x"),
+    (r"zv_engine_pulsejet", "GFX_EMI_jet_engine_1x"),
+    (r"zv_engine_centrifugal_(\d)", lambda m: f"GFX_EMI_jet_engine_{m[1]}x"),
+    (r"zv_engine_axial_(\d)", lambda m: f"GFX_EMI_jet_engine_axial_{m[1]}x"),
+    (r"zv_engine_turboprop", "GFX_EMI_engine_4_1x"),
+    (r"zv_engine_rocket_(\d)", lambda m: f"GFX_EMI_rocket_engine_{m[1]}"),
+    (r"zv_engine_config_\w+_d$", "GFX_EMI_plane_rocket_engine_type"),
+    (r"zv_engine_config_(nose|tail)_([abc])", lambda m: f"GFX_EMI_engine_{'abc'.index(m[2]) + 1}_1x"),
+    (r"zv_engine_config_(twin_wing|twin_nose|tandem)_([abc])", lambda m: f"GFX_EMI_engine_{'abc'.index(m[2]) + 1}_2x"),
+    (r"zv_engine_config_tri_([abc])", lambda m: f"GFX_EMI_engine_{'abc'.index(m[1]) + 1}_3x"),
+    (r"zv_engine_config_(quad|quad_tandem|quint)_([abc])", lambda m: f"GFX_EMI_engine_{'abc'.index(m[2]) + 1}_4x"),
+    (r"zv_engine_config_hexa_([abc])", lambda m: f"GFX_EMI_engine_{'abc'.index(m[1]) + 1}_6x"),
+    (r"zv_prop_", "GFX_EMI_plane_engine_type"),
+    (r"zv_(air_intake|jet_|afterburner|supersonic)", "GFX_EMI_plane_jet_engine_type"),
+    (r"zv_(radiator|naca)", "GFX_EMI_plane_special_module_medium"),
+    (r"zv_", "GFX_EMI_plane_special_module_small"),
+]
 
 # Tech temporaire qui débloque le kit pour le contrôle rapide n° 1 ; retirée en phase 4.
 TEST_TECH = "zv_test_kit"

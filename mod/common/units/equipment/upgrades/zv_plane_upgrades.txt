@@ -1,0 +1,35 @@
+# ZV Designer : curseurs de puissance et de fiabilité, générés par scripts/gen_mod.py.
+# Crans 0 à 10 ; le cran 5 (usine) est neutralisé dans les modules de moteur.
+# Modèle : tank_nsb_engine_upgrade (land_upgrades.txt) ; multiplicateurs au premier niveau
+# comme plane_engine_upgrade (air_upgrades.txt).
+upgrades = {
+	zv_engine_power_upgrade = {	# Puissance
+		abbreviation = "zvp"
+		max_level = 10
+		cost = air
+		linear_cost = {	# ZV: aucun coût en expérience par cran (🧪)
+			cost_by_level = 0
+			cost_by_level_for_licensed_equipment = 0
+		}
+		maximum_speed = 0.008
+		add_stats = {
+			thrust = 0.2
+			fuel_consumption = 0.01
+			reliability = -0.03
+			build_cost_ic = 0.2
+		}
+	}
+	zv_reliability_upgrade = {	# Fiabilité
+		abbreviation = "zvf"
+		max_level = 10
+		cost = air
+		linear_cost = {	# ZV: aucun coût en expérience par cran (🧪)
+			cost_by_level = 0
+			cost_by_level_for_licensed_equipment = 0
+		}
+		build_cost_ic = 0.02
+		add_stats = {
+			reliability = 0.025
+		}
+	}
+}

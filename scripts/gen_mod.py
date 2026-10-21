@@ -34,6 +34,10 @@ MODS = {m["id"]: m for m in load("modules.json")}
 PHANTOMS = load("modules_fantomes.json")["modules"]
 CAT_ID = {name: c["id_propose"] for name, c in CATS.items()}
 
+# Modules générés : le kit, puis tous les modules des catégories des phases déjà codées (ordre du 05).
+MODULE_IDS = list(dict.fromkeys(T.KIT_PHASE_1 + [m for m, x in MODS.items()
+                                                 if x["categorie"] in T.PHASES_CATEGORIES]))
+
 
 class GenError(Exception):
     pass
@@ -172,15 +176,40 @@ def allowed_sizes(m):
     return sizes
 
 
-def size_limits_text(size, ind):
+def limits_text(size, ind):
+    """Limites du mod pour un archétype : tailles, limites partagées, une par design (09, 05)."""
     t = "\t" * ind
     out = []
-    for mid in T.MODULES:
+
+    def limit(comment, conds, count):
+        out.append(f"{t}module_count_limit = {{\t# ZV: {comment}")
+        out.extend(f"{t}\t{c}" for c in conds)
+        out.extend([f"{t}\tcount < {count}", f"{t}}}"])
+
+    for mid in MODULE_IDS:
         sizes = allowed_sizes(MODS[mid])
         if sizes is not None and size not in sizes:
-            out += [f"{t}module_count_limit = {{\t# ZV: {MODS[mid]['nom']} interdit sur cette cellule",
-                    f"{t}\tmodule = {mid}", f"{t}\tcount < 1", f"{t}}}"]
+            limit(f"{MODS[mid]['nom']} interdit sur cette cellule", [f"module = {mid}"], 1)
+    for text, (name, count) in T.SHARED_LIMIT_TEXT.items():
+        mods = [mid for mid in MODULE_IDS if text in MODS[mid].get("regles", {}).get("limites", [])]
+        if mods:
+            limit(f"{text} ({name})", [f"module = {mid}" for mid in mods], count)
+    generated_cats = {MODS[mid]["categorie"] for mid in MODULE_IDS}
+    for grouped in T.ONE_PER_DESIGN:
+        if grouped in generated_cats:
+            for c in game_cats(grouped, size):
+                limit(f"une seule {grouped} par design (09)", [f"category = {c}"], 2)
+    for grouped in T.ONE_OF_EACH:
+        for mid in MODULE_IDS:
+            if MODS[mid]["categorie"] == grouped:
+                limit(f"un seul exemplaire ({grouped}, 05)", [f"module = {mid}"], 2)
     return "\n".join(out)
+
+
+def upgrades_list(ind):
+    t = "\t" * ind
+    return f"{t}upgrades = {{\t# ZV: curseurs de puissance et de fiabilité (22/10)\n" + \
+        "".join(f"{t}\t{u}\n" for u in T.CURSEURS) + f"{t}}}"
 
 
 # ---------------------------------------------------------------- cellules
@@ -211,9 +240,9 @@ def gen_airframes(ref):
                 elif k == "fuel_consumption":
                     rep.append((a, b, "0\t# ZV: la consommation vient des moteurs (D-07)"))
                 elif k == "module_slots":
-                    limits = size_limits_text(size, 2)
-                    new = module_slots_text(size, 2)
-                    new += "\n\t\t# ZV: limites vanilla retirées ; limites du mod ci-dessous (phase 1 : tailles)"
+                    limits = limits_text(size, 2)
+                    new = module_slots_text(size, 2) + "\n" + upgrades_list(2)
+                    new += "\n\t\t# ZV: limites vanilla retirées ; limites du mod ci-dessous"
                     if limits:
                         new += "\n" + limits
                     rep.append((s0, b, new.lstrip("\t")))
@@ -223,6 +252,7 @@ def gen_airframes(ref):
                 elif k == "default_modules":
                     rep.append((s0, b, "# ZV: default_modules vanilla retiré (slots vides, D-25)"))
         else:
+            rep.append((v1 - 1, v1 - 1, "\t" + upgrades_list(2).lstrip("\t") + "\n\t"))   # avant l'accolade fermante
             for k, s0, a, b, blk in sub:
                 if k == "module_slots" and blk:
                     rep.append((a, b, "inherit\t# ZV: mêmes slots à tous les paliers (02 §1.4)"))
@@ -276,43 +306,88 @@ def interdits(m):
     return list(dict.fromkeys(out))
 
 
-def effects(m):
-    add, mult, cost_ic = {}, {}, None
-    for item in m["gains"] + m["prix"]:
-        txt, stat, val = item["texte"], item.get("stat"), item.get("valeur")
-        if "Aucun effet" in txt:
-            continue
-        if stat is None:
-            mc = re.search(r"Coût [\d,]+ IC par moteur \(([+−-]?[\d,]+) dans le module", txt)
-            mt = re.search(r"Coût ([\d,]+) IC \(\d+ × \d+ \+ installation \d+\)", txt)
-            if mc:
-                cost_ic = num(mc.group(1))
-            elif mt:
-                cost_ic = num(mt.group(1))
-            else:
-                raise GenError(f"{m['id']} : effet non converti « {txt} » (ligne {m['ligne_05']} du 05)")
-            continue
-        if txt.startswith(("🟢 en ", "🔴 en ")) or " : " in val:
-            raise GenError(f"{m['id']} : effet de mission non géré « {txt} »")
-        if (mx := re.fullmatch(r"×([\d,]+) celle d'un moteur", val)):
-            mult[stat] = mult.get(stat, 0) + num(mx.group(1))
-        elif (mp := re.fullmatch(r"([+−-]?[\d,]+) %( du coût total)?", val)):
-            mult[stat] = mult.get(stat, 0) + num(mp.group(1)) / 100
-        elif (ma := re.fullmatch(r"([+−-]?[\d,]+)( par moteur| IC)?", val)):
-            add[stat] = add.get(stat, 0) + num(ma.group(1))
+def missions_of(phrase, mid):
+    """Missions d'une formulation « en … : » du 05."""
+    if phrase in T.MISSION_GROUPS:
+        return list(T.MISSION_GROUPS[phrase])
+    out = []
+    for part in re.split(r", | et ", phrase):
+        part = part.strip()
+        if part in T.MISSION_GROUPS:
+            out += T.MISSION_GROUPS[part]
+        elif part in T.MISSIONS:
+            out.append(T.MISSIONS[part])
+        elif part == "stratégique" and out and out[-1] == "naval_bomber":   # « frappe navale et stratégique »
+            out.append("strategic_bomber")
         else:
-            raise GenError(f"{m['id']} : valeur non convertie « {val} » ({txt})")
+            raise GenError(f"{mid} : mission inconnue « {part} » dans « {phrase} »")
+    return list(dict.fromkeys(out))
+
+
+def _effect(block, stat, val, avg, mid, txt):
+    """Range un effet (« +2 % », « 11 par moteur », « ×1,55 celle d'un moteur »…) dans un bloc."""
+    if (mx := re.fullmatch(r"×([\d,]+) celle d'un moteur", val)):
+        key, v = "mult", num(mx.group(1))
+    elif (mp := re.fullmatch(r"([+−-]?[\d,]+) %( du coût total)?", val)):
+        key, v = "mult", num(mp.group(1)) / 100
+    elif (ma := re.fullmatch(r"([+−-]?[\d,]+)( par moteur| IC)?", val)):
+        key, v = ("avg" if avg else "add"), num(ma.group(1))
+    else:
+        raise GenError(f"{mid} : valeur non convertie « {val} » ({txt})")
+    block[key][stat] = block[key].get(stat, 0) + v
+
+
+PART = re.compile(r"(?P<lib>[^(]+?) \(`(?P<stat>\w+)`(?P<avg>, moyenne)?\) (?P<val>.+)")
+
+
+def effects(m):
+    """Effets d'un module : bloc permanent, blocs par missions, ressources (texte du 05)."""
+    mid = m["id"]
+    perm = {"add": {}, "mult": {}, "avg": {}}
+    by_mission, resources, cost_ic = {}, {}, None
+    for item in m["gains"] + m["prix"]:
+        txt = item["texte"]
+        body = txt[2:].strip()                       # sans l'emoji 🟢 / 🔴 / ⚪
+        if "Aucun effet" in body:
+            continue
+        if (mc := re.match(r"Coût [\d,]+ IC par moteur \(([+−-]?[\d,]+) dans le module", body)):
+            cost_ic = num(mc.group(1))
+            continue
+        if (mt := re.match(r"Coût ([\d,]+) IC \(\d+ × \d+ \+ installation \d+\)", body)):
+            cost_ic = num(mt.group(1))
+            continue
+        if (mr := re.fullmatch(r"(\w+) ([+−-][\d,]+)", body)) and mr.group(1) in T.RESOURCES:
+            res = T.RESOURCES[mr.group(1)]
+            resources[res] = resources.get(res, 0) + num(mr.group(2))
+            continue
+        if (mm := re.match(r"en (.+?) : (.+)$", body)):
+            ms = tuple(missions_of(mm.group(1), mid))
+            block = by_mission.setdefault(ms, {"add": {}, "mult": {}, "avg": {}})
+            parts = re.split(r", (?=[A-ZÉÈÀ])", mm.group(2))
+        else:
+            block, parts = perm, [body]
+        for p in parts:
+            pm = PART.fullmatch(p.strip())
+            if not pm:
+                raise GenError(f"{mid} : effet non converti « {txt} » (ligne {m['ligne_05']} du 05)")
+            _effect(block, pm["stat"], pm["val"].strip(), bool(pm["avg"]), mid, txt)
     if cost_ic:
-        add["build_cost_ic"] = add.get("build_cost_ic", 0) + cost_ic
-    if m["categorie_jeu"] == "Moteur":       # astuce des moteurs (03) : le moteur annule sa poussée
-        mult["thrust"] = mult.get("thrust", 0) - 1
-        mult["fuel_consumption"] = mult.get("fuel_consumption", 0) - 1
-    return add, mult
+        perm["add"]["build_cost_ic"] = perm["add"].get("build_cost_ic", 0) + cost_ic
+    if m["categorie_jeu"] == "Moteur":
+        # Astuce des moteurs (03) : le moteur annule sa propre poussée et sa consommation.
+        perm["mult"]["thrust"] = perm["mult"].get("thrust", 0) - 1
+        perm["mult"]["fuel_consumption"] = perm["mult"].get("fuel_consumption", 0) - 1
+        # Curseurs (05 « Réglages ») : le cran d'usine (5) est rendu neutre ici, slot obligatoire.
+        for u in T.CURSEURS.values():
+            for kind, key in (("add", "add"), ("mult", "mult")):
+                for stat, v in u[kind].items():
+                    perm[key][stat] = perm[key].get(stat, 0) - T.CURSEUR_USINE * v
+    return perm, by_mission, resources
 
 
 def module_text(m, abbr):
     t = "\t\t"
-    add, mult = effects(m)
+    perm, by_mission, resources = effects(m)
     cat = CAT_ID[m["categorie_jeu"]]
     sfx = "sfx_ui_sd_module_engine" if m["categorie"] in ("Moteur", "Motorisation") else "sfx_ui_sd_module_turret"
     L = [f"\t{m['id']} = {{\t# {m['nom']} (05, ligne {m['ligne_05']})",
@@ -321,11 +396,27 @@ def module_text(m, abbr):
     types = [re.search(r"type `(\w+)`", d).group(1) for d in deb if d.startswith("type ")]
     if types:
         L.append(f"{t}add_equipment_type = {{ {' '.join(types)} }}")
-    for name, block in (("add_stats", add), ("multiply_stats", mult)):
-        if block:
-            L.append(f"{t}{name} = {{")
-            L += [f"{t}\t{k} = {fmt(v)}" for k, v in block.items()]
-            L.append(f"{t}}}")
+    def blocks(b, ind):
+        out = []
+        for name, key in (("add_stats", "add"), ("multiply_stats", "mult"), ("add_average_stats", "avg")):
+            if b[key]:
+                out.append(f"{ind}{name} = {{")
+                out += [f"{ind}\t{k} = {fmt(v)}" for k, v in b[key].items()]
+                out.append(f"{ind}}}")
+        return out
+    L += blocks(perm, t)
+    if m["categorie_jeu"] == "Moteur":
+        L.append(f"{t}# ZV: les effets ci-dessus comptent −{T.CURSEUR_USINE} crans de chaque curseur "
+                 f"(cran {T.CURSEUR_USINE} = usine, neutre)")
+    for ms, b in by_mission.items():
+        L.append(f"{t}mission_type_stats = {{")
+        L.append(f"{t}\tlimit = {{ {' '.join(ms)} }}")
+        L += blocks(b, t + "\t")
+        L.append(f"{t}}}")
+    if resources:
+        L.append(f"{t}build_cost_resources = {{")
+        L += [f"{t}\t{k} = {fmt(v)}" for k, v in resources.items()]
+        L.append(f"{t}}}")
     for d in deb:
         if d.startswith("missions :"):
             ms = [T.MISSIONS[x.strip()] for x in d.split(":", 1)[1].split(",")]
@@ -344,7 +435,7 @@ def gen_modules():
     L = ["# ZV Designer : fichier généré par scripts/gen_mod.py (données : data/modules.json, docs/05).",
          "# Ne pas modifier à la main. Écrase le 00_plane_modules.txt vanilla.",
          "equipment_modules = {", "\tlimit = {", '\t\thas_dlc = "By Blood Alone"', "\t}", ""]
-    for mid in T.MODULES:
+    for mid in MODULE_IDS:
         L.append(module_text(MODS[mid], "z" + format(order.index(mid), "03x")))
         L.append("")
     L.append("\t# Modules fantômes (décision D-14) : identifiants vanilla encore cités par des techs")
@@ -359,7 +450,7 @@ def gen_modules():
 # ---------------------------------------------------------------- tech temporaire, localisation
 
 def gen_test_tech():
-    mods = "\n".join("\t\t\t" + m for m in T.MODULES)
+    mods = "\n".join("\t\t\t" + m for m in MODULE_IDS)
     # Onglet Aviation : la tech a son propre gridbox zv_test_kit_tree dans mod/interface/
     # countrytechtreeview.gui (x = 815, colonne vide en 1933-1936) ; y = 2 = ligne de 1933.
     # Coût quasi nul : recherchée en un jour ou deux, sans console.
@@ -377,14 +468,38 @@ def gen_icons(ref):
     tex = dict(re.findall(r'name\s*=\s*"(GFX_EMI_\w+)"\s*\n\s*texture[Ff]ile\s*=\s*"([^"]+)"', src))
     L = ["# ZV Designer : icônes PROVISOIRES, générées par scripts/gen_mod.py (images vanilla).",
          "spriteTypes = {"]
-    for mid in T.MODULES:
+    for mid in MODULE_IDS:
         borrowed = T.ICONES_PROVISOIRES.get(mid)
+        for pattern, sprite in ([] if borrowed else T.ICONES_REGLES):
+            if (mr := re.match(pattern, mid)):
+                borrowed = sprite(mr) if callable(sprite) else sprite
+                break
         if borrowed is None:
             raise GenError(f"{mid} : pas d'icône provisoire dans la table")
         if borrowed not in tex:
             raise GenError(f"{mid} : sprite vanilla introuvable {borrowed}")
         L += ["\tspriteType = {", f'\t\tname = "GFX_EMI_{mid}"', f'\t\ttextureFile = "{tex[borrowed]}"',
               "\t\tlegacy_lazy_load = no", "\t}"]
+    L.append("}")
+    return "\n".join(L) + "\n"
+
+
+def gen_upgrades():
+    """Curseurs (05 « Réglages », décision du 22/10/2026) : effet égal à chaque cran."""
+    L = ["# ZV Designer : curseurs de puissance et de fiabilité, générés par scripts/gen_mod.py.",
+         f"# Crans 0 à {T.CURSEUR_MAX} ; le cran {T.CURSEUR_USINE} (usine) est neutralisé dans les modules de moteur.",
+         "# Modèle : tank_nsb_engine_upgrade (land_upgrades.txt) ; multiplicateurs au premier niveau",
+         "# comme plane_engine_upgrade (air_upgrades.txt).",
+         "upgrades = {"]
+    for uid, u in T.CURSEURS.items():
+        L += [f"\t{uid} = {{\t# {u['nom']}", f'\t\tabbreviation = "{u["abbr"]}"',
+              f"\t\tmax_level = {T.CURSEUR_MAX}", "\t\tcost = air",
+              "\t\tlinear_cost = {\t# ZV: aucun coût en expérience par cran (🧪)",
+              "\t\t\tcost_by_level = 0", "\t\t\tcost_by_level_for_licensed_equipment = 0", "\t\t}"]
+        L += [f"\t\t{k} = {fmt(v)}" for k, v in u["mult"].items()]
+        L.append("\t\tadd_stats = {")
+        L += [f"\t\t\t{k} = {fmt(v)}" for k, v in u["add"].items()]
+        L += ["\t\t}", "\t}"]
     L.append("}")
     return "\n".join(L) + "\n"
 
@@ -396,12 +511,15 @@ def q(s):
 def gen_loc():
     L = ["l_french:"]
     L.append(f' {T.TEST_TECH}:0 "ZV : kit de test (temporaire)"')
-    L.append(f' {T.TEST_TECH}_desc:0 "Débloque le kit minimal du contrôle rapide n° 1."')
+    L.append(f' {T.TEST_TECH}_desc:0 "Débloque les modules déjà codés, pour les contrôles rapides."')
+    for uid, u in T.CURSEURS.items():
+        L.append(f' {uid}:0 "{u["nom"]}"')
+        L.append(f' {uid}_desc:0 "Cran {T.CURSEUR_USINE} = réglage d’usine. Effet par cran : voir 05, « Réglages »."')
     for s in SLOTS:
         L.append(f' EQ_MOD_SLOT_{s["id_propose"]}_TITLE:0 "{q(s["slot"])}"')
     for name, c in CATS.items():
         L.append(f' EQ_MOD_CAT_{c["id_propose"]}_TITLE:0 "{q(name)}"')
-    for mid in T.MODULES:
+    for mid in MODULE_IDS:
         m = MODS[mid]
         L.append(f' {mid}:0 "{q(m["nom"])}"')
         L.append(f' {mid}_desc:0 "{q(m.get("pourquoi") or "")}"')
@@ -427,6 +545,7 @@ def main():
         write(f"common/technologies/{T.TEST_TECH}.txt", gen_test_tech())
         write("localisation/french/zv_designer_l_french.yml", gen_loc(), bom=True)
         write("interface/zv_plane_modules_icons.gfx", gen_icons(ref))
+        write("common/units/equipment/upgrades/zv_plane_upgrades.txt", gen_upgrades())
     except GenError as e:
         sys.exit(f"ERREUR : {e}")
     for a in T.ARCHETYPES:

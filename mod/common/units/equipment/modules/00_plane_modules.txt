@@ -5,49 +5,49 @@ equipment_modules = {
 		has_dlc = "By Blood Alone"
 	}
 
-	zv_fuselage_classic_s = {	# Fuselage classique (S) — référence (05, ligne 233)
+	zv_fuselage_classic_s = {	# Fuselage classique (S) — référence (05, ligne 235)
 		abbreviation = "z06e"
 		category = zv_cat_fuselage
 		sfx = sfx_ui_sd_module_turret
 	}
 
-	zv_fuselage_classic_m = {	# Fuselage classique (M) — référence (05, ligne 234)
+	zv_fuselage_classic_m = {	# Fuselage classique (M) — référence (05, ligne 236)
 		abbreviation = "z06f"
 		category = zv_cat_fuselage
 		sfx = sfx_ui_sd_module_turret
 	}
 
-	zv_fuselage_classic_l = {	# Fuselage classique (L) — référence (05, ligne 235)
+	zv_fuselage_classic_l = {	# Fuselage classique (L) — référence (05, ligne 237)
 		abbreviation = "z070"
 		category = zv_cat_fuselage
 		sfx = sfx_ui_sd_module_turret
 	}
 
-	zv_wing_basse_trapezoidale = {	# Basse trapézoïdale — référence (05, ligne 353)
+	zv_wing_basse_trapezoidale = {	# Basse trapézoïdale — référence (05, ligne 355)
 		abbreviation = "z0a0"
 		category = zv_cat_aile_basse
 		sfx = sfx_ui_sd_module_turret
 	}
 
-	zv_tail_classic = {	# Empennage classique — référence (05, ligne 257)
+	zv_tail_classic = {	# Empennage classique — référence (05, ligne 259)
 		abbreviation = "z07f"
 		category = zv_cat_empennage
 		sfx = sfx_ui_sd_module_turret
 	}
 
-	zv_cockpit_closed = {	# Cockpit fermé — référence (05, ligne 420)
+	zv_cockpit_closed = {	# Cockpit fermé — référence (05, ligne 422)
 		abbreviation = "z0dc"
 		category = zv_cat_cockpit
 		sfx = sfx_ui_sd_module_turret
 	}
 
-	zv_prop_3_metal = {	# Hélice 3 pales (métal) — référence (05, ligne 175)
+	zv_prop_3_metal = {	# Hélice 3 pales (métal) — référence (05, ligne 177)
 		abbreviation = "z049"
 		category = zv_cat_helice
 		sfx = sfx_ui_sd_module_turret
 	}
 
-	zv_gear_fixed_taildragger = {	# Train fixe caréné à roulette de queue — référence (05, ligne 303)
+	zv_gear_fixed_taildragger = {	# Train fixe caréné à roulette de queue — référence (05, ligne 305)
 		abbreviation = "z098"
 		category = zv_cat_train_d_atterrissage
 		sfx = sfx_ui_sd_module_turret
@@ -58,15 +58,19 @@ equipment_modules = {
 		category = zv_cat_moteur
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
-			thrust = 10
+			thrust = 9
 			air_agility = 1
-			fuel_consumption = 0.14
-			reliability = -0.01
+			fuel_consumption = 0.09
+			reliability = 0.015
+			build_cost_ic = -1
 		}
 		multiply_stats = {
 			thrust = -1
 			fuel_consumption = -1
+			maximum_speed = -0.04
+			build_cost_ic = -0.1
 		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
 		forbid_module_categories = {
 			zv_cat_motorisation_ailes_b
 			zv_cat_motorisation_ailes_c
@@ -112,7 +116,7 @@ equipment_modules = {
 		}
 	}
 
-	zv_role_fighter_small = {	# Chasseur (P) (05, ligne 644)
+	zv_role_fighter_small = {	# Chasseur (P) (05, ligne 646)
 		abbreviation = "z178"
 		category = zv_cat_role_petite
 		sfx = sfx_ui_sd_module_turret
@@ -122,7 +126,7 @@ equipment_modules = {
 		}
 	}
 
-	zv_light_mg_2x = {	# Mitrailleuses légères x2 (05, ligne 452)
+	zv_light_mg_2x = {	# Mitrailleuses légères x2 (05, ligne 454)
 		abbreviation = "z0ee"
 		category = zv_cat_mitrailleuses
 		sfx = sfx_ui_sd_module_turret
@@ -132,6 +136,2218 @@ equipment_modules = {
 			weight = 1
 		}
 		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_engine_v_1 = {	# En V I (05, ligne 70)
+		abbreviation = "z000"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 10
+			fuel_consumption = 0.11
+			air_agility = -1
+			reliability = 0.005
+			build_cost_ic = 0
+		}
+		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
+			maximum_speed = -0.04
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_b
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_b
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_b
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_carenage_moteur
+		}
+	}
+
+	zv_engine_v_2 = {	# En V II (05, ligne 71)
+		abbreviation = "z001"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 15
+			fuel_consumption = 0.12
+			air_agility = -1
+			reliability = 0.005
+			build_cost_ic = -2
+		}
+		multiply_stats = {
+			maximum_speed = 0.08
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_carenage_moteur
+		}
+	}
+
+	zv_engine_v_3 = {	# En V III (05, ligne 72)
+		abbreviation = "z002"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 23
+			fuel_consumption = 0.13
+			air_agility = -1
+			reliability = 0.005
+			build_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.16
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_carenage_moteur
+		}
+	}
+
+	zv_engine_v_4 = {	# En V IV (05, ligne 73)
+		abbreviation = "z003"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 27
+			fuel_consumption = 0.14
+			air_agility = -1
+			reliability = 0.005
+			build_cost_ic = -1
+		}
+		multiply_stats = {
+			maximum_speed = 0.28
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_b
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_b
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_b
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_carenage_moteur
+		}
+	}
+
+	zv_engine_inline_2 = {	# En ligne II (05, ligne 75)
+		abbreviation = "z005"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 13
+			air_agility = 1
+			fuel_consumption = 0.1
+			reliability = 0.015
+			build_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.06
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_b
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_b
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_b
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_carenage_moteur
+		}
+	}
+
+	zv_engine_inline_3 = {	# En ligne III (05, ligne 76)
+		abbreviation = "z006"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 20
+			air_agility = 1
+			fuel_consumption = 0.11
+			reliability = 0.015
+			build_cost_ic = -2
+		}
+		multiply_stats = {
+			maximum_speed = 0.13
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_carenage_moteur
+		}
+	}
+
+	zv_engine_inline_4 = {	# En ligne IV (05, ligne 77)
+		abbreviation = "z007"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 24
+			air_agility = 1
+			fuel_consumption = 0.12
+			reliability = 0.015
+			build_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.24
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_carenage_moteur
+		}
+	}
+
+	zv_engine_radial_1 = {	# En étoile I (05, ligne 78)
+		abbreviation = "z008"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 11
+			air_defence = 1
+			reliability = 0.065
+			fuel_consumption = 0.12
+			air_agility = -2
+			build_cost_ic = 0
+		}
+		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
+			maximum_speed = -0.04
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_b
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_b
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_b
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_refroidissement
+		}
+	}
+
+	zv_engine_radial_2 = {	# En étoile II (05, ligne 79)
+		abbreviation = "z009"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 15
+			air_defence = 1
+			reliability = 0.065
+			fuel_consumption = 0.13
+			air_agility = -2
+			build_cost_ic = -3
+		}
+		multiply_stats = {
+			maximum_speed = 0.04
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_refroidissement
+		}
+	}
+
+	zv_engine_radial_3 = {	# En étoile III (05, ligne 80)
+		abbreviation = "z00a"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 22
+			air_defence = 1
+			reliability = 0.065
+			fuel_consumption = 0.14
+			air_agility = -2
+			build_cost_ic = -1
+		}
+		multiply_stats = {
+			maximum_speed = 0.11
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_refroidissement
+		}
+	}
+
+	zv_engine_radial_4 = {	# En étoile IV (05, ligne 81)
+		abbreviation = "z00b"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 26
+			air_defence = 1
+			reliability = 0.065
+			fuel_consumption = 0.15
+			air_agility = -2
+			build_cost_ic = -2
+		}
+		multiply_stats = {
+			maximum_speed = 0.22
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_b
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_b
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_b
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_refroidissement
+		}
+	}
+
+	zv_engine_rotary_1 = {	# Rotatif I (05, ligne 82)
+		abbreviation = "z00c"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 9
+			air_agility = 2
+			air_defence = 1
+			fuel_consumption = 0.13
+			reliability = -0.025
+			build_cost_ic = -2
+		}
+		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
+			maximum_speed = -0.04
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_b
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_b
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_b
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_refroidissement
+		}
+	}
+
+	zv_engine_rotary_2 = {	# Rotatif II (05, ligne 83)
+		abbreviation = "z00d"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 11
+			air_agility = 2
+			air_defence = 1
+			fuel_consumption = 0.14
+			reliability = -0.025
+			build_cost_ic = -1
+		}
+		multiply_stats = {
+			maximum_speed = 0
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_b
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_b
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_b
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_refroidissement
+		}
+	}
+
+	zv_engine_rotary_3 = {	# Rotatif III (05, ligne 84)
+		abbreviation = "z00e"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 12
+			air_agility = 2
+			air_defence = 1
+			fuel_consumption = 0.15
+			reliability = -0.025
+			build_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_b
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_b
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_b
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_refroidissement
+		}
+	}
+
+	zv_engine_rotary_4 = {	# Rotatif IV (05, ligne 85)
+		abbreviation = "z00f"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 13
+			air_agility = 2
+			air_defence = 1
+			fuel_consumption = 0.16
+			reliability = -0.025
+			build_cost_ic = -3
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_refroidissement
+		}
+	}
+
+	zv_engine_flat_1 = {	# À plat I (petite cylindrée) (05, ligne 86)
+		abbreviation = "z010"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 5
+			air_agility = 2
+			reliability = 0.105
+			fuel_consumption = 0.03
+			build_cost_ic = -2
+		}
+		multiply_stats = {
+			maximum_speed = -0.09
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_b
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_b
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_b
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_refroidissement
+		}
+	}
+
+	zv_engine_flat_2 = {	# À plat II (grosse cylindrée) (05, ligne 87)
+		abbreviation = "z011"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 9
+			air_agility = 1
+			reliability = 0.085
+			fuel_consumption = 0.06
+			build_cost_ic = -1
+		}
+		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
+			maximum_speed = -0.04
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_b
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_b
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_b
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_refroidissement
+		}
+	}
+
+	zv_engine_diesel_1 = {	# Diesel I (type Jumo 205) (05, ligne 88)
+		abbreviation = "z012"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 9
+			reliability = 0.055
+			fuel_consumption = 0.05
+			air_agility = -2
+			build_cost_ic = -2
+		}
+		multiply_stats = {
+			maximum_speed = -0.02
+			air_range = 0.1
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_carenage_moteur
+		}
+	}
+
+	zv_engine_diesel_2 = {	# Diesel II (altitude, type Jumo 207) (05, ligne 89)
+		abbreviation = "z013"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 13
+			reliability = 0.045
+			fuel_consumption = 0.06
+			air_agility = -2
+			build_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.04
+			air_range = 0.1
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_carenage_moteur
+		}
+	}
+
+	zv_engine_pulsejet = {	# Pulsoréacteur (type Argus) (05, ligne 90)
+		abbreviation = "z014"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 17
+			fuel_consumption = 0.4
+			air_agility = -5
+			reliability = -0.125
+			build_cost_ic = -2
+		}
+		multiply_stats = {
+			maximum_speed = 0.26
+			air_range = -0.5
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_helice
+			zv_cat_module_d_helice
+			zv_cat_alimentation
+			zv_cat_regime_d_urgence
+			zv_cat_refroidissement
+			zv_cat_carenage_moteur
+			zv_cat_aile_autres
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_tandem_d_aile_b
+		}
+	}
+
+	zv_engine_centrifugal_1 = {	# Turboréacteur centrifuge I (type Whittle) (05, ligne 91)
+		abbreviation = "z015"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 17
+			fuel_consumption = 0.3
+			reliability = -0.095
+			build_cost_ic = -1
+		}
+		multiply_stats = {
+			maximum_speed = 0.28
+			air_agility = 0.03
+			air_range = -0.35
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		build_cost_resources = {
+			chromium = 1
+		}
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_helice
+			zv_cat_module_d_helice
+			zv_cat_alimentation
+			zv_cat_regime_d_urgence
+			zv_cat_refroidissement
+			zv_cat_carenage_moteur
+			zv_cat_aile_autres
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_tandem_d_aile_b
+		}
+	}
+
+	zv_engine_centrifugal_2 = {	# Turboréacteur centrifuge II (05, ligne 92)
+		abbreviation = "z016"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 27
+			fuel_consumption = 0.33
+			reliability = -0.035
+			build_cost_ic = -2
+		}
+		multiply_stats = {
+			maximum_speed = 0.54
+			air_agility = 0.05
+			air_range = -0.3
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		build_cost_resources = {
+			chromium = 1
+		}
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_b
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_b
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_b
+			zv_cat_helice
+			zv_cat_module_d_helice
+			zv_cat_alimentation
+			zv_cat_regime_d_urgence
+			zv_cat_refroidissement
+			zv_cat_carenage_moteur
+			zv_cat_aile_autres
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_tandem_d_aile_c
+		}
+	}
+
+	zv_engine_axial_1 = {	# Turboréacteur axial I (type Jumo 004) (05, ligne 93)
+		abbreviation = "z017"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 25
+			fuel_consumption = 0.35
+			reliability = -0.125
+			build_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.54
+			air_agility = 0.05
+			air_range = -0.35
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		build_cost_resources = {
+			chromium = 2
+		}
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_helice
+			zv_cat_module_d_helice
+			zv_cat_alimentation
+			zv_cat_regime_d_urgence
+			zv_cat_refroidissement
+			zv_cat_carenage_moteur
+			zv_cat_aile_autres
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_tandem_d_aile_b
+		}
+	}
+
+	zv_engine_axial_2 = {	# Turboréacteur axial II (après-guerre) (05, ligne 94)
+		abbreviation = "z018"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 31
+			fuel_consumption = 0.37
+			reliability = -0.025
+			build_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.62
+			air_agility = 0.05
+			air_range = -0.3
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		build_cost_resources = {
+			chromium = 2
+		}
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_b
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_b
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_b
+			zv_cat_helice
+			zv_cat_module_d_helice
+			zv_cat_alimentation
+			zv_cat_regime_d_urgence
+			zv_cat_refroidissement
+			zv_cat_carenage_moteur
+			zv_cat_aile_autres
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_tandem_d_aile_c
+		}
+	}
+
+	zv_engine_turboprop = {	# Turbopropulseur (05, ligne 95)
+		abbreviation = "z019"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 29
+			fuel_consumption = 0.25
+			reliability = -0.055
+			build_cost_ic = -1
+		}
+		multiply_stats = {
+			maximum_speed = 0.41
+			air_range = -0.1
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		build_cost_resources = {
+			chromium = 1
+		}
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_b
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_b
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_b
+			zv_cat_alimentation
+			zv_cat_regime_d_urgence
+			zv_cat_refroidissement
+			zv_cat_carenage_moteur
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_aile_autres
+		}
+	}
+
+	zv_engine_rocket_1 = {	# Moteur-fusée 1 (05, ligne 96)
+		abbreviation = "z01a"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 19
+			reliability = -0.175
+			fuel_consumption = -0.05
+			build_cost_ic = -1
+		}
+		multiply_stats = {
+			maximum_speed = 0.41
+			air_range = -0.75
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		mission_type_stats = {
+			limit = { interception }
+			add_stats = {
+				air_agility = 10
+			}
+		}
+		build_cost_resources = {
+			tungsten = 2
+		}
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_b
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_b
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_b
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_helice
+			zv_cat_module_d_helice
+			zv_cat_alimentation
+			zv_cat_regime_d_urgence
+			zv_cat_refroidissement
+			zv_cat_carenage_moteur
+			zv_cat_aile_autres
+			zv_cat_attaches
+			zv_cat_en_soute
+			zv_cat_armes_navales
+			zv_cat_armes_guidees
+		}
+	}
+
+	zv_engine_rocket_2 = {	# Moteur-fusée 2 (05, ligne 97)
+		abbreviation = "z01b"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 24
+			reliability = -0.125
+			fuel_consumption = -0.05
+			build_cost_ic = -1
+		}
+		multiply_stats = {
+			maximum_speed = 0.56
+			air_range = -0.7
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		mission_type_stats = {
+			limit = { interception }
+			add_stats = {
+				air_agility = 12
+			}
+		}
+		build_cost_resources = {
+			tungsten = 2
+		}
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_b
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_b
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_b
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_helice
+			zv_cat_module_d_helice
+			zv_cat_alimentation
+			zv_cat_regime_d_urgence
+			zv_cat_refroidissement
+			zv_cat_carenage_moteur
+			zv_cat_aile_autres
+			zv_cat_attaches
+			zv_cat_en_soute
+			zv_cat_armes_navales
+			zv_cat_armes_guidees
+		}
+	}
+
+	zv_engine_rocket_3 = {	# Moteur-fusée 3 (05, ligne 98)
+		abbreviation = "z01c"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 29
+			reliability = -0.075
+			fuel_consumption = -0.05
+			build_cost_ic = -1
+		}
+		multiply_stats = {
+			maximum_speed = 0.61
+			air_range = -0.65
+			thrust = -1
+			fuel_consumption = -1
+			build_cost_ic = -0.1
+		}
+		# ZV: les effets ci-dessus comptent −5 crans de chaque curseur (cran 5 = usine, neutre)
+		mission_type_stats = {
+			limit = { interception }
+			add_stats = {
+				air_agility = 15
+			}
+		}
+		build_cost_resources = {
+			tungsten = 2
+		}
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_a
+			zv_cat_motorisation_ailes_b
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_a
+			zv_cat_motorisation_queue_b
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_tandem_d_aile_a
+			zv_cat_motorisation_tandem_d_aile_b
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_helice
+			zv_cat_module_d_helice
+			zv_cat_alimentation
+			zv_cat_regime_d_urgence
+			zv_cat_refroidissement
+			zv_cat_carenage_moteur
+			zv_cat_aile_autres
+			zv_cat_attaches
+			zv_cat_en_soute
+			zv_cat_armes_navales
+			zv_cat_armes_guidees
+		}
+	}
+
+	zv_engine_config_nose_b = {	# Moteur de nez simple — classe B (05, ligne 118)
+		abbreviation = "z01e"
+		category = zv_cat_motorisation_nez_b
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			build_cost_ic = 15
+		}
+		multiply_stats = {
+			thrust = 1
+			fuel_consumption = 1
+		}
+	}
+
+	zv_engine_config_nose_c = {	# Moteur de nez simple — classe C (05, ligne 119)
+		abbreviation = "z01f"
+		category = zv_cat_motorisation_nez_c
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			build_cost_ic = 18
+		}
+		multiply_stats = {
+			thrust = 1
+			fuel_consumption = 1
+		}
+	}
+
+	zv_engine_config_twin_wing_b = {	# Bimoteur (ailes) — classe B (05, ligne 121)
+		abbreviation = "z021"
+		category = zv_cat_motorisation_ailes_b
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.02
+			build_cost_ic = 34
+		}
+		multiply_stats = {
+			thrust = 1.55
+			fuel_consumption = 2
+		}
+	}
+
+	zv_engine_config_twin_wing_c = {	# Bimoteur (ailes) — classe C (05, ligne 122)
+		abbreviation = "z022"
+		category = zv_cat_motorisation_ailes_c
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.02
+			build_cost_ic = 40
+		}
+		multiply_stats = {
+			thrust = 1.55
+			fuel_consumption = 2
+		}
+	}
+
+	zv_engine_config_twin_wing_d = {	# Bimoteur (ailes) — classe D (05, ligne 123)
+		abbreviation = "z023"
+		category = zv_cat_motorisation_ailes_d
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.02
+			build_cost_ic = 48
+		}
+		multiply_stats = {
+			thrust = 1.55
+			fuel_consumption = 2
+		}
+	}
+
+	zv_engine_config_tri_a = {	# Trimoteur (ailes + nez) — classe A (05, ligne 124)
+		abbreviation = "z024"
+		category = zv_cat_motorisation_nez_a
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.03
+			air_agility = -3
+			build_cost_ic = 37
+		}
+		multiply_stats = {
+			thrust = 2.05
+			fuel_consumption = 3
+		}
+	}
+
+	zv_engine_config_tri_b = {	# Trimoteur (ailes + nez) — classe B (05, ligne 125)
+		abbreviation = "z025"
+		category = zv_cat_motorisation_nez_b
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.03
+			air_agility = -3
+			build_cost_ic = 49
+		}
+		multiply_stats = {
+			thrust = 2.05
+			fuel_consumption = 3
+		}
+	}
+
+	zv_engine_config_tri_c = {	# Trimoteur (ailes + nez) — classe C (05, ligne 126)
+		abbreviation = "z026"
+		category = zv_cat_motorisation_nez_c
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.03
+			air_agility = -3
+			build_cost_ic = 58
+		}
+		multiply_stats = {
+			thrust = 2.05
+			fuel_consumption = 3
+		}
+	}
+
+	zv_engine_config_quad_a = {	# Quadrimoteur (2 × ailes) — classe A (05, ligne 127)
+		abbreviation = "z027"
+		category = zv_cat_motorisation_ailes_a
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.04
+			air_agility = -2
+			build_cost_ic = 56
+		}
+		multiply_stats = {
+			thrust = 2.6
+			fuel_consumption = 4
+		}
+	}
+
+	zv_engine_config_quad_b = {	# Quadrimoteur (2 × ailes) — classe B (05, ligne 128)
+		abbreviation = "z028"
+		category = zv_cat_motorisation_ailes_b
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.04
+			air_agility = -2
+			build_cost_ic = 72
+		}
+		multiply_stats = {
+			thrust = 2.6
+			fuel_consumption = 4
+		}
+	}
+
+	zv_engine_config_quad_c = {	# Quadrimoteur (2 × ailes) — classe C (05, ligne 129)
+		abbreviation = "z029"
+		category = zv_cat_motorisation_ailes_c
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.04
+			air_agility = -2
+			build_cost_ic = 84
+		}
+		multiply_stats = {
+			thrust = 2.6
+			fuel_consumption = 4
+		}
+	}
+
+	zv_engine_config_quad_d = {	# Quadrimoteur (2 × ailes) — classe D (05, ligne 130)
+		abbreviation = "z02a"
+		category = zv_cat_motorisation_ailes_d
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.04
+			air_agility = -2
+			build_cost_ic = 100
+		}
+		multiply_stats = {
+			thrust = 2.6
+			fuel_consumption = 4
+		}
+	}
+
+	zv_engine_config_quad_tandem_a = {	# Quadrimoteur en tandem (2 par aile, l'un derrière l'autre) — classe A (05, ligne 131)
+		abbreviation = "z02b"
+		category = zv_cat_motorisation_tandem_d_aile_a
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.02
+			build_cost_ic = 54
+		}
+		multiply_stats = {
+			thrust = 2.4
+			maximum_speed = 0.02
+			fuel_consumption = 4
+		}
+	}
+
+	zv_engine_config_quad_tandem_b = {	# Quadrimoteur en tandem (2 par aile, l'un derrière l'autre) — classe B (05, ligne 132)
+		abbreviation = "z02c"
+		category = zv_cat_motorisation_tandem_d_aile_b
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.02
+			build_cost_ic = 70
+		}
+		multiply_stats = {
+			thrust = 2.4
+			maximum_speed = 0.02
+			fuel_consumption = 4
+		}
+	}
+
+	zv_engine_config_quad_tandem_c = {	# Quadrimoteur en tandem (2 par aile, l'un derrière l'autre) — classe C (05, ligne 133)
+		abbreviation = "z02d"
+		category = zv_cat_motorisation_tandem_d_aile_c
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.02
+			build_cost_ic = 82
+		}
+		multiply_stats = {
+			thrust = 2.4
+			maximum_speed = 0.02
+			fuel_consumption = 4
+		}
+	}
+
+	zv_engine_config_quint_a = {	# Pentamoteur (nez + 2 × ailes) — classe A (05, ligne 134)
+		abbreviation = "z02e"
+		category = zv_cat_motorisation_nez_a
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.04
+			air_agility = -3
+			build_cost_ic = 71
+		}
+		multiply_stats = {
+			thrust = 3.1
+			fuel_consumption = 5
+			maximum_speed = -0.02
+		}
+	}
+
+	zv_engine_config_quint_b = {	# Pentamoteur (nez + 2 × ailes) — classe B (05, ligne 135)
+		abbreviation = "z02f"
+		category = zv_cat_motorisation_nez_b
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.04
+			air_agility = -3
+			build_cost_ic = 91
+		}
+		multiply_stats = {
+			thrust = 3.1
+			fuel_consumption = 5
+			maximum_speed = -0.02
+		}
+	}
+
+	zv_engine_config_quint_c = {	# Pentamoteur (nez + 2 × ailes) — classe C (05, ligne 136)
+		abbreviation = "z030"
+		category = zv_cat_motorisation_nez_c
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.04
+			air_agility = -3
+			build_cost_ic = 106
+		}
+		multiply_stats = {
+			thrust = 3.1
+			fuel_consumption = 5
+			maximum_speed = -0.02
+		}
+	}
+
+	zv_engine_config_hexa_a = {	# Hexamoteur (3 × ailes) — classe A (05, ligne 137)
+		abbreviation = "z031"
+		category = zv_cat_motorisation_ailes_a
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.04
+			air_agility = -3
+			build_cost_ic = 90
+		}
+		multiply_stats = {
+			thrust = 3.6
+			fuel_consumption = 6
+			maximum_speed = -0.03
+		}
+	}
+
+	zv_engine_config_hexa_b = {	# Hexamoteur (3 × ailes) — classe B (05, ligne 138)
+		abbreviation = "z032"
+		category = zv_cat_motorisation_ailes_b
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.04
+			air_agility = -3
+			build_cost_ic = 114
+		}
+		multiply_stats = {
+			thrust = 3.6
+			fuel_consumption = 6
+			maximum_speed = -0.03
+		}
+	}
+
+	zv_engine_config_hexa_c = {	# Hexamoteur (3 × ailes) — classe C (05, ligne 139)
+		abbreviation = "z033"
+		category = zv_cat_motorisation_ailes_c
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.04
+			air_agility = -3
+			build_cost_ic = 132
+		}
+		multiply_stats = {
+			thrust = 3.6
+			fuel_consumption = 6
+			maximum_speed = -0.03
+		}
+	}
+
+	zv_engine_config_hexa_d = {	# Hexamoteur (3 × ailes) — classe D (05, ligne 140)
+		abbreviation = "z034"
+		category = zv_cat_motorisation_ailes_d
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.04
+			air_agility = -3
+			build_cost_ic = 156
+		}
+		multiply_stats = {
+			thrust = 3.6
+			fuel_consumption = 6
+			maximum_speed = -0.03
+		}
+	}
+
+	zv_engine_config_twin_nose_a = {	# Bimoteur de nez (VB 10) — classe A (05, ligne 141)
+		abbreviation = "z035"
+		category = zv_cat_motorisation_nez_a
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = -0.06
+			weight = 4
+			build_cost_ic = 30
+		}
+		multiply_stats = {
+			thrust = 1.6
+			maximum_speed = 0.04
+			fuel_consumption = 2
+		}
+	}
+
+	zv_engine_config_twin_nose_b = {	# Bimoteur de nez (VB 10) — classe B (05, ligne 142)
+		abbreviation = "z036"
+		category = zv_cat_motorisation_nez_b
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = -0.06
+			weight = 4
+			build_cost_ic = 38
+		}
+		multiply_stats = {
+			thrust = 1.6
+			maximum_speed = 0.04
+			fuel_consumption = 2
+		}
+	}
+
+	zv_engine_config_twin_nose_c = {	# Bimoteur de nez (VB 10) — classe C (05, ligne 143)
+		abbreviation = "z037"
+		category = zv_cat_motorisation_nez_c
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = -0.06
+			weight = 4
+			build_cost_ic = 44
+		}
+		multiply_stats = {
+			thrust = 1.6
+			maximum_speed = 0.04
+			fuel_consumption = 2
+		}
+	}
+
+	zv_engine_config_tandem_a = {	# Tandem nez-queue (Do 335) — classe A (05, ligne 144)
+		abbreviation = "z038"
+		category = zv_cat_motorisation_nez_et_queue_a
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = -0.05
+			weight = 3
+			air_agility = -2
+			build_cost_ic = 28
+		}
+		multiply_stats = {
+			thrust = 1.55
+			maximum_speed = 0.05
+			fuel_consumption = 2
+		}
+	}
+
+	zv_engine_config_tandem_b = {	# Tandem nez-queue (Do 335) — classe B (05, ligne 145)
+		abbreviation = "z039"
+		category = zv_cat_motorisation_nez_et_queue_b
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = -0.05
+			weight = 3
+			air_agility = -2
+			build_cost_ic = 36
+		}
+		multiply_stats = {
+			thrust = 1.55
+			maximum_speed = 0.05
+			fuel_consumption = 2
+		}
+	}
+
+	zv_engine_config_tandem_c = {	# Tandem nez-queue (Do 335) — classe C (05, ligne 146)
+		abbreviation = "z03a"
+		category = zv_cat_motorisation_nez_et_queue_c
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = -0.05
+			weight = 3
+			air_agility = -2
+			build_cost_ic = 42
+		}
+		multiply_stats = {
+			thrust = 1.55
+			maximum_speed = 0.05
+			fuel_consumption = 2
+		}
+	}
+
+	zv_engine_config_tail_a = {	# Moteur de queue (propulsif) — classe A (05, ligne 147)
+		abbreviation = "z03b"
+		category = zv_cat_motorisation_queue_a
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = -0.03
+			build_cost_ic = 12
+		}
+		multiply_stats = {
+			thrust = 0.95
+			maximum_speed = 0.02
+			fuel_consumption = 1
+		}
+	}
+
+	zv_engine_config_tail_b = {	# Moteur de queue (propulsif) — classe B (05, ligne 148)
+		abbreviation = "z03c"
+		category = zv_cat_motorisation_queue_b
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = -0.03
+			build_cost_ic = 16
+		}
+		multiply_stats = {
+			thrust = 0.95
+			maximum_speed = 0.02
+			fuel_consumption = 1
+		}
+	}
+
+	zv_engine_config_tail_c = {	# Moteur de queue (propulsif) — classe C (05, ligne 149)
+		abbreviation = "z03d"
+		category = zv_cat_motorisation_queue_c
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = -0.03
+			build_cost_ic = 19
+		}
+		multiply_stats = {
+			thrust = 0.95
+			maximum_speed = 0.02
+			fuel_consumption = 1
+		}
+	}
+
+	zv_engine_config_tail_d = {	# Moteur de queue (propulsif) — classe D (05, ligne 150)
+		abbreviation = "z03e"
+		category = zv_cat_motorisation_queue_d
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = -0.03
+			build_cost_ic = 23
+		}
+		multiply_stats = {
+			thrust = 0.95
+			maximum_speed = 0.02
+			fuel_consumption = 1
+		}
+	}
+
+	zv_prop_2_metal = {	# Hélice 2 pales (métal) (05, ligne 175)
+		abbreviation = "z047"
+		category = zv_cat_helice
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = -0.5
+			reliability = 0.02
+			thrust = -1
+		}
+		multiply_stats = {
+			maximum_speed = -0.02
+		}
+	}
+
+	zv_prop_2_wood = {	# Hélice 2 pales (bois) (05, ligne 176)
+		abbreviation = "z048"
+		category = zv_cat_helice
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = -1
+			thrust = -1
+		}
+		multiply_stats = {
+			maximum_speed = -0.03
+		}
+		build_cost_resources = {
+			aluminium = -1
+		}
+	}
+
+	zv_prop_3_wood = {	# Hélice 3 pales (bois) (05, ligne 178)
+		abbreviation = "z04a"
+		category = zv_cat_helice
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = -0.5
+			reliability = -0.01
+		}
+		multiply_stats = {
+			maximum_speed = -0.01
+		}
+		build_cost_resources = {
+			aluminium = -1
+		}
+	}
+
+	zv_prop_4 = {	# Hélice 4 pales (05, ligne 179)
+		abbreviation = "z04b"
+		category = zv_cat_helice
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 1
+			fuel_consumption = 0.01
+			build_cost_ic = 0.5
+			weight = 0.5
+			reliability = -0.01
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+		}
+	}
+
+	zv_prop_5 = {	# Hélice 5 pales (05, ligne 180)
+		abbreviation = "z04c"
+		category = zv_cat_helice
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 1
+			fuel_consumption = 0.02
+			build_cost_ic = 1
+			weight = 1
+			air_agility = -1
+			reliability = -0.02
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+		}
+	}
+
+	zv_prop_variable_pitch = {	# Pas variable (05, ligne 181)
+		abbreviation = "z04d"
+		category = zv_cat_module_d_helice
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 0.5
+			build_cost_ic = 0.5
+			reliability = -0.01
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+			air_range = 0.03
+		}
+	}
+
+	zv_prop_feathering = {	# Mise en drapeau (vitesse constante) (05, ligne 182)
+		abbreviation = "z04e"
+		category = zv_cat_module_d_helice
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 0.5
+			reliability = 0.05
+			build_cost_ic = 1
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+			air_range = 0.03
+		}
+	}
+
+	zv_early_supercharger = {	# Compresseur précoce (05, ligne 190)
+		abbreviation = "z04f"
+		category = zv_cat_alimentation
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 0.5
+			fuel_consumption = 0.01
+			build_cost_ic = 1
+			reliability = -0.01
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+		}
+	}
+
+	zv_early_turbocharger = {	# Turbocompresseur précoce (05, ligne 191)
+		abbreviation = "z050"
+		category = zv_cat_alimentation
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 0.5
+			build_cost_ic = 2
+			weight = 1
+			reliability = -0.03
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+		}
+		mission_type_stats = {
+			limit = { interception strategic_bomber }
+			add_stats = {
+				air_defence = 1
+			}
+			multiply_stats = {
+				maximum_speed = 0.02
+			}
+		}
+		build_cost_resources = {
+			chromium = 1
+		}
+	}
+
+	zv_supercharger = {	# Compresseur (05, ligne 192)
+		abbreviation = "z051"
+		category = zv_cat_alimentation
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 1
+			fuel_consumption = 0.02
+			build_cost_ic = 1.5
+			reliability = -0.02
+		}
+		multiply_stats = {
+			maximum_speed = 0.04
+		}
+	}
+
+	zv_turbocharger = {	# Turbocompresseur (05, ligne 193)
+		abbreviation = "z052"
+		category = zv_cat_alimentation
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 0.5
+			build_cost_ic = 2.5
+			weight = 1
+			reliability = -0.03
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+		}
+		mission_type_stats = {
+			limit = { interception strategic_bomber }
+			add_stats = {
+				air_defence = 2
+			}
+			multiply_stats = {
+				maximum_speed = 0.04
+			}
+		}
+		build_cost_resources = {
+			chromium = 1
+		}
+	}
+
+	zv_improved_supercharger = {	# Compresseur amélioré (refroidisseur intermédiaire) (05, ligne 194)
+		abbreviation = "z053"
+		category = zv_cat_alimentation
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 1.5
+			fuel_consumption = 0.02
+			build_cost_ic = 2
+			reliability = -0.02
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+		}
+	}
+
+	zv_two_stage_supercharger = {	# Compresseur à deux étages (05, ligne 195)
+		abbreviation = "z054"
+		category = zv_cat_alimentation
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 1.5
+			fuel_consumption = 0.03
+			build_cost_ic = 3
+			weight = 1
+			reliability = -0.03
+		}
+		multiply_stats = {
+			maximum_speed = 0.06
+		}
+	}
+
+	zv_improved_turbocharger = {	# Turbocompresseur amélioré (refroidisseur intermédiaire) (05, ligne 196)
+		abbreviation = "z055"
+		category = zv_cat_alimentation
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 1
+			build_cost_ic = 3.5
+			weight = 2
+			reliability = -0.03
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+		}
+		mission_type_stats = {
+			limit = { interception strategic_bomber }
+			add_stats = {
+				air_defence = 3
+			}
+			multiply_stats = {
+				maximum_speed = 0.05
+			}
+		}
+		build_cost_resources = {
+			chromium = 1
+		}
+	}
+
+	zv_high_octane_fuel_s = {	# Essence à haut indice d'octane (S) (05, ligne 197)
+		abbreviation = "z056"
+		category = zv_cat_alimentation
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 0.5
+			fuel_consumption = 0.01
+			build_cost_ic = 0.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+		}
+	}
+
+	zv_high_octane_fuel_m = {	# Essence à haut indice d'octane (M) (05, ligne 198)
+		abbreviation = "z057"
+		category = zv_cat_alimentation
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 0.5
+			fuel_consumption = 0.01
+			build_cost_ic = 1
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+		}
+	}
+
+	zv_high_octane_fuel_l = {	# Essence à haut indice d'octane (L) (05, ligne 199)
+		abbreviation = "z058"
+		category = zv_cat_alimentation
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 0.5
+			fuel_consumption = 0.01
+			build_cost_ic = 1.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+		}
+	}
+
+	zv_water_injection_s = {	# Injection d'eau-méthanol (S) (05, ligne 200)
+		abbreviation = "z059"
+		category = zv_cat_alimentation
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 1
+			weight = 1
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			add_stats = {
+				thrust = 1
+			}
+			multiply_stats = {
+				maximum_speed = 0.02
+			}
+		}
+	}
+
+	zv_water_injection_m = {	# Injection d'eau-méthanol (M) (05, ligne 201)
+		abbreviation = "z05a"
+		category = zv_cat_alimentation
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 1.5
+			weight = 1.5
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			add_stats = {
+				thrust = 1
+			}
+			multiply_stats = {
+				maximum_speed = 0.02
+			}
+		}
+	}
+
+	zv_water_injection_l = {	# Injection d'eau-méthanol (L) (05, ligne 202)
+		abbreviation = "z05b"
+		category = zv_cat_alimentation
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 2
+			weight = 2
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			add_stats = {
+				thrust = 1
+			}
+			multiply_stats = {
+				maximum_speed = 0.02
+			}
+		}
+	}
+
+	zv_gm1 = {	# Injection de protoxyde d'azote (GM-1) (05, ligne 203)
+		abbreviation = "z05c"
+		category = zv_cat_alimentation
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 2
+			weight = 2
+			reliability = -0.03
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			multiply_stats = {
+				maximum_speed = 0.04
+			}
+		}
+	}
+
+	zv_direct_injection = {	# Injection directe (05, ligne 204)
+		abbreviation = "z05d"
+		category = zv_cat_alimentation
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 0.5
+			fuel_consumption = -0.01
+			build_cost_ic = 1
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			add_stats = {
+				air_agility = 1
+			}
+		}
+	}
+
+	zv_anti_g_carburettor = {	# Carburateur anti-g (05, ligne 205)
+		abbreviation = "z05e"
+		category = zv_cat_alimentation
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 0.3
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			add_stats = {
+				air_agility = 0.5
+			}
+		}
+	}
+
+	zv_wep_s = {	# Régime d'urgence WEP (S) (05, ligne 206)
+		abbreviation = "z05f"
+		category = zv_cat_regime_d_urgence
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 0.5
+			reliability = -0.04
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			add_stats = {
+				air_agility = 1
+			}
+			multiply_stats = {
+				maximum_speed = 0.03
+			}
+		}
+	}
+
+	zv_wep_m = {	# Régime d'urgence WEP (M) (05, ligne 207)
+		abbreviation = "z060"
+		category = zv_cat_regime_d_urgence
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 1
+			reliability = -0.04
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			add_stats = {
+				air_agility = 1
+			}
+			multiply_stats = {
+				maximum_speed = 0.03
+			}
+		}
+	}
+
+	zv_wep_l = {	# Régime d'urgence WEP (L) (05, ligne 208)
+		abbreviation = "z061"
+		category = zv_cat_regime_d_urgence
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 1.5
+			reliability = -0.04
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			add_stats = {
+				air_agility = 1
+			}
+			multiply_stats = {
+				maximum_speed = 0.03
+			}
+		}
+	}
+
+	zv_radiator_ventral = {	# Radiateur ventral (05, ligne 216)
+		abbreviation = "z062"
+		category = zv_cat_refroidissement
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.02
+			build_cost_ic = 0.5
+			air_defence = -1
+		}
+		multiply_stats = {
+			maximum_speed = 0.01
+		}
+	}
+
+	zv_radiator_wing = {	# Radiateur dans l'aile (05, ligne 217)
+		abbreviation = "z063"
+		category = zv_cat_refroidissement
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 0.5
+			air_defence = -1
+			air_agility = -1
+			reliability = -0.01
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+		}
+	}
+
+	zv_radiator_annular = {	# Radiateur annulaire (05, ligne 218)
+		abbreviation = "z064"
+		category = zv_cat_refroidissement
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 1
+			reliability = 0.02
+			build_cost_ic = 1.5
+			weight = 1
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+		}
+	}
+
+	zv_air_intake = {	# Prise d'air (05, ligne 219)
+		abbreviation = "z065"
+		category = zv_cat_prise_d_air
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = -1
+			build_cost_ic = 1
+			weight = 0.5
+		}
+	}
+
+	zv_naca_cowling = {	# Carénage NACA (05, ligne 220)
+		abbreviation = "z066"
+		category = zv_cat_carenage_moteur
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.01
+			build_cost_ic = 0.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.04
+		}
+	}
+
+	zv_jet_improved_compressor = {	# Compresseur de réacteur amélioré (05, ligne 636)
+		abbreviation = "z175"
+		category = zv_cat_ameliorations_de_reacteur
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 3
+			reliability = 0.03
+			fuel_consumption = 0.04
+			build_cost_ic = 2
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+		}
+	}
+
+	zv_afterburner = {	# Post-combustion (05, ligne 637)
+		abbreviation = "z176"
+		category = zv_cat_ameliorations_de_reacteur
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 0.15
+			build_cost_ic = 3
+			reliability = -0.05
+		}
+		multiply_stats = {
+			air_range = -0.1
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			add_stats = {
+				thrust = 4
+			}
+			multiply_stats = {
+				maximum_speed = 0.08
+			}
+		}
+		build_cost_resources = {
+			chromium = 1
+		}
+	}
+
+	zv_supersonic_intake = {	# Entrée d'air supersonique (05, ligne 638)
+		abbreviation = "z177"
+		category = zv_cat_ameliorations_de_reacteur
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 1.5
+			weight = 0.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.04
+		}
 	}
 
 	# Modules fantômes (décision D-14) : identifiants vanilla encore cités par des techs
