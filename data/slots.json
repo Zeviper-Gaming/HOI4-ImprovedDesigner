@@ -79,7 +79,7 @@
   {
    "slot": "Hélices",
    "id_propose": "fixed_zv_propeller",
-   "obligatoire_propose": true,
+   "obligatoire_propose": false,
    "ecran": "fixe",
    "fenetre_gui": "pos_fixed_module_slot_window_2",
    "tailles": [
@@ -227,7 +227,7 @@
   {
    "slot": "Trains d'atterrissage",
    "id_propose": "fixed_zv_landing_gear",
-   "obligatoire_propose": true,
+   "obligatoire_propose": false,
    "ecran": "fixe",
    "fenetre_gui": "pos_fixed_module_slot_window_10",
    "tailles": [
@@ -278,7 +278,7 @@
   {
    "slot": "Type d'Empennage",
    "id_propose": "fixed_zv_tail",
-   "obligatoire_propose": true,
+   "obligatoire_propose": false,
    "ecran": "fixe",
    "fenetre_gui": "pos_fixed_module_slot_window_13",
    "tailles": [
@@ -475,10 +475,10 @@
   },
   {
    "slot": "Internes 4",
-   "id_propose": "fixed_zv_internal_4",
+   "id_propose": "zv_internal_4",
    "obligatoire_propose": false,
-   "ecran": "fixe",
-   "fenetre_gui": "pos_fixed_module_slot_window_20",
+   "ecran": "libre",
+   "fenetre_gui": "pos_custom_module_slot_window_0",
    "tailles": [
     "N",
     "P",
@@ -512,7 +512,7 @@
    "id_propose": "zv_wing_3",
    "obligatoire_propose": false,
    "ecran": "libre",
-   "fenetre_gui": "pos_custom_module_slot_window_0",
+   "fenetre_gui": "pos_custom_module_slot_window_1",
    "tailles": [
     "P",
     "M",
@@ -539,7 +539,7 @@
    "id_propose": "zv_wing_4",
    "obligatoire_propose": false,
    "ecran": "libre",
-   "fenetre_gui": "pos_custom_module_slot_window_1",
+   "fenetre_gui": "pos_custom_module_slot_window_2",
    "tailles": [
     "M",
     "G"
@@ -565,7 +565,7 @@
    "id_propose": "zv_internal_2",
    "obligatoire_propose": false,
    "ecran": "libre",
-   "fenetre_gui": "pos_custom_module_slot_window_2",
+   "fenetre_gui": "pos_custom_module_slot_window_3",
    "tailles": [
     "M",
     "G"
@@ -597,7 +597,7 @@
    "id_propose": "zv_internal_5",
    "obligatoire_propose": false,
    "ecran": "libre",
-   "fenetre_gui": "pos_custom_module_slot_window_3",
+   "fenetre_gui": "pos_custom_module_slot_window_4",
    "tailles": [
     "M",
     "G"
@@ -629,7 +629,7 @@
    "id_propose": "zv_belly_rear",
    "obligatoire_propose": false,
    "ecran": "libre",
-   "fenetre_gui": "pos_custom_module_slot_window_4",
+   "fenetre_gui": "pos_custom_module_slot_window_5",
    "tailles": [
     "M",
     "G"
@@ -659,7 +659,7 @@
    "id_propose": "zv_tail_position",
    "obligatoire_propose": false,
    "ecran": "libre",
-   "fenetre_gui": "pos_custom_module_slot_window_5",
+   "fenetre_gui": "pos_custom_module_slot_window_6",
    "tailles": [
     "M",
     "G"
@@ -685,7 +685,7 @@
    "id_propose": "zv_wing_5",
    "obligatoire_propose": false,
    "ecran": "libre",
-   "fenetre_gui": "pos_custom_module_slot_window_6",
+   "fenetre_gui": "pos_custom_module_slot_window_7",
    "tailles": [
     "G"
    ],
@@ -710,7 +710,7 @@
    "id_propose": "zv_dorsal",
    "obligatoire_propose": false,
    "ecran": "libre",
-   "fenetre_gui": "pos_custom_module_slot_window_7",
+   "fenetre_gui": "pos_custom_module_slot_window_8",
    "tailles": [
     "G"
    ],
@@ -736,7 +736,7 @@
    "id_propose": "zv_internal_3",
    "obligatoire_propose": false,
    "ecran": "libre",
-   "fenetre_gui": "pos_custom_module_slot_window_8",
+   "fenetre_gui": "pos_custom_module_slot_window_9",
    "tailles": [
     "G"
    ],
@@ -767,7 +767,7 @@
    "id_propose": "zv_internal_6",
    "obligatoire_propose": false,
    "ecran": "libre",
-   "fenetre_gui": "pos_custom_module_slot_window_9",
+   "fenetre_gui": "pos_custom_module_slot_window_10",
    "tailles": [
     "G"
    ],
@@ -798,7 +798,7 @@
    "id_propose": "zv_belly_front",
    "obligatoire_propose": false,
    "ecran": "libre",
-   "fenetre_gui": "pos_custom_module_slot_window_10",
+   "fenetre_gui": "pos_custom_module_slot_window_11",
    "tailles": [
     "G"
    ],

@@ -183,13 +183,15 @@ Path("data/categories.json").write_text(json.dumps(
     ensure_ascii=False, indent=1))
 assert len({slug(k) for k in cats}) == len(cats)
 
-# ---------- slots (ordre d'écran du .gui : 21 fixes puis 11 libres) ----------
+# ---------- slots (ordre d'écran du .gui : 20 fixes puis 12 libres) ----------
+# ✅ 22/10 : le jeu n'affiche que 20 positions fixes ; Internes 4 passe en tête des libres (02 §1.9).
 FIXED = ["Aile 1", "Aile 2", "Hélices", "Module Hélice", "Type de Moteurs", "Nombre de Moteurs", "Matériaux",
          "Construction", "Modules Moteurs 1", "Modules Moteurs 2", "Trains d'atterrissage", "Type de Fuselage",
          "Type d'Ailes", "Type d'Empennage", "Rôles", "Nez", "Cockpit", "Arrière Cockpit", "Internes 1",
-         "Ventre Milieu", "Internes 4"]
-CUSTOM = ["Aile 3", "Aile 4", "Internes 2", "Internes 5", "Ventre Arrière", "Queue", "Aile 5", "Dos", "Internes 3",
-          "Internes 6", "Ventre Avant"]
+         "Ventre Milieu"]
+CUSTOM = ["Internes 4", "Aile 3", "Aile 4", "Internes 2", "Internes 5", "Ventre Arrière", "Queue", "Aile 5", "Dos",
+          "Internes 3", "Internes 6", "Ventre Avant"]
+assert len(FIXED) <= 20, "le jeu n'affiche que 20 positions fixes"
 assert set(FIXED + CUSTOM) == set(SP.SLOTS), set(SP.SLOTS) ^ set(FIXED + CUSTOM)
 SLOT_ID = {  # 💡 noms proposés ; les fixes DOIVENT commencer par fixed_ (règle du jeu, 02 §1.9)
     "Aile 1": "fixed_zv_wing_1", "Aile 2": "fixed_zv_wing_2", "Hélices": "fixed_zv_propeller",
@@ -200,12 +202,12 @@ SLOT_ID = {  # 💡 noms proposés ; les fixes DOIVENT commencer par fixed_ (rè
     "Type de Fuselage": "fixed_zv_fuselage", "Type d'Ailes": "fixed_zv_wing_type", "Type d'Empennage": "fixed_zv_tail",
     "Rôles": "fixed_zv_role", "Nez": "fixed_zv_nose", "Cockpit": "fixed_zv_cockpit",
     "Arrière Cockpit": "fixed_zv_rear_cockpit", "Internes 1": "fixed_zv_internal_1",
-    "Ventre Milieu": "fixed_zv_belly_middle", "Internes 4": "fixed_zv_internal_4",
+    "Ventre Milieu": "fixed_zv_belly_middle", "Internes 4": "zv_internal_4",
     "Aile 3": "zv_wing_3", "Aile 4": "zv_wing_4", "Internes 2": "zv_internal_2", "Internes 5": "zv_internal_5",
     "Ventre Arrière": "zv_belly_rear", "Queue": "zv_tail_position", "Aile 5": "zv_wing_5", "Dos": "zv_dorsal",
     "Internes 3": "zv_internal_3", "Internes 6": "zv_internal_6", "Ventre Avant": "zv_belly_front"}
-REQUIRED = {"Type de Moteurs", "Nombre de Moteurs", "Hélices", "Type de Fuselage", "Type d'Ailes", "Type d'Empennage",
-            "Trains d'atterrissage", "Rôles", "Cockpit"}  # 💡 proposition (pièces à module de référence), à confirmer
+REQUIRED = {"Type de Moteurs", "Nombre de Moteurs", "Type de Fuselage", "Type d'Ailes", "Rôles",
+            "Cockpit"}  # ✅ Q1 du 21/10 (cahier §3)
 slots = []
 for i, s in enumerate(FIXED + CUSTOM):
     sizes, base, extra = SP.SLOTS[s]

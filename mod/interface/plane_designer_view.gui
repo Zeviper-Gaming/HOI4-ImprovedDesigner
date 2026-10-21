@@ -147,7 +147,7 @@ guiTypes = {
 
 			}
 
-			# ZV designer : grille de Florian (7 colonnes x 7 lignes, 21/10/2026), 21 positions fixes + 11 libres = 32.
+			# ZV designer : grille de Florian (7 colonnes x 7 lignes, 21/10/2026), 20 positions fixes + 12 libres = 32.
 			# Le code place les slots fixed_* d'une cellule sur pos_fixed_module_slot_window_N et les autres
 			# sur pos_custom_module_slot_window_N, dans l'ordre où la cellule les déclare (module_slots).
 			# Les slots libres sont rangés par disponibilité (Aile 3, puis vert, puis rose) pour que chaque
@@ -256,54 +256,55 @@ guiTypes = {
 				name = "pos_fixed_module_slot_window_19"
 				position = { x=@fixed_btn_mod_col_1 y=@zv_btn_mod_row_7 }
 			}
-			positionType = { # Modules Internes 4 (ligne 7, colonne 5)
-				name = "pos_fixed_module_slot_window_20"
-				position = { x=@fixed_btn_mod_col_4 y=@zv_btn_mod_row_7 }
-			}
 
 			# Slots libres, par disponibilité
-			positionType = { # Aile 3 (petite, moyenne, grande) (ligne 1, colonne 3)
+			# ZV (22/10) : le jeu n'affiche que 20 positions fixes ; Internes 4 passe en tête des libres.
+			positionType = { # Modules Internes 4 (toutes) (ligne 7, colonne 5)
 				name = "pos_custom_module_slot_window_0"
+				position = { x=@fixed_btn_mod_col_4 y=@zv_btn_mod_row_7 }
+			}
+			positionType = { # Aile 3 (petite, moyenne, grande) (ligne 1, colonne 3)
+				name = "pos_custom_module_slot_window_1"
 				position = { x=@fixed_btn_mod_col_2 y=@zv_btn_mod_row_1 }
 			}
 			positionType = { # Aile 4 (moyenne, grande) (ligne 1, colonne 4)
-				name = "pos_custom_module_slot_window_1"
+				name = "pos_custom_module_slot_window_2"
 				position = { x=@fixed_btn_mod_col_3 y=@zv_btn_mod_row_1 }
 			}
 			positionType = { # Modules Internes 2 (moyenne, grande) (ligne 6, colonne 6)
-				name = "pos_custom_module_slot_window_2"
+				name = "pos_custom_module_slot_window_3"
 				position = { x=@fixed_btn_mod_col_5 y=@zv_btn_mod_row_6 }
 			}
 			positionType = { # Modules Internes 5 (moyenne, grande) (ligne 7, colonne 6)
-				name = "pos_custom_module_slot_window_3"
+				name = "pos_custom_module_slot_window_4"
 				position = { x=@fixed_btn_mod_col_5 y=@zv_btn_mod_row_7 }
 			}
 			positionType = { # Ventre Arrière (moyenne, grande) (ligne 7, colonne 3)
-				name = "pos_custom_module_slot_window_4"
+				name = "pos_custom_module_slot_window_5"
 				position = { x=@fixed_btn_mod_col_2 y=@zv_btn_mod_row_7 }
 			}
 			positionType = { # Queue (moyenne, grande) (ligne 7, colonne 4)
-				name = "pos_custom_module_slot_window_5"
+				name = "pos_custom_module_slot_window_6"
 				position = { x=@fixed_btn_mod_col_3 y=@zv_btn_mod_row_7 }
 			}
 			positionType = { # Aile 5 (grande) (ligne 1, colonne 5)
-				name = "pos_custom_module_slot_window_6"
+				name = "pos_custom_module_slot_window_7"
 				position = { x=@fixed_btn_mod_col_4 y=@zv_btn_mod_row_1 }
 			}
 			positionType = { # Dos (grande) (ligne 6, colonne 4)
-				name = "pos_custom_module_slot_window_7"
+				name = "pos_custom_module_slot_window_8"
 				position = { x=@fixed_btn_mod_col_3 y=@zv_btn_mod_row_6 }
 			}
 			positionType = { # Modules Internes 3 (grande) (ligne 6, colonne 7)
-				name = "pos_custom_module_slot_window_8"
+				name = "pos_custom_module_slot_window_9"
 				position = { x=@fixed_btn_mod_col_6 y=@zv_btn_mod_row_6 }
 			}
 			positionType = { # Modules Internes 6 (grande) (ligne 7, colonne 7)
-				name = "pos_custom_module_slot_window_9"
+				name = "pos_custom_module_slot_window_10"
 				position = { x=@fixed_btn_mod_col_6 y=@zv_btn_mod_row_7 }
 			}
 			positionType = { # Ventre Avant (grande) (ligne 7, colonne 1)
-				name = "pos_custom_module_slot_window_10"
+				name = "pos_custom_module_slot_window_11"
 				position = { x=@fixed_btn_mod_col_0 y=@zv_btn_mod_row_7 }
 			}
 		}
@@ -342,7 +343,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "save_to_file_button"
-			position = { x=18 y=380 }
+			position = { x=18 y=352 }	# ZV (Q18) : ligne 5, case « Modèles » (vanilla : x=18 y=380)
 			quadTextureSprite ="GFX_preset_button_save"
 			buttonFont = "hoi_18mbs"
 			clicksound = "ui_ship_designer_save"
@@ -351,7 +352,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "historical_design_button"
-			position = { x=18 y=412 }
+			position = { x=52 y=352 }	# ZV (Q18) : ligne 5, case « Modèles » (vanilla : x=18 y=412)
 			quadTextureSprite ="GFX_preset_button_open"
 			buttonFont = "hoi_18mbs"
 			#clicksound = "ui_tank_designer_save"
@@ -361,12 +362,12 @@ guiTypes = {
 		iconType = {
 			name = "design_company_icon"
 			spriteType = "GFX_idea_porsche"
-			position = { x = 461 y = 382 }
+			position = { x = 461 y = 343 }	# ZV (Q18) : ligne 5, case « Concepteurs » (vanilla : y = 382)
 		}
 
 		buttonType = {
 			name = "upgrade_assigned_industrial_org"
-			position = { x = 425 y = 397 }
+			position = { x = 425 y = 355 }	# ZV (Q18) : ligne 5 (vanilla : y = 397)
 			scale = 1.4
 			spriteType = "GFX_prod_line_target_strip"
 			frame = 2
@@ -375,7 +376,7 @@ guiTypes = {
 		buttonType = {
 			name = "design_team_button"
 			spriteType = "GFX_idea_slot_aircraft_manufacturer"
-			position = { x = 455 y = 382 }
+			position = { x = 455 y = 343 }	# ZV (Q18) : ligne 5, case « Concepteurs » (vanilla : y = 382)
 		}
 
 		# right hand side, stats and mission adjusters
