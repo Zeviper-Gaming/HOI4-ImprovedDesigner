@@ -1352,7 +1352,7 @@
   "forbid": []
  },
  {
-  "line": 158,
+  "line": 160,
   "section": "Réglages de puissance et de fiabilité",
   "name": "Puissance −2",
   "id": "zv_engine_power_m2",
@@ -1373,7 +1373,7 @@
   "forbid": []
  },
  {
-  "line": 159,
+  "line": 161,
   "section": "Réglages de puissance et de fiabilité",
   "name": "Puissance −1",
   "id": "zv_engine_power_m1",
@@ -1394,7 +1394,7 @@
   "forbid": []
  },
  {
-  "line": 160,
+  "line": 162,
   "section": "Réglages de puissance et de fiabilité",
   "name": "Puissance +1",
   "id": "zv_engine_power_p1",
@@ -1415,7 +1415,7 @@
   "forbid": []
  },
  {
-  "line": 161,
+  "line": 163,
   "section": "Réglages de puissance et de fiabilité",
   "name": "Puissance +2",
   "id": "zv_engine_power_p2",
@@ -1436,7 +1436,7 @@
   "forbid": []
  },
  {
-  "line": 162,
+  "line": 164,
   "section": "Réglages de puissance et de fiabilité",
   "name": "Fiabilité −2",
   "id": "zv_reliability_m2",
@@ -1457,7 +1457,7 @@
   "forbid": []
  },
  {
-  "line": 163,
+  "line": 165,
   "section": "Réglages de puissance et de fiabilité",
   "name": "Fiabilité −1",
   "id": "zv_reliability_m1",
@@ -1478,7 +1478,7 @@
   "forbid": []
  },
  {
-  "line": 164,
+  "line": 166,
   "section": "Réglages de puissance et de fiabilité",
   "name": "Fiabilité +1",
   "id": "zv_reliability_p1",
@@ -1499,7 +1499,7 @@
   "forbid": []
  },
  {
-  "line": 165,
+  "line": 167,
   "section": "Réglages de puissance et de fiabilité",
   "name": "Fiabilité +2",
   "id": "zv_reliability_p2",
@@ -1520,7 +1520,7 @@
   "forbid": []
  },
  {
-  "line": 173,
+  "line": 175,
   "section": "Hélices",
   "name": "Hélice 2 pales (métal)",
   "id": "zv_prop_2_metal",
@@ -1541,7 +1541,7 @@
   "forbid": []
  },
  {
-  "line": 174,
+  "line": 176,
   "section": "Hélices",
   "name": "Hélice 2 pales (bois)",
   "id": "zv_prop_2_wood",
@@ -1562,7 +1562,7 @@
   "forbid": []
  },
  {
-  "line": 175,
+  "line": 177,
   "section": "Hélices",
   "name": "Hélice 3 pales (métal) — référence",
   "id": "zv_prop_3_metal",
@@ -1583,7 +1583,7 @@
   "forbid": []
  },
  {
-  "line": 176,
+  "line": 178,
   "section": "Hélices",
   "name": "Hélice 3 pales (bois)",
   "id": "zv_prop_3_wood",
@@ -1604,7 +1604,7 @@
   "forbid": []
  },
  {
-  "line": 177,
+  "line": 179,
   "section": "Hélices",
   "name": "Hélice 4 pales",
   "id": "zv_prop_4",
@@ -1625,7 +1625,7 @@
   "forbid": []
  },
  {
-  "line": 178,
+  "line": 180,
   "section": "Hélices",
   "name": "Hélice 5 pales",
   "id": "zv_prop_5",
@@ -1646,7 +1646,7 @@
   "forbid": []
  },
  {
-  "line": 179,
+  "line": 181,
   "section": "Hélices",
   "name": "Pas variable",
   "id": "zv_prop_variable_pitch",
@@ -1667,7 +1667,7 @@
   "forbid": []
  },
  {
-  "line": 180,
+  "line": 182,
   "section": "Hélices",
   "name": "Mise en drapeau (vitesse constante)",
   "id": "zv_prop_feathering",
@@ -1688,7 +1688,7 @@
   "forbid": []
  },
  {
-  "line": 188,
+  "line": 190,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Compresseur précoce",
   "id": "zv_early_supercharger",
@@ -1709,7 +1709,7 @@
   "forbid": []
  },
  {
-  "line": 189,
+  "line": 191,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Turbocompresseur précoce",
   "id": "zv_early_turbocharger",
@@ -1730,7 +1730,7 @@
   "forbid": []
  },
  {
-  "line": 190,
+  "line": 192,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Compresseur",
   "id": "zv_supercharger",
@@ -1751,7 +1751,7 @@
   "forbid": []
  },
  {
-  "line": 191,
+  "line": 193,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Turbocompresseur",
   "id": "zv_turbocharger",
@@ -1772,7 +1772,7 @@
   "forbid": []
  },
  {
-  "line": 192,
+  "line": 194,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Compresseur amélioré (refroidisseur intermédiaire)",
   "id": "zv_improved_supercharger",
@@ -1793,7 +1793,7 @@
   "forbid": []
  },
  {
-  "line": 193,
+  "line": 195,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Compresseur à deux étages",
   "id": "zv_two_stage_supercharger",
@@ -1814,7 +1814,7 @@
   "forbid": []
  },
  {
-  "line": 194,
+  "line": 196,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Turbocompresseur amélioré (refroidisseur intermédiaire)",
   "id": "zv_improved_turbocharger",
@@ -1835,7 +1835,7 @@
   "forbid": []
  },
  {
-  "line": 195,
+  "line": 197,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Essence à haut indice d'octane (S)",
   "id": "zv_high_octane_fuel_s",
@@ -1856,7 +1856,7 @@
   "forbid": []
  },
  {
-  "line": 196,
+  "line": 198,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Essence à haut indice d'octane (M)",
   "id": "zv_high_octane_fuel_m",
@@ -1877,7 +1877,7 @@
   "forbid": []
  },
  {
-  "line": 197,
+  "line": 199,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Essence à haut indice d'octane (L)",
   "id": "zv_high_octane_fuel_l",
@@ -1898,7 +1898,7 @@
   "forbid": []
  },
  {
-  "line": 198,
+  "line": 200,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Injection d'eau-méthanol (S)",
   "id": "zv_water_injection_s",
@@ -1919,7 +1919,7 @@
   "forbid": []
  },
  {
-  "line": 199,
+  "line": 201,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Injection d'eau-méthanol (M)",
   "id": "zv_water_injection_m",
@@ -1940,7 +1940,7 @@
   "forbid": []
  },
  {
-  "line": 200,
+  "line": 202,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Injection d'eau-méthanol (L)",
   "id": "zv_water_injection_l",
@@ -1961,7 +1961,7 @@
   "forbid": []
  },
  {
-  "line": 201,
+  "line": 203,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Injection de protoxyde d'azote (GM-1)",
   "id": "zv_gm1",
@@ -1982,7 +1982,7 @@
   "forbid": []
  },
  {
-  "line": 202,
+  "line": 204,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Injection directe",
   "id": "zv_direct_injection",
@@ -2003,7 +2003,7 @@
   "forbid": []
  },
  {
-  "line": 203,
+  "line": 205,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Carburateur anti-g",
   "id": "zv_anti_g_carburettor",
@@ -2024,7 +2024,7 @@
   "forbid": []
  },
  {
-  "line": 204,
+  "line": 206,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Régime d'urgence WEP (S)",
   "id": "zv_wep_s",
@@ -2045,7 +2045,7 @@
   "forbid": []
  },
  {
-  "line": 205,
+  "line": 207,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Régime d'urgence WEP (M)",
   "id": "zv_wep_m",
@@ -2066,7 +2066,7 @@
   "forbid": []
  },
  {
-  "line": 206,
+  "line": 208,
   "section": "Alimentation, suralimentation et régime d'urgence",
   "name": "Régime d'urgence WEP (L)",
   "id": "zv_wep_l",
@@ -2087,7 +2087,7 @@
   "forbid": []
  },
  {
-  "line": 214,
+  "line": 216,
   "section": "Refroidissement, carénage, dégivrage et sécurité",
   "name": "Radiateur ventral",
   "id": "zv_radiator_ventral",
@@ -2108,7 +2108,7 @@
   "forbid": []
  },
  {
-  "line": 215,
+  "line": 217,
   "section": "Refroidissement, carénage, dégivrage et sécurité",
   "name": "Radiateur dans l'aile",
   "id": "zv_radiator_wing",
@@ -2129,7 +2129,7 @@
   "forbid": []
  },
  {
-  "line": 216,
+  "line": 218,
   "section": "Refroidissement, carénage, dégivrage et sécurité",
   "name": "Radiateur annulaire",
   "id": "zv_radiator_annular",
@@ -2150,7 +2150,7 @@
   "forbid": []
  },
  {
-  "line": 217,
+  "line": 219,
   "section": "Refroidissement, carénage, dégivrage et sécurité",
   "name": "Prise d'air",
   "id": "zv_air_intake",
@@ -2171,7 +2171,7 @@
   "forbid": []
  },
  {
-  "line": 218,
+  "line": 220,
   "section": "Refroidissement, carénage, dégivrage et sécurité",
   "name": "Carénage NACA",
   "id": "zv_naca_cowling",
@@ -2192,7 +2192,7 @@
   "forbid": []
  },
  {
-  "line": 219,
+  "line": 221,
   "section": "Refroidissement, carénage, dégivrage et sécurité",
   "name": "Bottes pneumatiques",
   "id": "zv_deicing_boots",
@@ -2213,7 +2213,7 @@
   "forbid": []
  },
  {
-  "line": 220,
+  "line": 222,
   "section": "Refroidissement, carénage, dégivrage et sécurité",
   "name": "Bords d'attaque chauffés",
   "id": "zv_heated_leading_edges",
@@ -2234,7 +2234,7 @@
   "forbid": []
  },
  {
-  "line": 221,
+  "line": 223,
   "section": "Refroidissement, carénage, dégivrage et sécurité",
   "name": "Extincteur automatique (S)",
   "id": "zv_auto_extinguisher_s",
@@ -2255,7 +2255,7 @@
   "forbid": []
  },
  {
-  "line": 222,
+  "line": 224,
   "section": "Refroidissement, carénage, dégivrage et sécurité",
   "name": "Extincteur automatique (M)",
   "id": "zv_auto_extinguisher_m",
@@ -2276,7 +2276,7 @@
   "forbid": []
  },
  {
-  "line": 223,
+  "line": 225,
   "section": "Refroidissement, carénage, dégivrage et sécurité",
   "name": "Extincteur automatique (L)",
   "id": "zv_auto_extinguisher_l",
@@ -2297,7 +2297,7 @@
   "forbid": []
  },
  {
-  "line": 224,
+  "line": 226,
   "section": "Refroidissement, carénage, dégivrage et sécurité",
   "name": "Fusées de décollage RATO",
   "id": "zv_rato",
@@ -2318,7 +2318,7 @@
   "forbid": []
  },
  {
-  "line": 225,
+  "line": 227,
   "section": "Refroidissement, carénage, dégivrage et sécurité",
   "name": "Chariot largable",
   "id": "zv_takeoff_trolley",
@@ -2339,7 +2339,7 @@
   "forbid": []
  },
  {
-  "line": 233,
+  "line": 235,
   "section": "Fuselages et techniques de construction",
   "name": "Fuselage classique (S) — référence",
   "id": "zv_fuselage_classic_s",
@@ -2360,7 +2360,7 @@
   "forbid": []
  },
  {
-  "line": 234,
+  "line": 236,
   "section": "Fuselages et techniques de construction",
   "name": "Fuselage classique (M) — référence",
   "id": "zv_fuselage_classic_m",
@@ -2381,7 +2381,7 @@
   "forbid": []
  },
  {
-  "line": 235,
+  "line": 237,
   "section": "Fuselages et techniques de construction",
   "name": "Fuselage classique (L) — référence",
   "id": "zv_fuselage_classic_l",
@@ -2402,7 +2402,7 @@
   "forbid": []
  },
  {
-  "line": 236,
+  "line": 238,
   "section": "Fuselages et techniques de construction",
   "name": "Fuselage « Jug » (S)",
   "id": "zv_fuselage_jug_s",
@@ -2423,7 +2423,7 @@
   "forbid": []
  },
  {
-  "line": 237,
+  "line": 239,
   "section": "Fuselages et techniques de construction",
   "name": "Fuselage « Jug » (M)",
   "id": "zv_fuselage_jug_m",
@@ -2444,7 +2444,7 @@
   "forbid": []
  },
  {
-  "line": 238,
+  "line": 240,
   "section": "Fuselages et techniques de construction",
   "name": "Fuselage « Jug » (L)",
   "id": "zv_fuselage_jug_l",
@@ -2465,7 +2465,7 @@
   "forbid": []
  },
  {
-  "line": 239,
+  "line": 241,
   "section": "Fuselages et techniques de construction",
   "name": "Fuselage goutte (S)",
   "id": "zv_fuselage_teardrop_s",
@@ -2486,7 +2486,7 @@
   "forbid": []
  },
  {
-  "line": 240,
+  "line": 242,
   "section": "Fuselages et techniques de construction",
   "name": "Fuselage goutte (M)",
   "id": "zv_fuselage_teardrop_m",
@@ -2507,7 +2507,7 @@
   "forbid": []
  },
  {
-  "line": 241,
+  "line": 243,
   "section": "Fuselages et techniques de construction",
   "name": "Fuselage bipoutre (S)",
   "id": "zv_fuselage_twin_boom_s",
@@ -2528,7 +2528,7 @@
   "forbid": []
  },
  {
-  "line": 242,
+  "line": 244,
   "section": "Fuselages et techniques de construction",
   "name": "Fuselage bipoutre (M)",
   "id": "zv_fuselage_twin_boom_m",
@@ -2549,7 +2549,7 @@
   "forbid": []
  },
  {
-  "line": 243,
+  "line": 245,
   "section": "Fuselages et techniques de construction",
   "name": "Aile volante (S)",
   "id": "zv_fuselage_flying_wing_s",
@@ -2571,7 +2571,7 @@
   "forbid_txt": "Empennage, Ailes de toute catégorie sauf Avancée"
  },
  {
-  "line": 244,
+  "line": 246,
   "section": "Fuselages et techniques de construction",
   "name": "Aile volante (M)",
   "id": "zv_fuselage_flying_wing_m",
@@ -2593,7 +2593,7 @@
   "forbid_txt": "Empennage, Ailes de toute catégorie sauf Avancée"
  },
  {
-  "line": 245,
+  "line": 247,
   "section": "Fuselages et techniques de construction",
   "name": "Aile volante (L)",
   "id": "zv_fuselage_flying_wing_l",
@@ -2615,7 +2615,7 @@
   "forbid_txt": "Empennage, Ailes de toute catégorie sauf Avancée"
  },
  {
-  "line": 246,
+  "line": 248,
   "section": "Fuselages et techniques de construction",
   "name": "Hydravion à coque (M)",
   "id": "zv_fuselage_flying_boat_m",
@@ -2637,7 +2637,7 @@
   "forbid_txt": "Train d'atterrissage"
  },
  {
-  "line": 247,
+  "line": 249,
   "section": "Fuselages et techniques de construction",
   "name": "Hydravion à coque (L)",
   "id": "zv_fuselage_flying_boat_l",
@@ -2659,7 +2659,7 @@
   "forbid_txt": "Train d'atterrissage"
  },
  {
-  "line": 248,
+  "line": 250,
   "section": "Fuselages et techniques de construction",
   "name": "Bois monocoque",
   "id": "zv_wooden_monocoque",
@@ -2680,7 +2680,7 @@
   "forbid": []
  },
  {
-  "line": 249,
+  "line": 251,
   "section": "Fuselages et techniques de construction",
   "name": "Tubes et toile",
   "id": "zv_tube_and_fabric",
@@ -2702,7 +2702,7 @@
   "forbid_txt": "Blindage"
  },
  {
-  "line": 257,
+  "line": 259,
   "section": "Empennages",
   "name": "Empennage classique — référence",
   "id": "zv_tail_classic",
@@ -2723,7 +2723,7 @@
   "forbid": []
  },
  {
-  "line": 258,
+  "line": 260,
   "section": "Empennages",
   "name": "Empennage en T",
   "id": "zv_tail_t",
@@ -2744,7 +2744,7 @@
   "forbid": []
  },
  {
-  "line": 259,
+  "line": 261,
   "section": "Empennages",
   "name": "Double poutre",
   "id": "zv_tail_twin_boom",
@@ -2765,7 +2765,7 @@
   "forbid": []
  },
  {
-  "line": 260,
+  "line": 262,
   "section": "Empennages",
   "name": "Double dérive",
   "id": "zv_tail_twin",
@@ -2786,7 +2786,7 @@
   "forbid": []
  },
  {
-  "line": 261,
+  "line": 263,
   "section": "Empennages",
   "name": "Empennage en V",
   "id": "zv_tail_v",
@@ -2807,7 +2807,7 @@
   "forbid": []
  },
  {
-  "line": 262,
+  "line": 264,
   "section": "Empennages",
   "name": "Empennage cruciforme",
   "id": "zv_tail_cruciform",
@@ -2828,7 +2828,7 @@
   "forbid": []
  },
  {
-  "line": 270,
+  "line": 272,
   "section": "Matériaux et construction",
   "name": "Blindage (S)",
   "id": "zv_armor_plate_s",
@@ -2849,7 +2849,7 @@
   "forbid": []
  },
  {
-  "line": 271,
+  "line": 273,
   "section": "Matériaux et construction",
   "name": "Blindage (M)",
   "id": "zv_armor_plate_m",
@@ -2870,7 +2870,7 @@
   "forbid": []
  },
  {
-  "line": 272,
+  "line": 274,
   "section": "Matériaux et construction",
   "name": "Blindage (L)",
   "id": "zv_armor_plate_l",
@@ -2891,7 +2891,7 @@
   "forbid": []
  },
  {
-  "line": 273,
+  "line": 275,
   "section": "Matériaux et construction",
   "name": "Matériaux non stratégiques (S)",
   "id": "zv_non_strategic_materials_s",
@@ -2912,7 +2912,7 @@
   "forbid": []
  },
  {
-  "line": 274,
+  "line": 276,
   "section": "Matériaux et construction",
   "name": "Matériaux non stratégiques (M)",
   "id": "zv_non_strategic_materials_m",
@@ -2933,7 +2933,7 @@
   "forbid": []
  },
  {
-  "line": 275,
+  "line": 277,
   "section": "Matériaux et construction",
   "name": "Matériaux non stratégiques (L)",
   "id": "zv_non_strategic_materials_l",
@@ -2954,7 +2954,7 @@
   "forbid": []
  },
  {
-  "line": 276,
+  "line": 278,
   "section": "Matériaux et construction",
   "name": "Construction allégée (S)",
   "id": "zv_lightweight_construction_s",
@@ -2975,7 +2975,7 @@
   "forbid": []
  },
  {
-  "line": 277,
+  "line": 279,
   "section": "Matériaux et construction",
   "name": "Construction allégée (M)",
   "id": "zv_lightweight_construction_m",
@@ -2996,7 +2996,7 @@
   "forbid": []
  },
  {
-  "line": 278,
+  "line": 280,
   "section": "Matériaux et construction",
   "name": "Construction renforcée (S)",
   "id": "zv_reinforced_construction_s",
@@ -3017,7 +3017,7 @@
   "forbid": []
  },
  {
-  "line": 279,
+  "line": 281,
   "section": "Matériaux et construction",
   "name": "Construction renforcée (M)",
   "id": "zv_reinforced_construction_m",
@@ -3038,7 +3038,7 @@
   "forbid": []
  },
  {
-  "line": 280,
+  "line": 282,
   "section": "Matériaux et construction",
   "name": "Construction renforcée (L)",
   "id": "zv_reinforced_construction_l",
@@ -3059,7 +3059,7 @@
   "forbid": []
  },
  {
-  "line": 288,
+  "line": 290,
   "section": "Hypersustentation et aérodynamique",
   "name": "Volets de combat (S)",
   "id": "zv_combat_flaps_s",
@@ -3080,7 +3080,7 @@
   "forbid": []
  },
  {
-  "line": 289,
+  "line": 291,
   "section": "Hypersustentation et aérodynamique",
   "name": "Volets de combat (M)",
   "id": "zv_combat_flaps_m",
@@ -3101,7 +3101,7 @@
   "forbid": []
  },
  {
-  "line": 290,
+  "line": 292,
   "section": "Hypersustentation et aérodynamique",
   "name": "Volets Fowler",
   "id": "zv_fowler_flaps",
@@ -3122,7 +3122,7 @@
   "forbid": []
  },
  {
-  "line": 291,
+  "line": 293,
   "section": "Hypersustentation et aérodynamique",
   "name": "Becs de bord d'attaque",
   "id": "zv_leading_edge_slats",
@@ -3143,7 +3143,7 @@
   "forbid": []
  },
  {
-  "line": 292,
+  "line": 294,
   "section": "Hypersustentation et aérodynamique",
   "name": "Aérofreins (S)",
   "id": "zv_dive_brakes_s",
@@ -3164,7 +3164,7 @@
   "forbid": []
  },
  {
-  "line": 293,
+  "line": 295,
   "section": "Hypersustentation et aérodynamique",
   "name": "Aérofreins (M)",
   "id": "zv_dive_brakes_m",
@@ -3185,7 +3185,7 @@
   "forbid": []
  },
  {
-  "line": 294,
+  "line": 296,
   "section": "Hypersustentation et aérodynamique",
   "name": "Pylônes aérodynamiques (S)",
   "id": "zv_aerodynamic_pylons_s",
@@ -3206,7 +3206,7 @@
   "forbid": []
  },
  {
-  "line": 295,
+  "line": 297,
   "section": "Hypersustentation et aérodynamique",
   "name": "Pylônes aérodynamiques (M)",
   "id": "zv_aerodynamic_pylons_m",
@@ -3227,7 +3227,7 @@
   "forbid": []
  },
  {
-  "line": 303,
+  "line": 305,
   "section": "Train d'atterrissage",
   "name": "Train fixe caréné à roulette de queue — référence",
   "id": "zv_gear_fixed_taildragger",
@@ -3248,7 +3248,7 @@
   "forbid": []
  },
  {
-  "line": 304,
+  "line": 306,
   "section": "Train d'atterrissage",
   "name": "Train fixe tricycle",
   "id": "zv_gear_fixed_tricycle",
@@ -3269,7 +3269,7 @@
   "forbid": []
  },
  {
-  "line": 305,
+  "line": 307,
   "section": "Train d'atterrissage",
   "name": "Train rétractable à roulette de queue",
   "id": "zv_gear_retractable_taildragger",
@@ -3290,7 +3290,7 @@
   "forbid": []
  },
  {
-  "line": 306,
+  "line": 308,
   "section": "Train d'atterrissage",
   "name": "Train rétractable tricycle",
   "id": "zv_gear_retractable_tricycle",
@@ -3311,7 +3311,7 @@
   "forbid": []
  },
  {
-  "line": 307,
+  "line": 309,
   "section": "Train d'atterrissage",
   "name": "Flotteurs",
   "id": "zv_floats",
@@ -3332,7 +3332,7 @@
   "forbid": []
  },
  {
-  "line": 308,
+  "line": 310,
   "section": "Train d'atterrissage",
   "name": "Skis",
   "id": "zv_skis",
@@ -3353,7 +3353,7 @@
   "forbid": []
  },
  {
-  "line": 309,
+  "line": 311,
   "section": "Train d'atterrissage",
   "name": "Crosse d'appontage et ailes repliables",
   "id": "zv_carrier_equipment",
@@ -3374,7 +3374,7 @@
   "forbid": []
  },
  {
-  "line": 352,
+  "line": 354,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Basse rectangulaire",
   "id": "zv_wing_basse_rectangulaire",
@@ -3394,7 +3394,7 @@
   "forbid": []
  },
  {
-  "line": 353,
+  "line": 355,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Basse trapézoïdale — référence",
   "id": "zv_wing_basse_trapezoidale",
@@ -3414,7 +3414,7 @@
   "forbid": []
  },
  {
-  "line": 354,
+  "line": 356,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Basse effilée",
   "id": "zv_wing_basse_effilee",
@@ -3434,7 +3434,7 @@
   "forbid": []
  },
  {
-  "line": 355,
+  "line": 357,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Basse elliptique",
   "id": "zv_wing_basse_elliptique",
@@ -3454,7 +3454,7 @@
   "forbid": []
  },
  {
-  "line": 356,
+  "line": 358,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Basse mixte",
   "id": "zv_wing_basse_mixte",
@@ -3474,7 +3474,7 @@
   "forbid": []
  },
  {
-  "line": 357,
+  "line": 359,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Basse laminaire",
   "id": "zv_wing_basse_laminaire",
@@ -3494,7 +3494,7 @@
   "forbid": []
  },
  {
-  "line": 358,
+  "line": 360,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Basse flèche légère",
   "id": "zv_wing_basse_fleche_legere",
@@ -3514,7 +3514,7 @@
   "forbid": []
  },
  {
-  "line": 359,
+  "line": 361,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Basse flèche prononcée",
   "id": "zv_wing_basse_fleche_prononcee",
@@ -3534,7 +3534,7 @@
   "forbid": []
  },
  {
-  "line": 360,
+  "line": 362,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Basse flèche inversée",
   "id": "zv_wing_basse_fleche_inversee",
@@ -3554,7 +3554,7 @@
   "forbid": []
  },
  {
-  "line": 361,
+  "line": 363,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Basse delta",
   "id": "zv_wing_basse_delta",
@@ -3574,7 +3574,7 @@
   "forbid": []
  },
  {
-  "line": 362,
+  "line": 364,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Basse mouette inversée",
   "id": "zv_wing_basse_mouette_inversee",
@@ -3594,7 +3594,7 @@
   "forbid": []
  },
  {
-  "line": 363,
+  "line": 365,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Médiane rectangulaire",
   "id": "zv_wing_mediane_rectangulaire",
@@ -3614,7 +3614,7 @@
   "forbid": []
  },
  {
-  "line": 364,
+  "line": 366,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Médiane trapézoïdale",
   "id": "zv_wing_mediane_trapezoidale",
@@ -3634,7 +3634,7 @@
   "forbid": []
  },
  {
-  "line": 365,
+  "line": 367,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Médiane effilée",
   "id": "zv_wing_mediane_effilee",
@@ -3654,7 +3654,7 @@
   "forbid": []
  },
  {
-  "line": 366,
+  "line": 368,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Médiane elliptique",
   "id": "zv_wing_mediane_elliptique",
@@ -3674,7 +3674,7 @@
   "forbid": []
  },
  {
-  "line": 367,
+  "line": 369,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Médiane mixte",
   "id": "zv_wing_mediane_mixte",
@@ -3694,7 +3694,7 @@
   "forbid": []
  },
  {
-  "line": 368,
+  "line": 370,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Médiane laminaire",
   "id": "zv_wing_mediane_laminaire",
@@ -3714,7 +3714,7 @@
   "forbid": []
  },
  {
-  "line": 369,
+  "line": 371,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Médiane flèche légère",
   "id": "zv_wing_mediane_fleche_legere",
@@ -3734,7 +3734,7 @@
   "forbid": []
  },
  {
-  "line": 370,
+  "line": 372,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Médiane flèche prononcée",
   "id": "zv_wing_mediane_fleche_prononcee",
@@ -3754,7 +3754,7 @@
   "forbid": []
  },
  {
-  "line": 371,
+  "line": 373,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Médiane flèche inversée",
   "id": "zv_wing_mediane_fleche_inversee",
@@ -3774,7 +3774,7 @@
   "forbid": []
  },
  {
-  "line": 372,
+  "line": 374,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Médiane delta",
   "id": "zv_wing_mediane_delta",
@@ -3794,7 +3794,7 @@
   "forbid": []
  },
  {
-  "line": 373,
+  "line": 375,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Médiane mouette inversée",
   "id": "zv_wing_mediane_mouette_inversee",
@@ -3814,7 +3814,7 @@
   "forbid": []
  },
  {
-  "line": 374,
+  "line": 376,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Haute rectangulaire",
   "id": "zv_wing_haute_rectangulaire",
@@ -3834,7 +3834,7 @@
   "forbid": []
  },
  {
-  "line": 375,
+  "line": 377,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Haute trapézoïdale",
   "id": "zv_wing_haute_trapezoidale",
@@ -3854,7 +3854,7 @@
   "forbid": []
  },
  {
-  "line": 376,
+  "line": 378,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Haute effilée",
   "id": "zv_wing_haute_effilee",
@@ -3874,7 +3874,7 @@
   "forbid": []
  },
  {
-  "line": 377,
+  "line": 379,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Haute elliptique",
   "id": "zv_wing_haute_elliptique",
@@ -3894,7 +3894,7 @@
   "forbid": []
  },
  {
-  "line": 378,
+  "line": 380,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Haute mixte",
   "id": "zv_wing_haute_mixte",
@@ -3914,7 +3914,7 @@
   "forbid": []
  },
  {
-  "line": 379,
+  "line": 381,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Haute laminaire",
   "id": "zv_wing_haute_laminaire",
@@ -3934,7 +3934,7 @@
   "forbid": []
  },
  {
-  "line": 380,
+  "line": 382,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Haute flèche légère",
   "id": "zv_wing_haute_fleche_legere",
@@ -3954,7 +3954,7 @@
   "forbid": []
  },
  {
-  "line": 381,
+  "line": 383,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Haute flèche prononcée",
   "id": "zv_wing_haute_fleche_prononcee",
@@ -3974,7 +3974,7 @@
   "forbid": []
  },
  {
-  "line": 382,
+  "line": 384,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Haute flèche inversée",
   "id": "zv_wing_haute_fleche_inversee",
@@ -3994,7 +3994,7 @@
   "forbid": []
  },
  {
-  "line": 383,
+  "line": 385,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Haute mouette",
   "id": "zv_wing_haute_mouette",
@@ -4014,7 +4014,7 @@
   "forbid": []
  },
  {
-  "line": 384,
+  "line": 386,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Parasol rectangulaire",
   "id": "zv_wing_parasol_rectangulaire",
@@ -4034,7 +4034,7 @@
   "forbid": []
  },
  {
-  "line": 385,
+  "line": 387,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Parasol trapézoïdale",
   "id": "zv_wing_parasol_trapezoidale",
@@ -4054,7 +4054,7 @@
   "forbid": []
  },
  {
-  "line": 386,
+  "line": 388,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Parasol effilée",
   "id": "zv_wing_parasol_effilee",
@@ -4074,7 +4074,7 @@
   "forbid": []
  },
  {
-  "line": 387,
+  "line": 389,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Parasol elliptique",
   "id": "zv_wing_parasol_elliptique",
@@ -4094,7 +4094,7 @@
   "forbid": []
  },
  {
-  "line": 388,
+  "line": 390,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Parasol mixte",
   "id": "zv_wing_parasol_mixte",
@@ -4114,7 +4114,7 @@
   "forbid": []
  },
  {
-  "line": 389,
+  "line": 391,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Parasol mouette",
   "id": "zv_wing_parasol_mouette",
@@ -4134,7 +4134,7 @@
   "forbid": []
  },
  {
-  "line": 390,
+  "line": 392,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Biplan rectangulaire",
   "id": "zv_wing_biplan_rectangulaire",
@@ -4154,7 +4154,7 @@
   "forbid": []
  },
  {
-  "line": 391,
+  "line": 393,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Biplan trapézoïdale",
   "id": "zv_wing_biplan_trapezoidale",
@@ -4174,7 +4174,7 @@
   "forbid": []
  },
  {
-  "line": 392,
+  "line": 394,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Biplan mixte",
   "id": "zv_wing_biplan_mixte",
@@ -4194,7 +4194,7 @@
   "forbid": []
  },
  {
-  "line": 393,
+  "line": 395,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Biplan mouette",
   "id": "zv_wing_biplan_mouette",
@@ -4214,7 +4214,7 @@
   "forbid": []
  },
  {
-  "line": 394,
+  "line": 396,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Biplan effilée",
   "id": "zv_wing_biplan_effilee",
@@ -4234,7 +4234,7 @@
   "forbid": []
  },
  {
-  "line": 395,
+  "line": 397,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Biplan elliptique",
   "id": "zv_wing_biplan_elliptique",
@@ -4254,7 +4254,7 @@
   "forbid": []
  },
  {
-  "line": 396,
+  "line": 398,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Biplan flèche légère",
   "id": "zv_wing_biplan_fleche_legere",
@@ -4274,7 +4274,7 @@
   "forbid": []
  },
  {
-  "line": 397,
+  "line": 399,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Sesquiplan",
   "id": "zv_wing_sesquiplan_forme_unique",
@@ -4294,7 +4294,7 @@
   "forbid": []
  },
  {
-  "line": 398,
+  "line": 400,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Triplan",
   "id": "zv_wing_triplan_forme_unique",
@@ -4314,7 +4314,7 @@
   "forbid": []
  },
  {
-  "line": 399,
+  "line": 401,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Sans queue laminaire",
   "id": "zv_wing_sans_queue_laminaire",
@@ -4334,7 +4334,7 @@
   "forbid": []
  },
  {
-  "line": 400,
+  "line": 402,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Sans queue flèche légère",
   "id": "zv_wing_sans_queue_fleche_legere",
@@ -4354,7 +4354,7 @@
   "forbid": []
  },
  {
-  "line": 401,
+  "line": 403,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Sans queue flèche prononcée",
   "id": "zv_wing_sans_queue_fleche_prononcee",
@@ -4374,7 +4374,7 @@
   "forbid": []
  },
  {
-  "line": 402,
+  "line": 404,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Sans queue delta",
   "id": "zv_wing_sans_queue_delta",
@@ -4394,7 +4394,7 @@
   "forbid": []
  },
  {
-  "line": 403,
+  "line": 405,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Sans queue discoïde",
   "id": "zv_wing_sans_queue_discoide",
@@ -4414,7 +4414,7 @@
   "forbid": []
  },
  {
-  "line": 404,
+  "line": 406,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Canard rectangulaire",
   "id": "zv_wing_canard_rectangulaire",
@@ -4434,7 +4434,7 @@
   "forbid": []
  },
  {
-  "line": 405,
+  "line": 407,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Canard trapézoïdale",
   "id": "zv_wing_canard_trapezoidale",
@@ -4454,7 +4454,7 @@
   "forbid": []
  },
  {
-  "line": 406,
+  "line": 408,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Canard effilée",
   "id": "zv_wing_canard_effilee",
@@ -4474,7 +4474,7 @@
   "forbid": []
  },
  {
-  "line": 407,
+  "line": 409,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Canard elliptique",
   "id": "zv_wing_canard_elliptique",
@@ -4494,7 +4494,7 @@
   "forbid": []
  },
  {
-  "line": 408,
+  "line": 410,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Canard mixte",
   "id": "zv_wing_canard_mixte",
@@ -4514,7 +4514,7 @@
   "forbid": []
  },
  {
-  "line": 409,
+  "line": 411,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Canard laminaire",
   "id": "zv_wing_canard_laminaire",
@@ -4534,7 +4534,7 @@
   "forbid": []
  },
  {
-  "line": 410,
+  "line": 412,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Canard flèche légère",
   "id": "zv_wing_canard_fleche_legere",
@@ -4554,7 +4554,7 @@
   "forbid": []
  },
  {
-  "line": 411,
+  "line": 413,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Canard flèche prononcée",
   "id": "zv_wing_canard_fleche_prononcee",
@@ -4574,7 +4574,7 @@
   "forbid": []
  },
  {
-  "line": 412,
+  "line": 414,
   "section": "Les 61 modules d'aile (catégorie + forme)",
   "name": "Canard delta",
   "id": "zv_wing_canard_delta",
@@ -4594,7 +4594,7 @@
   "forbid": []
  },
  {
-  "line": 420,
+  "line": 422,
   "section": "Cockpit et équipage",
   "name": "Cockpit fermé — référence",
   "id": "zv_cockpit_closed",
@@ -4615,7 +4615,7 @@
   "forbid": []
  },
  {
-  "line": 421,
+  "line": 423,
   "section": "Cockpit et équipage",
   "name": "Cockpit ouvert",
   "id": "zv_cockpit_open",
@@ -4636,7 +4636,7 @@
   "forbid": []
  },
  {
-  "line": 422,
+  "line": 424,
   "section": "Cockpit et équipage",
   "name": "Cockpit pressurisé",
   "id": "zv_cockpit_pressurized",
@@ -4657,7 +4657,7 @@
   "forbid": []
  },
  {
-  "line": 423,
+  "line": 425,
   "section": "Cockpit et équipage",
   "name": "Cockpit en bulle",
   "id": "zv_cockpit_bubble",
@@ -4678,7 +4678,7 @@
   "forbid": []
  },
  {
-  "line": 424,
+  "line": 426,
   "section": "Cockpit et équipage",
   "name": "Nez vitré de bombardier",
   "id": "zv_cockpit_glazed_nose",
@@ -4700,7 +4700,7 @@
   "forbid_txt": "Motorisation (nez), Motorisation (nez et queue), Mitrailleuses de nez, Canons de nez, Canon AT de nez"
  },
  {
-  "line": 425,
+  "line": 427,
   "section": "Cockpit et équipage",
   "name": "Vitrage et siège blindés",
   "id": "zv_armored_cockpit",
@@ -4721,7 +4721,7 @@
   "forbid": []
  },
  {
-  "line": 426,
+  "line": 428,
   "section": "Cockpit et équipage",
   "name": "Siège éjectable",
   "id": "zv_ejection_seat",
@@ -4742,7 +4742,7 @@
   "forbid": []
  },
  {
-  "line": 434,
+  "line": 436,
   "section": "Réservoirs",
   "name": "Réservoirs supplémentaires (S)",
   "id": "zv_fuel_tanks_s",
@@ -4763,7 +4763,7 @@
   "forbid": []
  },
  {
-  "line": 435,
+  "line": 437,
   "section": "Réservoirs",
   "name": "Réservoirs supplémentaires (M)",
   "id": "zv_fuel_tanks_m",
@@ -4784,7 +4784,7 @@
   "forbid": []
  },
  {
-  "line": 436,
+  "line": 438,
   "section": "Réservoirs",
   "name": "Réservoirs supplémentaires (L)",
   "id": "zv_fuel_tanks_l",
@@ -4805,7 +4805,7 @@
   "forbid": []
  },
  {
-  "line": 437,
+  "line": 439,
   "section": "Réservoirs",
   "name": "Réservoirs auto-obturants (S)",
   "id": "zv_self_sealing_fuel_tanks_s",
@@ -4826,7 +4826,7 @@
   "forbid": []
  },
  {
-  "line": 438,
+  "line": 440,
   "section": "Réservoirs",
   "name": "Réservoirs auto-obturants (M)",
   "id": "zv_self_sealing_fuel_tanks_m",
@@ -4847,7 +4847,7 @@
   "forbid": []
  },
  {
-  "line": 439,
+  "line": 441,
   "section": "Réservoirs",
   "name": "Réservoirs auto-obturants (L)",
   "id": "zv_self_sealing_fuel_tanks_l",
@@ -4868,7 +4868,7 @@
   "forbid": []
  },
  {
-  "line": 440,
+  "line": 442,
   "section": "Réservoirs",
   "name": "Réservoirs largables (S)",
   "id": "zv_drop_tanks_s",
@@ -4889,7 +4889,7 @@
   "forbid": []
  },
  {
-  "line": 441,
+  "line": 443,
   "section": "Réservoirs",
   "name": "Réservoirs largables (M)",
   "id": "zv_drop_tanks_m",
@@ -4910,7 +4910,7 @@
   "forbid": []
  },
  {
-  "line": 442,
+  "line": 444,
   "section": "Réservoirs",
   "name": "Réservoir de soute",
   "id": "zv_bomb_bay_tank",
@@ -4932,7 +4932,7 @@
   "forbid_txt": "Petite cellule (limite)"
  },
  {
-  "line": 443,
+  "line": 445,
   "section": "Réservoirs",
   "name": "Réservoir de convoyage",
   "id": "zv_ferry_tank",
@@ -4954,7 +4954,7 @@
   "forbid_txt": "Mitrailleuses, Canons, Canon AT, Mitrailleuses de nez, Canons de nez, Canon AT de nez, Roquettes, Attaches, En soute, Armes navales, Armes guidées"
  },
  {
-  "line": 451,
+  "line": 453,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses légères x1",
   "id": "zv_light_mg_1x",
@@ -4975,7 +4975,7 @@
   "forbid": []
  },
  {
-  "line": 452,
+  "line": 454,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses légères x2",
   "id": "zv_light_mg_2x",
@@ -4996,7 +4996,7 @@
   "forbid": []
  },
  {
-  "line": 453,
+  "line": 455,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses légères x3",
   "id": "zv_light_mg_3x",
@@ -5017,7 +5017,7 @@
   "forbid": []
  },
  {
-  "line": 454,
+  "line": 456,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses légères x4",
   "id": "zv_light_mg_4x",
@@ -5038,7 +5038,7 @@
   "forbid": []
  },
  {
-  "line": 455,
+  "line": 457,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses légères améliorées x1",
   "id": "zv_light_imp_mg_1x",
@@ -5059,7 +5059,7 @@
   "forbid": []
  },
  {
-  "line": 456,
+  "line": 458,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses légères améliorées x2",
   "id": "zv_light_imp_mg_2x",
@@ -5080,7 +5080,7 @@
   "forbid": []
  },
  {
-  "line": 457,
+  "line": 459,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses légères améliorées x3",
   "id": "zv_light_imp_mg_3x",
@@ -5101,7 +5101,7 @@
   "forbid": []
  },
  {
-  "line": 458,
+  "line": 460,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses légères améliorées x4",
   "id": "zv_light_imp_mg_4x",
@@ -5122,7 +5122,7 @@
   "forbid": []
  },
  {
-  "line": 459,
+  "line": 461,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses lourdes x1",
   "id": "zv_heavy_mg_1x",
@@ -5143,7 +5143,7 @@
   "forbid": []
  },
  {
-  "line": 460,
+  "line": 462,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses lourdes x2",
   "id": "zv_heavy_mg_2x",
@@ -5164,7 +5164,7 @@
   "forbid": []
  },
  {
-  "line": 461,
+  "line": 463,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses lourdes x3",
   "id": "zv_heavy_mg_3x",
@@ -5185,7 +5185,7 @@
   "forbid": []
  },
  {
-  "line": 462,
+  "line": 464,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses lourdes x4",
   "id": "zv_heavy_mg_4x",
@@ -5206,7 +5206,7 @@
   "forbid": []
  },
  {
-  "line": 463,
+  "line": 465,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses lourdes améliorées x1",
   "id": "zv_heavy_imp_mg_1x",
@@ -5227,7 +5227,7 @@
   "forbid": []
  },
  {
-  "line": 464,
+  "line": 466,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses lourdes améliorées x2",
   "id": "zv_heavy_imp_mg_2x",
@@ -5248,7 +5248,7 @@
   "forbid": []
  },
  {
-  "line": 465,
+  "line": 467,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses lourdes améliorées x3",
   "id": "zv_heavy_imp_mg_3x",
@@ -5269,7 +5269,7 @@
   "forbid": []
  },
  {
-  "line": 466,
+  "line": 468,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses lourdes améliorées x4",
   "id": "zv_heavy_imp_mg_4x",
@@ -5290,7 +5290,7 @@
   "forbid": []
  },
  {
-  "line": 467,
+  "line": 469,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Canon 20 mm, 1re génération x1",
   "id": "zv_cannon_20mm_1_1x",
@@ -5311,7 +5311,7 @@
   "forbid": []
  },
  {
-  "line": 468,
+  "line": 470,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Canon 20 mm, 1re génération x2",
   "id": "zv_cannon_20mm_1_2x",
@@ -5332,7 +5332,7 @@
   "forbid": []
  },
  {
-  "line": 469,
+  "line": 471,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Canon 20 mm, 2e génération x1",
   "id": "zv_cannon_20mm_2_1x",
@@ -5353,7 +5353,7 @@
   "forbid": []
  },
  {
-  "line": 470,
+  "line": 472,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Canon 20 mm, 2e génération x2",
   "id": "zv_cannon_20mm_2_2x",
@@ -5374,7 +5374,7 @@
   "forbid": []
  },
  {
-  "line": 471,
+  "line": 473,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Canon 20 mm, 3e génération x1",
   "id": "zv_cannon_20mm_3_1x",
@@ -5395,7 +5395,7 @@
   "forbid": []
  },
  {
-  "line": 472,
+  "line": 474,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Canon 20 mm, 3e génération x2",
   "id": "zv_cannon_20mm_3_2x",
@@ -5416,7 +5416,7 @@
   "forbid": []
  },
  {
-  "line": 473,
+  "line": 475,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Canon 30 mm (MK 108) x1",
   "id": "zv_cannon_30mm_1x",
@@ -5437,7 +5437,7 @@
   "forbid": []
  },
  {
-  "line": 474,
+  "line": 476,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Canon 30 mm (MK 108) x2",
   "id": "zv_cannon_30mm_2x",
@@ -5458,7 +5458,7 @@
   "forbid": []
  },
  {
-  "line": 475,
+  "line": 477,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses légères x1 (nez)",
   "id": "zv_nose_light_mg_1x",
@@ -5479,7 +5479,7 @@
   "forbid": []
  },
  {
-  "line": 476,
+  "line": 478,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses légères x2 (nez)",
   "id": "zv_nose_light_mg_2x",
@@ -5500,7 +5500,7 @@
   "forbid": []
  },
  {
-  "line": 477,
+  "line": 479,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses légères améliorées x1 (nez)",
   "id": "zv_nose_light_imp_mg_1x",
@@ -5521,7 +5521,7 @@
   "forbid": []
  },
  {
-  "line": 478,
+  "line": 480,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses légères améliorées x2 (nez)",
   "id": "zv_nose_light_imp_mg_2x",
@@ -5542,7 +5542,7 @@
   "forbid": []
  },
  {
-  "line": 479,
+  "line": 481,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses lourdes x1 (nez)",
   "id": "zv_nose_heavy_mg_1x",
@@ -5563,7 +5563,7 @@
   "forbid": []
  },
  {
-  "line": 480,
+  "line": 482,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses lourdes x2 (nez)",
   "id": "zv_nose_heavy_mg_2x",
@@ -5584,7 +5584,7 @@
   "forbid": []
  },
  {
-  "line": 481,
+  "line": 483,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses lourdes améliorées x1 (nez)",
   "id": "zv_nose_heavy_imp_mg_1x",
@@ -5605,7 +5605,7 @@
   "forbid": []
  },
  {
-  "line": 482,
+  "line": 484,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Mitrailleuses lourdes améliorées x2 (nez)",
   "id": "zv_nose_heavy_imp_mg_2x",
@@ -5626,7 +5626,7 @@
   "forbid": []
  },
  {
-  "line": 483,
+  "line": 485,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Canon 20 mm, 1re génération x1 (nez)",
   "id": "zv_nose_cannon_20mm_1_1x",
@@ -5647,7 +5647,7 @@
   "forbid": []
  },
  {
-  "line": 484,
+  "line": 486,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Canon 20 mm, 1re génération x2 (nez)",
   "id": "zv_nose_cannon_20mm_1_2x",
@@ -5668,7 +5668,7 @@
   "forbid": []
  },
  {
-  "line": 485,
+  "line": 487,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Canon 20 mm, 2e génération x1 (nez)",
   "id": "zv_nose_cannon_20mm_2_1x",
@@ -5689,7 +5689,7 @@
   "forbid": []
  },
  {
-  "line": 486,
+  "line": 488,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Canon 20 mm, 2e génération x2 (nez)",
   "id": "zv_nose_cannon_20mm_2_2x",
@@ -5710,7 +5710,7 @@
   "forbid": []
  },
  {
-  "line": 487,
+  "line": 489,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Canon 20 mm, 3e génération x1 (nez)",
   "id": "zv_nose_cannon_20mm_3_1x",
@@ -5731,7 +5731,7 @@
   "forbid": []
  },
  {
-  "line": 488,
+  "line": 490,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Canon 20 mm, 3e génération x2 (nez)",
   "id": "zv_nose_cannon_20mm_3_2x",
@@ -5752,7 +5752,7 @@
   "forbid": []
  },
  {
-  "line": 489,
+  "line": 491,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Canon 30 mm (MK 108) x1 (nez)",
   "id": "zv_nose_cannon_30mm_1x",
@@ -5773,7 +5773,7 @@
   "forbid": []
  },
  {
-  "line": 490,
+  "line": 492,
   "section": "Mitrailleuses et canons (armes de chasse)",
   "name": "Canon 30 mm (MK 108) x2 (nez)",
   "id": "zv_nose_cannon_30mm_2x",
@@ -5794,7 +5794,7 @@
   "forbid": []
  },
  {
-  "line": 498,
+  "line": 500,
   "section": "Canons antichars et roquettes",
   "name": "Canon AT 37 mm (BK 3,7)",
   "id": "zv_at_cannon_37",
@@ -5815,7 +5815,7 @@
   "forbid": []
  },
  {
-  "line": 499,
+  "line": 501,
   "section": "Canons antichars et roquettes",
   "name": "Canon AT 40 mm (Vickers S)",
   "id": "zv_at_cannon_40",
@@ -5836,7 +5836,7 @@
   "forbid": []
  },
  {
-  "line": 500,
+  "line": 502,
   "section": "Canons antichars et roquettes",
   "name": "Canon AT 57 mm (6 livres Molins)",
   "id": "zv_at_cannon_57",
@@ -5857,7 +5857,7 @@
   "forbid": []
  },
  {
-  "line": 501,
+  "line": 503,
   "section": "Canons antichars et roquettes",
   "name": "Canon AT 75 mm (PaK 40, B-25H)",
   "id": "zv_at_cannon_75",
@@ -5878,7 +5878,7 @@
   "forbid": []
  },
  {
-  "line": 502,
+  "line": 504,
   "section": "Canons antichars et roquettes",
   "name": "Canon AT 37 mm (BK 3,7) (nez)",
   "id": "zv_nose_at_cannon_37",
@@ -5899,7 +5899,7 @@
   "forbid": []
  },
  {
-  "line": 503,
+  "line": 505,
   "section": "Canons antichars et roquettes",
   "name": "Canon AT 40 mm (Vickers S) (nez)",
   "id": "zv_nose_at_cannon_40",
@@ -5920,7 +5920,7 @@
   "forbid": []
  },
  {
-  "line": 504,
+  "line": 506,
   "section": "Canons antichars et roquettes",
   "name": "Canon AT 57 mm (6 livres Molins) (nez)",
   "id": "zv_nose_at_cannon_57",
@@ -5941,7 +5941,7 @@
   "forbid": []
  },
  {
-  "line": 505,
+  "line": 507,
   "section": "Canons antichars et roquettes",
   "name": "Canon AT 75 mm (PaK 40, B-25H) (nez)",
   "id": "zv_nose_at_cannon_75",
@@ -5962,7 +5962,7 @@
   "forbid": []
  },
  {
-  "line": 506,
+  "line": 508,
   "section": "Canons antichars et roquettes",
   "name": "Rails de roquettes I",
   "id": "zv_rockets_rails_1",
@@ -5983,7 +5983,7 @@
   "forbid": []
  },
  {
-  "line": 507,
+  "line": 509,
   "section": "Canons antichars et roquettes",
   "name": "Rails de roquettes II",
   "id": "zv_rockets_rails_2",
@@ -6004,7 +6004,7 @@
   "forbid": []
  },
  {
-  "line": 508,
+  "line": 510,
   "section": "Canons antichars et roquettes",
   "name": "Roquettes antichars I",
   "id": "zv_rockets_at_1",
@@ -6025,7 +6025,7 @@
   "forbid": []
  },
  {
-  "line": 509,
+  "line": 511,
   "section": "Canons antichars et roquettes",
   "name": "Roquettes antichars II",
   "id": "zv_rockets_at_2",
@@ -6046,7 +6046,7 @@
   "forbid": []
  },
  {
-  "line": 510,
+  "line": 512,
   "section": "Canons antichars et roquettes",
   "name": "Roquettes air-air R4M",
   "id": "zv_rockets_r4m",
@@ -6067,7 +6067,7 @@
   "forbid": []
  },
  {
-  "line": 511,
+  "line": 513,
   "section": "Canons antichars et roquettes",
   "name": "Tubes mortier-roquette WGr 21",
   "id": "zv_rockets_wgr21",
@@ -6088,7 +6088,7 @@
   "forbid": []
  },
  {
-  "line": 519,
+  "line": 521,
   "section": "Bombes : attaches et soutes",
   "name": "Bombes légères (attaches)",
   "id": "zv_bomb_locks_light",
@@ -6109,7 +6109,7 @@
   "forbid": []
  },
  {
-  "line": 520,
+  "line": 522,
   "section": "Bombes : attaches et soutes",
   "name": "Bombes à fragmentation (attaches)",
   "id": "zv_bomb_locks_frag",
@@ -6130,7 +6130,7 @@
   "forbid": []
  },
  {
-  "line": 521,
+  "line": 523,
   "section": "Bombes : attaches et soutes",
   "name": "Bombes perforantes (attaches)",
   "id": "zv_bomb_locks_ap",
@@ -6151,7 +6151,7 @@
   "forbid": []
  },
  {
-  "line": 522,
+  "line": 524,
   "section": "Bombes : attaches et soutes",
   "name": "Bombes lourdes (attaches)",
   "id": "zv_bomb_locks_heavy",
@@ -6172,7 +6172,7 @@
   "forbid": []
  },
  {
-  "line": 523,
+  "line": 525,
   "section": "Bombes : attaches et soutes",
   "name": "Bombes incendiaires (attaches)",
   "id": "zv_bomb_locks_incendiary",
@@ -6193,7 +6193,7 @@
   "forbid": []
  },
  {
-  "line": 524,
+  "line": 526,
   "section": "Bombes : attaches et soutes",
   "name": "Napalm",
   "id": "zv_bomb_locks_napalm",
@@ -6214,7 +6214,7 @@
   "forbid": []
  },
  {
-  "line": 525,
+  "line": 527,
   "section": "Bombes : attaches et soutes",
   "name": "Très gros calibres (attaches)",
   "id": "zv_bomb_locks_earthquake",
@@ -6235,7 +6235,7 @@
   "forbid": []
  },
  {
-  "line": 526,
+  "line": 528,
   "section": "Bombes : attaches et soutes",
   "name": "Bombes légères en soute",
   "id": "zv_bomb_bay_light",
@@ -6256,7 +6256,7 @@
   "forbid": []
  },
  {
-  "line": 527,
+  "line": 529,
   "section": "Bombes : attaches et soutes",
   "name": "Bombes moyennes en soute",
   "id": "zv_bomb_bay_medium",
@@ -6277,7 +6277,7 @@
   "forbid": []
  },
  {
-  "line": 528,
+  "line": 530,
   "section": "Bombes : attaches et soutes",
   "name": "Bombes moyennes en soute (fragmentation)",
   "id": "zv_bomb_bay_medium_frag",
@@ -6298,7 +6298,7 @@
   "forbid": []
  },
  {
-  "line": 529,
+  "line": 531,
   "section": "Bombes : attaches et soutes",
   "name": "Grandes bombes en soute",
   "id": "zv_bomb_bay_large",
@@ -6319,7 +6319,7 @@
   "forbid": []
  },
  {
-  "line": 530,
+  "line": 532,
   "section": "Bombes : attaches et soutes",
   "name": "Grandes bombes en soute (fragmentation)",
   "id": "zv_bomb_bay_large_frag",
@@ -6340,7 +6340,7 @@
   "forbid": []
  },
  {
-  "line": 531,
+  "line": 533,
   "section": "Bombes : attaches et soutes",
   "name": "Bombes incendiaires en soute",
   "id": "zv_bomb_bay_incendiary",
@@ -6361,7 +6361,7 @@
   "forbid": []
  },
  {
-  "line": 532,
+  "line": 534,
   "section": "Bombes : attaches et soutes",
   "name": "Très grosses bombes en soute (sans portes)",
   "id": "zv_bomb_bay_earthquake",
@@ -6382,7 +6382,7 @@
   "forbid": []
  },
  {
-  "line": 540,
+  "line": 542,
   "section": "Armes navales, guidées et spéciales",
   "name": "Torpille niv. 1",
   "id": "torpedo_mounting",
@@ -6403,7 +6403,7 @@
   "forbid": []
  },
  {
-  "line": 541,
+  "line": 543,
   "section": "Armes navales, guidées et spéciales",
   "name": "Torpille niv. 2",
   "id": "torpedo_mounting_2",
@@ -6424,7 +6424,7 @@
   "forbid": []
  },
  {
-  "line": 542,
+  "line": 544,
   "section": "Armes navales, guidées et spéciales",
   "name": "Torpille niv. 3",
   "id": "torpedo_mounting_3",
@@ -6445,7 +6445,7 @@
   "forbid": []
  },
  {
-  "line": 543,
+  "line": 545,
   "section": "Armes navales, guidées et spéciales",
   "name": "Grenades sous-marines",
   "id": "zv_depth_charges",
@@ -6466,7 +6466,7 @@
   "forbid": []
  },
  {
-  "line": 544,
+  "line": 546,
   "section": "Armes navales, guidées et spéciales",
   "name": "Torpille acoustique Fido (Mk 24)",
   "id": "zv_fido",
@@ -6487,7 +6487,7 @@
   "forbid": []
  },
  {
-  "line": 545,
+  "line": 547,
   "section": "Armes navales, guidées et spéciales",
   "name": "Missile antinavire",
   "id": "guided_anti_ship_missile",
@@ -6508,7 +6508,7 @@
   "forbid": []
  },
  {
-  "line": 546,
+  "line": 548,
   "section": "Armes navales, guidées et spéciales",
   "name": "Fritz X",
   "id": "zv_fritz_x",
@@ -6529,7 +6529,7 @@
   "forbid": []
  },
  {
-  "line": 547,
+  "line": 549,
   "section": "Armes navales, guidées et spéciales",
   "name": "Hs 293",
   "id": "zv_hs293",
@@ -6550,7 +6550,7 @@
   "forbid": []
  },
  {
-  "line": 548,
+  "line": 550,
   "section": "Armes navales, guidées et spéciales",
   "name": "Mines larguées",
   "id": "airdropped_mines",
@@ -6571,7 +6571,7 @@
   "forbid": []
  },
  {
-  "line": 549,
+  "line": 551,
   "section": "Armes navales, guidées et spéciales",
   "name": "Charge kamikaze",
   "id": "fixed_explosive_charge",
@@ -6592,7 +6592,7 @@
   "forbid": []
  },
  {
-  "line": 550,
+  "line": 552,
   "section": "Armes navales, guidées et spéciales",
   "name": "Schräge Musik",
   "id": "zv_schraege_musik",
@@ -6613,7 +6613,7 @@
   "forbid": []
  },
  {
-  "line": 551,
+  "line": 553,
   "section": "Armes navales, guidées et spéciales",
   "name": "Bobine de déminage",
   "id": "demining_coil",
@@ -6634,7 +6634,7 @@
   "forbid": []
  },
  {
-  "line": 559,
+  "line": 561,
   "section": "Viseurs, radars et électronique",
   "name": "Viseur de bombardement niv. 1",
   "id": "bomb_sights_1",
@@ -6655,7 +6655,7 @@
   "forbid": []
  },
  {
-  "line": 560,
+  "line": 562,
   "section": "Viseurs, radars et électronique",
   "name": "Viseur de bombardement niv. 2",
   "id": "bomb_sights_2",
@@ -6676,7 +6676,7 @@
   "forbid": []
  },
  {
-  "line": 561,
+  "line": 563,
   "section": "Viseurs, radars et électronique",
   "name": "Viseur réflexe de chasse niv. 1",
   "id": "zv_reflex_gunsight_1",
@@ -6697,7 +6697,7 @@
   "forbid": []
  },
  {
-  "line": 562,
+  "line": 564,
   "section": "Viseurs, radars et électronique",
   "name": "Viseur réflexe de chasse niv. 2",
   "id": "zv_reflex_gunsight_2",
@@ -6718,7 +6718,7 @@
   "forbid": []
  },
  {
-  "line": 563,
+  "line": 565,
   "section": "Viseurs, radars et électronique",
   "name": "Viseur réflexe d'attaque niv. 1",
   "id": "zv_attack_gunsight_1",
@@ -6739,7 +6739,7 @@
   "forbid": []
  },
  {
-  "line": 564,
+  "line": 566,
   "section": "Viseurs, radars et électronique",
   "name": "Viseur réflexe d'attaque niv. 2",
   "id": "zv_attack_gunsight_2",
@@ -6760,7 +6760,7 @@
   "forbid": []
  },
  {
-  "line": 565,
+  "line": 567,
   "section": "Viseurs, radars et électronique",
   "name": "Viseur gyroscopique niv. 1",
   "id": "zv_gyro_gunsight_1",
@@ -6781,7 +6781,7 @@
   "forbid": []
  },
  {
-  "line": 566,
+  "line": 568,
   "section": "Viseurs, radars et électronique",
   "name": "Viseur gyroscopique niv. 2",
   "id": "zv_gyro_gunsight_2",
@@ -6802,7 +6802,7 @@
   "forbid": []
  },
  {
-  "line": 567,
+  "line": 569,
   "section": "Viseurs, radars et électronique",
   "name": "Radionavigation niv. 1",
   "id": "radio_navigation_1",
@@ -6823,7 +6823,7 @@
   "forbid": []
  },
  {
-  "line": 568,
+  "line": 570,
   "section": "Viseurs, radars et électronique",
   "name": "Radionavigation niv. 2",
   "id": "radio_navigation_2",
@@ -6844,7 +6844,7 @@
   "forbid": []
  },
  {
-  "line": 569,
+  "line": 571,
   "section": "Viseurs, radars et électronique",
   "name": "Radar air-sol niv. 1",
   "id": "air_ground_radar_1",
@@ -6865,7 +6865,7 @@
   "forbid": []
  },
  {
-  "line": 570,
+  "line": 572,
   "section": "Viseurs, radars et électronique",
   "name": "Radar air-sol niv. 2",
   "id": "air_ground_radar_2",
@@ -6886,7 +6886,7 @@
   "forbid": []
  },
  {
-  "line": 571,
+  "line": 573,
   "section": "Viseurs, radars et électronique",
   "name": "Radar air-air niv. 1",
   "id": "air_air_radar_1",
@@ -6907,7 +6907,7 @@
   "forbid": []
  },
  {
-  "line": 572,
+  "line": 574,
   "section": "Viseurs, radars et électronique",
   "name": "Radar air-air niv. 2",
   "id": "air_air_radar_2",
@@ -6928,7 +6928,7 @@
   "forbid": []
  },
  {
-  "line": 573,
+  "line": 575,
   "section": "Viseurs, radars et électronique",
   "name": "Radar anti-navire ASV",
   "id": "zv_asv_radar",
@@ -6949,7 +6949,7 @@
   "forbid": []
  },
  {
-  "line": 574,
+  "line": 576,
   "section": "Viseurs, radars et électronique",
   "name": "Paillettes anti-radar (Window)",
   "id": "zv_window",
@@ -6970,7 +6970,7 @@
   "forbid": []
  },
  {
-  "line": 575,
+  "line": 577,
   "section": "Viseurs, radars et électronique",
   "name": "Alerte radar de queue (Monica)",
   "id": "zv_monica",
@@ -6991,7 +6991,7 @@
   "forbid": []
  },
  {
-  "line": 576,
+  "line": 578,
   "section": "Viseurs, radars et électronique",
   "name": "Récepteur d'alerte (Naxos)",
   "id": "zv_naxos",
@@ -7012,7 +7012,7 @@
   "forbid": []
  },
  {
-  "line": 577,
+  "line": 579,
   "section": "Viseurs, radars et électronique",
   "name": "Identification ami-ennemi (IFF)",
   "id": "zv_iff",
@@ -7033,7 +7033,7 @@
   "forbid": []
  },
  {
-  "line": 578,
+  "line": 580,
   "section": "Viseurs, radars et électronique",
   "name": "Altimètre radar",
   "id": "zv_radar_altimeter",
@@ -7054,7 +7054,7 @@
   "forbid": []
  },
  {
-  "line": 579,
+  "line": 581,
   "section": "Viseurs, radars et électronique",
   "name": "Pilote automatique",
   "id": "zv_autopilot",
@@ -7075,7 +7075,7 @@
   "forbid": []
  },
  {
-  "line": 580,
+  "line": 582,
   "section": "Viseurs, radars et électronique",
   "name": "Radiotéléphone",
   "id": "zv_radio_telephone",
@@ -7096,7 +7096,7 @@
   "forbid": []
  },
  {
-  "line": 586,
+  "line": 588,
   "section": "Reconnaissance, lutte anti-sous-marine et transport",
   "name": "Caméra de reconnaissance",
   "id": "recon_camera",
@@ -7117,7 +7117,7 @@
   "forbid": []
  },
  {
-  "line": 587,
+  "line": 589,
   "section": "Reconnaissance, lutte anti-sous-marine et transport",
   "name": "Photographie nocturne à flash",
   "id": "zv_night_photo",
@@ -7138,7 +7138,7 @@
   "forbid": []
  },
  {
-  "line": 588,
+  "line": 590,
   "section": "Reconnaissance, lutte anti-sous-marine et transport",
   "name": "Projecteur Leigh",
   "id": "zv_leigh_light",
@@ -7159,7 +7159,7 @@
   "forbid": []
  },
  {
-  "line": 589,
+  "line": 591,
   "section": "Reconnaissance, lutte anti-sous-marine et transport",
   "name": "Détecteur d'anomalies magnétiques",
   "id": "zv_mad",
@@ -7180,7 +7180,7 @@
   "forbid": []
  },
  {
-  "line": 590,
+  "line": 592,
   "section": "Reconnaissance, lutte anti-sous-marine et transport",
   "name": "Bouées acoustiques",
   "id": "zv_sonobuoys",
@@ -7201,7 +7201,7 @@
   "forbid": []
  },
  {
-  "line": 591,
+  "line": 593,
   "section": "Reconnaissance, lutte anti-sous-marine et transport",
   "name": "Soute à fret",
   "id": "zv_cargo_bay",
@@ -7223,7 +7223,7 @@
   "forbid_txt": "Mitrailleuses, Canons, Canon AT, Mitrailleuses de nez, Canons de nez, Canon AT de nez, Roquettes, Attaches, En soute, Armes navales, Armes guidées"
  },
  {
-  "line": 592,
+  "line": 594,
   "section": "Reconnaissance, lutte anti-sous-marine et transport",
   "name": "Compartiment de troupes",
   "id": "zv_troop_compartment",
@@ -7245,7 +7245,7 @@
   "forbid_txt": "Mitrailleuses, Canons, Canon AT, Mitrailleuses de nez, Canons de nez, Canon AT de nez, Roquettes, Attaches, En soute, Armes navales, Armes guidées"
  },
  {
-  "line": 593,
+  "line": 595,
   "section": "Reconnaissance, lutte anti-sous-marine et transport",
   "name": "Largage de ravitaillement",
   "id": "zv_supply_drop",
@@ -7266,7 +7266,7 @@
   "forbid": []
  },
  {
-  "line": 601,
+  "line": 603,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Mitrailleuse légère à main",
   "id": "zv_hand_mg_light",
@@ -7287,7 +7287,7 @@
   "forbid": []
  },
  {
-  "line": 602,
+  "line": 604,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Mitrailleuse lourde à main",
   "id": "zv_hand_mg_heavy",
@@ -7308,7 +7308,7 @@
   "forbid": []
  },
  {
-  "line": 603,
+  "line": 605,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle mitrailleuse légère x1",
   "id": "lmg_defense_turret",
@@ -7329,7 +7329,7 @@
   "forbid": []
  },
  {
-  "line": 604,
+  "line": 606,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle mitrailleuse légère x2",
   "id": "lmg_defense_turret_2x",
@@ -7350,7 +7350,7 @@
   "forbid": []
  },
  {
-  "line": 605,
+  "line": 607,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle mitrailleuse légère x4",
   "id": "zv_lmg_defense_turret_4x",
@@ -7371,7 +7371,7 @@
   "forbid": []
  },
  {
-  "line": 606,
+  "line": 608,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle mitrailleuse lourde x1",
   "id": "hmg_defense_turret",
@@ -7392,7 +7392,7 @@
   "forbid": []
  },
  {
-  "line": 607,
+  "line": 609,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle mitrailleuse lourde x2",
   "id": "hmg_defense_turret_2x",
@@ -7413,7 +7413,7 @@
   "forbid": []
  },
  {
-  "line": 608,
+  "line": 610,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle mitrailleuse lourde x4",
   "id": "zv_hmg_defense_turret_4x",
@@ -7434,7 +7434,7 @@
   "forbid": []
  },
  {
-  "line": 609,
+  "line": 611,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle canon de 20 mm x1",
   "id": "cannon_defense_turret",
@@ -7455,7 +7455,7 @@
   "forbid": []
  },
  {
-  "line": 610,
+  "line": 612,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle canon de 20 mm x2",
   "id": "cannon_defense_turret_2x",
@@ -7476,7 +7476,7 @@
   "forbid": []
  },
  {
-  "line": 611,
+  "line": 613,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle à boule mitrailleuse légère x1",
   "id": "zv_ball_turret_lmg_1x",
@@ -7497,7 +7497,7 @@
   "forbid": []
  },
  {
-  "line": 612,
+  "line": 614,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle à boule mitrailleuse légère x2",
   "id": "zv_ball_turret_lmg_2x",
@@ -7518,7 +7518,7 @@
   "forbid": []
  },
  {
-  "line": 613,
+  "line": 615,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle à boule mitrailleuse légère x4",
   "id": "zv_ball_turret_lmg_4x",
@@ -7539,7 +7539,7 @@
   "forbid": []
  },
  {
-  "line": 614,
+  "line": 616,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle à boule mitrailleuse lourde x1",
   "id": "zv_ball_turret_hmg_1x",
@@ -7560,7 +7560,7 @@
   "forbid": []
  },
  {
-  "line": 615,
+  "line": 617,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle à boule mitrailleuse lourde x2",
   "id": "zv_ball_turret_hmg_2x",
@@ -7581,7 +7581,7 @@
   "forbid": []
  },
  {
-  "line": 616,
+  "line": 618,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle à boule mitrailleuse lourde x4",
   "id": "zv_ball_turret_hmg_4x",
@@ -7602,7 +7602,7 @@
   "forbid": []
  },
  {
-  "line": 617,
+  "line": 619,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle à boule canon de 20 mm x1",
   "id": "zv_ball_turret_cannon_1x",
@@ -7623,7 +7623,7 @@
   "forbid": []
  },
  {
-  "line": 618,
+  "line": 620,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle à boule canon de 20 mm x2",
   "id": "zv_ball_turret_cannon_2x",
@@ -7644,7 +7644,7 @@
   "forbid": []
  },
  {
-  "line": 619,
+  "line": 621,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle télécommandée mitrailleuse légère x1",
   "id": "zv_remote_turret_lmg_1x",
@@ -7665,7 +7665,7 @@
   "forbid": []
  },
  {
-  "line": 620,
+  "line": 622,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle télécommandée mitrailleuse légère x2",
   "id": "zv_remote_turret_lmg_2x",
@@ -7686,7 +7686,7 @@
   "forbid": []
  },
  {
-  "line": 621,
+  "line": 623,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle télécommandée mitrailleuse légère x4",
   "id": "zv_remote_turret_lmg_4x",
@@ -7707,7 +7707,7 @@
   "forbid": []
  },
  {
-  "line": 622,
+  "line": 624,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle télécommandée mitrailleuse lourde x1",
   "id": "zv_remote_turret_hmg_1x",
@@ -7728,7 +7728,7 @@
   "forbid": []
  },
  {
-  "line": 623,
+  "line": 625,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle télécommandée mitrailleuse lourde x2",
   "id": "zv_remote_turret_hmg_2x",
@@ -7749,7 +7749,7 @@
   "forbid": []
  },
  {
-  "line": 624,
+  "line": 626,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle télécommandée mitrailleuse lourde x4",
   "id": "zv_remote_turret_hmg_4x",
@@ -7770,7 +7770,7 @@
   "forbid": []
  },
  {
-  "line": 625,
+  "line": 627,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle télécommandée canon de 20 mm x1",
   "id": "zv_remote_turret_cannon_1x",
@@ -7791,7 +7791,7 @@
   "forbid": []
  },
  {
-  "line": 626,
+  "line": 628,
   "section": "Mitrailleuses à main et tourelles",
   "name": "Tourelle télécommandée canon de 20 mm x2",
   "id": "zv_remote_turret_cannon_2x",
@@ -7812,7 +7812,7 @@
   "forbid": []
  },
  {
-  "line": 634,
+  "line": 636,
   "section": "Améliorations de réacteur",
   "name": "Compresseur de réacteur amélioré",
   "id": "zv_jet_improved_compressor",
@@ -7833,7 +7833,7 @@
   "forbid": []
  },
  {
-  "line": 635,
+  "line": 637,
   "section": "Améliorations de réacteur",
   "name": "Post-combustion",
   "id": "zv_afterburner",
@@ -7854,7 +7854,7 @@
   "forbid": []
  },
  {
-  "line": 636,
+  "line": 638,
   "section": "Améliorations de réacteur",
   "name": "Entrée d'air supersonique",
   "id": "zv_supersonic_intake",
@@ -7875,7 +7875,7 @@
   "forbid": []
  },
  {
-  "line": 644,
+  "line": 646,
   "section": "Rôles",
   "name": "Chasseur (P)",
   "id": "zv_role_fighter_small",
@@ -7897,7 +7897,7 @@
   "forbid_txt": "Armes navales"
  },
  {
-  "line": 645,
+  "line": 647,
   "section": "Rôles",
   "name": "Chasseur lourd (M)",
   "id": "zv_role_heavy_fighter_medium",
@@ -7919,7 +7919,7 @@
   "forbid_txt": "Armes navales"
  },
  {
-  "line": 646,
+  "line": 648,
   "section": "Rôles",
   "name": "Intercepteur (P)",
   "id": "zv_role_interceptor_small",
@@ -7941,7 +7941,7 @@
   "forbid_txt": "Armes navales"
  },
  {
-  "line": 647,
+  "line": 649,
   "section": "Rôles",
   "name": "Appui rapproché (P)",
   "id": "zv_role_cas_small",
@@ -7962,7 +7962,7 @@
   "forbid": []
  },
  {
-  "line": 648,
+  "line": 650,
   "section": "Rôles",
   "name": "Appui rapproché (M)",
   "id": "zv_role_cas_medium",
@@ -7983,7 +7983,7 @@
   "forbid": []
  },
  {
-  "line": 649,
+  "line": 651,
   "section": "Rôles",
   "name": "Kamikaze (P)",
   "id": "zv_role_suicide_small",
@@ -8004,7 +8004,7 @@
   "forbid": []
  },
  {
-  "line": 650,
+  "line": 652,
   "section": "Rôles",
   "name": "Bombardier tactique (M)",
   "id": "zv_role_tac_bomber_medium",
@@ -8025,7 +8025,7 @@
   "forbid": []
  },
  {
-  "line": 651,
+  "line": 653,
   "section": "Rôles",
   "name": "Bombardier naval (P)",
   "id": "zv_role_naval_bomber_small",
@@ -8046,7 +8046,7 @@
   "forbid": []
  },
  {
-  "line": 652,
+  "line": 654,
   "section": "Rôles",
   "name": "Bombardier naval (M)",
   "id": "zv_role_naval_bomber_medium",
@@ -8067,7 +8067,7 @@
   "forbid": []
  },
  {
-  "line": 653,
+  "line": 655,
   "section": "Rôles",
   "name": "Reconnaissance (P)",
   "id": "zv_role_recon_small",
@@ -8088,7 +8088,7 @@
   "forbid": []
  },
  {
-  "line": 654,
+  "line": 656,
   "section": "Rôles",
   "name": "Reconnaissance (M)",
   "id": "zv_role_recon_medium",
@@ -8109,7 +8109,7 @@
   "forbid": []
  },
  {
-  "line": 655,
+  "line": 657,
   "section": "Rôles",
   "name": "Patrouille maritime (M)",
   "id": "zv_role_maritime_patrol_medium",
@@ -8130,7 +8130,7 @@
   "forbid": []
  },
  {
-  "line": 656,
+  "line": 658,
   "section": "Rôles",
   "name": "Patrouille maritime (G)",
   "id": "zv_role_maritime_patrol_large",
@@ -8151,7 +8151,7 @@
   "forbid": []
  },
  {
-  "line": 657,
+  "line": 659,
   "section": "Rôles",
   "name": "Bombardier stratégique (G)",
   "id": "zv_role_strat_bomber_large",
@@ -8172,7 +8172,7 @@
   "forbid": []
  },
  {
-  "line": 658,
+  "line": 660,
   "section": "Rôles",
   "name": "Transport (M)",
   "id": "zv_role_transport_medium",
@@ -8194,7 +8194,7 @@
   "forbid_txt": "Mitrailleuses, Canons, Canon AT, Mitrailleuses de nez, Canons de nez, Canon AT de nez, Roquettes, Attaches, En soute, Armes navales, Armes guidées"
  },
  {
-  "line": 659,
+  "line": 661,
   "section": "Rôles",
   "name": "Transport (G)",
   "id": "zv_role_transport_large",
