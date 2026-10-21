@@ -1,0 +1,2401 @@
+[
+ {
+  "line": 13,
+  "section": "Légende et principes",
+  "Symbole": "✅",
+  "Sens": "Repris de l'ancien dépôt HOI4-ImprovedDesigner (branche ZV/main)"
+ },
+ {
+  "line": 14,
+  "section": "Légende et principes",
+  "Symbole": "🆕",
+  "Sens": "Proposé d'après le matériel de la Seconde Guerre mondiale"
+ },
+ {
+  "line": 15,
+  "section": "Légende et principes",
+  "Symbole": "❌",
+  "Sens": "À retirer (à mettre toi-même pour raturer une ligne)"
+ },
+ {
+  "line": 25,
+  "section": "Moteurs",
+  "Famille": "Rotatif",
+  "Catégorie de module": "Moteur",
+  "Modules": "4",
+  "Paliers": "I à IV",
+  "Statut": "✅"
+ },
+ {
+  "line": 26,
+  "section": "Moteurs",
+  "Famille": "Radial",
+  "Catégorie de module": "Moteur",
+  "Modules": "4",
+  "Paliers": "I à IV",
+  "Statut": "✅"
+ },
+ {
+  "line": 27,
+  "section": "Moteurs",
+  "Famille": "En ligne",
+  "Catégorie de module": "Moteur",
+  "Modules": "4",
+  "Paliers": "I à IV",
+  "Statut": "✅"
+ },
+ {
+  "line": 28,
+  "section": "Moteurs",
+  "Famille": "En V",
+  "Catégorie de module": "Moteur",
+  "Modules": "4",
+  "Paliers": "I à IV",
+  "Statut": "✅"
+ },
+ {
+  "line": 29,
+  "section": "Moteurs",
+  "Famille": "Fusée",
+  "Catégorie de module": "Moteur",
+  "Modules": "3",
+  "Paliers": "1 à 3",
+  "Statut": "✅"
+ },
+ {
+  "line": 30,
+  "section": "Moteurs",
+  "Famille": "Pulsoréacteur",
+  "Catégorie de module": "Moteur",
+  "Modules": "1",
+  "Paliers": "1 (seul le type Argus a réellement volé, sur la V-1)",
+  "Statut": "🆕"
+ },
+ {
+  "line": 31,
+  "section": "Moteurs",
+  "Famille": "Turboréacteur centrifuge",
+  "Catégorie de module": "Moteur",
+  "Modules": "2",
+  "Paliers": "Débuts (type Whittle), puis version améliorée",
+  "Statut": "🆕"
+ },
+ {
+  "line": 32,
+  "section": "Moteurs",
+  "Famille": "Turboréacteur axial",
+  "Catégorie de module": "Moteur",
+  "Modules": "2",
+  "Paliers": "Première génération (type Jumo 004), puis génération d'après-guerre",
+  "Statut": "🆕"
+ },
+ {
+  "line": 33,
+  "section": "Moteurs",
+  "Famille": "Turbopropulseur",
+  "Catégorie de module": "Moteur",
+  "Modules": "1",
+  "Paliers": "1 (premiers vols en 1945-1946, technologie lointaine)",
+  "Statut": "🆕"
+ },
+ {
+  "line": 34,
+  "section": "Moteurs",
+  "Famille": "Diesel",
+  "Catégorie de module": "Moteur",
+  "Modules": "2",
+  "Paliers": "Jumo 205 (années 1930), puis version d'altitude améliorée",
+  "Statut": "🆕"
+ },
+ {
+  "line": 35,
+  "section": "Moteurs",
+  "Famille": "Moteur à plat",
+  "Catégorie de module": "Moteur",
+  "Modules": "2",
+  "Paliers": "Cylindres opposés : petite cylindrée (liaison, entraînement), puis grosse cylindrée",
+  "Statut": "🆕"
+ },
+ {
+  "line": 49,
+  "section": "Configurations de motorisation",
+  "Module": "Moteur de nez simple",
+  "Catégorie de module": "Configuration de motorisation",
+  "Moteurs": "1",
+  "Disposition": "Nez",
+  "Statut": "🆕",
+  "Note": "Monomoteur classique"
+ },
+ {
+  "line": 50,
+  "section": "Configurations de motorisation",
+  "Module": "Bimoteur (ailes)",
+  "Catégorie de module": "Configuration de motorisation",
+  "Moteurs": "2",
+  "Disposition": "1 par aile",
+  "Statut": "🆕",
+  "Note": "Remplace le fuselage Bimoteur"
+ },
+ {
+  "line": 51,
+  "section": "Configurations de motorisation",
+  "Module": "Trimoteur (ailes + nez)",
+  "Catégorie de module": "Configuration de motorisation",
+  "Moteurs": "3",
+  "Disposition": "Nez + 1 par aile",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 52,
+  "section": "Configurations de motorisation",
+  "Module": "Quadrimoteur (2 × ailes)",
+  "Catégorie de module": "Configuration de motorisation",
+  "Moteurs": "4",
+  "Disposition": "2 par aile, côte à côte",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 53,
+  "section": "Configurations de motorisation",
+  "Module": "Quadrimoteur tandem",
+  "Catégorie de module": "Configuration de motorisation",
+  "Moteurs": "4",
+  "Disposition": "2 par aile, l'un derrière l'autre",
+  "Statut": "🆕",
+  "Note": "Hydravions type Do 26"
+ },
+ {
+  "line": 54,
+  "section": "Configurations de motorisation",
+  "Module": "Quintamoteur",
+  "Catégorie de module": "Configuration de motorisation",
+  "Moteurs": "5",
+  "Disposition": "Nez + 2 par aile",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 55,
+  "section": "Configurations de motorisation",
+  "Module": "Hexamoteur (3 × ailes)",
+  "Catégorie de module": "Configuration de motorisation",
+  "Moteurs": "6",
+  "Disposition": "3 par aile",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 56,
+  "section": "Configurations de motorisation",
+  "Module": "Bimoteur de nez",
+  "Catégorie de module": "Configuration de motorisation",
+  "Moteurs": "2",
+  "Disposition": "2 au nez",
+  "Statut": "🆕",
+  "Note": "Type VB 10"
+ },
+ {
+  "line": 57,
+  "section": "Configurations de motorisation",
+  "Module": "Moteur tandem nez-queue",
+  "Catégorie de module": "Configuration de motorisation",
+  "Moteurs": "2",
+  "Disposition": "1 au nez, 1 en queue",
+  "Statut": "🆕",
+  "Note": "Type Do 335"
+ },
+ {
+  "line": 58,
+  "section": "Configurations de motorisation",
+  "Module": "Moteur de queue",
+  "Catégorie de module": "Configuration de motorisation",
+  "Moteurs": "1",
+  "Disposition": "Queue, hélice propulsive",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 68,
+  "section": "Options de moteur",
+  "Option": "Puissance",
+  "Catégorie de module": "Réglage de puissance",
+  "Avant (ancien dépôt)": "−20 %, +20 %, +40 %, +60 %",
+  "Après": "Modificateur −/+",
+  "Statut": "✅"
+ },
+ {
+  "line": 69,
+  "section": "Options de moteur",
+  "Option": "Fiabilité",
+  "Catégorie de module": "Réglage de fiabilité",
+  "Avant (ancien dépôt)": "85 %, 115 %, 130 %, 150 %",
+  "Après": "Modificateur −/+",
+  "Statut": "✅"
+ },
+ {
+  "line": 77,
+  "section": "Structure",
+  "Sous-famille": "Fuselages",
+  "Module": "Classique",
+  "Catégorie de module": "Fuselage",
+  "Statut": "✅",
+  "Note": "Tailles S, M, L"
+ },
+ {
+  "line": 78,
+  "section": "Structure",
+  "Sous-famille": "Fuselages",
+  "Module": "« Jug »",
+  "Catégorie de module": "Fuselage",
+  "Statut": "✅",
+  "Note": "Tailles S, M, L"
+ },
+ {
+  "line": 79,
+  "section": "Structure",
+  "Sous-famille": "Fuselages",
+  "Module": "Goutte",
+  "Catégorie de module": "Fuselage",
+  "Statut": "✅",
+  "Note": "Tailles S, M"
+ },
+ {
+  "line": 80,
+  "section": "Structure",
+  "Sous-famille": "Fuselages",
+  "Module": "Bipoutre",
+  "Catégorie de module": "Fuselage",
+  "Statut": "🆕",
+  "Note": "Tailles S, M ; restreint les slots Dos et Queue (voir les restrictions par fuselage), ce qui rend indirectement indisponibles les modules de ces slots ; n'interdit aucun module directement (les configurations moteur de queue et tandem nez-queue restent permises : le moteur arrière se place à l'Arrière Cockpit)"
+ },
+ {
+  "line": 81,
+  "section": "Structure",
+  "Sous-famille": "Fuselages",
+  "Module": "Aile volante",
+  "Catégorie de module": "Fuselage",
+  "Statut": "✅",
+  "Note": "Tailles S, M, L ; interdit les slots d'aile classiques et n'ouvre que les formes de la catégorie Avancée (voir Ailes)"
+ },
+ {
+  "line": 82,
+  "section": "Structure",
+  "Sous-famille": "Fuselages",
+  "Module": "Hydravion",
+  "Catégorie de module": "Fuselage",
+  "Statut": "✅",
+  "Note": "Tailles M, L"
+ },
+ {
+  "line": 83,
+  "section": "Structure",
+  "Sous-famille": "Empennage",
+  "Module": "Classique",
+  "Catégorie de module": "Empennage",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 84,
+  "section": "Structure",
+  "Sous-famille": "Empennage",
+  "Module": "En T",
+  "Catégorie de module": "Empennage",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 85,
+  "section": "Structure",
+  "Sous-famille": "Empennage",
+  "Module": "Double poutre",
+  "Catégorie de module": "Empennage",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 86,
+  "section": "Structure",
+  "Sous-famille": "Empennage",
+  "Module": "Double dérive",
+  "Catégorie de module": "Empennage",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 87,
+  "section": "Structure",
+  "Sous-famille": "Empennage",
+  "Module": "En V",
+  "Catégorie de module": "Empennage",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 88,
+  "section": "Structure",
+  "Sous-famille": "Empennage",
+  "Module": "Cruciforme",
+  "Catégorie de module": "Empennage",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 89,
+  "section": "Structure",
+  "Sous-famille": "Matériaux",
+  "Module": "Blindage",
+  "Catégorie de module": "Blindage",
+  "Statut": "✅",
+  "Note": "Tailles S, M, L"
+ },
+ {
+  "line": 90,
+  "section": "Structure",
+  "Sous-famille": "Matériaux",
+  "Module": "Matériaux non stratégiques",
+  "Catégorie de module": "Matériaux",
+  "Statut": "✅",
+  "Note": "Tailles S, M, L"
+ },
+ {
+  "line": 91,
+  "section": "Structure",
+  "Sous-famille": "Matériaux",
+  "Module": "Construction allégée",
+  "Catégorie de module": "Construction",
+  "Statut": "✅",
+  "Note": "Tailles S, M"
+ },
+ {
+  "line": 92,
+  "section": "Structure",
+  "Sous-famille": "Matériaux",
+  "Module": "Construction renforcée",
+  "Catégorie de module": "Construction",
+  "Statut": "✅",
+  "Note": "Tailles S, M, L"
+ },
+ {
+  "line": 93,
+  "section": "Structure",
+  "Sous-famille": "Matériaux",
+  "Module": "Bois monocoque",
+  "Catégorie de module": "Matériaux",
+  "Statut": "🆕",
+  "Note": "Mosquito"
+ },
+ {
+  "line": 94,
+  "section": "Structure",
+  "Sous-famille": "Matériaux",
+  "Module": "Tubes et toile",
+  "Catégorie de module": "Matériaux",
+  "Statut": "🆕",
+  "Note": "Avions légers et de liaison"
+ },
+ {
+  "line": 95,
+  "section": "Structure",
+  "Sous-famille": "Hypersustentation",
+  "Module": "Volets de combat",
+  "Catégorie de module": "Volets",
+  "Statut": "✅",
+  "Note": "Tailles S, M"
+ },
+ {
+  "line": 96,
+  "section": "Structure",
+  "Sous-famille": "Hypersustentation",
+  "Module": "Becs de bord d'attaque",
+  "Catégorie de module": "Becs de bord d'attaque",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 97,
+  "section": "Structure",
+  "Sous-famille": "Hypersustentation",
+  "Module": "Volets Fowler",
+  "Catégorie de module": "Volets",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 98,
+  "section": "Structure",
+  "Sous-famille": "Train",
+  "Module": "Flotteurs",
+  "Catégorie de module": "Train d'atterrissage",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 99,
+  "section": "Structure",
+  "Sous-famille": "Train",
+  "Module": "Fixe caréné à roulette de queue",
+  "Catégorie de module": "Train d'atterrissage",
+  "Statut": "🆕",
+  "Note": "Par défaut ; module combiné (type et disposition, décision du 21/10/2026)"
+ },
+ {
+  "line": 100,
+  "section": "Structure",
+  "Sous-famille": "Train",
+  "Module": "Fixe tricycle",
+  "Catégorie de module": "Train d'atterrissage",
+  "Statut": "🆕",
+  "Note": "Module combiné (21/10/2026)"
+ },
+ {
+  "line": 101,
+  "section": "Structure",
+  "Sous-famille": "Train",
+  "Module": "Rétractable à roulette de queue",
+  "Catégorie de module": "Train d'atterrissage",
+  "Statut": "🆕",
+  "Note": "Module combiné (21/10/2026)"
+ },
+ {
+  "line": 102,
+  "section": "Structure",
+  "Sous-famille": "Train",
+  "Module": "Rétractable tricycle",
+  "Catégorie de module": "Train d'atterrissage",
+  "Statut": "🆕",
+  "Note": "Module combiné (21/10/2026)"
+ },
+ {
+  "line": 103,
+  "section": "Structure",
+  "Sous-famille": "Train",
+  "Module": "Skis",
+  "Catégorie de module": "Train d'atterrissage",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 104,
+  "section": "Structure",
+  "Sous-famille": "Train",
+  "Module": "Crosse d'appontage et ailes repliables",
+  "Catégorie de module": "Équipement naval",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 105,
+  "section": "Structure",
+  "Sous-famille": "Train",
+  "Module": "Chariot largable",
+  "Catégorie de module": "Train d'atterrissage",
+  "Statut": "🆕",
+  "Note": "Me 163 ; se choisit à la place d'un train (21/10/2026)"
+ },
+ {
+  "line": 117,
+  "section": "Ailes",
+  "Catégorie": "Basse",
+  "Type": "Basse",
+  "Forme": "Rectangulaire",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 118,
+  "section": "Ailes",
+  "Catégorie": "Basse",
+  "Type": "Basse",
+  "Forme": "Trapézoïdale",
+  "Statut": "✅",
+  "Note": "Fw 190, P-51"
+ },
+ {
+  "line": 119,
+  "section": "Ailes",
+  "Catégorie": "Basse",
+  "Type": "Basse",
+  "Forme": "Effilée",
+  "Statut": "✅",
+  "Note": "Bf 109"
+ },
+ {
+  "line": 120,
+  "section": "Ailes",
+  "Catégorie": "Basse",
+  "Type": "Basse",
+  "Forme": "Elliptique",
+  "Statut": "✅",
+  "Note": "Spitfire, He 70"
+ },
+ {
+  "line": 121,
+  "section": "Ailes",
+  "Catégorie": "Basse",
+  "Type": "Basse",
+  "Forme": "Mixte",
+  "Statut": "🆕",
+  "Note": "Centre rectangulaire, bouts effilés"
+ },
+ {
+  "line": 122,
+  "section": "Ailes",
+  "Catégorie": "Basse",
+  "Type": "Basse",
+  "Forme": "Laminaire",
+  "Statut": "🆕",
+  "Note": "P-51"
+ },
+ {
+  "line": 123,
+  "section": "Ailes",
+  "Catégorie": "Basse",
+  "Type": "Basse",
+  "Forme": "Flèche légère",
+  "Statut": "🆕",
+  "Note": "Me 262"
+ },
+ {
+  "line": 124,
+  "section": "Ailes",
+  "Catégorie": "Basse",
+  "Type": "Basse",
+  "Forme": "Flèche prononcée",
+  "Statut": "🆕",
+  "Note": "Limite de période : prototypes de fin 1947 (XP-86, MiG-15), projets allemands de 1945"
+ },
+ {
+  "line": 125,
+  "section": "Ailes",
+  "Catégorie": "Basse",
+  "Type": "Basse",
+  "Forme": "Flèche inversée",
+  "Statut": "🆕",
+  "Note": "Un seul avion réel, le Ju 287 (1944)"
+ },
+ {
+  "line": 126,
+  "section": "Ailes",
+  "Catégorie": "Basse",
+  "Type": "Basse",
+  "Forme": "Delta",
+  "Statut": "🆕",
+  "Note": "Projets Lippisch, planeur DM-1 (1945)"
+ },
+ {
+  "line": 127,
+  "section": "Ailes",
+  "Catégorie": "Basse",
+  "Type": "Basse",
+  "Forme": "Mouette inversée",
+  "Statut": "✅",
+  "Note": "Ju 87, F4U ; ancienne « aile en W »"
+ },
+ {
+  "line": 128,
+  "section": "Ailes",
+  "Catégorie": "Médiane",
+  "Type": "Médiane",
+  "Forme": "Rectangulaire",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 129,
+  "section": "Ailes",
+  "Catégorie": "Médiane",
+  "Type": "Médiane",
+  "Forme": "Trapézoïdale",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 130,
+  "section": "Ailes",
+  "Catégorie": "Médiane",
+  "Type": "Médiane",
+  "Forme": "Effilée",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 131,
+  "section": "Ailes",
+  "Catégorie": "Médiane",
+  "Type": "Médiane",
+  "Forme": "Elliptique",
+  "Statut": "🆕",
+  "Note": "Forme de chasseur à aile basse, rare ailleurs"
+ },
+ {
+  "line": 132,
+  "section": "Ailes",
+  "Catégorie": "Médiane",
+  "Type": "Médiane",
+  "Forme": "Mixte",
+  "Statut": "🆕",
+  "Note": "Ju 88, Mosquito"
+ },
+ {
+  "line": 133,
+  "section": "Ailes",
+  "Catégorie": "Médiane",
+  "Type": "Médiane",
+  "Forme": "Laminaire",
+  "Statut": "🆕",
+  "Note": "Surtout sur des chasseurs à aile basse"
+ },
+ {
+  "line": 134,
+  "section": "Ailes",
+  "Catégorie": "Médiane",
+  "Type": "Médiane",
+  "Forme": "Flèche légère",
+  "Statut": "🆕",
+  "Note": "Me 262"
+ },
+ {
+  "line": 135,
+  "section": "Ailes",
+  "Catégorie": "Médiane",
+  "Type": "Médiane",
+  "Forme": "Flèche prononcée",
+  "Statut": "🆕",
+  "Note": "Limite de période (fin 1947 et projets de 1945)"
+ },
+ {
+  "line": 136,
+  "section": "Ailes",
+  "Catégorie": "Médiane",
+  "Type": "Médiane",
+  "Forme": "Flèche inversée",
+  "Statut": "🆕",
+  "Note": "Un seul avion réel, le Ju 287"
+ },
+ {
+  "line": 137,
+  "section": "Ailes",
+  "Catégorie": "Médiane",
+  "Type": "Médiane",
+  "Forme": "Delta",
+  "Statut": "🆕",
+  "Note": "Projets Lippisch, planeur DM-1"
+ },
+ {
+  "line": 138,
+  "section": "Ailes",
+  "Catégorie": "Médiane",
+  "Type": "Médiane",
+  "Forme": "Mouette inversée",
+  "Statut": "🆕",
+  "Note": "Possible, sans exemple en aile médiane"
+ },
+ {
+  "line": 139,
+  "section": "Ailes",
+  "Catégorie": "Haute / Parasol",
+  "Type": "Haute",
+  "Forme": "Rectangulaire",
+  "Statut": "✅",
+  "Note": "Fieseler Storch, Piper Cub"
+ },
+ {
+  "line": 140,
+  "section": "Ailes",
+  "Catégorie": "Haute / Parasol",
+  "Type": "Haute",
+  "Forme": "Trapézoïdale",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 141,
+  "section": "Ailes",
+  "Catégorie": "Haute / Parasol",
+  "Type": "Haute",
+  "Forme": "Effilée",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 142,
+  "section": "Ailes",
+  "Catégorie": "Haute / Parasol",
+  "Type": "Haute",
+  "Forme": "Elliptique",
+  "Statut": "✅",
+  "Note": "Forme de chasseur à aile basse, rare en aile haute"
+ },
+ {
+  "line": 143,
+  "section": "Ailes",
+  "Catégorie": "Haute / Parasol",
+  "Type": "Haute",
+  "Forme": "Mixte",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 144,
+  "section": "Ailes",
+  "Catégorie": "Haute / Parasol",
+  "Type": "Haute",
+  "Forme": "Laminaire",
+  "Statut": "🆕",
+  "Note": "Surtout sur des chasseurs à aile basse"
+ },
+ {
+  "line": 145,
+  "section": "Ailes",
+  "Catégorie": "Haute / Parasol",
+  "Type": "Haute",
+  "Forme": "Flèche légère",
+  "Statut": "🆕",
+  "Note": "Faisable, aucun exemple avant 1947"
+ },
+ {
+  "line": 146,
+  "section": "Ailes",
+  "Catégorie": "Haute / Parasol",
+  "Type": "Haute",
+  "Forme": "Flèche prononcée",
+  "Statut": "🆕",
+  "Note": "Limite de période (fin 1947 et projets de 1945)"
+ },
+ {
+  "line": 147,
+  "section": "Ailes",
+  "Catégorie": "Haute / Parasol",
+  "Type": "Haute",
+  "Forme": "Flèche inversée",
+  "Statut": "🆕",
+  "Note": "Un seul avion réel, le Ju 287"
+ },
+ {
+  "line": 148,
+  "section": "Ailes",
+  "Catégorie": "Haute / Parasol",
+  "Type": "Haute",
+  "Forme": "Mouette",
+  "Statut": "🆕",
+  "Note": "PZL P.11, Stinson Reliant"
+ },
+ {
+  "line": 149,
+  "section": "Ailes",
+  "Catégorie": "Haute / Parasol",
+  "Type": "Parasol",
+  "Forme": "Rectangulaire",
+  "Statut": "🆕",
+  "Note": "Avions légers, hydravions"
+ },
+ {
+  "line": 150,
+  "section": "Ailes",
+  "Catégorie": "Haute / Parasol",
+  "Type": "Parasol",
+  "Forme": "Trapézoïdale",
+  "Statut": "🆕",
+  "Note": "Parasol réservé aux ailes simples"
+ },
+ {
+  "line": 151,
+  "section": "Ailes",
+  "Catégorie": "Haute / Parasol",
+  "Type": "Parasol",
+  "Forme": "Effilée",
+  "Statut": "🆕",
+  "Note": "Parasol réservé aux ailes simples"
+ },
+ {
+  "line": 152,
+  "section": "Ailes",
+  "Catégorie": "Haute / Parasol",
+  "Type": "Parasol",
+  "Forme": "Elliptique",
+  "Statut": "🆕",
+  "Note": "Parasol réservé aux ailes simples"
+ },
+ {
+  "line": 153,
+  "section": "Ailes",
+  "Catégorie": "Haute / Parasol",
+  "Type": "Parasol",
+  "Forme": "Mixte",
+  "Statut": "🆕",
+  "Note": "Parasol réservé aux ailes simples"
+ },
+ {
+  "line": 154,
+  "section": "Ailes",
+  "Catégorie": "Haute / Parasol",
+  "Type": "Parasol",
+  "Forme": "Mouette",
+  "Statut": "🆕",
+  "Note": "Mouette sur mâts (hydravions, liaison)"
+ },
+ {
+  "line": 155,
+  "section": "Ailes",
+  "Catégorie": "Autres",
+  "Type": "Biplan",
+  "Forme": "Rectangulaire",
+  "Statut": "✅",
+  "Note": "Fiat CR.42, I-153"
+ },
+ {
+  "line": 156,
+  "section": "Ailes",
+  "Catégorie": "Autres",
+  "Type": "Biplan",
+  "Forme": "Trapézoïdale",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 157,
+  "section": "Ailes",
+  "Catégorie": "Autres",
+  "Type": "Biplan",
+  "Forme": "Mixte",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 158,
+  "section": "Ailes",
+  "Catégorie": "Autres",
+  "Type": "Biplan",
+  "Forme": "Mouette",
+  "Statut": "🆕",
+  "Note": "Plan supérieur en mouette (I-153)"
+ },
+ {
+  "line": 159,
+  "section": "Ailes",
+  "Catégorie": "Autres",
+  "Type": "Biplan",
+  "Forme": "Effilée",
+  "Statut": "🆕",
+  "Note": "Bouts arrondis seulement"
+ },
+ {
+  "line": 160,
+  "section": "Ailes",
+  "Catégorie": "Autres",
+  "Type": "Biplan",
+  "Forme": "Elliptique",
+  "Statut": "🆕",
+  "Note": "Bouts arrondis seulement"
+ },
+ {
+  "line": 161,
+  "section": "Ailes",
+  "Catégorie": "Autres",
+  "Type": "Biplan",
+  "Forme": "Flèche légère",
+  "Statut": "🆕",
+  "Note": "Léger décalage des plans sur quelques biplans"
+ },
+ {
+  "line": 162,
+  "section": "Ailes",
+  "Catégorie": "Autres",
+  "Type": "Sesquiplan",
+  "Forme": "Forme unique",
+  "Statut": "🆕",
+  "Note": "Aile inférieure réduite ; formule presque abandonnée en 1939"
+ },
+ {
+  "line": 163,
+  "section": "Ailes",
+  "Catégorie": "Autres",
+  "Type": "Triplan",
+  "Forme": "Forme unique",
+  "Statut": "🆕",
+  "Note": "Aucun après 1918 (Fokker Dr.I) ; gardé comme curiosité par décision"
+ },
+ {
+  "line": 164,
+  "section": "Ailes",
+  "Catégorie": "Avancée",
+  "Type": "Sans queue",
+  "Forme": "Laminaire",
+  "Statut": "🆕",
+  "Note": "Aucun exemple abouti avant 1947"
+ },
+ {
+  "line": 165,
+  "section": "Ailes",
+  "Catégorie": "Avancée",
+  "Type": "Sans queue",
+  "Forme": "Flèche légère",
+  "Statut": "🆕",
+  "Note": "Me 163"
+ },
+ {
+  "line": 166,
+  "section": "Ailes",
+  "Catégorie": "Avancée",
+  "Type": "Sans queue",
+  "Forme": "Flèche prononcée",
+  "Statut": "🆕",
+  "Note": "DH.108 (1946)"
+ },
+ {
+  "line": 167,
+  "section": "Ailes",
+  "Catégorie": "Avancée",
+  "Type": "Sans queue",
+  "Forme": "Delta",
+  "Statut": "🆕",
+  "Note": "Planeur DM-1, projets Lippisch"
+ },
+ {
+  "line": 168,
+  "section": "Ailes",
+  "Catégorie": "Avancée",
+  "Type": "Sans queue",
+  "Forme": "Discoïde",
+  "Statut": "🆕",
+  "Note": "Prototypes V-173 (1942) et XF5U-1 (1946)"
+ },
+ {
+  "line": 169,
+  "section": "Ailes",
+  "Catégorie": "Canard",
+  "Type": "Canard",
+  "Forme": "Rectangulaire",
+  "Statut": "🆕",
+  "Note": "Aile droite simple (MiG-8 Utka, 1945)"
+ },
+ {
+  "line": 170,
+  "section": "Ailes",
+  "Catégorie": "Canard",
+  "Type": "Canard",
+  "Forme": "Trapézoïdale",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 171,
+  "section": "Ailes",
+  "Catégorie": "Canard",
+  "Type": "Canard",
+  "Forme": "Effilée",
+  "Statut": "🆕",
+  "Note": "Contour complexe jamais vu sur un canard"
+ },
+ {
+  "line": 172,
+  "section": "Ailes",
+  "Catégorie": "Canard",
+  "Type": "Canard",
+  "Forme": "Elliptique",
+  "Statut": "🆕",
+  "Note": "Contour complexe jamais vu sur un canard"
+ },
+ {
+  "line": 173,
+  "section": "Ailes",
+  "Catégorie": "Canard",
+  "Type": "Canard",
+  "Forme": "Mixte",
+  "Statut": "🆕",
+  "Note": "Contour complexe jamais vu sur un canard"
+ },
+ {
+  "line": 174,
+  "section": "Ailes",
+  "Catégorie": "Canard",
+  "Type": "Canard",
+  "Forme": "Laminaire",
+  "Statut": "🆕",
+  "Note": "Aucun exemple avant 1947"
+ },
+ {
+  "line": 175,
+  "section": "Ailes",
+  "Catégorie": "Canard",
+  "Type": "Canard",
+  "Forme": "Flèche légère",
+  "Statut": "🆕",
+  "Note": "XP-55, J7W Shinden"
+ },
+ {
+  "line": 176,
+  "section": "Ailes",
+  "Catégorie": "Canard",
+  "Type": "Canard",
+  "Forme": "Flèche prononcée",
+  "Statut": "🆕",
+  "Note": "Seulement en projet"
+ },
+ {
+  "line": 177,
+  "section": "Ailes",
+  "Catégorie": "Canard",
+  "Type": "Canard",
+  "Forme": "Delta",
+  "Statut": "🆕",
+  "Note": "Valable en aéronautique, aucun exemple avant 1947"
+ },
+ {
+  "line": 185,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Cockpit",
+  "Module": "Pressurisé",
+  "Catégorie de module": "Cockpit",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 186,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Cockpit",
+  "Module": "Ouvert",
+  "Catégorie de module": "Cockpit",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 187,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Cockpit",
+  "Module": "Fermé",
+  "Catégorie de module": "Cockpit",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 188,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Cockpit",
+  "Module": "En bulle",
+  "Catégorie de module": "Cockpit",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 189,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Cockpit",
+  "Module": "Vitrage et siège blindés",
+  "Catégorie de module": "Blindage du cockpit",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 190,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Cockpit",
+  "Module": "Cockpit vitré de bombardier",
+  "Catégorie de module": "Cockpit",
+  "Statut": "🆕",
+  "Note": "Interdit les configurations à moteur de nez et les armes de nez (catégories Mitrailleuses de nez, Canons de nez, Canon AT de nez, 21/10/2026)"
+ },
+ {
+  "line": 191,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Cockpit",
+  "Module": "Siège éjectable",
+  "Catégorie de module": "Siège éjectable",
+  "Statut": "🆕",
+  "Note": "He 219"
+ },
+ {
+  "line": 192,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Hélice",
+  "Module": "2 pales (métal)",
+  "Catégorie de module": "Hélice",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 193,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Hélice",
+  "Module": "2 pales (bois)",
+  "Catégorie de module": "Hélice",
+  "Statut": "🆕",
+  "Note": "Pas fixe, sans métal stratégique"
+ },
+ {
+  "line": 194,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Hélice",
+  "Module": "3 pales (métal)",
+  "Catégorie de module": "Hélice",
+  "Statut": "✅",
+  "Note": "Par défaut"
+ },
+ {
+  "line": 195,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Hélice",
+  "Module": "3 pales (bois)",
+  "Catégorie de module": "Hélice",
+  "Statut": "🆕",
+  "Note": "Pas fixe, sans métal stratégique"
+ },
+ {
+  "line": 196,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Hélice",
+  "Module": "4 pales",
+  "Catégorie de module": "Hélice",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 197,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Hélice",
+  "Module": "5 pales",
+  "Catégorie de module": "Hélice",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 198,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Hélice",
+  "Module": "Pas variable",
+  "Catégorie de module": "Module d'hélice",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 199,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Hélice",
+  "Module": "Mise en drapeau (gain de fiabilité)",
+  "Catégorie de module": "Module d'hélice",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 200,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Suralimentation",
+  "Module": "Compresseur précoce",
+  "Catégorie de module": "Alimentation",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 201,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Suralimentation",
+  "Module": "Compresseur",
+  "Catégorie de module": "Alimentation",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 202,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Suralimentation",
+  "Module": "Turbocompresseur précoce",
+  "Catégorie de module": "Alimentation",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 203,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Suralimentation",
+  "Module": "Turbocompresseur",
+  "Catégorie de module": "Alimentation",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 204,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Suralimentation",
+  "Module": "Compresseur amélioré",
+  "Catégorie de module": "Alimentation",
+  "Statut": "🆕",
+  "Note": "Compresseur + refroidisseur intermédiaire"
+ },
+ {
+  "line": 205,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Suralimentation",
+  "Module": "Turbocompresseur amélioré",
+  "Catégorie de module": "Alimentation",
+  "Statut": "🆕",
+  "Note": "Turbocompresseur + refroidisseur intermédiaire"
+ },
+ {
+  "line": 206,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Suralimentation",
+  "Module": "Carénage NACA",
+  "Catégorie de module": "Carénage moteur",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 207,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Suralimentation",
+  "Module": "Compresseur à deux étages",
+  "Catégorie de module": "Alimentation",
+  "Statut": "🆕",
+  "Note": "Refroidisseur intermédiaire inclus"
+ },
+ {
+  "line": 208,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Boosters",
+  "Module": "Essence à haut indice d'octane",
+  "Catégorie de module": "Alimentation",
+  "Statut": "✅",
+  "Note": "Tailles S, M, L"
+ },
+ {
+  "line": 209,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Boosters",
+  "Module": "Injection d'eau",
+  "Catégorie de module": "Alimentation",
+  "Statut": "✅",
+  "Note": "Tailles S, M, L"
+ },
+ {
+  "line": 210,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Boosters",
+  "Module": "Régime d'urgence (WEP)",
+  "Catégorie de module": "Régime d'urgence",
+  "Statut": "✅",
+  "Note": "Tailles S, M, L"
+ },
+ {
+  "line": 211,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Boosters",
+  "Module": "Extincteur automatique",
+  "Catégorie de module": "Sécurité incendie",
+  "Statut": "✅",
+  "Note": "Tailles S, M, L"
+ },
+ {
+  "line": 212,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Boosters",
+  "Module": "Injection de protoxyde d'azote (GM-1)",
+  "Catégorie de module": "Alimentation",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 213,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Boosters",
+  "Module": "Injection directe",
+  "Catégorie de module": "Alimentation",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 214,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Boosters",
+  "Module": "Carburateur anti-g",
+  "Catégorie de module": "Alimentation",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 215,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Refroidissement",
+  "Module": "Radiateur ventral",
+  "Catégorie de module": "Refroidissement",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 216,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Refroidissement",
+  "Module": "Radiateur annulaire",
+  "Catégorie de module": "Refroidissement",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 217,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Refroidissement",
+  "Module": "Radiateur dans l'aile",
+  "Catégorie de module": "Refroidissement",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 218,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Dégivrage",
+  "Module": "Bottes pneumatiques",
+  "Catégorie de module": "Dégivrage",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 219,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Dégivrage",
+  "Module": "Bords d'attaque chauffés",
+  "Catégorie de module": "Dégivrage",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 220,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Décollage assisté",
+  "Module": "Fusées RATO",
+  "Catégorie de module": "Aide au décollage",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 221,
+  "section": "Équipage, hélices et accessoires de moteur",
+  "Sous-famille": "Prise d'air",
+  "Module": "Prise d'air",
+  "Catégorie de module": "Prise d'air",
+  "Statut": "🆕",
+  "Note": "Obligatoire avec un réacteur ou un pulsoréacteur en configuration moteur de queue"
+ },
+ {
+  "line": 227,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Réservoirs",
+  "Module": "Réservoirs",
+  "Catégorie de module": "Réservoir interne",
+  "Statut": "✅",
+  "Note": "Tailles S, M, L"
+ },
+ {
+  "line": 228,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Réservoirs",
+  "Module": "Auto-obturants",
+  "Catégorie de module": "Réservoir interne",
+  "Statut": "✅",
+  "Note": "Tailles S, M, L"
+ },
+ {
+  "line": 229,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Réservoirs",
+  "Module": "Largables",
+  "Catégorie de module": "Réservoir supplémentaire",
+  "Statut": "✅",
+  "Note": "Tailles S, M"
+ },
+ {
+  "line": 230,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Réservoirs",
+  "Module": "De soute",
+  "Catégorie de module": "Réservoir supplémentaire",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 231,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Réservoirs",
+  "Module": "De convoyage",
+  "Catégorie de module": "Réservoir supplémentaire",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 232,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Mitrailleuses",
+  "Module": "Légères",
+  "Catégorie de module": "Mitrailleuses",
+  "Statut": "✅",
+  "Note": "1x, 2x, 3x et 4x"
+ },
+ {
+  "line": 233,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Mitrailleuses",
+  "Module": "Lourdes",
+  "Catégorie de module": "Mitrailleuses",
+  "Statut": "✅",
+  "Note": "1x, 2x, 3x et 4x"
+ },
+ {
+  "line": 234,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Mitrailleuses",
+  "Module": "Lourdes améliorées",
+  "Catégorie de module": "Mitrailleuses",
+  "Statut": "✅",
+  "Note": "1x, 2x, 3x et 4x"
+ },
+ {
+  "line": 235,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Mitrailleuses",
+  "Module": "Légère améliorées",
+  "Catégorie de module": "Mitrailleuses",
+  "Statut": "🆕",
+  "Note": "1x, 2x, 3x et 4x"
+ },
+ {
+  "line": 236,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Canons",
+  "Module": "Canon 20mm de 1re génération",
+  "Catégorie de module": "Canons",
+  "Statut": "✅",
+  "Note": "1x et 2x"
+ },
+ {
+  "line": 237,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Canons",
+  "Module": "Canon 20mm de 2e génération",
+  "Catégorie de module": "Canons",
+  "Statut": "✅",
+  "Note": "1x et 2x"
+ },
+ {
+  "line": 238,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Canons",
+  "Module": "Canon 20mm  de 3e génération",
+  "Catégorie de module": "Canons",
+  "Statut": "🆕",
+  "Note": "1x et 2x"
+ },
+ {
+  "line": 239,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Canons",
+  "Module": "30 mm (MK 108)",
+  "Catégorie de module": "Canons",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 240,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Canon AT",
+  "Module": "37 mm",
+  "Catégorie de module": "Canon AT",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 241,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Canon AT",
+  "Module": "40 mm (Hurricane IID)",
+  "Catégorie de module": "Canon AT",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 242,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Canon AT",
+  "Module": "57 mm",
+  "Catégorie de module": "Canon AT",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 243,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Canon AT",
+  "Module": "75 mm",
+  "Catégorie de module": "Canon AT",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 244,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Armes de nez",
+  "Module": "Mitrailleuses de nez (légères, légères améliorées, lourdes, lourdes améliorées)",
+  "Catégorie de module": "Mitrailleuses de nez",
+  "Statut": "🆕",
+  "Note": "1x et 2x ; slot Nez ; interdites par le nez vitré (21/10/2026)"
+ },
+ {
+  "line": 245,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Armes de nez",
+  "Module": "Canons de nez (20 mm des trois générations, 30 mm)",
+  "Catégorie de module": "Canons de nez",
+  "Statut": "🆕",
+  "Note": "1x et 2x ; slot Nez (21/10/2026)"
+ },
+ {
+  "line": 246,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Armes de nez",
+  "Module": "Canons AT de nez (37, 40, 57, 75 mm)",
+  "Catégorie de module": "Canon AT de nez",
+  "Statut": "🆕",
+  "Note": "Slot Nez des cellules moyennes et grandes (21/10/2026)"
+ },
+ {
+  "line": 247,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Roquettes",
+  "Module": "Rails de roquettes",
+  "Catégorie de module": "Roquettes",
+  "Statut": "✅",
+  "Note": "2 niveaux"
+ },
+ {
+  "line": 248,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Roquettes",
+  "Module": "Roquettes antichars",
+  "Catégorie de module": "Roquettes",
+  "Statut": "✅",
+  "Note": "2 niveaux"
+ },
+ {
+  "line": 249,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Roquettes",
+  "Module": "R4M air-air",
+  "Catégorie de module": "Roquettes",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 250,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Roquettes",
+  "Module": "Tubes mortier-roquette (WGr 21)",
+  "Catégorie de module": "Roquettes",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 251,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Bombes",
+  "Module": "Attaches légères",
+  "Catégorie de module": "Attaches",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 252,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Bombes",
+  "Module": "Attaches lourdes",
+  "Catégorie de module": "Attaches",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 253,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Bombes",
+  "Module": "Attaches perforantes",
+  "Catégorie de module": "Attaches",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 254,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Bombes",
+  "Module": "Bombes à fragmentation",
+  "Catégorie de module": "Attaches",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 255,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Bombes",
+  "Module": "Bombes Incendiaires",
+  "Catégorie de module": "Attaches",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 256,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Bombes",
+  "Module": "Napalm",
+  "Catégorie de module": "Attaches",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 257,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Bombes",
+  "Module": "Très gros calibres",
+  "Catégorie de module": "Attaches",
+  "Statut": "🆕",
+  "Note": "Tallboy, Grand Slam"
+ },
+ {
+  "line": 258,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Bombes",
+  "Module": "Bombes légère en Soute",
+  "Catégorie de module": "En Soute",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 259,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Bombes",
+  "Module": "Bombes moyenne en Soute",
+  "Catégorie de module": "En Soute",
+  "Statut": "✅",
+  "Note": "Avec option fragmentation"
+ },
+ {
+  "line": 260,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Bombes",
+  "Module": "Bombe grande en Soute",
+  "Catégorie de module": "En Soute",
+  "Statut": "✅",
+  "Note": "Avec option fragmentation"
+ },
+ {
+  "line": 261,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Bombes",
+  "Module": "Incendiaires en soute",
+  "Catégorie de module": "En Soute",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 262,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Bombes",
+  "Module": "Trés grosse bombes en soute",
+  "Catégorie de module": "En Soute",
+  "Statut": "🆕",
+  "Note": "Pour les très gros calibres (Tallboy, Grand Slam), soute sans porte"
+ },
+ {
+  "line": 263,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Naval",
+  "Module": "Torpilles",
+  "Catégorie de module": "Armes navales",
+  "Statut": "✅",
+  "Note": "3 niveaux"
+ },
+ {
+  "line": 264,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Naval",
+  "Module": "Grenades sous-marines",
+  "Catégorie de module": "Armes navales",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 265,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Naval",
+  "Module": "Torpille Fido",
+  "Catégorie de module": "Armes navales",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 266,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Guidées",
+  "Module": "Missile antinavire",
+  "Catégorie de module": "Armes guidées",
+  "Statut": "✅",
+  "Note": "Module unique de l'ancien dépôt"
+ },
+ {
+  "line": 267,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Guidées",
+  "Module": "Fritz X",
+  "Catégorie de module": "Armes guidées",
+  "Statut": "🆕",
+  "Note": "Bombe guidée perforante ; technologie lointaine"
+ },
+ {
+  "line": 268,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Guidées",
+  "Module": "Hs 293",
+  "Catégorie de module": "Armes guidées",
+  "Statut": "🆕",
+  "Note": "Bombe planante ; technologie lointaine"
+ },
+ {
+  "line": 269,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Spéciaux",
+  "Module": "Mines larguées",
+  "Catégorie de module": "Armes spéciales",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 270,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Spéciaux",
+  "Module": "Charge kamikaze",
+  "Catégorie de module": "Armes spéciales",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 271,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Spéciaux",
+  "Module": "Schräge Musik",
+  "Catégorie de module": "Armes spéciales",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 272,
+  "section": "Réservoirs et armement",
+  "Sous-famille": "Spéciaux",
+  "Module": "Bobine de déminage",
+  "Catégorie de module": "Armes spéciales",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 278,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Viseurs",
+  "Module": "Viseur de bombardement",
+  "Catégorie de module": "Viseur de bombardement",
+  "Statut": "✅",
+  "Note": "2 niveaux"
+ },
+ {
+  "line": 279,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Viseurs",
+  "Module": "Viseur réflexe de chasse",
+  "Catégorie de module": "Viseur de tir",
+  "Statut": "✅",
+  "Note": "2 niveaux"
+ },
+ {
+  "line": 280,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Viseurs",
+  "Module": "Viseur réflexe d'attaque",
+  "Catégorie de module": "Viseur de tir",
+  "Statut": "✅",
+  "Note": "2 niveaux"
+ },
+ {
+  "line": 281,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Viseurs",
+  "Module": "Viseur gyroscopique",
+  "Catégorie de module": "Viseur de tir",
+  "Statut": "✅",
+  "Note": "2 niveaux"
+ },
+ {
+  "line": 282,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Radars et navigation",
+  "Module": "Radionavigation",
+  "Catégorie de module": "Navigation",
+  "Statut": "✅",
+  "Note": "2 niveaux"
+ },
+ {
+  "line": 283,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Radars et navigation",
+  "Module": "Radar air-sol",
+  "Catégorie de module": "Radar",
+  "Statut": "✅",
+  "Note": "2 niveaux"
+ },
+ {
+  "line": 284,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Radars et navigation",
+  "Module": "Radar air-air",
+  "Catégorie de module": "Radar",
+  "Statut": "✅",
+  "Note": "2 niveaux"
+ },
+ {
+  "line": 285,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Radars et navigation",
+  "Module": "Radar anti-navire (ASV)",
+  "Catégorie de module": "Radar",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 286,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Contre-mesures et aides",
+  "Module": "Paillettes anti-radar (Window)",
+  "Catégorie de module": "Contre-mesures",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 287,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Contre-mesures et aides",
+  "Module": "Alerte radar de queue (Monica)",
+  "Catégorie de module": "Alerte radar",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 288,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Contre-mesures et aides",
+  "Module": "Récepteur d'alerte (Naxos)",
+  "Catégorie de module": "Alerte radar",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 289,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Contre-mesures et aides",
+  "Module": "Identification ami-ennemi (IFF)",
+  "Catégorie de module": "Identification",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 290,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Contre-mesures et aides",
+  "Module": "Altimètre radar",
+  "Catégorie de module": "Aides au pilotage",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 291,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Contre-mesures et aides",
+  "Module": "Pilote automatique",
+  "Catégorie de module": "Aides au pilotage",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 292,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Contre-mesures et aides",
+  "Module": "Radiotéléphone",
+  "Catégorie de module": "Radio",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 293,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Reconnaissance",
+  "Module": "Caméra",
+  "Catégorie de module": "Reconnaissance",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 294,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Reconnaissance",
+  "Module": "Photographie nocturne à flash",
+  "Catégorie de module": "Reconnaissance",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 295,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Anti-sous-marin",
+  "Module": "Projecteur Leigh",
+  "Catégorie de module": "Anti-sous-marin",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 296,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Anti-sous-marin",
+  "Module": "Détecteur d'anomalies magnétiques",
+  "Catégorie de module": "Anti-sous-marin",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 297,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Anti-sous-marin",
+  "Module": "Bouées acoustiques",
+  "Catégorie de module": "Anti-sous-marin",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 298,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Transport",
+  "Module": "Soute à fret",
+  "Catégorie de module": "Soute de transport",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 299,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Transport",
+  "Module": "Largage de ravitaillement",
+  "Catégorie de module": "Largage de ravitaillement",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 300,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Transport",
+  "Module": "Compartiment de troupes",
+  "Catégorie de module": "Soute de transport",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 301,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Mitrailleuses à main",
+  "Module": "Mitrailleuse légère à main",
+  "Catégorie de module": "Mitrailleuse à main",
+  "Statut": "🆕",
+  "Note": "Calibre fusil"
+ },
+ {
+  "line": 302,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Mitrailleuses à main",
+  "Module": "Mitrailleuse lourde à main",
+  "Catégorie de module": "Mitrailleuse à main",
+  "Statut": "🆕",
+  "Note": "12,7 mm"
+ },
+ {
+  "line": 303,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles",
+  "Module": "Tourelle mitrailleuse légère x1",
+  "Catégorie de module": "Tourelle x1",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 304,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles",
+  "Module": "Tourelle mitrailleuse lourde x1",
+  "Catégorie de module": "Tourelle x1",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 305,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles",
+  "Module": "Tourelle canon x1",
+  "Catégorie de module": "Tourelle x1",
+  "Statut": "✅",
+  "Note": "20 mm"
+ },
+ {
+  "line": 306,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles",
+  "Module": "Tourelle mitrailleuse légère x2",
+  "Catégorie de module": "Tourelle x2",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 307,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles",
+  "Module": "Tourelle mitrailleuse lourde x2",
+  "Catégorie de module": "Tourelle x2",
+  "Statut": "✅",
+  "Note": ""
+ },
+ {
+  "line": 308,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles",
+  "Module": "Tourelle canon x2",
+  "Catégorie de module": "Tourelle x2",
+  "Statut": "✅",
+  "Note": "20 mm"
+ },
+ {
+  "line": 309,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles",
+  "Module": "Tourelle mitrailleuse légère x4",
+  "Catégorie de module": "Tourelle x4",
+  "Statut": "🆕",
+  "Note": "Queue de Lancaster"
+ },
+ {
+  "line": 310,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles",
+  "Module": "Tourelle mitrailleuse lourde x4",
+  "Catégorie de module": "Tourelle x4",
+  "Statut": "🆕",
+  "Note": "B-17, B-29"
+ },
+ {
+  "line": 311,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles à boule",
+  "Module": "Tourelle à boule mitrailleuse légère x1",
+  "Catégorie de module": "Tourelle à boule x1",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 312,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles à boule",
+  "Module": "Tourelle à boule mitrailleuse lourde x1",
+  "Catégorie de module": "Tourelle à boule x1",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 313,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles à boule",
+  "Module": "Tourelle à boule canon x1",
+  "Catégorie de module": "Tourelle à boule x1",
+  "Statut": "🆕",
+  "Note": "20 mm"
+ },
+ {
+  "line": 314,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles à boule",
+  "Module": "Tourelle à boule mitrailleuse légère x2",
+  "Catégorie de module": "Tourelle à boule x2",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 315,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles à boule",
+  "Module": "Tourelle à boule mitrailleuse lourde x2",
+  "Catégorie de module": "Tourelle à boule x2",
+  "Statut": "🆕",
+  "Note": "Type Sperry"
+ },
+ {
+  "line": 316,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles à boule",
+  "Module": "Tourelle à boule canon x2",
+  "Catégorie de module": "Tourelle à boule x2",
+  "Statut": "🆕",
+  "Note": "20 mm"
+ },
+ {
+  "line": 317,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles à boule",
+  "Module": "Tourelle à boule mitrailleuse légère x4",
+  "Catégorie de module": "Tourelle à boule x4",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 318,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles à boule",
+  "Module": "Tourelle à boule mitrailleuse lourde x4",
+  "Catégorie de module": "Tourelle à boule x4",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 319,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles télécommandées",
+  "Module": "Tourelle télécommandée mitrailleuse légère x1",
+  "Catégorie de module": "Tourelle télécommandée x1",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 320,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles télécommandées",
+  "Module": "Tourelle télécommandée mitrailleuse lourde x1",
+  "Catégorie de module": "Tourelle télécommandée x1",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 321,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles télécommandées",
+  "Module": "Tourelle télécommandée canon x1",
+  "Catégorie de module": "Tourelle télécommandée x1",
+  "Statut": "🆕",
+  "Note": "20 mm"
+ },
+ {
+  "line": 322,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles télécommandées",
+  "Module": "Tourelle télécommandée mitrailleuse légère x2",
+  "Catégorie de module": "Tourelle télécommandée x2",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 323,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles télécommandées",
+  "Module": "Tourelle télécommandée mitrailleuse lourde x2",
+  "Catégorie de module": "Tourelle télécommandée x2",
+  "Statut": "🆕",
+  "Note": "Type B-29"
+ },
+ {
+  "line": 324,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles télécommandées",
+  "Module": "Tourelle télécommandée canon x2",
+  "Catégorie de module": "Tourelle télécommandée x2",
+  "Statut": "🆕",
+  "Note": "20 mm"
+ },
+ {
+  "line": 325,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles télécommandées",
+  "Module": "Tourelle télécommandée mitrailleuse légère x4",
+  "Catégorie de module": "Tourelle télécommandée x4",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 326,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Tourelles télécommandées",
+  "Module": "Tourelle télécommandée mitrailleuse lourde x4",
+  "Catégorie de module": "Tourelle télécommandée x4",
+  "Statut": "🆕",
+  "Note": ""
+ },
+ {
+  "line": 327,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Aérodynamique",
+  "Module": "Aérofreins",
+  "Catégorie de module": "Aérofreins",
+  "Statut": "✅",
+  "Note": "Tailles S, M"
+ },
+ {
+  "line": 328,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Aérodynamique",
+  "Module": "Pylônes aérodynamiques",
+  "Catégorie de module": "Pylônes",
+  "Statut": "✅",
+  "Note": "Tailles S, M"
+ },
+ {
+  "line": 329,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Jet",
+  "Module": "Entrée d'air supersonique",
+  "Catégorie de module": "Améliorations de réacteur",
+  "Statut": "✅",
+  "Note": "Technologie lointaine"
+ },
+ {
+  "line": 330,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Jet",
+  "Module": "Post-combustion",
+  "Catégorie de module": "Améliorations de réacteur",
+  "Statut": "✅",
+  "Note": "Technologie lointaine"
+ },
+ {
+  "line": 331,
+  "section": "Électronique, missions spéciales, tourelles et jet",
+  "Sous-famille": "Jet",
+  "Module": "Compresseur amélioré",
+  "Catégorie de module": "Améliorations de réacteur",
+  "Statut": "✅",
+  "Note": "Technologie lointaine"
+ },
+ {
+  "line": 339,
+  "section": "Rôles",
+  "Rôle": "Chasseur",
+  "Tailles": "Petite",
+  "Catégories de module": "Rôle (petite)",
+  "Statut": "✅",
+  "Obligatoire (au moins un)": "arme de chasse",
+  "Interdit": "torpille, grande soute",
+  "Note": "Aucune stat de rôle"
+ },
+ {
+  "line": 340,
+  "section": "Rôles",
+  "Rôle": "Chasseur lourd",
+  "Tailles": "Moyenne",
+  "Catégories de module": "Rôle (moyenne)",
+  "Statut": "✅",
+  "Obligatoire (au moins un)": "arme de chasse",
+  "Interdit": "torpille, grande soute",
+  "Note": "Type attendu par le jeu ; aucune stat de rôle"
+ },
+ {
+  "line": 341,
+  "section": "Rôles",
+  "Rôle": "Intercepteur",
+  "Tailles": "Petite",
+  "Catégories de module": "Rôle (petite)",
+  "Statut": "✅",
+  "Obligatoire (au moins un)": "arme de chasse",
+  "Interdit": "torpille, grande soute",
+  "Note": "Poussée supérieure au poids d'une valeur fixe (poids fictif en mission d'interception), compensée par un bonus d'agilité identique ; à tester"
+ },
+ {
+  "line": 342,
+  "section": "Rôles",
+  "Rôle": "Appui rapproché",
+  "Tailles": "Petite, Moyenne",
+  "Catégories de module": "Rôle (petite), Rôle (moyenne)",
+  "Statut": "✅",
+  "Obligatoire (au moins un)": "arme air-sol (canon AT, roquettes ou bombes)",
+  "Interdit": "—",
+  "Note": ""
+ },
+ {
+  "line": 343,
+  "section": "Rôles",
+  "Rôle": "Kamikaze",
+  "Tailles": "Petite",
+  "Catégories de module": "Rôle (petite)",
+  "Statut": "✅",
+  "Obligatoire (au moins un)": "charge kamikaze",
+  "Interdit": "—",
+  "Note": ""
+ },
+ {
+  "line": 344,
+  "section": "Rôles",
+  "Rôle": "Bombardier tactique",
+  "Tailles": "Moyenne",
+  "Catégories de module": "Rôle (moyenne)",
+  "Statut": "✅",
+  "Obligatoire (au moins un)": "soute ou attaches de bombes",
+  "Interdit": "—",
+  "Note": ""
+ },
+ {
+  "line": 345,
+  "section": "Rôles",
+  "Rôle": "Bombardier naval",
+  "Tailles": "Petite, Moyenne",
+  "Catégories de module": "Rôle (petite), Rôle (moyenne)",
+  "Statut": "✅",
+  "Obligatoire (au moins un)": "torpille ou bombe navale",
+  "Interdit": "—",
+  "Note": ""
+ },
+ {
+  "line": 346,
+  "section": "Rôles",
+  "Rôle": "Reconnaissance",
+  "Tailles": "Petite, Moyenne",
+  "Catégories de module": "Rôle (petite), Rôle (moyenne)",
+  "Statut": "✅",
+  "Obligatoire (au moins un)": "caméra",
+  "Interdit": "—",
+  "Note": ""
+ },
+ {
+  "line": 347,
+  "section": "Rôles",
+  "Rôle": "Patrouille maritime",
+  "Tailles": "Moyenne, Grande",
+  "Catégories de module": "Rôle (moyenne), Rôle (grande)",
+  "Statut": "✅",
+  "Obligatoire (au moins un)": "radar anti-navire ou module anti-sous-marin",
+  "Interdit": "—",
+  "Note": ""
+ },
+ {
+  "line": 348,
+  "section": "Rôles",
+  "Rôle": "Bombardier stratégique",
+  "Tailles": "Grande",
+  "Catégories de module": "Rôle (grande)",
+  "Statut": "✅",
+  "Obligatoire (au moins un)": "soute à bombes",
+  "Interdit": "armes de chasse légères",
+  "Note": ""
+ },
+ {
+  "line": 349,
+  "section": "Rôles",
+  "Rôle": "Transport",
+  "Tailles": "Moyenne, Grande",
+  "Catégories de module": "Rôle (moyenne), Rôle (grande)",
+  "Statut": "🆕",
+  "Obligatoire (au moins un)": "soute à fret ou compartiment de troupes",
+  "Interdit": "—",
+  "Note": ""
+ }
+]

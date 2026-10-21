@@ -1,0 +1,1880 @@
+[
+ {
+  "line": 54,
+  "id": "engines_1",
+  "name": "Moteurs à pistons de base",
+  "year": 1922,
+  "coef": 1.0,
+  "prereqs": [],
+  "allow": [],
+  "modules_txt": "Rotatif I, Radial I, En ligne I, En V I, Hélice 2 pales (métal), Hélice 2 pales (bois), Hélice 3 pales (métal, par défaut), Hélice 3 pales (bois), Carénage NACA, Réglages de puissance et de fiabilité (−2, −1, +1, +2 : 8 modules), Configuration moteur de nez simple (classes A, B, C)",
+  "statut": "vanilla, modules réécrits ; source : vanilla, ZV/main (réglages, hélices) ; toutes les nations l'ont au départ : on y met tout ce qui est obligatoire",
+  "modules_05": [
+   "zv_engine_v_1",
+   "zv_engine_inline_1",
+   "zv_engine_radial_1",
+   "zv_engine_rotary_1",
+   "zv_engine_config_nose_a",
+   "zv_engine_config_nose_b",
+   "zv_engine_config_nose_c",
+   "zv_engine_power_m2",
+   "zv_engine_power_m1",
+   "zv_engine_power_p1",
+   "zv_engine_power_p2",
+   "zv_reliability_m2",
+   "zv_reliability_m1",
+   "zv_reliability_p1",
+   "zv_reliability_p2",
+   "zv_prop_2_metal",
+   "zv_prop_2_wood",
+   "zv_prop_3_metal",
+   "zv_prop_3_wood",
+   "zv_naca_cowling"
+  ]
+ },
+ {
+  "line": 55,
+  "id": "engines_2",
+  "name": "Moteurs à refroidissement liquide II",
+  "year": 1936,
+  "coef": 1.0,
+  "prereqs": [
+   "engines_1"
+  ],
+  "allow": [],
+  "modules_txt": "En ligne II, En V II, Radiateur ventral, Radiateur dans l'aile, Prise d'air",
+  "statut": "vanilla, modules réécrits ; source : vanilla, Freezer et ZV/main (scission liquide/air)",
+  "modules_05": [
+   "zv_engine_v_2",
+   "zv_engine_inline_2",
+   "zv_radiator_ventral",
+   "zv_radiator_wing",
+   "zv_air_intake"
+  ]
+ },
+ {
+  "line": 56,
+  "id": "engines_3",
+  "name": "Moteurs à refroidissement liquide III",
+  "year": 1940,
+  "coef": 1.5,
+  "prereqs": [
+   "engines_2"
+  ],
+  "allow": [],
+  "modules_txt": "En ligne III, En V III, Radiateur annulaire",
+  "statut": "vanilla, modules réécrits ; source : vanilla, Freezer, ZV/main",
+  "modules_05": [
+   "zv_engine_v_3",
+   "zv_engine_inline_3",
+   "zv_radiator_annular"
+  ]
+ },
+ {
+  "line": 57,
+  "id": "engines_4",
+  "name": "Moteurs à refroidissement liquide IV",
+  "year": 1944,
+  "coef": 1.5,
+  "prereqs": [
+   "engines_3"
+  ],
+  "allow": [],
+  "modules_txt": "En ligne IV, En V IV",
+  "statut": "vanilla, modules réécrits ; source : vanilla, Freezer, ZV/main",
+  "modules_05": [
+   "zv_engine_v_4",
+   "zv_engine_inline_4"
+  ]
+ },
+ {
+  "line": 58,
+  "id": "zv_radial_engines_2",
+  "name": "Moteurs en étoile II",
+  "year": 1936,
+  "coef": 1.0,
+  "prereqs": [
+   "engines_1"
+  ],
+  "allow": [],
+  "modules_txt": "Radial II, Rotatif II",
+  "statut": "nouvelle ; source : Freezer, ZV/main",
+  "modules_05": [
+   "zv_engine_radial_2",
+   "zv_engine_rotary_2"
+  ]
+ },
+ {
+  "line": 59,
+  "id": "zv_radial_engines_3",
+  "name": "Moteurs en étoile III",
+  "year": 1940,
+  "coef": 1.5,
+  "prereqs": [
+   "zv_radial_engines_2"
+  ],
+  "allow": [],
+  "modules_txt": "Radial III",
+  "statut": "nouvelle ; source : Freezer, ZV/main",
+  "modules_05": [
+   "zv_engine_radial_3"
+  ]
+ },
+ {
+  "line": 60,
+  "id": "zv_radial_engines_4",
+  "name": "Moteurs en étoile IV",
+  "year": 1944,
+  "coef": 1.5,
+  "prereqs": [
+   "zv_radial_engines_3"
+  ],
+  "allow": [],
+  "modules_txt": "Radial IV",
+  "statut": "nouvelle ; source : Freezer, ZV/main",
+  "modules_05": [
+   "zv_engine_radial_4"
+  ]
+ },
+ {
+  "line": 61,
+  "id": "zv_rotary_engines_3",
+  "name": "Moteurs rotatifs III (optionnelle)",
+  "year": 1940,
+  "coef": 2.0,
+  "prereqs": [
+   "zv_radial_engines_2"
+  ],
+  "allow": [],
+  "modules_txt": "Rotatif III",
+  "statut": "nouvelle ; impasse : ne mène à rien, coût 2 au lieu de 1,5 (« technologie difficile à faire évoluer »)",
+  "modules_05": [
+   "zv_engine_rotary_3"
+  ]
+ },
+ {
+  "line": 62,
+  "id": "zv_rotary_engines_4",
+  "name": "Moteurs rotatifs IV (optionnelle)",
+  "year": 1944,
+  "coef": 2.0,
+  "prereqs": [
+   "zv_rotary_engines_3"
+  ],
+  "allow": [],
+  "modules_txt": "Rotatif IV",
+  "statut": "nouvelle ; impasse, gains minimes (décidé dans l'inventaire)",
+  "modules_05": [
+   "zv_engine_rotary_4"
+  ]
+ },
+ {
+  "line": 63,
+  "id": "zv_flat_engines_1",
+  "name": "Moteurs à plat légers (optionnelle)",
+  "year": 1933,
+  "coef": 0.5,
+  "prereqs": [
+   "engines_1"
+  ],
+  "allow": [],
+  "modules_txt": "À plat I (petite cylindrée)",
+  "statut": "nouvelle ; liaison, entraînement",
+  "modules_05": [
+   "zv_engine_flat_1"
+  ]
+ },
+ {
+  "line": 64,
+  "id": "zv_flat_engines_2",
+  "name": "Moteurs à plat de grosse cylindrée (optionnelle)",
+  "year": 1942,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_flat_engines_1"
+  ],
+  "allow": [],
+  "modules_txt": "À plat II (grosse cylindrée)",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_engine_flat_2"
+  ]
+ },
+ {
+  "line": 65,
+  "id": "zv_diesel_engines_1",
+  "name": "Moteurs diesel d'aviation (optionnelle)",
+  "year": 1933,
+  "coef": 0.5,
+  "prereqs": [
+   "engines_1"
+  ],
+  "allow": [],
+  "modules_txt": "Diesel I (type Jumo 205)",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_engine_diesel_1"
+  ]
+ },
+ {
+  "line": 66,
+  "id": "zv_diesel_engines_2",
+  "name": "Moteurs diesel d'altitude (optionnelle)",
+  "year": 1940,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_diesel_engines_1",
+   "zv_superchargers_2"
+  ],
+  "allow": [],
+  "modules_txt": "Diesel II (altitude)",
+  "statut": "nouvelle ; exige la suralimentation : le Jumo 207 est un Jumo 205 suralimenté",
+  "modules_05": [
+   "zv_engine_diesel_2"
+  ]
+ },
+ {
+  "line": 67,
+  "id": "zv_propellers_1",
+  "name": "Hélices à pas variable",
+  "year": 1933,
+  "coef": 0.5,
+  "prereqs": [
+   "engines_1"
+  ],
+  "allow": [],
+  "modules_txt": "Pas variable",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_prop_variable_pitch"
+  ]
+ },
+ {
+  "line": 68,
+  "id": "zv_propellers_2",
+  "name": "Hélices à vitesse constante",
+  "year": 1940,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_propellers_1"
+  ],
+  "allow": [],
+  "modules_txt": "Hélice 4 pales, Mise en drapeau",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_prop_4",
+   "zv_prop_feathering"
+  ]
+ },
+ {
+  "line": 69,
+  "id": "zv_propellers_3",
+  "name": "Hélices multipales",
+  "year": 1943,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_propellers_2"
+  ],
+  "allow": [],
+  "modules_txt": "Hélice 5 pales",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_prop_5"
+  ]
+ },
+ {
+  "line": 70,
+  "id": "zv_superchargers_1",
+  "name": "Suralimentation précoce",
+  "year": 1936,
+  "coef": 0.5,
+  "prereqs": [
+   "engines_1"
+  ],
+  "allow": [],
+  "modules_txt": "Compresseur précoce, Turbocompresseur précoce",
+  "statut": "nouvelle ; source : Freezer, ZV/main (dans `engines_2`)",
+  "modules_05": [
+   "zv_early_supercharger",
+   "zv_early_turbocharger"
+  ]
+ },
+ {
+  "line": 71,
+  "id": "zv_superchargers_2",
+  "name": "Suralimentation",
+  "year": 1940,
+  "coef": 1.0,
+  "prereqs": [
+   "zv_superchargers_1"
+  ],
+  "allow": [],
+  "modules_txt": "Compresseur, Turbocompresseur",
+  "statut": "nouvelle ; source : Freezer, ZV/main (dans `engines_3`)",
+  "modules_05": [
+   "zv_supercharger",
+   "zv_turbocharger"
+  ]
+ },
+ {
+  "line": 72,
+  "id": "zv_superchargers_3",
+  "name": "Suralimentation à refroidissement intermédiaire",
+  "year": 1942,
+  "coef": 1.0,
+  "prereqs": [
+   "zv_superchargers_2"
+  ],
+  "allow": [],
+  "modules_txt": "Compresseur à deux étages, Compresseur amélioré, Turbocompresseur amélioré",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_improved_supercharger",
+   "zv_two_stage_supercharger",
+   "zv_improved_turbocharger"
+  ]
+ },
+ {
+  "line": 73,
+  "id": "zv_high_octane_fuel",
+  "name": "Essence à haut indice d'octane",
+  "year": 1936,
+  "coef": 0.5,
+  "prereqs": [],
+  "allow": [
+   "fuel_refining"
+  ],
+  "modules_txt": "Essence à haut indice d'octane (S, M, L)",
+  "statut": "nouvelle ; remplace `fuel_refining` (dossier Industrie) comme source des modules, sans écraser `industry.txt` (décision du 21/10/2026)",
+  "modules_05": [
+   "zv_high_octane_fuel_s",
+   "zv_high_octane_fuel_m",
+   "zv_high_octane_fuel_l"
+  ]
+ },
+ {
+  "line": 74,
+  "id": "zv_boost_systems_1",
+  "name": "Puissance d'urgence",
+  "year": 1938,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_superchargers_1"
+  ],
+  "allow": [],
+  "modules_txt": "Régime d'urgence WEP (S, M, L), Injection directe",
+  "statut": "nouvelle ; source : ZV/main (WEP dans `engines_2`)",
+  "modules_05": [
+   "zv_direct_injection",
+   "zv_wep_s",
+   "zv_wep_m",
+   "zv_wep_l"
+  ]
+ },
+ {
+  "line": 75,
+  "id": "zv_boost_systems_2",
+  "name": "Injection d'eau",
+  "year": 1941,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_boost_systems_1"
+  ],
+  "allow": [],
+  "modules_txt": "Injection d'eau (S, M, L), Carburateur anti-g",
+  "statut": "nouvelle ; source : Freezer, ZV/main (dans `engines_3`)",
+  "modules_05": [
+   "zv_water_injection_s",
+   "zv_water_injection_m",
+   "zv_water_injection_l",
+   "zv_anti_g_carburettor"
+  ]
+ },
+ {
+  "line": 76,
+  "id": "zv_boost_systems_3",
+  "name": "Injection de protoxyde d'azote",
+  "year": 1942,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_boost_systems_2",
+   "zv_superchargers_2"
+  ],
+  "allow": [],
+  "modules_txt": "Injection GM-1",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_gm1"
+  ]
+ },
+ {
+  "line": 77,
+  "id": "zv_rocket_engines_2",
+  "name": "Moteurs-fusées II (optionnelle)",
+  "year": 1944,
+  "coef": 1.5,
+  "prereqs": [],
+  "allow": [
+   "sp_rocket_interceptor"
+  ],
+  "modules_txt": "Fusée 2",
+  "statut": "nouvelle ; source : vanilla (`improved_rocket_engines`) ; suite de projet spécial (`is_special_project_tech`, comme `sp_rockets_dual_chamber_rocket_engine_1`)",
+  "modules_05": [
+   "zv_engine_rocket_2"
+  ]
+ },
+ {
+  "line": 78,
+  "id": "zv_rocket_engines_3",
+  "name": "Moteurs-fusées à double chambre (optionnelle)",
+  "year": 1945,
+  "coef": 1.5,
+  "prereqs": [
+   "zv_rocket_engines_2"
+  ],
+  "allow": [],
+  "modules_txt": "Fusée 3",
+  "statut": "nouvelle ; source : vanilla (`sp_rockets_dual_chamber_rocket_engine_2`)",
+  "modules_05": [
+   "zv_engine_rocket_3"
+  ]
+ },
+ {
+  "line": 79,
+  "id": "zv_pulsejet",
+  "name": "Pulsoréacteur (optionnelle)",
+  "year": 1942,
+  "coef": 0.5,
+  "prereqs": [
+   "engines_2"
+  ],
+  "allow": [],
+  "modules_txt": "Pulsoréacteur",
+  "statut": "nouvelle ; impasse",
+  "modules_05": [
+   "zv_engine_pulsejet"
+  ]
+ },
+ {
+  "line": 80,
+  "id": "zv_centrifugal_jet_2",
+  "name": "Turboréacteur centrifuge amélioré (optionnelle)",
+  "year": 1945,
+  "coef": 1.5,
+  "prereqs": [],
+  "allow": [
+   "sp_air_jet_engine"
+  ],
+  "modules_txt": "Turboréacteur centrifuge II",
+  "statut": "nouvelle ; suite de projet spécial (`is_special_project_tech`)",
+  "modules_05": [
+   "zv_engine_centrifugal_2"
+  ]
+ },
+ {
+  "line": 81,
+  "id": "zv_axial_jet_2",
+  "name": "Turboréacteur axial d'après-guerre (optionnelle)",
+  "year": 1946,
+  "coef": 1.5,
+  "prereqs": [],
+  "allow": [
+   "sp_air_axial_jet_engine"
+  ],
+  "modules_txt": "Turboréacteur axial II",
+  "statut": "nouvelle ; technologie lointaine ; suite de projet spécial (`is_special_project_tech`)",
+  "modules_05": [
+   "zv_engine_axial_2"
+  ]
+ },
+ {
+  "line": 82,
+  "id": "zv_turboprop",
+  "name": "Turbopropulseur (optionnelle)",
+  "year": 1946,
+  "coef": 1.5,
+  "prereqs": [
+   "zv_centrifugal_jet_2",
+   "zv_propellers_3"
+  ],
+  "allow": [],
+  "modules_txt": "Turbopropulseur",
+  "statut": "nouvelle ; technologie lointaine",
+  "modules_05": [
+   "zv_engine_turboprop"
+  ]
+ },
+ {
+  "line": 83,
+  "id": "zv_jet_improvements_1",
+  "name": "Réacteurs améliorés (optionnelle)",
+  "year": 1946,
+  "coef": 1.0,
+  "prereqs": [
+   "zv_axial_jet_2"
+  ],
+  "allow": [],
+  "modules_txt": "Compresseur amélioré (réacteur), Post-combustion",
+  "statut": "nouvelle ; source : Freezer, ZV/main (`jet_engine_improvements`) ; technologie lointaine",
+  "modules_05": [
+   "zv_jet_improved_compressor",
+   "zv_afterburner"
+  ]
+ },
+ {
+  "line": 84,
+  "id": "zv_jet_improvements_2",
+  "name": "Entrées d'air supersoniques (optionnelle)",
+  "year": 1947,
+  "coef": 1.0,
+  "prereqs": [
+   "zv_jet_improvements_1"
+  ],
+  "allow": [],
+  "modules_txt": "Entrée d'air supersonique",
+  "statut": "nouvelle ; technologie lointaine",
+  "modules_05": [
+   "zv_supersonic_intake"
+  ]
+ },
+ {
+  "line": 112,
+  "id": "aircraft_construction",
+  "name": "Construction aéronautique",
+  "year": 1936,
+  "coef": 1.0,
+  "prereqs": [
+   "engines_1"
+  ],
+  "allow": [],
+  "modules_txt": "Matériaux non stratégiques (S, M, L), Flotteurs, Hydravion (M, L), Train rétractable à roulette de queue, Crosse d'appontage et ailes repliables, Construction allégée (S, M), Construction renforcée (S, M, L), Empennage double dérive, Becs de bord d'attaque, Aérofreins (S, M), Nez vitré de bombardier, Configuration quadrimoteur tandem (classes A, B, C)",
+  "statut": "vanilla, modules réécrits ; source : vanilla, ZV/main ; toutes les grandes nations l'ont en 1936",
+  "modules_05": [
+   "zv_engine_config_quad_tandem_a",
+   "zv_engine_config_quad_tandem_b",
+   "zv_engine_config_quad_tandem_c",
+   "zv_fuselage_flying_boat_m",
+   "zv_fuselage_flying_boat_l",
+   "zv_tail_twin",
+   "zv_non_strategic_materials_s",
+   "zv_non_strategic_materials_m",
+   "zv_non_strategic_materials_l",
+   "zv_lightweight_construction_s",
+   "zv_lightweight_construction_m",
+   "zv_reinforced_construction_s",
+   "zv_reinforced_construction_m",
+   "zv_reinforced_construction_l",
+   "zv_leading_edge_slats",
+   "zv_dive_brakes_s",
+   "zv_dive_brakes_m",
+   "zv_gear_retractable_taildragger",
+   "zv_floats",
+   "zv_carrier_equipment",
+   "zv_cockpit_glazed_nose"
+  ]
+ },
+ {
+  "line": 113,
+  "id": "zv_advanced_aircraft_construction",
+  "name": "Construction aéronautique avancée",
+  "year": 1939,
+  "coef": 1.0,
+  "prereqs": [
+   "aircraft_construction"
+  ],
+  "allow": [],
+  "modules_txt": "Fuselage goutte (S, M), Fuselage bipoutre (S, M), Empennage en T, Empennage double poutre, Trains fixe et rétractable tricycles, Volets Fowler, Configurations pentamoteur, bimoteur de nez et moteur de queue (classes A, B, C)",
+  "statut": "nouvelle ; source : SpatialX (`advanced_aircraft_construction`, 1936)",
+  "modules_05": [
+   "zv_engine_config_quint_a",
+   "zv_engine_config_quint_b",
+   "zv_engine_config_quint_c",
+   "zv_engine_config_twin_nose_a",
+   "zv_engine_config_twin_nose_b",
+   "zv_engine_config_twin_nose_c",
+   "zv_engine_config_tail_a",
+   "zv_engine_config_tail_b",
+   "zv_engine_config_tail_c",
+   "zv_fuselage_teardrop_s",
+   "zv_fuselage_teardrop_m",
+   "zv_fuselage_twin_boom_s",
+   "zv_fuselage_twin_boom_m",
+   "zv_tail_t",
+   "zv_tail_twin_boom",
+   "zv_fowler_flaps",
+   "zv_gear_fixed_tricycle",
+   "zv_gear_retractable_tricycle"
+  ]
+ },
+ {
+  "line": 114,
+  "id": "zv_modern_aircraft_construction",
+  "name": "Construction aéronautique moderne",
+  "year": 1942,
+  "coef": 1.0,
+  "prereqs": [
+   "zv_advanced_aircraft_construction"
+  ],
+  "allow": [],
+  "modules_txt": "Fuselage « Jug » (S, M, L), Volets de combat (S, M), Pylônes aérodynamiques (S, M), Cockpit en bulle, Configurations hexamoteur et tandem nez-queue (classes A, B, C)",
+  "statut": "nouvelle ; source : SpatialX (`modern_aircraft_construction`, 1944)",
+  "modules_05": [
+   "zv_engine_config_hexa_a",
+   "zv_engine_config_hexa_b",
+   "zv_engine_config_hexa_c",
+   "zv_engine_config_tandem_a",
+   "zv_engine_config_tandem_b",
+   "zv_engine_config_tandem_c",
+   "zv_fuselage_jug_s",
+   "zv_fuselage_jug_m",
+   "zv_fuselage_jug_l",
+   "zv_combat_flaps_s",
+   "zv_combat_flaps_m",
+   "zv_aerodynamic_pylons_s",
+   "zv_aerodynamic_pylons_m",
+   "zv_cockpit_bubble"
+  ]
+ },
+ {
+  "line": 115,
+  "id": "zv_experimental_aircraft_construction",
+  "name": "Configurations expérimentales (optionnelle)",
+  "year": 1944,
+  "coef": 1.0,
+  "prereqs": [
+   "zv_modern_aircraft_construction",
+   "zv_tailless_aircraft"
+  ],
+  "allow": [],
+  "modules_txt": "Fuselage aile volante (S, M, L), Empennage en V, Empennage cruciforme",
+  "statut": "nouvelle ; source : SpatialX (aile volante dans `modern_aircraft_construction`)",
+  "modules_05": [
+   "zv_fuselage_flying_wing_s",
+   "zv_fuselage_flying_wing_m",
+   "zv_fuselage_flying_wing_l",
+   "zv_tail_v",
+   "zv_tail_cruciform"
+  ]
+ },
+ {
+  "line": 116,
+  "id": "zv_wooden_construction",
+  "name": "Construction en bois (optionnelle)",
+  "year": 1940,
+  "coef": 0.5,
+  "prereqs": [
+   "aircraft_construction"
+  ],
+  "allow": [],
+  "modules_txt": "Bois monocoque",
+  "statut": "nouvelle ; branche des pays pauvres en aluminium ; impasse",
+  "modules_05": [
+   "zv_wooden_monocoque"
+  ]
+ },
+ {
+  "line": 117,
+  "id": "zv_pressurized_cabin",
+  "name": "Cabine pressurisée",
+  "year": 1940,
+  "coef": 0.5,
+  "prereqs": [
+   "aircraft_construction",
+   "zv_superchargers_1"
+  ],
+  "allow": [],
+  "modules_txt": "Cockpit pressurisé",
+  "statut": "nouvelle ; ZV/main le donnait dès 1922",
+  "modules_05": [
+   "zv_cockpit_pressurized"
+  ]
+ },
+ {
+  "line": 118,
+  "id": "zv_wing_planforms_1",
+  "name": "Formes d'aile évoluées",
+  "year": 1933,
+  "coef": 0.5,
+  "prereqs": [
+   "iw_small_airframe"
+  ],
+  "allow": [],
+  "modules_txt": "Effilée, elliptique et mixte en basse, médiane, haute, parasol et biplan (15), Mouette inversée basse et médiane (2), Mouette haute, parasol et biplan (3), Biplan à flèche légère (1)",
+  "statut": "nouvelle ; à donner au départ aux pays qui ont `aircraft_construction` (Spitfire, Bf 109)",
+  "modules_05": [
+   "zv_wing_basse_effilee",
+   "zv_wing_basse_elliptique",
+   "zv_wing_basse_mixte",
+   "zv_wing_basse_mouette_inversee",
+   "zv_wing_mediane_effilee",
+   "zv_wing_mediane_elliptique",
+   "zv_wing_mediane_mixte",
+   "zv_wing_mediane_mouette_inversee",
+   "zv_wing_haute_effilee",
+   "zv_wing_haute_elliptique",
+   "zv_wing_haute_mixte",
+   "zv_wing_haute_mouette",
+   "zv_wing_parasol_effilee",
+   "zv_wing_parasol_elliptique",
+   "zv_wing_parasol_mixte",
+   "zv_wing_parasol_mouette",
+   "zv_wing_biplan_mixte",
+   "zv_wing_biplan_mouette",
+   "zv_wing_biplan_effilee",
+   "zv_wing_biplan_elliptique",
+   "zv_wing_biplan_fleche_legere"
+  ]
+ },
+ {
+  "line": 119,
+  "id": "zv_laminar_wing",
+  "name": "Profil laminaire",
+  "year": 1940,
+  "coef": 1.0,
+  "prereqs": [
+   "zv_wing_planforms_1"
+  ],
+  "allow": [],
+  "modules_txt": "Laminaire basse, médiane, haute",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_wing_basse_laminaire",
+   "zv_wing_mediane_laminaire",
+   "zv_wing_haute_laminaire"
+  ]
+ },
+ {
+  "line": 120,
+  "id": "zv_swept_wing_1",
+  "name": "Aile en flèche légère",
+  "year": 1942,
+  "coef": 1.0,
+  "prereqs": [
+   "zv_laminar_wing"
+  ],
+  "allow": [],
+  "modules_txt": "Flèche légère basse, médiane, haute",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_wing_basse_fleche_legere",
+   "zv_wing_mediane_fleche_legere",
+   "zv_wing_haute_fleche_legere"
+  ]
+ },
+ {
+  "line": 121,
+  "id": "zv_swept_wing_2",
+  "name": "Aile en flèche prononcée (optionnelle)",
+  "year": 1945,
+  "coef": 1.0,
+  "prereqs": [
+   "zv_swept_wing_1"
+  ],
+  "allow": [],
+  "modules_txt": "Flèche prononcée basse, médiane, haute",
+  "statut": "nouvelle ; limite de période",
+  "modules_05": [
+   "zv_wing_basse_fleche_prononcee",
+   "zv_wing_mediane_fleche_prononcee",
+   "zv_wing_haute_fleche_prononcee"
+  ]
+ },
+ {
+  "line": 122,
+  "id": "zv_forward_swept_wing",
+  "name": "Aile en flèche inversée (optionnelle)",
+  "year": 1944,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_swept_wing_1"
+  ],
+  "allow": [],
+  "modules_txt": "Flèche inversée basse, médiane, haute",
+  "statut": "nouvelle ; impasse (Ju 287)",
+  "modules_05": [
+   "zv_wing_basse_fleche_inversee",
+   "zv_wing_mediane_fleche_inversee",
+   "zv_wing_haute_fleche_inversee"
+  ]
+ },
+ {
+  "line": 123,
+  "id": "zv_tailless_aircraft",
+  "name": "Aile sans queue (optionnelle)",
+  "year": 1941,
+  "coef": 1.0,
+  "prereqs": [
+   "zv_laminar_wing",
+   "zv_advanced_aircraft_construction"
+  ],
+  "allow": [],
+  "modules_txt": "Sans queue laminaire, flèche légère, discoïde",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_wing_sans_queue_laminaire",
+   "zv_wing_sans_queue_fleche_legere",
+   "zv_wing_sans_queue_discoide"
+  ]
+ },
+ {
+  "line": 124,
+  "id": "zv_delta_wing",
+  "name": "Voilures sans queue avancées (optionnelle)",
+  "year": 1945,
+  "coef": 1.0,
+  "prereqs": [
+   "zv_tailless_aircraft",
+   "zv_swept_wing_1"
+  ],
+  "allow": [],
+  "modules_txt": "Delta basse et médiane, Sans queue delta et flèche prononcée",
+  "statut": "nouvelle ; le delta naît des travaux sans queue (Lippisch)",
+  "modules_05": [
+   "zv_wing_basse_delta",
+   "zv_wing_mediane_delta",
+   "zv_wing_sans_queue_fleche_prononcee",
+   "zv_wing_sans_queue_delta"
+  ]
+ },
+ {
+  "line": 125,
+  "id": "zv_canard_configuration",
+  "name": "Configuration canard (optionnelle)",
+  "year": 1943,
+  "coef": 1.0,
+  "prereqs": [
+   "zv_swept_wing_1",
+   "zv_advanced_aircraft_construction"
+  ],
+  "allow": [],
+  "modules_txt": "Canard rectangulaire, trapézoïdale, effilée, elliptique, mixte, laminaire, flèche légère",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_wing_canard_rectangulaire",
+   "zv_wing_canard_trapezoidale",
+   "zv_wing_canard_effilee",
+   "zv_wing_canard_elliptique",
+   "zv_wing_canard_mixte",
+   "zv_wing_canard_laminaire",
+   "zv_wing_canard_fleche_legere"
+  ]
+ },
+ {
+  "line": 126,
+  "id": "zv_advanced_canard",
+  "name": "Canard à grande flèche (optionnelle)",
+  "year": 1946,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_canard_configuration",
+   "zv_delta_wing"
+  ],
+  "allow": [],
+  "modules_txt": "Canard flèche prononcée et delta",
+  "statut": "nouvelle ; technologie lointaine",
+  "modules_05": [
+   "zv_wing_canard_fleche_prononcee",
+   "zv_wing_canard_delta"
+  ]
+ },
+ {
+  "line": 127,
+  "id": "zv_gunsights_1",
+  "name": "Viseurs réflexes",
+  "year": 1936,
+  "coef": 0.5,
+  "prereqs": [],
+  "allow": [
+   "mechanical_computing"
+  ],
+  "modules_txt": "Viseur réflexe de chasse niv. 1, Viseur réflexe d'attaque niv. 1",
+  "statut": "nouvelle ; source : ZV/main (`mechanical_computing`)",
+  "modules_05": [
+   "zv_reflex_gunsight_1",
+   "zv_attack_gunsight_1"
+  ]
+ },
+ {
+  "line": 128,
+  "id": "zv_gunsights_2",
+  "name": "Viseurs réflexes améliorés",
+  "year": 1938,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_gunsights_1"
+  ],
+  "allow": [
+   "computing_machine"
+  ],
+  "modules_txt": "Viseur réflexe de chasse niv. 2, Viseur réflexe d'attaque niv. 2",
+  "statut": "nouvelle ; source : ZV/main (`computing_machine`, 1938)",
+  "modules_05": [
+   "zv_reflex_gunsight_2",
+   "zv_attack_gunsight_2"
+  ]
+ },
+ {
+  "line": 129,
+  "id": "zv_gyro_gunsight_1",
+  "name": "Viseur gyroscopique",
+  "year": 1941,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_gunsights_2"
+  ],
+  "allow": [
+   "improved_computing_machine"
+  ],
+  "modules_txt": "Viseur gyroscopique niv. 1",
+  "statut": "nouvelle ; source : ZV/main (`improved_computing_machine`, 1940)",
+  "modules_05": [
+   "zv_gyro_gunsight_1"
+  ]
+ },
+ {
+  "line": 130,
+  "id": "zv_gyro_gunsight_2",
+  "name": "Viseur gyroscopique amélioré",
+  "year": 1943,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_gyro_gunsight_1"
+  ],
+  "allow": [
+   "advanced_computing_machine"
+  ],
+  "modules_txt": "Viseur gyroscopique niv. 2",
+  "statut": "nouvelle ; source : ZV/main (`advanced_computing_machine`, 1942)",
+  "modules_05": [
+   "zv_gyro_gunsight_2"
+  ]
+ },
+ {
+  "line": 131,
+  "id": "zv_air_radio",
+  "name": "Radio de bord",
+  "year": 1936,
+  "coef": 0.5,
+  "prereqs": [],
+  "allow": [
+   "radio"
+  ],
+  "modules_txt": "Radiotéléphone",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_radio_telephone"
+  ]
+ },
+ {
+  "line": 132,
+  "id": "zv_iff",
+  "name": "Identification ami-ennemi",
+  "year": 1940,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_air_radio"
+  ],
+  "allow": [
+   "cavity_magnatron"
+  ],
+  "modules_txt": "IFF",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_iff"
+  ]
+ },
+ {
+  "line": 133,
+  "id": "zv_radar_warning",
+  "name": "Alerte radar",
+  "year": 1942,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_iff"
+  ],
+  "allow": [
+   "centimetric_radar"
+  ],
+  "modules_txt": "Alerte radar de queue (Monica)",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_monica"
+  ]
+ },
+ {
+  "line": 134,
+  "id": "zv_radar_countermeasures",
+  "name": "Contre-mesures radar",
+  "year": 1943,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_radar_warning"
+  ],
+  "allow": [],
+  "modules_txt": "Paillettes anti-radar (Window), Récepteur d'alerte (Naxos)",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_window",
+   "zv_naxos"
+  ]
+ },
+ {
+  "line": 135,
+  "id": "zv_asv_radar",
+  "name": "Radar de surveillance maritime",
+  "year": 1940,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_air_radio"
+  ],
+  "allow": [
+   "cavity_magnatron"
+  ],
+  "modules_txt": "Radar anti-navire (ASV)",
+  "statut": "nouvelle ; source : Freezer et ZV/main (`improved_decimetric_radar`, tech disparue en 1.19.3)",
+  "modules_05": [
+   "zv_asv_radar"
+  ]
+ },
+ {
+  "line": 136,
+  "id": "zv_all_weather_1",
+  "name": "Vol tout temps",
+  "year": 1936,
+  "coef": 0.5,
+  "prereqs": [],
+  "allow": [
+   "radio"
+  ],
+  "modules_txt": "Pilote automatique, Bottes pneumatiques",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_deicing_boots",
+   "zv_autopilot"
+  ]
+ },
+ {
+  "line": 137,
+  "id": "zv_all_weather_2",
+  "name": "Vol tout temps II",
+  "year": 1942,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_all_weather_1"
+  ],
+  "allow": [
+   "centimetric_radar"
+  ],
+  "modules_txt": "Altimètre radar, Bords d'attaque chauffés",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_heated_leading_edges",
+   "zv_radar_altimeter"
+  ]
+ },
+ {
+  "line": 153,
+  "id": "iw_small_airframe",
+  "name": "Cellule légère de l'entre-deux-guerres (kit de base)",
+  "year": 1926,
+  "coef": 2.0,
+  "prereqs": [],
+  "allow": [],
+  "modules_txt": "Fuselage classique S, Tubes et toile, Empennage classique, Cockpit ouvert, Cockpit fermé, Train fixe caréné à roulette de queue, Skis, Mitrailleuse légère à main, Ailes rectangulaires et trapézoïdales en basse, médiane, haute, parasol et biplan (10), Sesquiplan, Triplan",
+  "statut": "vanilla, modules ajoutés ; source : SpatialX (soute ajoutée à `iw_large_airframe`) ; cellules vanilla inchangées",
+  "modules_05": [
+   "zv_fuselage_classic_s",
+   "zv_tube_and_fabric",
+   "zv_tail_classic",
+   "zv_gear_fixed_taildragger",
+   "zv_skis",
+   "zv_wing_basse_rectangulaire",
+   "zv_wing_basse_trapezoidale",
+   "zv_wing_mediane_rectangulaire",
+   "zv_wing_mediane_trapezoidale",
+   "zv_wing_haute_rectangulaire",
+   "zv_wing_haute_trapezoidale",
+   "zv_wing_parasol_rectangulaire",
+   "zv_wing_parasol_trapezoidale",
+   "zv_wing_biplan_rectangulaire",
+   "zv_wing_biplan_trapezoidale",
+   "zv_wing_sesquiplan_forme_unique",
+   "zv_wing_triplan_forme_unique",
+   "zv_cockpit_closed",
+   "zv_cockpit_open",
+   "zv_hand_mg_light"
+  ]
+ },
+ {
+  "line": 154,
+  "id": "iw_medium_airframe",
+  "name": "Cellule moyenne de l'entre-deux-guerres",
+  "year": 1926,
+  "coef": 2.0,
+  "prereqs": [],
+  "allow": [],
+  "modules_txt": "Fuselage classique M, Configurations bimoteur (ailes) et trimoteur (classes A, B, C)",
+  "statut": "vanilla, modules ajoutés",
+  "modules_05": [
+   "zv_engine_config_twin_wing_a",
+   "zv_engine_config_twin_wing_b",
+   "zv_engine_config_twin_wing_c",
+   "zv_engine_config_tri_a",
+   "zv_engine_config_tri_b",
+   "zv_engine_config_tri_c",
+   "zv_fuselage_classic_m"
+  ]
+ },
+ {
+  "line": 155,
+  "id": "iw_large_airframe",
+  "name": "Cellule lourde de l'entre-deux-guerres",
+  "year": 1926,
+  "coef": 2.0,
+  "prereqs": [],
+  "allow": [],
+  "modules_txt": "Fuselage classique L, Configuration quadrimoteur (classes A, B, C)",
+  "statut": "vanilla, modules ajoutés ; source : SpatialX",
+  "modules_05": [
+   "zv_engine_config_quad_a",
+   "zv_engine_config_quad_b",
+   "zv_engine_config_quad_c",
+   "zv_fuselage_classic_l"
+  ]
+ },
+ {
+  "line": 156,
+  "id": "aa_lmg",
+  "name": "Mitrailleuses légères",
+  "year": 1922,
+  "coef": 1.0,
+  "prereqs": [],
+  "allow": [],
+  "modules_txt": "Mitrailleuses légères x1 à x4, Mitrailleuses légères de nez x1, x2, Tourelle mitrailleuse légère x1, x2, Rôles chasseur (P), intercepteur (P), chasseur lourd (M)",
+  "statut": "vanilla, modules réécrits ; source : vanilla, SpatialX et ZV/main (rôles avec leur arme)",
+  "modules_05": [
+   "zv_light_mg_1x",
+   "zv_light_mg_2x",
+   "zv_light_mg_3x",
+   "zv_light_mg_4x",
+   "zv_nose_light_mg_1x",
+   "zv_nose_light_mg_2x",
+   "lmg_defense_turret",
+   "lmg_defense_turret_2x",
+   "zv_role_fighter_small",
+   "zv_role_heavy_fighter_medium",
+   "zv_role_interceptor_small"
+  ]
+ },
+ {
+  "line": 157,
+  "id": "zv_aa_lmg_2",
+  "name": "Mitrailleuses légères améliorées",
+  "year": 1938,
+  "coef": 0.5,
+  "prereqs": [
+   "aa_lmg"
+  ],
+  "allow": [],
+  "modules_txt": "Mitrailleuses légères améliorées x1 à x4, Mitrailleuses légères améliorées de nez x1, x2, Tourelle mitrailleuse légère x4",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_light_imp_mg_1x",
+   "zv_light_imp_mg_2x",
+   "zv_light_imp_mg_3x",
+   "zv_light_imp_mg_4x",
+   "zv_nose_light_imp_mg_1x",
+   "zv_nose_light_imp_mg_2x",
+   "zv_lmg_defense_turret_4x"
+  ]
+ },
+ {
+  "line": 158,
+  "id": "aa_hmg",
+  "name": "Mitrailleuses lourdes",
+  "year": 1939,
+  "coef": 1.0,
+  "prereqs": [
+   "aa_lmg"
+  ],
+  "allow": [],
+  "modules_txt": "Mitrailleuses lourdes x1 à x4, Mitrailleuses lourdes de nez x1, x2, Mitrailleuse lourde à main, Tourelle mitrailleuse lourde x1, x2, Tourelles à boule mitrailleuse légère et lourde x1, x2, x4 (6)",
+  "statut": "vanilla, modules réécrits",
+  "modules_05": [
+   "zv_heavy_mg_1x",
+   "zv_heavy_mg_2x",
+   "zv_heavy_mg_3x",
+   "zv_heavy_mg_4x",
+   "zv_nose_heavy_mg_1x",
+   "zv_nose_heavy_mg_2x",
+   "zv_hand_mg_heavy",
+   "hmg_defense_turret",
+   "hmg_defense_turret_2x",
+   "zv_ball_turret_lmg_1x",
+   "zv_ball_turret_lmg_2x",
+   "zv_ball_turret_lmg_4x",
+   "zv_ball_turret_hmg_1x",
+   "zv_ball_turret_hmg_2x",
+   "zv_ball_turret_hmg_4x"
+  ]
+ },
+ {
+  "line": 159,
+  "id": "zv_aa_hmg_2",
+  "name": "Mitrailleuses lourdes améliorées",
+  "year": 1943,
+  "coef": 1.0,
+  "prereqs": [
+   "aa_hmg"
+  ],
+  "allow": [],
+  "modules_txt": "Mitrailleuses lourdes améliorées x1 à x4, Mitrailleuses lourdes améliorées de nez x1, x2, Tourelle mitrailleuse lourde x4",
+  "statut": "nouvelle ; source : Freezer, ZV/main (`aa_hmg_2`)",
+  "modules_05": [
+   "zv_heavy_imp_mg_1x",
+   "zv_heavy_imp_mg_2x",
+   "zv_heavy_imp_mg_3x",
+   "zv_heavy_imp_mg_4x",
+   "zv_nose_heavy_imp_mg_1x",
+   "zv_nose_heavy_imp_mg_2x",
+   "zv_hmg_defense_turret_4x"
+  ]
+ },
+ {
+  "line": 160,
+  "id": "aa_cannon_1",
+  "name": "Canons de 20 mm I",
+  "year": 1939,
+  "coef": 1.0,
+  "prereqs": [
+   "aa_lmg"
+  ],
+  "allow": [],
+  "modules_txt": "Canon 20 mm 1re génération x1, x2, Canon 20 mm 1re génération de nez x1, x2",
+  "statut": "vanilla, modules réécrits",
+  "modules_05": [
+   "zv_cannon_20mm_1_1x",
+   "zv_cannon_20mm_1_2x",
+   "zv_nose_cannon_20mm_1_1x",
+   "zv_nose_cannon_20mm_1_2x"
+  ]
+ },
+ {
+  "line": 161,
+  "id": "aa_cannon_2",
+  "name": "Canons de 20 mm II",
+  "year": 1943,
+  "coef": 1.5,
+  "prereqs": [
+   "aa_cannon_1"
+  ],
+  "allow": [],
+  "modules_txt": "Canon 20 mm 2e génération x1, x2, Canon 20 mm 2e génération de nez x1, x2, Tourelle canon x1, x2, Tourelle à boule canon x1, x2, Tourelle télécommandée canon x1, x2",
+  "statut": "vanilla, modules réécrits",
+  "modules_05": [
+   "zv_cannon_20mm_2_1x",
+   "zv_cannon_20mm_2_2x",
+   "zv_nose_cannon_20mm_2_1x",
+   "zv_nose_cannon_20mm_2_2x",
+   "cannon_defense_turret",
+   "cannon_defense_turret_2x",
+   "zv_ball_turret_cannon_1x",
+   "zv_ball_turret_cannon_2x",
+   "zv_remote_turret_cannon_1x",
+   "zv_remote_turret_cannon_2x"
+  ]
+ },
+ {
+  "line": 162,
+  "id": "aa_cannon_3",
+  "name": "Canons de 20 mm III",
+  "year": 1945,
+  "coef": 2.0,
+  "prereqs": [
+   "aa_cannon_2"
+  ],
+  "allow": [],
+  "modules_txt": "Canon 20 mm 3e génération x1, x2, Canon 20 mm 3e génération de nez x1, x2",
+  "statut": "vanilla, modules réécrits ; chaîne linéaire au lieu de la fourche vanilla (`aa_cannon_1` mène aux deux)",
+  "modules_05": [
+   "zv_cannon_20mm_3_1x",
+   "zv_cannon_20mm_3_2x",
+   "zv_nose_cannon_20mm_3_1x",
+   "zv_nose_cannon_20mm_3_2x"
+  ]
+ },
+ {
+  "line": 163,
+  "id": "zv_aircraft_at_gun_1",
+  "name": "Canons antichars d'aviation (optionnelle)",
+  "year": 1941,
+  "coef": 0.5,
+  "prereqs": [
+   "aa_cannon_1"
+  ],
+  "allow": [],
+  "modules_txt": "Canon AT 37 mm, Canon AT 40 mm, Canons AT de nez 37 et 40 mm",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_at_cannon_37",
+   "zv_at_cannon_40",
+   "zv_nose_at_cannon_37",
+   "zv_nose_at_cannon_40"
+  ]
+ },
+ {
+  "line": 164,
+  "id": "zv_aircraft_at_gun_2",
+  "name": "Canons antichars lourds d'aviation (optionnelle)",
+  "year": 1943,
+  "coef": 1.0,
+  "prereqs": [
+   "zv_aircraft_at_gun_1"
+  ],
+  "allow": [],
+  "modules_txt": "Canon AT 57 mm, Canon AT 75 mm, Canons AT de nez 57 et 75 mm",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_at_cannon_57",
+   "zv_at_cannon_75",
+   "zv_nose_at_cannon_57",
+   "zv_nose_at_cannon_75"
+  ]
+ },
+ {
+  "line": 165,
+  "id": "zv_aa_cannon_30mm",
+  "name": "Canons de 30 mm",
+  "year": 1943,
+  "coef": 1.0,
+  "prereqs": [
+   "aa_cannon_1"
+  ],
+  "allow": [],
+  "modules_txt": "Canon 30 mm (MK 108) x1, x2, Canon 30 mm de nez x1, x2",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_cannon_30mm_1x",
+   "zv_cannon_30mm_2x",
+   "zv_nose_cannon_30mm_1x",
+   "zv_nose_cannon_30mm_2x"
+  ]
+ },
+ {
+  "line": 166,
+  "id": "zv_tech_schraege_musik",
+  "name": "Schräge Musik (optionnelle)",
+  "year": 1943,
+  "coef": 0.5,
+  "prereqs": [
+   "aa_cannon_1"
+  ],
+  "allow": [],
+  "modules_txt": "Schräge Musik",
+  "statut": "nouvelle ; source : SpatialX (`tech_schraege_musik`, 1943)",
+  "modules_05": [
+   "zv_schraege_musik"
+  ]
+ },
+ {
+  "line": 167,
+  "id": "zv_remote_turret",
+  "name": "Tourelles télécommandées (optionnelle)",
+  "year": 1942,
+  "coef": 1.0,
+  "prereqs": [
+   "aa_hmg"
+  ],
+  "allow": [],
+  "modules_txt": "Tourelles télécommandées mitrailleuse légère et lourde x1, x2, x4 (6)",
+  "statut": "nouvelle ; remplace `advanced_fire_control_system` (tech navale sans année, DLC *Man the Guns*) : décision du 21/10/2026 ; source : Freezer, ZV/main",
+  "modules_05": [
+   "zv_remote_turret_lmg_1x",
+   "zv_remote_turret_lmg_2x",
+   "zv_remote_turret_lmg_4x",
+   "zv_remote_turret_hmg_1x",
+   "zv_remote_turret_hmg_2x",
+   "zv_remote_turret_hmg_4x"
+  ]
+ },
+ {
+  "line": 168,
+  "id": "survivability_studies",
+  "name": "Études de survivabilité",
+  "year": 1939,
+  "coef": 1.0,
+  "prereqs": [
+   "aa_lmg"
+  ],
+  "allow": [],
+  "modules_txt": "Blindage (S, M, L), Réservoirs auto-obturants (S, M, L), Vitrage et siège blindés",
+  "statut": "vanilla, modules réécrits",
+  "modules_05": [
+   "zv_armor_plate_s",
+   "zv_armor_plate_m",
+   "zv_armor_plate_l",
+   "zv_armored_cockpit",
+   "zv_self_sealing_fuel_tanks_s",
+   "zv_self_sealing_fuel_tanks_m",
+   "zv_self_sealing_fuel_tanks_l"
+  ]
+ },
+ {
+  "line": 169,
+  "id": "zv_survivability_studies_2",
+  "name": "Études de survivabilité II",
+  "year": 1942,
+  "coef": 0.5,
+  "prereqs": [
+   "survivability_studies"
+  ],
+  "allow": [],
+  "modules_txt": "Extincteur automatique (S, M, L), Siège éjectable",
+  "statut": "nouvelle ; source : SpatialX (`survivability_studies_dos`, 1942)",
+  "modules_05": [
+   "zv_auto_extinguisher_s",
+   "zv_auto_extinguisher_m",
+   "zv_auto_extinguisher_l",
+   "zv_ejection_seat"
+  ]
+ },
+ {
+  "line": 170,
+  "id": "range_improvements",
+  "name": "Amélioration du rayon d'action",
+  "year": 1936,
+  "coef": 1.0,
+  "prereqs": [
+   "engines_1"
+  ],
+  "allow": [],
+  "modules_txt": "Réservoirs (S, M, L), Réservoirs largables (S, M)",
+  "statut": "vanilla, modules réécrits",
+  "modules_05": [
+   "zv_fuel_tanks_s",
+   "zv_fuel_tanks_m",
+   "zv_fuel_tanks_l",
+   "zv_drop_tanks_s",
+   "zv_drop_tanks_m"
+  ]
+ },
+ {
+  "line": 171,
+  "id": "zv_range_improvements_2",
+  "name": "Réservoirs supplémentaires",
+  "year": 1940,
+  "coef": 0.5,
+  "prereqs": [
+   "range_improvements"
+  ],
+  "allow": [],
+  "modules_txt": "Réservoir de soute, Réservoir de convoyage",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_bomb_bay_tank",
+   "zv_ferry_tank"
+  ]
+ },
+ {
+  "line": 172,
+  "id": "early_bombs",
+  "name": "Bombes",
+  "year": 1922,
+  "coef": 1.0,
+  "prereqs": [],
+  "allow": [],
+  "modules_txt": "Attaches légères, Bombes à fragmentation (attaches), Soutes légère, moyenne et grande, Option fragmentation (soutes moyenne et grande), Rôles appui rapproché (P, M), bombardier tactique (M), bombardier stratégique (G)",
+  "statut": "vanilla, modules réécrits ; source : vanilla, ZV/main, SpatialX (rôles)",
+  "modules_05": [
+   "zv_bomb_locks_light",
+   "zv_bomb_locks_frag",
+   "zv_bomb_bay_light",
+   "zv_bomb_bay_medium",
+   "zv_bomb_bay_medium_frag",
+   "zv_bomb_bay_large",
+   "zv_bomb_bay_large_frag",
+   "zv_role_cas_small",
+   "zv_role_cas_medium",
+   "zv_role_tac_bomber_medium",
+   "zv_role_strat_bomber_large"
+  ]
+ },
+ {
+  "line": 173,
+  "id": "armor_piercing_bombs",
+  "name": "Bombes perforantes",
+  "year": 1936,
+  "coef": 1.0,
+  "prereqs": [
+   "early_bombs"
+  ],
+  "allow": [],
+  "modules_txt": "Attaches perforantes",
+  "statut": "vanilla inchangée",
+  "modules_05": [
+   "zv_bomb_locks_ap"
+  ]
+ },
+ {
+  "line": 174,
+  "id": "heavy_bombs",
+  "name": "Bombes lourdes",
+  "year": 1940,
+  "coef": 1.0,
+  "prereqs": [
+   "early_bombs"
+  ],
+  "allow": [],
+  "modules_txt": "Attaches lourdes",
+  "statut": "vanilla inchangée",
+  "modules_05": [
+   "zv_bomb_locks_heavy"
+  ]
+ },
+ {
+  "line": 175,
+  "id": "zv_earthquake_bombs",
+  "name": "Bombes sismiques (optionnelle)",
+  "year": 1944,
+  "coef": 1.0,
+  "prereqs": [
+   "heavy_bombs"
+  ],
+  "allow": [],
+  "modules_txt": "Très gros calibres (attaches), Très grosses bombes en soute (sans portes)",
+  "statut": "nouvelle ; Tallboy, Grand Slam",
+  "modules_05": [
+   "zv_bomb_locks_earthquake",
+   "zv_bomb_bay_earthquake"
+  ]
+ },
+ {
+  "line": 176,
+  "id": "zv_incendiary_bombs",
+  "name": "Bombes incendiaires",
+  "year": 1936,
+  "coef": 0.5,
+  "prereqs": [
+   "early_bombs"
+  ],
+  "allow": [],
+  "modules_txt": "Incendiaires (attaches), Incendiaires en soute",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_bomb_locks_incendiary",
+   "zv_bomb_bay_incendiary"
+  ]
+ },
+ {
+  "line": 177,
+  "id": "zv_napalm",
+  "name": "Napalm (optionnelle)",
+  "year": 1944,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_incendiary_bombs"
+  ],
+  "allow": [],
+  "modules_txt": "Napalm",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_bomb_locks_napalm"
+  ]
+ },
+ {
+  "line": 178,
+  "id": "zv_rocket_rails_1",
+  "name": "Rails de roquettes",
+  "year": 1938,
+  "coef": 1.0,
+  "prereqs": [
+   "early_bombs"
+  ],
+  "allow": [],
+  "modules_txt": "Rails de roquettes niv. 1",
+  "statut": "nouvelle ; source : Freezer, ZV/main (`rocket_rails`, renommée : même nom que le module vanilla) ; le module reste aussi débloqué par `rocket_artillery` (artillerie, 1940)",
+  "modules_05": [
+   "zv_rockets_rails_1"
+  ]
+ },
+ {
+  "line": 179,
+  "id": "zv_rocket_rails_2",
+  "name": "Rails de roquettes II",
+  "year": 1942,
+  "coef": 1.0,
+  "prereqs": [
+   "zv_rocket_rails_1"
+  ],
+  "allow": [],
+  "modules_txt": "Rails de roquettes niv. 2, Roquettes antichars niv. 1, Tubes mortier-roquette WGr 21",
+  "statut": "nouvelle ; source : Freezer, ZV/main (`rocket_rails_2`)",
+  "modules_05": [
+   "zv_rockets_rails_2",
+   "zv_rockets_at_1",
+   "zv_rockets_wgr21"
+  ]
+ },
+ {
+  "line": 180,
+  "id": "zv_rockets_3",
+  "name": "Roquettes à grande vitesse",
+  "year": 1944,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_rocket_rails_2"
+  ],
+  "allow": [],
+  "modules_txt": "Roquettes antichars niv. 2, R4M air-air",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_rockets_at_2",
+   "zv_rockets_r4m"
+  ]
+ },
+ {
+  "line": 181,
+  "id": "zv_guided_weapons_1",
+  "name": "Bombes radioguidées (optionnelle)",
+  "year": 1943,
+  "coef": 1.5,
+  "prereqs": [
+   "heavy_bombs"
+  ],
+  "allow": [
+   "improved_computing_machine"
+  ],
+  "modules_txt": "Fritz X, Hs 293",
+  "statut": "nouvelle ; technologie lointaine",
+  "modules_05": [
+   "zv_fritz_x",
+   "zv_hs293"
+  ]
+ },
+ {
+  "line": 182,
+  "id": "suicide_charge",
+  "name": "Charge explosive fixe",
+  "year": 1944,
+  "coef": 1.5,
+  "prereqs": [],
+  "allow": [],
+  "modules_txt": "Charge kamikaze, Rôle kamikaze (P)",
+  "statut": "vanilla, modules réécrits ; source : vanilla, SpatialX (rôle) ; condition vanilla conservée",
+  "modules_05": [
+   "fixed_explosive_charge",
+   "zv_role_suicide_small"
+  ]
+ },
+ {
+  "line": 183,
+  "id": "zv_guided_weapons_2",
+  "name": "Missiles antinavires (optionnelle)",
+  "year": 1946,
+  "coef": 2.0,
+  "prereqs": [
+   "zv_guided_weapons_1",
+   "zv_rocket_engines_2"
+  ],
+  "allow": [],
+  "modules_txt": "Missile antinavire",
+  "statut": "nouvelle ; source : vanilla (`sp_rockets_improved_guidance`, `advanced_rocket_engines`) ; technologie lointaine",
+  "modules_05": [
+   "guided_anti_ship_missile"
+  ]
+ },
+ {
+  "line": 184,
+  "id": "air_torpedoe_1",
+  "name": "Torpilles aériennes I",
+  "year": 1936,
+  "coef": 1.0,
+  "prereqs": [],
+  "allow": [],
+  "modules_txt": "Torpilles niv. 1, Rôle bombardier naval (P, M)",
+  "statut": "vanilla, modules réécrits ; source : vanilla, SpatialX (rôle)",
+  "modules_05": [
+   "torpedo_mounting",
+   "zv_role_naval_bomber_small",
+   "zv_role_naval_bomber_medium"
+  ]
+ },
+ {
+  "line": 185,
+  "id": "air_torpedoe_2",
+  "name": "Torpilles aériennes II",
+  "year": 1940,
+  "coef": 1.0,
+  "prereqs": [
+   "air_torpedoe_1"
+  ],
+  "allow": [],
+  "modules_txt": "Torpilles niv. 2",
+  "statut": "vanilla inchangée",
+  "modules_05": [
+   "torpedo_mounting_2"
+  ]
+ },
+ {
+  "line": 186,
+  "id": "air_torpedoe_3",
+  "name": "Torpilles aériennes III",
+  "year": 1944,
+  "coef": 1.0,
+  "prereqs": [
+   "air_torpedoe_2"
+  ],
+  "allow": [],
+  "modules_txt": "Torpilles niv. 3",
+  "statut": "vanilla inchangée",
+  "modules_05": [
+   "torpedo_mounting_3"
+  ]
+ },
+ {
+  "line": 187,
+  "id": "zv_air_asw_1",
+  "name": "Lutte anti-sous-marine aérienne",
+  "year": 1939,
+  "coef": 0.5,
+  "prereqs": [
+   "air_torpedoe_1"
+  ],
+  "allow": [],
+  "modules_txt": "Grenades sous-marines, Rôle patrouille maritime (M, G)",
+  "statut": "nouvelle ; le rôle suit sa première arme obligatoire possible (voir questions ouvertes)",
+  "modules_05": [
+   "zv_depth_charges",
+   "zv_role_maritime_patrol_medium",
+   "zv_role_maritime_patrol_large"
+  ]
+ },
+ {
+  "line": 188,
+  "id": "zv_air_asw_2",
+  "name": "Détection anti-sous-marine",
+  "year": 1942,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_air_asw_1"
+  ],
+  "allow": [],
+  "modules_txt": "Projecteur Leigh, Bouées acoustiques",
+  "statut": "nouvelle ; source : Freezer, ZV/main (dans les techs radar)",
+  "modules_05": [
+   "zv_leigh_light",
+   "zv_sonobuoys"
+  ]
+ },
+ {
+  "line": 189,
+  "id": "zv_air_asw_3",
+  "name": "Chasse anti-sous-marine avancée (optionnelle)",
+  "year": 1943,
+  "coef": 0.5,
+  "prereqs": [
+   "zv_air_asw_2",
+   "air_torpedoe_2"
+  ],
+  "allow": [],
+  "modules_txt": "Torpille Fido, Détecteur d'anomalies magnétiques",
+  "statut": "nouvelle ; source : Freezer, ZV/main (MAD dans `centimetric_radar`)",
+  "modules_05": [
+   "zv_fido",
+   "zv_mad"
+  ]
+ },
+ {
+  "line": 190,
+  "id": "airdrop_mines_bba",
+  "name": "Mines larguées (dossier Soutien naval)",
+  "year": 1942,
+  "coef": 1.0,
+  "prereqs": [],
+  "allow": [],
+  "modules_txt": "Mines larguées",
+  "statut": "vanilla inchangée",
+  "modules_05": [
+   "airdropped_mines"
+  ]
+ },
+ {
+  "line": 191,
+  "id": "airsweep_mines_bba",
+  "name": "Déminage aérien (dossier Soutien naval)",
+  "year": 1942,
+  "coef": 1.0,
+  "prereqs": [],
+  "allow": [],
+  "modules_txt": "Bobine de déminage",
+  "statut": "vanilla inchangée",
+  "modules_05": [
+   "demining_coil"
+  ]
+ },
+ {
+  "line": 192,
+  "id": "photo_reconnaisance",
+  "name": "Reconnaissance photographique",
+  "year": 1922,
+  "coef": 1.0,
+  "prereqs": [],
+  "allow": [],
+  "modules_txt": "Caméra, Rôle reconnaissance (P, M)",
+  "statut": "vanilla, modules réécrits ; source : vanilla, SpatialX (rôle)",
+  "modules_05": [
+   "recon_camera",
+   "zv_role_recon_small",
+   "zv_role_recon_medium"
+  ]
+ },
+ {
+  "line": 193,
+  "id": "zv_night_photo",
+  "name": "Photographie nocturne (optionnelle)",
+  "year": 1941,
+  "coef": 0.5,
+  "prereqs": [
+   "photo_reconnaisance"
+  ],
+  "allow": [],
+  "modules_txt": "Photographie nocturne à flash",
+  "statut": "nouvelle",
+  "modules_05": [
+   "zv_night_photo"
+  ]
+ },
+ {
+  "line": 194,
+  "id": "bba_early_transport_plane",
+  "name": "Avion de transport",
+  "year": 1933,
+  "coef": 2.0,
+  "prereqs": [],
+  "allow": [],
+  "modules_txt": "Soute à fret, Compartiment de troupes, Rôle transport (M, G)",
+  "statut": "vanilla, modules ajoutés ; source : ZV/main (dans `aircraft_construction`)",
+  "modules_05": [
+   "zv_cargo_bay",
+   "zv_troop_compartment",
+   "zv_role_transport_medium",
+   "zv_role_transport_large"
+  ]
+ },
+ {
+  "line": 195,
+  "id": "bba_improved_transport_plane",
+  "name": "Avion de transport amélioré",
+  "year": 1940,
+  "coef": 2.0,
+  "prereqs": [
+   "bba_early_transport_plane"
+  ],
+  "allow": [],
+  "modules_txt": "Largage de ravitaillement",
+  "statut": "vanilla, modules ajoutés",
+  "modules_05": [
+   "zv_supply_drop"
+  ]
+ }
+]

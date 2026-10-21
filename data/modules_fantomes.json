@@ -1,0 +1,70 @@
+{
+ "note": "13 modules fantômes (05, section « Modules fantômes ») : identifiants vanilla gardés dans une catégorie qu'aucun slot n'accepte (💡 proposition : zv_cat_phantom), sans effet, pour que les techs vanilla non écrasées qui les citent ne cassent pas. Ils ne comptent pas dans les 392 modules. La répartition exacte des techs qui les citent est à revérifier dans HOI4-ref.",
+ "modules": [
+  {
+   "id": "jet_engine_1x",
+   "cite_par": "jet_engines",
+   "fichier": "electronic_mechanical_engineering.txt"
+  },
+  {
+   "id": "jet_engine_2x",
+   "cite_par": "jet_engines",
+   "fichier": "electronic_mechanical_engineering.txt"
+  },
+  {
+   "id": "jet_engine_3x",
+   "cite_par": "jet_engines",
+   "fichier": "electronic_mechanical_engineering.txt"
+  },
+  {
+   "id": "jet_engine_4x",
+   "cite_par": "jet_engines",
+   "fichier": "electronic_mechanical_engineering.txt"
+  },
+  {
+   "id": "jet_engine_6x",
+   "cite_par": "jet_engines",
+   "fichier": "electronic_mechanical_engineering.txt"
+  },
+  {
+   "id": "rocket_engine_1",
+   "cite_par": "rocket_engines",
+   "fichier": "electronic_mechanical_engineering.txt"
+  },
+  {
+   "id": "rocket_engine_2",
+   "cite_par": "improved_rocket_engines, sp_rockets_dual_chamber_rocket_engine_1/2",
+   "fichier": "electronic_mechanical_engineering.txt"
+  },
+  {
+   "id": "rocket_engine_3",
+   "cite_par": "advanced_rocket_engines",
+   "fichier": "electronic_mechanical_engineering.txt"
+  },
+  {
+   "id": "rocket_propelled_bombs",
+   "cite_par": "sp_rockets_rocket_bomber",
+   "fichier": "electronic_mechanical_engineering.txt"
+  },
+  {
+   "id": "improved_rocket_propelled_bombs",
+   "cite_par": "sp_rockets_improved_rocket_bomber",
+   "fichier": "electronic_mechanical_engineering.txt"
+  },
+  {
+   "id": "tank_buster_1",
+   "cite_par": "interwar_antitank",
+   "fichier": "artillery.txt"
+  },
+  {
+   "id": "tank_buster_2",
+   "cite_par": "antitank2",
+   "fichier": "artillery.txt"
+  },
+  {
+   "id": "rocket_rails",
+   "cite_par": "rocket_artillery",
+   "fichier": "artillery.txt"
+  }
+ ]
+}

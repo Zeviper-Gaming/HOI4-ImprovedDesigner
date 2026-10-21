@@ -1,0 +1,15 @@
+{
+  "name": "hoi4-zv-designer",
+  "version": "0.3.1",
+  "description": "Hearts of Iron IV — projet ZV designer (designer d'avions amélioré). Trois skills adossés à un socle de mécanique partagé et à des scripts qui lisent les fichiers du jeu : code de mod (/hoi4-modding), équilibrage anti-cheat face à un panel mixte avions génériques + modèles vanilla (/hoi4-equilibrage), interface du designer (/hoi4-interface). Version de référence 1.19.3.0.",
+  "author": {
+    "name": "Florian"
+  },
+  "keywords": [
+    "hoi4",
+    "hearts-of-iron",
+    "modding",
+    "equilibrage",
+    "designer-avions"
+  ]
+}

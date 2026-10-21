@@ -1,0 +1,829 @@
+{
+ "legende": {
+  "N": "petite navale",
+  "P": "petite",
+  "M": "moyenne",
+  "G": "grande",
+  "note": "Ordre = ordre de déclaration dans module_slots ; les slots fixes vont dans pos_fixed_module_slot_window_N, les libres dans pos_custom_module_slot_window_N (voir 02 §1.9 et mod/interface/plane_designer_view.gui). 'Motorisation', 'Aile' et 'Rôle' valent pour toutes leurs catégories de jeu (data/categories.json)."
+ },
+ "slots": [
+  {
+   "slot": "Aile 1",
+   "id_propose": "fixed_zv_wing_1",
+   "obligatoire_propose": false,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_0",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Mitrailleuses",
+    "Canons",
+    "Canon AT",
+    "Roquettes",
+    "Attaches",
+    "Armes guidées",
+    "Réservoir supplémentaire",
+    "Volets",
+    "Becs de bord d'attaque",
+    "Aérofreins",
+    "Pylônes",
+    "Blindage"
+   ],
+   "categories_selon_taille": {
+    "En soute": [
+     "G"
+    ],
+    "Armes navales": [
+     "M",
+     "G"
+    ]
+   }
+  },
+  {
+   "slot": "Aile 2",
+   "id_propose": "fixed_zv_wing_2",
+   "obligatoire_propose": false,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_1",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Mitrailleuses",
+    "Canons",
+    "Canon AT",
+    "Roquettes",
+    "Attaches",
+    "Armes guidées",
+    "Réservoir supplémentaire",
+    "Volets",
+    "Becs de bord d'attaque",
+    "Aérofreins",
+    "Pylônes",
+    "Blindage"
+   ],
+   "categories_selon_taille": {
+    "Armes navales": [
+     "M",
+     "G"
+    ]
+   }
+  },
+  {
+   "slot": "Hélices",
+   "id_propose": "fixed_zv_propeller",
+   "obligatoire_propose": true,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_2",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Hélice"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Module Hélice",
+   "id_propose": "fixed_zv_propeller_module",
+   "obligatoire_propose": false,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_3",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Module d'hélice"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Type de Moteurs",
+   "id_propose": "fixed_zv_engine",
+   "obligatoire_propose": true,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_4",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Moteur"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Nombre de Moteurs",
+   "id_propose": "fixed_zv_engine_config",
+   "obligatoire_propose": true,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_5",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Motorisation"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Matériaux",
+   "id_propose": "fixed_zv_materials",
+   "obligatoire_propose": false,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_6",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Matériaux"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Construction",
+   "id_propose": "fixed_zv_construction",
+   "obligatoire_propose": false,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_7",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Construction"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Modules Moteurs 1",
+   "id_propose": "fixed_zv_engine_module_1",
+   "obligatoire_propose": false,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_8",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Alimentation",
+    "Régime d'urgence",
+    "Refroidissement",
+    "Carénage moteur",
+    "Prise d'air",
+    "Améliorations de réacteur",
+    "Réglage de puissance"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Modules Moteurs 2",
+   "id_propose": "fixed_zv_engine_module_2",
+   "obligatoire_propose": false,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_9",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Alimentation",
+    "Régime d'urgence",
+    "Refroidissement",
+    "Carénage moteur",
+    "Prise d'air",
+    "Améliorations de réacteur",
+    "Réglage de puissance"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Trains d'atterrissage",
+   "id_propose": "fixed_zv_landing_gear",
+   "obligatoire_propose": true,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_10",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Train d'atterrissage"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Type de Fuselage",
+   "id_propose": "fixed_zv_fuselage",
+   "obligatoire_propose": true,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_11",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Fuselage"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Type d'Ailes",
+   "id_propose": "fixed_zv_wing_type",
+   "obligatoire_propose": true,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_12",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Aile"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Type d'Empennage",
+   "id_propose": "fixed_zv_tail",
+   "obligatoire_propose": true,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_13",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Empennage"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Rôles",
+   "id_propose": "fixed_zv_role",
+   "obligatoire_propose": true,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_14",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Rôle"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Nez",
+   "id_propose": "fixed_zv_nose",
+   "obligatoire_propose": false,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_15",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Mitrailleuses de nez",
+    "Canons de nez",
+    "Radar",
+    "Viseur de bombardement",
+    "Blindage"
+   ],
+   "categories_selon_taille": {
+    "Canon AT de nez": [
+     "M",
+     "G"
+    ]
+   }
+  },
+  {
+   "slot": "Cockpit",
+   "id_propose": "fixed_zv_cockpit",
+   "obligatoire_propose": true,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_16",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Cockpit"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Arrière Cockpit",
+   "id_propose": "fixed_zv_rear_cockpit",
+   "obligatoire_propose": false,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_17",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Mitrailleuse à main",
+    "Radio",
+    "Blindage du cockpit",
+    "Réservoir interne",
+    "Navigation",
+    "Blindage"
+   ],
+   "categories_selon_taille": {
+    "Tourelle x1": [
+     "M",
+     "G"
+    ],
+    "Tourelle x2": [
+     "M",
+     "G"
+    ],
+    "Tourelle x4": [
+     "M",
+     "G"
+    ],
+    "Tourelle à boule x1": [
+     "M",
+     "G"
+    ],
+    "Tourelle à boule x2": [
+     "M",
+     "G"
+    ],
+    "Tourelle à boule x4": [
+     "M",
+     "G"
+    ],
+    "Tourelle télécommandée x1": [
+     "M",
+     "G"
+    ],
+    "Tourelle télécommandée x2": [
+     "M",
+     "G"
+    ],
+    "Tourelle télécommandée x4": [
+     "M",
+     "G"
+    ]
+   }
+  },
+  {
+   "slot": "Internes 1",
+   "id_propose": "fixed_zv_internal_1",
+   "obligatoire_propose": false,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_18",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Viseur de tir",
+    "Contre-mesures",
+    "Identification",
+    "Aides au pilotage",
+    "Sécurité incendie",
+    "Dégivrage",
+    "Siège éjectable",
+    "Équipement naval",
+    "Aide au décollage",
+    "Réglage de fiabilité",
+    "Radio",
+    "Blindage du cockpit",
+    "Réservoir interne",
+    "Radar",
+    "Viseur de bombardement",
+    "Navigation",
+    "Alerte radar",
+    "Blindage"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Ventre Milieu",
+   "id_propose": "fixed_zv_belly_middle",
+   "obligatoire_propose": false,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_19",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "En soute",
+    "Attaches",
+    "Armes navales",
+    "Armes guidées",
+    "Canon AT",
+    "Réservoir supplémentaire",
+    "Reconnaissance",
+    "Soute de transport",
+    "Largage de ravitaillement",
+    "Armes spéciales",
+    "Anti-sous-marin",
+    "Blindage"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Internes 4",
+   "id_propose": "fixed_zv_internal_4",
+   "obligatoire_propose": false,
+   "ecran": "fixe",
+   "fenetre_gui": "pos_fixed_module_slot_window_20",
+   "tailles": [
+    "N",
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Viseur de tir",
+    "Contre-mesures",
+    "Identification",
+    "Aides au pilotage",
+    "Sécurité incendie",
+    "Dégivrage",
+    "Siège éjectable",
+    "Équipement naval",
+    "Aide au décollage",
+    "Réglage de fiabilité",
+    "Radio",
+    "Blindage du cockpit",
+    "Réservoir interne",
+    "Radar",
+    "Viseur de bombardement",
+    "Navigation",
+    "Alerte radar",
+    "Blindage"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Aile 3",
+   "id_propose": "zv_wing_3",
+   "obligatoire_propose": false,
+   "ecran": "libre",
+   "fenetre_gui": "pos_custom_module_slot_window_0",
+   "tailles": [
+    "P",
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Mitrailleuses",
+    "Canons",
+    "Canon AT",
+    "Roquettes",
+    "Attaches",
+    "Armes guidées",
+    "Réservoir supplémentaire",
+    "Volets",
+    "Becs de bord d'attaque",
+    "Aérofreins",
+    "Pylônes",
+    "Blindage"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Aile 4",
+   "id_propose": "zv_wing_4",
+   "obligatoire_propose": false,
+   "ecran": "libre",
+   "fenetre_gui": "pos_custom_module_slot_window_1",
+   "tailles": [
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Mitrailleuses",
+    "Canons",
+    "Canon AT",
+    "Roquettes",
+    "Attaches",
+    "Armes guidées",
+    "Réservoir supplémentaire",
+    "Volets",
+    "Becs de bord d'attaque",
+    "Aérofreins",
+    "Pylônes",
+    "Blindage"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Internes 2",
+   "id_propose": "zv_internal_2",
+   "obligatoire_propose": false,
+   "ecran": "libre",
+   "fenetre_gui": "pos_custom_module_slot_window_2",
+   "tailles": [
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Viseur de tir",
+    "Contre-mesures",
+    "Identification",
+    "Aides au pilotage",
+    "Sécurité incendie",
+    "Dégivrage",
+    "Siège éjectable",
+    "Équipement naval",
+    "Aide au décollage",
+    "Réglage de fiabilité",
+    "Radio",
+    "Blindage du cockpit",
+    "Réservoir interne",
+    "Radar",
+    "Viseur de bombardement",
+    "Navigation",
+    "Alerte radar",
+    "Blindage"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Internes 5",
+   "id_propose": "zv_internal_5",
+   "obligatoire_propose": false,
+   "ecran": "libre",
+   "fenetre_gui": "pos_custom_module_slot_window_3",
+   "tailles": [
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Viseur de tir",
+    "Contre-mesures",
+    "Identification",
+    "Aides au pilotage",
+    "Sécurité incendie",
+    "Dégivrage",
+    "Siège éjectable",
+    "Équipement naval",
+    "Aide au décollage",
+    "Réglage de fiabilité",
+    "Radio",
+    "Blindage du cockpit",
+    "Réservoir interne",
+    "Radar",
+    "Viseur de bombardement",
+    "Navigation",
+    "Alerte radar",
+    "Blindage"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Ventre Arrière",
+   "id_propose": "zv_belly_rear",
+   "obligatoire_propose": false,
+   "ecran": "libre",
+   "fenetre_gui": "pos_custom_module_slot_window_4",
+   "tailles": [
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Tourelle x1",
+    "Tourelle x2",
+    "Tourelle x4",
+    "Tourelle à boule x1",
+    "Tourelle à boule x2",
+    "Tourelle à boule x4",
+    "Tourelle télécommandée x1",
+    "Tourelle télécommandée x2",
+    "Tourelle télécommandée x4",
+    "Mitrailleuse à main",
+    "En soute",
+    "Reconnaissance",
+    "Anti-sous-marin",
+    "Soute de transport",
+    "Largage de ravitaillement",
+    "Blindage"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Queue",
+   "id_propose": "zv_tail_position",
+   "obligatoire_propose": false,
+   "ecran": "libre",
+   "fenetre_gui": "pos_custom_module_slot_window_5",
+   "tailles": [
+    "M",
+    "G"
+   ],
+   "categories": [
+    "Tourelle x1",
+    "Tourelle x2",
+    "Tourelle x4",
+    "Tourelle à boule x1",
+    "Tourelle à boule x2",
+    "Tourelle à boule x4",
+    "Tourelle télécommandée x1",
+    "Tourelle télécommandée x2",
+    "Tourelle télécommandée x4",
+    "Mitrailleuse à main",
+    "Alerte radar",
+    "Blindage"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Aile 5",
+   "id_propose": "zv_wing_5",
+   "obligatoire_propose": false,
+   "ecran": "libre",
+   "fenetre_gui": "pos_custom_module_slot_window_6",
+   "tailles": [
+    "G"
+   ],
+   "categories": [
+    "Mitrailleuses",
+    "Canons",
+    "Canon AT",
+    "Roquettes",
+    "Attaches",
+    "Armes guidées",
+    "Réservoir supplémentaire",
+    "Volets",
+    "Becs de bord d'attaque",
+    "Aérofreins",
+    "Pylônes",
+    "Blindage"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Dos",
+   "id_propose": "zv_dorsal",
+   "obligatoire_propose": false,
+   "ecran": "libre",
+   "fenetre_gui": "pos_custom_module_slot_window_7",
+   "tailles": [
+    "G"
+   ],
+   "categories": [
+    "Tourelle x1",
+    "Tourelle x2",
+    "Tourelle x4",
+    "Tourelle à boule x1",
+    "Tourelle à boule x2",
+    "Tourelle à boule x4",
+    "Tourelle télécommandée x1",
+    "Tourelle télécommandée x2",
+    "Tourelle télécommandée x4",
+    "Mitrailleuse à main",
+    "Armes spéciales",
+    "Navigation",
+    "Blindage"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Internes 3",
+   "id_propose": "zv_internal_3",
+   "obligatoire_propose": false,
+   "ecran": "libre",
+   "fenetre_gui": "pos_custom_module_slot_window_8",
+   "tailles": [
+    "G"
+   ],
+   "categories": [
+    "Viseur de tir",
+    "Contre-mesures",
+    "Identification",
+    "Aides au pilotage",
+    "Sécurité incendie",
+    "Dégivrage",
+    "Siège éjectable",
+    "Équipement naval",
+    "Aide au décollage",
+    "Réglage de fiabilité",
+    "Radio",
+    "Blindage du cockpit",
+    "Réservoir interne",
+    "Radar",
+    "Viseur de bombardement",
+    "Navigation",
+    "Alerte radar",
+    "Blindage"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Internes 6",
+   "id_propose": "zv_internal_6",
+   "obligatoire_propose": false,
+   "ecran": "libre",
+   "fenetre_gui": "pos_custom_module_slot_window_9",
+   "tailles": [
+    "G"
+   ],
+   "categories": [
+    "Viseur de tir",
+    "Contre-mesures",
+    "Identification",
+    "Aides au pilotage",
+    "Sécurité incendie",
+    "Dégivrage",
+    "Siège éjectable",
+    "Équipement naval",
+    "Aide au décollage",
+    "Réglage de fiabilité",
+    "Radio",
+    "Blindage du cockpit",
+    "Réservoir interne",
+    "Radar",
+    "Viseur de bombardement",
+    "Navigation",
+    "Alerte radar",
+    "Blindage"
+   ],
+   "categories_selon_taille": {}
+  },
+  {
+   "slot": "Ventre Avant",
+   "id_propose": "zv_belly_front",
+   "obligatoire_propose": false,
+   "ecran": "libre",
+   "fenetre_gui": "pos_custom_module_slot_window_10",
+   "tailles": [
+    "G"
+   ],
+   "categories": [
+    "Tourelle x1",
+    "Tourelle x2",
+    "Tourelle x4",
+    "Tourelle à boule x1",
+    "Tourelle à boule x2",
+    "Tourelle à boule x4",
+    "Tourelle télécommandée x1",
+    "Tourelle télécommandée x2",
+    "Tourelle télécommandée x4",
+    "Mitrailleuse à main",
+    "Canon AT",
+    "En soute",
+    "Attaches",
+    "Armes guidées",
+    "Armes navales",
+    "Reconnaissance",
+    "Radar",
+    "Viseur de bombardement",
+    "Blindage"
+   ],
+   "categories_selon_taille": {}
+  }
+ ]
+}
