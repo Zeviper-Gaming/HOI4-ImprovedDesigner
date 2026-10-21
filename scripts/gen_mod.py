@@ -368,6 +368,23 @@ def gen_test_tech():
             "\t\tai_will_do = { factor = 0 }\n\t}\n}\n")
 
 
+def gen_icons(ref):
+    src = (ref / "interface/plane_modules_icons.gfx").read_text(encoding="utf-8-sig")
+    tex = dict(re.findall(r'name\s*=\s*"(GFX_EMI_\w+)"\s*\n\s*texture[Ff]ile\s*=\s*"([^"]+)"', src))
+    L = ["# ZV Designer : icônes PROVISOIRES, générées par scripts/gen_mod.py (images vanilla).",
+         "spriteTypes = {"]
+    for mid in T.MODULES:
+        borrowed = T.ICONES_PROVISOIRES.get(mid)
+        if borrowed is None:
+            raise GenError(f"{mid} : pas d'icône provisoire dans la table")
+        if borrowed not in tex:
+            raise GenError(f"{mid} : sprite vanilla introuvable {borrowed}")
+        L += ["\tspriteType = {", f'\t\tname = "GFX_EMI_{mid}"', f'\t\ttextureFile = "{tex[borrowed]}"',
+              "\t\tlegacy_lazy_load = no", "\t}"]
+    L.append("}")
+    return "\n".join(L) + "\n"
+
+
 def q(s):
     return s.replace('"', "”")
 
@@ -405,6 +422,7 @@ def main():
         write("common/units/equipment/modules/00_plane_modules.txt", gen_modules())
         write(f"common/technologies/{T.TEST_TECH}.txt", gen_test_tech())
         write("localisation/french/zv_designer_l_french.yml", gen_loc(), bom=True)
+        write("interface/zv_plane_modules_icons.gfx", gen_icons(ref))
     except GenError as e:
         sys.exit(f"ERREUR : {e}")
     for a in T.ARCHETYPES:

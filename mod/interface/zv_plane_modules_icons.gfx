@@ -1,0 +1,68 @@
+# ZV Designer : icônes PROVISOIRES, générées par scripts/gen_mod.py (images vanilla).
+spriteTypes = {
+	spriteType = {
+		name = "GFX_EMI_zv_fuselage_classic_s"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_self_sealing_fueltank_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_zv_fuselage_classic_m"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_self_sealing_fueltank_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_zv_fuselage_classic_l"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_self_sealing_fueltank_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_zv_wing_basse_trapezoidale"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_dive_brakes_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_zv_tail_classic"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_electronics_category_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_zv_cockpit_closed"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_armor_plate_small_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_zv_prop_3_metal"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_1_engine_category_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_zv_gear_fixed_taildragger"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_floats_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_zv_engine_inline_1"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_engine_1_1_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_zv_engine_config_nose_a"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_engine_1_1_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_zv_engine_config_twin_wing_a"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_engine_1_2_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_zv_role_fighter_small"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_heavy_mg_4_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_zv_light_mg_2x"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_light_mg_2_icon.dds"
+		legacy_lazy_load = no
+	}
+}

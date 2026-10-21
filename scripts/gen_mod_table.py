@@ -72,5 +72,23 @@ KIT_PHASE_1 = [
 ]
 MODULES = KIT_PHASE_1
 
+# Icônes PROVISOIRES (cahier §6) : sprite vanilla dont on reprend l'image, en attendant les
+# vraies icônes (phase 8). Clé = module du mod, valeur = sprite de interface/plane_modules_icons.gfx.
+ICONES_PROVISOIRES = {
+    "zv_fuselage_classic_s": "GFX_EMI_plane_special_module_small",
+    "zv_fuselage_classic_m": "GFX_EMI_plane_special_module_medium",
+    "zv_fuselage_classic_l": "GFX_EMI_plane_special_module_large",
+    "zv_wing_basse_trapezoidale": "GFX_EMI_dive_brakes_small",
+    "zv_tail_classic": "GFX_EMI_plane_special_module_electronics",
+    "zv_cockpit_closed": "GFX_EMI_armor_plate_small",
+    "zv_prop_3_metal": "GFX_EMI_plane_engine_type",
+    "zv_gear_fixed_taildragger": "GFX_EMI_floats",
+    "zv_engine_inline_1": "GFX_EMI_engine_1_1x",
+    "zv_engine_config_nose_a": "GFX_EMI_engine_1_1x",
+    "zv_engine_config_twin_wing_a": "GFX_EMI_engine_1_2x",
+    "zv_role_fighter_small": "GFX_EMI_fighter_weapon",
+    "zv_light_mg_2x": "GFX_EMI_light_mg_2x",
+}
+
 # Tech temporaire qui débloque le kit pour le contrôle rapide n° 1 ; retirée en phase 4.
 TEST_TECH = "zv_test_kit"

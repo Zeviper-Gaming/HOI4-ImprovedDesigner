@@ -1,0 +1,24 @@
+# ZV Designer : tech TEMPORAIRE du contrôle rapide n° 1 (phase 1), retirée en phase 4.
+# À rechercher à la console. Aucun dossier : elle n'apparaît pas dans l'arbre.
+technologies = {
+	zv_test_kit = {
+		enable_equipment_modules = {
+			zv_fuselage_classic_s
+			zv_fuselage_classic_m
+			zv_fuselage_classic_l
+			zv_wing_basse_trapezoidale
+			zv_tail_classic
+			zv_cockpit_closed
+			zv_prop_3_metal
+			zv_gear_fixed_taildragger
+			zv_engine_inline_1
+			zv_engine_config_nose_a
+			zv_engine_config_twin_wing_a
+			zv_role_fighter_small
+			zv_light_mg_2x
+		}
+		research_cost = 1
+		start_year = 1922
+		ai_will_do = { factor = 0 }
+	}
+}
