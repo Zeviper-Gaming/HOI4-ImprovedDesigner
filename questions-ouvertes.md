@@ -8,7 +8,7 @@ Légende : ❓ à décider · 💡 proposition · 🧪 à tester en jeu · ⚠ p
 
 | # | Question | Source | Proposition 💡 | Par défaut | Bloque |
 | --- | --- | --- | --- | --- | --- |
-| Q1 | Slots obligatoires (`required`) : lesquels ? | cahier §3 | Type de Moteurs, Nombre de Moteurs, Hélices, Fuselage, Ailes, Empennage, Train, Rôles, Cockpit | la proposition | ⛔ phase 1 |
+| Q1 | Slots obligatoires (`required`) : lesquels ? | cahier §3 | ✅ (21/10) 6 slots : Type de Moteurs, Nombre de Moteurs, Fuselage, Ailes, Rôles, Cockpit ; Hélices, Empennage, Train facultatifs (le test T6 devient sans objet) | — | — |
 | Q2 | Petits chasseurs de fin de guerre (P-51 D, Fw 190 A-8) : on accepte qu'ils perdent un accessoire, ou on ajoute une place (3ᵉ slot moteur) ? | 09 Q1 | accepter l'arbitrage | accepter | — |
 | Q3 | Bipoutre à moteur de queue ou tandem : comment occuper l'Arrière Cockpit ? | 09 Q4, 10 C-2 | chercher un mécanisme pendant la phase 2 et le proposer | info-bulle seulement | — |
 | Q4 | Grandes soutes : catégorie à part, ou la limite « grande cellule » suffit ? | 09 Q5 | la limite suffit | la limite | — |
@@ -27,9 +27,11 @@ Légende : ❓ à décider · 💡 proposition · 🧪 à tester en jeu · ⚠ p
 | Q17 | Seuils d'audit : tolérance 15 %, contrepartie minimale 10 % ? | 00 §7 | oui | oui | phase 7 |
 | Q18 | Cases rouges « Modèles, Curseurs, Concepteurs » de l'écran : y déplacer des éléments d'interface ? | 02 §1.9 | non pour l'instant | non | — |
 | Q19 | Restrictions par fuselage : Classique, « Jug », Goutte et Hydravion n'ont rien de renseigné (case vide ≠ « aucune restriction ») | 06 | considérer « aucune » | aucune | — |
-| Q20 | Nom du mod et nom des identifiants (`id_propose` de `data/slots.json` et `data/categories.json`) | — | « ZV Designer », noms proposés | la proposition | ⛔ phase 1 |
+| Q20 | Nom du mod et nom des identifiants (`id_propose` de `data/slots.json` et `data/categories.json`) | — | ✅ (21/10) « ZV Designer », noms proposés gardés | — | — |
 
 ## Tests en jeu 🧪 (par ordre d'urgence)
+
+✅ (21/10) Les tests se font **à la fin du codage**, sauf deux contrôles rapides (≈10 min) : après la phase 1 (T1, T2, T3, et T4 sur le kit minimal) et après la phase 2 (T4 complet, T5).
 
 | # | Test | Phase | Si ça échoue |
 | --- | --- | --- | --- |

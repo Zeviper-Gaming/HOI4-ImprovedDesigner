@@ -1,6 +1,8 @@
 # Plan de codage — HOI IV · ZV designer
 
-*21 octobre 2026 · proposé par Claude pour Claude Code. Chaque phase commence par un résumé à Florian et son accord (CLAUDE.md, règle 4), et finit par un test en jeu qu'il fait lui-même, avec son `error.log`.*
+*21 octobre 2026 · proposé par Claude pour Claude Code. Chaque phase commence par un résumé à Florian et son accord (CLAUDE.md, règle 4).*
+
+✅ **Décision du 21/10 sur les tests** : les tests en jeu 🧪 listés dans chaque phase sont regroupés **à la fin du codage**. Exception : deux contrôles rapides (≈10 min, Florian), après la phase 1 (positions des slots, slot obligatoire, poussée du kit) et après la phase 2 (astuce des moteurs complète, classes de prix). Entre deux, seuls les contrôles par script 🤖 valident le travail. Les ⛔ ci-dessous ne bloquent donc plus que pour ces deux contrôles.
 
 Légende : 🧪 test en jeu (Florian) · 🤖 contrôle par script (Claude Code) · ⛔ point bloquant pour la phase suivante · 💡 proposition
 

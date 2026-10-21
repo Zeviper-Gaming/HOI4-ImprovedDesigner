@@ -35,8 +35,8 @@ Source : `docs/02` §1 et §1.9, `docs/09`, `data/slots.json`.
   - Chaque archétype ne déclare que ses slots, dans cet ordre (la petite navale n'a aucun slot libre, la petite 1, la moyenne 6, la grande 11).
 - **Catégories acceptées** : table du 09 (`data/slots.json`). Les catégories qui dépendent de la taille (canon AT de nez en M et G, soute dans l'Aile 1 en G, armes navales dans les Ailes 1 et 2 en M et G, tourelles à l'Arrière Cockpit en M et G) s'obtiennent simplement : chaque archétype a sa propre liste `allowed_module_categories`.
 - **Slots vides à l'ouverture** ✅ : aucun `default_modules`. Les modules « de référence » (fuselage classique, aile basse trapézoïdale, empennage classique, cockpit fermé, hélice 3 pales métal, train fixe caréné à roulette de queue) se choisissent comme les autres.
-- **Slots obligatoires** 💡 (`required = yes`) : Type de Moteurs, Nombre de Moteurs, Hélices, Type de Fuselage, Type d'Ailes, Type d'Empennage, Trains d'atterrissage, Rôles, Cockpit. ❓ À confirmer par Florian.
-- **Slot obligatoire dont la catégorie est interdite** (aile volante → Empennage ; réacteur, fusée → Hélice ; hydravion → Train) 🧪 : tester d'abord ; repli prévu : modules « sans empennage », « sans hélice », « coque » dans la catégorie elle-même (10, C-4).
+- **Slots obligatoires** ✅ (21/10, Q1, `required = yes`) : Type de Moteurs, Nombre de Moteurs, Type de Fuselage, Type d'Ailes, Rôles, Cockpit. Hélices, Type d'Empennage et Trains d'atterrissage restent facultatifs : un slot vide y vaut le module de référence (sans effet).
+- **Slot obligatoire dont la catégorie est interdite** (10, C-4) : sans objet depuis Q1 (Hélices, Empennage et Train ne sont plus obligatoires) ; les modules de repli « sans empennage », « sans hélice », « coque » ne sont pas nécessaires.
 - **Slots désactivés mais visibles** ✅ : via `forbid_module_categories` (un fuselage « restreint » un slot en interdisant les catégories qui ne vont que là). 🧪 affichage.
 - **Noms de slots** 💡 : `data/slots.json` (`id_propose`). Chaque slot a son icône vide `GFX_EMSI_<slot>`.
 
