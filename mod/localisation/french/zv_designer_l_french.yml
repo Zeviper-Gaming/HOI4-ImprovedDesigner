@@ -21,7 +21,7 @@
  EQ_MOD_SLOT_fixed_zv_rear_cockpit_TITLE:0 "Arrière Cockpit"
  EQ_MOD_SLOT_fixed_zv_internal_1_TITLE:0 "Internes 1"
  EQ_MOD_SLOT_fixed_zv_belly_middle_TITLE:0 "Ventre Milieu"
- EQ_MOD_SLOT_fixed_zv_internal_4_TITLE:0 "Internes 4"
+ EQ_MOD_SLOT_zv_internal_4_TITLE:0 "Internes 4"
  EQ_MOD_SLOT_zv_wing_3_TITLE:0 "Aile 3"
  EQ_MOD_SLOT_zv_wing_4_TITLE:0 "Aile 4"
  EQ_MOD_SLOT_zv_internal_2_TITLE:0 "Internes 2"

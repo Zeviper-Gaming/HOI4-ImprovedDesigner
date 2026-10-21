@@ -360,11 +360,14 @@ def gen_modules():
 
 def gen_test_tech():
     mods = "\n".join("\t\t\t" + m for m in T.MODULES)
+    # Onglet Aviation, colonne 3 en haut : case libre (occupées plus bas : avions-mères, y = 7, 10, 13).
+    # Coût quasi nul : recherchée en un jour ou deux, sans console.
     return ("# ZV Designer : tech TEMPORAIRE du contrôle rapide n° 1 (phase 1), retirée en phase 4.\n"
-            "# À rechercher à la console. Aucun dossier : elle n'apparaît pas dans l'arbre.\n"
             "technologies = {\n"
             f"\t{T.TEST_TECH} = {{\n\t\tenable_equipment_modules = {{\n{mods}\n\t\t}}\n"
-            "\t\tresearch_cost = 1\n\t\tstart_year = 1922\n"
+            "\t\tresearch_cost = 0.01\n\t\tstart_year = 1922\n"
+            "\t\tfolder = {\n\t\t\tname = bba_air_techs_folder\n\t\t\tposition = { x = 3 y = 2 }\n\t\t}\n"
+            "\t\tcategories = { air_equipment }\n"
             "\t\tai_will_do = { factor = 0 }\n\t}\n}\n")
 
 

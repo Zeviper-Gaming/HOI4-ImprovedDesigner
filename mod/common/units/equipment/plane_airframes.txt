@@ -272,7 +272,7 @@ equipments = {
 					zv_cat_blindage
 				}
 			}
-			fixed_zv_internal_4 = {	# Internes 4
+			zv_internal_4 = {	# Internes 4
 				required = no
 				allowed_module_categories = {
 					zv_cat_viseur_de_tir
@@ -735,7 +735,7 @@ equipments = {
 					zv_cat_blindage
 				}
 			}
-			fixed_zv_internal_4 = {	# Internes 4
+			zv_internal_4 = {	# Internes 4
 				required = no
 				allowed_module_categories = {
 					zv_cat_viseur_de_tir
@@ -1167,7 +1167,7 @@ equipments = {
 					zv_cat_blindage
 				}
 			}
-			fixed_zv_internal_4 = {	# Internes 4
+			zv_internal_4 = {	# Internes 4
 				required = no
 				allowed_module_categories = {
 					zv_cat_viseur_de_tir
@@ -1718,7 +1718,7 @@ equipments = {
 					zv_cat_blindage
 				}
 			}
-			fixed_zv_internal_4 = {	# Internes 4
+			zv_internal_4 = {	# Internes 4
 				required = no
 				allowed_module_categories = {
 					zv_cat_viseur_de_tir

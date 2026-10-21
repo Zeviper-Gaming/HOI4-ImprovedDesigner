@@ -1,5 +1,4 @@
 # ZV Designer : tech TEMPORAIRE du contrôle rapide n° 1 (phase 1), retirée en phase 4.
-# À rechercher à la console. Aucun dossier : elle n'apparaît pas dans l'arbre.
 technologies = {
 	zv_test_kit = {
 		enable_equipment_modules = {
@@ -17,8 +16,13 @@ technologies = {
 			zv_role_fighter_small
 			zv_light_mg_2x
 		}
-		research_cost = 1
+		research_cost = 0.01
 		start_year = 1922
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 3 y = 2 }
+		}
+		categories = { air_equipment }
 		ai_will_do = { factor = 0 }
 	}
 }
