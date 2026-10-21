@@ -86,7 +86,7 @@ Refaire un mod d'amélioration du **concepteur d'avions** de *Hearts of Iron IV*
 | Onglet de l'arbre | Tout dans l'onglet Aviation (`bba_air_techs_folder`), trois groupes et trois fichiers ; l'écran de recherche reste à retoucher (années) | ✅ (21/10) |
 | Préfixe des techs de moteurs en étoile | `zv_radial_engines_2` à `4` | ✅ (21/10) |
 | Essence à haut indice d'octane | Nouvelle tech `zv_high_octane_fuel` (1936, ouverte par `fuel_refining`), sans écraser `industry.txt` | ✅ (21/10) |
-| Réglages de puissance et de fiabilité | Curseurs (mécanisme `upgrades` des cellules), dès `engines_1` ; faisabilité à vérifier (fichiers manquants dans HOI4-ref) ; repli : modules dans les slots moteur et internes | ✅ (21/10), 🧪 |
+| Réglages de puissance et de fiabilité | Deux curseurs 0 → 10, cran 5 = usine (neutre), effet égal à chaque cran (valeurs dans le 05) ; repli : les 8 modules du 05 | ✅ (22/10), 🧪 contrôle n° 2 |
 | Chariot largable | Catégorie Train d'atterrissage | ✅ (21/10) |
 | Aile volante | Interdit l'empennage et les ailes hors catégorie Avancée, en plus de la Queue | ✅ (21/10) |
 | Armes de nez | 3 catégories à part (Mitrailleuses de nez, Canons de nez, Canon AT de nez), x1 et x2 : 20 modules (372 → 392) ; le nez vitré les interdit | ✅ (21/10) |

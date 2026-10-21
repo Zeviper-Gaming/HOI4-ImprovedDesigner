@@ -151,6 +151,8 @@ Catégories, toutes acceptées par le même slot, parce qu'un module ne peut int
 
 ## Réglages de puissance et de fiabilité
 
+✅ **Décision du 22/10/2026 (phase 2)** : deux curseurs de **0 à 10**, cran **5 = réglage d'usine** (neutre), chaque cran ajoutant le même effet (règle du jeu : `land_upgrades.txt`). Le cran 5 est rendu neutre en retirant « 5 crans » d'effet dans chaque module de moteur (slot obligatoire). Valeurs par cran : **Puissance** poussée +0,2 par moteur, vitesse max +0,8 %, consommation +0,01 par moteur, fiabilité −0,03, coût +0,2 IC ; **Fiabilité** fiabilité +0,025, coût +2 % du coût total. Aux crans 0 et 10, on retrouve à peu près les −2 et +2 ci-dessous (côté « poussé » aligné sur le tableau, côté « bridé » un peu plus généreux en fiabilité et en carburant). Les 8 modules ci-dessous ne sont plus générés : ils restent le **repli** si les curseurs ne fonctionnent pas dans le designer d'avions (🧪 contrôle rapide n° 2).
+
 Compteurs −/+ (le niveau 0 n'est pas un module : slot vide = réglage d'usine). ⚠ Décision du 21/10/2026 : Florian veut des **curseurs** (comme les curseurs Moteur et Blindage du designer de chars, mécanisme `upgrades` des cellules) disponibles dès `engines_1`. Faisabilité à vérifier : il manque dans HOI4-ref `common/units/equipment/upgrades/` et l'écran du designer de chars. Si c'est faisable, ces 8 modules deviennent 2 curseurs ; sinon, ils restent des modules (slots Modules Moteurs pour la puissance, internes pour la fiabilité). Les gains sont volontairement asymétriques : pousser un moteur coûte plus en fiabilité qu'il ne rapporte, le brider rapporte moins qu'il ne coûte. La poussée et le carburant sont en points par moteur.
 
 | Module | Gains | Prix | Débloque, interdit, limite | Tech (année) | Pourquoi |

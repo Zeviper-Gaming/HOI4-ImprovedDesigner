@@ -54,7 +54,7 @@ Source : `docs/05` (valeurs), `docs/04-inventaire` (liste et catégories), `data
 - **Interdictions, obligations, limites** : tout est dans `docs/10` (tableaux par fuselage, aile, moteur, configuration, rôle, module, et limites `module_count_limit` par taille). Règles abandonnées : 10 §10.
 - **Armes de nez** ✅ (21/10) : 3 catégories à part (Mitrailleuses de nez, Canons de nez, Canon AT de nez), versions x1 et x2 seulement, mêmes stats que les versions d'aile ; le cockpit vitré de bombardier les interdit.
 - **Chariot largable** ✅ : catégorie Train d'atterrissage.
-- **Réglages de puissance et de fiabilité** ✅ en **curseurs** (mécanisme `upgrades` des cellules, comme le designer de chars), disponibles dès `engines_1`. 🧪 ⚠ Faisabilité non vérifiée : il manque `common/units/equipment/upgrades/` et l'écran du designer de chars dans HOI4-ref. **Repli** si impossible : les 8 modules du 05 (puissance dans les slots Modules Moteurs, fiabilité dans les internes).
+- **Réglages de puissance et de fiabilité** ✅ (22/10) : deux **curseurs 0 → 10**, cran 5 = réglage d'usine (mécanisme `upgrades` des cellules, comme le designer de chars ; les fichiers `upgrades/` et `tank_designer_view.gui` sont dans HOI4-ref). Valeurs par cran : 05, section « Réglages ». 🧪 Contrôle n° 2 ; **repli** si impossible : les 8 modules du 05.
 
 ## 5. Technologies et projets spéciaux
 
