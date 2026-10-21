@@ -35,10 +35,10 @@ Légende : ❓ à décider · 💡 proposition · 🧪 à tester en jeu · ⚠ p
 
 | # | Test | Phase | Si ça échoue |
 | --- | --- | --- | --- |
-| T1 | 32 positions affichées ; ✅ (22/10) le code lit 20 positions fixes, pas 21 → 20 fixes + 12 libres ; 🧪 reste à voir la 12ᵉ libre | 1 | revoir la répartition fixes / libres dans le `.gui` et l'ordre des slots |
-| T2 | Ordre d'affichage : une cellule sans « Aile 4 » décale-t-elle les suivants ? | 1 | l'ordre par disponibilité règle normalement ce cas |
-| T3 | Slot obligatoire vide → design invalide ; slot sans module débloqué → visible et vide | 1 | — |
-| T4 | Addition des multiplicateurs : moteur −100 % + configuration | 2 | ⚠ revoir l'astuce des moteurs avec Florian |
+| T1 | ✅ (22/10) 32 positions affichées : 20 fixes (le jeu n'en lit pas plus) + 12 libres | 1 | — |
+| T2 | ✅ (22/10) Aucun décalage : chaque cellule remplit ses cases, les positions qu'elle n'a pas s'affichent avec un cadenas | 1 | — |
+| T3 | ✅ (22/10) Slot obligatoire vide → design refusé ; slot sans module débloqué → visible | 1 | — |
+| T4 | ✅ (22/10, kit) moteur −100 % + configuration : poussée 10 (nez simple) et 15,5 (bimoteur), consommation ×1 et ×2, identiques au calcul ; 🧪 reste : réacteurs, fusées, accessoires « par moteur » (contrôle n° 2) | 2 | ⚠ revoir l'astuce des moteurs avec Florian |
 | T5 | Configuration choisie avant un moteur d'une autre classe | 2 | info-bulle ou ordre de choix imposé |
 | T6 | Slot obligatoire dont la catégorie est interdite (réacteur/Hélice, aile volante/Empennage, hydravion/Train) | 2-3 | modules « sans hélice », « sans empennage », « coque » |
 | T7 | `forbid_module_categories` : slots désactivés mais visibles | 3 | — |
@@ -48,4 +48,5 @@ Légende : ❓ à décider · 💡 proposition · 🧪 à tester en jeu · ⚠ p
 | T11 | Génération automatique des doublons de rôle (CAS, naval…) pour les archétypes modifiés | 1 | déclarer les doublons à la main |
 | T12 | Type `air_transport` sur un design du designer | 3 | — |
 | T13 | Modèle de calcul des stats (multiplicateurs additionnés, moyennes, bonus d'agilité) sur 2 ou 3 designs historiques | 7 | recalibrer avec `calibrate_module.py` |
-| T14 | Info-bulles et boutons posés sur le plan de la cellule (lignes 2 à 6) | 1 | décaler la grille |
+| T14 | ✅ (22/10) Boutons du plan déplacés dans la ligne 5 (Q18) : plus rien ne recouvre les slots ; 🧪 info-bulles à revoir au test final | 1 | décaler la grille |
+| T15 | Limite de taille : fuselage (L) refusé sur la petite cellule (`module_count_limit count < 1`) | 1 → final | catégories par taille |

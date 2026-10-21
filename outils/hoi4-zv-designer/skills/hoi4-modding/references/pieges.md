@@ -15,6 +15,10 @@ Relevés dans les fichiers de la version 1.19.3.0. Ajouter ici chaque nouveau pi
 9. **`mission_type_stats.limit`** est une liste de missions, pas un bloc de déclencheurs : `limit = { cas attack_logistics }`.
 10. **Débloquages hors des techs d'aviation** : radars, viseurs et réacteurs dans `electronic_mechanical_engineering.txt`, rails de roquettes et canons antichars dans `artillery.txt`, mines dans `MTG_naval_Support.txt`. Moteurs axiaux et `earthshaker_bomb_release` : aucune tech (projets spéciaux probables).
 11. **Matériaux non stratégiques** : `add_stats.build_cost_ic = 0` plus `multiply_stats.build_cost_ic = -0.075`. C'est le seul cas de multiplicateur de coût, et il s'applique au coût total.
+12. **20 positions fixes au plus** (constaté en jeu le 22/10/2026, mod ZV) : avec 21 slots `fixed_` et 21 `pos_fixed_module_slot_window_N` définis, le 21ᵉ (`_20`) n'est pas affiché, sans message dans `error.log`. Les libres, eux, s'affichent au moins jusqu'à 11 (`pos_custom_module_slot_window_10`).
+13. **Positions non utilisées = cadenas** (constaté le 22/10/2026) : une position de l'écran qu'une cellule n'utilise pas s'affiche comme un slot verrouillé, pas comme une case vide.
+14. **Tech racine invisible** : une tech sans prérequis ne s'affiche dans un onglet que si `countrytechtreeview.gui` contient un `gridboxtype` nommé `<tech>_tree` dans le dossier (vanilla : `iw_small_airframe_tree`, `engines_1_tree`… lignes 2919-2995). Sinon elle existe mais reste invisible.
+15. **Console `research`** (1.19.3) : la commande attend un numéro de case de recherche (« No active research in that slot »), pas un nom de tech.
 
 ## Incohérences du vanilla à ne pas recopier
 

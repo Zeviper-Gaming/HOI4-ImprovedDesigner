@@ -78,9 +78,9 @@ pour une mission M (ou aucune = vue du designer) :
 ```
 
 Points qui restent des hypothèses (constantes en tête de `plane_calc.py`) :
-1. **Multiplicateurs** : additionnés (`MULT_MODE = "sum"`) plutôt que multipliés (`"product"`). C'est la convention habituelle de HOI4 pour les modificateurs d'équipement.
+1. **Multiplicateurs** : additionnés (`MULT_MODE = "sum"`) plutôt que multipliés (`"product"`). **[vérifié en jeu, 22/10/2026, mod ZV]** : un moteur à `multiply_stats thrust = -1` et une configuration à `thrust = 1.55` donnent bien ×1,55 (poussée 15,5 pour 10), et la consommation ×(1 − 1 + 2) = ×2 ; en mode « produit », le résultat serait 0. Même chose pour ×1 (poussée 10). Designs relevés dans le designer : `small_plane_airframe_0`, poussée, poids, agilité, fiabilité, coût et consommation identiques au calcul de `plane_calc.py`.
 2. **Moyennes** (`add_average_stats`, surtout `naval_strike_targetting`) : moyenne des modules ajoutée à la base (`AVERAGE_MODE`), ou base incluse dans la moyenne.
-3. **Bonus d'agilité** dû à la poussée : après les multiplicateurs (`AGILITY_BONUS_STAGE`), ou avant.
+3. **Bonus d'agilité** dû à la poussée : après les multiplicateurs (`AGILITY_BONUS_STAGE`), ou avant. **[vérifié en jeu, 22/10/2026]** pour la formule 0,5 × (poussée − poids) : 36 + 0,5 × (15,5 − 4) = 41,75, affiché 41,7. L'ordre avant/après les multiplicateurs d'agilité reste à départager (les designs testés n'en avaient pas).
 
 **Protocole de validation.** Dans le jeu, ouvrir le designer, reproduire deux ou trois designs historiques et relever les stats affichées. Puis lancer `plane_calc.py --history <TAG>` et comparer. Un écart sur la vitesse ou le coût met en cause l'hypothèse 1, un écart sur le ciblage naval l'hypothèse 2, un écart d'agilité l'hypothèse 3. Corriger la constante, noter le résultat ici, et passer le point en **[vérifié en jeu]**.
 
