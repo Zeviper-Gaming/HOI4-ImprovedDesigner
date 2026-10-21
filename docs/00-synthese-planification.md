@@ -69,7 +69,7 @@ Refaire un mod d'amélioration du **concepteur d'avions** de *Hearts of Iron IV*
 | Biplan | Uniquement un **module d'aile** (catégorie Autres), plus un fuselage : le fuselage biplan est retiré de l'inventaire (350 → 348 modules) | ✅ (20/10) |
 | Bords de fuite | **Slots retirés** (20/10) : leurs usages (volets, aérofreins…) passent dans les slots d'aile (Aile 1 à 5) | ✅ (20/10) |
 | Cases « Slot » réservées | Les deux cases (ligne 2, colonnes 6 et 7) deviennent les slots Matériaux et Construction ; il n'y a plus de case réservée | ✅ (21/10) |
-| Placement à l'écran | `mod/interface/plane_designer_view.gui` (copie dans le projet : `claude/mod/interface/plane_designer_view.gui`) : copie du vanilla 1.19.3, 32 positions sur la grille 7×7 (21 slots `fixed_` + 11 libres rangés par disponibilité) ; ordre de déclaration des slots imposé (02, §1.9) | 💡 (21/10), 🧪 |
+| Placement à l'écran | `mod/interface/plane_designer_view.gui` (copie dans le projet : `claude/mod/interface/plane_designer_view.gui`) : copie du vanilla 1.19.3, 32 positions sur la grille 7×7 (20 slots `fixed_` + 12 libres rangés par disponibilité : le jeu n'affiche que 20 positions fixes, constaté le 22/10) ; ordre de déclaration des slots imposé (02, §1.9) ; boutons vanilla déplacés dans les cases rouges de la ligne 5 (Q18) | ✅ (22/10), 🧪 12 libres |
 | Bipoutre et slot Queue | On garde comme ça : le bipoutre moyen garde sa Queue (elle partage ses catégories avec d'autres slots) | ✅ (21/10) |
 | Internes par couleur | Internes 1 et 4 bleus, 2 et 5 verts, 3 et 6 roses (2 en petite, 4 en moyenne, 6 en grande) | ✅ (20/10) |
 | Défense arrière des bombardiers moyens | Laissée telle quelle (Arrière Cockpit, Ventre, Queue ; Dos réservé à la grande) | ✅ (20/10) |

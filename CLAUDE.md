@@ -22,7 +22,7 @@ Refaire de zéro le **concepteur d'avions** de *Hearts of Iron IV* (version **1.
 | Besoin | Fichier | Remarque |
 | --- | --- | --- |
 | Vue d'ensemble et toutes les décisions | `docs/00-synthese-planification.md` | §2 = tableau des décisions |
-| Grille des slots, ordre de déclaration, placement à l'écran | `docs/02-mecanismes-et-astuces-designer.md` §1 (surtout §1.9) | ordre imposé : 21 fixes puis 11 libres |
+| Grille des slots, ordre de déclaration, placement à l'écran | `docs/02-mecanismes-et-astuces-designer.md` §1 (surtout §1.9) | ordre imposé : 20 fixes puis 12 libres (le jeu n'affiche que 20 positions fixes) |
 | Astuce des moteurs (−100 % + configuration) | `docs/03-astuce-moteurs.md` | à lire avant de coder un moteur |
 | Liste des modules et leurs catégories | `docs/04-inventaire-modules-avion.md` | |
 | Arbre technologique (107 techs, 3 projets spéciaux) | `docs/04-arbre-technologique.md` | |

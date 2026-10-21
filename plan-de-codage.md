@@ -27,7 +27,7 @@ Ordre de priorité si le temps manque : moteurs et configurations d'abord (c'est
 - Déclarer les 91 catégories et les 13 modules fantômes ; poser un **kit minimal** de modules pour pouvoir assembler un avion : les modules de référence (fuselage classique S/M/L, aile basse trapézoïdale, empennage classique, cockpit fermé, hélice 3 pales métal, train fixe caréné à roulette de queue), un moteur (En ligne I), deux configurations (nez simple A, bimoteur A), le rôle Chasseur (P).
 - ⚠ Tant que les phases 3 et 4 ne sont pas faites, des techs, gabarits IA et designs vanilla citeront des modules disparus : erreurs attendues dans `error.log`, à lister et ignorer jusque-là.
 - 🧪 Tests ⛔ :
-  - les 21 positions fixes et les 11 libres s'affichent (6ᵉ position fixe et au-delà lues par le code ?) ;
+  - les 20 positions fixes et les 12 libres s’affichent (✅ 22/10 : le jeu lit 20 positions fixes, pas 21) ;
   - chaque cellule montre 21 / 22 / 27 / 32 slots, sans décalage (chaîne emboîtée) ;
   - un slot obligatoire vide rend le design invalide ; un slot sans module débloqué reste visible et vide ;
   - un design du kit minimal se construit, se nomme, se produit.

@@ -30,9 +30,10 @@ Légende : ✅ décidé · 💡 proposition de Claude, à confirmer · ❓ à d�
 Source : `docs/02` §1 et §1.9, `docs/09`, `data/slots.json`.
 
 - **32 slots**, déclarés dans `module_slots` **dans cet ordre exact** (règle d'affichage, 02 §1.9) :
-  - 21 fixes (nom commençant par `fixed_`) → `pos_fixed_module_slot_window_0` à `_20` : Aile 1, Aile 2, Hélices, Module Hélice, Type de Moteurs, Nombre de Moteurs, Matériaux, Construction, Modules Moteurs 1, Modules Moteurs 2, Trains d'atterrissage, Type de Fuselage, Type d'Ailes, Type d'Empennage, Rôles, Nez, Cockpit, Arrière Cockpit, Internes 1, Ventre Milieu, Internes 4 ;
-  - 11 libres → `pos_custom_module_slot_window_0` à `_10`, rangés par disponibilité : Aile 3 (P, M, G), Aile 4, Internes 2, Internes 5, Ventre Arrière, Queue (M, G), Aile 5, Dos, Internes 3, Internes 6, Ventre Avant (G).
-  - Chaque archétype ne déclare que ses slots, dans cet ordre (la petite navale n'a aucun slot libre, la petite 1, la moyenne 6, la grande 11).
+  - 20 fixes (nom commençant par `fixed_`) → `pos_fixed_module_slot_window_0` à `_19` : Aile 1, Aile 2, Hélices, Module Hélice, Type de Moteurs, Nombre de Moteurs, Matériaux, Construction, Modules Moteurs 1, Modules Moteurs 2, Trains d'atterrissage, Type de Fuselage, Type d'Ailes, Type d'Empennage, Rôles, Nez, Cockpit, Arrière Cockpit, Internes 1, Ventre Milieu ;
+  - 12 libres → `pos_custom_module_slot_window_0` à `_11`, rangés par disponibilité : Internes 4 (toutes), Aile 3 (P, M, G), Aile 4, Internes 2, Internes 5, Ventre Arrière, Queue (M, G), Aile 5, Dos, Internes 3, Internes 6, Ventre Avant (G).
+  - ✅ (22/10) Le jeu n'affiche que 20 positions fixes : Internes 4, d'abord prévu fixe, est passé en libre (02 §1.9).
+  - Chaque archétype ne déclare que ses slots, dans cet ordre (la petite navale a 1 slot libre, la petite 2, la moyenne 7, la grande 12).
 - **Catégories acceptées** : table du 09 (`data/slots.json`). Les catégories qui dépendent de la taille (canon AT de nez en M et G, soute dans l'Aile 1 en G, armes navales dans les Ailes 1 et 2 en M et G, tourelles à l'Arrière Cockpit en M et G) s'obtiennent simplement : chaque archétype a sa propre liste `allowed_module_categories`.
 - **Slots vides à l'ouverture** ✅ : aucun `default_modules`. Les modules « de référence » (fuselage classique, aile basse trapézoïdale, empennage classique, cockpit fermé, hélice 3 pales métal, train fixe caréné à roulette de queue) se choisissent comme les autres.
 - **Slots obligatoires** ✅ (21/10, Q1, `required = yes`) : Type de Moteurs, Nombre de Moteurs, Type de Fuselage, Type d'Ailes, Rôles, Cockpit. Hélices, Type d'Empennage et Trains d'atterrissage restent facultatifs : un slot vide y vaut le module de référence (sans effet).

@@ -25,7 +25,7 @@ Légende : ❓ à décider · 💡 proposition · 🧪 à tester en jeu · ⚠ p
 | Q15 | Techs de 1936 ou avant : comment les donner aux pays (historique ou effet au démarrage) ? | arbre | effet au démarrage, plus simple et sans écraser les 364 fichiers | — | ⛔ phase 4 |
 | Q16 | Autres configurations (moteur dorsal du He 162, moteurs couplés du He 177) ? | 03 | plus tard | non | — |
 | Q17 | Seuils d'audit : tolérance 15 %, contrepartie minimale 10 % ? | 00 §7 | oui | oui | phase 7 |
-| Q18 | Cases rouges « Modèles, Curseurs, Concepteurs » de l'écran : y déplacer des éléments d'interface ? | 02 §1.9 | non pour l'instant | non | — |
+| Q18 | Cases rouges « Modèles, Curseurs, Concepteurs » de l'écran : y déplacer des éléments d'interface ? | 02 §1.9 | ✅ (22/10) oui : boutons de designs dans « Modèles », bureau d'études et MIO dans « Concepteurs » (ils recouvraient des slots) | — | — |
 | Q19 | Restrictions par fuselage : Classique, « Jug », Goutte et Hydravion n'ont rien de renseigné (case vide ≠ « aucune restriction ») | 06 | considérer « aucune » | aucune | — |
 | Q20 | Nom du mod et nom des identifiants (`id_propose` de `data/slots.json` et `data/categories.json`) | — | ✅ (21/10) « ZV Designer », noms proposés gardés | — | — |
 
@@ -35,7 +35,7 @@ Légende : ❓ à décider · 💡 proposition · 🧪 à tester en jeu · ⚠ p
 
 | # | Test | Phase | Si ça échoue |
 | --- | --- | --- | --- |
-| T1 | 32 positions affichées (21 fixes, 11 libres) ; le code lit-il la 6ᵉ position fixe et au-delà ? | 1 | revoir la répartition fixes / libres dans le `.gui` et l'ordre des slots |
+| T1 | 32 positions affichées ; ✅ (22/10) le code lit 20 positions fixes, pas 21 → 20 fixes + 12 libres ; 🧪 reste à voir la 12ᵉ libre | 1 | revoir la répartition fixes / libres dans le `.gui` et l'ordre des slots |
 | T2 | Ordre d'affichage : une cellule sans « Aile 4 » décale-t-elle les suivants ? | 1 | l'ordre par disponibilité règle normalement ce cas |
 | T3 | Slot obligatoire vide → design invalide ; slot sans module débloqué → visible et vide | 1 | — |
 | T4 | Addition des multiplicateurs : moteur −100 % + configuration | 2 | ⚠ revoir l'astuce des moteurs avec Florian |
