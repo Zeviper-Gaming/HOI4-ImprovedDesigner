@@ -1,0 +1,152 @@
+# ZV Designer : fichier généré par scripts/gen_mod.py (données : data/modules.json, docs/05).
+# Ne pas modifier à la main. Écrase le 00_plane_modules.txt vanilla.
+equipment_modules = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+
+	zv_fuselage_classic_s = {	# Fuselage classique (S) — référence (05, ligne 233)
+		abbreviation = "z06e"
+		category = zv_cat_fuselage
+		sfx = sfx_ui_sd_module_turret
+	}
+
+	zv_fuselage_classic_m = {	# Fuselage classique (M) — référence (05, ligne 234)
+		abbreviation = "z06f"
+		category = zv_cat_fuselage
+		sfx = sfx_ui_sd_module_turret
+	}
+
+	zv_fuselage_classic_l = {	# Fuselage classique (L) — référence (05, ligne 235)
+		abbreviation = "z070"
+		category = zv_cat_fuselage
+		sfx = sfx_ui_sd_module_turret
+	}
+
+	zv_wing_basse_trapezoidale = {	# Basse trapézoïdale — référence (05, ligne 353)
+		abbreviation = "z0a0"
+		category = zv_cat_aile_basse
+		sfx = sfx_ui_sd_module_turret
+	}
+
+	zv_tail_classic = {	# Empennage classique — référence (05, ligne 257)
+		abbreviation = "z07f"
+		category = zv_cat_empennage
+		sfx = sfx_ui_sd_module_turret
+	}
+
+	zv_cockpit_closed = {	# Cockpit fermé — référence (05, ligne 420)
+		abbreviation = "z0dc"
+		category = zv_cat_cockpit
+		sfx = sfx_ui_sd_module_turret
+	}
+
+	zv_prop_3_metal = {	# Hélice 3 pales (métal) — référence (05, ligne 175)
+		abbreviation = "z049"
+		category = zv_cat_helice
+		sfx = sfx_ui_sd_module_turret
+	}
+
+	zv_gear_fixed_taildragger = {	# Train fixe caréné à roulette de queue — référence (05, ligne 303)
+		abbreviation = "z098"
+		category = zv_cat_train_d_atterrissage
+		sfx = sfx_ui_sd_module_turret
+	}
+
+	zv_engine_inline_1 = {	# En ligne I (05, ligne 74)
+		abbreviation = "z004"
+		category = zv_cat_moteur
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			thrust = 10
+			air_agility = 1
+			fuel_consumption = 0.14
+			reliability = -0.01
+		}
+		multiply_stats = {
+			thrust = -1
+			fuel_consumption = -1
+		}
+		forbid_module_categories = {
+			zv_cat_motorisation_ailes_b
+			zv_cat_motorisation_ailes_c
+			zv_cat_motorisation_ailes_d
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_queue_b
+			zv_cat_motorisation_queue_c
+			zv_cat_motorisation_queue_d
+			zv_cat_motorisation_tandem_d_aile_b
+			zv_cat_motorisation_tandem_d_aile_c
+			zv_cat_ameliorations_de_reacteur
+			zv_cat_carenage_moteur
+		}
+	}
+
+	zv_engine_config_nose_a = {	# Moteur de nez simple — classe A (05, ligne 117)
+		abbreviation = "z01d"
+		category = zv_cat_motorisation_nez_a
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			build_cost_ic = 11
+		}
+		multiply_stats = {
+			thrust = 1
+			fuel_consumption = 1
+		}
+	}
+
+	zv_engine_config_twin_wing_a = {	# Bimoteur (ailes) — classe A (05, ligne 120)
+		abbreviation = "z020"
+		category = zv_cat_motorisation_ailes_a
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			reliability = 0.02
+			build_cost_ic = 26
+		}
+		multiply_stats = {
+			thrust = 1.55
+			fuel_consumption = 2
+		}
+	}
+
+	zv_role_fighter_small = {	# Chasseur (P) (05, ligne 644)
+		abbreviation = "z178"
+		category = zv_cat_role_petite
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { fighter }
+		forbid_module_categories = {
+			zv_cat_armes_navales
+		}
+	}
+
+	zv_light_mg_2x = {	# Mitrailleuses légères x2 (05, ligne 452)
+		abbreviation = "z0ee"
+		category = zv_cat_mitrailleuses
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_attack = 5
+			build_cost_ic = 1
+			weight = 1
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	# Modules fantômes (décision D-14) : identifiants vanilla encore cités par des techs
+	# non écrasées ; leur catégorie n'est acceptée par aucun slot.
+	jet_engine_1x = { abbreviation = "zf00" category = zv_cat_phantom }	# cité par jet_engines
+	jet_engine_2x = { abbreviation = "zf01" category = zv_cat_phantom }	# cité par jet_engines
+	jet_engine_3x = { abbreviation = "zf02" category = zv_cat_phantom }	# cité par jet_engines
+	jet_engine_4x = { abbreviation = "zf03" category = zv_cat_phantom }	# cité par jet_engines
+	jet_engine_6x = { abbreviation = "zf04" category = zv_cat_phantom }	# cité par jet_engines
+	rocket_engine_1 = { abbreviation = "zf05" category = zv_cat_phantom }	# cité par rocket_engines
+	rocket_engine_2 = { abbreviation = "zf06" category = zv_cat_phantom }	# cité par improved_rocket_engines, sp_rockets_dual_chamber_rocket_engine_1/2
+	rocket_engine_3 = { abbreviation = "zf07" category = zv_cat_phantom }	# cité par advanced_rocket_engines
+	rocket_propelled_bombs = { abbreviation = "zf08" category = zv_cat_phantom }	# cité par sp_rockets_rocket_bomber
+	improved_rocket_propelled_bombs = { abbreviation = "zf09" category = zv_cat_phantom }	# cité par sp_rockets_improved_rocket_bomber
+	tank_buster_1 = { abbreviation = "zf10" category = zv_cat_phantom }	# cité par interwar_antitank
+	tank_buster_2 = { abbreviation = "zf11" category = zv_cat_phantom }	# cité par antitank2
+	rocket_rails = { abbreviation = "zf12" category = zv_cat_phantom }	# cité par rocket_artillery
+}
