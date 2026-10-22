@@ -19,6 +19,7 @@ Relevés dans les fichiers de la version 1.19.3.0. Ajouter ici chaque nouveau pi
 13. **Positions non utilisées = cadenas** (constaté le 22/10/2026) : une position de l'écran qu'une cellule n'utilise pas s'affiche comme un slot verrouillé, pas comme une case vide.
 14. **Tech racine invisible** : une tech sans prérequis ne s'affiche dans un onglet que si `countrytechtreeview.gui` contient un `gridboxtype` nommé `<tech>_tree` dans le dossier (vanilla : `iw_small_airframe_tree`, `engines_1_tree`… lignes 2919-2995). Sinon elle existe mais reste invisible.
 15. **Console `research`** (1.19.3) : la commande attend un numéro de case de recherche (« No active research in that slot »), pas un nom de tech.
+16. **Dossier `history`** (confirmé par Florian le 22/10/2026) : le jeu lit les fichiers pays dans `history/countries/` à la racine du jeu. La copie HOI4-ref les range dans `common/history/countries/` : un mod qui recopie ce chemin écrit au mauvais endroit, et le jeu ignore ses avions de départ sans message.
 
 ## Incohérences du vanilla à ne pas recopier
 

@@ -24,6 +24,8 @@ Légende : ❓ à décider · 💡 proposition · 🧪 à tester en jeu · ⚠ p
 | Q14 | IA et designs de départ : ambition (tous les rôles ou les principaux) ; designs historiques réécrits ou retirés ? | cahier §8 | ✅ (22/10) gabarits d'IA pour 11 rôles (les 9 principaux + reconnaissance et patrouille maritime) ; designs de départ convertis pour les 15 pays qui en ont (7 grandes puissances et 8 pays secondaires) | — | — |
 | Q15 | Techs de 1936 ou avant : comment les donner aux pays (historique ou effet au démarrage) ? | arbre | ✅ (22/10) effet au démarrage de la partie ; ⚠ pas encore codé : il faut `common/on_actions/` dans HOI4-ref. En attendant, les 11 techs anciennes se recherchent normalement | — | ⛔ effet au démarrage |
 | Q21 | ⚠ 5 identifiants servent à la fois à une tech et à un module (`zv_gyro_gunsight_1`, `zv_gyro_gunsight_2`, `zv_asv_radar`, `zv_iff`, `zv_night_photo`) : un seul texte pour les deux | 04-arbre, 05 | renommer les 5 techs en `zv_tech_…` (comme `zv_tech_schraege_musik`), dans le 04 puis les données | le nom et la description du module servent aussi à la tech | — |
+| Q22 | Avions de départ : un module dont le pays n'a pas la tech (ex. tourelle à canon du LeO 451 sans `aa_cannon_2`, mitrailleuse lourde du P-35A sans `aa_hmg`, moteur en étoile II sans `zv_radial_engines_2`) : le garder comme le vanilla, ou le retirer ? | phase 6 | 💡 retirer (fait) : un design refusé coûterait l'avion entier au pays. Le vanilla en met pourtant : le jeu ne vérifie sans doute pas la recherche (🧪 T26) | retirer ; les avions en étoile de 1936 et 1939 ont le moteur en étoile I | — |
+| Q23 | ⚠ Short Sunderland (ENG 1939) : le rôle Patrouille maritime et les grenades sous-marines demandent `zv_air_asw_1`, que l'Angleterre n'a pas au départ | phase 6 | rôle et grenades imposés quand même (seul cas) ; à revoir avec Q15 (donner la tech au départ) | tel quel | — |
 | Q16 | Autres configurations (moteur dorsal du He 162, moteurs couplés du He 177) ? | 03 | plus tard | non | — |
 | Q17 | Seuils d'audit : tolérance 15 %, contrepartie minimale 10 % ? | 00 §7 | oui | oui | phase 7 |
 | Q18 | Cases rouges « Modèles, Curseurs, Concepteurs » de l'écran : y déplacer des éléments d'interface ? | 02 §1.9 | ✅ (22/10) oui : boutons de designs dans « Modèles », bureau d'études et MIO dans « Concepteurs » (ils recouvraient des slots) | — | — |
@@ -63,6 +65,9 @@ Légende : ❓ à décider · 💡 proposition · 🧪 à tester en jeu · ⚠ p
 | T23 | Onglet Aviation : 16 arbres, années de 1922 à 1950 alignées, bandes, titre « Airframe and equipment », icônes provisoires, rien ne se chevauche | 4 → final | corriger `TECH_COLUMNS` / `TECH_ROWS` |
 | T24 | Projets spéciaux : réacteur centrifuge, réacteur axial, intercepteur-fusée débloquent leurs modules ; les techs de suite apparaissent après le projet (avec T9) | 4 → final | — |
 | T25 | Textes : noms et descriptions anglais partout, aucun identifiant brut ; cellules des doublons nommées ; titre et descriptions des curseurs | 5 → final | corriger `traductions_en.py` |
+| T26 | Avions de départ (1936 et 1939) : chaque pays a ses avions sous leur nom vanilla (Bf 109 E, Spitfire, I-16…), avec les curseurs au cran 5, et ses escadrilles de départ en sont équipées ; aucune ligne `create_equipment_variant` dans `error.log` | 6 → final | corriger `designs_depart.py` / `gen_history.py` |
+| T27 | IA : après quelques années de jeu observé, les pays dessinent des avions valides pour les 11 rôles (gabarits `zv_<rôle>_<échelon>` dans le dossier historique du designer) et les produisent | 6 → final | corriger `gen_ai.py` |
+| T28 | IA : une fois un projet de réacteur terminé, l'IA passe aux gabarits `zv_fighter_jet` et `zv_tactical_bomber_jet` | 6 → final | — |
 
 ## Pour une future mise à jour 🔜
 
@@ -81,5 +86,6 @@ L'IA ne dessine un nouveau modèle que pour un rôle qui a un gabarit dans `comm
 Légende : ❓ à décider · ⛔ absent du jeu de base · 🔜 plus tard.
 
 - À demander à Florian au moment voulu : ajouter `common/ai_strategy/` à HOI4-ref.
+- Limite connue (phase 6) : les avions créés par des focus, des événements ou des effets scriptés (ex. l'achat finlandais d'avions allemands) citent encore les modules vanilla. Ces dossiers ne sont pas dans HOI4-ref : les ajouter (`common/national_focus/`, `common/scripted_effects/`, `events/`) pour les convertir.
 - 🧪 Un pays qui démarre avec un avion de ces rôles pourrait encore le produire, sans jamais le remplacer par un modèle plus récent (non vérifié dans les fichiers).
 - Le contrôleur de design de la phase 6 (`check_designs.py`) servira aussi à valider ces gabarits.

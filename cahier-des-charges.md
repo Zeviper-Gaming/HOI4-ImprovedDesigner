@@ -88,8 +88,8 @@ Source : `docs/04-arbre-technologique.md`, `data/techs.json`.
 
 ## 8. IA et designs de départ
 
-- `common/ai_equipment/` : les gabarits IA doivent être réécrits pour les nouveaux slots et modules (sinon l'IA ne produit que des designs invalides), en choisissant une configuration de motorisation cohérente avec le moteur. ✅ (22/10) les rôles principaux.
-- `common/history/countries/` : les designs de départ (`create_equipment_variant`) citent des slots et des modules vanilla. ✅ (22/10) les designs des 7 grandes puissances sont réécrits. Les 364 fichiers ne peuvent pas être écrasés un par un sans perdre le reste de leur contenu : à étudier dans HOI4-ref avant de proposer.
+- `common/ai_equipment/` : les gabarits IA doivent être réécrits pour les nouveaux slots et modules (sinon l'IA ne produit que des designs invalides), en choisissant une configuration de motorisation cohérente avec le moteur. ✅ (22/10) 11 rôles (phase 6 : `gen_ai.py`, 62 échelons contrôlés par `check_designs.py`).
+- `history/countries/` (racine du jeu ; HOI4-ref les range dans `common/history/countries/`) : les designs de départ (`create_equipment_variant`) citent des slots et des modules vanilla. ✅ (22/10) les designs des 15 pays qui en ont sont convertis (phase 6 : `gen_history.py`, copie du fichier vanilla où seuls les modules des avions changent). Les 364 fichiers ne peuvent pas être écrasés un par un sans perdre le reste de leur contenu : à étudier dans HOI4-ref avant de proposer.
 
 ## 9. Fichiers manquants dans HOI4-ref (à demander à Florian au moment voulu)
 
@@ -115,7 +115,7 @@ Source : `docs/04-arbre-technologique.md`, `data/techs.json`.
 | `interface/countrytechtreeview.gui` | écraser | années de l'onglet Aviation |
 | `interface/*.gfx`, `gfx/interface/equipmentdesigner/…` | créer | icônes |
 | `localisation/french/*_l_french.yml`, `localisation/english/*_l_english.yml` | créer | UTF-8 avec BOM |
-| `common/history/countries/…` | ❓ | §8 |
+| `history/countries/` (15 pays) | écraser | §8 |
 
 ## 11. Critères d'acceptation (fin du codage)
 
