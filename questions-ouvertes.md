@@ -63,3 +63,23 @@ Légende : ❓ à décider · 💡 proposition · 🧪 à tester en jeu · ⚠ p
 | T23 | Onglet Aviation : 16 arbres, années de 1922 à 1950 alignées, bandes, titre « Airframe and equipment », icônes provisoires, rien ne se chevauche | 4 → final | corriger `TECH_COLUMNS` / `TECH_ROWS` |
 | T24 | Projets spéciaux : réacteur centrifuge, réacteur axial, intercepteur-fusée débloquent leurs modules ; les techs de suite apparaissent après le projet (avec T9) | 4 → final | — |
 | T25 | Textes : noms et descriptions anglais partout, aucun identifiant brut ; cellules des doublons nommées ; titre et descriptions des curseurs | 5 → final | corriger `traductions_en.py` |
+
+## Pour une future mise à jour 🔜
+
+### IA : rôles d'avions sans gabarit (noté le 22/10, à la demande de Florian)
+
+L'IA ne dessine un nouveau modèle que pour un rôle qui a un gabarit dans `common/ai_equipment/` (`_documentation.md` : elle conçoit et produit pour « tous les rôles qu'elle peut »). Combien d'avions de chaque rôle elle veut se règle ailleurs, dans les `role_ratio` des stratégies d'IA (`common/ai_strategy/`, absent de HOI4-ref).
+
+| Rôle | Gabarit vanilla | État en phase 6 | Ce qu'il faudra pour la mise à jour |
+| --- | --- | --- | --- |
+| Reconnaissance | `generic_scout_plane` (rôle `air_scout_plane`) | ❓ 9 ou 11 rôles, choix en attente | un gabarit `generic_*` (doublons petit, embarqué et moyen) |
+| Patrouille maritime | `generic_maritime_patrol` + ENG, GER, USA (rôle `air_maritime_patrol`) | ❓ 9 ou 11 rôles, choix en attente | un gabarit `generic_*` (cellules moyenne et grande) |
+| Intercepteur | ⛔ aucun (rôle propre au mod) | non fait : l'IA n'en dessine pas | lire `common/ai_strategy/` pour savoir si un rôle d'intercepteur peut être demandé (`role_ratio`), sinon ajouter une stratégie ; puis un gabarit avec le module Intercepteur |
+| Suicide | ⛔ aucun | non fait | idem : stratégie qui demande le rôle, puis gabarit avec la charge explosive (`fixed_explosive_charge`) |
+| Transport | ⛔ aucun (le transport vanilla est un équipement à part) | non fait | idem, et vérifier d'abord en jeu le type `air_transport` sur une cellule du designer (T12) |
+
+Légende : ❓ à décider · ⛔ absent du jeu de base · 🔜 plus tard.
+
+- À demander à Florian au moment voulu : ajouter `common/ai_strategy/` à HOI4-ref.
+- 🧪 Un pays qui démarre avec un avion de ces rôles pourrait encore le produire, sans jamais le remplacer par un modèle plus récent (non vérifié dans les fichiers).
+- Le contrôleur de design de la phase 6 (`check_designs.py`) servira aussi à valider ces gabarits.
