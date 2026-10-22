@@ -18,6 +18,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import gen_mod_table as T
+import traductions_en as E
 
 ROOT = Path(__file__).resolve().parents[1]
 MOD = ROOT / "mod"
@@ -640,21 +641,76 @@ def q(s):
     return s.replace('"', "”")
 
 
-def gen_loc(lang="french"):
-    # Anglais provisoire (le jeu de Florian est en anglais) : mêmes textes, traduits en phase 5.
+# Phrases de la colonne « Pourquoi » qui sont des notes de conception, pas du texte de jeu.
+DESC_NOTES = ("🧪", "❓", "décision", "aleurs vanilla", "aleur vanilla", "identifiant conservé",
+              "Débloquée par", "Valeurs proches de", "coût ramené", "à vérifier")
+
+
+def desc_text(m):
+    """Description en jeu : la colonne « Pourquoi » du 05 sans les notes vanilla ni les notes de travail."""
+    d = (m.get("pourquoi") or "").split("<br>")[0].strip()
+    d = re.sub(r"\s*\((décision[^)]*|catégorie à part[^)]*|proposition de l'arbre)\)", "", d)
+    return " ".join(p for p in re.split(r"(?<=[.!?])\s+", d) if not any(k in p for k in DESC_NOTES)).strip()
+
+
+def vanilla_twin(m):
+    """Module vanilla dont le module du mod reprend les valeurs (« *vanilla : X* » du 05)."""
+    r = re.search(r"\*vanilla : (\w+)\*", m.get("pourquoi") or "")
+    return r[1] if r else None
+
+
+def vanilla_loc_keys(ref):
+    """Clés des textes vanilla (localisation française de HOI4-ref : les mêmes existent en anglais)."""
+    keys = set()
+    for p in (ref / "localisation/french").glob("*.yml"):
+        keys |= set(re.findall(r"^ ([\w.]+):\d* ", p.read_text(encoding="utf-8-sig"), re.M))
+    return keys
+
+
+# Paliers des cellules (plane_airframes.txt vanilla) : la petite va jusqu'au palier 5 (supersonique).
+AIRFRAME_TIERS = {"small_plane_airframe": 6, "cv_small_plane_airframe": 5, "medium_plane_airframe": 5,
+                  "large_plane_airframe": 5}
+
+
+def gen_loc(lang, vkeys):
+    """Textes du mod. Les modules vanilla gardés (sans zv_) gardent les textes du jeu ; un module du mod
+    sans description reprend celle du module vanilla dont il copie les valeurs, s'il y en a un."""
+    en = lang == "english"
+    k = 1 if en else 0
     L = [f"l_{lang}:"]
     for uid, u in T.CURSEURS.items():
-        L.append(f' {uid}:0 "{u["nom"]}"')
-        L.append(f' {uid}_desc:0 "Cran {T.CURSEUR_USINE} = réglage d’usine. Effet par cran : voir 05, « Réglages »."')
+        L.append(f' {uid}:0 "{E.CURSEUR_EN[u["nom"]] if en else u["nom"]}"')
+        L.append(f' {uid}_desc:0 "{q(E.CURSEUR_DESC[uid][k])}"')
     for s in SLOTS:
-        L.append(f' EQ_MOD_SLOT_{s["id_propose"]}_TITLE:0 "{q(s["slot"])}"')
+        L.append(f' EQ_MOD_SLOT_{s["id_propose"]}_TITLE:0 "{q(E.SLOT_EN[s["slot"]] if en else s["slot"])}"')
     for name, c in CATS.items():
-        L.append(f' EQ_MOD_CAT_{c["id_propose"]}_TITLE:0 "{q(name)}"')
+        L.append(f' EQ_MOD_CAT_{c["id_propose"]}_TITLE:0 "{q(E.category_en(name) if en else name)}"')
     for mid in MODULE_IDS:
         m = MODS[mid]
-        L.append(f' {mid}:0 "{q(m["nom"])}"')
-        L.append(f' {mid}_desc:0 "{q(m.get("pourquoi") or "")}"')
+        if not mid.startswith("zv_") and mid in vkeys:
+            continue
+        d = desc_text(m)
+        d = q(E.DESC_EN[d] if en and d else d)
+        if not d and f"{vanilla_twin(m)}_desc" in vkeys:
+            d = f"${vanilla_twin(m)}_desc$"
+        L.append(f' {mid}:0 "{q(E.name_en(mid, m["nom"]) if en else m["nom"])}"')
+        L.append(f' {mid}_desc:0 "{d}"')
+    for dup, d in T.NEW_DUPLICATES.items():
+        arch = d["archetype"]
+        role = E.DUP_ROLE[dup][k]
+        for n in range(AIRFRAME_TIERS[arch]):
+            if n == 5:
+                L.append(f' {dup}_5:0 "${arch}_5$"')
+            else:
+                name = (E.TIER_EN if en else E.TIER_FR)[n].format(role)
+                L.append(f' {dup}_{n}:0 "{q(name[0].upper() + name[1:])}"')
+            L.append(f' {dup}_{n}_desc:0 "${arch}_{n}_desc$"')
     return "\n".join(L) + "\n"
+
+
+def missing_desc_en():
+    """Descriptions françaises sans traduction anglaise (contrôle de phase 5)."""
+    return sorted({desc_text(MODS[m]) for m in MODULE_IDS} - set(E.DESC_EN) - {""})
 
 
 # ---------------------------------------------------------------- écriture
@@ -674,8 +730,9 @@ def main():
         write("common/units/equipment/plane_airframes.txt", gen_airframes(ref))
         write("common/units/equipment/x_plane_airframes.txt", gen_duplicates(ref))
         write("common/units/equipment/modules/00_plane_modules.txt", gen_modules())
-        write("localisation/french/zv_designer_l_french.yml", gen_loc(), bom=True)
-        write("localisation/english/zv_designer_l_english.yml", gen_loc("english"), bom=True)
+        vkeys = vanilla_loc_keys(ref)
+        for lang in ("french", "english"):
+            write(f"localisation/{lang}/zv_designer_l_{lang}.yml", gen_loc(lang, vkeys), bom=True)
         write("interface/zv_plane_modules_icons.gfx", gen_icons(ref))
         write("common/units/equipment/upgrades/zv_plane_upgrades.txt", gen_upgrades())
     except GenError as e:

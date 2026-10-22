@@ -11,6 +11,8 @@ Fichiers écrits :
   mod/common/technologies/bba_air_techs.txt           (écrase le vanilla : Armement et missions + cellules)
   mod/common/special_projects/projects/air_projects.txt, rocket_projects.txt (écrasent le vanilla)
   mod/interface/countrytechtreeview.gui               (écrase le vanilla : onglet Aviation)
+  mod/localisation/<langue>/zv_techs_l_<langue>.yml   (noms et descriptions des techs nouvelles)
+  mod/interface/zv_technologies_icons.gfx             (icônes provisoires des techs nouvelles)
 """
 import argparse, json, re, sys
 from pathlib import Path
@@ -360,6 +362,55 @@ def gen_treeview(ref):
     return "# ZV Designer : onglet Aviation généré par scripts/gen_techs.py (vanilla 1.19.3.0).\n" + t
 
 
+# ---------------------------------------------------------------- icônes provisoires (phase 5)
+
+def gen_tech_icons(ref):
+    """Icône GFX_<tech>_medium de chaque tech nouvelle : celle de la tech vanilla la plus proche en
+    remontant les prérequis, sinon celle du modèle du groupe. Provisoire, en attendant des .dds du mod."""
+    gfx = (ref / "interface/Technologies.gfx").read_text(encoding="utf-8-sig")
+    tex = dict(re.findall(r'name\s*=\s*"GFX_(\w+)_medium"\s*texturefile\s*=\s*"([^"]+)"', gfx, re.I))
+    L = ["# ZV Designer : icônes provisoires des techs nouvelles, générées par scripts/gen_techs.py.",
+         "# Chaque icône reprend une image vanilla (tech vanilla parente, ou modèle du groupe).", "spriteTypes = {"]
+    for tid, t in MANAGED.items():
+        if not tid.startswith("zv_"):
+            continue
+        todo, seen, src = list(t["prereqs"]), set(), None
+        while todo and src is None:
+            p = todo.pop(0)
+            if p in seen:
+                continue
+            seen.add(p)
+            if not p.startswith("zv_") and p in tex:
+                src = p
+            elif p in TECHS:
+                todo += TECHS[p]["prereqs"]
+        src = src or T.TECH_GROUPS[group_of(t)][1]
+        L += ["\tSpriteType = {", f'\t\tname = "GFX_{tid}_medium"\t# image de {src}',
+              f'\t\ttexturefile = "{tex[src]}"', "\t}"]
+    return "\n".join(L + ["}"]) + "\n"
+
+
+# ---------------------------------------------------------------- textes (phase 5)
+
+def gen_tech_loc(lang):
+    """Noms et descriptions des techs nouvelles (zv_) et titre du groupe Cellule et équipements."""
+    en = lang == "english"
+    k = 1 if en else 0
+    E = G.E
+    L = [f"l_{lang}:", f' ZV_AIR_TITLE_CONSTRUCTION:0 "{E.TEXTS["ZV_AIR_TITLE_CONSTRUCTION"][k]}"']
+    for tid, t in MANAGED.items():
+        if not tid.startswith("zv_") or tid in G.MODULE_IDS:   # même identifiant qu'un module : son texte sert aux deux
+            continue
+        name = E.TECH_EN[tid] if en else t["name"].replace(" (optionnelle)", "")
+        mods = [E.name_en(m, G.MODS[m]["nom"]) if en else G.MODS[m]["nom"] for m in modules_of(tid)]
+        desc = [E.TEXTS["unlocks"][k].format(", ".join(mods))] if mods else []
+        if "optionnelle" in t["name"]:
+            desc.append(E.TEXTS["optional"][k])
+        L.append(f' {tid}:0 "{G.q(name)}"')
+        L.append(f' {tid}_desc:0 "{G.q(" ".join(desc))}"')
+    return "\n".join(L) + "\n"
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--ref", default="F:/Github Local/HOI4-ref")
@@ -370,6 +421,9 @@ def main():
         for f, text in gen_projects(ref).items():
             G.write(f"common/special_projects/projects/{f}", text)
         G.write("interface/countrytechtreeview.gui", gen_treeview(ref))
+        G.write("interface/zv_technologies_icons.gfx", gen_tech_icons(ref))
+        for lang in ("french", "english"):
+            G.write(f"localisation/{lang}/zv_techs_l_{lang}.yml", gen_tech_loc(lang), bom=True)
     except G.GenError as e:
         sys.exit(f"ERREUR : {e}")
     print(f"arbres (gridbox) : {len(roots())}")
