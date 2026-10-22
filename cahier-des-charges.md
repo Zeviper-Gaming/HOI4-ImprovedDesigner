@@ -21,7 +21,7 @@ Légende : ✅ décidé · 💡 proposition de Claude, à confirmer · ❓ à d�
 
 - **4 archétypes** portent les slots et les limites : `cv_small_plane_airframe` (petite navale), `small_plane_airframe`, `medium_plane_airframe`, `large_plane_airframe`. Les cellules réelles (`_0` à `_5`) et les doublons de rôle (CAS, naval, chasseur lourd, reco, patrouille…, générés par `duplicate_archetypes`) en héritent. ⚠ Pièges 5 et 7 du plugin (`pieges.md`) : doublons générés, ordre de chargement de `x_plane_airframes.txt`.
 - **Nombre de slots** ✅ : petite navale 21, petite 22, moyenne 27, grande 32, identique à tous les niveaux (`_0` à `_5`) ; la progression passe par les techs (02 §1.3-1.4).
-- **Stats** ✅ : celles du vanilla, sauf la **consommation de base mise à 0** (la consommation vient des moteurs, proportionnelle à leur nombre).
+- **Stats** ✅ : celles du vanilla, sauf la **consommation de base mise à 0** (la consommation vient des moteurs, proportionnelle à leur nombre). ✅ (22/10, Q11) La petite cellule embarquée (`cv_`) reprend l'agilité, le poids et le coût de la petite cellule terrestre : la pénalité d'appontage est portée par le module « Crosse d'appontage et ailes repliables ».
 - **Famille de l'avion** ✅ : donnée par le seul module de rôle (`type_override` / `add_equipment_type` sur les 16 modules de rôle uniquement ; retiré des armes). Les `allowed_types` des cellules doivent couvrir tous les rôles du 05 (section Rôles) et du 10 (§ rôles).
 - **Plans de cellule** : les cellules vanilla gardent leurs plans (`plane_blueprints_*.gui`). Une nouvelle cellule sans conteneur générique n'apparaît pas (piège 1).
 
