@@ -1,0 +1,2 @@
+# ZV Designer : vide exprès. Les gabarits GER vanilla citaient des slots et modules disparus ;
+# GER utilise les gabarits generic_* (generic_planes.txt).

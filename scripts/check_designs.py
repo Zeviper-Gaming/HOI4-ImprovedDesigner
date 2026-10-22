@@ -43,7 +43,7 @@ def _merge(*levels):
 
 
 class Rules:
-    def __init__(self):
+    def __init__(self, ref=Path("F:/Github Local/HOI4-ref")):
         root = load_file(EQ / "plane_airframes.txt").get("equipments")
         self.archetypes, self.tiers = {}, {}
         for name, b in root.blocks():
@@ -67,16 +67,34 @@ class Rules:
             self.modules[name] = dict(category=b.get("category"),
                                       forbid=set(forbid.values()) if isinstance(forbid, Block) else set(),
                                       role=role.values()[0] if isinstance(role, Block) else None)
-        self.module_tech, self.equipment_tech = {}, {}
-        for f in (MOD / "common/technologies").glob("*.txt"):
+        # Techs : celles du mod, plus les fichiers vanilla que le mod n'écrase pas (radars, viseurs…).
+        self.module_tech, self.equipment_tech, self.prereqs = {}, {}, {}
+        files = {f.name: f for f in (ref / "common/technologies").glob("*.txt")}
+        files.update({f.name: f for f in (MOD / "common/technologies").glob("*.txt")})
+        for f in files.values():
             techs = load_file(f).get("technologies")
             if not isinstance(techs, Block):
                 continue
             for tid, t in techs.blocks():
+                if tid.startswith("@"):
+                    continue
                 for key, store in (("enable_equipment_modules", self.module_tech), ("enable_equipments", self.equipment_tech)):
                     for e in self._all(t, key):
                         for v in e.values():
                             store.setdefault(v, tid)
+                for p in t.get_all("path"):
+                    if isinstance(p, Block) and p.get("leads_to_tech"):
+                        self.prereqs.setdefault(p.get("leads_to_tech"), set()).add(tid)
+
+    def closure(self, techs):
+        """Les techs données et tous leurs prérequis (chemins leads_to_tech)."""
+        out, todo = set(), list(techs)
+        while todo:
+            t = todo.pop()
+            if t not in out:
+                out.add(t)
+                todo += self.prereqs.get(t, ())
+        return out
 
     @staticmethod
     def _all(block, key):

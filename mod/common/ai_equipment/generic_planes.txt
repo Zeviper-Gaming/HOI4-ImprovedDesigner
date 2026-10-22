@@ -1,0 +1,3361 @@
+# ZV Designer : gabarits d'IA des avions, générés par scripts/gen_ai.py (phase 6, Q14).
+# Un groupe par rôle, pour tous les pays ; priorités des groupes reprises du vanilla 1.19.3.0.
+
+generic_fighter = {
+	category = air
+	blocked_for = { }
+	available_for = { }
+	roles = {
+		air_fighter
+	}
+	priority = {
+		factor = 1000
+	}
+
+	zv_fighter_interwar = {
+		priority = {
+			factor = 1
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+		}
+		history = yes
+		target_variant = {
+			match_value = 1000
+			type = small_plane_airframe_0
+			modules = {
+				fixed_zv_engine = zv_engine_v_1
+				fixed_zv_engine_config = zv_engine_config_nose_a
+				fixed_zv_propeller = zv_prop_2_metal
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_biplan_rectangulaire
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_fixed_taildragger
+				fixed_zv_cockpit = zv_cockpit_open
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_wing_2 = zv_cat_mitrailleuses
+				fixed_zv_role = zv_role_fighter_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_self_sealing_fuel_tanks_s
+			zv_fuel_tanks_s
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_wep_s
+			zv_high_octane_fuel_s
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+
+	zv_fighter_basic = {
+		priority = {
+			factor = 5
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = basic_small_airframe
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+		}
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = small_plane_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_v_1
+				fixed_zv_engine_config = zv_engine_config_nose_a
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_fixed_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_wing_2 = zv_cat_mitrailleuses
+				fixed_zv_role = zv_role_fighter_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_self_sealing_fuel_tanks_s
+			zv_fuel_tanks_s
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_wep_s
+			zv_high_octane_fuel_s
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+
+	zv_fighter_basic_b = {
+		priority = {
+			factor = 10
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = basic_small_airframe
+			has_tech = engines_1
+			has_tech = engines_2
+			has_tech = iw_small_airframe
+		}
+		history = yes
+		target_variant = {
+			match_value = 3000
+			type = small_plane_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_v_2
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_radiator_ventral
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_wing_2 = zv_cat_mitrailleuses
+				fixed_zv_role = zv_role_fighter_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_self_sealing_fuel_tanks_s
+			zv_fuel_tanks_s
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_wep_s
+			zv_high_octane_fuel_s
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+
+	zv_fighter_improved = {
+		priority = {
+			factor = 20
+		}
+		enable = {
+			has_tech = aa_cannon_1
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = engines_2
+			has_tech = engines_3
+			has_tech = improved_small_airframe
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_propellers_1
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = small_plane_airframe_2
+			modules = {
+				fixed_zv_engine = zv_engine_v_3
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_radiator_ventral
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_elliptique
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_wing_2 = zv_cat_canons
+				fixed_zv_nose = zv_cat_mitrailleuses_de_nez
+				fixed_zv_role = zv_role_fighter_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+
+	zv_fighter_advanced = {
+		priority = {
+			factor = 40
+		}
+		enable = {
+			has_tech = aa_cannon_1
+			has_tech = aa_lmg
+			has_tech = advanced_small_airframe
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = engines_2
+			has_tech = engines_3
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_propellers_1
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 5000
+			type = small_plane_airframe_3
+			modules = {
+				fixed_zv_engine = zv_engine_v_3
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_radiator_ventral
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_teardrop_s
+				fixed_zv_wing_type = zv_wing_basse_elliptique
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_wing_2 = zv_cat_canons
+				fixed_zv_nose = zv_cat_mitrailleuses_de_nez
+				fixed_zv_role = zv_role_fighter_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+
+	zv_fighter_modern = {
+		priority = {
+			factor = 80
+		}
+		enable = {
+			has_tech = aa_cannon_1
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = engines_2
+			has_tech = engines_4
+			has_tech = iw_small_airframe
+			has_tech = modern_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_laminar_wing
+			has_tech = zv_modern_aircraft_construction
+			has_tech = zv_propellers_1
+			has_tech = zv_propellers_2
+			has_tech = zv_superchargers_3
+		}
+		history = yes
+		target_variant = {
+			match_value = 6000
+			type = small_plane_airframe_4
+			modules = {
+				fixed_zv_engine = zv_engine_v_4
+				fixed_zv_engine_config = zv_engine_config_nose_c
+				fixed_zv_engine_module_1 = zv_radiator_ventral
+				fixed_zv_engine_module_2 = zv_two_stage_supercharger
+				fixed_zv_propeller = zv_prop_4
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_teardrop_s
+				fixed_zv_wing_type = zv_wing_basse_laminaire
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_bubble
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_wing_2 = zv_cat_canons
+				fixed_zv_nose = zv_cat_mitrailleuses_de_nez
+				fixed_zv_role = zv_role_fighter_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+
+	zv_fighter_jet = {
+		priority = {
+			factor = 160
+		}
+		enable = {
+			has_tech = aa_cannon_1
+			has_tech = aa_lmg
+			has_tech = engines_2
+			has_tech = iw_small_airframe
+			has_tech = modern_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_modern_aircraft_construction
+			has_tech = zv_swept_wing_1
+			OR = {
+				is_special_project_completed = sp:sp_air_axial_jet_engine
+				is_special_project_completed = sp:sp_air_jet_engine
+			}
+		}
+		history = yes
+		target_variant = {
+			match_value = 7000
+			type = small_plane_airframe_4
+			modules = {
+				fixed_zv_engine = { any_of = { zv_engine_axial_1 zv_engine_centrifugal_1 } }
+				fixed_zv_engine_config = zv_engine_config_tail_b
+				fixed_zv_engine_module_1 = zv_air_intake
+				fixed_zv_fuselage = zv_fuselage_teardrop_s
+				fixed_zv_wing_type = zv_wing_basse_fleche_legere
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_tricycle
+				fixed_zv_cockpit = zv_cockpit_bubble
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_wing_2 = zv_cat_canons
+				fixed_zv_nose = zv_cat_mitrailleuses_de_nez
+				fixed_zv_role = zv_role_fighter_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+}
+
+generic_cas = {
+	category = air
+	blocked_for = { }
+	available_for = { }
+	roles = {
+		air_cas
+	}
+	priority = {
+		factor = 100
+	}
+
+	zv_cas_interwar = {
+		priority = {
+			factor = 1
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+		}
+		history = yes
+		target_variant = {
+			match_value = 1000
+			type = small_plane_cas_airframe_0
+			modules = {
+				fixed_zv_engine = zv_engine_radial_1
+				fixed_zv_engine_config = zv_engine_config_nose_a
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_2_metal
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_biplan_rectangulaire
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_fixed_taildragger
+				fixed_zv_cockpit = zv_cockpit_open
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_wing_2 = zv_dive_brakes_s
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_cas_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_self_sealing_fuel_tanks_s
+			zv_fuel_tanks_s
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_wep_s
+			zv_high_octane_fuel_s
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+
+	zv_cas_basic = {
+		priority = {
+			factor = 5
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = basic_small_airframe
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+		}
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_radial_1
+				fixed_zv_engine_config = zv_engine_config_nose_a
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_fixed_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_wing_2 = zv_dive_brakes_s
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_cas_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_self_sealing_fuel_tanks_s
+			zv_fuel_tanks_s
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_wep_s
+			zv_high_octane_fuel_s
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+
+	zv_cas_basic_b = {
+		priority = {
+			factor = 10
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = basic_small_airframe
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = zv_radial_engines_2
+		}
+		history = yes
+		target_variant = {
+			match_value = 3000
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_radial_2
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_wing_2 = zv_dive_brakes_s
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_cas_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_self_sealing_fuel_tanks_s
+			zv_fuel_tanks_s
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_wep_s
+			zv_high_octane_fuel_s
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+
+	zv_cas_improved = {
+		priority = {
+			factor = 20
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = improved_small_airframe
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_propellers_1
+			has_tech = zv_radial_engines_3
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = small_plane_cas_airframe_2
+			modules = {
+				fixed_zv_engine = zv_engine_radial_3
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_elliptique
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_wing_2 = zv_dive_brakes_s
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_cas_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+
+	zv_cas_advanced = {
+		priority = {
+			factor = 40
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = advanced_small_airframe
+			has_tech = aircraft_construction
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_propellers_1
+			has_tech = zv_radial_engines_3
+			has_tech = zv_rocket_rails_1
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 5000
+			type = small_plane_cas_airframe_3
+			modules = {
+				fixed_zv_engine = zv_engine_radial_3
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_teardrop_s
+				fixed_zv_wing_type = zv_wing_basse_elliptique
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_wing_2 = zv_cat_roquettes
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_cas_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+
+	zv_cas_modern = {
+		priority = {
+			factor = 80
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = modern_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_laminar_wing
+			has_tech = zv_modern_aircraft_construction
+			has_tech = zv_propellers_1
+			has_tech = zv_propellers_2
+			has_tech = zv_radial_engines_4
+			has_tech = zv_rocket_rails_1
+			has_tech = zv_superchargers_3
+		}
+		history = yes
+		target_variant = {
+			match_value = 6000
+			type = small_plane_cas_airframe_4
+			modules = {
+				fixed_zv_engine = zv_engine_radial_4
+				fixed_zv_engine_config = zv_engine_config_nose_c
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_two_stage_supercharger
+				fixed_zv_propeller = zv_prop_4
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_teardrop_s
+				fixed_zv_wing_type = zv_wing_basse_laminaire
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_bubble
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_wing_2 = zv_cat_roquettes
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_cas_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+}
+
+generic_naval_bomber = {
+	category = air
+	blocked_for = { }
+	available_for = { }
+	roles = {
+		air_naval_bomber
+	}
+	priority = {
+		factor = 500
+	}
+
+	zv_naval_bomber_basic = {
+		priority = {
+			factor = 5
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = air_torpedoe_1
+			has_tech = basic_small_airframe
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+		}
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = small_plane_naval_bomber_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_radial_1
+				fixed_zv_engine_config = zv_engine_config_nose_a
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_fixed_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_armes_navales
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_naval_bomber_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_self_sealing_fuel_tanks_s
+			zv_fuel_tanks_s
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_wep_s
+			zv_high_octane_fuel_s
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+
+	zv_naval_bomber_basic_b = {
+		priority = {
+			factor = 10
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = air_torpedoe_1
+			has_tech = aircraft_construction
+			has_tech = basic_small_airframe
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = zv_radial_engines_2
+		}
+		history = yes
+		target_variant = {
+			match_value = 3000
+			type = small_plane_naval_bomber_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_radial_2
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_armes_navales
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_naval_bomber_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_self_sealing_fuel_tanks_s
+			zv_fuel_tanks_s
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_wep_s
+			zv_high_octane_fuel_s
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+
+	zv_naval_bomber_improved = {
+		priority = {
+			factor = 20
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = air_torpedoe_1
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = improved_small_airframe
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_propellers_1
+			has_tech = zv_radial_engines_3
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = small_plane_naval_bomber_airframe_2
+			modules = {
+				fixed_zv_engine = zv_engine_radial_3
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_elliptique
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_armes_navales
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_naval_bomber_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+
+	zv_naval_bomber_advanced = {
+		priority = {
+			factor = 40
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = advanced_small_airframe
+			has_tech = air_torpedoe_1
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_propellers_1
+			has_tech = zv_radial_engines_3
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 5000
+			type = small_plane_naval_bomber_airframe_3
+			modules = {
+				fixed_zv_engine = zv_engine_radial_3
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_teardrop_s
+				fixed_zv_wing_type = zv_wing_basse_elliptique
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_armes_navales
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_naval_bomber_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+
+	zv_naval_bomber_modern = {
+		priority = {
+			factor = 80
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = air_torpedoe_1
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = modern_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_laminar_wing
+			has_tech = zv_modern_aircraft_construction
+			has_tech = zv_propellers_1
+			has_tech = zv_propellers_2
+			has_tech = zv_radial_engines_4
+			has_tech = zv_superchargers_3
+		}
+		history = yes
+		target_variant = {
+			match_value = 6000
+			type = small_plane_naval_bomber_airframe_4
+			modules = {
+				fixed_zv_engine = zv_engine_radial_4
+				fixed_zv_engine_config = zv_engine_config_nose_c
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_two_stage_supercharger
+				fixed_zv_propeller = zv_prop_4
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_teardrop_s
+				fixed_zv_wing_type = zv_wing_basse_laminaire
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_bubble
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_armes_navales
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_naval_bomber_small
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_s
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_s
+		}
+	}
+}
+
+generic_cv_fighter = {
+	category = air
+	blocked_for = { }
+	available_for = { }
+	roles = {
+		air_cv_fighter
+	}
+	priority = {
+		factor = 1000
+		modifier = {
+			has_navy_size = {
+				unit = carrier
+				size < 1
+			}
+			factor = 0
+		}
+	}
+
+	zv_cv_fighter_interwar = {
+		priority = {
+			factor = 1
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = range_improvements
+		}
+		history = yes
+		target_variant = {
+			match_value = 1000
+			type = cv_small_plane_airframe_0
+			modules = {
+				fixed_zv_engine = zv_engine_radial_1
+				fixed_zv_engine_config = zv_engine_config_nose_a
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_2_metal
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_biplan_rectangulaire
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_fixed_taildragger
+				fixed_zv_cockpit = zv_cockpit_open
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_wing_2 = zv_cat_mitrailleuses
+				fixed_zv_role = zv_role_fighter_small
+				zv_internal_4 = zv_fuel_tanks_s
+				fixed_zv_internal_1 = zv_carrier_equipment
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_drop_tanks_s
+			zv_wep_s
+			zv_high_octane_fuel_s
+		}
+	}
+
+	zv_cv_fighter_basic = {
+		priority = {
+			factor = 5
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = basic_small_airframe
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = range_improvements
+		}
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = cv_small_plane_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_radial_1
+				fixed_zv_engine_config = zv_engine_config_nose_a
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_fixed_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_wing_2 = zv_cat_mitrailleuses
+				fixed_zv_role = zv_role_fighter_small
+				zv_internal_4 = zv_fuel_tanks_s
+				fixed_zv_internal_1 = zv_carrier_equipment
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_drop_tanks_s
+			zv_wep_s
+			zv_high_octane_fuel_s
+		}
+	}
+
+	zv_cv_fighter_basic_b = {
+		priority = {
+			factor = 10
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = basic_small_airframe
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = range_improvements
+			has_tech = zv_radial_engines_2
+		}
+		history = yes
+		target_variant = {
+			match_value = 3000
+			type = cv_small_plane_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_radial_2
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_wing_2 = zv_cat_mitrailleuses
+				fixed_zv_role = zv_role_fighter_small
+				zv_internal_4 = zv_fuel_tanks_s
+				fixed_zv_internal_1 = zv_carrier_equipment
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_drop_tanks_s
+			zv_wep_s
+			zv_high_octane_fuel_s
+		}
+	}
+
+	zv_cv_fighter_improved = {
+		priority = {
+			factor = 20
+		}
+		enable = {
+			has_tech = aa_cannon_1
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = improved_small_airframe
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_propellers_1
+			has_tech = zv_radial_engines_3
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = cv_small_plane_airframe_2
+			modules = {
+				fixed_zv_engine = zv_engine_radial_3
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_elliptique
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_wing_2 = zv_cat_canons
+				fixed_zv_nose = zv_cat_mitrailleuses_de_nez
+				fixed_zv_role = zv_role_fighter_small
+				zv_internal_4 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_internal_1 = zv_carrier_equipment
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_drop_tanks_s
+		}
+	}
+
+	zv_cv_fighter_advanced = {
+		priority = {
+			factor = 40
+		}
+		enable = {
+			has_tech = aa_cannon_1
+			has_tech = aa_lmg
+			has_tech = advanced_small_airframe
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_propellers_1
+			has_tech = zv_radial_engines_3
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 5000
+			type = cv_small_plane_airframe_3
+			modules = {
+				fixed_zv_engine = zv_engine_radial_3
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_teardrop_s
+				fixed_zv_wing_type = zv_wing_basse_elliptique
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_wing_2 = zv_cat_canons
+				fixed_zv_nose = zv_cat_mitrailleuses_de_nez
+				fixed_zv_role = zv_role_fighter_small
+				zv_internal_4 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_internal_1 = zv_carrier_equipment
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_drop_tanks_s
+		}
+	}
+
+	zv_cv_fighter_modern = {
+		priority = {
+			factor = 80
+		}
+		enable = {
+			has_tech = aa_cannon_1
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = modern_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_laminar_wing
+			has_tech = zv_modern_aircraft_construction
+			has_tech = zv_propellers_1
+			has_tech = zv_propellers_2
+			has_tech = zv_radial_engines_4
+			has_tech = zv_superchargers_3
+		}
+		history = yes
+		target_variant = {
+			match_value = 6000
+			type = cv_small_plane_airframe_4
+			modules = {
+				fixed_zv_engine = zv_engine_radial_4
+				fixed_zv_engine_config = zv_engine_config_nose_c
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_two_stage_supercharger
+				fixed_zv_propeller = zv_prop_4
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_teardrop_s
+				fixed_zv_wing_type = zv_wing_basse_laminaire
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_bubble
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_wing_2 = zv_cat_canons
+				fixed_zv_nose = zv_cat_mitrailleuses_de_nez
+				fixed_zv_role = zv_role_fighter_small
+				zv_internal_4 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_internal_1 = zv_carrier_equipment
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_drop_tanks_s
+		}
+	}
+}
+
+generic_cv_cas = {
+	category = air
+	blocked_for = { }
+	available_for = { }
+	roles = {
+		air_cv_cas
+	}
+	priority = {
+		factor = 100
+		modifier = {
+			has_navy_size = {
+				unit = carrier
+				size < 1
+			}
+			factor = 0
+		}
+	}
+
+	zv_cv_cas_basic = {
+		priority = {
+			factor = 5
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = basic_small_airframe
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = range_improvements
+		}
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = cv_small_plane_cas_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_radial_1
+				fixed_zv_engine_config = zv_engine_config_nose_a
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_fixed_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_wing_2 = zv_dive_brakes_s
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_cas_small
+				zv_internal_4 = zv_fuel_tanks_s
+				fixed_zv_internal_1 = zv_carrier_equipment
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_wep_s
+			zv_high_octane_fuel_s
+		}
+	}
+
+	zv_cv_cas_basic_b = {
+		priority = {
+			factor = 10
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = basic_small_airframe
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = range_improvements
+			has_tech = zv_radial_engines_2
+		}
+		history = yes
+		target_variant = {
+			match_value = 3000
+			type = cv_small_plane_cas_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_radial_2
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_wing_2 = zv_dive_brakes_s
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_cas_small
+				zv_internal_4 = zv_fuel_tanks_s
+				fixed_zv_internal_1 = zv_carrier_equipment
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_wep_s
+			zv_high_octane_fuel_s
+		}
+	}
+
+	zv_cv_cas_improved = {
+		priority = {
+			factor = 20
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = improved_small_airframe
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_propellers_1
+			has_tech = zv_radial_engines_3
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = cv_small_plane_cas_airframe_2
+			modules = {
+				fixed_zv_engine = zv_engine_radial_3
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_elliptique
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_wing_2 = zv_dive_brakes_s
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_cas_small
+				zv_internal_4 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_internal_1 = zv_carrier_equipment
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+		}
+	}
+
+	zv_cv_cas_advanced = {
+		priority = {
+			factor = 40
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = advanced_small_airframe
+			has_tech = aircraft_construction
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_propellers_1
+			has_tech = zv_radial_engines_3
+			has_tech = zv_rocket_rails_1
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 5000
+			type = cv_small_plane_cas_airframe_3
+			modules = {
+				fixed_zv_engine = zv_engine_radial_3
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_teardrop_s
+				fixed_zv_wing_type = zv_wing_basse_elliptique
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_wing_2 = zv_cat_roquettes
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_cas_small
+				zv_internal_4 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_internal_1 = zv_carrier_equipment
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+		}
+	}
+
+	zv_cv_cas_modern = {
+		priority = {
+			factor = 80
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = modern_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_laminar_wing
+			has_tech = zv_modern_aircraft_construction
+			has_tech = zv_propellers_1
+			has_tech = zv_propellers_2
+			has_tech = zv_radial_engines_4
+			has_tech = zv_rocket_rails_1
+			has_tech = zv_superchargers_3
+		}
+		history = yes
+		target_variant = {
+			match_value = 6000
+			type = cv_small_plane_cas_airframe_4
+			modules = {
+				fixed_zv_engine = zv_engine_radial_4
+				fixed_zv_engine_config = zv_engine_config_nose_c
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_two_stage_supercharger
+				fixed_zv_propeller = zv_prop_4
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_teardrop_s
+				fixed_zv_wing_type = zv_wing_basse_laminaire
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_bubble
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_wing_2 = zv_cat_roquettes
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_cas_small
+				zv_internal_4 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_internal_1 = zv_carrier_equipment
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+		}
+	}
+}
+
+generic_cv_naval_bomber = {
+	category = air
+	blocked_for = { }
+	available_for = { }
+	roles = {
+		air_cv_naval_bomber
+	}
+	priority = {
+		factor = 500
+		modifier = {
+			has_navy_size = {
+				unit = carrier
+				size < 1
+			}
+			factor = 0
+		}
+	}
+
+	zv_cv_naval_bomber_basic = {
+		priority = {
+			factor = 5
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = air_torpedoe_1
+			has_tech = aircraft_construction
+			has_tech = basic_small_airframe
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = range_improvements
+		}
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = cv_small_plane_naval_bomber_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_radial_1
+				fixed_zv_engine_config = zv_engine_config_nose_a
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_fixed_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_armes_navales
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_naval_bomber_small
+				zv_internal_4 = zv_fuel_tanks_s
+				fixed_zv_internal_1 = zv_carrier_equipment
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_drop_tanks_s
+			zv_wep_s
+			zv_high_octane_fuel_s
+		}
+	}
+
+	zv_cv_naval_bomber_basic_b = {
+		priority = {
+			factor = 10
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = air_torpedoe_1
+			has_tech = aircraft_construction
+			has_tech = basic_small_airframe
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = range_improvements
+			has_tech = zv_radial_engines_2
+		}
+		history = yes
+		target_variant = {
+			match_value = 3000
+			type = cv_small_plane_naval_bomber_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_radial_2
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_armes_navales
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_naval_bomber_small
+				zv_internal_4 = zv_fuel_tanks_s
+				fixed_zv_internal_1 = zv_carrier_equipment
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_drop_tanks_s
+			zv_wep_s
+			zv_high_octane_fuel_s
+		}
+	}
+
+	zv_cv_naval_bomber_improved = {
+		priority = {
+			factor = 20
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = air_torpedoe_1
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = improved_small_airframe
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_propellers_1
+			has_tech = zv_radial_engines_3
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = cv_small_plane_naval_bomber_airframe_2
+			modules = {
+				fixed_zv_engine = zv_engine_radial_3
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_classic_s
+				fixed_zv_wing_type = zv_wing_basse_elliptique
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_armes_navales
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_naval_bomber_small
+				zv_internal_4 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_internal_1 = zv_carrier_equipment
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_drop_tanks_s
+		}
+	}
+
+	zv_cv_naval_bomber_advanced = {
+		priority = {
+			factor = 40
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = advanced_small_airframe
+			has_tech = air_torpedoe_1
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_propellers_1
+			has_tech = zv_radial_engines_3
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 5000
+			type = cv_small_plane_naval_bomber_airframe_3
+			modules = {
+				fixed_zv_engine = zv_engine_radial_3
+				fixed_zv_engine_config = zv_engine_config_nose_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_teardrop_s
+				fixed_zv_wing_type = zv_wing_basse_elliptique
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_armes_navales
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_naval_bomber_small
+				zv_internal_4 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_internal_1 = zv_carrier_equipment
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_drop_tanks_s
+		}
+	}
+
+	zv_cv_naval_bomber_modern = {
+		priority = {
+			factor = 80
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = air_torpedoe_1
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = iw_small_airframe
+			has_tech = modern_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_laminar_wing
+			has_tech = zv_modern_aircraft_construction
+			has_tech = zv_propellers_1
+			has_tech = zv_propellers_2
+			has_tech = zv_radial_engines_4
+			has_tech = zv_superchargers_3
+		}
+		history = yes
+		target_variant = {
+			match_value = 6000
+			type = cv_small_plane_naval_bomber_airframe_4
+			modules = {
+				fixed_zv_engine = zv_engine_radial_4
+				fixed_zv_engine_config = zv_engine_config_nose_c
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_two_stage_supercharger
+				fixed_zv_propeller = zv_prop_4
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_teardrop_s
+				fixed_zv_wing_type = zv_wing_basse_laminaire
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_bubble
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_belly_middle = zv_cat_armes_navales
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_naval_bomber_small
+				zv_internal_4 = zv_self_sealing_fuel_tanks_s
+				fixed_zv_internal_1 = zv_carrier_equipment
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_s
+			zv_drop_tanks_s
+		}
+	}
+}
+
+generic_tactical_bomber = {
+	category = air
+	blocked_for = { }
+	available_for = { }
+	roles = {
+		air_tactical_bomber
+	}
+	priority = {
+		factor = 2000
+		modifier = {
+			num_of_factories < 100
+			factor = 0.5
+		}
+		modifier = {
+			num_of_factories < 50
+			factor = 0
+		}
+	}
+
+	zv_tactical_bomber_interwar = {
+		priority = {
+			factor = 1
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = iw_medium_airframe
+			has_tech = iw_small_airframe
+		}
+		history = yes
+		target_variant = {
+			match_value = 1000
+			type = medium_plane_airframe_0
+			modules = {
+				fixed_zv_engine = zv_engine_v_1
+				fixed_zv_engine_config = zv_engine_config_twin_wing_a
+				fixed_zv_propeller = zv_prop_2_metal
+				fixed_zv_fuselage = zv_fuselage_classic_m
+				fixed_zv_wing_type = zv_wing_mediane_rectangulaire
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_fixed_taildragger
+				fixed_zv_cockpit = zv_cockpit_open
+				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_earthquake zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
+				fixed_zv_rear_cockpit = zv_cat_tourelle_x1
+				fixed_zv_role = zv_role_tac_bomber_medium
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_m
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_self_sealing_fuel_tanks_m
+			zv_fuel_tanks_m
+			zv_drop_tanks_m
+			zv_deicing_boots
+			zv_wep_m
+			zv_high_octane_fuel_m
+			zv_iff
+			zv_auto_extinguisher_m
+		}
+	}
+
+	zv_tactical_bomber_basic = {
+		priority = {
+			factor = 5
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = basic_medium_airframe
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = iw_medium_airframe
+			has_tech = iw_small_airframe
+		}
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = medium_plane_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_v_1
+				fixed_zv_engine_config = zv_engine_config_twin_wing_a
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_m
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_fixed_taildragger
+				fixed_zv_cockpit = zv_cockpit_glazed_nose
+				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_earthquake zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
+				fixed_zv_rear_cockpit = zv_cat_tourelle_x1
+				fixed_zv_role = zv_role_tac_bomber_medium
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_m
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_self_sealing_fuel_tanks_m
+			zv_fuel_tanks_m
+			zv_drop_tanks_m
+			zv_deicing_boots
+			zv_wep_m
+			zv_high_octane_fuel_m
+			zv_iff
+			zv_auto_extinguisher_m
+		}
+	}
+
+	zv_tactical_bomber_basic_b = {
+		priority = {
+			factor = 10
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = basic_medium_airframe
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = engines_2
+			has_tech = iw_medium_airframe
+			has_tech = iw_small_airframe
+		}
+		history = yes
+		target_variant = {
+			match_value = 3000
+			type = medium_plane_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_v_2
+				fixed_zv_engine_config = zv_engine_config_twin_wing_b
+				fixed_zv_engine_module_1 = zv_radiator_ventral
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_m
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_glazed_nose
+				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_earthquake zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
+				fixed_zv_rear_cockpit = zv_cat_tourelle_x1
+				fixed_zv_role = zv_role_tac_bomber_medium
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_m
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_self_sealing_fuel_tanks_m
+			zv_fuel_tanks_m
+			zv_drop_tanks_m
+			zv_deicing_boots
+			zv_wep_m
+			zv_high_octane_fuel_m
+			zv_iff
+			zv_auto_extinguisher_m
+		}
+	}
+
+	zv_tactical_bomber_improved = {
+		priority = {
+			factor = 20
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = engines_2
+			has_tech = engines_3
+			has_tech = improved_medium_airframe
+			has_tech = iw_medium_airframe
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_propellers_1
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = medium_plane_airframe_2
+			modules = {
+				fixed_zv_engine = zv_engine_v_3
+				fixed_zv_engine_config = zv_engine_config_twin_wing_b
+				fixed_zv_engine_module_1 = zv_radiator_ventral
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_classic_m
+				fixed_zv_wing_type = zv_wing_basse_effilee
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_glazed_nose
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_m
+				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_earthquake zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
+				fixed_zv_rear_cockpit = zv_cat_tourelle_x2
+				zv_tail_position = zv_cat_tourelle_x2
+				fixed_zv_role = zv_role_tac_bomber_medium
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_m
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_m
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_m
+		}
+	}
+
+	zv_tactical_bomber_advanced = {
+		priority = {
+			factor = 40
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = advanced_medium_airframe
+			has_tech = aircraft_construction
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = engines_2
+			has_tech = engines_3
+			has_tech = iw_medium_airframe
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_propellers_1
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 5000
+			type = medium_plane_airframe_3
+			modules = {
+				fixed_zv_engine = zv_engine_v_3
+				fixed_zv_engine_config = zv_engine_config_twin_wing_b
+				fixed_zv_engine_module_1 = zv_radiator_ventral
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_teardrop_m
+				fixed_zv_wing_type = zv_wing_basse_effilee
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_glazed_nose
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_m
+				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_earthquake zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
+				fixed_zv_rear_cockpit = zv_cat_tourelle_x2
+				zv_tail_position = zv_cat_tourelle_x2
+				fixed_zv_role = zv_role_tac_bomber_medium
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_m
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_m
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_m
+		}
+	}
+
+	zv_tactical_bomber_modern = {
+		priority = {
+			factor = 80
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = early_bombs
+			has_tech = engines_2
+			has_tech = engines_4
+			has_tech = iw_medium_airframe
+			has_tech = iw_small_airframe
+			has_tech = modern_medium_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_propellers_2
+			has_tech = zv_superchargers_3
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 6000
+			type = medium_plane_airframe_4
+			modules = {
+				fixed_zv_engine = zv_engine_v_4
+				fixed_zv_engine_config = zv_engine_config_twin_wing_c
+				fixed_zv_engine_module_1 = zv_radiator_ventral
+				fixed_zv_engine_module_2 = zv_two_stage_supercharger
+				fixed_zv_propeller = zv_prop_4
+				fixed_zv_propeller_module = zv_prop_feathering
+				fixed_zv_fuselage = zv_fuselage_teardrop_m
+				fixed_zv_wing_type = zv_wing_basse_effilee
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_glazed_nose
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_m
+				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_earthquake zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
+				fixed_zv_rear_cockpit = zv_cat_tourelle_x2
+				zv_tail_position = zv_cat_tourelle_x2
+				fixed_zv_role = zv_role_tac_bomber_medium
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_m
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_m
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_m
+		}
+	}
+
+	zv_tactical_bomber_jet = {
+		priority = {
+			factor = 160
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = early_bombs
+			has_tech = iw_medium_airframe
+			has_tech = iw_small_airframe
+			has_tech = modern_medium_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_swept_wing_1
+			OR = {
+				is_special_project_completed = sp:sp_air_axial_jet_engine
+				is_special_project_completed = sp:sp_air_jet_engine
+			}
+		}
+		history = yes
+		target_variant = {
+			match_value = 7000
+			type = medium_plane_airframe_4
+			modules = {
+				fixed_zv_engine = { any_of = { zv_engine_axial_1 zv_engine_centrifugal_1 } }
+				fixed_zv_engine_config = zv_engine_config_twin_wing_b
+				fixed_zv_fuselage = zv_fuselage_teardrop_m
+				fixed_zv_wing_type = zv_wing_basse_fleche_legere
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_tricycle
+				fixed_zv_cockpit = zv_cockpit_glazed_nose
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_m
+				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_earthquake zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
+				fixed_zv_rear_cockpit = zv_cat_tourelle_x2
+				fixed_zv_role = zv_role_tac_bomber_medium
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_m
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_m
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_m
+		}
+	}
+}
+
+generic_heavy_fighter = {
+	category = air
+	blocked_for = { }
+	available_for = { }
+	roles = {
+		air_heavy_fighter
+	}
+	priority = {
+		factor = 500
+	}
+
+	zv_heavy_fighter_basic = {
+		priority = {
+			factor = 5
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = basic_medium_airframe
+			has_tech = engines_1
+			has_tech = iw_medium_airframe
+			has_tech = iw_small_airframe
+		}
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = medium_plane_fighter_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_v_1
+				fixed_zv_engine_config = zv_engine_config_twin_wing_a
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_m
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_fixed_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_nose = zv_cat_mitrailleuses_de_nez
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_heavy_fighter_medium
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_m
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_self_sealing_fuel_tanks_m
+			zv_fuel_tanks_m
+			zv_drop_tanks_m
+			zv_deicing_boots
+			zv_wep_m
+			zv_high_octane_fuel_m
+			zv_iff
+			zv_auto_extinguisher_m
+		}
+	}
+
+	zv_heavy_fighter_basic_b = {
+		priority = {
+			factor = 10
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = basic_medium_airframe
+			has_tech = engines_1
+			has_tech = engines_2
+			has_tech = iw_medium_airframe
+			has_tech = iw_small_airframe
+		}
+		history = yes
+		target_variant = {
+			match_value = 3000
+			type = medium_plane_fighter_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_v_2
+				fixed_zv_engine_config = zv_engine_config_twin_wing_b
+				fixed_zv_engine_module_1 = zv_radiator_ventral
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_m
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_nose = zv_cat_mitrailleuses_de_nez
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_heavy_fighter_medium
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_m
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_self_sealing_fuel_tanks_m
+			zv_fuel_tanks_m
+			zv_drop_tanks_m
+			zv_deicing_boots
+			zv_wep_m
+			zv_high_octane_fuel_m
+			zv_iff
+			zv_auto_extinguisher_m
+		}
+	}
+
+	zv_heavy_fighter_improved = {
+		priority = {
+			factor = 20
+		}
+		enable = {
+			has_tech = aa_cannon_1
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = engines_2
+			has_tech = engines_3
+			has_tech = improved_medium_airframe
+			has_tech = iw_medium_airframe
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_propellers_1
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = medium_plane_fighter_airframe_2
+			modules = {
+				fixed_zv_engine = zv_engine_v_3
+				fixed_zv_engine_config = zv_engine_config_twin_wing_b
+				fixed_zv_engine_module_1 = zv_radiator_ventral
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_classic_m
+				fixed_zv_wing_type = zv_wing_basse_effilee
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_m
+				fixed_zv_nose = zv_cat_canons_de_nez
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_wing_2 = zv_cat_canons
+				fixed_zv_role = zv_role_heavy_fighter_medium
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_m
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_m
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_m
+		}
+	}
+
+	zv_heavy_fighter_advanced = {
+		priority = {
+			factor = 40
+		}
+		enable = {
+			has_tech = aa_cannon_1
+			has_tech = aa_lmg
+			has_tech = advanced_medium_airframe
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = engines_2
+			has_tech = engines_3
+			has_tech = iw_medium_airframe
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_propellers_1
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 5000
+			type = medium_plane_fighter_airframe_3
+			modules = {
+				fixed_zv_engine = zv_engine_v_3
+				fixed_zv_engine_config = zv_engine_config_twin_wing_b
+				fixed_zv_engine_module_1 = zv_radiator_ventral
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_teardrop_m
+				fixed_zv_wing_type = zv_wing_basse_effilee
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_m
+				fixed_zv_nose = zv_cat_canons_de_nez
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_wing_2 = zv_cat_canons
+				fixed_zv_role = zv_role_heavy_fighter_medium
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_m
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_m
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_m
+		}
+	}
+
+	zv_heavy_fighter_modern = {
+		priority = {
+			factor = 80
+		}
+		enable = {
+			has_tech = aa_cannon_1
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = engines_2
+			has_tech = engines_4
+			has_tech = iw_medium_airframe
+			has_tech = iw_small_airframe
+			has_tech = modern_medium_airframe
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_propellers_2
+			has_tech = zv_superchargers_3
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 6000
+			type = medium_plane_fighter_airframe_4
+			modules = {
+				fixed_zv_engine = zv_engine_v_4
+				fixed_zv_engine_config = zv_engine_config_twin_wing_c
+				fixed_zv_engine_module_1 = zv_radiator_ventral
+				fixed_zv_engine_module_2 = zv_two_stage_supercharger
+				fixed_zv_propeller = zv_prop_4
+				fixed_zv_propeller_module = zv_prop_feathering
+				fixed_zv_fuselage = zv_fuselage_teardrop_m
+				fixed_zv_wing_type = zv_wing_basse_effilee
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_m
+				fixed_zv_nose = zv_cat_canons_de_nez
+				fixed_zv_wing_1 = zv_cat_mitrailleuses
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_wing_2 = zv_cat_canons
+				fixed_zv_role = zv_role_heavy_fighter_medium
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_m
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_m
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_m
+		}
+	}
+}
+
+generic_scout_plane = {
+	category = air
+	blocked_for = { }
+	available_for = { }
+	roles = {
+		air_scout_plane
+	}
+	priority = {
+		factor = 200
+		modifier = {
+			num_of_factories < 50
+			factor = 0
+		}
+	}
+
+	zv_scout_plane_basic = {
+		priority = {
+			factor = 5
+		}
+		enable = {
+			has_tech = basic_medium_airframe
+			has_tech = engines_1
+			has_tech = iw_medium_airframe
+			has_tech = iw_small_airframe
+			has_tech = photo_reconnaisance
+			has_tech = range_improvements
+		}
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = medium_plane_scout_plane_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_radial_1
+				fixed_zv_engine_config = zv_engine_config_twin_wing_a
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_m
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_fixed_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_belly_middle = recon_camera
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				zv_internal_2 = zv_fuel_tanks_m
+				fixed_zv_role = zv_role_recon_medium
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_m
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_m
+			zv_deicing_boots
+			zv_wep_m
+			zv_high_octane_fuel_m
+			zv_iff
+			zv_auto_extinguisher_m
+		}
+	}
+
+	zv_scout_plane_basic_b = {
+		priority = {
+			factor = 10
+		}
+		enable = {
+			has_tech = aircraft_construction
+			has_tech = basic_medium_airframe
+			has_tech = engines_1
+			has_tech = iw_medium_airframe
+			has_tech = iw_small_airframe
+			has_tech = photo_reconnaisance
+			has_tech = range_improvements
+			has_tech = zv_radial_engines_2
+		}
+		history = yes
+		target_variant = {
+			match_value = 3000
+			type = medium_plane_scout_plane_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_radial_2
+				fixed_zv_engine_config = zv_engine_config_twin_wing_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_m
+				fixed_zv_wing_type = zv_wing_basse_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_belly_middle = recon_camera
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				zv_internal_2 = zv_fuel_tanks_m
+				fixed_zv_role = zv_role_recon_medium
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_m
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_m
+			zv_deicing_boots
+			zv_wep_m
+			zv_high_octane_fuel_m
+			zv_iff
+			zv_auto_extinguisher_m
+		}
+	}
+
+	zv_scout_plane_improved = {
+		priority = {
+			factor = 20
+		}
+		enable = {
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = improved_medium_airframe
+			has_tech = iw_medium_airframe
+			has_tech = iw_small_airframe
+			has_tech = photo_reconnaisance
+			has_tech = survivability_studies
+			has_tech = zv_propellers_1
+			has_tech = zv_radial_engines_3
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = medium_plane_scout_plane_airframe_2
+			modules = {
+				fixed_zv_engine = zv_engine_radial_3
+				fixed_zv_engine_config = zv_engine_config_twin_wing_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_classic_m
+				fixed_zv_wing_type = zv_wing_basse_effilee
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_m
+				fixed_zv_belly_middle = recon_camera
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_recon_medium
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_m
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_m
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_m
+		}
+	}
+
+	zv_scout_plane_advanced = {
+		priority = {
+			factor = 40
+		}
+		enable = {
+			has_tech = advanced_medium_airframe
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = iw_medium_airframe
+			has_tech = iw_small_airframe
+			has_tech = photo_reconnaisance
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_propellers_1
+			has_tech = zv_radial_engines_3
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 5000
+			type = medium_plane_scout_plane_airframe_3
+			modules = {
+				fixed_zv_engine = zv_engine_radial_3
+				fixed_zv_engine_config = zv_engine_config_twin_wing_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_teardrop_m
+				fixed_zv_wing_type = zv_wing_basse_effilee
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_m
+				fixed_zv_belly_middle = recon_camera
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_recon_medium
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_m
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_m
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_m
+		}
+	}
+
+	zv_scout_plane_modern = {
+		priority = {
+			factor = 80
+		}
+		enable = {
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = iw_medium_airframe
+			has_tech = iw_small_airframe
+			has_tech = modern_medium_airframe
+			has_tech = photo_reconnaisance
+			has_tech = survivability_studies
+			has_tech = zv_advanced_aircraft_construction
+			has_tech = zv_propellers_2
+			has_tech = zv_radial_engines_4
+			has_tech = zv_superchargers_3
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 6000
+			type = medium_plane_scout_plane_airframe_4
+			modules = {
+				fixed_zv_engine = zv_engine_radial_4
+				fixed_zv_engine_config = zv_engine_config_twin_wing_c
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_two_stage_supercharger
+				fixed_zv_propeller = zv_prop_4
+				fixed_zv_propeller_module = zv_prop_feathering
+				fixed_zv_fuselage = zv_fuselage_teardrop_m
+				fixed_zv_wing_type = zv_wing_basse_effilee
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_m
+				fixed_zv_belly_middle = recon_camera
+				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
+				fixed_zv_role = zv_role_recon_medium
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_m
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_drop_tanks_m
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_m
+		}
+	}
+}
+
+generic_strategic_bomber = {
+	category = air
+	blocked_for = { }
+	available_for = { }
+	roles = {
+		air_strategic_bomber
+	}
+	priority = {
+		factor = 200
+		modifier = {
+			num_of_factories < 50
+			factor = 0
+		}
+	}
+
+	zv_strategic_bomber_interwar = {
+		priority = {
+			factor = 1
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = iw_large_airframe
+			has_tech = iw_small_airframe
+		}
+		history = yes
+		target_variant = {
+			match_value = 1000
+			type = large_plane_airframe_0
+			modules = {
+				fixed_zv_engine = zv_engine_radial_1
+				fixed_zv_engine_config = zv_engine_config_quad_a
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_2_metal
+				fixed_zv_fuselage = zv_fuselage_classic_l
+				fixed_zv_wing_type = zv_wing_mediane_rectangulaire
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_fixed_taildragger
+				fixed_zv_cockpit = zv_cockpit_open
+				fixed_zv_belly_middle = zv_cat_en_soute
+				zv_dorsal = zv_cat_tourelle_x2
+				zv_tail_position = zv_cat_tourelle_x2
+				fixed_zv_role = zv_role_strat_bomber_large
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_l
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_self_sealing_fuel_tanks_l
+			zv_fuel_tanks_l
+			zv_deicing_boots
+			zv_wep_l
+			zv_high_octane_fuel_l
+			zv_iff
+			zv_auto_extinguisher_l
+		}
+	}
+
+	zv_strategic_bomber_basic = {
+		priority = {
+			factor = 5
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = basic_large_airframe
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = iw_large_airframe
+			has_tech = iw_small_airframe
+		}
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = large_plane_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_radial_1
+				fixed_zv_engine_config = zv_engine_config_quad_a
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_l
+				fixed_zv_wing_type = zv_wing_mediane_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_fixed_taildragger
+				fixed_zv_cockpit = zv_cockpit_glazed_nose
+				fixed_zv_belly_middle = zv_cat_en_soute
+				zv_dorsal = zv_cat_tourelle_x2
+				zv_tail_position = zv_cat_tourelle_x2
+				fixed_zv_role = zv_role_strat_bomber_large
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_l
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_self_sealing_fuel_tanks_l
+			zv_fuel_tanks_l
+			zv_deicing_boots
+			zv_wep_l
+			zv_high_octane_fuel_l
+			zv_iff
+			zv_auto_extinguisher_l
+		}
+	}
+
+	zv_strategic_bomber_basic_b = {
+		priority = {
+			factor = 10
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = basic_large_airframe
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = iw_large_airframe
+			has_tech = iw_small_airframe
+			has_tech = zv_radial_engines_2
+		}
+		history = yes
+		target_variant = {
+			match_value = 3000
+			type = large_plane_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_radial_2
+				fixed_zv_engine_config = zv_engine_config_quad_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_l
+				fixed_zv_wing_type = zv_wing_mediane_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_glazed_nose
+				fixed_zv_belly_middle = zv_cat_en_soute
+				zv_dorsal = zv_cat_tourelle_x2
+				zv_tail_position = zv_cat_tourelle_x2
+				fixed_zv_role = zv_role_strat_bomber_large
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_l
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_self_sealing_fuel_tanks_l
+			zv_fuel_tanks_l
+			zv_deicing_boots
+			zv_wep_l
+			zv_high_octane_fuel_l
+			zv_iff
+			zv_auto_extinguisher_l
+		}
+	}
+
+	zv_strategic_bomber_improved = {
+		priority = {
+			factor = 20
+		}
+		enable = {
+			has_tech = aa_hmg
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = improved_large_airframe
+			has_tech = iw_large_airframe
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_propellers_1
+			has_tech = zv_radial_engines_3
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = large_plane_airframe_2
+			modules = {
+				fixed_zv_engine = zv_engine_radial_3
+				fixed_zv_engine_config = zv_engine_config_quad_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_classic_l
+				fixed_zv_wing_type = zv_wing_mediane_effilee
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_glazed_nose
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_l
+				fixed_zv_belly_middle = zv_cat_en_soute
+				zv_dorsal = zv_cat_tourelle_x2
+				zv_tail_position = zv_cat_tourelle_x2
+				zv_belly_front = { any_of = { zv_bomb_bay_incendiary zv_bomb_bay_large zv_bomb_bay_large_frag zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
+				zv_belly_rear = zv_cat_tourelle_a_boule_x2
+				fixed_zv_role = zv_role_strat_bomber_large
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_l
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_l
+		}
+	}
+
+	zv_strategic_bomber_advanced = {
+		priority = {
+			factor = 40
+		}
+		enable = {
+			has_tech = aa_hmg
+			has_tech = aa_lmg
+			has_tech = advanced_large_airframe
+			has_tech = aircraft_construction
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = iw_large_airframe
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_aa_lmg_2
+			has_tech = zv_propellers_1
+			has_tech = zv_radial_engines_3
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 5000
+			type = large_plane_airframe_3
+			modules = {
+				fixed_zv_engine = zv_engine_radial_3
+				fixed_zv_engine_config = zv_engine_config_quad_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_classic_l
+				fixed_zv_wing_type = zv_wing_mediane_effilee
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_glazed_nose
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_l
+				fixed_zv_belly_middle = zv_cat_en_soute
+				zv_dorsal = zv_cat_tourelle_x2
+				zv_tail_position = zv_cat_tourelle_x4
+				zv_belly_front = { any_of = { zv_bomb_bay_incendiary zv_bomb_bay_large zv_bomb_bay_large_frag zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
+				zv_belly_rear = zv_cat_tourelle_a_boule_x2
+				fixed_zv_role = zv_role_strat_bomber_large
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_l
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_l
+		}
+	}
+
+	zv_strategic_bomber_modern = {
+		priority = {
+			factor = 80
+		}
+		enable = {
+			has_tech = aa_hmg
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = early_bombs
+			has_tech = engines_1
+			has_tech = iw_large_airframe
+			has_tech = iw_small_airframe
+			has_tech = modern_large_airframe
+			has_tech = survivability_studies
+			has_tech = zv_aa_lmg_2
+			has_tech = zv_propellers_2
+			has_tech = zv_radial_engines_4
+			has_tech = zv_superchargers_3
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 6000
+			type = large_plane_airframe_4
+			modules = {
+				fixed_zv_engine = zv_engine_radial_4
+				fixed_zv_engine_config = zv_engine_config_quad_c
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_two_stage_supercharger
+				fixed_zv_propeller = zv_prop_4
+				fixed_zv_propeller_module = zv_prop_feathering
+				fixed_zv_fuselage = zv_fuselage_classic_l
+				fixed_zv_wing_type = zv_wing_mediane_effilee
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_glazed_nose
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_l
+				fixed_zv_belly_middle = zv_cat_en_soute
+				zv_dorsal = zv_cat_tourelle_x2
+				zv_tail_position = zv_cat_tourelle_x4
+				zv_belly_front = { any_of = { zv_bomb_bay_incendiary zv_bomb_bay_large zv_bomb_bay_large_frag zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
+				zv_belly_rear = zv_cat_tourelle_a_boule_x2
+				fixed_zv_role = zv_role_strat_bomber_large
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_l
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_l
+		}
+	}
+}
+
+generic_maritime_patrol = {
+	category = air
+	blocked_for = { }
+	available_for = { }
+	roles = {
+		air_maritime_patrol
+	}
+	priority = {
+		factor = 200
+		modifier = {
+			num_of_factories < 50
+			factor = 0
+		}
+		modifier = {
+			all_owned_state = {
+				is_coastal = no
+			}
+			factor = 0
+		}
+	}
+
+	zv_maritime_patrol_basic = {
+		priority = {
+			factor = 5
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = basic_large_airframe
+			has_tech = engines_1
+			has_tech = iw_large_airframe
+			has_tech = iw_small_airframe
+			has_tech = range_improvements
+			has_tech = zv_air_asw_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = large_plane_maritime_patrol_plane_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_radial_1
+				fixed_zv_engine_config = zv_engine_config_quad_a
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_l
+				fixed_zv_wing_type = zv_wing_mediane_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_fixed_taildragger
+				fixed_zv_cockpit = zv_cockpit_glazed_nose
+				fixed_zv_belly_middle = zv_depth_charges
+				zv_dorsal = zv_cat_tourelle_x2
+				zv_internal_2 = zv_fuel_tanks_l
+				fixed_zv_role = zv_role_maritime_patrol_large
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_l
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_deicing_boots
+			zv_wep_l
+			zv_high_octane_fuel_l
+			zv_iff
+			zv_auto_extinguisher_l
+		}
+	}
+
+	zv_maritime_patrol_basic_b = {
+		priority = {
+			factor = 10
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = basic_large_airframe
+			has_tech = engines_1
+			has_tech = iw_large_airframe
+			has_tech = iw_small_airframe
+			has_tech = range_improvements
+			has_tech = zv_air_asw_1
+			has_tech = zv_radial_engines_2
+		}
+		history = yes
+		target_variant = {
+			match_value = 3000
+			type = large_plane_maritime_patrol_plane_airframe_1
+			modules = {
+				fixed_zv_engine = zv_engine_radial_2
+				fixed_zv_engine_config = zv_engine_config_quad_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_fuselage = zv_fuselage_classic_l
+				fixed_zv_wing_type = zv_wing_mediane_trapezoidale
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_glazed_nose
+				fixed_zv_belly_middle = zv_depth_charges
+				zv_dorsal = zv_cat_tourelle_x2
+				zv_internal_2 = zv_fuel_tanks_l
+				fixed_zv_role = zv_role_maritime_patrol_large
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_l
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_deicing_boots
+			zv_wep_l
+			zv_high_octane_fuel_l
+			zv_iff
+			zv_auto_extinguisher_l
+		}
+	}
+
+	zv_maritime_patrol_improved = {
+		priority = {
+			factor = 20
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = improved_large_airframe
+			has_tech = iw_large_airframe
+			has_tech = iw_small_airframe
+			has_tech = survivability_studies
+			has_tech = zv_air_asw_1
+			has_tech = zv_propellers_1
+			has_tech = zv_radial_engines_3
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = large_plane_maritime_patrol_plane_airframe_2
+			modules = {
+				fixed_zv_engine = zv_engine_radial_3
+				fixed_zv_engine_config = zv_engine_config_quad_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_classic_l
+				fixed_zv_wing_type = zv_wing_mediane_effilee
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_glazed_nose
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_l
+				fixed_zv_belly_middle = zv_depth_charges
+				zv_dorsal = zv_cat_tourelle_x2
+				fixed_zv_role = zv_role_maritime_patrol_large
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_l
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_l
+		}
+	}
+
+	zv_maritime_patrol_advanced = {
+		priority = {
+			factor = 40
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = advanced_large_airframe
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = iw_large_airframe
+			has_tech = iw_small_airframe
+			has_tech = phased_array
+			has_tech = survivability_studies
+			has_tech = zv_air_asw_1
+			has_tech = zv_propellers_1
+			has_tech = zv_radial_engines_3
+			has_tech = zv_superchargers_2
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 5000
+			type = large_plane_maritime_patrol_plane_airframe_3
+			modules = {
+				fixed_zv_engine = zv_engine_radial_3
+				fixed_zv_engine_config = zv_engine_config_quad_b
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_supercharger
+				fixed_zv_propeller = zv_prop_3_metal
+				fixed_zv_propeller_module = zv_prop_variable_pitch
+				fixed_zv_fuselage = zv_fuselage_classic_l
+				fixed_zv_wing_type = zv_wing_mediane_effilee
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_glazed_nose
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_l
+				fixed_zv_belly_middle = zv_depth_charges
+				zv_dorsal = zv_cat_tourelle_x2
+				fixed_zv_nose = zv_cat_radar
+				fixed_zv_role = zv_role_maritime_patrol_large
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_l
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_l
+		}
+	}
+
+	zv_maritime_patrol_modern = {
+		priority = {
+			factor = 80
+		}
+		enable = {
+			has_tech = aa_lmg
+			has_tech = aircraft_construction
+			has_tech = engines_1
+			has_tech = iw_large_airframe
+			has_tech = iw_small_airframe
+			has_tech = modern_large_airframe
+			has_tech = phased_array
+			has_tech = survivability_studies
+			has_tech = zv_air_asw_1
+			has_tech = zv_propellers_2
+			has_tech = zv_radial_engines_4
+			has_tech = zv_superchargers_3
+			has_tech = zv_wing_planforms_1
+		}
+		history = yes
+		target_variant = {
+			match_value = 6000
+			type = large_plane_maritime_patrol_plane_airframe_4
+			modules = {
+				fixed_zv_engine = zv_engine_radial_4
+				fixed_zv_engine_config = zv_engine_config_quad_c
+				fixed_zv_engine_module_1 = zv_naca_cowling
+				fixed_zv_engine_module_2 = zv_two_stage_supercharger
+				fixed_zv_propeller = zv_prop_4
+				fixed_zv_propeller_module = zv_prop_feathering
+				fixed_zv_fuselage = zv_fuselage_classic_l
+				fixed_zv_wing_type = zv_wing_mediane_effilee
+				fixed_zv_tail = zv_tail_classic
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
+				fixed_zv_cockpit = zv_cockpit_glazed_nose
+				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_l
+				fixed_zv_belly_middle = zv_depth_charges
+				zv_dorsal = zv_cat_tourelle_x2
+				fixed_zv_nose = zv_cat_radar
+				fixed_zv_role = zv_role_maritime_patrol_large
+			}
+		}
+		allowed_modules = {
+			zv_armor_plate_l
+			zv_armored_cockpit
+			zv_radio_telephone
+			zv_reflex_gunsight_2
+			zv_reflex_gunsight_1
+			zv_gyro_gunsight_1
+			zv_deicing_boots
+			zv_iff
+			zv_auto_extinguisher_l
+		}
+	}
+}
+
