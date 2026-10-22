@@ -20,9 +20,10 @@ Légende : ❓ à décider · 💡 proposition · 🧪 à tester en jeu · ⚠ p
 | Q10 | Un seul slot de réservoir interne (portée ou protection) ? Réservoir de soute en Réservoir supplémentaire ou En soute ? | 05 « Décisions à prendre » | ✅ (22/10) tel quel | — | — |
 | Q11 | Crosse d'appontage : retirer le bonus des cellules `cv_` ou celui du module (sinon l'avion embarqué paie deux fois) ? | 05 | ✅ (22/10) la pénalité va au module : la cellule embarquée reprend l'agilité, le poids et le coût de la petite cellule terrestre | — | — |
 | Q12 | Rôles : petits bonus de mission (5 à 10 %) contre un malus hors rôle ? Intercepteur : valeur du poids fictif ? | 05 | ✅ (22/10) bonus et malus du 05 codés (poids fictif de 4 de l'intercepteur compris) | — | — |
-| Q13 | Transport : un design du designer peut-il prendre le type `air_transport` ? | 05, 00 §8 | 🧪 phase 3 | — | — |
+| Q13 | Transport : un design du designer peut-il prendre le type `air_transport` ? | 05, 00 §8 | ✅ (22/10) codé en phase 3 (rôles Transport M et G) ; 🧪 test T12 | — | — |
 | Q14 | IA et designs de départ : ambition (tous les rôles ou les principaux) ; designs historiques réécrits ou retirés ? | cahier §8 | gabarits pour les rôles principaux ; designs des 7 grandes puissances | — | ⛔ phase 6 |
-| Q15 | Techs de 1936 ou avant : comment les donner aux pays (historique ou effet au démarrage) ? | arbre | ✅ (22/10) effet au démarrage de la partie | — | — |
+| Q15 | Techs de 1936 ou avant : comment les donner aux pays (historique ou effet au démarrage) ? | arbre | ✅ (22/10) effet au démarrage de la partie ; ⚠ pas encore codé : il faut `common/on_actions/` dans HOI4-ref. En attendant, les 11 techs anciennes se recherchent normalement | — | ⛔ effet au démarrage |
+| Q21 | ⚠ 5 identifiants servent à la fois à une tech et à un module (`zv_gyro_gunsight_1`, `zv_gyro_gunsight_2`, `zv_asv_radar`, `zv_iff`, `zv_night_photo`) : un seul texte pour les deux | 04-arbre, 05 | renommer les 5 techs en `zv_tech_…` (comme `zv_tech_schraege_musik`), dans le 04 puis les données | le nom et la description du module servent aussi à la tech | — |
 | Q16 | Autres configurations (moteur dorsal du He 162, moteurs couplés du He 177) ? | 03 | plus tard | non | — |
 | Q17 | Seuils d'audit : tolérance 15 %, contrepartie minimale 10 % ? | 00 §7 | oui | oui | phase 7 |
 | Q18 | Cases rouges « Modèles, Curseurs, Concepteurs » de l'écran : y déplacer des éléments d'interface ? | 02 §1.9 | ✅ (22/10) oui : boutons de designs dans « Modèles », bureau d'études et MIO dans « Concepteurs » (ils recouvraient des slots) | — | — |
@@ -53,3 +54,12 @@ Légende : ❓ à décider · 💡 proposition · 🧪 à tester en jeu · ⚠ p
 | T14 | ✅ (22/10) Boutons du plan déplacés dans la ligne 5 (Q18) : plus rien ne recouvre les slots ; 🧪 info-bulles à revoir au test final | 1 | décaler la grille |
 | T15 | Limite de taille : fuselage (L) refusé sur la petite cellule (`module_count_limit count < 1`) ; le message du jeu s'écrit « ne peut pas avoir plus de 0 » | 1 → final | catégories par taille |
 | T16 | Limite partagée de suralimentation : deux compresseurs refusés | 2 → final | — |
+| T17 | Obligations des rôles : un design avec le rôle « Close air support (S) » sans canon AT, roquettes, attaches ni soute est refusé ; idem « Maritime patrol (M) » sans arme anti-sous-marine (grenades comprises) | 3 → final | revoir `ROLE_OBLIGATIONS` |
+| T18 | Les 7 doublons de rôle nouveaux s'affichent avec leur nom (« Basic light reconnaissance plane », « Basic heavy CAS », « Basic medium transport plane »…) et leur icône de carte | 3 → final | déclarer autrement (`NEW_DUPLICATES`) |
+| T19 | Intercepteur : poids fictif de 4 rendu en agilité, mission d'interception refusée si la poussée ne dépasse pas le poids d'au moins 4 | 3 → final | changer la valeur (Q12) |
+| T20 | Limites par taille et par palier : 2 « mitrailleuses + canons » sur petite cellule aux paliers 0 et 1, 3 ensuite ; 2 blindages (M)/(L) | 3 → final | — |
+| T21 | Cellule embarquée : mêmes agilité, poids et coût que la petite cellule terrestre ; la crosse d'appontage porte la pénalité (Q11) | 3 → final | — |
+| T22 | Coût en expérience : modules de base gratuits, les autres selon les règles `XP_*` | 3 → final | — |
+| T23 | Onglet Aviation : 16 arbres, années de 1922 à 1950 alignées, bandes, titre « Airframe and equipment », icônes provisoires, rien ne se chevauche | 4 → final | corriger `TECH_COLUMNS` / `TECH_ROWS` |
+| T24 | Projets spéciaux : réacteur centrifuge, réacteur axial, intercepteur-fusée débloquent leurs modules ; les techs de suite apparaissent après le projet (avec T9) | 4 → final | — |
+| T25 | Textes : noms et descriptions anglais partout, aucun identifiant brut ; cellules des doublons nommées ; titre et descriptions des curseurs | 5 → final | corriger `traductions_en.py` |
