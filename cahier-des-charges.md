@@ -88,8 +88,8 @@ Source : `docs/04-arbre-technologique.md`, `data/techs.json`.
 
 ## 8. IA et designs de départ
 
-- `common/ai_equipment/` : les gabarits IA doivent être réécrits pour les nouveaux slots et modules (sinon l'IA ne produit que des designs invalides), en choisissant une configuration de motorisation cohérente avec le moteur. ❓ Ambition (tous les rôles ou les principaux) à fixer avec Florian.
-- `common/history/countries/` : les designs de départ (`create_equipment_variant`) citent des slots et des modules vanilla. ❓ À décider : réécrire les designs des grandes puissances, ou les retirer et laisser les pays partir sans design. Les 364 fichiers ne peuvent pas être écrasés un par un sans perdre le reste de leur contenu : à étudier dans HOI4-ref avant de proposer.
+- `common/ai_equipment/` : les gabarits IA doivent être réécrits pour les nouveaux slots et modules (sinon l'IA ne produit que des designs invalides), en choisissant une configuration de motorisation cohérente avec le moteur. ✅ (22/10) les rôles principaux.
+- `common/history/countries/` : les designs de départ (`create_equipment_variant`) citent des slots et des modules vanilla. ✅ (22/10) les designs des 7 grandes puissances sont réécrits. Les 364 fichiers ne peuvent pas être écrasés un par un sans perdre le reste de leur contenu : à étudier dans HOI4-ref avant de proposer.
 
 ## 9. Fichiers manquants dans HOI4-ref (à demander à Florian au moment voulu)
 
