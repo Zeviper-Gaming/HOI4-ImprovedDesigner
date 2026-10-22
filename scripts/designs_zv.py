@@ -34,19 +34,26 @@ def available(mid, techs):
     return techs is None or (t is not None and t in techs)
 
 
-def build(eq_type, recipe, techs=None):
+def build(eq_type, recipe, techs=None, unresearched=None):
     """Design concret {slot: module} ; ValueError si un slot ne trouve aucun module valide.
-    Les slots sont remplis dans l'ordre de la recette : chaque choix est contrôlé avec les précédents."""
+    Les slots sont remplis dans l'ordre de la recette : chaque choix est contrôlé avec les précédents.
+    Si `unresearched` est une liste, un slot sans module débloqué prend quand même le meilleur module
+    valide, et le slot est noté dans la liste (au lieu de l'erreur)."""
     design = {}
     for slot, item in recipe.items():
-        for mid in members(item):
-            if not available(mid, techs):
-                continue
-            trial = dict(design, **{slot: mid})
-            errs = [e for e in RULES.check(eq_type, trial) if not e.startswith("slot obligatoire")
-                    and "count > 0" not in e]
-            if not errs:
-                design[slot] = mid
+        for pass_techs in ([techs, None] if unresearched is not None else [techs]):
+            for mid in members(item):
+                if not available(mid, pass_techs):
+                    continue
+                trial = dict(design, **{slot: mid})
+                errs = [e for e in RULES.check(eq_type, trial) if not e.startswith("slot obligatoire")
+                        and "count > 0" not in e]
+                if not errs:
+                    design[slot] = mid
+                    if pass_techs is None and techs is not None:
+                        unresearched.append(mid)
+                    break
+            if slot in design:
                 break
         else:
             raise ValueError(f"{eq_type} : aucun module valide pour {slot} = {item}")
