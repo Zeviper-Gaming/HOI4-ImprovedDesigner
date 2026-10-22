@@ -103,6 +103,20 @@ CURSEURS = {
 }
 CURSEUR_MAX, CURSEUR_USINE = 10, 5
 
+# Coût en expérience pour poser un module (xp_cost) : décision du 22/10/2026, « comme le vanilla,
+# modules de référence gratuits ». Vanilla (00_plane_modules.txt) : moteurs sans xp_cost, donc
+# EQUIPMENT_MODULE_ADD_XP_COST = 5 (00_defines.lua l. 668) ; armes simples 1, doubles et plus 2 ;
+# bombes, torpilles, roquettes, canons antichars, caméra, mines 2 ; missile et charge kamikaze 5 ;
+# reste 1. Le moteur vanilla regroupe type et nombre : 5 sur le moteur, 0 sur la configuration.
+XP_REFERENCE = 0
+XP_BY_CATEGORY = {"Moteur": 5, "Motorisation": 0, "Armes guidées": 5,
+                  "Canon AT": 2, "Canon AT de nez": 2, "Roquettes": 2, "Attaches": 2, "En soute": 2,
+                  "Armes navales": 2, "Reconnaissance": 2, "Armes spéciales": 2}
+XP_BY_MODULE = {"fixed_explosive_charge": 5}
+XP_GUNS = {"Mitrailleuses": r"_[34]x$", "Mitrailleuses de nez": r"_[34]x$",   # x1, x2 = 1 ; x3, x4 = 2
+           "Canons": r"_2x$", "Canons de nez": r"_2x$"}                        # x1 = 1 ; x2 = 2
+XP_DEFAULT = 1
+
 # Catégorie des 13 modules fantômes : aucun slot ne l'accepte (décision D-14).
 PHANTOM_CATEGORY = "zv_cat_phantom"
 

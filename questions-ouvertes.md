@@ -38,15 +38,16 @@ Légende : ❓ à décider · 💡 proposition · 🧪 à tester en jeu · ⚠ p
 | T1 | ✅ (22/10) 32 positions affichées : 20 fixes (le jeu n'en lit pas plus) + 12 libres | 1 | — |
 | T2 | ✅ (22/10) Aucun décalage : chaque cellule remplit ses cases, les positions qu'elle n'a pas s'affichent avec un cadenas | 1 | — |
 | T3 | ✅ (22/10) Slot obligatoire vide → design refusé ; slot sans module débloqué → visible | 1 | — |
-| T4 | ✅ (22/10, kit) moteur −100 % + configuration : poussée 10 (nez simple) et 15,5 (bimoteur), consommation ×1 et ×2, identiques au calcul ; 🧪 reste : réacteurs, fusées, accessoires « par moteur » (contrôle n° 2) | 2 | ⚠ revoir l'astuce des moteurs avec Florian |
-| T5 | Configuration choisie avant un moteur d'une autre classe | 2 | info-bulle ou ordre de choix imposé |
+| T4 | ✅ (22/10) moteur −100 % + configuration : kit (poussée 10 et 15,5), réacteur centrifuge I en bimoteur B (27,9) et compresseur « par moteur » sur bimoteur (16,3) identiques au calcul ; hélice bien refusée avec un réacteur ; 🧪 fusées au test final | 2 | ⚠ revoir l'astuce des moteurs avec Florian |
+| T5 | Configuration choisie avant un moteur d'une autre classe (🧪 reporté au test final, 22/10) | 2 | info-bulle ou ordre de choix imposé |
 | T6 | Slot obligatoire dont la catégorie est interdite (réacteur/Hélice, aile volante/Empennage, hydravion/Train) | 2-3 | modules « sans hélice », « sans empennage », « coque » |
 | T7 | `forbid_module_categories` : slots désactivés mais visibles | 3 | — |
-| T8 | Curseurs de puissance et de fiabilité (`upgrades`) | 2 | 8 modules de réglage |
+| T8 | ✅ (22/10) Curseurs de puissance et de fiabilité : affichés, crans 0 / 5 / 10 identiques au calcul, aucun coût en expérience ; ⚠ un nouveau design démarre au cran 0 (bridé) | 2 | 8 modules de réglage |
 | T9 | Tech à deux prérequis ; `allow = { has_tech }` ; suites de projets spéciaux | 4 | — |
 | T10 | `engines_1` à `4` et `aircraft_construction` déplacés de dossier sans casser MIO ni historique | 4 | les laisser dans `bba_air_techs.txt` |
 | T11 | Génération automatique des doublons de rôle (CAS, naval…) pour les archétypes modifiés | 1 | déclarer les doublons à la main |
 | T12 | Type `air_transport` sur un design du designer | 3 | — |
-| T13 | Modèle de calcul des stats (multiplicateurs additionnés, moyennes, bonus d'agilité) sur 2 ou 3 designs historiques | 7 | recalibrer avec `calibrate_module.py` |
+| T13 | Modèle de calcul : ✅ (22/10) multiplicateurs additionnés, bonus d'agilité après les multiplicateurs ; 🧪 reste les moyennes (ciblage naval) | 7 | recalibrer avec `calibrate_module.py` |
 | T14 | ✅ (22/10) Boutons du plan déplacés dans la ligne 5 (Q18) : plus rien ne recouvre les slots ; 🧪 info-bulles à revoir au test final | 1 | décaler la grille |
-| T15 | Limite de taille : fuselage (L) refusé sur la petite cellule (`module_count_limit count < 1`) | 1 → final | catégories par taille |
+| T15 | Limite de taille : fuselage (L) refusé sur la petite cellule (`module_count_limit count < 1`) ; le message du jeu s'écrit « ne peut pas avoir plus de 0 » | 1 → final | catégories par taille |
+| T16 | Limite partagée de suralimentation : deux compresseurs refusés | 2 → final | — |

@@ -385,13 +385,25 @@ def effects(m):
     return perm, by_mission, resources
 
 
+def xp_cost(m):
+    """Coût en expérience du module (règle du vanilla, références gratuites : gen_mod_table)."""
+    if m.get("reference"):
+        return T.XP_REFERENCE
+    if m["id"] in T.XP_BY_MODULE:
+        return T.XP_BY_MODULE[m["id"]]
+    if m["categorie"] in T.XP_GUNS:
+        return 2 if re.search(T.XP_GUNS[m["categorie"]], m["id"]) else 1
+    return T.XP_BY_CATEGORY.get(m["categorie"], T.XP_DEFAULT)
+
+
 def module_text(m, abbr):
     t = "\t\t"
     perm, by_mission, resources = effects(m)
     cat = CAT_ID[m["categorie_jeu"]]
     sfx = "sfx_ui_sd_module_engine" if m["categorie"] in ("Moteur", "Motorisation") else "sfx_ui_sd_module_turret"
     L = [f"\t{m['id']} = {{\t# {m['nom']} (05, ligne {m['ligne_05']})",
-         f'{t}abbreviation = "{abbr}"', f"{t}category = {cat}", f"{t}sfx = {sfx}"]
+         f'{t}abbreviation = "{abbr}"', f"{t}category = {cat}", f"{t}sfx = {sfx}",
+         f"{t}xp_cost = {xp_cost(m)}"]
     deb = m.get("regles", {}).get("debloque", [])
     types = [re.search(r"type `(\w+)`", d).group(1) for d in deb if d.startswith("type ")]
     if types:
@@ -508,8 +520,9 @@ def q(s):
     return s.replace('"', "”")
 
 
-def gen_loc():
-    L = ["l_french:"]
+def gen_loc(lang="french"):
+    # Anglais provisoire (le jeu de Florian est en anglais) : mêmes textes, traduits en phase 5.
+    L = [f"l_{lang}:"]
     L.append(f' {T.TEST_TECH}:0 "ZV : kit de test (temporaire)"')
     L.append(f' {T.TEST_TECH}_desc:0 "Débloque les modules déjà codés, pour les contrôles rapides."')
     for uid, u in T.CURSEURS.items():
@@ -544,6 +557,7 @@ def main():
         write("common/units/equipment/modules/00_plane_modules.txt", gen_modules())
         write(f"common/technologies/{T.TEST_TECH}.txt", gen_test_tech())
         write("localisation/french/zv_designer_l_french.yml", gen_loc(), bom=True)
+        write("localisation/english/zv_designer_l_english.yml", gen_loc("english"), bom=True)
         write("interface/zv_plane_modules_icons.gfx", gen_icons(ref))
         write("common/units/equipment/upgrades/zv_plane_upgrades.txt", gen_upgrades())
     except GenError as e:

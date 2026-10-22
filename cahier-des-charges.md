@@ -54,6 +54,7 @@ Source : `docs/05` (valeurs), `docs/04-inventaire` (liste et catégories), `data
 - **Interdictions, obligations, limites** : tout est dans `docs/10` (tableaux par fuselage, aile, moteur, configuration, rôle, module, et limites `module_count_limit` par taille). Règles abandonnées : 10 §10.
 - **Armes de nez** ✅ (21/10) : 3 catégories à part (Mitrailleuses de nez, Canons de nez, Canon AT de nez), versions x1 et x2 seulement, mêmes stats que les versions d'aile ; le cockpit vitré de bombardier les interdit.
 - **Chariot largable** ✅ : catégorie Train d'atterrissage.
+- **Coût en expérience** (`xp_cost`) ✅ (22/10) : comme le vanilla, modules de référence gratuits. Moteur 5 (vanilla : pas de `xp_cost`, donc 5 par défaut, `00_defines.lua` l. 668), configuration 0 (le moteur vanilla regroupe type et nombre), armes simples 1, armes doubles et plus, bombes, torpilles, roquettes, canons antichars, caméra et armes spéciales 2, armes guidées et charge kamikaze 5, le reste 1.
 - **Réglages de puissance et de fiabilité** ✅ (22/10) : deux **curseurs 0 → 10**, cran 5 = réglage d'usine (mécanisme `upgrades` des cellules, comme le designer de chars ; les fichiers `upgrades/` et `tank_designer_view.gui` sont dans HOI4-ref). Valeurs par cran : 05, section « Réglages ». 🧪 Contrôle n° 2 ; **repli** si impossible : les 8 modules du 05.
 
 ## 5. Technologies et projets spéciaux
