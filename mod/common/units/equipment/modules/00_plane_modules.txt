@@ -2400,6 +2400,4870 @@ equipment_modules = {
 		}
 	}
 
+	zv_deicing_boots = {	# Bottes pneumatiques (05, ligne 221)
+		abbreviation = "z067"
+		category = zv_cat_degivrage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.04
+			build_cost_ic = 1
+			weight = 1
+		}
+		multiply_stats = {
+			maximum_speed = -0.01
+		}
+	}
+
+	zv_heated_leading_edges = {	# Bords d'attaque chauffés (05, ligne 222)
+		abbreviation = "z068"
+		category = zv_cat_degivrage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.06
+			build_cost_ic = 2
+			weight = 1
+		}
+	}
+
+	zv_auto_extinguisher_s = {	# Extincteur automatique (S) (05, ligne 223)
+		abbreviation = "z069"
+		category = zv_cat_securite_incendie
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = 1
+			reliability = 0.03
+			build_cost_ic = 1
+			weight = 1
+		}
+	}
+
+	zv_auto_extinguisher_m = {	# Extincteur automatique (M) (05, ligne 224)
+		abbreviation = "z06a"
+		category = zv_cat_securite_incendie
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = 1
+			reliability = 0.03
+			build_cost_ic = 1.5
+			weight = 1.5
+		}
+	}
+
+	zv_auto_extinguisher_l = {	# Extincteur automatique (L) (05, ligne 225)
+		abbreviation = "z06b"
+		category = zv_cat_securite_incendie
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = 2
+			reliability = 0.03
+			build_cost_ic = 2
+			weight = 2
+		}
+	}
+
+	zv_rato = {	# Fusées de décollage RATO (05, ligne 226)
+		abbreviation = "z06c"
+		category = zv_cat_aide_au_decollage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 2
+			reliability = -0.03
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				thrust = 1
+			}
+		}
+	}
+
+	zv_takeoff_trolley = {	# Chariot largable (05, ligne 227)
+		abbreviation = "z06d"
+		category = zv_cat_train_d_atterrissage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = -1
+			build_cost_ic = -0.5
+			reliability = -0.08
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+		}
+	}
+
+	zv_fuselage_jug_s = {	# Fuselage « Jug » (S) (05, ligne 238)
+		abbreviation = "z071"
+		category = zv_cat_fuselage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = 1
+			build_cost_ic = 1
+			air_agility = -3
+		}
+		multiply_stats = {
+			air_defence = 0.06
+			air_range = 0.1
+		}
+	}
+
+	zv_fuselage_jug_m = {	# Fuselage « Jug » (M) (05, ligne 239)
+		abbreviation = "z072"
+		category = zv_cat_fuselage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = 2
+			build_cost_ic = 2
+			air_agility = -2
+		}
+		multiply_stats = {
+			air_defence = 0.06
+			air_range = 0.1
+		}
+	}
+
+	zv_fuselage_jug_l = {	# Fuselage « Jug » (L) (05, ligne 240)
+		abbreviation = "z073"
+		category = zv_cat_fuselage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = 3
+			build_cost_ic = 3
+			air_agility = -2
+		}
+		multiply_stats = {
+			air_defence = 0.06
+			air_range = 0.1
+		}
+	}
+
+	zv_fuselage_teardrop_s = {	# Fuselage goutte (S) (05, ligne 241)
+		abbreviation = "z074"
+		category = zv_cat_fuselage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = -1
+			build_cost_ic = 1
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+			air_range = -0.05
+		}
+	}
+
+	zv_fuselage_teardrop_m = {	# Fuselage goutte (M) (05, ligne 242)
+		abbreviation = "z075"
+		category = zv_cat_fuselage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = -2
+			build_cost_ic = 1.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+			air_range = -0.05
+		}
+	}
+
+	zv_fuselage_twin_boom_s = {	# Fuselage bipoutre (S) (05, ligne 243)
+		abbreviation = "z076"
+		category = zv_cat_fuselage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+			weight = 2
+			build_cost_ic = 1.5
+			air_agility = -2
+		}
+		multiply_stats = {
+			air_range = 0.1
+		}
+	}
+
+	zv_fuselage_twin_boom_m = {	# Fuselage bipoutre (M) (05, ligne 244)
+		abbreviation = "z077"
+		category = zv_cat_fuselage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+			weight = 3
+			build_cost_ic = 2
+			air_agility = -2
+		}
+		multiply_stats = {
+			air_range = 0.1
+		}
+	}
+
+	zv_fuselage_flying_wing_s = {	# Aile volante (S) (05, ligne 245)
+		abbreviation = "z078"
+		category = zv_cat_fuselage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = -1
+			air_defence = -2
+			build_cost_ic = 2
+			reliability = -0.08
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			air_range = 0.15
+			air_agility = -0.05
+		}
+		forbid_module_categories = {
+			zv_cat_empennage
+			zv_cat_aile_autres
+			zv_cat_aile_basse
+			zv_cat_aile_canard
+			zv_cat_aile_haute_parasol
+			zv_cat_aile_mediane
+		}
+	}
+
+	zv_fuselage_flying_wing_m = {	# Aile volante (M) (05, ligne 246)
+		abbreviation = "z079"
+		category = zv_cat_fuselage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = -2
+			air_defence = -3
+			build_cost_ic = 3
+			reliability = -0.08
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			air_range = 0.15
+			air_agility = -0.05
+		}
+		forbid_module_categories = {
+			zv_cat_empennage
+			zv_cat_aile_autres
+			zv_cat_aile_basse
+			zv_cat_aile_canard
+			zv_cat_aile_haute_parasol
+			zv_cat_aile_mediane
+		}
+	}
+
+	zv_fuselage_flying_wing_l = {	# Aile volante (L) (05, ligne 247)
+		abbreviation = "z07a"
+		category = zv_cat_fuselage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = -3
+			air_defence = -4
+			build_cost_ic = 4
+			reliability = -0.08
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			air_range = 0.15
+			air_agility = -0.05
+		}
+		forbid_module_categories = {
+			zv_cat_empennage
+			zv_cat_aile_autres
+			zv_cat_aile_basse
+			zv_cat_aile_canard
+			zv_cat_aile_haute_parasol
+			zv_cat_aile_mediane
+		}
+	}
+
+	zv_fuselage_flying_boat_m = {	# Hydravion à coque (M) (05, ligne 248)
+		abbreviation = "z07b"
+		category = zv_cat_fuselage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 8
+			sub_detection = 3
+			build_cost_ic = 4
+		}
+		multiply_stats = {
+			maximum_speed = -0.4
+		}
+		allow_mission_type = { naval_patrol }
+		forbid_module_categories = {
+			zv_cat_train_d_atterrissage
+		}
+	}
+
+	zv_fuselage_flying_boat_l = {	# Hydravion à coque (L) (05, ligne 249)
+		abbreviation = "z07c"
+		category = zv_cat_fuselage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 12
+			sub_detection = 5
+			build_cost_ic = 4
+		}
+		multiply_stats = {
+			maximum_speed = -0.4
+		}
+		allow_mission_type = { naval_patrol }
+		forbid_module_categories = {
+			zv_cat_train_d_atterrissage
+		}
+	}
+
+	zv_wooden_monocoque = {	# Bois monocoque (05, ligne 250)
+		abbreviation = "z07d"
+		category = zv_cat_materiaux
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = 1
+			air_defence = -2
+			reliability = -0.03
+		}
+		multiply_stats = {
+			build_cost_ic = -0.1
+			maximum_speed = 0.01
+		}
+		build_cost_resources = {
+			aluminium = -2
+		}
+	}
+
+	zv_tube_and_fabric = {	# Tubes et toile (05, ligne 251)
+		abbreviation = "z07e"
+		category = zv_cat_materiaux
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = -0.5
+			reliability = 0.03
+			air_defence = -2
+		}
+		multiply_stats = {
+			build_cost_ic = -0.12
+			maximum_speed = -0.05
+		}
+		build_cost_resources = {
+			aluminium = -1
+		}
+		forbid_module_categories = {
+			zv_cat_blindage
+		}
+	}
+
+	zv_tail_t = {	# Empennage en T (05, ligne 260)
+		abbreviation = "z080"
+		category = zv_cat_empennage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_agility = 1
+			weight = 1
+			build_cost_ic = 0.5
+			reliability = -0.02
+		}
+		multiply_stats = {
+			maximum_speed = -0.01
+		}
+	}
+
+	zv_tail_twin_boom = {	# Double poutre (05, ligne 261)
+		abbreviation = "z081"
+		category = zv_cat_empennage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+			air_agility = -1
+			weight = 2
+			build_cost_ic = 1.5
+		}
+	}
+
+	zv_tail_twin = {	# Double dérive (05, ligne 262)
+		abbreviation = "z082"
+		category = zv_cat_empennage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+			weight = 1
+			build_cost_ic = 1
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			multiply_stats = {
+				air_attack = 0.1
+			}
+		}
+	}
+
+	zv_tail_v = {	# Empennage en V (05, ligne 263)
+		abbreviation = "z083"
+		category = zv_cat_empennage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = -1
+			air_agility = -2
+			build_cost_ic = 0.5
+			reliability = -0.03
+		}
+		multiply_stats = {
+			maximum_speed = 0.01
+		}
+	}
+
+	zv_tail_cruciform = {	# Empennage cruciforme (05, ligne 264)
+		abbreviation = "z084"
+		category = zv_cat_empennage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_agility = 1.5
+			weight = 1
+			build_cost_ic = 1
+		}
+		multiply_stats = {
+			maximum_speed = -0.01
+		}
+	}
+
+	zv_armor_plate_s = {	# Blindage (S) (05, ligne 272)
+		abbreviation = "z085"
+		category = zv_cat_blindage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = 4
+			weight = 2
+			build_cost_ic = 1
+		}
+		multiply_stats = {
+			air_range = -0.1
+		}
+	}
+
+	zv_armor_plate_m = {	# Blindage (M) (05, ligne 273)
+		abbreviation = "z086"
+		category = zv_cat_blindage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = 6
+			weight = 6
+			build_cost_ic = 3
+		}
+		multiply_stats = {
+			air_range = -0.1
+		}
+	}
+
+	zv_armor_plate_l = {	# Blindage (L) (05, ligne 274)
+		abbreviation = "z087"
+		category = zv_cat_blindage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = 8
+			weight = 9
+			build_cost_ic = 5
+		}
+		multiply_stats = {
+			air_range = -0.1
+		}
+	}
+
+	zv_non_strategic_materials_s = {	# Matériaux non stratégiques (S) (05, ligne 275)
+		abbreviation = "z088"
+		category = zv_cat_materiaux
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = -6
+		}
+		multiply_stats = {
+			build_cost_ic = -0.075
+		}
+		build_cost_resources = {
+			aluminium = -2
+		}
+	}
+
+	zv_non_strategic_materials_m = {	# Matériaux non stratégiques (M) (05, ligne 276)
+		abbreviation = "z089"
+		category = zv_cat_materiaux
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = -8
+		}
+		multiply_stats = {
+			build_cost_ic = -0.075
+		}
+		build_cost_resources = {
+			aluminium = -2
+		}
+	}
+
+	zv_non_strategic_materials_l = {	# Matériaux non stratégiques (L) (05, ligne 277)
+		abbreviation = "z08a"
+		category = zv_cat_materiaux
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = -10
+		}
+		multiply_stats = {
+			build_cost_ic = -0.075
+		}
+		build_cost_resources = {
+			aluminium = -3
+		}
+	}
+
+	zv_lightweight_construction_s = {	# Construction allégée (S) (05, ligne 278)
+		abbreviation = "z08b"
+		category = zv_cat_construction
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = -1
+			air_agility = 2
+			air_defence = -4
+			reliability = -0.03
+			build_cost_ic = 0.5
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				weight = 2
+			}
+		}
+	}
+
+	zv_lightweight_construction_m = {	# Construction allégée (M) (05, ligne 279)
+		abbreviation = "z08c"
+		category = zv_cat_construction
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = -2
+			air_agility = 1.5
+			air_defence = -5
+			reliability = -0.03
+			build_cost_ic = 0.5
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				weight = 3
+			}
+		}
+	}
+
+	zv_reinforced_construction_s = {	# Construction renforcée (S) (05, ligne 280)
+		abbreviation = "z08d"
+		category = zv_cat_construction
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = 2
+			reliability = 0.03
+			weight = 2
+			air_agility = -2
+			build_cost_ic = 1
+		}
+	}
+
+	zv_reinforced_construction_m = {	# Construction renforcée (M) (05, ligne 281)
+		abbreviation = "z08e"
+		category = zv_cat_construction
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = 3
+			reliability = 0.03
+			weight = 3
+			air_agility = -2
+			build_cost_ic = 1.5
+		}
+	}
+
+	zv_reinforced_construction_l = {	# Construction renforcée (L) (05, ligne 282)
+		abbreviation = "z08f"
+		category = zv_cat_construction
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = 4
+			reliability = 0.03
+			weight = 4
+			air_agility = -3
+			build_cost_ic = 2
+		}
+	}
+
+	zv_combat_flaps_s = {	# Volets de combat (S) (05, ligne 290)
+		abbreviation = "z090"
+		category = zv_cat_volets
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1
+			reliability = -0.01
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			add_stats = {
+				air_agility = 2
+			}
+		}
+	}
+
+	zv_combat_flaps_m = {	# Volets de combat (M) (05, ligne 291)
+		abbreviation = "z091"
+		category = zv_cat_volets
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1
+			reliability = -0.01
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			add_stats = {
+				air_agility = 1.5
+			}
+		}
+	}
+
+	zv_fowler_flaps = {	# Volets Fowler (05, ligne 292)
+		abbreviation = "z092"
+		category = zv_cat_volets
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1.5
+			weight = 1
+			reliability = -0.01
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				weight = -1
+			}
+		}
+	}
+
+	zv_leading_edge_slats = {	# Becs de bord d'attaque (05, ligne 293)
+		abbreviation = "z093"
+		category = zv_cat_becs_de_bord_d_attaque
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_agility = 1
+			reliability = 0.02
+			build_cost_ic = 0.5
+		}
+		multiply_stats = {
+			maximum_speed = -0.01
+		}
+	}
+
+	zv_dive_brakes_s = {	# Aérofreins (S) (05, ligne 294)
+		abbreviation = "z094"
+		category = zv_cat_aerofreins
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 2
+			weight = 2
+		}
+		mission_type_stats = {
+			limit = { cas naval_bomber port_strike }
+			add_stats = {
+				naval_strike_targetting = 6
+				air_defence = 4
+			}
+		}
+	}
+
+	zv_dive_brakes_m = {	# Aérofreins (M) (05, ligne 295)
+		abbreviation = "z095"
+		category = zv_cat_aerofreins
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 3
+			weight = 3
+		}
+		mission_type_stats = {
+			limit = { cas naval_bomber port_strike }
+			add_stats = {
+				naval_strike_targetting = 6
+				air_defence = 4
+			}
+		}
+	}
+
+	zv_aerodynamic_pylons_s = {	# Pylônes aérodynamiques (S) (05, ligne 296)
+		abbreviation = "z096"
+		category = zv_cat_pylones
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics naval_bomber port_strike }
+			add_stats = {
+				air_agility = 5
+			}
+			multiply_stats = {
+				maximum_speed = 0.03
+			}
+		}
+	}
+
+	zv_aerodynamic_pylons_m = {	# Pylônes aérodynamiques (M) (05, ligne 297)
+		abbreviation = "z097"
+		category = zv_cat_pylones
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1.5
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics naval_bomber port_strike }
+			add_stats = {
+				air_agility = 4
+			}
+			multiply_stats = {
+				maximum_speed = 0.03
+			}
+		}
+	}
+
+	zv_gear_fixed_tricycle = {	# Train fixe tricycle (05, ligne 306)
+		abbreviation = "z099"
+		category = zv_cat_train_d_atterrissage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.04
+			weight = 1
+			build_cost_ic = 1
+		}
+	}
+
+	zv_gear_retractable_taildragger = {	# Train rétractable à roulette de queue (05, ligne 307)
+		abbreviation = "z09a"
+		category = zv_cat_train_d_atterrissage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = 1
+			build_cost_ic = 0.5
+			reliability = -0.02
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+		}
+	}
+
+	zv_gear_retractable_tricycle = {	# Train rétractable tricycle (05, ligne 308)
+		abbreviation = "z09b"
+		category = zv_cat_train_d_atterrissage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+			weight = 2
+			build_cost_ic = 1.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+		}
+	}
+
+	zv_floats = {	# Flotteurs (05, ligne 309)
+		abbreviation = "z09c"
+		category = zv_cat_train_d_atterrissage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 5
+			sub_detection = 3
+			build_cost_ic = 1
+			weight = 1
+			air_agility = -5
+		}
+		multiply_stats = {
+			maximum_speed = -0.3
+		}
+		allow_mission_type = { naval_patrol }
+	}
+
+	zv_skis = {	# Skis (05, ligne 310)
+		abbreviation = "z09d"
+		category = zv_cat_train_d_atterrissage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.04
+			build_cost_ic = 0.5
+		}
+		multiply_stats = {
+			maximum_speed = -0.05
+		}
+	}
+
+	zv_carrier_equipment = {	# Crosse d'appontage et ailes repliables (05, ligne 311)
+		abbreviation = "z09e"
+		category = zv_cat_equipement_naval
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+			air_agility = -5
+			weight = 1
+			build_cost_ic = 3
+		}
+	}
+
+	zv_wing_basse_rectangulaire = {	# Basse rectangulaire (05, ligne 354)
+		abbreviation = "z09f"
+		category = zv_cat_aile_basse
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+		}
+		multiply_stats = {
+			build_cost_ic = -0.03
+			maximum_speed = -0.02
+		}
+	}
+
+	zv_wing_basse_effilee = {	# Basse effilée (05, ligne 356)
+		abbreviation = "z0a1"
+		category = zv_cat_aile_basse
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		multiply_stats = {
+			maximum_speed = 0.01
+			air_agility = -0.02
+			build_cost_ic = 0.01
+		}
+	}
+
+	zv_wing_basse_elliptique = {	# Basse elliptique (05, ligne 357)
+		abbreviation = "z0a2"
+		category = zv_cat_aile_basse
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		multiply_stats = {
+			maximum_speed = 0.01
+			air_agility = 0.05
+			build_cost_ic = 0.06
+		}
+	}
+
+	zv_wing_basse_mixte = {	# Basse mixte (05, ligne 358)
+		abbreviation = "z0a3"
+		category = zv_cat_aile_basse
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		multiply_stats = {
+			air_agility = 0.02
+			air_range = 0.03
+			build_cost_ic = 0.02
+		}
+	}
+
+	zv_wing_basse_laminaire = {	# Basse laminaire (05, ligne 359)
+		abbreviation = "z0a4"
+		category = zv_cat_aile_basse
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.02
+		}
+		multiply_stats = {
+			maximum_speed = 0.04
+			air_range = 0.05
+			air_agility = -0.05
+			build_cost_ic = 0.05
+		}
+	}
+
+	zv_wing_basse_fleche_legere = {	# Basse flèche légère (05, ligne 360)
+		abbreviation = "z0a5"
+		category = zv_cat_aile_basse
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.03
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+			air_agility = -0.05
+			build_cost_ic = 0.05
+		}
+	}
+
+	zv_wing_basse_fleche_prononcee = {	# Basse flèche prononcée (05, ligne 361)
+		abbreviation = "z0a6"
+		category = zv_cat_aile_basse
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.05
+		}
+		multiply_stats = {
+			maximum_speed = 0.06
+			air_agility = -0.1
+			build_cost_ic = 0.08
+		}
+	}
+
+	zv_wing_basse_fleche_inversee = {	# Basse flèche inversée (05, ligne 362)
+		abbreviation = "z0a7"
+		category = zv_cat_aile_basse
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.12
+		}
+		multiply_stats = {
+			maximum_speed = 0.04
+			air_agility = 0.03
+			build_cost_ic = 0.12
+		}
+	}
+
+	zv_wing_basse_delta = {	# Basse delta (05, ligne 363)
+		abbreviation = "z0a8"
+		category = zv_cat_aile_basse
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.05
+			weight = 1
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			air_range = 0.1
+			air_agility = -0.08
+			build_cost_ic = 0.08
+		}
+	}
+
+	zv_wing_basse_mouette_inversee = {	# Basse mouette inversée (05, ligne 364)
+		abbreviation = "z0a9"
+		category = zv_cat_aile_basse
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+			weight = 0.5
+		}
+		multiply_stats = {
+			maximum_speed = -0.01
+			build_cost_ic = 0.04
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			multiply_stats = {
+				air_ground_attack = 0.03
+			}
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike }
+			add_stats = {
+				naval_strike_targetting = 2
+			}
+		}
+	}
+
+	zv_wing_mediane_rectangulaire = {	# Médiane rectangulaire (05, ligne 365)
+		abbreviation = "z0aa"
+		category = zv_cat_aile_mediane
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+		}
+		multiply_stats = {
+			air_agility = 0.02
+			build_cost_ic = -0.02
+			maximum_speed = -0.02
+		}
+	}
+
+	zv_wing_mediane_trapezoidale = {	# Médiane trapézoïdale (05, ligne 366)
+		abbreviation = "z0ab"
+		category = zv_cat_aile_mediane
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		multiply_stats = {
+			air_agility = 0.02
+			build_cost_ic = 0.01
+		}
+	}
+
+	zv_wing_mediane_effilee = {	# Médiane effilée (05, ligne 367)
+		abbreviation = "z0ac"
+		category = zv_cat_aile_mediane
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		multiply_stats = {
+			maximum_speed = 0.01
+			build_cost_ic = 0.02
+		}
+	}
+
+	zv_wing_mediane_elliptique = {	# Médiane elliptique (05, ligne 368)
+		abbreviation = "z0ad"
+		category = zv_cat_aile_mediane
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		multiply_stats = {
+			air_agility = 0.07
+			maximum_speed = 0.01
+			build_cost_ic = 0.07
+		}
+	}
+
+	zv_wing_mediane_mixte = {	# Médiane mixte (05, ligne 369)
+		abbreviation = "z0ae"
+		category = zv_cat_aile_mediane
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		multiply_stats = {
+			air_agility = 0.04
+			air_range = 0.03
+			build_cost_ic = 0.03
+		}
+	}
+
+	zv_wing_mediane_laminaire = {	# Médiane laminaire (05, ligne 370)
+		abbreviation = "z0af"
+		category = zv_cat_aile_mediane
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.02
+		}
+		multiply_stats = {
+			maximum_speed = 0.04
+			air_range = 0.05
+			air_agility = -0.03
+			build_cost_ic = 0.06
+		}
+	}
+
+	zv_wing_mediane_fleche_legere = {	# Médiane flèche légère (05, ligne 371)
+		abbreviation = "z0b0"
+		category = zv_cat_aile_mediane
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.03
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+			air_agility = -0.03
+			build_cost_ic = 0.06
+		}
+	}
+
+	zv_wing_mediane_fleche_prononcee = {	# Médiane flèche prononcée (05, ligne 372)
+		abbreviation = "z0b1"
+		category = zv_cat_aile_mediane
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.05
+		}
+		multiply_stats = {
+			maximum_speed = 0.06
+			air_agility = -0.08
+			build_cost_ic = 0.09
+		}
+	}
+
+	zv_wing_mediane_fleche_inversee = {	# Médiane flèche inversée (05, ligne 373)
+		abbreviation = "z0b2"
+		category = zv_cat_aile_mediane
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.12
+		}
+		multiply_stats = {
+			air_agility = 0.05
+			maximum_speed = 0.04
+			build_cost_ic = 0.13
+		}
+	}
+
+	zv_wing_mediane_delta = {	# Médiane delta (05, ligne 374)
+		abbreviation = "z0b3"
+		category = zv_cat_aile_mediane
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.05
+			weight = 1
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			air_range = 0.1
+			air_agility = -0.06
+			build_cost_ic = 0.09
+		}
+	}
+
+	zv_wing_mediane_mouette_inversee = {	# Médiane mouette inversée (05, ligne 375)
+		abbreviation = "z0b4"
+		category = zv_cat_aile_mediane
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+			weight = 0.5
+		}
+		multiply_stats = {
+			air_agility = 0.02
+			build_cost_ic = 0.05
+			maximum_speed = -0.01
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			multiply_stats = {
+				air_ground_attack = 0.03
+			}
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike }
+			add_stats = {
+				naval_strike_targetting = 2
+			}
+		}
+	}
+
+	zv_wing_haute_rectangulaire = {	# Haute rectangulaire (05, ligne 376)
+		abbreviation = "z0b5"
+		category = zv_cat_aile_haute_parasol
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 3
+			reliability = 0.05
+		}
+		multiply_stats = {
+			air_range = 0.05
+			build_cost_ic = -0.03
+			maximum_speed = -0.04
+			air_agility = -0.02
+		}
+	}
+
+	zv_wing_haute_trapezoidale = {	# Haute trapézoïdale (05, ligne 377)
+		abbreviation = "z0b6"
+		category = zv_cat_aile_haute_parasol
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 3
+			reliability = 0.03
+		}
+		multiply_stats = {
+			air_range = 0.05
+			maximum_speed = -0.02
+			air_agility = -0.02
+		}
+	}
+
+	zv_wing_haute_effilee = {	# Haute effilée (05, ligne 378)
+		abbreviation = "z0b7"
+		category = zv_cat_aile_haute_parasol
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 3
+			reliability = 0.03
+		}
+		multiply_stats = {
+			air_range = 0.05
+			maximum_speed = -0.01
+			air_agility = -0.04
+			build_cost_ic = 0.01
+		}
+	}
+
+	zv_wing_haute_elliptique = {	# Haute elliptique (05, ligne 379)
+		abbreviation = "z0b8"
+		category = zv_cat_aile_haute_parasol
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 3
+			reliability = 0.03
+		}
+		multiply_stats = {
+			air_agility = 0.03
+			air_range = 0.05
+			maximum_speed = -0.01
+			build_cost_ic = 0.06
+		}
+	}
+
+	zv_wing_haute_mixte = {	# Haute mixte (05, ligne 380)
+		abbreviation = "z0b9"
+		category = zv_cat_aile_haute_parasol
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 3
+			reliability = 0.03
+		}
+		multiply_stats = {
+			air_range = 0.08
+			maximum_speed = -0.02
+			build_cost_ic = 0.02
+		}
+	}
+
+	zv_wing_haute_laminaire = {	# Haute laminaire (05, ligne 381)
+		abbreviation = "z0ba"
+		category = zv_cat_aile_haute_parasol
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 3
+			reliability = 0.01
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+			air_range = 0.1
+			air_agility = -0.07
+			build_cost_ic = 0.05
+		}
+	}
+
+	zv_wing_haute_fleche_legere = {	# Haute flèche légère (05, ligne 382)
+		abbreviation = "z0bb"
+		category = zv_cat_aile_haute_parasol
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 3
+		}
+		multiply_stats = {
+			maximum_speed = 0.01
+			air_range = 0.05
+			air_agility = -0.07
+			build_cost_ic = 0.05
+		}
+	}
+
+	zv_wing_haute_fleche_prononcee = {	# Haute flèche prononcée (05, ligne 383)
+		abbreviation = "z0bc"
+		category = zv_cat_aile_haute_parasol
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 3
+			reliability = -0.02
+		}
+		multiply_stats = {
+			maximum_speed = 0.04
+			air_range = 0.05
+			air_agility = -0.12
+			build_cost_ic = 0.08
+		}
+	}
+
+	zv_wing_haute_fleche_inversee = {	# Haute flèche inversée (05, ligne 384)
+		abbreviation = "z0bd"
+		category = zv_cat_aile_haute_parasol
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 3
+			reliability = -0.09
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+			air_agility = 0.01
+			air_range = 0.05
+			build_cost_ic = 0.12
+		}
+	}
+
+	zv_wing_haute_mouette = {	# Haute mouette (05, ligne 385)
+		abbreviation = "z0be"
+		category = zv_cat_aile_haute_parasol
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 5
+			reliability = 0.03
+		}
+		multiply_stats = {
+			air_range = 0.05
+			maximum_speed = -0.02
+			build_cost_ic = 0.03
+		}
+	}
+
+	zv_wing_parasol_rectangulaire = {	# Parasol rectangulaire (05, ligne 386)
+		abbreviation = "z0bf"
+		category = zv_cat_aile_haute_parasol
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 3
+			reliability = 0.05
+		}
+		multiply_stats = {
+			air_agility = 0.02
+			build_cost_ic = -0.05
+			maximum_speed = -0.07
+		}
+	}
+
+	zv_wing_parasol_trapezoidale = {	# Parasol trapézoïdale (05, ligne 387)
+		abbreviation = "z0c0"
+		category = zv_cat_aile_haute_parasol
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 3
+			reliability = 0.03
+		}
+		multiply_stats = {
+			air_agility = 0.02
+			build_cost_ic = -0.02
+			maximum_speed = -0.05
+		}
+	}
+
+	zv_wing_parasol_effilee = {	# Parasol effilée (05, ligne 388)
+		abbreviation = "z0c1"
+		category = zv_cat_aile_haute_parasol
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 3
+			reliability = 0.03
+		}
+		multiply_stats = {
+			build_cost_ic = -0.01
+			maximum_speed = -0.04
+		}
+	}
+
+	zv_wing_parasol_elliptique = {	# Parasol elliptique (05, ligne 389)
+		abbreviation = "z0c2"
+		category = zv_cat_aile_haute_parasol
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 3
+			reliability = 0.03
+		}
+		multiply_stats = {
+			air_agility = 0.07
+			maximum_speed = -0.04
+			build_cost_ic = 0.04
+		}
+	}
+
+	zv_wing_parasol_mixte = {	# Parasol mixte (05, ligne 390)
+		abbreviation = "z0c3"
+		category = zv_cat_aile_haute_parasol
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 3
+			reliability = 0.03
+		}
+		multiply_stats = {
+			air_agility = 0.04
+			air_range = 0.03
+			maximum_speed = -0.05
+		}
+	}
+
+	zv_wing_parasol_mouette = {	# Parasol mouette (05, ligne 391)
+		abbreviation = "z0c4"
+		category = zv_cat_aile_haute_parasol
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			surface_detection = 5
+			reliability = 0.03
+		}
+		multiply_stats = {
+			air_agility = 0.04
+			maximum_speed = -0.05
+			build_cost_ic = 0.01
+		}
+	}
+
+	zv_wing_biplan_rectangulaire = {	# Biplan rectangulaire (05, ligne 392)
+		abbreviation = "z0c5"
+		category = zv_cat_aile_autres
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.06
+		}
+		multiply_stats = {
+			air_agility = 0.08
+			build_cost_ic = -0.06
+			maximum_speed = -0.14
+		}
+	}
+
+	zv_wing_biplan_trapezoidale = {	# Biplan trapézoïdale (05, ligne 393)
+		abbreviation = "z0c6"
+		category = zv_cat_aile_autres
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.04
+		}
+		multiply_stats = {
+			air_agility = 0.08
+			build_cost_ic = -0.03
+			maximum_speed = -0.12
+		}
+	}
+
+	zv_wing_biplan_mixte = {	# Biplan mixte (05, ligne 394)
+		abbreviation = "z0c7"
+		category = zv_cat_aile_autres
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.04
+		}
+		multiply_stats = {
+			air_agility = 0.1
+			build_cost_ic = -0.01
+			air_range = 0.03
+			maximum_speed = -0.12
+		}
+	}
+
+	zv_wing_biplan_mouette = {	# Biplan mouette (05, ligne 395)
+		abbreviation = "z0c8"
+		category = zv_cat_aile_autres
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.04
+			surface_detection = 2
+		}
+		multiply_stats = {
+			air_agility = 0.1
+			maximum_speed = -0.12
+		}
+	}
+
+	zv_wing_biplan_effilee = {	# Biplan effilée (05, ligne 396)
+		abbreviation = "z0c9"
+		category = zv_cat_aile_autres
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.04
+		}
+		multiply_stats = {
+			air_agility = 0.06
+			build_cost_ic = -0.02
+			maximum_speed = -0.11
+		}
+	}
+
+	zv_wing_biplan_elliptique = {	# Biplan elliptique (05, ligne 397)
+		abbreviation = "z0ca"
+		category = zv_cat_aile_autres
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.04
+		}
+		multiply_stats = {
+			air_agility = 0.13
+			maximum_speed = -0.11
+			build_cost_ic = 0.03
+		}
+	}
+
+	zv_wing_biplan_fleche_legere = {	# Biplan flèche légère (05, ligne 398)
+		abbreviation = "z0cb"
+		category = zv_cat_aile_autres
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.01
+		}
+		multiply_stats = {
+			air_agility = 0.03
+			maximum_speed = -0.09
+			build_cost_ic = 0.02
+		}
+	}
+
+	zv_wing_sesquiplan_forme_unique = {	# Sesquiplan (05, ligne 399)
+		abbreviation = "z0cc"
+		category = zv_cat_aile_autres
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.03
+		}
+		multiply_stats = {
+			air_agility = 0.07
+			build_cost_ic = -0.02
+			maximum_speed = -0.08
+		}
+	}
+
+	zv_wing_triplan_forme_unique = {	# Triplan (05, ligne 400)
+		abbreviation = "z0cd"
+		category = zv_cat_aile_autres
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = 1
+		}
+		multiply_stats = {
+			air_agility = 0.14
+			maximum_speed = -0.2
+			build_cost_ic = 0.02
+		}
+	}
+
+	zv_wing_sans_queue_laminaire = {	# Sans queue laminaire (05, ligne 401)
+		abbreviation = "z0ce"
+		category = zv_cat_aile_avancee
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = -1
+			reliability = -0.08
+		}
+		multiply_stats = {
+			maximum_speed = 0.08
+			air_range = 0.05
+			air_agility = -0.1
+			build_cost_ic = 0.05
+		}
+		forbid_module_categories = {
+			zv_cat_empennage
+		}
+	}
+
+	zv_wing_sans_queue_fleche_legere = {	# Sans queue flèche légère (05, ligne 402)
+		abbreviation = "z0cf"
+		category = zv_cat_aile_avancee
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = -1
+			reliability = -0.09
+		}
+		multiply_stats = {
+			maximum_speed = 0.07
+			air_agility = -0.1
+			build_cost_ic = 0.05
+		}
+		forbid_module_categories = {
+			zv_cat_empennage
+		}
+	}
+
+	zv_wing_sans_queue_fleche_prononcee = {	# Sans queue flèche prononcée (05, ligne 403)
+		abbreviation = "z0d0"
+		category = zv_cat_aile_avancee
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = -1
+			reliability = -0.11
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+			air_agility = -0.15
+			build_cost_ic = 0.08
+		}
+		forbid_module_categories = {
+			zv_cat_empennage
+		}
+	}
+
+	zv_wing_sans_queue_delta = {	# Sans queue delta (05, ligne 404)
+		abbreviation = "z0d1"
+		category = zv_cat_aile_avancee
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.11
+		}
+		multiply_stats = {
+			maximum_speed = 0.09
+			air_range = 0.1
+			air_agility = -0.13
+			build_cost_ic = 0.08
+		}
+		forbid_module_categories = {
+			zv_cat_empennage
+		}
+	}
+
+	zv_wing_sans_queue_discoide = {	# Sans queue discoïde (05, ligne 405)
+		abbreviation = "z0d2"
+		category = zv_cat_aile_avancee
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = -1
+			reliability = -0.18
+		}
+		multiply_stats = {
+			air_agility = 0.03
+			maximum_speed = -0.02
+			build_cost_ic = 0.12
+		}
+		forbid_module_categories = {
+			zv_cat_empennage
+		}
+	}
+
+	zv_wing_canard_rectangulaire = {	# Canard rectangulaire (05, ligne 406)
+		abbreviation = "z0d3"
+		category = zv_cat_aile_canard
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.03
+		}
+		multiply_stats = {
+			air_agility = 0.04
+			build_cost_ic = 0.01
+		}
+		forbid_module_categories = {
+			zv_cat_empennage
+		}
+	}
+
+	zv_wing_canard_trapezoidale = {	# Canard trapézoïdale (05, ligne 407)
+		abbreviation = "z0d4"
+		category = zv_cat_aile_canard
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.05
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+			air_agility = 0.04
+			build_cost_ic = 0.04
+		}
+		forbid_module_categories = {
+			zv_cat_empennage
+		}
+	}
+
+	zv_wing_canard_effilee = {	# Canard effilée (05, ligne 408)
+		abbreviation = "z0d5"
+		category = zv_cat_aile_canard
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.05
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+			air_agility = 0.02
+			build_cost_ic = 0.05
+		}
+		forbid_module_categories = {
+			zv_cat_empennage
+		}
+	}
+
+	zv_wing_canard_elliptique = {	# Canard elliptique (05, ligne 409)
+		abbreviation = "z0d6"
+		category = zv_cat_aile_canard
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.05
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+			air_agility = 0.09
+			build_cost_ic = 0.1
+		}
+		forbid_module_categories = {
+			zv_cat_empennage
+		}
+	}
+
+	zv_wing_canard_mixte = {	# Canard mixte (05, ligne 410)
+		abbreviation = "z0d7"
+		category = zv_cat_aile_canard
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.05
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+			air_agility = 0.06
+			air_range = 0.03
+			build_cost_ic = 0.06
+		}
+		forbid_module_categories = {
+			zv_cat_empennage
+		}
+	}
+
+	zv_wing_canard_laminaire = {	# Canard laminaire (05, ligne 411)
+		abbreviation = "z0d8"
+		category = zv_cat_aile_canard
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.07
+		}
+		multiply_stats = {
+			maximum_speed = 0.06
+			air_range = 0.05
+			air_agility = -0.01
+			build_cost_ic = 0.09
+		}
+		forbid_module_categories = {
+			zv_cat_empennage
+		}
+	}
+
+	zv_wing_canard_fleche_legere = {	# Canard flèche légère (05, ligne 412)
+		abbreviation = "z0d9"
+		category = zv_cat_aile_canard
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.08
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			air_agility = -0.01
+			build_cost_ic = 0.09
+		}
+		forbid_module_categories = {
+			zv_cat_empennage
+		}
+	}
+
+	zv_wing_canard_fleche_prononcee = {	# Canard flèche prononcée (05, ligne 413)
+		abbreviation = "z0da"
+		category = zv_cat_aile_canard
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.1
+		}
+		multiply_stats = {
+			maximum_speed = 0.08
+			air_agility = -0.06
+			build_cost_ic = 0.12
+		}
+		forbid_module_categories = {
+			zv_cat_empennage
+		}
+	}
+
+	zv_wing_canard_delta = {	# Canard delta (05, ligne 414)
+		abbreviation = "z0db"
+		category = zv_cat_aile_canard
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = -0.1
+			weight = 1
+		}
+		multiply_stats = {
+			maximum_speed = 0.07
+			air_range = 0.1
+			air_agility = -0.04
+			build_cost_ic = 0.12
+		}
+		forbid_module_categories = {
+			zv_cat_empennage
+		}
+	}
+
+	zv_cockpit_open = {	# Cockpit ouvert (05, ligne 423)
+		abbreviation = "z0dd"
+		category = zv_cat_cockpit
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = -0.5
+			air_defence = -1
+		}
+		multiply_stats = {
+			maximum_speed = -0.03
+		}
+	}
+
+	zv_cockpit_pressurized = {	# Cockpit pressurisé (05, ligne 424)
+		abbreviation = "z0de"
+		category = zv_cat_cockpit
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+			build_cost_ic = 2.5
+			weight = 1
+		}
+		mission_type_stats = {
+			limit = { interception air_superiority strategic_bomber }
+			add_stats = {
+				air_defence = 2
+			}
+			multiply_stats = {
+				maximum_speed = 0.02
+			}
+		}
+	}
+
+	zv_cockpit_bubble = {	# Cockpit en bulle (05, ligne 425)
+		abbreviation = "z0df"
+		category = zv_cat_cockpit
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1
+		}
+		multiply_stats = {
+			maximum_speed = -0.005
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			add_stats = {
+				air_defence = 1
+			}
+			multiply_stats = {
+				air_attack = 0.02
+			}
+		}
+	}
+
+	zv_cockpit_glazed_nose = {	# Nez vitré de bombardier (05, ligne 426)
+		abbreviation = "z0e0"
+		category = zv_cat_cockpit
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1
+			air_defence = -2
+		}
+		mission_type_stats = {
+			limit = { strategic_bomber }
+			multiply_stats = {
+				air_bombing = 0.03
+			}
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike }
+			add_stats = {
+				naval_strike_targetting = 2
+			}
+		}
+		forbid_module_categories = {
+			zv_cat_motorisation_nez_a
+			zv_cat_motorisation_nez_b
+			zv_cat_motorisation_nez_c
+			zv_cat_motorisation_nez_et_queue_a
+			zv_cat_motorisation_nez_et_queue_b
+			zv_cat_motorisation_nez_et_queue_c
+			zv_cat_mitrailleuses_de_nez
+			zv_cat_canons_de_nez
+			zv_cat_canon_at_de_nez
+		}
+	}
+
+	zv_armored_cockpit = {	# Vitrage et siège blindés (05, ligne 427)
+		abbreviation = "z0e1"
+		category = zv_cat_blindage_du_cockpit
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = 1
+			weight = 1
+			build_cost_ic = 0.5
+		}
+		multiply_stats = {
+			maximum_speed = -0.005
+		}
+	}
+
+	zv_ejection_seat = {	# Siège éjectable (05, ligne 428)
+		abbreviation = "z0e2"
+		category = zv_cat_siege_ejectable
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = 0.5
+			build_cost_ic = 1.5
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			add_stats = {
+				air_defence = 1
+			}
+		}
+	}
+
+	zv_fuel_tanks_s = {	# Réservoirs supplémentaires (S) (05, ligne 436)
+		abbreviation = "z0e3"
+		category = zv_cat_reservoir_interne
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = -2
+			weight = 2
+			build_cost_ic = 1
+		}
+		multiply_stats = {
+			air_range = 0.3
+		}
+	}
+
+	zv_fuel_tanks_m = {	# Réservoirs supplémentaires (M) (05, ligne 437)
+		abbreviation = "z0e4"
+		category = zv_cat_reservoir_interne
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = -6
+			weight = 5
+			build_cost_ic = 2
+		}
+		multiply_stats = {
+			air_range = 0.3
+		}
+	}
+
+	zv_fuel_tanks_l = {	# Réservoirs supplémentaires (L) (05, ligne 438)
+		abbreviation = "z0e5"
+		category = zv_cat_reservoir_interne
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = -8
+			weight = 8
+			build_cost_ic = 4
+		}
+		multiply_stats = {
+			air_range = 0.3
+		}
+	}
+
+	zv_self_sealing_fuel_tanks_s = {	# Réservoirs auto-obturants (S) (05, ligne 439)
+		abbreviation = "z0e6"
+		category = zv_cat_reservoir_interne
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = 6
+			weight = 1
+			build_cost_ic = 1
+		}
+		multiply_stats = {
+			air_range = -0.05
+		}
+		build_cost_resources = {
+			rubber = 1
+		}
+	}
+
+	zv_self_sealing_fuel_tanks_m = {	# Réservoirs auto-obturants (M) (05, ligne 440)
+		abbreviation = "z0e7"
+		category = zv_cat_reservoir_interne
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = 8
+			weight = 1
+			build_cost_ic = 1.5
+		}
+		multiply_stats = {
+			air_range = -0.05
+		}
+		build_cost_resources = {
+			rubber = 2
+		}
+	}
+
+	zv_self_sealing_fuel_tanks_l = {	# Réservoirs auto-obturants (L) (05, ligne 441)
+		abbreviation = "z0e8"
+		category = zv_cat_reservoir_interne
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_defence = 10
+			weight = 1
+			build_cost_ic = 2
+		}
+		multiply_stats = {
+			air_range = -0.05
+		}
+		build_cost_resources = {
+			rubber = 2
+		}
+	}
+
+	zv_drop_tanks_s = {	# Réservoirs largables (S) (05, ligne 442)
+		abbreviation = "z0e9"
+		category = zv_cat_reservoir_supplementaire
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = 2
+			build_cost_ic = 1
+		}
+		multiply_stats = {
+			air_range = 0.25
+		}
+	}
+
+	zv_drop_tanks_m = {	# Réservoirs largables (M) (05, ligne 443)
+		abbreviation = "z0ea"
+		category = zv_cat_reservoir_supplementaire
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = 4
+			build_cost_ic = 1.5
+		}
+		multiply_stats = {
+			air_range = 0.25
+		}
+	}
+
+	zv_bomb_bay_tank = {	# Réservoir de soute (05, ligne 444)
+		abbreviation = "z0eb"
+		category = zv_cat_reservoir_supplementaire
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = 4
+			build_cost_ic = 1.5
+			air_defence = -2
+		}
+		multiply_stats = {
+			air_range = 0.25
+		}
+	}
+
+	zv_ferry_tank = {	# Réservoir de convoyage (05, ligne 445)
+		abbreviation = "z0ec"
+		category = zv_cat_reservoir_supplementaire
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			weight = 6
+			build_cost_ic = 1
+			air_defence = -4
+		}
+		multiply_stats = {
+			air_range = 0.3
+			air_agility = -0.15
+		}
+		forbid_module_categories = {
+			zv_cat_mitrailleuses
+			zv_cat_canons
+			zv_cat_canon_at
+			zv_cat_mitrailleuses_de_nez
+			zv_cat_canons_de_nez
+			zv_cat_canon_at_de_nez
+			zv_cat_roquettes
+			zv_cat_attaches
+			zv_cat_en_soute
+			zv_cat_armes_navales
+			zv_cat_armes_guidees
+		}
+	}
+
+	zv_light_mg_1x = {	# Mitrailleuses légères x1 (05, ligne 453)
+		abbreviation = "z0ed"
+		category = zv_cat_mitrailleuses
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 2.5
+			build_cost_ic = 0.5
+			weight = 0.5
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_light_mg_3x = {	# Mitrailleuses légères x3 (05, ligne 455)
+		abbreviation = "z0ef"
+		category = zv_cat_mitrailleuses
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_attack = 7.5
+			build_cost_ic = 1.58
+			weight = 1.5
+			reliability = -0.01
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_light_mg_4x = {	# Mitrailleuses légères x4 (05, ligne 456)
+		abbreviation = "z0f0"
+		category = zv_cat_mitrailleuses
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_attack = 10
+			build_cost_ic = 2.2
+			weight = 2
+			reliability = -0.025
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_light_imp_mg_1x = {	# Mitrailleuses légères améliorées x1 (05, ligne 457)
+		abbreviation = "z0f1"
+		category = zv_cat_mitrailleuses
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 3
+			build_cost_ic = 0.6
+			weight = 0.5
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_light_imp_mg_2x = {	# Mitrailleuses légères améliorées x2 (05, ligne 458)
+		abbreviation = "z0f2"
+		category = zv_cat_mitrailleuses
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 6
+			build_cost_ic = 1.2
+			weight = 1
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_light_imp_mg_3x = {	# Mitrailleuses légères améliorées x3 (05, ligne 459)
+		abbreviation = "z0f3"
+		category = zv_cat_mitrailleuses
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_attack = 9
+			build_cost_ic = 1.89
+			weight = 1.5
+			reliability = -0.01
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_light_imp_mg_4x = {	# Mitrailleuses légères améliorées x4 (05, ligne 460)
+		abbreviation = "z0f4"
+		category = zv_cat_mitrailleuses
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_attack = 12
+			build_cost_ic = 2.64
+			weight = 2
+			reliability = -0.025
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_heavy_mg_1x = {	# Mitrailleuses lourdes x1 (05, ligne 461)
+		abbreviation = "z0f5"
+		category = zv_cat_mitrailleuses
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 4.5
+			build_cost_ic = 0.9
+			weight = 1.25
+		}
+		mission_type_stats = {
+			limit = { attack_logistics }
+			add_stats = {
+				air_ground_attack = 0.25
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_heavy_mg_2x = {	# Mitrailleuses lourdes x2 (05, ligne 462)
+		abbreviation = "z0f6"
+		category = zv_cat_mitrailleuses
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 9
+			build_cost_ic = 1.8
+			weight = 2.5
+		}
+		mission_type_stats = {
+			limit = { attack_logistics }
+			add_stats = {
+				air_ground_attack = 0.5
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_heavy_mg_3x = {	# Mitrailleuses lourdes x3 (05, ligne 463)
+		abbreviation = "z0f7"
+		category = zv_cat_mitrailleuses
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_attack = 13.5
+			build_cost_ic = 2.84
+			weight = 3.75
+			reliability = -0.01
+		}
+		mission_type_stats = {
+			limit = { attack_logistics }
+			add_stats = {
+				air_ground_attack = 0.75
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_heavy_mg_4x = {	# Mitrailleuses lourdes x4 (05, ligne 464)
+		abbreviation = "z0f8"
+		category = zv_cat_mitrailleuses
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_attack = 18
+			build_cost_ic = 3.96
+			weight = 5
+			reliability = -0.025
+		}
+		mission_type_stats = {
+			limit = { attack_logistics }
+			add_stats = {
+				air_ground_attack = 1
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_heavy_imp_mg_1x = {	# Mitrailleuses lourdes améliorées x1 (05, ligne 465)
+		abbreviation = "z0f9"
+		category = zv_cat_mitrailleuses
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 5.5
+			build_cost_ic = 1.1
+			weight = 1.25
+		}
+		mission_type_stats = {
+			limit = { attack_logistics }
+			add_stats = {
+				air_ground_attack = 0.25
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_heavy_imp_mg_2x = {	# Mitrailleuses lourdes améliorées x2 (05, ligne 466)
+		abbreviation = "z0fa"
+		category = zv_cat_mitrailleuses
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 11
+			build_cost_ic = 2.2
+			weight = 2.5
+		}
+		mission_type_stats = {
+			limit = { attack_logistics }
+			add_stats = {
+				air_ground_attack = 0.5
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_heavy_imp_mg_3x = {	# Mitrailleuses lourdes améliorées x3 (05, ligne 467)
+		abbreviation = "z0fb"
+		category = zv_cat_mitrailleuses
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_attack = 16.5
+			build_cost_ic = 3.47
+			weight = 3.75
+			reliability = -0.01
+		}
+		mission_type_stats = {
+			limit = { attack_logistics }
+			add_stats = {
+				air_ground_attack = 0.75
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_heavy_imp_mg_4x = {	# Mitrailleuses lourdes améliorées x4 (05, ligne 468)
+		abbreviation = "z0fc"
+		category = zv_cat_mitrailleuses
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_attack = 22
+			build_cost_ic = 4.84
+			weight = 5
+			reliability = -0.025
+		}
+		mission_type_stats = {
+			limit = { attack_logistics }
+			add_stats = {
+				air_ground_attack = 1
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_cannon_20mm_1_1x = {	# Canon 20 mm, 1re génération x1 (05, ligne 469)
+		abbreviation = "z0fd"
+		category = zv_cat_canons
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 10
+			build_cost_ic = 2.5
+			weight = 3
+			air_agility = -1
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 1
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_cannon_20mm_1_2x = {	# Canon 20 mm, 1re génération x2 (05, ligne 470)
+		abbreviation = "z0fe"
+		category = zv_cat_canons
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_attack = 20
+			build_cost_ic = 5
+			weight = 6
+			air_agility = -2
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 2
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_cannon_20mm_2_1x = {	# Canon 20 mm, 2e génération x1 (05, ligne 471)
+		abbreviation = "z0ff"
+		category = zv_cat_canons
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 11
+			build_cost_ic = 2.75
+			weight = 3.5
+			air_agility = -1
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 1.5
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_cannon_20mm_2_2x = {	# Canon 20 mm, 2e génération x2 (05, ligne 472)
+		abbreviation = "z100"
+		category = zv_cat_canons
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_attack = 22
+			build_cost_ic = 5.5
+			weight = 7
+			air_agility = -2
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 3
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_cannon_20mm_3_1x = {	# Canon 20 mm, 3e génération x1 (05, ligne 473)
+		abbreviation = "z101"
+		category = zv_cat_canons
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 12
+			build_cost_ic = 3
+			weight = 3
+			air_agility = -0.5
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 1.5
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_cannon_20mm_3_2x = {	# Canon 20 mm, 3e génération x2 (05, ligne 474)
+		abbreviation = "z102"
+		category = zv_cat_canons
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_attack = 24
+			build_cost_ic = 6
+			weight = 6
+			air_agility = -1
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 3
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_cannon_30mm_1x = {	# Canon 30 mm (MK 108) x1 (05, ligne 475)
+		abbreviation = "z103"
+		category = zv_cat_canons
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 13
+			build_cost_ic = 4
+			weight = 4.5
+			air_agility = -2
+			reliability = -0.02
+		}
+		mission_type_stats = {
+			limit = { interception }
+			add_stats = {
+				air_attack = 5
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_cannon_30mm_2x = {	# Canon 30 mm (MK 108) x2 (05, ligne 476)
+		abbreviation = "z104"
+		category = zv_cat_canons
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_attack = 26
+			build_cost_ic = 8
+			weight = 9
+			air_agility = -4
+			reliability = -0.04
+		}
+		mission_type_stats = {
+			limit = { interception }
+			add_stats = {
+				air_attack = 10
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_nose_light_mg_1x = {	# Mitrailleuses légères x1 (nez) (05, ligne 477)
+		abbreviation = "z105"
+		category = zv_cat_mitrailleuses_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 2.5
+			build_cost_ic = 0.5
+			weight = 0.5
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_nose_light_mg_2x = {	# Mitrailleuses légères x2 (nez) (05, ligne 478)
+		abbreviation = "z106"
+		category = zv_cat_mitrailleuses_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 5
+			build_cost_ic = 1
+			weight = 1
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_nose_light_imp_mg_1x = {	# Mitrailleuses légères améliorées x1 (nez) (05, ligne 479)
+		abbreviation = "z107"
+		category = zv_cat_mitrailleuses_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 3
+			build_cost_ic = 0.6
+			weight = 0.5
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_nose_light_imp_mg_2x = {	# Mitrailleuses légères améliorées x2 (nez) (05, ligne 480)
+		abbreviation = "z108"
+		category = zv_cat_mitrailleuses_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 6
+			build_cost_ic = 1.2
+			weight = 1
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_nose_heavy_mg_1x = {	# Mitrailleuses lourdes x1 (nez) (05, ligne 481)
+		abbreviation = "z109"
+		category = zv_cat_mitrailleuses_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 4.5
+			build_cost_ic = 0.9
+			weight = 1.25
+		}
+		mission_type_stats = {
+			limit = { attack_logistics }
+			add_stats = {
+				air_ground_attack = 0.25
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_nose_heavy_mg_2x = {	# Mitrailleuses lourdes x2 (nez) (05, ligne 482)
+		abbreviation = "z10a"
+		category = zv_cat_mitrailleuses_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 9
+			build_cost_ic = 1.8
+			weight = 2.5
+		}
+		mission_type_stats = {
+			limit = { attack_logistics }
+			add_stats = {
+				air_ground_attack = 0.5
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_nose_heavy_imp_mg_1x = {	# Mitrailleuses lourdes améliorées x1 (nez) (05, ligne 483)
+		abbreviation = "z10b"
+		category = zv_cat_mitrailleuses_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 5.5
+			build_cost_ic = 1.1
+			weight = 1.25
+		}
+		mission_type_stats = {
+			limit = { attack_logistics }
+			add_stats = {
+				air_ground_attack = 0.25
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_nose_heavy_imp_mg_2x = {	# Mitrailleuses lourdes améliorées x2 (nez) (05, ligne 484)
+		abbreviation = "z10c"
+		category = zv_cat_mitrailleuses_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 11
+			build_cost_ic = 2.2
+			weight = 2.5
+		}
+		mission_type_stats = {
+			limit = { attack_logistics }
+			add_stats = {
+				air_ground_attack = 0.5
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_nose_cannon_20mm_1_1x = {	# Canon 20 mm, 1re génération x1 (nez) (05, ligne 485)
+		abbreviation = "z10d"
+		category = zv_cat_canons_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 10
+			build_cost_ic = 2.5
+			weight = 3
+			air_agility = -1
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 1
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_nose_cannon_20mm_1_2x = {	# Canon 20 mm, 1re génération x2 (nez) (05, ligne 486)
+		abbreviation = "z10e"
+		category = zv_cat_canons_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_attack = 20
+			build_cost_ic = 5
+			weight = 6
+			air_agility = -2
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 2
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_nose_cannon_20mm_2_1x = {	# Canon 20 mm, 2e génération x1 (nez) (05, ligne 487)
+		abbreviation = "z10f"
+		category = zv_cat_canons_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 11
+			build_cost_ic = 2.75
+			weight = 3.5
+			air_agility = -1
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 1.5
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_nose_cannon_20mm_2_2x = {	# Canon 20 mm, 2e génération x2 (nez) (05, ligne 488)
+		abbreviation = "z110"
+		category = zv_cat_canons_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_attack = 22
+			build_cost_ic = 5.5
+			weight = 7
+			air_agility = -2
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 3
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_nose_cannon_20mm_3_1x = {	# Canon 20 mm, 3e génération x1 (nez) (05, ligne 489)
+		abbreviation = "z111"
+		category = zv_cat_canons_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 12
+			build_cost_ic = 3
+			weight = 3
+			air_agility = -0.5
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 1.5
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_nose_cannon_20mm_3_2x = {	# Canon 20 mm, 3e génération x2 (nez) (05, ligne 490)
+		abbreviation = "z112"
+		category = zv_cat_canons_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_attack = 24
+			build_cost_ic = 6
+			weight = 6
+			air_agility = -1
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 3
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_nose_cannon_30mm_1x = {	# Canon 30 mm (MK 108) x1 (nez) (05, ligne 491)
+		abbreviation = "z113"
+		category = zv_cat_canons_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 13
+			build_cost_ic = 4
+			weight = 4.5
+			air_agility = -2
+			reliability = -0.02
+		}
+		mission_type_stats = {
+			limit = { interception }
+			add_stats = {
+				air_attack = 5
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_nose_cannon_30mm_2x = {	# Canon 30 mm (MK 108) x2 (nez) (05, ligne 492)
+		abbreviation = "z114"
+		category = zv_cat_canons_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_attack = 26
+			build_cost_ic = 8
+			weight = 9
+			air_agility = -4
+			reliability = -0.04
+		}
+		mission_type_stats = {
+			limit = { interception }
+			add_stats = {
+				air_attack = 10
+			}
+		}
+		allow_mission_type = { air_superiority interception }
+	}
+
+	zv_at_cannon_37 = {	# Canon AT 37 mm (BK 3,7) (05, ligne 500)
+		abbreviation = "z115"
+		category = zv_cat_canon_at
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_ground_attack = 9
+			build_cost_ic = 5
+			weight = 7
+			air_agility = -12
+		}
+		build_cost_resources = {
+			tungsten = 1
+		}
+		allow_mission_type = { cas attack_logistics }
+	}
+
+	zv_at_cannon_40 = {	# Canon AT 40 mm (Vickers S) (05, ligne 501)
+		abbreviation = "z116"
+		category = zv_cat_canon_at
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_ground_attack = 8
+			build_cost_ic = 4.5
+			weight = 7
+			air_agility = -12
+		}
+		allow_mission_type = { cas attack_logistics }
+	}
+
+	zv_at_cannon_57 = {	# Canon AT 57 mm (6 livres Molins) (05, ligne 502)
+		abbreviation = "z117"
+		category = zv_cat_canon_at
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_ground_attack = 13
+			build_cost_ic = 7.5
+			weight = 11
+			air_agility = -18
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike }
+			add_stats = {
+				naval_strike_attack = 6
+			}
+			add_average_stats = {
+				naval_strike_targetting = 4
+			}
+		}
+		allow_mission_type = { cas attack_logistics naval_bomber port_strike }
+	}
+
+	zv_at_cannon_75 = {	# Canon AT 75 mm (PaK 40, B-25H) (05, ligne 503)
+		abbreviation = "z118"
+		category = zv_cat_canon_at
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_ground_attack = 17
+			build_cost_ic = 10
+			weight = 15
+			air_agility = -25
+			reliability = -0.05
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike }
+			add_stats = {
+				naval_strike_attack = 8
+			}
+			add_average_stats = {
+				naval_strike_targetting = 3
+			}
+		}
+		allow_mission_type = { cas attack_logistics naval_bomber port_strike }
+	}
+
+	zv_nose_at_cannon_37 = {	# Canon AT 37 mm (BK 3,7) (nez) (05, ligne 504)
+		abbreviation = "z119"
+		category = zv_cat_canon_at_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_ground_attack = 9
+			build_cost_ic = 5
+			weight = 7
+			air_agility = -12
+		}
+		build_cost_resources = {
+			tungsten = 1
+		}
+		allow_mission_type = { cas attack_logistics }
+	}
+
+	zv_nose_at_cannon_40 = {	# Canon AT 40 mm (Vickers S) (nez) (05, ligne 505)
+		abbreviation = "z11a"
+		category = zv_cat_canon_at_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_ground_attack = 8
+			build_cost_ic = 4.5
+			weight = 7
+			air_agility = -12
+		}
+		allow_mission_type = { cas attack_logistics }
+	}
+
+	zv_nose_at_cannon_57 = {	# Canon AT 57 mm (6 livres Molins) (nez) (05, ligne 506)
+		abbreviation = "z11b"
+		category = zv_cat_canon_at_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_ground_attack = 13
+			build_cost_ic = 7.5
+			weight = 11
+			air_agility = -18
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike }
+			add_stats = {
+				naval_strike_attack = 6
+			}
+			add_average_stats = {
+				naval_strike_targetting = 4
+			}
+		}
+		allow_mission_type = { cas attack_logistics naval_bomber port_strike }
+	}
+
+	zv_nose_at_cannon_75 = {	# Canon AT 75 mm (PaK 40, B-25H) (nez) (05, ligne 507)
+		abbreviation = "z11c"
+		category = zv_cat_canon_at_de_nez
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			air_ground_attack = 17
+			build_cost_ic = 10
+			weight = 15
+			air_agility = -25
+			reliability = -0.05
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike }
+			add_stats = {
+				naval_strike_attack = 8
+			}
+			add_average_stats = {
+				naval_strike_targetting = 3
+			}
+		}
+		allow_mission_type = { cas attack_logistics naval_bomber port_strike }
+	}
+
+	zv_rockets_rails_1 = {	# Rails de roquettes I (05, ligne 508)
+		abbreviation = "z11d"
+		category = zv_cat_roquettes
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 1
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 4
+				weight = 1
+				air_agility = -3
+			}
+		}
+		allow_mission_type = { cas attack_logistics }
+	}
+
+	zv_rockets_rails_2 = {	# Rails de roquettes II (05, ligne 509)
+		abbreviation = "z11e"
+		category = zv_cat_roquettes
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 1.3
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 5
+				weight = 1.5
+				air_agility = -4
+			}
+		}
+		allow_mission_type = { cas attack_logistics }
+	}
+
+	zv_rockets_at_1 = {	# Roquettes antichars I (05, ligne 510)
+		abbreviation = "z11f"
+		category = zv_cat_roquettes
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 2.5
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 6
+				weight = 2
+				air_agility = -5
+			}
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike }
+			add_stats = {
+				naval_strike_attack = 4
+				weight = 2
+				air_agility = -5
+			}
+			add_average_stats = {
+				naval_strike_targetting = 3
+			}
+		}
+		allow_mission_type = { cas attack_logistics naval_bomber port_strike }
+	}
+
+	zv_rockets_at_2 = {	# Roquettes antichars II (05, ligne 511)
+		abbreviation = "z120"
+		category = zv_cat_roquettes
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 3.5
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 7
+				weight = 2.5
+				air_agility = -6
+			}
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike }
+			add_stats = {
+				naval_strike_attack = 5
+				weight = 2.5
+				air_agility = -6
+			}
+			add_average_stats = {
+				naval_strike_targetting = 3
+			}
+		}
+		allow_mission_type = { cas attack_logistics naval_bomber port_strike }
+	}
+
+	zv_rockets_r4m = {	# Roquettes air-air R4M (05, ligne 512)
+		abbreviation = "z121"
+		category = zv_cat_roquettes
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 2.5
+		}
+		mission_type_stats = {
+			limit = { interception }
+			add_stats = {
+				air_attack = 14
+				weight = 1
+				air_agility = -2
+			}
+		}
+		allow_mission_type = { interception }
+	}
+
+	zv_rockets_wgr21 = {	# Tubes mortier-roquette WGr 21 (05, ligne 513)
+		abbreviation = "z122"
+		category = zv_cat_roquettes
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 2
+		}
+		mission_type_stats = {
+			limit = { interception }
+			add_stats = {
+				air_attack = 12
+				weight = 4
+				air_agility = -8
+			}
+		}
+		allow_mission_type = { interception }
+	}
+
+	zv_bomb_locks_light = {	# Bombes légères (attaches) (05, ligne 521)
+		abbreviation = "z123"
+		category = zv_cat_attaches
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 1
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 6
+				weight = 4
+				air_agility = -15
+			}
+		}
+		mission_type_stats = {
+			limit = { naval_bomber }
+			add_stats = {
+				naval_strike_attack = 2
+				weight = 4
+				air_agility = -15
+			}
+			add_average_stats = {
+				naval_strike_targetting = 4
+			}
+		}
+		allow_mission_type = { cas attack_logistics naval_bomber }
+	}
+
+	zv_bomb_locks_frag = {	# Bombes à fragmentation (attaches) (05, ligne 522)
+		abbreviation = "z124"
+		category = zv_cat_attaches
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 1.3
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 7
+				weight = 4
+				air_agility = -16
+			}
+		}
+		allow_mission_type = { cas attack_logistics }
+	}
+
+	zv_bomb_locks_ap = {	# Bombes perforantes (attaches) (05, ligne 523)
+		abbreviation = "z125"
+		category = zv_cat_attaches
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 1
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 2
+				weight = 6
+				air_agility = -20
+			}
+		}
+		mission_type_stats = {
+			limit = { naval_bomber }
+			add_stats = {
+				naval_strike_attack = 6
+				weight = 6
+				air_agility = -20
+			}
+			add_average_stats = {
+				naval_strike_targetting = 4
+			}
+		}
+		allow_mission_type = { cas attack_logistics naval_bomber }
+	}
+
+	zv_bomb_locks_heavy = {	# Bombes lourdes (attaches) (05, ligne 524)
+		abbreviation = "z126"
+		category = zv_cat_attaches
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 1
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 8
+				weight = 6
+				air_agility = -20
+			}
+		}
+		mission_type_stats = {
+			limit = { naval_bomber }
+			add_stats = {
+				naval_strike_attack = 3
+				weight = 6
+				air_agility = -20
+			}
+			add_average_stats = {
+				naval_strike_targetting = 4
+			}
+		}
+		allow_mission_type = { cas attack_logistics naval_bomber }
+	}
+
+	zv_bomb_locks_incendiary = {	# Bombes incendiaires (attaches) (05, ligne 525)
+		abbreviation = "z127"
+		category = zv_cat_attaches
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 1.2
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 5
+				weight = 4
+				air_agility = -15
+			}
+		}
+		mission_type_stats = {
+			limit = { attack_logistics }
+			add_stats = {
+				air_ground_attack = 3
+			}
+		}
+		allow_mission_type = { cas attack_logistics }
+	}
+
+	zv_bomb_locks_napalm = {	# Napalm (05, ligne 526)
+		abbreviation = "z128"
+		category = zv_cat_attaches
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 1.8
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 8
+				weight = 5
+				air_agility = -18
+			}
+		}
+		allow_mission_type = { cas attack_logistics }
+	}
+
+	zv_bomb_locks_earthquake = {	# Très gros calibres (attaches) (05, ligne 527)
+		abbreviation = "z129"
+		category = zv_cat_attaches
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 10
+		}
+		mission_type_stats = {
+			limit = { port_strike }
+			add_stats = {
+				naval_strike_attack = 10
+				weight = 12
+				air_agility = -25
+			}
+			add_average_stats = {
+				naval_strike_targetting = 2
+			}
+		}
+		mission_type_stats = {
+			limit = { strategic_bomber }
+			add_stats = {
+				air_bombing = 18
+				weight = 12
+				air_agility = -25
+			}
+		}
+		allow_mission_type = { port_strike strategic_bomber }
+	}
+
+	zv_bomb_bay_light = {	# Bombes légères en soute (05, ligne 528)
+		abbreviation = "z12a"
+		category = zv_cat_en_soute
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 2.5
+			weight = 1
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 7
+				weight = 3
+				air_agility = -10
+			}
+		}
+		mission_type_stats = {
+			limit = { strategic_bomber }
+			add_stats = {
+				air_bombing = 3
+				weight = 3
+			}
+		}
+		mission_type_stats = {
+			limit = { port_strike }
+			add_stats = {
+				naval_strike_attack = 2
+				weight = 3
+			}
+			add_average_stats = {
+				naval_strike_targetting = 4
+			}
+		}
+		allow_mission_type = { cas attack_logistics strategic_bomber port_strike }
+	}
+
+	zv_bomb_bay_medium = {	# Bombes moyennes en soute (05, ligne 529)
+		abbreviation = "z12b"
+		category = zv_cat_en_soute
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 5
+			weight = 1
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 6
+				weight = 5
+				air_agility = -12
+			}
+		}
+		mission_type_stats = {
+			limit = { strategic_bomber }
+			add_stats = {
+				air_bombing = 6
+				weight = 5
+				air_agility = -12
+			}
+		}
+		mission_type_stats = {
+			limit = { port_strike }
+			add_stats = {
+				naval_strike_attack = 5
+				weight = 5
+				air_agility = -12
+			}
+			add_average_stats = {
+				naval_strike_targetting = 4
+			}
+		}
+		allow_mission_type = { cas attack_logistics strategic_bomber port_strike }
+	}
+
+	zv_bomb_bay_medium_frag = {	# Bombes moyennes en soute (fragmentation) (05, ligne 530)
+		abbreviation = "z12c"
+		category = zv_cat_en_soute
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 5.5
+			weight = 1
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 8
+				weight = 5
+				air_agility = -12
+			}
+		}
+		mission_type_stats = {
+			limit = { strategic_bomber }
+			add_stats = {
+				air_bombing = 3
+				weight = 5
+				air_agility = -12
+			}
+		}
+		allow_mission_type = { cas attack_logistics strategic_bomber }
+	}
+
+	zv_bomb_bay_large = {	# Grandes bombes en soute (05, ligne 531)
+		abbreviation = "z12d"
+		category = zv_cat_en_soute
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 8
+			weight = 2
+			air_agility = -15
+		}
+		mission_type_stats = {
+			limit = { strategic_bomber }
+			add_stats = {
+				air_bombing = 15
+				weight = 8
+			}
+		}
+		mission_type_stats = {
+			limit = { port_strike }
+			add_stats = {
+				naval_strike_attack = 4
+				weight = 8
+			}
+			add_average_stats = {
+				naval_strike_targetting = 3
+			}
+		}
+		allow_mission_type = { strategic_bomber port_strike }
+	}
+
+	zv_bomb_bay_large_frag = {	# Grandes bombes en soute (fragmentation) (05, ligne 532)
+		abbreviation = "z12e"
+		category = zv_cat_en_soute
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 8.5
+			weight = 2
+			air_agility = -10
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			add_stats = {
+				air_ground_attack = 8
+				weight = 8
+				air_agility = -5
+			}
+		}
+		mission_type_stats = {
+			limit = { strategic_bomber }
+			add_stats = {
+				air_bombing = 10
+				weight = 8
+			}
+		}
+		allow_mission_type = { cas attack_logistics strategic_bomber }
+	}
+
+	zv_bomb_bay_incendiary = {	# Bombes incendiaires en soute (05, ligne 533)
+		abbreviation = "z12f"
+		category = zv_cat_en_soute
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 7
+			weight = 2
+			air_agility = -15
+		}
+		mission_type_stats = {
+			limit = { strategic_bomber }
+			add_stats = {
+				air_bombing = 15
+				weight = 7
+			}
+		}
+		allow_mission_type = { strategic_bomber }
+	}
+
+	zv_bomb_bay_earthquake = {	# Très grosses bombes en soute (sans portes) (05, ligne 534)
+		abbreviation = "z130"
+		category = zv_cat_en_soute
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 14
+			weight = 2
+			air_agility = -15
+		}
+		multiply_stats = {
+			maximum_speed = -0.05
+		}
+		mission_type_stats = {
+			limit = { strategic_bomber }
+			add_stats = {
+				air_bombing = 22
+				weight = 14
+			}
+		}
+		mission_type_stats = {
+			limit = { port_strike }
+			add_stats = {
+				naval_strike_attack = 14
+				weight = 14
+			}
+			add_average_stats = {
+				naval_strike_targetting = 3
+			}
+		}
+		allow_mission_type = { strategic_bomber port_strike }
+	}
+
+	torpedo_mounting = {	# Torpille niv. 1 (05, ligne 542)
+		abbreviation = "z131"
+		category = zv_cat_armes_navales
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 4
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike }
+			add_stats = {
+				naval_strike_attack = 12
+				air_agility = -12
+				weight = 5
+			}
+			add_average_stats = {
+				naval_strike_targetting = 4
+			}
+		}
+		allow_mission_type = { naval_bomber port_strike naval_patrol }
+	}
+
+	torpedo_mounting_2 = {	# Torpille niv. 2 (05, ligne 543)
+		abbreviation = "z132"
+		category = zv_cat_armes_navales
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 4
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike }
+			add_stats = {
+				naval_strike_attack = 17
+				air_agility = -12
+				weight = 8
+			}
+			add_average_stats = {
+				naval_strike_targetting = 8
+			}
+		}
+		allow_mission_type = { naval_bomber port_strike naval_patrol }
+	}
+
+	torpedo_mounting_3 = {	# Torpille niv. 3 (05, ligne 544)
+		abbreviation = "z133"
+		category = zv_cat_armes_navales
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 4
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike }
+			add_stats = {
+				naval_strike_attack = 22
+				air_agility = -12
+				weight = 11
+			}
+			add_average_stats = {
+				naval_strike_targetting = 10
+			}
+		}
+		allow_mission_type = { naval_bomber port_strike naval_patrol }
+	}
+
+	zv_depth_charges = {	# Grenades sous-marines (05, ligne 545)
+		abbreviation = "z134"
+		category = zv_cat_armes_navales
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 2
+		}
+		mission_type_stats = {
+			limit = { naval_bomber }
+			add_stats = {
+				naval_strike_attack = 6
+				air_agility = -8
+				weight = 3
+			}
+			add_average_stats = {
+				naval_strike_targetting = 6
+			}
+		}
+		mission_type_stats = {
+			limit = { naval_patrol }
+			add_stats = {
+				sub_detection = 3
+			}
+		}
+		allow_mission_type = { naval_bomber naval_patrol }
+	}
+
+	zv_fido = {	# Torpille acoustique Fido (Mk 24) (05, ligne 546)
+		abbreviation = "z135"
+		category = zv_cat_armes_navales
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 6
+		}
+		mission_type_stats = {
+			limit = { naval_bomber }
+			add_stats = {
+				naval_strike_attack = 8
+				air_agility = -8
+				weight = 3
+			}
+			add_average_stats = {
+				naval_strike_targetting = 14
+			}
+		}
+		allow_mission_type = { naval_bomber naval_patrol }
+	}
+
+	guided_anti_ship_missile = {	# Missile antinavire (05, ligne 547)
+		abbreviation = "z136"
+		category = zv_cat_armes_guidees
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 5
+		add_stats = {
+			build_cost_ic = 15
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike }
+			add_stats = {
+				naval_strike_attack = 25
+				air_agility = -20
+				weight = 20
+			}
+			add_average_stats = {
+				naval_strike_targetting = 12
+			}
+		}
+		allow_mission_type = { naval_bomber port_strike naval_patrol }
+	}
+
+	zv_fritz_x = {	# Fritz X (05, ligne 548)
+		abbreviation = "z137"
+		category = zv_cat_armes_guidees
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 5
+		add_stats = {
+			build_cost_ic = 12
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike }
+			add_stats = {
+				naval_strike_attack = 22
+				air_agility = -20
+				weight = 14
+			}
+			add_average_stats = {
+				naval_strike_targetting = 12
+			}
+		}
+		allow_mission_type = { naval_bomber port_strike }
+	}
+
+	zv_hs293 = {	# Hs 293 (05, ligne 549)
+		abbreviation = "z138"
+		category = zv_cat_armes_guidees
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 5
+		add_stats = {
+			build_cost_ic = 10
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike }
+			add_stats = {
+				naval_strike_attack = 15
+				air_agility = -15
+				weight = 12
+			}
+			add_average_stats = {
+				naval_strike_targetting = 10
+			}
+		}
+		allow_mission_type = { naval_bomber port_strike }
+	}
+
+	airdropped_mines = {	# Mines larguées (05, ligne 550)
+		abbreviation = "z139"
+		category = zv_cat_armes_speciales
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			mines_planting = 0.05
+			build_cost_ic = 2
+			weight = 2
+		}
+		allow_mission_type = { naval_mines_planting }
+	}
+
+	fixed_explosive_charge = {	# Charge kamikaze (05, ligne 551)
+		abbreviation = "z13a"
+		category = zv_cat_armes_speciales
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 5
+		add_stats = {
+			build_cost_ic = 4
+			air_agility = -10
+			air_defence = -5
+		}
+		mission_type_stats = {
+			limit = { naval_kamikaze }
+			add_stats = {
+				naval_strike_attack = 6
+				naval_strike_targetting = 10
+			}
+		}
+		allow_mission_type = { naval_kamikaze }
+	}
+
+	zv_schraege_musik = {	# Schräge Musik (05, ligne 552)
+		abbreviation = "z13b"
+		category = zv_cat_armes_speciales
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 4
+			weight = 4
+			air_agility = -2
+		}
+		mission_type_stats = {
+			limit = { interception }
+			add_stats = {
+				air_attack = 12
+				air_defence = 3
+			}
+		}
+		allow_mission_type = { interception }
+	}
+
+	demining_coil = {	# Bobine de déminage (05, ligne 553)
+		abbreviation = "z13c"
+		category = zv_cat_armes_speciales
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			mines_sweeping = 0.1
+			build_cost_ic = 3
+			weight = 20
+			air_agility = -5
+		}
+		allow_mission_type = { naval_mines_sweeping }
+	}
+
+	bomb_sights_1 = {	# Viseur de bombardement niv. 1 (05, ligne 561)
+		abbreviation = "z13d"
+		category = zv_cat_viseur_de_bombardement
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_bombing = 4
+			build_cost_ic = 1.5
+			weight = 1
+		}
+	}
+
+	bomb_sights_2 = {	# Viseur de bombardement niv. 2 (05, ligne 562)
+		abbreviation = "z13e"
+		category = zv_cat_viseur_de_bombardement
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_bombing = 6
+			build_cost_ic = 2
+			weight = 1
+		}
+	}
+
+	zv_reflex_gunsight_1 = {	# Viseur réflexe de chasse niv. 1 (05, ligne 563)
+		abbreviation = "z13f"
+		category = zv_cat_viseur_de_tir
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1
+			weight = 0.5
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			multiply_stats = {
+				air_attack = 0.03
+			}
+		}
+	}
+
+	zv_reflex_gunsight_2 = {	# Viseur réflexe de chasse niv. 2 (05, ligne 564)
+		abbreviation = "z140"
+		category = zv_cat_viseur_de_tir
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1.5
+			weight = 0.5
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			multiply_stats = {
+				air_attack = 0.05
+			}
+		}
+	}
+
+	zv_attack_gunsight_1 = {	# Viseur réflexe d'attaque niv. 1 (05, ligne 565)
+		abbreviation = "z141"
+		category = zv_cat_viseur_de_tir
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1
+			weight = 0.5
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			multiply_stats = {
+				air_ground_attack = 0.03
+			}
+		}
+	}
+
+	zv_attack_gunsight_2 = {	# Viseur réflexe d'attaque niv. 2 (05, ligne 566)
+		abbreviation = "z142"
+		category = zv_cat_viseur_de_tir
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1.5
+			weight = 0.5
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			multiply_stats = {
+				air_ground_attack = 0.05
+			}
+		}
+	}
+
+	zv_gyro_gunsight_1 = {	# Viseur gyroscopique niv. 1 (05, ligne 567)
+		abbreviation = "z143"
+		category = zv_cat_viseur_de_tir
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 2.5
+			weight = 1
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			multiply_stats = {
+				air_attack = 0.05
+			}
+		}
+	}
+
+	zv_gyro_gunsight_2 = {	# Viseur gyroscopique niv. 2 (05, ligne 568)
+		abbreviation = "z144"
+		category = zv_cat_viseur_de_tir
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 3.5
+			weight = 1
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			multiply_stats = {
+				air_attack = 0.07
+			}
+		}
+	}
+
+	radio_navigation_1 = {	# Radionavigation niv. 1 (05, ligne 569)
+		abbreviation = "z145"
+		category = zv_cat_navigation
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_bombing = 4
+			night_penalty = -0.1
+			build_cost_ic = 1
+			weight = 1
+		}
+	}
+
+	radio_navigation_2 = {	# Radionavigation niv. 2 (05, ligne 570)
+		abbreviation = "z146"
+		category = zv_cat_navigation
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_bombing = 6
+			night_penalty = -0.2
+			build_cost_ic = 1.5
+			weight = 1
+		}
+	}
+
+	air_ground_radar_1 = {	# Radar air-sol niv. 1 (05, ligne 571)
+		abbreviation = "z147"
+		category = zv_cat_radar
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 2
+			weight = 2
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol }
+			add_stats = {
+				air_bombing = 4
+				night_penalty = -0.3
+				surface_detection = 10
+				sub_detection = 5
+			}
+		}
+	}
+
+	air_ground_radar_2 = {	# Radar air-sol niv. 2 (05, ligne 572)
+		abbreviation = "z148"
+		category = zv_cat_radar
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 3.5
+			weight = 2
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol }
+			add_stats = {
+				air_bombing = 6
+				night_penalty = -0.4
+				surface_detection = 20
+				sub_detection = 10
+			}
+		}
+	}
+
+	air_air_radar_1 = {	# Radar air-air niv. 1 (05, ligne 573)
+		abbreviation = "z149"
+		category = zv_cat_radar
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 4
+			weight = 1
+		}
+		mission_type_stats = {
+			limit = { interception }
+			add_stats = {
+				night_penalty = -0.2
+			}
+		}
+	}
+
+	air_air_radar_2 = {	# Radar air-air niv. 2 (05, ligne 574)
+		abbreviation = "z14a"
+		category = zv_cat_radar
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 6
+			weight = 2
+		}
+		mission_type_stats = {
+			limit = { interception }
+			add_stats = {
+				night_penalty = -0.4
+			}
+		}
+	}
+
+	zv_asv_radar = {	# Radar anti-navire ASV (05, ligne 575)
+		abbreviation = "z14b"
+		category = zv_cat_radar
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 2.5
+			weight = 1.5
+		}
+		mission_type_stats = {
+			limit = { naval_patrol naval_bomber port_strike }
+			add_stats = {
+				surface_detection = 12
+				sub_detection = 10
+			}
+		}
+		mission_type_stats = {
+			limit = { naval_patrol }
+			add_stats = {
+				night_penalty = -0.2
+			}
+		}
+	}
+
+	zv_window = {	# Paillettes anti-radar (Window) (05, ligne 576)
+		abbreviation = "z14c"
+		category = zv_cat_contre_mesures
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1
+		}
+		mission_type_stats = {
+			limit = { strategic_bomber }
+			add_stats = {
+				air_defence = 4
+				weight = 1
+			}
+		}
+	}
+
+	zv_monica = {	# Alerte radar de queue (Monica) (05, ligne 577)
+		abbreviation = "z14d"
+		category = zv_cat_alerte_radar
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1.5
+			weight = 1
+		}
+		mission_type_stats = {
+			limit = { strategic_bomber naval_patrol }
+			add_stats = {
+				air_defence = 2
+			}
+		}
+	}
+
+	zv_naxos = {	# Récepteur d'alerte (Naxos) (05, ligne 578)
+		abbreviation = "z14e"
+		category = zv_cat_alerte_radar
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 2
+			weight = 1
+		}
+		mission_type_stats = {
+			limit = { interception }
+			add_stats = {
+				night_penalty = -0.1
+			}
+			multiply_stats = {
+				air_attack = 0.05
+			}
+		}
+	}
+
+	zv_iff = {	# Identification ami-ennemi (IFF) (05, ligne 579)
+		abbreviation = "z14f"
+		category = zv_cat_identification
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1
+			weight = 0.5
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			add_stats = {
+				air_defence = 0.5
+			}
+			multiply_stats = {
+				air_attack = 0.02
+			}
+		}
+	}
+
+	zv_radar_altimeter = {	# Altimètre radar (05, ligne 580)
+		abbreviation = "z150"
+		category = zv_cat_aides_au_pilotage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+			build_cost_ic = 2
+			weight = 1
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics naval_bomber port_strike naval_patrol }
+			add_stats = {
+				naval_strike_targetting = 3
+				night_penalty = -0.1
+			}
+		}
+	}
+
+	zv_autopilot = {	# Pilote automatique (05, ligne 581)
+		abbreviation = "z151"
+		category = zv_cat_aides_au_pilotage
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.03
+			build_cost_ic = 1.5
+			weight = 1
+		}
+		multiply_stats = {
+			air_range = 0.05
+		}
+	}
+
+	zv_radio_telephone = {	# Radiotéléphone (05, ligne 582)
+		abbreviation = "z152"
+		category = zv_cat_radio
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1
+			weight = 0.5
+		}
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			multiply_stats = {
+				air_attack = 0.02
+			}
+		}
+	}
+
+	recon_camera = {	# Caméra de reconnaissance (05, ligne 588)
+		abbreviation = "z153"
+		category = zv_cat_reconnaissance
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 1
+			weight = 1
+		}
+		allow_mission_type = { recon }
+	}
+
+	zv_night_photo = {	# Photographie nocturne à flash (05, ligne 589)
+		abbreviation = "z154"
+		category = zv_cat_reconnaissance
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 2
+		add_stats = {
+			build_cost_ic = 2
+			weight = 2
+		}
+		mission_type_stats = {
+			limit = { recon }
+			add_stats = {
+				night_penalty = -0.3
+			}
+		}
+		allow_mission_type = { recon }
+	}
+
+	zv_leigh_light = {	# Projecteur Leigh (05, ligne 590)
+		abbreviation = "z155"
+		category = zv_cat_anti_sous_marin
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 1.5
+			weight = 2
+		}
+		multiply_stats = {
+			maximum_speed = -0.02
+		}
+		mission_type_stats = {
+			limit = { naval_patrol naval_bomber }
+			add_stats = {
+				sub_detection = 8
+				surface_detection = 3
+				night_penalty = -0.3
+			}
+		}
+	}
+
+	zv_mad = {	# Détecteur d'anomalies magnétiques (05, ligne 591)
+		abbreviation = "z156"
+		category = zv_cat_anti_sous_marin
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			sub_detection = 12
+			build_cost_ic = 2.5
+			weight = 1
+			air_agility = -1
+		}
+	}
+
+	zv_sonobuoys = {	# Bouées acoustiques (05, ligne 592)
+		abbreviation = "z157"
+		category = zv_cat_anti_sous_marin
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			sub_detection = 15
+			build_cost_ic = 2
+			weight = 1.5
+		}
+	}
+
+	zv_cargo_bay = {	# Soute à fret (05, ligne 593)
+		abbreviation = "z158"
+		category = zv_cat_soute_de_transport
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 2
+			air_superiority = -1
+		}
+		mission_type_stats = {
+			limit = { air_supply }
+			add_stats = {
+				weight = 8
+			}
+		}
+		allow_mission_type = { air_supply }
+		forbid_module_categories = {
+			zv_cat_mitrailleuses
+			zv_cat_canons
+			zv_cat_canon_at
+			zv_cat_mitrailleuses_de_nez
+			zv_cat_canons_de_nez
+			zv_cat_canon_at_de_nez
+			zv_cat_roquettes
+			zv_cat_attaches
+			zv_cat_en_soute
+			zv_cat_armes_navales
+			zv_cat_armes_guidees
+		}
+	}
+
+	zv_troop_compartment = {	# Compartiment de troupes (05, ligne 594)
+		abbreviation = "z159"
+		category = zv_cat_soute_de_transport
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			build_cost_ic = 2
+			air_superiority = -1
+		}
+		mission_type_stats = {
+			limit = { paradrop }
+			add_stats = {
+				weight = 10
+			}
+		}
+		allow_mission_type = { paradrop }
+		forbid_module_categories = {
+			zv_cat_mitrailleuses
+			zv_cat_canons
+			zv_cat_canon_at
+			zv_cat_mitrailleuses_de_nez
+			zv_cat_canons_de_nez
+			zv_cat_canon_at_de_nez
+			zv_cat_roquettes
+			zv_cat_attaches
+			zv_cat_en_soute
+			zv_cat_armes_navales
+			zv_cat_armes_guidees
+		}
+	}
+
+	zv_supply_drop = {	# Largage de ravitaillement (05, ligne 595)
+		abbreviation = "z15a"
+		category = zv_cat_largage_de_ravitaillement
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+			build_cost_ic = 3
+		}
+		mission_type_stats = {
+			limit = { air_supply paradrop }
+			add_stats = {
+				weight = -3
+			}
+		}
+		allow_mission_type = { air_supply paradrop }
+	}
+
+	zv_hand_mg_light = {	# Mitrailleuse légère à main (05, ligne 603)
+		abbreviation = "z15b"
+		category = zv_cat_mitrailleuse_a_main
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 0.5
+			build_cost_ic = 0.5
+			weight = 0.5
+		}
+		multiply_stats = {
+			maximum_speed = -0.01
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 0.25
+			}
+		}
+	}
+
+	zv_hand_mg_heavy = {	# Mitrailleuse lourde à main (05, ligne 604)
+		abbreviation = "z15c"
+		category = zv_cat_mitrailleuse_a_main
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 1
+			build_cost_ic = 1
+			weight = 1
+		}
+		multiply_stats = {
+			maximum_speed = -0.01
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 0.5
+			}
+		}
+	}
+
+	lmg_defense_turret = {	# Tourelle mitrailleuse légère x1 (05, ligne 605)
+		abbreviation = "z15d"
+		category = zv_cat_tourelle_x1
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 1
+			air_defence = 1
+			build_cost_ic = 1
+			weight = 1
+		}
+		multiply_stats = {
+			maximum_speed = -0.03
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 0.5
+			}
+		}
+	}
+
+	lmg_defense_turret_2x = {	# Tourelle mitrailleuse légère x2 (05, ligne 606)
+		abbreviation = "z15e"
+		category = zv_cat_tourelle_x2
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 1.5
+			air_defence = 2
+			build_cost_ic = 2
+			weight = 2
+		}
+		multiply_stats = {
+			maximum_speed = -0.06
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 1
+			}
+		}
+	}
+
+	zv_lmg_defense_turret_4x = {	# Tourelle mitrailleuse légère x4 (05, ligne 607)
+		abbreviation = "z15f"
+		category = zv_cat_tourelle_x4
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 2.5
+			air_defence = 3.5
+			build_cost_ic = 3.5
+			weight = 3.5
+		}
+		multiply_stats = {
+			maximum_speed = -0.09
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 1.5
+			}
+		}
+	}
+
+	hmg_defense_turret = {	# Tourelle mitrailleuse lourde x1 (05, ligne 608)
+		abbreviation = "z160"
+		category = zv_cat_tourelle_x1
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 1.5
+			air_defence = 2
+			build_cost_ic = 2
+			weight = 2
+		}
+		multiply_stats = {
+			maximum_speed = -0.035
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 1
+			}
+		}
+	}
+
+	hmg_defense_turret_2x = {	# Tourelle mitrailleuse lourde x2 (05, ligne 609)
+		abbreviation = "z161"
+		category = zv_cat_tourelle_x2
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 3
+			air_defence = 4
+			build_cost_ic = 4
+			weight = 4
+		}
+		multiply_stats = {
+			maximum_speed = -0.07
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 2
+			}
+		}
+	}
+
+	zv_hmg_defense_turret_4x = {	# Tourelle mitrailleuse lourde x4 (05, ligne 610)
+		abbreviation = "z162"
+		category = zv_cat_tourelle_x4
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 5
+			air_defence = 7
+			build_cost_ic = 7
+			weight = 7
+		}
+		multiply_stats = {
+			maximum_speed = -0.11
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 3
+			}
+		}
+	}
+
+	cannon_defense_turret = {	# Tourelle canon de 20 mm x1 (05, ligne 611)
+		abbreviation = "z163"
+		category = zv_cat_tourelle_x1
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 3
+			air_defence = 4
+			build_cost_ic = 4
+			weight = 4
+		}
+		multiply_stats = {
+			maximum_speed = -0.037
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 2
+			}
+		}
+	}
+
+	cannon_defense_turret_2x = {	# Tourelle canon de 20 mm x2 (05, ligne 612)
+		abbreviation = "z164"
+		category = zv_cat_tourelle_x2
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 6
+			air_defence = 8
+			build_cost_ic = 8
+			weight = 8
+		}
+		multiply_stats = {
+			maximum_speed = -0.075
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 4
+			}
+		}
+	}
+
+	zv_ball_turret_lmg_1x = {	# Tourelle à boule mitrailleuse légère x1 (05, ligne 613)
+		abbreviation = "z165"
+		category = zv_cat_tourelle_a_boule_x1
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 1
+			air_defence = 1.15
+			build_cost_ic = 1.25
+			weight = 1.5
+		}
+		multiply_stats = {
+			maximum_speed = -0.036
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 0.5
+			}
+		}
+	}
+
+	zv_ball_turret_lmg_2x = {	# Tourelle à boule mitrailleuse légère x2 (05, ligne 614)
+		abbreviation = "z166"
+		category = zv_cat_tourelle_a_boule_x2
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 1.5
+			air_defence = 2.3
+			build_cost_ic = 2.5
+			weight = 3
+		}
+		multiply_stats = {
+			maximum_speed = -0.072
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 1
+			}
+		}
+	}
+
+	zv_ball_turret_lmg_4x = {	# Tourelle à boule mitrailleuse légère x4 (05, ligne 615)
+		abbreviation = "z167"
+		category = zv_cat_tourelle_a_boule_x4
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 2.5
+			air_defence = 4.02
+			build_cost_ic = 4.38
+			weight = 5.25
+		}
+		multiply_stats = {
+			maximum_speed = -0.108
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 1.5
+			}
+		}
+	}
+
+	zv_ball_turret_hmg_1x = {	# Tourelle à boule mitrailleuse lourde x1 (05, ligne 616)
+		abbreviation = "z168"
+		category = zv_cat_tourelle_a_boule_x1
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 1.5
+			air_defence = 2.3
+			build_cost_ic = 2.5
+			weight = 3
+		}
+		multiply_stats = {
+			maximum_speed = -0.042
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 1
+			}
+		}
+	}
+
+	zv_ball_turret_hmg_2x = {	# Tourelle à boule mitrailleuse lourde x2 (05, ligne 617)
+		abbreviation = "z169"
+		category = zv_cat_tourelle_a_boule_x2
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 3
+			air_defence = 4.6
+			build_cost_ic = 5
+			weight = 6
+		}
+		multiply_stats = {
+			maximum_speed = -0.084
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 2
+			}
+		}
+	}
+
+	zv_ball_turret_hmg_4x = {	# Tourelle à boule mitrailleuse lourde x4 (05, ligne 618)
+		abbreviation = "z16a"
+		category = zv_cat_tourelle_a_boule_x4
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 5
+			air_defence = 8.05
+			build_cost_ic = 8.75
+			weight = 10.5
+		}
+		multiply_stats = {
+			maximum_speed = -0.132
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 3
+			}
+		}
+	}
+
+	zv_ball_turret_cannon_1x = {	# Tourelle à boule canon de 20 mm x1 (05, ligne 619)
+		abbreviation = "z16b"
+		category = zv_cat_tourelle_a_boule_x1
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 3
+			air_defence = 4.6
+			build_cost_ic = 5
+			weight = 6
+		}
+		multiply_stats = {
+			maximum_speed = -0.044
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 2
+			}
+		}
+	}
+
+	zv_ball_turret_cannon_2x = {	# Tourelle à boule canon de 20 mm x2 (05, ligne 620)
+		abbreviation = "z16c"
+		category = zv_cat_tourelle_a_boule_x2
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 6
+			air_defence = 9.2
+			build_cost_ic = 10
+			weight = 12
+		}
+		multiply_stats = {
+			maximum_speed = -0.09
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 4
+			}
+		}
+	}
+
+	zv_remote_turret_lmg_1x = {	# Tourelle télécommandée mitrailleuse légère x1 (05, ligne 621)
+		abbreviation = "z16d"
+		category = zv_cat_tourelle_telecommandee_x1
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 1.25
+			air_defence = 1
+			build_cost_ic = 1.75
+			weight = 0.8
+		}
+		multiply_stats = {
+			maximum_speed = -0.015
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 0.5
+			}
+		}
+	}
+
+	zv_remote_turret_lmg_2x = {	# Tourelle télécommandée mitrailleuse légère x2 (05, ligne 622)
+		abbreviation = "z16e"
+		category = zv_cat_tourelle_telecommandee_x2
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 1.88
+			air_defence = 2
+			build_cost_ic = 3.5
+			weight = 1.6
+		}
+		multiply_stats = {
+			maximum_speed = -0.03
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 1
+			}
+		}
+	}
+
+	zv_remote_turret_lmg_4x = {	# Tourelle télécommandée mitrailleuse légère x4 (05, ligne 623)
+		abbreviation = "z16f"
+		category = zv_cat_tourelle_telecommandee_x4
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 3.12
+			air_defence = 3.5
+			build_cost_ic = 6.12
+			weight = 2.8
+		}
+		multiply_stats = {
+			maximum_speed = -0.045
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 1.5
+			}
+		}
+	}
+
+	zv_remote_turret_hmg_1x = {	# Tourelle télécommandée mitrailleuse lourde x1 (05, ligne 624)
+		abbreviation = "z170"
+		category = zv_cat_tourelle_telecommandee_x1
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 1.88
+			air_defence = 2
+			build_cost_ic = 3.5
+			weight = 1.6
+		}
+		multiply_stats = {
+			maximum_speed = -0.018
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 1
+			}
+		}
+	}
+
+	zv_remote_turret_hmg_2x = {	# Tourelle télécommandée mitrailleuse lourde x2 (05, ligne 625)
+		abbreviation = "z171"
+		category = zv_cat_tourelle_telecommandee_x2
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 3.75
+			air_defence = 4
+			build_cost_ic = 7
+			weight = 3.2
+		}
+		multiply_stats = {
+			maximum_speed = -0.035
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 2
+			}
+		}
+	}
+
+	zv_remote_turret_hmg_4x = {	# Tourelle télécommandée mitrailleuse lourde x4 (05, ligne 626)
+		abbreviation = "z172"
+		category = zv_cat_tourelle_telecommandee_x4
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 6.25
+			air_defence = 7
+			build_cost_ic = 12.25
+			weight = 5.6
+		}
+		multiply_stats = {
+			maximum_speed = -0.055
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 3
+			}
+		}
+	}
+
+	zv_remote_turret_cannon_1x = {	# Tourelle télécommandée canon de 20 mm x1 (05, ligne 627)
+		abbreviation = "z173"
+		category = zv_cat_tourelle_telecommandee_x1
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 3.75
+			air_defence = 4
+			build_cost_ic = 7
+			weight = 3.2
+		}
+		multiply_stats = {
+			maximum_speed = -0.018
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 2
+			}
+		}
+	}
+
+	zv_remote_turret_cannon_2x = {	# Tourelle télécommandée canon de 20 mm x2 (05, ligne 628)
+		abbreviation = "z174"
+		category = zv_cat_tourelle_telecommandee_x2
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_stats = {
+			air_attack = 7.5
+			air_defence = 8
+			build_cost_ic = 14
+			weight = 6.4
+		}
+		multiply_stats = {
+			maximum_speed = -0.038
+		}
+		mission_type_stats = {
+			limit = { naval_bomber port_strike strategic_bomber naval_patrol cas attack_logistics naval_mines_planting }
+			add_stats = {
+				air_agility = 4
+			}
+		}
+	}
+
 	zv_jet_improved_compressor = {	# Compresseur de réacteur amélioré (05, ligne 636)
 		abbreviation = "z175"
 		category = zv_cat_ameliorations_de_reacteur
@@ -2454,6 +7318,269 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			maximum_speed = 0.04
+		}
+	}
+
+	zv_role_heavy_fighter_medium = {	# Chasseur lourd (M) (05, ligne 647)
+		abbreviation = "z179"
+		category = zv_cat_role_moyenne
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_equipment_type = { heavy_fighter }
+		forbid_module_categories = {
+			zv_cat_armes_navales
+		}
+	}
+
+	zv_role_interceptor_small = {	# Intercepteur (P) (05, ligne 648)
+		abbreviation = "z17a"
+		category = zv_cat_role_petite
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_equipment_type = { interceptor }
+		mission_type_stats = {
+			limit = { interception }
+			add_stats = {
+				air_agility = 2
+				weight = 4
+			}
+		}
+		forbid_module_categories = {
+			zv_cat_armes_navales
+		}
+	}
+
+	zv_role_cas_small = {	# Appui rapproché (P) (05, ligne 649)
+		abbreviation = "z17b"
+		category = zv_cat_role_petite
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_equipment_type = { cas }
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			multiply_stats = {
+				air_ground_attack = 0.05
+			}
+		}
+		mission_type_stats = {
+			limit = { air_superiority }
+			multiply_stats = {
+				air_attack = -0.1
+			}
+		}
+	}
+
+	zv_role_cas_medium = {	# Appui rapproché (M) (05, ligne 650)
+		abbreviation = "z17c"
+		category = zv_cat_role_moyenne
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_equipment_type = { cas }
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			multiply_stats = {
+				air_ground_attack = 0.05
+			}
+		}
+		mission_type_stats = {
+			limit = { air_superiority }
+			multiply_stats = {
+				air_attack = -0.1
+			}
+		}
+	}
+
+	zv_role_suicide_small = {	# Kamikaze (P) (05, ligne 651)
+		abbreviation = "z17d"
+		category = zv_cat_role_petite
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_equipment_type = { suicide }
+	}
+
+	zv_role_tac_bomber_medium = {	# Bombardier tactique (M) (05, ligne 652)
+		abbreviation = "z17e"
+		category = zv_cat_role_moyenne
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_equipment_type = { tactical_bomber }
+		mission_type_stats = {
+			limit = { air_superiority interception }
+			multiply_stats = {
+				air_attack = -0.1
+			}
+		}
+	}
+
+	zv_role_naval_bomber_small = {	# Bombardier naval (P) (05, ligne 653)
+		abbreviation = "z17f"
+		category = zv_cat_role_petite
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_equipment_type = { naval_bomber }
+		mission_type_stats = {
+			limit = { naval_bomber port_strike }
+			add_stats = {
+				naval_strike_targetting = 2
+			}
+		}
+		mission_type_stats = {
+			limit = { air_superiority }
+			multiply_stats = {
+				air_attack = -0.1
+			}
+		}
+	}
+
+	zv_role_naval_bomber_medium = {	# Bombardier naval (M) (05, ligne 654)
+		abbreviation = "z180"
+		category = zv_cat_role_moyenne
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_equipment_type = { naval_bomber }
+		mission_type_stats = {
+			limit = { naval_bomber port_strike }
+			add_stats = {
+				naval_strike_targetting = 2
+			}
+		}
+		mission_type_stats = {
+			limit = { air_superiority }
+			multiply_stats = {
+				air_attack = -0.1
+			}
+		}
+	}
+
+	zv_role_recon_small = {	# Reconnaissance (P) (05, ligne 655)
+		abbreviation = "z181"
+		category = zv_cat_role_petite
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_equipment_type = { scout_plane }
+		add_stats = {
+			air_defence = -2
+		}
+		multiply_stats = {
+			air_range = 0.1
+		}
+	}
+
+	zv_role_recon_medium = {	# Reconnaissance (M) (05, ligne 656)
+		abbreviation = "z182"
+		category = zv_cat_role_moyenne
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_equipment_type = { scout_plane }
+		add_stats = {
+			air_defence = -2
+		}
+		multiply_stats = {
+			air_range = 0.1
+		}
+	}
+
+	zv_role_maritime_patrol_medium = {	# Patrouille maritime (M) (05, ligne 657)
+		abbreviation = "z183"
+		category = zv_cat_role_moyenne
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_equipment_type = { maritime_patrol_plane }
+		mission_type_stats = {
+			limit = { naval_patrol }
+			multiply_stats = {
+				surface_detection = 0.1
+				sub_detection = 0.1
+			}
+		}
+		mission_type_stats = {
+			limit = { air_superiority }
+			multiply_stats = {
+				air_attack = -0.2
+			}
+		}
+	}
+
+	zv_role_maritime_patrol_large = {	# Patrouille maritime (G) (05, ligne 658)
+		abbreviation = "z184"
+		category = zv_cat_role_grande
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_equipment_type = { maritime_patrol_plane }
+		mission_type_stats = {
+			limit = { naval_patrol }
+			multiply_stats = {
+				surface_detection = 0.1
+				sub_detection = 0.1
+			}
+		}
+		mission_type_stats = {
+			limit = { air_superiority }
+			multiply_stats = {
+				air_attack = -0.2
+			}
+		}
+	}
+
+	zv_role_strat_bomber_large = {	# Bombardier stratégique (G) (05, ligne 659)
+		abbreviation = "z185"
+		category = zv_cat_role_grande
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_equipment_type = { strategic_bomber }
+		mission_type_stats = {
+			limit = { strategic_bomber }
+			multiply_stats = {
+				air_bombing = 0.05
+			}
+		}
+		mission_type_stats = {
+			limit = { cas attack_logistics }
+			multiply_stats = {
+				air_ground_attack = -0.15
+			}
+		}
+	}
+
+	zv_role_transport_medium = {	# Transport (M) (05, ligne 660)
+		abbreviation = "z186"
+		category = zv_cat_role_moyenne
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_equipment_type = { air_transport }
+		forbid_module_categories = {
+			zv_cat_mitrailleuses
+			zv_cat_canons
+			zv_cat_canon_at
+			zv_cat_mitrailleuses_de_nez
+			zv_cat_canons_de_nez
+			zv_cat_canon_at_de_nez
+			zv_cat_roquettes
+			zv_cat_attaches
+			zv_cat_en_soute
+			zv_cat_armes_navales
+			zv_cat_armes_guidees
+		}
+	}
+
+	zv_role_transport_large = {	# Transport (G) (05, ligne 661)
+		abbreviation = "z187"
+		category = zv_cat_role_grande
+		sfx = sfx_ui_sd_module_turret
+		xp_cost = 1
+		add_equipment_type = { air_transport }
+		forbid_module_categories = {
+			zv_cat_mitrailleuses
+			zv_cat_canons
+			zv_cat_canon_at
+			zv_cat_mitrailleuses_de_nez
+			zv_cat_canons_de_nez
+			zv_cat_canon_at_de_nez
+			zv_cat_roquettes
+			zv_cat_attaches
+			zv_cat_en_soute
+			zv_cat_armes_navales
+			zv_cat_armes_guidees
 		}
 	}
 

@@ -36,7 +36,9 @@ CAT_ID = {name: c["id_propose"] for name, c in CATS.items()}
 
 # Modules générés : le kit, puis tous les modules des catégories des phases déjà codées (ordre du 05).
 MODULE_IDS = list(dict.fromkeys(T.KIT_PHASE_1 + [m for m, x in MODS.items()
-                                                 if x["categorie"] in T.PHASES_CATEGORIES]))
+                                                 if (T.PHASES_CATEGORIES is None
+                                                     and x["categorie"] not in T.EXCLUDED_CATEGORIES)
+                                                 or (T.PHASES_CATEGORIES and x["categorie"] in T.PHASES_CATEGORIES)]))
 
 
 class GenError(Exception):
@@ -171,6 +173,9 @@ def allowed_sizes(m):
             for w in re.findall(r"petite|moyenne|grande", lim):
                 s |= T.CELL_WORDS[w]
             sizes = s if sizes is None else sizes & s
+        elif lim in T.LIMITE_PHRASES and T.LIMITE_PHRASES[lim][0] is not None:
+            s = set(T.LIMITE_PHRASES[lim][0])
+            sizes = s if sizes is None else sizes & s
     if m["categorie"] == "Rôle":        # réglé par la catégorie du slot Rôles
         return None
     return sizes
@@ -181,10 +186,10 @@ def limits_text(size, ind):
     t = "\t" * ind
     out = []
 
-    def limit(comment, conds, count):
+    def limit(comment, conds, count, op="<"):
         out.append(f"{t}module_count_limit = {{\t# ZV: {comment}")
         out.extend(f"{t}\t{c}" for c in conds)
-        out.extend([f"{t}\tcount < {count}", f"{t}}}"])
+        out.extend([f"{t}\tcount {op} {count}", f"{t}}}"])
 
     for mid in MODULE_IDS:
         sizes = allowed_sizes(MODS[mid])
@@ -203,6 +208,42 @@ def limits_text(size, ind):
         for mid in MODULE_IDS:
             if MODS[mid]["categorie"] == grouped:
                 limit(f"un seul exemplaire ({grouped}, 05)", [f"module = {mid}"], 2)
+    for mid in MODULE_IDS:                       # « 1 par design », « 2 par design »… (05)
+        for lim in MODS[mid].get("regles", {}).get("limites", []):
+            if lim in T.LIMITE_PHRASES and T.LIMITE_PHRASES[lim][1] is not None:
+                _, n, on = T.LIMITE_PHRASES[lim]
+                cat = CAT_ID[MODS[mid]["categorie_jeu"]]
+                cond = f"module = {mid}" if on == "module" else f"category = {cat}"
+                limit(f"{MODS[mid]['nom']} : {lim} (05)", [cond], n + 1)
+    for name, grouped, mods, counts in T.SIZE_LIMITS:   # limites d'armes par taille (05)
+        n = counts[0 if size in "NP" else 1 if size == "M" else 2]
+        if n is not None:
+            limit(f"{name} : {n} au plus (05)", size_limit_conds(grouped, mods), n + 1)
+    if size == "N" and T.CV_REQUIRED_MODULE in MODULE_IDS:
+        limit("crosse d'appontage obligatoire sur la cellule embarquée (Q11)",
+              [f"module = {T.CV_REQUIRED_MODULE}"], 0, ">")
+    return "\n".join(out)
+
+
+def size_limit_conds(grouped, mods):
+    conds = []
+    for g in grouped:
+        conds += [f"category = {CAT_ID[n]}" for n, c in CATS.items() if c["categorie"] == g]
+    conds += [f"module = {m}" for m in mods]
+    return list(dict.fromkeys(conds))
+
+
+def tier_limits_text(size, tier, ind):
+    """Limites d'un palier : elles remplacent celles de l'archétype aux mêmes conditions
+    (common/units/equipment/_documentation.md, l. 82)."""
+    t = "\t" * ind
+    out = []
+    for name, grouped, mods, counts in T.SIZE_LIMITS:
+        n = T.TIER_LIMITS.get(name, {}).get(tier)
+        if n is not None and size in "NP":
+            out.append(f"{t}module_count_limit = {{\t# ZV: {name} : {n} au plus au palier {tier} (Q7)")
+            out += [f"{t}\t{c}" for c in size_limit_conds(grouped, mods)]
+            out += [f"{t}\tcount < {n + 1}", f"{t}}}"]
     return "\n".join(out)
 
 
@@ -220,10 +261,21 @@ def gen_airframes(ref):
     eq = [e for e in entries(text, 0, len(text)) if e[0] == "equipments"][0]
     rep = []                                 # (début, fin, nouveau texte)
     found = set()
+    small_stats = {}                         # Q11 : stats de la petite cellule terrestre
+    for key, k0, v0, v1, is_blk in entries(text, *inner(eq[2], eq[3])):
+        if is_blk and key.startswith("small_plane_airframe"):
+            small_stats[key] = {e[0]: text[e[2]:e[3]] for e in entries(text, *inner(v0, v1))
+                                if e[0] in T.CV_COPY_STATS and not e[4]}
     for key, k0, v0, v1, is_blk in entries(text, *inner(eq[2], eq[3])):
         if not is_blk:
             continue
         sub = entries(text, *inner(v0, v1))
+        if key.startswith("cv_small_plane_airframe"):
+            twin = small_stats.get(key[len("cv_"):], {})
+            for k, s0, a, b, blk in sub:
+                if k in twin and not blk and text[a:b] != twin[k]:
+                    rep.append((a, b, f"{twin[k]}\t# ZV (Q11): valeur de la petite cellule terrestre "
+                                      f"(vanilla {text[a:b]}), la crosse porte la pénalité"))
         is_arch = any(e[0] == "is_archetype" and text[e[2]:e[3]] == "yes" for e in sub)
         if is_arch:
             if key not in T.ARCHETYPES:
@@ -252,7 +304,13 @@ def gen_airframes(ref):
                 elif k == "default_modules":
                     rep.append((s0, b, "# ZV: default_modules vanilla retiré (slots vides, D-25)"))
         else:
-            rep.append((v1 - 1, v1 - 1, "\t" + upgrades_list(2).lstrip("\t") + "\n\t"))   # avant l'accolade fermante
+            arch = next((text[e[2]:e[3]] for e in sub if e[0] == "archetype"), None)
+            extra = upgrades_list(2)
+            if arch in T.ARCHETYPES:
+                tl = tier_limits_text(T.ARCHETYPES[arch], key.rsplit("_", 1)[-1], 2)
+                if tl:
+                    extra += "\n" + tl
+            rep.append((v1 - 1, v1 - 1, "\t" + extra.lstrip("\t") + "\n\t"))   # avant l'accolade fermante
             for k, s0, a, b, blk in sub:
                 if k == "module_slots" and blk:
                     rep.append((a, b, "inherit\t# ZV: mêmes slots à tous les paliers (02 §1.4)"))
@@ -290,7 +348,9 @@ def interdits(m):
         out += [CAT_ID[n] for n in CATS if n.startswith("Motorisation") and n[-1] in classes]
         raw = raw.replace(mt.group(0), "")
     for name in [x.strip() for x in raw.split(",") if x.strip()]:
-        if name in CAT_ID:
+        if name in T.INTERDIT_PHRASES:
+            out += [CAT_ID[n] for n in (T.INTERDIT_PHRASES[name] or [])]
+        elif name in CAT_ID:
             out.append(CAT_ID[name])
         elif name in {c["categorie"] for c in CATS.values()}:
             out += [CAT_ID[n] for n, c in CATS.items() if c["categorie"] == name]
@@ -431,7 +491,7 @@ def module_text(m, abbr):
         L.append(f"{t}}}")
     for d in deb:
         if d.startswith("missions :"):
-            ms = [T.MISSIONS[x.strip()] for x in d.split(":", 1)[1].split(",")]
+            ms = [T.MISSIONS[re.sub(r"\s*\(.*\)$", "", x).strip()] for x in d.split(":", 1)[1].split(",")]
             L.append(f"{t}allow_mission_type = {{ {' '.join(ms)} }}")
     forb = interdits(m)
     if forb:
@@ -481,6 +541,8 @@ def gen_icons(ref):
     L = ["# ZV Designer : icônes PROVISOIRES, générées par scripts/gen_mod.py (images vanilla).",
          "spriteTypes = {"]
     for mid in MODULE_IDS:
+        if not mid.startswith("zv_") and f"GFX_EMI_{mid}" in tex:
+            continue                         # identifiant vanilla gardé : son icône existe déjà
         borrowed = T.ICONES_PROVISOIRES.get(mid)
         for pattern, sprite in ([] if borrowed else T.ICONES_REGLES):
             if (mr := re.match(pattern, mid)):

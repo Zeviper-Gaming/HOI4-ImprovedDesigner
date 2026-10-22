@@ -418,6 +418,258 @@ equipments = {
 			module = zv_wep_l
 			count < 1
 		}
+		module_count_limit = {	# ZV: Extincteur automatique (M) interdit sur cette cellule
+			module = zv_auto_extinguisher_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Extincteur automatique (L) interdit sur cette cellule
+			module = zv_auto_extinguisher_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage « Jug » (M) interdit sur cette cellule
+			module = zv_fuselage_jug_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage « Jug » (L) interdit sur cette cellule
+			module = zv_fuselage_jug_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage goutte (M) interdit sur cette cellule
+			module = zv_fuselage_teardrop_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage bipoutre (M) interdit sur cette cellule
+			module = zv_fuselage_twin_boom_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Aile volante (M) interdit sur cette cellule
+			module = zv_fuselage_flying_wing_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Aile volante (L) interdit sur cette cellule
+			module = zv_fuselage_flying_wing_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hydravion à coque (M) interdit sur cette cellule
+			module = zv_fuselage_flying_boat_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hydravion à coque (L) interdit sur cette cellule
+			module = zv_fuselage_flying_boat_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Blindage (M) interdit sur cette cellule
+			module = zv_armor_plate_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Blindage (L) interdit sur cette cellule
+			module = zv_armor_plate_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (M) interdit sur cette cellule
+			module = zv_non_strategic_materials_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (L) interdit sur cette cellule
+			module = zv_non_strategic_materials_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Construction allégée (M) interdit sur cette cellule
+			module = zv_lightweight_construction_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Construction renforcée (M) interdit sur cette cellule
+			module = zv_reinforced_construction_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Construction renforcée (L) interdit sur cette cellule
+			module = zv_reinforced_construction_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Volets de combat (M) interdit sur cette cellule
+			module = zv_combat_flaps_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Aérofreins (M) interdit sur cette cellule
+			module = zv_dive_brakes_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Pylônes aérodynamiques (M) interdit sur cette cellule
+			module = zv_aerodynamic_pylons_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (M) interdit sur cette cellule
+			module = zv_fuel_tanks_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (L) interdit sur cette cellule
+			module = zv_fuel_tanks_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (M) interdit sur cette cellule
+			module = zv_self_sealing_fuel_tanks_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (L) interdit sur cette cellule
+			module = zv_self_sealing_fuel_tanks_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs largables (M) interdit sur cette cellule
+			module = zv_drop_tanks_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoir de soute interdit sur cette cellule
+			module = zv_bomb_bay_tank
+			count < 1
+		}
+		module_count_limit = {	# ZV: Canon AT 57 mm (6 livres Molins) interdit sur cette cellule
+			module = zv_at_cannon_57
+			count < 1
+		}
+		module_count_limit = {	# ZV: Canon AT 75 mm (PaK 40, B-25H) interdit sur cette cellule
+			module = zv_at_cannon_75
+			count < 1
+		}
+		module_count_limit = {	# ZV: Canon AT 57 mm (6 livres Molins) (nez) interdit sur cette cellule
+			module = zv_nose_at_cannon_57
+			count < 1
+		}
+		module_count_limit = {	# ZV: Canon AT 75 mm (PaK 40, B-25H) (nez) interdit sur cette cellule
+			module = zv_nose_at_cannon_75
+			count < 1
+		}
+		module_count_limit = {	# ZV: Très gros calibres (attaches) interdit sur cette cellule
+			module = zv_bomb_locks_earthquake
+			count < 1
+		}
+		module_count_limit = {	# ZV: Bombes moyennes en soute interdit sur cette cellule
+			module = zv_bomb_bay_medium
+			count < 1
+		}
+		module_count_limit = {	# ZV: Bombes moyennes en soute (fragmentation) interdit sur cette cellule
+			module = zv_bomb_bay_medium_frag
+			count < 1
+		}
+		module_count_limit = {	# ZV: Grandes bombes en soute interdit sur cette cellule
+			module = zv_bomb_bay_large
+			count < 1
+		}
+		module_count_limit = {	# ZV: Grandes bombes en soute (fragmentation) interdit sur cette cellule
+			module = zv_bomb_bay_large_frag
+			count < 1
+		}
+		module_count_limit = {	# ZV: Bombes incendiaires en soute interdit sur cette cellule
+			module = zv_bomb_bay_incendiary
+			count < 1
+		}
+		module_count_limit = {	# ZV: Très grosses bombes en soute (sans portes) interdit sur cette cellule
+			module = zv_bomb_bay_earthquake
+			count < 1
+		}
+		module_count_limit = {	# ZV: Missile antinavire interdit sur cette cellule
+			module = guided_anti_ship_missile
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fritz X interdit sur cette cellule
+			module = zv_fritz_x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hs 293 interdit sur cette cellule
+			module = zv_hs293
+			count < 1
+		}
+		module_count_limit = {	# ZV: Schräge Musik interdit sur cette cellule
+			module = zv_schraege_musik
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle mitrailleuse légère x2 interdit sur cette cellule
+			module = lmg_defense_turret_2x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle mitrailleuse légère x4 interdit sur cette cellule
+			module = zv_lmg_defense_turret_4x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle mitrailleuse lourde x2 interdit sur cette cellule
+			module = hmg_defense_turret_2x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle mitrailleuse lourde x4 interdit sur cette cellule
+			module = zv_hmg_defense_turret_4x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle canon de 20 mm x1 interdit sur cette cellule
+			module = cannon_defense_turret
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle canon de 20 mm x2 interdit sur cette cellule
+			module = cannon_defense_turret_2x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule mitrailleuse légère x1 interdit sur cette cellule
+			module = zv_ball_turret_lmg_1x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule mitrailleuse légère x2 interdit sur cette cellule
+			module = zv_ball_turret_lmg_2x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule mitrailleuse légère x4 interdit sur cette cellule
+			module = zv_ball_turret_lmg_4x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule mitrailleuse lourde x1 interdit sur cette cellule
+			module = zv_ball_turret_hmg_1x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule mitrailleuse lourde x2 interdit sur cette cellule
+			module = zv_ball_turret_hmg_2x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule mitrailleuse lourde x4 interdit sur cette cellule
+			module = zv_ball_turret_hmg_4x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule canon de 20 mm x1 interdit sur cette cellule
+			module = zv_ball_turret_cannon_1x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule canon de 20 mm x2 interdit sur cette cellule
+			module = zv_ball_turret_cannon_2x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée mitrailleuse légère x1 interdit sur cette cellule
+			module = zv_remote_turret_lmg_1x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée mitrailleuse légère x2 interdit sur cette cellule
+			module = zv_remote_turret_lmg_2x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée mitrailleuse légère x4 interdit sur cette cellule
+			module = zv_remote_turret_lmg_4x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée mitrailleuse lourde x1 interdit sur cette cellule
+			module = zv_remote_turret_hmg_1x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée mitrailleuse lourde x2 interdit sur cette cellule
+			module = zv_remote_turret_hmg_2x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée mitrailleuse lourde x4 interdit sur cette cellule
+			module = zv_remote_turret_hmg_4x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée canon de 20 mm x1 interdit sur cette cellule
+			module = zv_remote_turret_cannon_1x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée canon de 20 mm x2 interdit sur cette cellule
+			module = zv_remote_turret_cannon_2x
+			count < 1
+		}
 		module_count_limit = {	# ZV: Une seule suralimentation par design (limite partagée). (zv_limit_supercharger)
 			module = zv_early_supercharger
 			module = zv_early_turbocharger
@@ -426,6 +678,34 @@ equipments = {
 			module = zv_improved_supercharger
 			module = zv_two_stage_supercharger
 			module = zv_improved_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Radio par design (09)
+			category = zv_cat_radio
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Blindage du cockpit par design (09)
+			category = zv_cat_blindage_du_cockpit
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Réservoir interne par design (09)
+			category = zv_cat_reservoir_interne
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Radar par design (09)
+			category = zv_cat_radar
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Viseur de bombardement par design (09)
+			category = zv_cat_viseur_de_bombardement
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Navigation par design (09)
+			category = zv_cat_navigation
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Alerte radar par design (09)
+			category = zv_cat_alerte_radar
 			count < 2
 		}
 		module_count_limit = {	# ZV: une seule Régime d'urgence par design (09)
@@ -512,6 +792,110 @@ equipments = {
 			module = zv_anti_g_carburettor
 			count < 2
 		}
+		module_count_limit = {	# ZV: Blindage (S) : 1 par design (05)
+			module = zv_armor_plate_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: Blindage (M) : 2 par design (05)
+			module = zv_armor_plate_m
+			count < 3
+		}
+		module_count_limit = {	# ZV: Blindage (L) : 2 par design (05)
+			module = zv_armor_plate_l
+			count < 3
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (S) : 1 par design (05)
+			module = zv_non_strategic_materials_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (M) : 1 par design (05)
+			module = zv_non_strategic_materials_m
+			count < 2
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (L) : 1 par design (05)
+			module = zv_non_strategic_materials_l
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (S) : 1 par design (catégorie) (05)
+			category = zv_cat_reservoir_interne
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (M) : 1 par design (catégorie) (05)
+			category = zv_cat_reservoir_interne
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (L) : 1 par design (catégorie) (05)
+			category = zv_cat_reservoir_interne
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (S) : 1 par design (05)
+			module = zv_self_sealing_fuel_tanks_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (M) : 1 par design (05)
+			module = zv_self_sealing_fuel_tanks_m
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (L) : 1 par design (05)
+			module = zv_self_sealing_fuel_tanks_l
+			count < 2
+		}
+		module_count_limit = {	# ZV: Très gros calibres (attaches) : 1 par design ; grande cellule (05)
+			module = zv_bomb_locks_earthquake
+			count < 2
+		}
+		module_count_limit = {	# ZV: Très grosses bombes en soute (sans portes) : 1 par design ; grande cellule (05)
+			module = zv_bomb_bay_earthquake
+			count < 2
+		}
+		module_count_limit = {	# ZV: Armes navales + Armes guidées : 1 au plus (05)
+			category = zv_cat_armes_navales
+			category = zv_cat_armes_guidees
+			count < 2
+		}
+		module_count_limit = {	# ZV: Canon AT (y compris de nez) : 2 au plus (05)
+			category = zv_cat_canon_at
+			category = zv_cat_canon_at_de_nez
+			count < 3
+		}
+		module_count_limit = {	# ZV: Canon AT lourd (57, 75 mm) : 1 au plus (05)
+			module = zv_at_cannon_57
+			module = zv_at_cannon_75
+			module = zv_nose_at_cannon_57
+			module = zv_nose_at_cannon_75
+			count < 2
+		}
+		module_count_limit = {	# ZV: En soute : 2 au plus (05)
+			category = zv_cat_en_soute
+			count < 3
+		}
+		module_count_limit = {	# ZV: Tourelles (toutes catégories) : 0 au plus (05)
+			category = zv_cat_tourelle_x1
+			category = zv_cat_tourelle_x2
+			category = zv_cat_tourelle_x4
+			category = zv_cat_tourelle_a_boule_x1
+			category = zv_cat_tourelle_a_boule_x2
+			category = zv_cat_tourelle_a_boule_x4
+			category = zv_cat_tourelle_telecommandee_x1
+			category = zv_cat_tourelle_telecommandee_x2
+			category = zv_cat_tourelle_telecommandee_x4
+			count < 1
+		}
+		module_count_limit = {	# ZV: Roquettes : 2 au plus (05)
+			category = zv_cat_roquettes
+			count < 3
+		}
+		module_count_limit = {	# ZV: Attaches : 3 au plus (05)
+			category = zv_cat_attaches
+			count < 4
+		}
+		module_count_limit = {	# ZV: Mitrailleuses + canons (y compris de nez) : 3 au plus (05)
+			category = zv_cat_mitrailleuses
+			category = zv_cat_canons
+			category = zv_cat_mitrailleuses_de_nez
+			category = zv_cat_canons_de_nez
+			count < 4
+		}
 		# ZV: les 18 module_count_limit vanilla sont retirés
 
 		# ZV: default_modules vanilla retiré (slots vides, D-25)
@@ -536,6 +920,13 @@ equipments = {
 		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
 			zv_engine_power_upgrade
 			zv_reliability_upgrade
+		}
+		module_count_limit = {	# ZV: Mitrailleuses + canons (y compris de nez) : 2 au plus au palier 0 (Q7)
+			category = zv_cat_mitrailleuses
+			category = zv_cat_canons
+			category = zv_cat_mitrailleuses_de_nez
+			category = zv_cat_canons_de_nez
+			count < 3
 		}
 	}
 
@@ -564,6 +955,13 @@ equipments = {
 		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
 			zv_engine_power_upgrade
 			zv_reliability_upgrade
+		}
+		module_count_limit = {	# ZV: Mitrailleuses + canons (y compris de nez) : 2 au plus au palier 1 (Q7)
+			category = zv_cat_mitrailleuses
+			category = zv_cat_canons
+			category = zv_cat_mitrailleuses_de_nez
+			category = zv_cat_canons_de_nez
+			count < 3
 		}
 	}
 	small_plane_airframe_2 = { #Improved
@@ -730,7 +1128,7 @@ equipments = {
 		lend_lease_cost = 8
 		manpower = 20
 		fuel_consumption = 0	# ZV: la consommation vient des moteurs (D-07)
-		build_cost_ic = 6
+		build_cost_ic = 4	# ZV (Q11): valeur de la petite cellule terrestre (vanilla 6), la crosse porte la pénalité
 		resources = {
 			aluminium = 2
 			rubber = 1
@@ -1078,6 +1476,258 @@ equipments = {
 			module = zv_wep_l
 			count < 1
 		}
+		module_count_limit = {	# ZV: Extincteur automatique (M) interdit sur cette cellule
+			module = zv_auto_extinguisher_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Extincteur automatique (L) interdit sur cette cellule
+			module = zv_auto_extinguisher_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage « Jug » (M) interdit sur cette cellule
+			module = zv_fuselage_jug_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage « Jug » (L) interdit sur cette cellule
+			module = zv_fuselage_jug_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage goutte (M) interdit sur cette cellule
+			module = zv_fuselage_teardrop_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage bipoutre (M) interdit sur cette cellule
+			module = zv_fuselage_twin_boom_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Aile volante (M) interdit sur cette cellule
+			module = zv_fuselage_flying_wing_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Aile volante (L) interdit sur cette cellule
+			module = zv_fuselage_flying_wing_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hydravion à coque (M) interdit sur cette cellule
+			module = zv_fuselage_flying_boat_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hydravion à coque (L) interdit sur cette cellule
+			module = zv_fuselage_flying_boat_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Blindage (M) interdit sur cette cellule
+			module = zv_armor_plate_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Blindage (L) interdit sur cette cellule
+			module = zv_armor_plate_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (M) interdit sur cette cellule
+			module = zv_non_strategic_materials_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (L) interdit sur cette cellule
+			module = zv_non_strategic_materials_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Construction allégée (M) interdit sur cette cellule
+			module = zv_lightweight_construction_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Construction renforcée (M) interdit sur cette cellule
+			module = zv_reinforced_construction_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Construction renforcée (L) interdit sur cette cellule
+			module = zv_reinforced_construction_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Volets de combat (M) interdit sur cette cellule
+			module = zv_combat_flaps_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Aérofreins (M) interdit sur cette cellule
+			module = zv_dive_brakes_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Pylônes aérodynamiques (M) interdit sur cette cellule
+			module = zv_aerodynamic_pylons_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (M) interdit sur cette cellule
+			module = zv_fuel_tanks_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (L) interdit sur cette cellule
+			module = zv_fuel_tanks_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (M) interdit sur cette cellule
+			module = zv_self_sealing_fuel_tanks_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (L) interdit sur cette cellule
+			module = zv_self_sealing_fuel_tanks_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs largables (M) interdit sur cette cellule
+			module = zv_drop_tanks_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoir de soute interdit sur cette cellule
+			module = zv_bomb_bay_tank
+			count < 1
+		}
+		module_count_limit = {	# ZV: Canon AT 57 mm (6 livres Molins) interdit sur cette cellule
+			module = zv_at_cannon_57
+			count < 1
+		}
+		module_count_limit = {	# ZV: Canon AT 75 mm (PaK 40, B-25H) interdit sur cette cellule
+			module = zv_at_cannon_75
+			count < 1
+		}
+		module_count_limit = {	# ZV: Canon AT 57 mm (6 livres Molins) (nez) interdit sur cette cellule
+			module = zv_nose_at_cannon_57
+			count < 1
+		}
+		module_count_limit = {	# ZV: Canon AT 75 mm (PaK 40, B-25H) (nez) interdit sur cette cellule
+			module = zv_nose_at_cannon_75
+			count < 1
+		}
+		module_count_limit = {	# ZV: Très gros calibres (attaches) interdit sur cette cellule
+			module = zv_bomb_locks_earthquake
+			count < 1
+		}
+		module_count_limit = {	# ZV: Bombes moyennes en soute interdit sur cette cellule
+			module = zv_bomb_bay_medium
+			count < 1
+		}
+		module_count_limit = {	# ZV: Bombes moyennes en soute (fragmentation) interdit sur cette cellule
+			module = zv_bomb_bay_medium_frag
+			count < 1
+		}
+		module_count_limit = {	# ZV: Grandes bombes en soute interdit sur cette cellule
+			module = zv_bomb_bay_large
+			count < 1
+		}
+		module_count_limit = {	# ZV: Grandes bombes en soute (fragmentation) interdit sur cette cellule
+			module = zv_bomb_bay_large_frag
+			count < 1
+		}
+		module_count_limit = {	# ZV: Bombes incendiaires en soute interdit sur cette cellule
+			module = zv_bomb_bay_incendiary
+			count < 1
+		}
+		module_count_limit = {	# ZV: Très grosses bombes en soute (sans portes) interdit sur cette cellule
+			module = zv_bomb_bay_earthquake
+			count < 1
+		}
+		module_count_limit = {	# ZV: Missile antinavire interdit sur cette cellule
+			module = guided_anti_ship_missile
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fritz X interdit sur cette cellule
+			module = zv_fritz_x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hs 293 interdit sur cette cellule
+			module = zv_hs293
+			count < 1
+		}
+		module_count_limit = {	# ZV: Schräge Musik interdit sur cette cellule
+			module = zv_schraege_musik
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle mitrailleuse légère x2 interdit sur cette cellule
+			module = lmg_defense_turret_2x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle mitrailleuse légère x4 interdit sur cette cellule
+			module = zv_lmg_defense_turret_4x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle mitrailleuse lourde x2 interdit sur cette cellule
+			module = hmg_defense_turret_2x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle mitrailleuse lourde x4 interdit sur cette cellule
+			module = zv_hmg_defense_turret_4x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle canon de 20 mm x1 interdit sur cette cellule
+			module = cannon_defense_turret
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle canon de 20 mm x2 interdit sur cette cellule
+			module = cannon_defense_turret_2x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule mitrailleuse légère x1 interdit sur cette cellule
+			module = zv_ball_turret_lmg_1x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule mitrailleuse légère x2 interdit sur cette cellule
+			module = zv_ball_turret_lmg_2x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule mitrailleuse légère x4 interdit sur cette cellule
+			module = zv_ball_turret_lmg_4x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule mitrailleuse lourde x1 interdit sur cette cellule
+			module = zv_ball_turret_hmg_1x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule mitrailleuse lourde x2 interdit sur cette cellule
+			module = zv_ball_turret_hmg_2x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule mitrailleuse lourde x4 interdit sur cette cellule
+			module = zv_ball_turret_hmg_4x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule canon de 20 mm x1 interdit sur cette cellule
+			module = zv_ball_turret_cannon_1x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule canon de 20 mm x2 interdit sur cette cellule
+			module = zv_ball_turret_cannon_2x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée mitrailleuse légère x1 interdit sur cette cellule
+			module = zv_remote_turret_lmg_1x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée mitrailleuse légère x2 interdit sur cette cellule
+			module = zv_remote_turret_lmg_2x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée mitrailleuse légère x4 interdit sur cette cellule
+			module = zv_remote_turret_lmg_4x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée mitrailleuse lourde x1 interdit sur cette cellule
+			module = zv_remote_turret_hmg_1x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée mitrailleuse lourde x2 interdit sur cette cellule
+			module = zv_remote_turret_hmg_2x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée mitrailleuse lourde x4 interdit sur cette cellule
+			module = zv_remote_turret_hmg_4x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée canon de 20 mm x1 interdit sur cette cellule
+			module = zv_remote_turret_cannon_1x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée canon de 20 mm x2 interdit sur cette cellule
+			module = zv_remote_turret_cannon_2x
+			count < 1
+		}
 		module_count_limit = {	# ZV: Une seule suralimentation par design (limite partagée). (zv_limit_supercharger)
 			module = zv_early_supercharger
 			module = zv_early_turbocharger
@@ -1086,6 +1736,34 @@ equipments = {
 			module = zv_improved_supercharger
 			module = zv_two_stage_supercharger
 			module = zv_improved_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Radio par design (09)
+			category = zv_cat_radio
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Blindage du cockpit par design (09)
+			category = zv_cat_blindage_du_cockpit
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Réservoir interne par design (09)
+			category = zv_cat_reservoir_interne
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Radar par design (09)
+			category = zv_cat_radar
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Viseur de bombardement par design (09)
+			category = zv_cat_viseur_de_bombardement
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Navigation par design (09)
+			category = zv_cat_navigation
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Alerte radar par design (09)
+			category = zv_cat_alerte_radar
 			count < 2
 		}
 		module_count_limit = {	# ZV: une seule Régime d'urgence par design (09)
@@ -1172,6 +1850,114 @@ equipments = {
 			module = zv_anti_g_carburettor
 			count < 2
 		}
+		module_count_limit = {	# ZV: Blindage (S) : 1 par design (05)
+			module = zv_armor_plate_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: Blindage (M) : 2 par design (05)
+			module = zv_armor_plate_m
+			count < 3
+		}
+		module_count_limit = {	# ZV: Blindage (L) : 2 par design (05)
+			module = zv_armor_plate_l
+			count < 3
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (S) : 1 par design (05)
+			module = zv_non_strategic_materials_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (M) : 1 par design (05)
+			module = zv_non_strategic_materials_m
+			count < 2
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (L) : 1 par design (05)
+			module = zv_non_strategic_materials_l
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (S) : 1 par design (catégorie) (05)
+			category = zv_cat_reservoir_interne
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (M) : 1 par design (catégorie) (05)
+			category = zv_cat_reservoir_interne
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (L) : 1 par design (catégorie) (05)
+			category = zv_cat_reservoir_interne
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (S) : 1 par design (05)
+			module = zv_self_sealing_fuel_tanks_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (M) : 1 par design (05)
+			module = zv_self_sealing_fuel_tanks_m
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (L) : 1 par design (05)
+			module = zv_self_sealing_fuel_tanks_l
+			count < 2
+		}
+		module_count_limit = {	# ZV: Très gros calibres (attaches) : 1 par design ; grande cellule (05)
+			module = zv_bomb_locks_earthquake
+			count < 2
+		}
+		module_count_limit = {	# ZV: Très grosses bombes en soute (sans portes) : 1 par design ; grande cellule (05)
+			module = zv_bomb_bay_earthquake
+			count < 2
+		}
+		module_count_limit = {	# ZV: Armes navales + Armes guidées : 1 au plus (05)
+			category = zv_cat_armes_navales
+			category = zv_cat_armes_guidees
+			count < 2
+		}
+		module_count_limit = {	# ZV: Canon AT (y compris de nez) : 2 au plus (05)
+			category = zv_cat_canon_at
+			category = zv_cat_canon_at_de_nez
+			count < 3
+		}
+		module_count_limit = {	# ZV: Canon AT lourd (57, 75 mm) : 1 au plus (05)
+			module = zv_at_cannon_57
+			module = zv_at_cannon_75
+			module = zv_nose_at_cannon_57
+			module = zv_nose_at_cannon_75
+			count < 2
+		}
+		module_count_limit = {	# ZV: En soute : 2 au plus (05)
+			category = zv_cat_en_soute
+			count < 3
+		}
+		module_count_limit = {	# ZV: Tourelles (toutes catégories) : 0 au plus (05)
+			category = zv_cat_tourelle_x1
+			category = zv_cat_tourelle_x2
+			category = zv_cat_tourelle_x4
+			category = zv_cat_tourelle_a_boule_x1
+			category = zv_cat_tourelle_a_boule_x2
+			category = zv_cat_tourelle_a_boule_x4
+			category = zv_cat_tourelle_telecommandee_x1
+			category = zv_cat_tourelle_telecommandee_x2
+			category = zv_cat_tourelle_telecommandee_x4
+			count < 1
+		}
+		module_count_limit = {	# ZV: Roquettes : 2 au plus (05)
+			category = zv_cat_roquettes
+			count < 3
+		}
+		module_count_limit = {	# ZV: Attaches : 3 au plus (05)
+			category = zv_cat_attaches
+			count < 4
+		}
+		module_count_limit = {	# ZV: Mitrailleuses + canons (y compris de nez) : 3 au plus (05)
+			category = zv_cat_mitrailleuses
+			category = zv_cat_canons
+			category = zv_cat_mitrailleuses_de_nez
+			category = zv_cat_canons_de_nez
+			count < 4
+		}
+		module_count_limit = {	# ZV: crosse d'appontage obligatoire sur la cellule embarquée (Q11)
+			module = zv_carrier_equipment
+			count > 0
+		}
 
 		# ZV: les 18 module_count_limit vanilla sont retirés
 
@@ -1189,9 +1975,9 @@ equipments = {
 
 		air_range = 400
 		maximum_speed = 400
-		air_agility = 30
+		air_agility = 35	# ZV (Q11): valeur de la petite cellule terrestre (vanilla 30), la crosse porte la pénalité
 		air_defence = 7
-		weight = 4
+		weight = 3	# ZV (Q11): valeur de la petite cellule terrestre (vanilla 4), la crosse porte la pénalité
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 
@@ -1199,6 +1985,13 @@ equipments = {
 		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
 			zv_engine_power_upgrade
 			zv_reliability_upgrade
+		}
+		module_count_limit = {	# ZV: Mitrailleuses + canons (y compris de nez) : 2 au plus au palier 0 (Q7)
+			category = zv_cat_mitrailleuses
+			category = zv_cat_canons
+			category = zv_cat_mitrailleuses_de_nez
+			category = zv_cat_canons_de_nez
+			count < 3
 		}
 	}
 
@@ -1213,12 +2006,12 @@ equipments = {
 
 		air_range = 550
 		maximum_speed = 425
-		air_agility = 35
+		air_agility = 40	# ZV (Q11): valeur de la petite cellule terrestre (vanilla 35), la crosse porte la pénalité
 		air_defence = 9
-		weight = 5
+		weight = 4	# ZV (Q11): valeur de la petite cellule terrestre (vanilla 5), la crosse porte la pénalité
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 8.5
+		build_cost_ic = 5	# ZV (Q11): valeur de la petite cellule terrestre (vanilla 8.5), la crosse porte la pénalité
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -1227,6 +2020,13 @@ equipments = {
 		upgrades = {	# ZV: curseurs de puissance et de fiabilité (22/10)
 			zv_engine_power_upgrade
 			zv_reliability_upgrade
+		}
+		module_count_limit = {	# ZV: Mitrailleuses + canons (y compris de nez) : 2 au plus au palier 1 (Q7)
+			category = zv_cat_mitrailleuses
+			category = zv_cat_canons
+			category = zv_cat_mitrailleuses_de_nez
+			category = zv_cat_canons_de_nez
+			count < 3
 		}
 	}
 	cv_small_plane_airframe_2 = { #Improved
@@ -1240,12 +2040,12 @@ equipments = {
 
 		air_range = 650
 		maximum_speed = 450
-		air_agility = 40
+		air_agility = 45	# ZV (Q11): valeur de la petite cellule terrestre (vanilla 40), la crosse porte la pénalité
 		air_defence = 11
-		weight = 6
+		weight = 5	# ZV (Q11): valeur de la petite cellule terrestre (vanilla 6), la crosse porte la pénalité
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 9.5
+		build_cost_ic = 6	# ZV (Q11): valeur de la petite cellule terrestre (vanilla 9.5), la crosse porte la pénalité
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -1268,12 +2068,12 @@ equipments = {
 
 		air_range = 750
 		maximum_speed = 475
-		air_agility = 45
+		air_agility = 50	# ZV (Q11): valeur de la petite cellule terrestre (vanilla 45), la crosse porte la pénalité
 		air_defence = 12
 		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 11
+		build_cost_ic = 7	# ZV (Q11): valeur de la petite cellule terrestre (vanilla 11), la crosse porte la pénalité
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -1295,12 +2095,12 @@ equipments = {
 
 		air_range = 900
 		maximum_speed = 500
-		air_agility = 50
+		air_agility = 55	# ZV (Q11): valeur de la petite cellule terrestre (vanilla 50), la crosse porte la pénalité
 		air_defence = 18
 		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 14.5
+		build_cost_ic = 10	# ZV (Q11): valeur de la petite cellule terrestre (vanilla 14.5), la crosse porte la pénalité
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -1826,6 +2626,154 @@ equipments = {
 			module = zv_wep_l
 			count < 1
 		}
+		module_count_limit = {	# ZV: Extincteur automatique (S) interdit sur cette cellule
+			module = zv_auto_extinguisher_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Extincteur automatique (L) interdit sur cette cellule
+			module = zv_auto_extinguisher_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Chariot largable interdit sur cette cellule
+			module = zv_takeoff_trolley
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage « Jug » (S) interdit sur cette cellule
+			module = zv_fuselage_jug_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage « Jug » (L) interdit sur cette cellule
+			module = zv_fuselage_jug_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage goutte (S) interdit sur cette cellule
+			module = zv_fuselage_teardrop_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage bipoutre (S) interdit sur cette cellule
+			module = zv_fuselage_twin_boom_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Aile volante (S) interdit sur cette cellule
+			module = zv_fuselage_flying_wing_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Aile volante (L) interdit sur cette cellule
+			module = zv_fuselage_flying_wing_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hydravion à coque (L) interdit sur cette cellule
+			module = zv_fuselage_flying_boat_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Blindage (S) interdit sur cette cellule
+			module = zv_armor_plate_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Blindage (L) interdit sur cette cellule
+			module = zv_armor_plate_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (S) interdit sur cette cellule
+			module = zv_non_strategic_materials_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (L) interdit sur cette cellule
+			module = zv_non_strategic_materials_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Construction allégée (S) interdit sur cette cellule
+			module = zv_lightweight_construction_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Construction renforcée (S) interdit sur cette cellule
+			module = zv_reinforced_construction_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Construction renforcée (L) interdit sur cette cellule
+			module = zv_reinforced_construction_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Volets de combat (S) interdit sur cette cellule
+			module = zv_combat_flaps_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Aérofreins (S) interdit sur cette cellule
+			module = zv_dive_brakes_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Pylônes aérodynamiques (S) interdit sur cette cellule
+			module = zv_aerodynamic_pylons_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Crosse d'appontage et ailes repliables interdit sur cette cellule
+			module = zv_carrier_equipment
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (S) interdit sur cette cellule
+			module = zv_fuel_tanks_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (L) interdit sur cette cellule
+			module = zv_fuel_tanks_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (S) interdit sur cette cellule
+			module = zv_self_sealing_fuel_tanks_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (L) interdit sur cette cellule
+			module = zv_self_sealing_fuel_tanks_l
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs largables (S) interdit sur cette cellule
+			module = zv_drop_tanks_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Très gros calibres (attaches) interdit sur cette cellule
+			module = zv_bomb_locks_earthquake
+			count < 1
+		}
+		module_count_limit = {	# ZV: Grandes bombes en soute interdit sur cette cellule
+			module = zv_bomb_bay_large
+			count < 1
+		}
+		module_count_limit = {	# ZV: Grandes bombes en soute (fragmentation) interdit sur cette cellule
+			module = zv_bomb_bay_large_frag
+			count < 1
+		}
+		module_count_limit = {	# ZV: Bombes incendiaires en soute interdit sur cette cellule
+			module = zv_bomb_bay_incendiary
+			count < 1
+		}
+		module_count_limit = {	# ZV: Très grosses bombes en soute (sans portes) interdit sur cette cellule
+			module = zv_bomb_bay_earthquake
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle mitrailleuse légère x4 interdit sur cette cellule
+			module = zv_lmg_defense_turret_4x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle mitrailleuse lourde x4 interdit sur cette cellule
+			module = zv_hmg_defense_turret_4x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule mitrailleuse légère x4 interdit sur cette cellule
+			module = zv_ball_turret_lmg_4x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle à boule mitrailleuse lourde x4 interdit sur cette cellule
+			module = zv_ball_turret_hmg_4x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée mitrailleuse légère x4 interdit sur cette cellule
+			module = zv_remote_turret_lmg_4x
+			count < 1
+		}
+		module_count_limit = {	# ZV: Tourelle télécommandée mitrailleuse lourde x4 interdit sur cette cellule
+			module = zv_remote_turret_hmg_4x
+			count < 1
+		}
 		module_count_limit = {	# ZV: Une seule suralimentation par design (limite partagée). (zv_limit_supercharger)
 			module = zv_early_supercharger
 			module = zv_early_turbocharger
@@ -1834,6 +2782,34 @@ equipments = {
 			module = zv_improved_supercharger
 			module = zv_two_stage_supercharger
 			module = zv_improved_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Radio par design (09)
+			category = zv_cat_radio
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Blindage du cockpit par design (09)
+			category = zv_cat_blindage_du_cockpit
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Réservoir interne par design (09)
+			category = zv_cat_reservoir_interne
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Radar par design (09)
+			category = zv_cat_radar
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Viseur de bombardement par design (09)
+			category = zv_cat_viseur_de_bombardement
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Navigation par design (09)
+			category = zv_cat_navigation
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Alerte radar par design (09)
+			category = zv_cat_alerte_radar
 			count < 2
 		}
 		module_count_limit = {	# ZV: une seule Régime d'urgence par design (09)
@@ -1919,6 +2895,103 @@ equipments = {
 		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
 			module = zv_anti_g_carburettor
 			count < 2
+		}
+		module_count_limit = {	# ZV: Blindage (S) : 1 par design (05)
+			module = zv_armor_plate_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: Blindage (M) : 2 par design (05)
+			module = zv_armor_plate_m
+			count < 3
+		}
+		module_count_limit = {	# ZV: Blindage (L) : 2 par design (05)
+			module = zv_armor_plate_l
+			count < 3
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (S) : 1 par design (05)
+			module = zv_non_strategic_materials_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (M) : 1 par design (05)
+			module = zv_non_strategic_materials_m
+			count < 2
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (L) : 1 par design (05)
+			module = zv_non_strategic_materials_l
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (S) : 1 par design (catégorie) (05)
+			category = zv_cat_reservoir_interne
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (M) : 1 par design (catégorie) (05)
+			category = zv_cat_reservoir_interne
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (L) : 1 par design (catégorie) (05)
+			category = zv_cat_reservoir_interne
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (S) : 1 par design (05)
+			module = zv_self_sealing_fuel_tanks_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (M) : 1 par design (05)
+			module = zv_self_sealing_fuel_tanks_m
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (L) : 1 par design (05)
+			module = zv_self_sealing_fuel_tanks_l
+			count < 2
+		}
+		module_count_limit = {	# ZV: Très gros calibres (attaches) : 1 par design ; grande cellule (05)
+			module = zv_bomb_locks_earthquake
+			count < 2
+		}
+		module_count_limit = {	# ZV: Très grosses bombes en soute (sans portes) : 1 par design ; grande cellule (05)
+			module = zv_bomb_bay_earthquake
+			count < 2
+		}
+		module_count_limit = {	# ZV: Armes navales + Armes guidées : 2 au plus (05)
+			category = zv_cat_armes_navales
+			category = zv_cat_armes_guidees
+			count < 3
+		}
+		module_count_limit = {	# ZV: Canon AT (y compris de nez) : 2 au plus (05)
+			category = zv_cat_canon_at
+			category = zv_cat_canon_at_de_nez
+			count < 3
+		}
+		module_count_limit = {	# ZV: Canon AT lourd (57, 75 mm) : 1 au plus (05)
+			module = zv_at_cannon_57
+			module = zv_at_cannon_75
+			module = zv_nose_at_cannon_57
+			module = zv_nose_at_cannon_75
+			count < 2
+		}
+		module_count_limit = {	# ZV: En soute : 2 au plus (05)
+			category = zv_cat_en_soute
+			count < 3
+		}
+		module_count_limit = {	# ZV: Tourelles (toutes catégories) : 2 au plus (05)
+			category = zv_cat_tourelle_x1
+			category = zv_cat_tourelle_x2
+			category = zv_cat_tourelle_x4
+			category = zv_cat_tourelle_a_boule_x1
+			category = zv_cat_tourelle_a_boule_x2
+			category = zv_cat_tourelle_a_boule_x4
+			category = zv_cat_tourelle_telecommandee_x1
+			category = zv_cat_tourelle_telecommandee_x2
+			category = zv_cat_tourelle_telecommandee_x4
+			count < 3
+		}
+		module_count_limit = {	# ZV: Roquettes : 3 au plus (05)
+			category = zv_cat_roquettes
+			count < 4
+		}
+		module_count_limit = {	# ZV: Attaches : 4 au plus (05)
+			category = zv_cat_attaches
+			count < 5
 		}
 
 		# ZV: les 17 module_count_limit vanilla sont retirés
@@ -2676,6 +3749,138 @@ equipments = {
 			module = zv_wep_m
 			count < 1
 		}
+		module_count_limit = {	# ZV: Extincteur automatique (S) interdit sur cette cellule
+			module = zv_auto_extinguisher_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Extincteur automatique (M) interdit sur cette cellule
+			module = zv_auto_extinguisher_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Chariot largable interdit sur cette cellule
+			module = zv_takeoff_trolley
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage « Jug » (S) interdit sur cette cellule
+			module = zv_fuselage_jug_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage « Jug » (M) interdit sur cette cellule
+			module = zv_fuselage_jug_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage goutte (S) interdit sur cette cellule
+			module = zv_fuselage_teardrop_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage goutte (M) interdit sur cette cellule
+			module = zv_fuselage_teardrop_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage bipoutre (S) interdit sur cette cellule
+			module = zv_fuselage_twin_boom_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Fuselage bipoutre (M) interdit sur cette cellule
+			module = zv_fuselage_twin_boom_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Aile volante (S) interdit sur cette cellule
+			module = zv_fuselage_flying_wing_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Aile volante (M) interdit sur cette cellule
+			module = zv_fuselage_flying_wing_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Hydravion à coque (M) interdit sur cette cellule
+			module = zv_fuselage_flying_boat_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Blindage (S) interdit sur cette cellule
+			module = zv_armor_plate_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Blindage (M) interdit sur cette cellule
+			module = zv_armor_plate_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (S) interdit sur cette cellule
+			module = zv_non_strategic_materials_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (M) interdit sur cette cellule
+			module = zv_non_strategic_materials_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Construction allégée (S) interdit sur cette cellule
+			module = zv_lightweight_construction_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Construction allégée (M) interdit sur cette cellule
+			module = zv_lightweight_construction_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Construction renforcée (S) interdit sur cette cellule
+			module = zv_reinforced_construction_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Construction renforcée (M) interdit sur cette cellule
+			module = zv_reinforced_construction_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Volets de combat (S) interdit sur cette cellule
+			module = zv_combat_flaps_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Volets de combat (M) interdit sur cette cellule
+			module = zv_combat_flaps_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Aérofreins (S) interdit sur cette cellule
+			module = zv_dive_brakes_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Aérofreins (M) interdit sur cette cellule
+			module = zv_dive_brakes_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Pylônes aérodynamiques (S) interdit sur cette cellule
+			module = zv_aerodynamic_pylons_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Pylônes aérodynamiques (M) interdit sur cette cellule
+			module = zv_aerodynamic_pylons_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Crosse d'appontage et ailes repliables interdit sur cette cellule
+			module = zv_carrier_equipment
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (S) interdit sur cette cellule
+			module = zv_fuel_tanks_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (M) interdit sur cette cellule
+			module = zv_fuel_tanks_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (S) interdit sur cette cellule
+			module = zv_self_sealing_fuel_tanks_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (M) interdit sur cette cellule
+			module = zv_self_sealing_fuel_tanks_m
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs largables (S) interdit sur cette cellule
+			module = zv_drop_tanks_s
+			count < 1
+		}
+		module_count_limit = {	# ZV: Réservoirs largables (M) interdit sur cette cellule
+			module = zv_drop_tanks_m
+			count < 1
+		}
 		module_count_limit = {	# ZV: Une seule suralimentation par design (limite partagée). (zv_limit_supercharger)
 			module = zv_early_supercharger
 			module = zv_early_turbocharger
@@ -2684,6 +3889,34 @@ equipments = {
 			module = zv_improved_supercharger
 			module = zv_two_stage_supercharger
 			module = zv_improved_turbocharger
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Radio par design (09)
+			category = zv_cat_radio
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Blindage du cockpit par design (09)
+			category = zv_cat_blindage_du_cockpit
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Réservoir interne par design (09)
+			category = zv_cat_reservoir_interne
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Radar par design (09)
+			category = zv_cat_radar
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Viseur de bombardement par design (09)
+			category = zv_cat_viseur_de_bombardement
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Navigation par design (09)
+			category = zv_cat_navigation
+			count < 2
+		}
+		module_count_limit = {	# ZV: une seule Alerte radar par design (09)
+			category = zv_cat_alerte_radar
 			count < 2
 		}
 		module_count_limit = {	# ZV: une seule Régime d'urgence par design (09)
@@ -2769,6 +4002,103 @@ equipments = {
 		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
 			module = zv_anti_g_carburettor
 			count < 2
+		}
+		module_count_limit = {	# ZV: Blindage (S) : 1 par design (05)
+			module = zv_armor_plate_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: Blindage (M) : 2 par design (05)
+			module = zv_armor_plate_m
+			count < 3
+		}
+		module_count_limit = {	# ZV: Blindage (L) : 2 par design (05)
+			module = zv_armor_plate_l
+			count < 3
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (S) : 1 par design (05)
+			module = zv_non_strategic_materials_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (M) : 1 par design (05)
+			module = zv_non_strategic_materials_m
+			count < 2
+		}
+		module_count_limit = {	# ZV: Matériaux non stratégiques (L) : 1 par design (05)
+			module = zv_non_strategic_materials_l
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (S) : 1 par design (catégorie) (05)
+			category = zv_cat_reservoir_interne
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (M) : 1 par design (catégorie) (05)
+			category = zv_cat_reservoir_interne
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs supplémentaires (L) : 1 par design (catégorie) (05)
+			category = zv_cat_reservoir_interne
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (S) : 1 par design (05)
+			module = zv_self_sealing_fuel_tanks_s
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (M) : 1 par design (05)
+			module = zv_self_sealing_fuel_tanks_m
+			count < 2
+		}
+		module_count_limit = {	# ZV: Réservoirs auto-obturants (L) : 1 par design (05)
+			module = zv_self_sealing_fuel_tanks_l
+			count < 2
+		}
+		module_count_limit = {	# ZV: Très gros calibres (attaches) : 1 par design ; grande cellule (05)
+			module = zv_bomb_locks_earthquake
+			count < 2
+		}
+		module_count_limit = {	# ZV: Très grosses bombes en soute (sans portes) : 1 par design ; grande cellule (05)
+			module = zv_bomb_bay_earthquake
+			count < 2
+		}
+		module_count_limit = {	# ZV: Armes navales + Armes guidées : 3 au plus (05)
+			category = zv_cat_armes_navales
+			category = zv_cat_armes_guidees
+			count < 4
+		}
+		module_count_limit = {	# ZV: Canon AT (y compris de nez) : 4 au plus (05)
+			category = zv_cat_canon_at
+			category = zv_cat_canon_at_de_nez
+			count < 5
+		}
+		module_count_limit = {	# ZV: Canon AT lourd (57, 75 mm) : 2 au plus (05)
+			module = zv_at_cannon_57
+			module = zv_at_cannon_75
+			module = zv_nose_at_cannon_57
+			module = zv_nose_at_cannon_75
+			count < 3
+		}
+		module_count_limit = {	# ZV: En soute : 5 au plus (05)
+			category = zv_cat_en_soute
+			count < 6
+		}
+		module_count_limit = {	# ZV: Tourelles (toutes catégories) : 6 au plus (05)
+			category = zv_cat_tourelle_x1
+			category = zv_cat_tourelle_x2
+			category = zv_cat_tourelle_x4
+			category = zv_cat_tourelle_a_boule_x1
+			category = zv_cat_tourelle_a_boule_x2
+			category = zv_cat_tourelle_a_boule_x4
+			category = zv_cat_tourelle_telecommandee_x1
+			category = zv_cat_tourelle_telecommandee_x2
+			category = zv_cat_tourelle_telecommandee_x4
+			count < 7
+		}
+		module_count_limit = {	# ZV: Roquettes : 4 au plus (05)
+			category = zv_cat_roquettes
+			count < 5
+		}
+		module_count_limit = {	# ZV: Attaches : 4 au plus (05)
+			category = zv_cat_attaches
+			count < 5
 		}
 
 		# ZV: les 15 module_count_limit vanilla sont retirés
