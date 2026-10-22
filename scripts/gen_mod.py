@@ -326,6 +326,64 @@ def gen_airframes(ref):
     return head + text
 
 
+# ---------------------------------------------------------------- doublons de rôle
+
+def obligation_text(type_, ind):
+    t = "\t" * ind
+    grouped, mods = T.ROLE_OBLIGATIONS.get(type_, ([], []))
+    conds = size_limit_conds(grouped, [m for m in mods if m in MODULE_IDS])
+    if not conds:
+        return ""
+    return "\n".join([f"{t}module_count_limit = {{\t# ZV: rôle {type_} : au moins un de ces modules (05)"]
+                      + [f"{t}\t{c}" for c in conds] + [f"{t}\tcount > 0", f"{t}}}"])
+
+
+def gen_duplicates(ref):
+    """x_plane_airframes.txt vanilla + obligations des rôles + doublons des rôles nouveaux."""
+    src = ref / "common/units/equipment/x_plane_airframes.txt"
+    text = src.read_text(encoding="utf-8-sig")
+    dup = [e for e in entries(text, 0, len(text)) if e[0] == "duplicate_archetypes"][0]
+    rep = []
+    for key, k0, v0, v1, is_blk in entries(text, *inner(dup[2], dup[3])):
+        if not is_blk:
+            continue
+        sub = {e[0]: text[e[2]:e[3]] for e in entries(text, *inner(v0, v1)) if not e[4]}
+        if sub.get("only_duplicate_archetype") == "yes" or sub.get("archetype") not in T.ARCHETYPES:
+            continue
+        ob = obligation_text(sub.get("type"), 2)
+        if ob:
+            rep.append((v1 - 1, v1 - 1, "\t" + ob.lstrip("\t") + "\n\t"))
+    new = ["", "\t# ZV Designer : doublons des rôles du mod sans équivalent vanilla (audit N-07)."]
+    for name, d in T.NEW_DUPLICATES.items():
+        new += [f"\t{name} = {{", f"\t\tarchetype = {d['archetype']}", f"\t\ttype = {d['type']}"]
+        if d.get("picture"):
+            new.append(f"\t\tpicture = {d['picture']}")
+        if d.get("sprite"):
+            new.append(f"\t\tsprite = {d['sprite']}")
+        if d.get("sup0"):
+            new += ["\t\tfor_each = {", "\t\t\tair_superiority = { set = 0 }", "\t\t}"]
+        new += [f"\t\tair_map_icon_frame = {d['frame']}", f"\t\tinterface_overview_category_index = {d['index']}"]
+        if d.get("substitute"):
+            new.append(f"\t\tsubstitute = {d['substitute']}")
+        if d.get("no_training"):
+            new.append("\t\tforbid_mission_type = training")
+        ob = obligation_text(d["type"], 2)
+        if ob:
+            new.append(ob)
+        new.append("\t}")
+    rep.append((dup[3] - 1, dup[3] - 1, "\n".join(new) + "\n"))
+    for a, b, s in sorted(rep, reverse=True):
+        text = text[:a] + s + text[b:]
+    head = ("# ZV Designer : fichier généré par scripts/gen_mod.py à partir du vanilla 1.19.3.0.\n"
+            "# Doublons vanilla inchangés, plus les obligations des rôles et les doublons des rôles du mod.\n")
+    return head + text
+
+
+def all_duplicate_types():
+    """Doublons de rôle de chaque archétype du mod (vanilla + nouveaux), pour les techs (phase 4)."""
+    return list(T.NEW_DUPLICATES)
+
+
 # ---------------------------------------------------------------- modules
 
 def num(v):
@@ -616,6 +674,7 @@ def main():
     ref = Path(ap.parse_args().ref)
     try:
         write("common/units/equipment/plane_airframes.txt", gen_airframes(ref))
+        write("common/units/equipment/x_plane_airframes.txt", gen_duplicates(ref))
         write("common/units/equipment/modules/00_plane_modules.txt", gen_modules())
         write(f"common/technologies/{T.TEST_TECH}.txt", gen_test_tech())
         write("localisation/french/zv_designer_l_french.yml", gen_loc(), bom=True)

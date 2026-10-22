@@ -161,6 +161,40 @@ TIER_LIMITS = {"Mitrailleuses + canons (y compris de nez)": {"0": 2, "1": 2}}
 CV_COPY_STATS = ["air_agility", "weight", "build_cost_ic"]
 CV_REQUIRED_MODULE = "zv_carrier_equipment"
 
+# Doublons de rôle (x_plane_airframes.txt). Nouveaux doublons pour les rôles du mod sans
+# équivalent vanilla (audit N-07), sur le modèle des doublons vanilla du même type.
+NEW_DUPLICATES = {
+    "small_plane_scout_plane_airframe": dict(archetype="small_plane_airframe", type="scout_plane",
+        sprite="scout_plane", frame=13, index=7, no_training=True, sup0=True,
+        substitute="cv_small_plane_scout_plane_airframe"),
+    "cv_small_plane_scout_plane_airframe": dict(archetype="cv_small_plane_airframe", type="scout_plane",
+        sprite="scout_plane", frame=13, index=7, no_training=True, sup0=True),
+    "medium_plane_cas_airframe": dict(archetype="medium_plane_airframe", type="cas",
+        picture="archetype_CAS_equipment", frame=2, index=0),
+    "medium_plane_naval_bomber_airframe": dict(archetype="medium_plane_airframe", type="naval_bomber",
+        picture="archetype_heavy_fighter_equipment", frame=3, index=2),
+    "medium_plane_maritime_patrol_plane_airframe": dict(archetype="medium_plane_airframe",
+        type="maritime_patrol_plane", frame=14, index=8),
+    "medium_plane_air_transport_airframe": dict(archetype="medium_plane_airframe", type="air_transport",
+        sprite="medium_plane", frame=12, index=6, no_training=True, sup0=True),
+    "large_plane_air_transport_airframe": dict(archetype="large_plane_airframe", type="air_transport",
+        sprite="heavy_plane", frame=12, index=6, no_training=True, sup0=True),
+}
+# Obligations des rôles (05, « Obligatoire : … ») : au moins un module parmi ces catégories ou
+# modules, posé en `count > 0` sur les doublons du type (piste N-10 de l'audit, 🧪).
+# Les rôles portés par l'archétype de base (chasseur, intercepteur, bombardiers tactique et
+# stratégique) n'en ont pas : la limite s'appliquerait à tous les rôles de la cellule ; sans
+# arme, ces avions n'ont de toute façon aucune mission de combat.
+ROLE_OBLIGATIONS = {
+    "heavy_fighter": (["Mitrailleuses", "Canons", "Mitrailleuses de nez", "Canons de nez"], []),
+    "cas": (["Canon AT", "Canon AT de nez", "Roquettes", "Attaches", "En soute"], []),
+    "suicide": ([], ["fixed_explosive_charge"]),
+    "naval_bomber": (["Armes navales"], ["zv_bomb_locks_ap"]),
+    "scout_plane": ([], ["recon_camera"]),
+    "maritime_patrol_plane": (["Anti-sous-marin"], ["zv_asv_radar", "zv_depth_charges"]),
+    "air_transport": ([], ["zv_cargo_bay", "zv_troop_compartment"]),
+}
+
 # Catégorie des 13 modules fantômes : aucun slot ne l'accepte (décision D-14).
 PHANTOM_CATEGORY = "zv_cat_phantom"
 
