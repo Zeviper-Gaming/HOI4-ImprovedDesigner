@@ -195,6 +195,85 @@ ROLE_OBLIGATIONS = {
     "air_transport": ([], ["zv_cargo_bay", "zv_troop_compartment"]),
 }
 
+# ---------------------------------------------------------------- arbre (phase 4)
+# Placement dans l'onglet Aviation, d'après les six schémas du document en ligne « Arbre
+# technologique » (lu le 22/10/2026) : une colonne par chemin, de gauche à droite.
+# Colonne = numéro de case (70 px) ; les cellules et le transport sont de grandes cases (3 colonnes).
+TECH_COLUMNS = {
+    # Cellules (vanilla, inchangées) et transport
+    0: ["iw_small_airframe", "basic_small_airframe", "improved_small_airframe", "advanced_small_airframe",
+        "modern_small_airframe", "supersonic_small_airframe"],
+    3: ["iw_medium_airframe", "basic_medium_airframe", "improved_medium_airframe", "advanced_medium_airframe",
+        "modern_medium_airframe"],
+    6: ["iw_large_airframe", "basic_large_airframe", "improved_large_airframe", "advanced_large_airframe",
+        "modern_large_airframe"],
+    9: ["reinforced_wings_mothership", "miniature_fighters", "aerial_hangars"],
+    10: ["bba_early_transport_plane", "bba_improved_transport_plane", "bba_strategic_airlifter"],
+    # Propulsion : moteurs à pistons (5 chemins), puis hélices, suralimentation et réaction (7 chemins)
+    13: ["engines_1", "engines_2", "engines_3", "engines_4"],
+    14: ["zv_radial_engines_2", "zv_radial_engines_3", "zv_radial_engines_4"],
+    15: ["zv_rotary_engines_3", "zv_rotary_engines_4"],
+    16: ["zv_flat_engines_1", "zv_flat_engines_2"],
+    17: ["zv_diesel_engines_1", "zv_diesel_engines_2"],
+    18: ["zv_propellers_1", "zv_propellers_2", "zv_propellers_3", "zv_turboprop"],
+    19: ["zv_superchargers_1", "zv_superchargers_2", "zv_superchargers_3"],
+    20: ["zv_high_octane_fuel", "zv_boost_systems_1", "zv_boost_systems_2", "zv_boost_systems_3"],
+    21: ["zv_rocket_engines_2", "zv_rocket_engines_3"],
+    22: ["zv_centrifugal_jet_2"],
+    23: ["sp_centrifugal_jet_tech", "zv_axial_jet_2"],
+    24: ["zv_pulsejet", "zv_jet_improvements_1", "zv_jet_improvements_2"],
+    # Cellule et équipements : construction et voilure (7 chemins), électronique (4 chemins)
+    25: ["aircraft_construction", "zv_advanced_aircraft_construction", "zv_modern_aircraft_construction",
+         "zv_experimental_aircraft_construction"],
+    26: ["zv_wooden_construction"],
+    27: ["zv_pressurized_cabin"],
+    28: ["zv_wing_planforms_1", "zv_laminar_wing", "zv_swept_wing_1", "zv_swept_wing_2"],
+    29: ["zv_forward_swept_wing"],
+    30: ["zv_tailless_aircraft", "zv_delta_wing"],
+    31: ["zv_canard_configuration", "zv_advanced_canard"],
+    32: ["zv_gunsights_1", "zv_gunsights_2", "zv_gyro_gunsight_1", "zv_gyro_gunsight_2"],
+    33: ["zv_air_radio", "zv_iff", "zv_radar_warning", "zv_radar_countermeasures"],
+    34: ["zv_asv_radar"],
+    35: ["zv_all_weather_1", "zv_all_weather_2"],
+    # Armement et missions : armes de tir et protection (7 chemins), bombes et missions (7 chemins)
+    36: ["aa_lmg", "zv_aa_lmg_2", "aa_hmg", "zv_remote_turret", "zv_aa_hmg_2"],
+    37: ["aa_cannon_1", "aa_cannon_2", "aa_cannon_3"],
+    38: ["zv_aircraft_at_gun_1", "zv_aircraft_at_gun_2"],
+    39: ["zv_aa_cannon_30mm"],
+    40: ["zv_tech_schraege_musik"],
+    41: ["survivability_studies", "zv_survivability_studies_2"],
+    42: ["range_improvements", "zv_range_improvements_2"],
+    43: ["early_bombs", "armor_piercing_bombs", "heavy_bombs", "zv_earthquake_bombs"],
+    44: ["zv_incendiary_bombs", "zv_napalm"],
+    45: ["zv_rocket_rails_1", "zv_rocket_rails_2", "zv_rockets_3"],
+    46: ["zv_guided_weapons_1", "suicide_charge", "zv_guided_weapons_2"],
+    47: ["air_torpedoe_1", "air_torpedoe_2", "air_torpedoe_3"],
+    48: ["zv_air_asw_1", "zv_air_asw_2", "zv_air_asw_3"],
+    49: ["photo_reconnaisance", "zv_night_photo"],
+}
+TECH_LAST_COLUMN = 51
+# Année -> ligne de l'onglet (70 px par ligne, gridbox à y = 32 ; vanilla : 1933 = 2, 1936 = 4).
+TECH_ROWS = {1922: 2, 1926: 2, 1933: 3, 1936: 4, 1938: 5, 1939: 6, 1940: 7, 1941: 8, 1942: 9,
+             1943: 10, 1944: 11, 1945: 12, 1946: 13, 1947: 14, 1950: 15}
+TECH_ORIGIN = (100, 32)               # origine commune de tous les gridboxes (pixels)
+
+# Fichier et catégories de recherche de chaque groupe (catégories copiées de la tech vanilla la
+# plus proche, bba_air_techs.txt, pour les bonus de recherche et les MIO).
+TECH_GROUPS = {
+    "Propulsion": ("zv_propulsion_techs.txt", "engines_1"),
+    "Cellule et équipements": ("zv_construction_techs.txt", "aircraft_construction"),
+    "Armement et missions": ("bba_air_techs.txt", "aa_lmg"),
+}
+TECH_CATEGORY_MODEL = {               # colonnes d'armement dont le modèle n'est pas aa_lmg
+    "early_bombs": [43, 44, 45, 46], "air_torpedoe_1": [47, 48], "photo_reconnaisance": [49],
+}
+MOVED_VANILLA_TECHS = ["engines_1", "engines_2", "engines_3", "engines_4", "aircraft_construction"]
+KEEP_COST_TECHS = ["iw_small_airframe", "iw_medium_airframe", "iw_large_airframe",
+                   "bba_early_transport_plane", "bba_improved_transport_plane"]   # arbre : coût vanilla
+COEF_CONSTANTS = {0.5: "@ZV_COEF_0_5", 1.0: "@ZV_COEF_1", 1.5: "@ZV_COEF_1_5", 2.0: "@ZV_COEF_2"}
+COEF_BASE = 0.35
+OPTIONAL_AI_FACTOR = 0.25             # branches optionnelles : l'IA ne s'y disperse pas (arbre)
+
 # Catégorie des 13 modules fantômes : aucun slot ne l'accepte (décision D-14).
 PHANTOM_CATEGORY = "zv_cat_phantom"
 

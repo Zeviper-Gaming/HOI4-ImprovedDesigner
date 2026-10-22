@@ -1,6 +1,4 @@
 ﻿l_english:
- zv_test_kit:0 "ZV : kit de test (temporaire)"
- zv_test_kit_desc:0 "Débloque les modules déjà codés, pour les contrôles rapides."
  zv_engine_power_upgrade:0 "Puissance"
  zv_engine_power_upgrade_desc:0 "Cran 5 = réglage d’usine. Effet par cran : voir 05, « Réglages »."
  zv_reliability_upgrade:0 "Fiabilité"

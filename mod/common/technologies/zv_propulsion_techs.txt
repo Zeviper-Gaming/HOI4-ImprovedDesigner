@@ -1,0 +1,1263 @@
+# ZV Designer : fichier généré par scripts/gen_techs.py (arbre : docs/04-arbre-technologique.md).
+# Ne pas modifier à la main.
+technologies = {
+	@ZV_COEF_0_5 = 0.175
+	@ZV_COEF_1 = 0.35
+	@ZV_COEF_1_5 = 0.525
+	@ZV_COEF_2 = 0.7
+
+	engines_1 = {
+
+		enable_equipment_modules = {
+			zv_prop_3_metal
+			zv_engine_inline_1
+			zv_engine_config_nose_a
+			zv_engine_v_1
+			zv_engine_radial_1
+			zv_engine_rotary_1
+			zv_engine_config_nose_b
+			zv_engine_config_nose_c
+			zv_prop_2_metal
+			zv_prop_2_wood
+			zv_prop_3_wood
+			zv_naca_cowling
+		}	# ZV: modules du mod (05)
+		
+		research_cost = @ZV_COEF_1	# ZV: coefficient 1 × 0.35 (arbre)
+		start_year = 1922
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 13 y = 2 }
+		}	# ZV: placement de l'arbre
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+			modifier = {
+				date > "1937.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1938.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1939.1.1"
+				factor = 3
+			}
+		}
+		path = {
+			leads_to_tech = engines_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = zv_radial_engines_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = zv_flat_engines_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = zv_diesel_engines_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = zv_propellers_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = zv_superchargers_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = aircraft_construction
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = range_improvements
+			research_cost_coeff = 1
+		}
+	}
+
+	engines_2 = {
+
+		enable_equipment_modules = {
+			zv_engine_v_2
+			zv_engine_inline_2
+			zv_radiator_ventral
+			zv_radiator_wing
+			zv_air_intake
+		}	# ZV: modules du mod (05)
+		on_research_complete = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_air_jet_engine	
+			}
+		}		
+		research_cost = @ZV_COEF_1	# ZV: coefficient 1 × 0.35 (arbre)
+		start_year = 1936
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 13 y = 4 }
+		}	# ZV: placement de l'arbre
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+			modifier = {
+				date > "1937.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1938.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1939.1.1"
+				factor = 3
+			}
+		}
+		path = {
+			leads_to_tech = engines_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = zv_pulsejet
+			research_cost_coeff = 1
+		}
+	}
+
+	engines_3 = {
+
+		enable_equipment_modules = {
+			zv_engine_v_3
+			zv_engine_inline_3
+			zv_radiator_annular
+		}	# ZV: modules du mod (05)
+		on_research_complete = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_air_axial_jet_engine	
+			}
+		}		
+		research_cost = @ZV_COEF_1_5	# ZV: coefficient 1.5 × 0.35 (arbre)
+		start_year = 1940
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 13 y = 7 }
+		}	# ZV: placement de l'arbre
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				is_major = yes
+				factor = 8
+				date > "1940.6.1"
+			}
+			modifier = {
+				factor = 0
+				original_tag = GER
+				date < "1940.12.1"
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+			
+			modifier = {
+				date > "1941.1.1"
+				factor = 2
+			}
+			modifier = {
+				date > "1942.1.1"
+				factor = 2
+			}
+			modifier = {
+				date > "1943.1.1"
+				factor = 3
+			}
+		}
+		path = {
+			leads_to_tech = engines_4
+			research_cost_coeff = 1
+		}
+	}
+
+	engines_4 = {
+
+		enable_equipment_modules = {
+			zv_engine_v_4
+			zv_engine_inline_4
+		}	# ZV: modules du mod (05)
+		
+		research_cost = @ZV_COEF_1_5	# ZV: coefficient 1.5 × 0.35 (arbre)
+		start_year = 1944
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 13 y = 11 }
+		}	# ZV: placement de l'arbre
+
+		path = {
+			leads_to_tech = sp_centrifugal_jet_tech
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+			modifier = {
+				date > "1943.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1944.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1945.1.1"
+				factor = 3
+			}
+		}
+	}
+
+	zv_radial_engines_2 = {	# Moteurs en étoile II (04-arbre, ligne 58)
+		research_cost = @ZV_COEF_1
+		start_year = 1936
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 14 y = 4 }
+		}
+		enable_equipment_modules = {
+			zv_engine_radial_2
+			zv_engine_rotary_2
+		}
+		path = {
+			leads_to_tech = zv_radial_engines_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = zv_rotary_engines_3
+			research_cost_coeff = 1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_radial_engines_3 = {	# Moteurs en étoile III (04-arbre, ligne 59)
+		research_cost = @ZV_COEF_1_5
+		start_year = 1940
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 14 y = 7 }
+		}
+		enable_equipment_modules = {
+			zv_engine_radial_3
+		}
+		path = {
+			leads_to_tech = zv_radial_engines_4
+			research_cost_coeff = 1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_radial_engines_4 = {	# Moteurs en étoile IV (04-arbre, ligne 60)
+		research_cost = @ZV_COEF_1_5
+		start_year = 1944
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 14 y = 11 }
+		}
+		enable_equipment_modules = {
+			zv_engine_radial_4
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_rotary_engines_3 = {	# Moteurs rotatifs III (optionnelle) (04-arbre, ligne 61)
+		research_cost = @ZV_COEF_2
+		start_year = 1940
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 15 y = 7 }
+		}
+		enable_equipment_modules = {
+			zv_engine_rotary_3
+		}
+		path = {
+			leads_to_tech = zv_rotary_engines_4
+			research_cost_coeff = 1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_rotary_engines_4 = {	# Moteurs rotatifs IV (optionnelle) (04-arbre, ligne 62)
+		research_cost = @ZV_COEF_2
+		start_year = 1944
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 15 y = 11 }
+		}
+		enable_equipment_modules = {
+			zv_engine_rotary_4
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_flat_engines_1 = {	# Moteurs à plat légers (optionnelle) (04-arbre, ligne 63)
+		research_cost = @ZV_COEF_0_5
+		start_year = 1933
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 16 y = 3 }
+		}
+		enable_equipment_modules = {
+			zv_engine_flat_1
+		}
+		path = {
+			leads_to_tech = zv_flat_engines_2
+			research_cost_coeff = 1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_flat_engines_2 = {	# Moteurs à plat de grosse cylindrée (optionnelle) (04-arbre, ligne 64)
+		research_cost = @ZV_COEF_0_5
+		start_year = 1942
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 16 y = 9 }
+		}
+		enable_equipment_modules = {
+			zv_engine_flat_2
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_diesel_engines_1 = {	# Moteurs diesel d'aviation (optionnelle) (04-arbre, ligne 65)
+		research_cost = @ZV_COEF_0_5
+		start_year = 1933
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 17 y = 3 }
+		}
+		enable_equipment_modules = {
+			zv_engine_diesel_1
+		}
+		path = {
+			leads_to_tech = zv_diesel_engines_2
+			research_cost_coeff = 1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_diesel_engines_2 = {	# Moteurs diesel d'altitude (optionnelle) (04-arbre, ligne 66)
+		research_cost = @ZV_COEF_0_5
+		start_year = 1940
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 17 y = 7 }
+		}
+		enable_equipment_modules = {
+			zv_engine_diesel_2
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_propellers_1 = {	# Hélices à pas variable (04-arbre, ligne 67)
+		research_cost = @ZV_COEF_0_5
+		start_year = 1933
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 18 y = 3 }
+		}
+		enable_equipment_modules = {
+			zv_prop_variable_pitch
+		}
+		path = {
+			leads_to_tech = zv_propellers_2
+			research_cost_coeff = 1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_propellers_2 = {	# Hélices à vitesse constante (04-arbre, ligne 68)
+		research_cost = @ZV_COEF_0_5
+		start_year = 1940
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 18 y = 7 }
+		}
+		enable_equipment_modules = {
+			zv_prop_4
+			zv_prop_feathering
+		}
+		path = {
+			leads_to_tech = zv_propellers_3
+			research_cost_coeff = 1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_propellers_3 = {	# Hélices multipales (04-arbre, ligne 69)
+		research_cost = @ZV_COEF_0_5
+		start_year = 1943
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 18 y = 10 }
+		}
+		enable_equipment_modules = {
+			zv_prop_5
+		}
+		path = {
+			leads_to_tech = zv_turboprop
+			research_cost_coeff = 1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_superchargers_1 = {	# Suralimentation précoce (04-arbre, ligne 70)
+		research_cost = @ZV_COEF_0_5
+		start_year = 1936
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 19 y = 4 }
+		}
+		enable_equipment_modules = {
+			zv_early_supercharger
+			zv_early_turbocharger
+		}
+		path = {
+			leads_to_tech = zv_superchargers_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = zv_boost_systems_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = zv_pressurized_cabin
+			research_cost_coeff = 1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_superchargers_2 = {	# Suralimentation (04-arbre, ligne 71)
+		research_cost = @ZV_COEF_1
+		start_year = 1940
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 19 y = 7 }
+		}
+		enable_equipment_modules = {
+			zv_supercharger
+			zv_turbocharger
+		}
+		path = {
+			leads_to_tech = zv_diesel_engines_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = zv_superchargers_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = zv_boost_systems_3
+			research_cost_coeff = 1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_superchargers_3 = {	# Suralimentation à refroidissement intermédiaire (04-arbre, ligne 72)
+		research_cost = @ZV_COEF_1
+		start_year = 1942
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 19 y = 9 }
+		}
+		enable_equipment_modules = {
+			zv_improved_supercharger
+			zv_two_stage_supercharger
+			zv_improved_turbocharger
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_high_octane_fuel = {	# Essence à haut indice d'octane (04-arbre, ligne 73)
+		research_cost = @ZV_COEF_0_5
+		start_year = 1936
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 20 y = 4 }
+		}
+		allow = {
+			has_tech = fuel_refining
+		}
+		enable_equipment_modules = {
+			zv_high_octane_fuel_s
+			zv_high_octane_fuel_m
+			zv_high_octane_fuel_l
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_boost_systems_1 = {	# Puissance d'urgence (04-arbre, ligne 74)
+		research_cost = @ZV_COEF_0_5
+		start_year = 1938
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 20 y = 5 }
+		}
+		enable_equipment_modules = {
+			zv_direct_injection
+			zv_wep_s
+			zv_wep_m
+			zv_wep_l
+		}
+		path = {
+			leads_to_tech = zv_boost_systems_2
+			research_cost_coeff = 1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_boost_systems_2 = {	# Injection d'eau (04-arbre, ligne 75)
+		research_cost = @ZV_COEF_0_5
+		start_year = 1941
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 20 y = 8 }
+		}
+		enable_equipment_modules = {
+			zv_water_injection_s
+			zv_water_injection_m
+			zv_water_injection_l
+			zv_anti_g_carburettor
+		}
+		path = {
+			leads_to_tech = zv_boost_systems_3
+			research_cost_coeff = 1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_boost_systems_3 = {	# Injection de protoxyde d'azote (04-arbre, ligne 76)
+		research_cost = @ZV_COEF_0_5
+		start_year = 1942
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 20 y = 9 }
+		}
+		enable_equipment_modules = {
+			zv_gm1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_rocket_engines_2 = {	# Moteurs-fusées II (optionnelle) (04-arbre, ligne 77)
+		research_cost = @ZV_COEF_1_5
+		start_year = 1944
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 21 y = 11 }
+		}
+		allow = {
+			ROOT = { is_special_project_completed = sp:sp_rocket_interceptor }
+		}
+		is_special_project_tech = yes
+		enable_equipment_modules = {
+			zv_engine_rocket_2
+		}
+		path = {
+			leads_to_tech = zv_rocket_engines_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = zv_guided_weapons_2
+			research_cost_coeff = 1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_rocket_engines_3 = {	# Moteurs-fusées à double chambre (optionnelle) (04-arbre, ligne 78)
+		research_cost = @ZV_COEF_1_5
+		start_year = 1945
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 21 y = 12 }
+		}
+		enable_equipment_modules = {
+			zv_engine_rocket_3
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_pulsejet = {	# Pulsoréacteur (optionnelle) (04-arbre, ligne 79)
+		research_cost = @ZV_COEF_0_5
+		start_year = 1942
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 24 y = 9 }
+		}
+		enable_equipment_modules = {
+			zv_engine_pulsejet
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_centrifugal_jet_2 = {	# Turboréacteur centrifuge amélioré (optionnelle) (04-arbre, ligne 80)
+		research_cost = @ZV_COEF_1_5
+		start_year = 1945
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 22 y = 12 }
+		}
+		allow = {
+			ROOT = { is_special_project_completed = sp:sp_air_jet_engine }
+		}
+		is_special_project_tech = yes
+		enable_equipment_modules = {
+			zv_engine_centrifugal_2
+		}
+		path = {
+			leads_to_tech = zv_turboprop
+			research_cost_coeff = 1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_axial_jet_2 = {	# Turboréacteur axial d'après-guerre (optionnelle) (04-arbre, ligne 81)
+		research_cost = @ZV_COEF_1_5
+		start_year = 1946
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 23 y = 13 }
+		}
+		allow = {
+			ROOT = { is_special_project_completed = sp:sp_air_axial_jet_engine }
+		}
+		is_special_project_tech = yes
+		enable_equipment_modules = {
+			zv_engine_axial_2
+		}
+		path = {
+			leads_to_tech = zv_jet_improvements_1
+			research_cost_coeff = 1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_turboprop = {	# Turbopropulseur (optionnelle) (04-arbre, ligne 82)
+		research_cost = @ZV_COEF_1_5
+		start_year = 1946
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 18 y = 13 }
+		}
+		enable_equipment_modules = {
+			zv_engine_turboprop
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_jet_improvements_1 = {	# Réacteurs améliorés (optionnelle) (04-arbre, ligne 83)
+		research_cost = @ZV_COEF_1
+		start_year = 1946
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 24 y = 13 }
+		}
+		enable_equipment_modules = {
+			zv_jet_improved_compressor
+			zv_afterburner
+		}
+		path = {
+			leads_to_tech = zv_jet_improvements_2
+			research_cost_coeff = 1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	zv_jet_improvements_2 = {	# Entrées d'air supersoniques (optionnelle) (04-arbre, ligne 84)
+		research_cost = @ZV_COEF_1
+		start_year = 1947
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 24 y = 14 }
+		}
+		enable_equipment_modules = {
+			zv_supersonic_intake
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+}

@@ -643,8 +643,6 @@ def q(s):
 def gen_loc(lang="french"):
     # Anglais provisoire (le jeu de Florian est en anglais) : mêmes textes, traduits en phase 5.
     L = [f"l_{lang}:"]
-    L.append(f' {T.TEST_TECH}:0 "ZV : kit de test (temporaire)"')
-    L.append(f' {T.TEST_TECH}_desc:0 "Débloque les modules déjà codés, pour les contrôles rapides."')
     for uid, u in T.CURSEURS.items():
         L.append(f' {uid}:0 "{u["nom"]}"')
         L.append(f' {uid}_desc:0 "Cran {T.CURSEUR_USINE} = réglage d’usine. Effet par cran : voir 05, « Réglages »."')
@@ -676,7 +674,6 @@ def main():
         write("common/units/equipment/plane_airframes.txt", gen_airframes(ref))
         write("common/units/equipment/x_plane_airframes.txt", gen_duplicates(ref))
         write("common/units/equipment/modules/00_plane_modules.txt", gen_modules())
-        write(f"common/technologies/{T.TEST_TECH}.txt", gen_test_tech())
         write("localisation/french/zv_designer_l_french.yml", gen_loc(), bom=True)
         write("localisation/english/zv_designer_l_english.yml", gen_loc("english"), bom=True)
         write("interface/zv_plane_modules_icons.gfx", gen_icons(ref))
