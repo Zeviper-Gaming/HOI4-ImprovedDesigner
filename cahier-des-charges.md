@@ -78,7 +78,7 @@ Source : `docs/04-arbre-technologique.md`, `data/techs.json`.
 ## 6. Interface
 
 - `mod/interface/plane_designer_view.gui` ✅ (prêt) : copie du vanilla 1.19.3, seul le bloc des positions change ; 32 positions sur la grille 7×7 (colonnes x = 1, 74, 147, 220, 293, 366, 439 ; lignes y = 1, 50, 100, 150, 200, 250, 300). 🧪 affichage des 21 fixes et 11 libres, info-bulles.
-- Icônes : `GFX_EMI_<module>` (une par module), `GFX_EMI_<catégorie>`, `GFX_EMSI_<slot>` (slot vide). 💡 Commencer par des icônes provisoires (réutiliser des icônes vanilla) ; les vraies images viennent en dernier.
+- Icônes : `GFX_EMI_<module>` (une par module), `GFX_EMI_<catégorie>`, `GFX_EMSI_<slot>` (slot vide). 💡 Commencer par des icônes provisoires (réutiliser des icônes vanilla) ; les vraies images viennent en dernier. ✅ (23/10) Florian : images dessinées par Claude, style « C3 · Plan acier » (plan bleu assombri à la teinte de l'acier du jeu, aplat ombré, traits fins, grain, ombre portée, palier en chiffre romain orangé du jeu ; slots vides en relief vert pâle comme le vanilla). Essais : `rapports/icones/`.
 - Arbre technologique : l'onglet Aviation n'affiche que les années 1933, 1936, 1940, 1944, 1945 et 1950 ; les techs du mod tombent sur une quinzaine d'années → modifier `countrytechtreeview.gui` (travail `/hoi4-interface`).
 
 ## 7. Localisation

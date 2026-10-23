@@ -27,10 +27,14 @@ Légende : ❓ à décider · 💡 proposition · 🧪 à tester en jeu · ⚠ p
 | Q22 | Avions de départ : un module dont le pays n'a pas la tech | phase 6 | ✅ (23/10) module trop tardif remplacé par le plus ancien de sa famille (tourelle à canon → tourelle à mitrailleuse, étoile III → II, V III → II) ; tech de l'année de départ donnée au pays quand c'est cohérent historiquement (`START_TECHS` de `designs_depart.py`, et `zv_radial_engines_2` à tout pays qui a `engines_2`) | — | — |
 | Q23 | Short Sunderland (ENG 1939) : rôle Patrouille maritime et grenades sous-marines sans `zv_air_asw_1` | phase 6 | ✅ (23/10) l'Angleterre reçoit `zv_air_asw_1` en 1939 (Coastal Command) | — | — |
 | Q16 | Autres configurations (moteur dorsal du He 162, moteurs couplés du He 177) ? | 03 | plus tard | non | — |
-| Q17 | Seuils d'audit : tolérance 15 %, contrepartie minimale 10 % ? | 00 §7 | oui | oui | phase 7 |
+| Q17 | Seuils d'audit : tolérance 15 %, contrepartie minimale 10 % ? | 00 §7 | oui | ✅ (23/10) par défaut, utilisés en phase 7 | — |
 | Q18 | Cases rouges « Modèles, Curseurs, Concepteurs » de l'écran : y déplacer des éléments d'interface ? | 02 §1.9 | ✅ (22/10) oui : boutons de designs dans « Modèles », bureau d'études et MIO dans « Concepteurs » (ils recouvraient des slots) | — | — |
 | Q19 | Restrictions par fuselage : Classique, « Jug », Goutte et Hydravion n'ont rien de renseigné (case vide ≠ « aucune restriction ») | 06 | ✅ (22/10) aucune restriction | — | — |
 | Q20 | Nom du mod et nom des identifiants (`id_propose` de `data/slots.json` et `data/categories.json`) | — | ✅ (21/10) « ZV Designer », noms proposés gardés | — | — |
+| Q24 | Obligations des rôles portés par la cellule de base (chasseur, intercepteur, bombardiers tactique et stratégique) : aucune dans le mod | phase 7 (`rapports/phase-7-verification.md` §2) | 💡 obligation dans la cellule de base, neutralisée dans chaque doublon par `count > -1` (🧪) | rien ne change | — |
+| Q25 | Bombardiers lourds trop lourds pour leur mission (B-17, Pe-8, TB-3, Ju 87 B chargé) | phase 7 §3 B, §4 | 💡 revoir poids de mission ou poussée des quadrimoteurs dans le 05 ; pour les avions de départ, moteurs III aux USA, au Japon et à l'URSS en 1939 | rien ne change | — |
+| Q26 | Multimoteurs nettement au-dessus du vanilla (He 111 H +36 % de vitesse, B-17 F ×2 de défense) | phase 7 §4 ; ⚠ du 05 (20/10) | 💡 recalibrer les configurations multimoteurs du 05 avec `calibrate_module.py` | rien ne change | — |
+| Q27 | Biplans du palier 0 à −20 % de vitesse : voulu ? | phase 7 §3 A | monoplans de 1936 passés en aile monoplan (fait) | rien de plus | — |
 
 ✅ (22/10) Pour les phases 4 et 5 : placement des techs d'après le document en ligne de l'arbre (lu par Claude), années du premier usage réel (arbre), descriptions des modules = colonne « Pourquoi » du 05, traduites en anglais par Claude.
 
