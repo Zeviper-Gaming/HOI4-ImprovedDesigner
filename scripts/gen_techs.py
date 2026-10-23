@@ -47,12 +47,43 @@ def children():
     return ch
 
 
+def _vanilla_years():
+    """Année des techs vanilla gardées hors de l'arbre du mod (cellules), lue dans HOI4-ref."""
+    src = (Path("F:/Github Local/HOI4-ref") / "common/technologies/bba_air_techs.txt").read_text(encoding="utf-8-sig")
+    out = {}
+    for m in re.finditer(r"(?m)^\t(\w+) = \{", src):
+        y = re.search(r"start_year\s*=\s*(\d+)", src[m.end():m.end() + 3000])
+        if y:
+            out[m[1]] = int(y[1])
+    return out
+
+
+def _rows():
+    """Ligne de chaque tech : celle de son année, sauf sous une grande case (cellules, transport) qui
+    déborde de sa ligne : la tech suivante de la colonne descend alors d'une ligne de plus."""
+    years = _vanilla_years()
+    years.update({k: v["year"] for k, v in TECHS.items()})
+    rows = {}
+    for col, techs in T.TECH_COLUMNS.items():
+        big = col in T.TECH_BIG_COLUMNS
+        placed = sorted((T.TECH_ROWS[years[t]], i, t) for i, t in enumerate(techs) if years.get(t) in T.TECH_ROWS)
+        last = None
+        for row, _, t in placed:
+            if last is not None:
+                row = max(row, last + (2 if big else 1))
+            rows[t] = last = row
+    return rows
+
+
+ROWS = _rows()
+
+
 def position(tech, year):
     if tech not in COLUMN_OF:
         raise G.GenError(f"{tech} : pas de colonne dans TECH_COLUMNS")
     if year not in T.TECH_ROWS:
         raise G.GenError(f"{tech} : année {year} sans ligne dans TECH_ROWS")
-    return COLUMN_OF[tech], T.TECH_ROWS[year]
+    return COLUMN_OF[tech], ROWS.get(tech, T.TECH_ROWS[year])
 
 
 def cost_text(t):

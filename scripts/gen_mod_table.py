@@ -207,7 +207,7 @@ TECH_COLUMNS = {
     3: ["iw_medium_airframe", "basic_medium_airframe", "improved_medium_airframe", "advanced_medium_airframe", "modern_medium_airframe"],
     6: ["iw_large_airframe", "basic_large_airframe", "improved_large_airframe", "advanced_large_airframe", "modern_large_airframe"],
     9: ["reinforced_wings_mothership", "miniature_fighters", "aerial_hangars"],
-    10: ["bba_early_transport_plane", "bba_improved_transport_plane", "bba_strategic_airlifter"],
+    11: ["bba_early_transport_plane", "bba_improved_transport_plane", "bba_strategic_airlifter"],   # 11 : sa grande case ne touche plus celles de la colonne 9
     # Cellule et équipements : électronique, voilure, construction
     13: ["zv_gunsights_1", "zv_gunsights_2", "zv_gyro_gunsight_1", "zv_gyro_gunsight_2"],
     14: ["zv_forward_swept_wing"],
@@ -250,6 +250,9 @@ TECH_COLUMNS = {
     49: ["air_torpedoe_1", "air_torpedoe_2", "air_torpedoe_3"],
 }
 TECH_LAST_COLUMN = 51
+# Colonnes à grandes cases (183×84 : cellules et transport). Une grande case dépasse sa ligne de 14 px :
+# la tech suivante de la colonne descend d'une ligne de plus (Florian, 24/10 : « même si l'année affichée change »).
+TECH_BIG_COLUMNS = {0, 3, 6, 11}
 # Année -> ligne de l'onglet (70 px par ligne, gridbox à y = 32 ; vanilla : 1933 = 2, 1936 = 4).
 TECH_ROWS = {1922: 2, 1926: 2, 1933: 3, 1936: 4, 1938: 5, 1939: 6, 1940: 7, 1941: 8, 1942: 9,
              1943: 10, 1944: 11, 1945: 12, 1946: 13, 1947: 14, 1950: 15}

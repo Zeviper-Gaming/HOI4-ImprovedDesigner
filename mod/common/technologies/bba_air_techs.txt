@@ -1668,7 +1668,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 10 y = 3 }
+			position = { x = 11 y = 3 }
 		}	# ZV: placement de l'arbre
 		
 		categories = {
@@ -1712,7 +1712,7 @@ technologies = {
 		
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 10 y = 7 }
+			position = { x = 11 y = 7 }
 		}	# ZV: placement de l'arbre
 		
 		categories = {
@@ -1744,7 +1744,7 @@ technologies = {
 		
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 10 y = 12 }
+			position = { x = 11 y = 12 }
 		}	# ZV: placement de l'arbre
 		
 		categories = {
@@ -2023,7 +2023,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 12 }
+			position = { x = 0 y = 13 }
 		}	# ZV: placement de l'arbre
 		
 		categories = {
@@ -2293,7 +2293,7 @@ technologies = {
 		
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 3 y = 12 }
+			position = { x = 3 y = 13 }
 		}	# ZV: placement de l'arbre
 		
 		categories = {
@@ -2485,7 +2485,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 6 y = 12 }
+			position = { x = 6 y = 13 }
 		}	# ZV: placement de l'arbre
 		
 		categories = {
