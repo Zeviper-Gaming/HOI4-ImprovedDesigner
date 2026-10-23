@@ -74,3 +74,13 @@ START_TECHS = {
 # En plus : `zv_radial_engines_2` (1936) à tout pays qui a `engines_2` à cette date. Dans le vanilla,
 # engines_2 débloquait aussi le moteur en étoile II ; le mod l'a mis dans sa propre tech.
 RADIAL_2_WITH = "engines_2"
+
+# Aile des avions du palier 0 qui n'étaient pas des biplans (phase 7 : sinon la traînée du biplan les ralentit
+# de 20 %). Les autres avions du palier 0 gardent l'aile biplan.
+WING = {
+    ("FRA", "D.500"): "zv_wing_basse_rectangulaire", ("FRA", "D.510"): "zv_wing_basse_rectangulaire",
+    ("USA", "P-26A"): "zv_wing_basse_rectangulaire", ("ROM", "IAR 14"): "zv_wing_basse_rectangulaire",
+    ("ARG", "FMA D.21"): "zv_wing_basse_rectangulaire",
+    ("POL", "PZL P.11"): "zv_wing_haute_rectangulaire", ("POL", "PZL P.24"): "zv_wing_haute_rectangulaire",
+    ("FRA", "D.371"): "zv_wing_parasol_rectangulaire", ("FRA", "NiD 62"): "zv_wing_parasol_rectangulaire",
+}

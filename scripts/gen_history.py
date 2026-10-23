@@ -106,7 +106,9 @@ def recipe(tag, name, eq_type, vanilla):
         dup == "large_plane_maritime_patrol_plane_airframe"
     fus = next((D.VANILLA_TO_ZV[v] for v in vanilla.values() if v.startswith("flying_boat")), None)
     k["F"] = fus or f"zv_fuselage_classic_{sz}"
-    if tier == 0:
+    if (tag, name) in D.WING:
+        k["WT"] = D.WING[(tag, name)]
+    elif tier == 0:
         k["WT"] = "zv_wing_biplan_rectangulaire" if sz == "s" else "zv_wing_mediane_rectangulaire"
     else:
         k["WT"] = "zv_wing_mediane_trapezoidale" if sz == "l" else "zv_wing_basse_trapezoidale"
