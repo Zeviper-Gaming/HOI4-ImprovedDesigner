@@ -181,14 +181,14 @@ def with_shadow(img, strength=0.75, dx=1, dy=1, blur=1.1):
     return out
 
 
-def paint(c):
+def paint(c, scale=1.0):
     """Style C3 · Plan acier ; slots vides en vert pâle en relief (convention du vanilla)."""
     if c.slot:
         col = gradient_map(c.lum, [(0, (20, 34, 22)), (0.5, (86, 120, 84)), (1, (190, 220, 180))])
         col = col * (1 - c.accent[..., None] * 0.55) + np.array([226, 250, 204]) * c.accent[..., None] * 0.55
         r = rim(c.alpha, 0.9)
         col = col * (1 - r[..., None] * 0.7) + np.array([200, 245, 255]) * r[..., None] * 0.7
-        img = with_shadow(downscale(np.dstack([col, c.alpha * 255]), c.w, c.h), 0.9)
+        img = with_shadow(downscale(np.dstack([col, c.alpha * 255]), round(c.w * scale), round(c.h * scale)), 0.9)
     else:
         lum = grain(c, 0.12)
         ln = np.maximum(c.lines, edge(c.alpha, 0.7)) * 0.85
@@ -196,7 +196,7 @@ def paint(c):
         base = base * (1 - c.accent[..., None] * 0.6) + np.array([110, 200, 240]) * c.accent[..., None] * 0.6
         col = base * (1 - ln[..., None]) + np.array([206, 228, 244]) * ln[..., None]
         a = np.maximum(c.alpha * (0.78 + 0.22 * c.accent), ln) * 255
-        img = with_shadow(downscale(np.dstack([col, a]), c.w, c.h))
+        img = with_shadow(downscale(np.dstack([col, a]), round(c.w * scale), round(c.h * scale)))
     return add_badges(img, c.badge)
 
 

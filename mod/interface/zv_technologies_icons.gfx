@@ -2,295 +2,295 @@
 # Chaque icône reprend une image vanilla (tech vanilla parente, ou modèle du groupe).
 spriteTypes = {
 	SpriteType = {
-		name = "GFX_zv_radial_engines_2_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_radial_engines_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_radial_engines_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_radial_engines_3_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_radial_engines_3_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_radial_engines_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_radial_engines_4_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_radial_engines_4_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_radial_engines_4.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_rotary_engines_3_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_rotary_engines_3_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_rotary_engines_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_rotary_engines_4_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_rotary_engines_4_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_rotary_engines_4.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_flat_engines_1_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_flat_engines_1_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_flat_engines_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_flat_engines_2_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_flat_engines_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_flat_engines_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_diesel_engines_1_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_diesel_engines_1_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_diesel_engines_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_diesel_engines_2_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_diesel_engines_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_diesel_engines_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_propellers_1_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_propellers_1_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_propellers_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_propellers_2_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_propellers_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_propellers_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_propellers_3_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_propellers_3_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_propellers_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_superchargers_1_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_superchargers_1_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_superchargers_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_superchargers_2_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_superchargers_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_superchargers_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_superchargers_3_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_superchargers_3_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_superchargers_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_high_octane_fuel_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_high_octane_fuel_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_high_octane_fuel.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_boost_systems_1_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_boost_systems_1_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_boost_systems_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_boost_systems_2_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_boost_systems_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_boost_systems_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_boost_systems_3_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_boost_systems_3_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_boost_systems_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_rocket_engines_2_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_rocket_engines_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_rocket_engines_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_rocket_engines_3_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_rocket_engines_3_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_rocket_engines_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_pulsejet_medium"	# image de engines_2
-		texturefile = "gfx/interface/technologies/bba_tech_engines_2.dds"
+		name = "GFX_zv_pulsejet_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_pulsejet.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_centrifugal_jet_2_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_centrifugal_jet_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_centrifugal_jet_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_axial_jet_2_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_axial_jet_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_axial_jet_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_turboprop_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_turboprop_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_turboprop.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_jet_improvements_1_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_jet_improvements_1_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_jet_improvements_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_jet_improvements_2_medium"	# image de engines_1
-		texturefile = "gfx/interface/technologies/bba_tech_engines_1.dds"
+		name = "GFX_zv_jet_improvements_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_jet_improvements_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_advanced_aircraft_construction_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_advanced_aircraft_construction_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_advanced_aircraft_construction.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_modern_aircraft_construction_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_modern_aircraft_construction_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_modern_aircraft_construction.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_experimental_aircraft_construction_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_experimental_aircraft_construction_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_experimental_aircraft_construction.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_wooden_construction_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_wooden_construction_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_wooden_construction.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_pressurized_cabin_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_pressurized_cabin_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_pressurized_cabin.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_wing_planforms_1_medium"	# image de iw_small_airframe
-		texturefile = "gfx/interface/technologies/light_plane_4.dds"
+		name = "GFX_zv_wing_planforms_1_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_wing_planforms_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_laminar_wing_medium"	# image de iw_small_airframe
-		texturefile = "gfx/interface/technologies/light_plane_4.dds"
+		name = "GFX_zv_laminar_wing_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_laminar_wing.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_swept_wing_1_medium"	# image de iw_small_airframe
-		texturefile = "gfx/interface/technologies/light_plane_4.dds"
+		name = "GFX_zv_swept_wing_1_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_swept_wing_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_swept_wing_2_medium"	# image de iw_small_airframe
-		texturefile = "gfx/interface/technologies/light_plane_4.dds"
+		name = "GFX_zv_swept_wing_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_swept_wing_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_forward_swept_wing_medium"	# image de iw_small_airframe
-		texturefile = "gfx/interface/technologies/light_plane_4.dds"
+		name = "GFX_zv_forward_swept_wing_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_forward_swept_wing.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_tailless_aircraft_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_tailless_aircraft_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_tailless_aircraft.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_delta_wing_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_delta_wing_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_delta_wing.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_canard_configuration_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_canard_configuration_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_canard_configuration.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_advanced_canard_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_advanced_canard_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_advanced_canard.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_gunsights_1_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_gunsights_1_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_gunsights_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_gunsights_2_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_gunsights_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_gunsights_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_gyro_gunsight_1_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_gyro_gunsight_1_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_gyro_gunsight_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_gyro_gunsight_2_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_gyro_gunsight_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_gyro_gunsight_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_air_radio_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_air_radio_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_air_radio.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_iff_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_iff_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_iff.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_radar_warning_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_radar_warning_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_radar_warning.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_radar_countermeasures_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_radar_countermeasures_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_radar_countermeasures.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_asv_radar_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_asv_radar_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_asv_radar.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_all_weather_1_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_all_weather_1_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_all_weather_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_all_weather_2_medium"	# image de aircraft_construction
-		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+		name = "GFX_zv_all_weather_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_all_weather_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_aa_lmg_2_medium"	# image de aa_lmg
-		texturefile = "gfx/interface/technologies/bba_tech_aa_mg_1.dds"
+		name = "GFX_zv_aa_lmg_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_aa_lmg_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_aa_hmg_2_medium"	# image de aa_hmg
-		texturefile = "gfx/interface/technologies/bba_tech_aa_mg_2.dds"
+		name = "GFX_zv_aa_hmg_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_aa_hmg_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_aircraft_at_gun_1_medium"	# image de aa_cannon_1
-		texturefile = "gfx/interface/technologies/bba_tech_aa_cannon_1.dds"
+		name = "GFX_zv_aircraft_at_gun_1_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_aircraft_at_gun_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_aircraft_at_gun_2_medium"	# image de aa_cannon_1
-		texturefile = "gfx/interface/technologies/bba_tech_aa_cannon_1.dds"
+		name = "GFX_zv_aircraft_at_gun_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_aircraft_at_gun_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_aa_cannon_30mm_medium"	# image de aa_cannon_1
-		texturefile = "gfx/interface/technologies/bba_tech_aa_cannon_1.dds"
+		name = "GFX_zv_aa_cannon_30mm_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_aa_cannon_30mm.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_tech_schraege_musik_medium"	# image de aa_cannon_1
-		texturefile = "gfx/interface/technologies/bba_tech_aa_cannon_1.dds"
+		name = "GFX_zv_tech_schraege_musik_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_tech_schraege_musik.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_remote_turret_medium"	# image de aa_hmg
-		texturefile = "gfx/interface/technologies/bba_tech_aa_mg_2.dds"
+		name = "GFX_zv_remote_turret_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_remote_turret.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_survivability_studies_2_medium"	# image de survivability_studies
-		texturefile = "gfx/interface/technologies/bba_tech_survivability_studies.dds"
+		name = "GFX_zv_survivability_studies_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_survivability_studies_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_range_improvements_2_medium"	# image de range_improvements
-		texturefile = "gfx/interface/technologies/bba_tech_range_improvements.dds"
+		name = "GFX_zv_range_improvements_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_range_improvements_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_earthquake_bombs_medium"	# image de heavy_bombs
-		texturefile = "gfx/interface/technologies/bba_tech_heavy_bombs.dds"
+		name = "GFX_zv_earthquake_bombs_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_earthquake_bombs.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_incendiary_bombs_medium"	# image de early_bombs
-		texturefile = "gfx/interface/technologies/bba_tech_early_bombs.dds"
+		name = "GFX_zv_incendiary_bombs_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_incendiary_bombs.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_napalm_medium"	# image de early_bombs
-		texturefile = "gfx/interface/technologies/bba_tech_early_bombs.dds"
+		name = "GFX_zv_napalm_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_napalm.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_rocket_rails_1_medium"	# image de early_bombs
-		texturefile = "gfx/interface/technologies/bba_tech_early_bombs.dds"
+		name = "GFX_zv_rocket_rails_1_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_rocket_rails_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_rocket_rails_2_medium"	# image de early_bombs
-		texturefile = "gfx/interface/technologies/bba_tech_early_bombs.dds"
+		name = "GFX_zv_rocket_rails_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_rocket_rails_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_rockets_3_medium"	# image de early_bombs
-		texturefile = "gfx/interface/technologies/bba_tech_early_bombs.dds"
+		name = "GFX_zv_rockets_3_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_rockets_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_guided_weapons_1_medium"	# image de heavy_bombs
-		texturefile = "gfx/interface/technologies/bba_tech_heavy_bombs.dds"
+		name = "GFX_zv_guided_weapons_1_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_guided_weapons_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_guided_weapons_2_medium"	# image de heavy_bombs
-		texturefile = "gfx/interface/technologies/bba_tech_heavy_bombs.dds"
+		name = "GFX_zv_guided_weapons_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_guided_weapons_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_air_asw_1_medium"	# image de air_torpedoe_1
-		texturefile = "gfx/interface/technologies/basic_torpedo.dds"
+		name = "GFX_zv_air_asw_1_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_air_asw_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_air_asw_2_medium"	# image de air_torpedoe_1
-		texturefile = "gfx/interface/technologies/basic_torpedo.dds"
+		name = "GFX_zv_air_asw_2_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_air_asw_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_air_asw_3_medium"	# image de air_torpedoe_2
-		texturefile = "gfx/interface/technologies/electric_torpedo.dds"
+		name = "GFX_zv_air_asw_3_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_air_asw_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_zv_night_photo_medium"	# image de photo_reconnaisance
-		texturefile = "gfx/interface/technologies/bba_tech_photo_reconnaisance.dds"
+		name = "GFX_zv_night_photo_medium"
+		texturefile = "gfx/interface/technologies/zv/zv_night_photo.dds"
 	}
 }

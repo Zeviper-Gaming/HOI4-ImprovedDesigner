@@ -21,6 +21,10 @@ import sujets_interface as UI  # noqa: E402
 
 OUT = ROOT / "mod/gfx/interface/equipmentdesigner/planes/modules/zv"
 REVIEW = ROOT / "rapports/icones"
+# Icônes des techs : case de l'onglet 72×72, icône posée à (3, 3) (countrytechtreeview.gui,
+# techtree_bba_air_techs_folder_small_item) : un carré de 66 px tient dans la case.
+TECH_OUT = ROOT / "mod/gfx/interface/technologies/zv"
+TECH_SIZE = 66
 sys.path.insert(0, str(ROOT / "scripts"))
 import gen_mod as G           # noqa: E402  (modules réellement écrits dans le mod)
 
@@ -60,6 +64,22 @@ def main():
             img = D.paint(UI.slot(sid))
             D.save_dds(img, OUT / "slots" / f"{sid}.dds")
             done.setdefault("slots", []).append((s["slot"], img))
+    if not a.famille or "techs" in a.famille:        # techs nouvelles : l'image de leur module principal
+        import gen_techs as GT
+        from PIL import Image
+        for tid in GT.MANAGED:
+            if not tid.startswith("zv_"):
+                continue                          # techs vanilla : leurs images sont dans le jeu
+            mods = [m for m in GT.modules_of(tid) if family_of(m)[1]]
+            # Le module qui dit le mieux la tech : les configurations et les rôles en dernier choix.
+            mods.sort(key=lambda m: (m.startswith(("zv_engine_config_", "zv_role_")), not m.startswith("zv_fuselage_")))
+            if not mods:
+                continue
+            art = D.paint(family_of(mods[0])[1](mods[0]), scale=TECH_SIZE / 56)
+            img = Image.new("RGBA", (TECH_SIZE, TECH_SIZE), (0, 0, 0, 0))
+            img.alpha_composite(art, (0, (TECH_SIZE - art.height) // 2))
+            D.save_dds(img, TECH_OUT / f"{tid}.dds")
+            done.setdefault("techs", []).append((GT.TECHS[tid]["name"], img))
     for fam, items in done.items():
         p = D.sheet(items, REVIEW / f"famille-{fam}.png", f"ZV Designer — icônes : {fam} ({len(items)})")
         print(f"{fam} : {len(items)} icônes, planche {p.relative_to(ROOT)}")

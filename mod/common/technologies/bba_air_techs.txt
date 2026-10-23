@@ -218,7 +218,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 36 y = 2 }
+			position = { x = 42 y = 2 }
 		}	# ZV: placement de l'arbre
 
 		categories = {
@@ -266,7 +266,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 36 y = 5 }
+			position = { x = 42 y = 5 }
 		}
 		enable_equipment_modules = {
 			zv_light_imp_mg_1x
@@ -321,7 +321,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 36 y = 6 }
+			position = { x = 42 y = 6 }
 		}	# ZV: placement de l'arbre
 
 		categories = {
@@ -368,7 +368,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 36 y = 10 }
+			position = { x = 42 y = 10 }
 		}
 		enable_equipment_modules = {
 			zv_heavy_imp_mg_1x
@@ -412,7 +412,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 37 y = 6 }
+			position = { x = 40 y = 6 }
 		}	# ZV: placement de l'arbre
 
 		categories = {
@@ -483,7 +483,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 37 y = 10 }
+			position = { x = 40 y = 10 }
 		}	# ZV: placement de l'arbre
 
 		categories = {
@@ -536,7 +536,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 37 y = 12 }
+			position = { x = 40 y = 12 }
 		}	# ZV: placement de l'arbre
 
 		categories = {
@@ -576,7 +576,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 38 y = 8 }
+			position = { x = 39 y = 8 }
 		}
 		enable_equipment_modules = {
 			zv_at_cannon_37
@@ -612,7 +612,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 38 y = 10 }
+			position = { x = 39 y = 10 }
 		}
 		enable_equipment_modules = {
 			zv_at_cannon_57
@@ -644,7 +644,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 39 y = 10 }
+			position = { x = 41 y = 10 }
 		}
 		enable_equipment_modules = {
 			zv_cannon_30mm_1x
@@ -676,7 +676,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 40 y = 10 }
+			position = { x = 38 y = 10 }
 		}
 		enable_equipment_modules = {
 			zv_schraege_musik
@@ -705,7 +705,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 36 y = 9 }
+			position = { x = 42 y = 9 }
 		}
 		enable_equipment_modules = {
 			zv_remote_turret_lmg_1x
@@ -751,7 +751,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 41 y = 6 }
+			position = { x = 43 y = 6 }
 		}	# ZV: placement de l'arbre
 
 		categories = {
@@ -794,7 +794,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 41 y = 9 }
+			position = { x = 43 y = 9 }
 		}
 		enable_equipment_modules = {
 			zv_auto_extinguisher_s
@@ -805,8 +805,8 @@ technologies = {
 		categories = {
 			air_equipment
 			plane_modules_tech
-			cat_air_guns
-			mio_cat_all_light_fighter_and_modules
+			cat_air_bombs
+			mio_cat_all_cas_and_modules
 			mio_cat_all_medium_aircraft_and_modules
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
@@ -836,7 +836,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 42 y = 4 }
+			position = { x = 36 y = 4 }
 		}	# ZV: placement de l'arbre
 
 		categories = {
@@ -892,7 +892,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 42 y = 7 }
+			position = { x = 36 y = 7 }
 		}
 		enable_equipment_modules = {
 			zv_bomb_bay_tank
@@ -937,7 +937,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 43 y = 2 }
+			position = { x = 44 y = 2 }
 		}	# ZV: placement de l'arbre
 
 		categories = {
@@ -990,7 +990,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 43 y = 4 }
+			position = { x = 44 y = 4 }
 		}	# ZV: placement de l'arbre
 		
 		categories = {
@@ -1037,7 +1037,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 43 y = 7 }
+			position = { x = 44 y = 7 }
 		}	# ZV: placement de l'arbre
 		
 		categories = {
@@ -1076,7 +1076,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 43 y = 11 }
+			position = { x = 44 y = 11 }
 		}
 		enable_equipment_modules = {
 			zv_bomb_locks_earthquake
@@ -1106,7 +1106,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 44 y = 4 }
+			position = { x = 46 y = 4 }
 		}
 		enable_equipment_modules = {
 			zv_bomb_locks_incendiary
@@ -1140,7 +1140,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 44 y = 11 }
+			position = { x = 46 y = 11 }
 		}
 		enable_equipment_modules = {
 			zv_bomb_locks_napalm
@@ -1267,7 +1267,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 46 y = 10 }
+			position = { x = 37 y = 10 }
 		}
 		allow = {
 			has_tech = improved_computing_machine
@@ -1283,8 +1283,8 @@ technologies = {
 		categories = {
 			air_equipment
 			plane_modules_tech
-			cat_air_bombs
-			mio_cat_all_cas_and_modules
+			cat_air_guns
+			mio_cat_all_light_fighter_and_modules
 			mio_cat_all_medium_aircraft_and_modules
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
@@ -1330,7 +1330,7 @@ technologies = {
 		start_year = 1946
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 46 y = 13 }
+			position = { x = 37 y = 13 }
 		}
 		enable_equipment_modules = {
 			guided_anti_ship_missile
@@ -1338,8 +1338,8 @@ technologies = {
 		categories = {
 			air_equipment
 			plane_modules_tech
-			cat_air_bombs
-			mio_cat_all_cas_and_modules
+			cat_air_guns
+			mio_cat_all_light_fighter_and_modules
 			mio_cat_all_medium_aircraft_and_modules
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
@@ -1366,7 +1366,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 47 y = 4 }
+			position = { x = 49 y = 4 }
 		}	# ZV: placement de l'arbre
 
 		categories = {
@@ -1412,7 +1412,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 47 y = 7 }
+			position = { x = 49 y = 7 }
 		}	# ZV: placement de l'arbre
 
 		categories = {
@@ -1458,7 +1458,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 47 y = 11 }
+			position = { x = 49 y = 11 }
 		}	# ZV: placement de l'arbre
 
 		categories = {
@@ -1600,7 +1600,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 49 y = 2 }
+			position = { x = 47 y = 2 }
 		}	# ZV: placement de l'arbre
 
 		allow_branch = { has_dlc = "La Resistance" }
@@ -1632,7 +1632,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 49 y = 8 }
+			position = { x = 47 y = 8 }
 		}
 		enable_equipment_modules = {
 			zv_night_photo
@@ -1640,7 +1640,12 @@ technologies = {
 		categories = {
 			air_equipment
 			plane_modules_tech
+			cat_air_bombs
+			cat_maritime_patrol
+			mio_cat_all_naval_bomber_and_modules
 			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		special_project_specialization = { specialization_air }
 		ai_will_do = {
@@ -2522,12 +2527,12 @@ technologies = {
 		
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 23 y = 12 }
+			position = { x = 34 y = 12 }
 		}	# ZV: placement de l'arbre
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 23 y = 12 }
+			position = { x = 34 y = 12 }
 		}	# ZV: placement de l'arbre
 		
 		categories = {

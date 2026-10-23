@@ -28,7 +28,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 13 y = 2 }
+			position = { x = 28 y = 2 }
 		}	# ZV: placement de l'arbre
 
 		categories = {
@@ -129,7 +129,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 13 y = 4 }
+			position = { x = 28 y = 4 }
 		}	# ZV: placement de l'arbre
 
 		categories = {
@@ -196,7 +196,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 13 y = 7 }
+			position = { x = 28 y = 7 }
 		}	# ZV: placement de l'arbre
 
 		categories = {
@@ -260,7 +260,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 13 y = 11 }
+			position = { x = 28 y = 11 }
 		}	# ZV: placement de l'arbre
 
 		path = {
@@ -311,7 +311,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 14 y = 4 }
+			position = { x = 25 y = 4 }
 		}
 		enable_equipment_modules = {
 			zv_engine_radial_2
@@ -351,7 +351,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 14 y = 7 }
+			position = { x = 25 y = 7 }
 		}
 		enable_equipment_modules = {
 			zv_engine_radial_3
@@ -386,7 +386,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 14 y = 11 }
+			position = { x = 25 y = 11 }
 		}
 		enable_equipment_modules = {
 			zv_engine_radial_4
@@ -417,7 +417,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 15 y = 7 }
+			position = { x = 24 y = 7 }
 		}
 		enable_equipment_modules = {
 			zv_engine_rotary_3
@@ -452,7 +452,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 15 y = 11 }
+			position = { x = 24 y = 11 }
 		}
 		enable_equipment_modules = {
 			zv_engine_rotary_4
@@ -483,7 +483,7 @@ technologies = {
 		start_year = 1933
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 16 y = 3 }
+			position = { x = 26 y = 3 }
 		}
 		enable_equipment_modules = {
 			zv_engine_flat_1
@@ -518,7 +518,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 16 y = 9 }
+			position = { x = 26 y = 9 }
 		}
 		enable_equipment_modules = {
 			zv_engine_flat_2
@@ -549,7 +549,7 @@ technologies = {
 		start_year = 1933
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 17 y = 3 }
+			position = { x = 27 y = 3 }
 		}
 		enable_equipment_modules = {
 			zv_engine_diesel_1
@@ -584,7 +584,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 17 y = 7 }
+			position = { x = 27 y = 7 }
 		}
 		enable_equipment_modules = {
 			zv_engine_diesel_2
@@ -615,7 +615,7 @@ technologies = {
 		start_year = 1933
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 18 y = 3 }
+			position = { x = 31 y = 3 }
 		}
 		enable_equipment_modules = {
 			zv_prop_variable_pitch
@@ -650,7 +650,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 18 y = 7 }
+			position = { x = 31 y = 7 }
 		}
 		enable_equipment_modules = {
 			zv_prop_4
@@ -686,7 +686,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 18 y = 10 }
+			position = { x = 31 y = 10 }
 		}
 		enable_equipment_modules = {
 			zv_prop_5
@@ -721,7 +721,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 19 y = 4 }
+			position = { x = 29 y = 4 }
 		}
 		enable_equipment_modules = {
 			zv_early_supercharger
@@ -765,7 +765,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 19 y = 7 }
+			position = { x = 29 y = 7 }
 		}
 		enable_equipment_modules = {
 			zv_supercharger
@@ -809,7 +809,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 19 y = 9 }
+			position = { x = 29 y = 9 }
 		}
 		enable_equipment_modules = {
 			zv_improved_supercharger
@@ -842,7 +842,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 20 y = 4 }
+			position = { x = 30 y = 4 }
 		}
 		allow = {
 			has_tech = fuel_refining
@@ -878,7 +878,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 20 y = 5 }
+			position = { x = 30 y = 5 }
 		}
 		enable_equipment_modules = {
 			zv_direct_injection
@@ -916,7 +916,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 20 y = 8 }
+			position = { x = 30 y = 8 }
 		}
 		enable_equipment_modules = {
 			zv_water_injection_s
@@ -954,7 +954,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 20 y = 9 }
+			position = { x = 30 y = 9 }
 		}
 		enable_equipment_modules = {
 			zv_gm1
@@ -985,7 +985,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 21 y = 11 }
+			position = { x = 35 y = 11 }
 		}
 		allow = {
 			ROOT = { is_special_project_completed = sp:sp_rocket_interceptor }
@@ -1028,7 +1028,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 21 y = 12 }
+			position = { x = 35 y = 12 }
 		}
 		enable_equipment_modules = {
 			zv_engine_rocket_3
@@ -1059,7 +1059,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 24 y = 9 }
+			position = { x = 33 y = 9 }
 		}
 		enable_equipment_modules = {
 			zv_engine_pulsejet
@@ -1090,7 +1090,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 22 y = 12 }
+			position = { x = 32 y = 12 }
 		}
 		allow = {
 			ROOT = { is_special_project_completed = sp:sp_air_jet_engine }
@@ -1129,7 +1129,7 @@ technologies = {
 		start_year = 1946
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 23 y = 13 }
+			position = { x = 34 y = 13 }
 		}
 		allow = {
 			ROOT = { is_special_project_completed = sp:sp_air_axial_jet_engine }
@@ -1168,7 +1168,7 @@ technologies = {
 		start_year = 1946
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 18 y = 13 }
+			position = { x = 31 y = 13 }
 		}
 		enable_equipment_modules = {
 			zv_engine_turboprop
@@ -1199,7 +1199,7 @@ technologies = {
 		start_year = 1946
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 24 y = 13 }
+			position = { x = 33 y = 13 }
 		}
 		enable_equipment_modules = {
 			zv_jet_improved_compressor
@@ -1235,7 +1235,7 @@ technologies = {
 		start_year = 1947
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 24 y = 14 }
+			position = { x = 33 y = 14 }
 		}
 		enable_equipment_modules = {
 			zv_supersonic_intake

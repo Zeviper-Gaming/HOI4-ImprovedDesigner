@@ -2659,7 +2659,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = {
-					width = 3940 height = 1300
+					width = 4080 height = 1300
 					min = { width=100%% height=100%% }
 				}
 				clipping = no
@@ -2857,7 +2857,7 @@ instantTextBoxType = {
 
 			containerWindowType = {
 				name = "airtech_year_right"
-				position = { x=3740 y=25 }
+				position = { x=3880 y=25 }
 				size = { width = 200 height = 100% }
 				orientation = upper_left
 
@@ -3036,7 +3036,7 @@ instantTextBoxType = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_airframe"
-				position = { x = 265 y = 110 }
+				position = { x = 405 y = 110 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -3050,7 +3050,7 @@ instantTextBoxType = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_transport"
-				position = { x = 755 y = 110 }
+				position = { x = 895 y = 110 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -3064,7 +3064,7 @@ instantTextBoxType = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_weapons"
-				position = { x = 2960 y = 110 }
+				position = { x = 3100 y = 110 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4} 
@@ -3079,7 +3079,7 @@ instantTextBoxType = {
 			# ZV: titre du groupe « Cellule et équipements »
 			instantTextBoxType = {
 				name = "zv_airtech_subtitle_construction"
-				position = { x = 2085 y = 110 }
+				position = { x = 1385 y = 110 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4} 
@@ -3093,7 +3093,7 @@ instantTextBoxType = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_engines"
-				position = { x = 1280 y = 110 }
+				position = { x = 2190 y = 110 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -3133,129 +3133,129 @@ instantTextBoxType = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
-			gridboxtype = {	# ZV: même origine pour tous les arbres (positions absolues)
+			gridboxtype = {	# ZV: même grille pour tous les arbres (colonnes absolues, x = 0 au milieu)
 				name = "iw_small_airframe_tree"
-				position = { x = 100 y = 32 }
+				position = { x = -1545 y = 32 }
 				size = { width = 3640 height = 1150 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 
-			gridboxtype = {	# ZV: même origine pour tous les arbres (positions absolues)
+			gridboxtype = {	# ZV: même grille pour tous les arbres (colonnes absolues, x = 0 au milieu)
 				name = "iw_medium_airframe_tree"
-				position = { x = 100 y = 32 }
+				position = { x = -1545 y = 32 }
 				size = { width = 3640 height = 1150 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 
-			gridboxtype = {	# ZV: même origine pour tous les arbres (positions absolues)
+			gridboxtype = {	# ZV: même grille pour tous les arbres (colonnes absolues, x = 0 au milieu)
 				name = "iw_large_airframe_tree"
-				position = { x = 100 y = 32 }
+				position = { x = -1545 y = 32 }
 				size = { width = 3640 height = 1150 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 
-			gridboxtype = {	# ZV: même origine pour tous les arbres (positions absolues)
+			gridboxtype = {	# ZV: même grille pour tous les arbres (colonnes absolues, x = 0 au milieu)
 				name = "bba_early_transport_plane_tree"
-				position = { x = 100 y = 32 }
+				position = { x = -1545 y = 32 }
 				size = { width = 3640 height = 1150 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 
-			gridboxtype = {	# ZV: même origine pour tous les arbres (positions absolues)
-				name = "engines_1_tree"
-				position = { x = 100 y = 32 }
-				size = { width = 3640 height = 1150 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-
-			gridboxtype = {	# ZV: même origine pour tous les arbres (positions absolues)
-				name = "zv_high_octane_fuel_tree"
-				position = { x = 100 y = 32 }
-				size = { width = 3640 height = 1150 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-
-			gridboxtype = {	# ZV: même origine pour tous les arbres (positions absolues)
-				name = "zv_rocket_engines_2_tree"
-				position = { x = 100 y = 32 }
-				size = { width = 3640 height = 1150 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-
-			gridboxtype = {	# ZV: même origine pour tous les arbres (positions absolues)
-				name = "zv_centrifugal_jet_2_tree"
-				position = { x = 100 y = 32 }
-				size = { width = 3640 height = 1150 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-
-			gridboxtype = {	# ZV: même origine pour tous les arbres (positions absolues)
-				name = "zv_axial_jet_2_tree"
-				position = { x = 100 y = 32 }
-				size = { width = 3640 height = 1150 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-
-			gridboxtype = {	# ZV: même origine pour tous les arbres (positions absolues)
+			gridboxtype = {	# ZV: même grille pour tous les arbres (colonnes absolues, x = 0 au milieu)
 				name = "zv_gunsights_1_tree"
-				position = { x = 100 y = 32 }
+				position = { x = -1545 y = 32 }
 				size = { width = 3640 height = 1150 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 
-			gridboxtype = {	# ZV: même origine pour tous les arbres (positions absolues)
-				name = "zv_air_radio_tree"
-				position = { x = 100 y = 32 }
-				size = { width = 3640 height = 1150 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-
-			gridboxtype = {	# ZV: même origine pour tous les arbres (positions absolues)
+			gridboxtype = {	# ZV: même grille pour tous les arbres (colonnes absolues, x = 0 au milieu)
 				name = "zv_all_weather_1_tree"
-				position = { x = 100 y = 32 }
+				position = { x = -1545 y = 32 }
 				size = { width = 3640 height = 1150 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 
-			gridboxtype = {	# ZV: même origine pour tous les arbres (positions absolues)
+			gridboxtype = {	# ZV: même grille pour tous les arbres (colonnes absolues, x = 0 au milieu)
+				name = "zv_air_radio_tree"
+				position = { x = -1545 y = 32 }
+				size = { width = 3640 height = 1150 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {	# ZV: même grille pour tous les arbres (colonnes absolues, x = 0 au milieu)
+				name = "engines_1_tree"
+				position = { x = -1545 y = 32 }
+				size = { width = 3640 height = 1150 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {	# ZV: même grille pour tous les arbres (colonnes absolues, x = 0 au milieu)
+				name = "zv_high_octane_fuel_tree"
+				position = { x = -1545 y = 32 }
+				size = { width = 3640 height = 1150 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {	# ZV: même grille pour tous les arbres (colonnes absolues, x = 0 au milieu)
+				name = "zv_centrifugal_jet_2_tree"
+				position = { x = -1545 y = 32 }
+				size = { width = 3640 height = 1150 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {	# ZV: même grille pour tous les arbres (colonnes absolues, x = 0 au milieu)
+				name = "zv_axial_jet_2_tree"
+				position = { x = -1545 y = 32 }
+				size = { width = 3640 height = 1150 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {	# ZV: même grille pour tous les arbres (colonnes absolues, x = 0 au milieu)
+				name = "zv_rocket_engines_2_tree"
+				position = { x = -1545 y = 32 }
+				size = { width = 3640 height = 1150 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {	# ZV: même grille pour tous les arbres (colonnes absolues, x = 0 au milieu)
 				name = "aa_lmg_tree"
-				position = { x = 100 y = 32 }
+				position = { x = -1545 y = 32 }
 				size = { width = 3640 height = 1150 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 
-			gridboxtype = {	# ZV: même origine pour tous les arbres (positions absolues)
+			gridboxtype = {	# ZV: même grille pour tous les arbres (colonnes absolues, x = 0 au milieu)
 				name = "early_bombs_tree"
-				position = { x = 100 y = 32 }
+				position = { x = -1545 y = 32 }
 				size = { width = 3640 height = 1150 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 
-			gridboxtype = {	# ZV: même origine pour tous les arbres (positions absolues)
-				name = "air_torpedoe_1_tree"
-				position = { x = 100 y = 32 }
-				size = { width = 3640 height = 1150 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-
-			gridboxtype = {	# ZV: même origine pour tous les arbres (positions absolues)
+			gridboxtype = {	# ZV: même grille pour tous les arbres (colonnes absolues, x = 0 au milieu)
 				name = "photo_reconnaisance_tree"
-				position = { x = 100 y = 32 }
+				position = { x = -1545 y = 32 }
+				size = { width = 3640 height = 1150 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {	# ZV: même grille pour tous les arbres (colonnes absolues, x = 0 au milieu)
+				name = "air_torpedoe_1_tree"
+				position = { x = -1545 y = 32 }
 				size = { width = 3640 height = 1150 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"

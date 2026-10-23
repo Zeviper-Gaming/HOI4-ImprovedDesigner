@@ -309,9 +309,12 @@ def gen_treeview(ref):
     seg = re.sub(r"\n\t*gridboxtype = \{\s*name = \"(?!experimental_rockets_tree)\w+_tree\"[^{}]*?(?:\{[^{}]*\}[^{}]*?)*\}", "", seg)
     x0, y0 = T.TECH_ORIGIN
     width = (T.TECH_LAST_COLUMN + 1) * 70
+    # Dans un gridbox « UP », x = 0 est la colonne du MILIEU de la grille (le vanilla place des techs en
+    # x = -2) : on recule chaque grille de la moitié de sa largeur pour que la colonne 0 tombe sur x0.
+    gx = x0 - width // 2 + 35
     boxes = "".join(
-        f"\n\t\t\tgridboxtype = {{\t# ZV: même origine pour tous les arbres (positions absolues)\n"
-        f"\t\t\t\tname = \"{r}_tree\"\n\t\t\t\tposition = {{ x = {x0} y = {y0} }}\n"
+        f"\n\t\t\tgridboxtype = {{\t# ZV: même grille pour tous les arbres (colonnes absolues, x = 0 au milieu)\n"
+        f"\t\t\t\tname = \"{r}_tree\"\n\t\t\t\tposition = {{ x = {gx} y = {y0} }}\n"
         f"\t\t\t\tsize = {{ width = {width} height = 1150 }}\n\t\t\t\tslotsize = {{ width = 70 height = 70 }}\n"
         f"\t\t\t\tformat = \"UP\"\n\t\t\t}}\n" for r in roots())
     anchor = seg.rindex("\n\t\t}")
@@ -345,7 +348,7 @@ def gen_treeview(ref):
     def center(c0, c1):
         return x0 + (c0 + c1 + 1) * 35 - 150
     titles = {"airtech_subtitle_airframe": center(0, 8), "airtech_subtitle_transport": center(10, 12),
-              "airtech_subtitle_engines": center(13, 24), "airtech_subtitle_weapons": center(36, 49)}
+              "airtech_subtitle_engines": center(24, 35), "airtech_subtitle_weapons": center(36, 49)}
     for name, xpos in titles.items():
         seg, n = re.subn(r'(name = "%s"\s*position = \{ x = )\d+' % name, r"\g<1>%d" % xpos, seg)
         if n != 1:
@@ -356,7 +359,7 @@ def gen_treeview(ref):
     block = seg[start:stop]
     block = block.replace("airtech_subtitle_weapons", "zv_airtech_subtitle_construction")
     block = block.replace('"AIR_TITLE_WEAPONS"', '"ZV_AIR_TITLE_CONSTRUCTION"')
-    block = re.sub(r"position = \{ x = \d+", f"position = {{ x = {center(25, 35)}", block)
+    block = re.sub(r"position = \{ x = \d+", f"position = {{ x = {center(13, 23)}", block)
     seg = seg[:stop] + "\n\n\t\t\t# ZV: titre du groupe « Cellule et équipements »\n\t\t\t" + block + seg[stop:]
     t = t[:folder] + seg + t[end:]
     return "# ZV Designer : onglet Aviation généré par scripts/gen_techs.py (vanilla 1.19.3.0).\n" + t
@@ -385,6 +388,11 @@ def gen_tech_icons(ref):
             elif p in TECHS:
                 todo += TECHS[p]["prereqs"]
         src = src or T.TECH_GROUPS[group_of(t)][1]
+        own = G.MOD / "gfx/interface/technologies/zv" / f"{tid}.dds"
+        if own.exists():                          # icône du mod (style C3, scripts/icones/gen_icons.py)
+            L += ["\tSpriteType = {", f'\t\tname = "GFX_{tid}_medium"',
+                  f'\t\ttexturefile = "gfx/interface/technologies/zv/{tid}.dds"', "\t}"]
+            continue
         L += ["\tSpriteType = {", f'\t\tname = "GFX_{tid}_medium"\t# image de {src}',
               f'\t\ttexturefile = "{tex[src]}"', "\t}"]
     return "\n".join(L + ["}"]) + "\n"
