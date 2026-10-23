@@ -15,6 +15,7 @@ sys.path.insert(0, str(HERE))
 import dessin as D            # noqa: E402
 import sujets_moteurs as M    # noqa: E402
 import sujets_structure as ST  # noqa: E402
+import sujets_armes as AR      # noqa: E402
 
 OUT = ROOT / "mod/gfx/interface/equipmentdesigner/planes/modules/zv"
 REVIEW = ROOT / "rapports/icones"
@@ -29,7 +30,7 @@ def family_of(mid):
         return "configurations", M.config
     if mid.startswith("zv_engine_"):
         return "moteurs", M.engine
-    for prefix, fam, fn in ST.FAMILY:
+    for prefix, fam, fn in AR.FAMILY + ST.FAMILY:
         if mid.startswith(prefix):
             return fam, fn
     return None, None
