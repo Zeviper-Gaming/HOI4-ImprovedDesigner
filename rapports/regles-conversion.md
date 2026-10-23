@@ -1,6 +1,6 @@
 # Règles de conversion des designs — proposition complète
 
-*23 octobre 2026. Proposition de Claude à valider par Florian (Q28) : rien n'est encore écrit dans le mod. Trois sources : le **vanilla** 1.19.3.0 (`HOI4-ref`), le **mod d'origine** de Florian (branche git `ZV/0.15.X`, fichier `common/units/equipment/modules/00_plane_modules.txt`), et la **cohérence historique**. Les prix des modules du mod viennent de `mod/common/units/equipment/modules/00_plane_modules.txt` ; les tableaux chiffrés sont calculés par script.*
+*23 octobre 2026. ✅ Validée par Florian le 23/10 (10 %, démontage 25 %, liquide ↔ air doublé, ailes en deux tableaux, rôles gratuits) et codée dans `scripts/conversions.py`. Les baisses de classe ou de génération suivent le même barème que les hausses (même écart, même prix). Trois sources : le **vanilla** 1.19.3.0 (`HOI4-ref`), le **mod d'origine** de Florian (branche git `ZV/0.15.X`, fichier `common/units/equipment/modules/00_plane_modules.txt`), et la **cohérence historique**. Les prix des modules du mod viennent de `mod/common/units/equipment/modules/00_plane_modules.txt` ; les tableaux chiffrés sont calculés par script.*
 
 Légende : 💡 proposition · ❓ à décider · 🧪 à tester en jeu · ⚠ problème ou limite · ⛔ impossible · 🔴 prix (IC par avion converti) · 📜 exemple historique · (V) vanilla · (O) mod d'origine · (H) histoire.
 

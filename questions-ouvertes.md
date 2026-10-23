@@ -35,7 +35,7 @@ Légende : ❓ à décider · 💡 proposition · 🧪 à tester en jeu · ⚠ p
 | Q25 | Bombardiers lourds trop lourds pour leur mission (B-17, Pe-8, TB-3, Ju 87 B chargé) | phase 7 §3 B, §4 | 💡 revoir poids de mission ou poussée des quadrimoteurs dans le 05 ; pour les avions de départ, moteurs III aux USA, au Japon et à l'URSS en 1939 | rien ne change | — |
 | Q26 | Multimoteurs nettement au-dessus du vanilla (He 111 H +36 % de vitesse, B-17 F ×2 de défense) | phase 7 §4 ; ⚠ du 05 (20/10) | 💡 recalibrer les configurations multimoteurs du 05 avec `calibrate_module.py` | rien ne change | — |
 | Q27 | Biplans du palier 0 à −20 % de vitesse : voulu ? | phase 7 §3 A | monoplans de 1936 passés en aile monoplan (fait) | rien de plus | — |
-| Q28 | Conversion des designs (passer des avions existants à un nouveau modèle) : le mod n'écrit aucune règle (`can_convert_from`, `parent`, `dismantle_cost_ic`). Moteurs, ailes, fuselages et empennages ne portent presque pas d'IC : les changer serait presque gratuit | 23/10, `common/units/equipment/modules/00_plane_modules.txt` | 💡 voir la réponse du 23/10 : chaînes de parents et conversions bon marché pour une génération ou une classe de plus ; prix plein, plus un coût de démontage, pour un changement de disposition des moteurs ou de structure | ❓ | — |
+| Q28 | Conversion des designs (passer des avions existants à un nouveau modèle) | 23/10 | ✅ (23/10) règles de `rapports/regles-conversion.md` validées et codées (`scripts/conversions.py`) : classe suivante 10 % du prix neuf, démontage d'une configuration 25 %, liquide ↔ air au double du mod d'origine, ailes = position + forme, rôles gratuits entre eux ; ⚠ matériaux posés dans un slot vide : encore gratuits (🧪 T30) | — | — |
 
 ✅ (22/10) Pour les phases 4 et 5 : placement des techs d'après le document en ligne de l'arbre (lu par Claude), années du premier usage réel (arbre), descriptions des modules = colonne « Pourquoi » du 05, traduites en anglais par Claude.
 
@@ -74,7 +74,7 @@ Légende : ❓ à décider · 💡 proposition · 🧪 à tester en jeu · ⚠ p
 | T27 | IA : après quelques années de jeu observé, les pays dessinent des avions valides pour les 11 rôles (gabarits `zv_<rôle>_<échelon>` dans le dossier historique du designer) et les produisent | 6 → final | corriger `gen_ai.py` |
 | T28 | IA : une fois un projet de réacteur terminé, l'IA passe aux gabarits `zv_fighter_jet` et `zv_tactical_bomber_jet` | 6 → final | — |
 | T29 | Icônes du mod (style C3) : chaque module, slot vide et catégorie montre sa vraie image dans le designer, nette, à la bonne taille, sans case vide ni rose | 8 → final | corriger `scripts/icones/` |
-| T30 | Conversion : convertir des avions d'un design à un autre (ligne de production « convertir ») et lire le coût par avion affiché ; comparer moteur de génération suivante, classe suivante, nouvelle disposition des moteurs, nouvelle aile | 7 → final | revoir les coûts de conversion (Q28) |
+| T30 | Conversion : ligne de production « convertir », lire le coût par avion. Cas à essayer : « V engine I » → « V engine II » avec « Single nose engine — class A » → « class B » (≈ 3 IC attendus) ; « Single nose engine » → « Twin engine (wings) » sur la petite cellule (prix plein + démontage) ; changer d'aile ; passer un avion tout métal au « Wooden monocoque » (si gratuit : trou à boucher) ; changer de palier de cellule ; changer un curseur | 7 → final | revoir `scripts/conversions.py` (Q28) |
 
 ## Pour une future mise à jour 🔜
 

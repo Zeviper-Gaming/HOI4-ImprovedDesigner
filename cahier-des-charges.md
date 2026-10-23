@@ -86,6 +86,8 @@ Source : `docs/04-arbre-technologique.md`, `data/techs.json`.
 - Français et anglais pour chaque module, catégorie, slot, tech et projet. HOI4-ref ne contient que `localisation/french/` : pour l'anglais, demander à Florian d'ajouter `localisation/english/` (au moins les fichiers d'aviation).
 - Noms : ceux du 05 et de l'arbre. Descriptions : à rédiger après les tests de stats (elles dépendent des valeurs).
 
+- **Conversion des designs** ✅ (23/10, Q28) : `parent`, `can_convert_from` et `dismantle_cost_ic` générés par `scripts/conversions.py` d'après `rapports/regles-conversion.md` (vanilla, mod d'origine `ZV/0.15.X`, histoire). 🧪 T30.
+
 ## 8. IA et designs de départ
 
 - `common/ai_equipment/` : les gabarits IA doivent être réécrits pour les nouveaux slots et modules (sinon l'IA ne produit que des designs invalides), en choisissant une configuration de motorisation cohérente avec le moteur. ✅ (22/10) 11 rôles (phase 6 : `gen_ai.py`, 62 échelons contrôlés par `check_designs.py`).

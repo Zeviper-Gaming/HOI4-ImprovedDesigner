@@ -18,6 +18,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import gen_mod_table as T
+import conversions
 import traductions_en as E
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -566,11 +567,13 @@ def module_text(m, abbr):
         L.append(f"{t}forbid_module_categories = {{")
         L += [f"{t}\t{c}" for c in forb]
         L.append(f"{t}}}")
+    L += conversions.text(m["id"], t)            # règles de conversion (Q28, scripts/conversions.py)
     L.append("\t}")
     return "\n".join(L)
 
 
 def gen_modules():
+    conversions.init(sys.modules[__name__])
     order = list(MODS)
     L = ["# ZV Designer : fichier généré par scripts/gen_mod.py (données : data/modules.json, docs/05).",
          "# Ne pas modifier à la main. Écrase le 00_plane_modules.txt vanilla.",
