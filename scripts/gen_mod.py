@@ -606,11 +606,31 @@ def gen_test_tech():
 def gen_icons(ref):
     src = (ref / "interface/plane_modules_icons.gfx").read_text(encoding="utf-8-sig")
     tex = dict(re.findall(r'name\s*=\s*"(GFX_EMI_\w+)"\s*\n\s*texture[Ff]ile\s*=\s*"([^"]+)"', src))
-    L = ["# ZV Designer : icônes PROVISOIRES, générées par scripts/gen_mod.py (images vanilla).",
+    L = ["# ZV Designer : icônes des modules, slots et catégories, générées par scripts/gen_mod.py.",
+         "# Images du mod (style C3, scripts/icones/gen_icons.py) ; à défaut, image vanilla provisoire.",
          "spriteTypes = {"]
+    real = "gfx/interface/equipmentdesigner/planes/modules/zv"
+
+    def sprite(name, texture):
+        L.extend(["\tspriteType = {", f'\t\tname = "{name}"', f'\t\ttextureFile = "{texture}"',
+                  "\t\tlegacy_lazy_load = no", "\t}"])
+
+    for s in SLOTS:                          # slots vides (le slot Rôles garde l'icône vanilla)
+        sid = s["id_propose"]
+        if (MOD / real / "slots" / f"{sid}.dds").exists():
+            sprite(f"GFX_EMSI_{sid}", f"{real}/slots/{sid}.dds")
+        elif sid == "fixed_zv_role":
+            sprite(f"GFX_EMSI_{sid}", "gfx/interface/equipmentdesigner/planes/plane_role_module.dds")
+    for name, c in CATS.items():             # catégories : l'image d'un module typique, comme le vanilla
+        mods = [m for m in c["modules"] if m in MODULE_IDS and (MOD / real / f"{m}.dds").exists()]
+        if mods:
+            sprite(f"GFX_EMI_{c['id_propose']}", f"{real}/{mods[0]}.dds")
     for mid in MODULE_IDS:
         if not mid.startswith("zv_") and f"GFX_EMI_{mid}" in tex:
             continue                         # identifiant vanilla gardé : son icône existe déjà
+        if (MOD / real / f"{mid}.dds").exists():
+            sprite(f"GFX_EMI_{mid}", f"{real}/{mid}.dds")
+            continue
         borrowed = T.ICONES_PROVISOIRES.get(mid)
         for pattern, sprite in ([] if borrowed else T.ICONES_REGLES):
             if (mr := re.match(pattern, mid)):

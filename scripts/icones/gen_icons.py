@@ -17,6 +17,7 @@ import sujets_moteurs as M    # noqa: E402
 import sujets_structure as ST  # noqa: E402
 import sujets_armes as AR      # noqa: E402
 import sujets_equipements as EQ  # noqa: E402
+import sujets_interface as UI  # noqa: E402
 
 OUT = ROOT / "mod/gfx/interface/equipmentdesigner/planes/modules/zv"
 REVIEW = ROOT / "rapports/icones"
@@ -51,6 +52,14 @@ def main():
         img = D.paint(fn(mid))
         D.save_dds(img, OUT / f"{mid}.dds")
         done.setdefault(fam, []).append((MODS[mid]["nom"], img))
+    if not a.famille or "slots" in a.famille:
+        for s in G.SLOTS:
+            sid = s["id_propose"]
+            if sid == "fixed_zv_role":
+                continue                      # le slot Rôles garde l'icône vanilla plane_role_module
+            img = D.paint(UI.slot(sid))
+            D.save_dds(img, OUT / "slots" / f"{sid}.dds")
+            done.setdefault("slots", []).append((s["slot"], img))
     for fam, items in done.items():
         p = D.sheet(items, REVIEW / f"famille-{fam}.png", f"ZV Designer — icônes : {fam} ({len(items)})")
         print(f"{fam} : {len(items)} icônes, planche {p.relative_to(ROOT)}")

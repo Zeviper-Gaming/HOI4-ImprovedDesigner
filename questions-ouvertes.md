@@ -72,6 +72,7 @@ Légende : ❓ à décider · 💡 proposition · 🧪 à tester en jeu · ⚠ p
 | T26 | Avions de départ (1936 et 1939) : chaque pays a ses avions sous leur nom vanilla (Bf 109 E, Spitfire, I-16…), avec les curseurs au cran 5, et ses escadrilles de départ en sont équipées ; aucune ligne `create_equipment_variant` dans `error.log` | 6 → final | corriger `designs_depart.py` / `gen_history.py` |
 | T27 | IA : après quelques années de jeu observé, les pays dessinent des avions valides pour les 11 rôles (gabarits `zv_<rôle>_<échelon>` dans le dossier historique du designer) et les produisent | 6 → final | corriger `gen_ai.py` |
 | T28 | IA : une fois un projet de réacteur terminé, l'IA passe aux gabarits `zv_fighter_jet` et `zv_tactical_bomber_jet` | 6 → final | — |
+| T29 | Icônes du mod (style C3) : chaque module, slot vide et catégorie montre sa vraie image dans le designer, nette, à la bonne taille, sans case vide ni rose | 8 → final | corriger `scripts/icones/` |
 
 ## Pour une future mise à jour 🔜
 
