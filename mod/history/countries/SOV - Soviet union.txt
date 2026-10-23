@@ -694,6 +694,9 @@ set_variable = { SOV_planned_economy_consumer_goods_factor = 0 } #Victory Over D
 
 
 #Add synthetic refineries tech
+set_technology = {	# ZV Designer : techs de départ (phase 6)
+	zv_radial_engines_2 = 1	# ZV: moteur en étoile II : le vanilla le donnait avec engines_2
+}
 set_technology = {
 	synth_oil_experiments = 1
 }
@@ -875,6 +878,10 @@ add_ideas = {
 }
 
 1939.1.1 = {
+	set_technology = {	# ZV Designer : techs de départ (phase 6)
+		range_improvements = 1	# ZV: vols record de l'ANT-25 (1937)
+		zv_rocket_rails_1 = 1	# ZV: roquettes RS-82 des I-153 à Khalkhin Gol (1939)
+	}
 
 	add_political_power = 1198
 	add_command_power = 100
@@ -1422,8 +1429,8 @@ if = {
 		modules = {
 			fixed_zv_wing_1 = zv_bomb_locks_light
 			fixed_zv_propeller = zv_prop_2_metal
-			fixed_zv_engine = zv_engine_radial_1
-			fixed_zv_engine_config = zv_engine_config_twin_wing_a
+			fixed_zv_engine = zv_engine_radial_2
+			fixed_zv_engine_config = zv_engine_config_twin_wing_b
 			fixed_zv_engine_module_1 = zv_naca_cowling
 			fixed_zv_landing_gear = zv_gear_fixed_taildragger
 			fixed_zv_fuselage = zv_fuselage_classic_m
@@ -1921,6 +1928,7 @@ if = {
 			type = small_plane_airframe_0
 			modules = {
 				fixed_zv_wing_1 = zv_light_mg_4x
+				fixed_zv_wing_2 = zv_rockets_rails_1
 				fixed_zv_propeller = zv_prop_2_metal
 				fixed_zv_engine = zv_engine_radial_1
 				fixed_zv_engine_config = zv_engine_config_nose_a
@@ -1943,8 +1951,8 @@ if = {
 			modules = {
 				fixed_zv_wing_1 = zv_light_mg_4x
 				fixed_zv_propeller = zv_prop_3_metal
-				fixed_zv_engine = zv_engine_radial_1
-				fixed_zv_engine_config = zv_engine_config_nose_a
+				fixed_zv_engine = zv_engine_radial_2
+				fixed_zv_engine_config = zv_engine_config_nose_b
 				fixed_zv_engine_module_1 = zv_naca_cowling
 				fixed_zv_landing_gear = zv_gear_retractable_taildragger
 				fixed_zv_fuselage = zv_fuselage_classic_s
@@ -1973,6 +1981,7 @@ if = {
 				fixed_zv_tail = zv_tail_classic
 				fixed_zv_role = zv_role_cas_small
 				fixed_zv_cockpit = zv_cockpit_closed
+				fixed_zv_rear_cockpit = zv_fuel_tanks_s
 			}
 			upgrades = {	# ZV: curseurs au cran 5 (réglage d'usine)
 				zv_engine_power_upgrade = 5
@@ -1996,6 +2005,7 @@ if = {
 				fixed_zv_cockpit = zv_cockpit_glazed_nose
 				fixed_zv_rear_cockpit = lmg_defense_turret
 				fixed_zv_belly_middle = zv_bomb_bay_large
+				zv_belly_rear = lmg_defense_turret_2x
 			}
 			upgrades = {	# ZV: curseurs au cran 5 (réglage d'usine)
 				zv_engine_power_upgrade = 5

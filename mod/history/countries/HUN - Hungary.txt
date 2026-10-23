@@ -522,6 +522,9 @@ add_breakthrough_progress = {
 
 # SETUP THE 1939 SCENARIO
 1939.1.1 = {
+	set_technology = {	# ZV Designer : techs de départ (phase 6)
+		zv_radial_engines_2 = 1	# ZV: moteur en étoile II : le vanilla le donnait avec engines_2
+	}
 
 	# WITHOUT THE WW DLC
 	IF = {

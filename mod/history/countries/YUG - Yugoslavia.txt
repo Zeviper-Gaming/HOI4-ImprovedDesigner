@@ -179,6 +179,10 @@ if = {
 }
 
 1939.1.1 = {
+	set_technology = {	# ZV Designer : techs de départ (phase 6)
+		aircraft_construction = 1	# ZV: Ikarus IK-3 à train rentrant
+		zv_radial_engines_2 = 1	# ZV: moteur en étoile II : le vanilla le donnait avec engines_2
+	}
 
 	add_ideas = {
 		limited_conscription
@@ -472,7 +476,7 @@ if = {
 				fixed_zv_engine = zv_engine_v_2
 				fixed_zv_engine_config = zv_engine_config_nose_b
 				fixed_zv_engine_module_1 = zv_radiator_ventral
-				fixed_zv_landing_gear = zv_gear_fixed_taildragger
+				fixed_zv_landing_gear = zv_gear_retractable_taildragger
 				fixed_zv_fuselage = zv_fuselage_classic_s
 				fixed_zv_wing_type = zv_wing_basse_trapezoidale
 				fixed_zv_tail = zv_tail_classic

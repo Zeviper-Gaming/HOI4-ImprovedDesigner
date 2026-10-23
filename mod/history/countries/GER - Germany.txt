@@ -85,6 +85,10 @@ set_fuel_ratio = 0.8
 # starting_truck_buffer = 0.8
 
 # Starting tech
+set_technology = {	# ZV Designer : techs de départ (phase 6)
+	range_improvements = 1	# ZV: réservoirs supplémentaires du Ju 86
+	zv_radial_engines_2 = 1	# ZV: moteur en étoile II : le vanilla le donnait avec engines_2
+}
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -1508,6 +1512,7 @@ if = {
 			fixed_zv_role = zv_role_tac_bomber_medium
 			fixed_zv_cockpit = zv_cockpit_open
 			fixed_zv_rear_cockpit = lmg_defense_turret_2x
+			fixed_zv_internal_1 = zv_fuel_tanks_m
 			fixed_zv_belly_middle = zv_bomb_bay_medium
 		}
 		upgrades = {	# ZV: curseurs au cran 5 (réglage d'usine)

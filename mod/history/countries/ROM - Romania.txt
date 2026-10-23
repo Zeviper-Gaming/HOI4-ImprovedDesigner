@@ -192,6 +192,9 @@ if = {
 
 set_convoys = 10
 1939.1.1 = {
+	set_technology = {	# ZV Designer : techs de départ (phase 6)
+		zv_radial_engines_2 = 1	# ZV: moteur en étoile II : le vanilla le donnait avec engines_2
+	}
 	
 	remove_ideas = neutrality_idea
 

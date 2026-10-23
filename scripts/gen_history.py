@@ -141,20 +141,62 @@ def convert(tag, name, eq_type, vanilla, techs):
     design = Z.build(eq_type, rec, techs, missing)
     notes += [f"⚠ {m} imposé sans sa tech ({Z.RULES.module_tech.get(m)}) : aucun autre module possible" for m in missing]
     for w in weapons:
-        if not Z.available(w, techs):
-            notes.append(f"{w} : tech {Z.RULES.module_tech.get(w)} pas encore recherchée, retiré")
-            continue
-        try:
-            trial = Z.RULES.place(eq_type, [w], fixed=design)
-        except ValueError:
-            notes.append(f"{w} : plus de slot libre, retiré")
-            continue
-        errs = [e for e in Z.RULES.check(eq_type, trial) if not e.startswith("slot obligatoire") and "count > 0" not in e]
-        if errs:
-            notes.append(f"{w} retiré : {errs[0]}")
-        else:
-            design = trial
+        # Le module vanilla, sinon un plus ancien de la même catégorie (Florian, 23/10 : « remplace-les par
+        # des modules de niveau 1 quand c'est possible »), le plus récent d'abord.
+        cat = Z.RULES.modules[w]["category"]
+        older = [m for m in Z.members(cat) if m != w and Z.year(m) <= Z.year(w)]
+        placed, why = None, f"tech {Z.RULES.module_tech.get(w)} pas encore recherchée"
+        for cand in [w] + older:
+            if not Z.available(cand, techs):
+                continue
+            try:
+                trial = Z.RULES.place(eq_type, [cand], fixed=design)
+            except ValueError:
+                why = "plus de slot libre"
+                break
+            errs = [e for e in Z.RULES.check(eq_type, trial) if not e.startswith("slot obligatoire") and "count > 0" not in e]
+            if not errs:
+                placed, design = cand, trial
+                break
+            why = errs[0]
+        if placed is None:
+            notes.append(f"{w} retiré : {why}")
+        elif placed != w:
+            notes.append(f"{w} remplacé par {placed} (tech {Z.RULES.module_tech.get(w)} pas encore recherchée)")
     return design, notes
+
+
+def add_start_techs(t, tag, report_techs):
+    """Ajoute au fichier pays les techs de départ de designs_depart.py (bloc set_technology à la racine
+    pour 1936, au début du premier bloc 1939.1.1 pour 1939)."""
+    root, dated = country_techs(t)
+    d39 = set().union(*[d[3] for d in dated]) if dated else set()
+    give = {1936: list(D.START_TECHS.get((tag, 1936), [])), 1939: list(D.START_TECHS.get((tag, 1939), []))}
+    why = "moteur en étoile II : le vanilla le donnait avec engines_2"
+    if D.RADIAL_2_WITH in root:
+        give[1936].append(("zv_radial_engines_2", why))
+    elif D.RADIAL_2_WITH in d39:
+        give[1939].append(("zv_radial_engines_2", why))
+    give[1939] = [(x, r) for x, r in give[1939] if x not in dict(give[1936])]   # déjà donnée en 1936
+    for year, items in ((1939, give[1939]), (1936, give[1936])):     # 1939 d'abord : il est plus bas
+        have = root | (d39 if year == 1939 else set())
+        items = [(tech, r) for tech, r in dict(items).items() if tech not in have]
+        if not items:
+            continue
+        for tech, r in items:
+            miss = sorted(p for p in Z.RULES.prereqs.get(tech, ()) if p not in have | {x for x, _ in items})
+            report_techs.append((tag, year, tech, r, miss))
+        tab = "\t\t" if year == 1939 else "\t"
+        lines = "".join(f"{tab}{tech} = 1\t# ZV: {r}\n" for tech, r in items)
+        if year == 1939:
+            first = min(dated, key=lambda d: d[1])
+            pos = t.index("{", first[1]) + 1
+            t = t[:pos] + f"\n\tset_technology = {{\t# ZV Designer : techs de départ (phase 6)\n{lines}\t}}" + t[pos:]
+        else:
+            m = re.search(r"(?m)^set_technology\s*=\s*\{", t)
+            pos = m.start() if m else 0
+            t = t[:pos] + f"set_technology = {{\t# ZV Designer : techs de départ (phase 6)\n{lines}}}\n" + t[pos:]
+    return t
 
 
 def modules_text(design, ind):
@@ -162,10 +204,11 @@ def modules_text(design, ind):
     return "\n".join([f"{t}modules = {{"] + [f"{t}\t{s} = {m}" for s, m in design.items()] + [f"{t}}}"])
 
 
-def convert_file(path, report):
+def convert_file(path, report, report_techs):
     raw = path.read_bytes()
     t = raw.decode("utf-8-sig")
     tag = path.name[:3]
+    t = add_start_techs(t, tag, report_techs)
     root_techs, dated = country_techs(t)
     rep = []
     for a, b in blocks(t, "create_equipment_variant"):
@@ -213,18 +256,20 @@ def main():
     src = ref / "common/history/countries"
     out = MOD / "history/countries"
     out.mkdir(parents=True, exist_ok=True)
-    report, total = [], 0
+    report, report_techs, total = [], [], 0
     try:
         for f in sorted(src.glob("*.txt")):
             if "plane_airframe" not in f.read_text(encoding="utf-8-sig"):
                 continue
-            data, n = convert_file(f, report)
+            data, n = convert_file(f, report, report_techs)
             (out / f.name).write_bytes(data)
             total += n
             print(f"écrit : mod/history/countries/{f.name} ({n} avions)")
     except (A.Fail, ValueError) as e:
         sys.exit(f"ERREUR : {e}")
     print(f"{total} avions de départ convertis, tous acceptés par check_designs")
+    for tag, year, tech, r, miss in report_techs:
+        print(f"  + {tag} {year} : {tech} ({r})" + (f" ⚠ prérequis absents : {miss}" if miss else ""))
     for tag, year, name, ty, notes in report:
         for n in notes:
             print(f"  · {tag} {year} « {name} » : {n}")

@@ -53,3 +53,24 @@ ROLE_OF_TYPE = {
     "large_plane_airframe": "zv_role_strat_bomber_large",
     "large_plane_maritime_patrol_plane_airframe": "zv_role_maritime_patrol_large",
 }
+
+# Techs données au départ (Florian, 23/10 : « donne-leur la technologie associée dès le début si c'est
+# cohérent historiquement »). Les techs plus tardives que la date de départ ne sont pas données : le module
+# est remplacé par le plus ancien de sa famille (tourelle à canon → tourelle à mitrailleuse, étoile III → II…).
+# (pays, année du bloc) : [(tech, raison historique)]
+START_TECHS = {
+    ("USA", 1936): [("aa_hmg", "Browning M2 de 12,7 mm, standard de l'USAAC dès le P-26 et le P-35")],
+    ("GER", 1936): [("range_improvements", "réservoirs supplémentaires du Ju 86")],
+    ("POL", 1936): [("aircraft_construction", "PZL : avions entièrement métalliques (P.11, P.23, P.37)"),
+                    ("zv_radial_engines_2", "Bristol Pegasus et Gnome-Rhône 14K construits sous licence (P.24)")],
+    ("ITA", 1939): [("range_improvements", "raids à longue distance des SM.79 et BR.20")],
+    ("SOV", 1939): [("range_improvements", "vols record de l'ANT-25 (1937)"),
+                    ("zv_rocket_rails_1", "roquettes RS-82 des I-153 à Khalkhin Gol (1939)")],
+    ("ENG", 1939): [("survivability_studies", "réservoirs auto-obturants et blindage de la RAF en 1939"),
+                    ("zv_air_asw_1", "grenades sous-marines du Coastal Command (Sunderland)")],
+    ("FRA", 1939): [("survivability_studies", "Breguet 693 blindé")],
+    ("YUG", 1939): [("aircraft_construction", "Ikarus IK-3 à train rentrant")],
+}
+# En plus : `zv_radial_engines_2` (1936) à tout pays qui a `engines_2` à cette date. Dans le vanilla,
+# engines_2 débloquait aussi le moteur en étoile II ; le mod l'a mis dans sa propre tech.
+RADIAL_2_WITH = "engines_2"
