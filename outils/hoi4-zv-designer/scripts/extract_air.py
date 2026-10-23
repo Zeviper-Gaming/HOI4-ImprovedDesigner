@@ -628,7 +628,14 @@ def find_variants(b: Block, out: list, ctx: list):
 
 def load_history_designs(roots, airframes, warnings) -> list[dict]:
     out = []
-    for f, origin in layered_files(roots, "common/history/countries"):
+    # Le jeu lit history/countries/ (racine du jeu) ; la copie HOI4-ref les range dans common/history/
+    # (piège 16) : on lit les deux, le fichier d'une racine plus tardive (le mod) remplaçant l'autre.
+    chosen: dict = {}
+    for i, root in enumerate(roots):
+        for d in ("common/history/countries", "history/countries"):
+            for f in sorted((root / d).glob("*.txt")) if (root / d).is_dir() else []:
+                chosen[f.name] = (f, "vanilla" if i == 0 else "mod")
+    for f, origin in [chosen[k] for k in sorted(chosen)]:
         root = load_file(f)
         tag = f.name.split(" ")[0].split("-")[0].strip()
         found: list = []

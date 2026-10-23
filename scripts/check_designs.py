@@ -37,9 +37,11 @@ def _merge(*levels):
     """Limites cumulées : un niveau plus précis remplace celle qui porte les mêmes conditions."""
     merged = {}
     for level in levels:
-        for conds, op, n in level:
-            merged[(conds, op)] = (conds, op, n)
-    return list(merged.values())
+        keys = {(conds, op) for conds, op, n in level}
+        merged = {k: v for k, v in merged.items() if k not in keys}
+        for conds, op, n in level:            # au même niveau, toutes les limites comptent
+            merged.setdefault((conds, op), []).append((conds, op, n))
+    return [x for v in merged.values() for x in v]
 
 
 class Rules:
@@ -51,13 +53,15 @@ class Rules:
                 slots = {}
                 for sname, s in b.get("module_slots").blocks():
                     slots[sname] = (s.get("required") == "yes", set(s.get("allowed_module_categories").values()))
-                self.archetypes[name] = dict(type=b.get("type"), slots=slots, limits=_limits(b))
+                types = b.get("allowed_types")
+                self.archetypes[name] = dict(type=b.get("type"), slots=slots, limits=_limits(b),
+                                             allowed=set(types.values()) if isinstance(types, Block) else set())
             else:
                 self.tiers[name] = dict(archetype=b.get("archetype"), limits=_limits(b))
         self.duplicates = {}
         dup = load_file(EQ / "x_plane_airframes.txt").get("duplicate_archetypes")
         for name, b in dup.blocks():
-            if b.get("archetype") in self.archetypes:
+            if b.get("archetype") in self.archetypes and b.get("only_duplicate_archetype") != "yes":
                 self.duplicates[name] = dict(archetype=b.get("archetype"), type=b.get("type"), limits=_limits(b))
         self.modules = {}
         mods = load_file(EQ / "modules/00_plane_modules.txt").get("equipment_modules")
@@ -176,7 +180,10 @@ class Rules:
                 errors.append(f"limite non tenue : {sorted(conds)} count {op} {n} (il y en a {count})")
         roles = [self.modules[m]["role"] for m in mods.values() if self.modules[m]["role"]]
         if roles and roles[0] != typ:
-            errors.append(f"rôle {roles[0]} sur une cellule de type {typ} ({eq_type})")
+            # Rôle sans doublon propre (intercepteur…) : il reste sur la cellule de base, s'il y est permis.
+            own_dup = any(d["archetype"] == arch and d["type"] == roles[0] for d in self.duplicates.values())
+            if dup or own_dup or roles[0] not in self.archetypes[arch]["allowed"]:
+                errors.append(f"rôle {roles[0]} sur une cellule de type {typ} ({eq_type})")
         if techs is not None:
             t = self.equipment_tech.get(tier)
             if t and t not in techs:

@@ -412,7 +412,7 @@ generic_cas = {
 				fixed_zv_landing_gear = zv_gear_fixed_taildragger
 				fixed_zv_cockpit = zv_cockpit_open
 				fixed_zv_wing_1 = zv_cat_mitrailleuses
-				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_belly_middle = { any_of = { zv_bomb_locks_napalm zv_bomb_locks_heavy zv_bomb_locks_ap zv_bomb_locks_incendiary zv_bomb_locks_frag zv_bomb_locks_light } }
 				fixed_zv_wing_2 = zv_dive_brakes_s
 				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
 				fixed_zv_role = zv_role_cas_small
@@ -463,7 +463,7 @@ generic_cas = {
 				fixed_zv_landing_gear = zv_gear_fixed_taildragger
 				fixed_zv_cockpit = zv_cockpit_closed
 				fixed_zv_wing_1 = zv_cat_mitrailleuses
-				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_belly_middle = { any_of = { zv_bomb_locks_napalm zv_bomb_locks_heavy zv_bomb_locks_ap zv_bomb_locks_incendiary zv_bomb_locks_frag zv_bomb_locks_light } }
 				fixed_zv_wing_2 = zv_dive_brakes_s
 				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
 				fixed_zv_role = zv_role_cas_small
@@ -515,7 +515,7 @@ generic_cas = {
 				fixed_zv_landing_gear = zv_gear_retractable_taildragger
 				fixed_zv_cockpit = zv_cockpit_closed
 				fixed_zv_wing_1 = zv_cat_mitrailleuses
-				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_belly_middle = { any_of = { zv_bomb_locks_napalm zv_bomb_locks_heavy zv_bomb_locks_ap zv_bomb_locks_incendiary zv_bomb_locks_frag zv_bomb_locks_light } }
 				fixed_zv_wing_2 = zv_dive_brakes_s
 				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
 				fixed_zv_role = zv_role_cas_small
@@ -574,7 +574,7 @@ generic_cas = {
 				fixed_zv_cockpit = zv_cockpit_closed
 				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_s
 				fixed_zv_wing_1 = zv_cat_mitrailleuses
-				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_belly_middle = { any_of = { zv_bomb_locks_napalm zv_bomb_locks_heavy zv_bomb_locks_ap zv_bomb_locks_incendiary zv_bomb_locks_frag zv_bomb_locks_light } }
 				fixed_zv_wing_2 = zv_dive_brakes_s
 				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
 				fixed_zv_role = zv_role_cas_small
@@ -631,7 +631,7 @@ generic_cas = {
 				fixed_zv_cockpit = zv_cockpit_closed
 				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_s
 				fixed_zv_wing_1 = zv_cat_mitrailleuses
-				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_belly_middle = { any_of = { zv_bomb_locks_napalm zv_bomb_locks_heavy zv_bomb_locks_ap zv_bomb_locks_incendiary zv_bomb_locks_frag zv_bomb_locks_light } }
 				fixed_zv_wing_2 = zv_cat_roquettes
 				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
 				fixed_zv_role = zv_role_cas_small
@@ -690,7 +690,7 @@ generic_cas = {
 				fixed_zv_cockpit = zv_cockpit_bubble
 				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_s
 				fixed_zv_wing_1 = zv_cat_mitrailleuses
-				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_belly_middle = { any_of = { zv_bomb_locks_napalm zv_bomb_locks_heavy zv_bomb_locks_ap zv_bomb_locks_incendiary zv_bomb_locks_frag zv_bomb_locks_light } }
 				fixed_zv_wing_2 = zv_cat_roquettes
 				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
 				fixed_zv_role = zv_role_cas_small
@@ -1334,7 +1334,7 @@ generic_cv_cas = {
 				fixed_zv_landing_gear = zv_gear_fixed_taildragger
 				fixed_zv_cockpit = zv_cockpit_closed
 				fixed_zv_wing_1 = zv_cat_mitrailleuses
-				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_belly_middle = { any_of = { zv_bomb_locks_napalm zv_bomb_locks_heavy zv_bomb_locks_ap zv_bomb_locks_incendiary zv_bomb_locks_frag zv_bomb_locks_light } }
 				fixed_zv_wing_2 = zv_dive_brakes_s
 				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
 				fixed_zv_role = zv_role_cas_small
@@ -1378,7 +1378,7 @@ generic_cv_cas = {
 				fixed_zv_landing_gear = zv_gear_retractable_taildragger
 				fixed_zv_cockpit = zv_cockpit_closed
 				fixed_zv_wing_1 = zv_cat_mitrailleuses
-				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_belly_middle = { any_of = { zv_bomb_locks_napalm zv_bomb_locks_heavy zv_bomb_locks_ap zv_bomb_locks_incendiary zv_bomb_locks_frag zv_bomb_locks_light } }
 				fixed_zv_wing_2 = zv_dive_brakes_s
 				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
 				fixed_zv_role = zv_role_cas_small
@@ -1427,7 +1427,7 @@ generic_cv_cas = {
 				fixed_zv_landing_gear = zv_gear_retractable_taildragger
 				fixed_zv_cockpit = zv_cockpit_closed
 				fixed_zv_wing_1 = zv_cat_mitrailleuses
-				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_belly_middle = { any_of = { zv_bomb_locks_napalm zv_bomb_locks_heavy zv_bomb_locks_ap zv_bomb_locks_incendiary zv_bomb_locks_frag zv_bomb_locks_light } }
 				fixed_zv_wing_2 = zv_dive_brakes_s
 				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
 				fixed_zv_role = zv_role_cas_small
@@ -1476,7 +1476,7 @@ generic_cv_cas = {
 				fixed_zv_landing_gear = zv_gear_retractable_taildragger
 				fixed_zv_cockpit = zv_cockpit_closed
 				fixed_zv_wing_1 = zv_cat_mitrailleuses
-				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_belly_middle = { any_of = { zv_bomb_locks_napalm zv_bomb_locks_heavy zv_bomb_locks_ap zv_bomb_locks_incendiary zv_bomb_locks_frag zv_bomb_locks_light } }
 				fixed_zv_wing_2 = zv_cat_roquettes
 				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
 				fixed_zv_role = zv_role_cas_small
@@ -1527,7 +1527,7 @@ generic_cv_cas = {
 				fixed_zv_landing_gear = zv_gear_retractable_taildragger
 				fixed_zv_cockpit = zv_cockpit_bubble
 				fixed_zv_wing_1 = zv_cat_mitrailleuses
-				fixed_zv_belly_middle = zv_cat_attaches
+				fixed_zv_belly_middle = { any_of = { zv_bomb_locks_napalm zv_bomb_locks_heavy zv_bomb_locks_ap zv_bomb_locks_incendiary zv_bomb_locks_frag zv_bomb_locks_light } }
 				fixed_zv_wing_2 = zv_cat_roquettes
 				fixed_zv_rear_cockpit = zv_cat_mitrailleuse_a_main
 				fixed_zv_role = zv_role_cas_small
@@ -1835,7 +1835,7 @@ generic_tactical_bomber = {
 				fixed_zv_tail = zv_tail_classic
 				fixed_zv_landing_gear = zv_gear_fixed_taildragger
 				fixed_zv_cockpit = zv_cockpit_open
-				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_earthquake zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
+				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
 				fixed_zv_rear_cockpit = zv_cat_tourelle_x1
 				fixed_zv_role = zv_role_tac_bomber_medium
 			}
@@ -1884,7 +1884,7 @@ generic_tactical_bomber = {
 				fixed_zv_tail = zv_tail_classic
 				fixed_zv_landing_gear = zv_gear_fixed_taildragger
 				fixed_zv_cockpit = zv_cockpit_glazed_nose
-				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_earthquake zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
+				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
 				fixed_zv_rear_cockpit = zv_cat_tourelle_x1
 				fixed_zv_role = zv_role_tac_bomber_medium
 			}
@@ -1935,7 +1935,7 @@ generic_tactical_bomber = {
 				fixed_zv_tail = zv_tail_classic
 				fixed_zv_landing_gear = zv_gear_retractable_taildragger
 				fixed_zv_cockpit = zv_cockpit_glazed_nose
-				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_earthquake zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
+				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
 				fixed_zv_rear_cockpit = zv_cat_tourelle_x1
 				fixed_zv_role = zv_role_tac_bomber_medium
 			}
@@ -1994,7 +1994,7 @@ generic_tactical_bomber = {
 				fixed_zv_landing_gear = zv_gear_retractable_taildragger
 				fixed_zv_cockpit = zv_cockpit_glazed_nose
 				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_m
-				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_earthquake zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
+				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
 				fixed_zv_rear_cockpit = zv_cat_tourelle_x2
 				zv_tail_position = zv_cat_tourelle_x2
 				fixed_zv_role = zv_role_tac_bomber_medium
@@ -2051,7 +2051,7 @@ generic_tactical_bomber = {
 				fixed_zv_landing_gear = zv_gear_retractable_taildragger
 				fixed_zv_cockpit = zv_cockpit_glazed_nose
 				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_m
-				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_earthquake zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
+				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
 				fixed_zv_rear_cockpit = zv_cat_tourelle_x2
 				zv_tail_position = zv_cat_tourelle_x2
 				fixed_zv_role = zv_role_tac_bomber_medium
@@ -2107,7 +2107,7 @@ generic_tactical_bomber = {
 				fixed_zv_landing_gear = zv_gear_retractable_taildragger
 				fixed_zv_cockpit = zv_cockpit_glazed_nose
 				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_m
-				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_earthquake zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
+				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
 				fixed_zv_rear_cockpit = zv_cat_tourelle_x2
 				zv_tail_position = zv_cat_tourelle_x2
 				fixed_zv_role = zv_role_tac_bomber_medium
@@ -2159,7 +2159,7 @@ generic_tactical_bomber = {
 				fixed_zv_landing_gear = zv_gear_retractable_tricycle
 				fixed_zv_cockpit = zv_cockpit_glazed_nose
 				fixed_zv_internal_1 = zv_self_sealing_fuel_tanks_m
-				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_earthquake zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
+				fixed_zv_belly_middle = { any_of = { zv_bomb_bay_light zv_bomb_bay_medium zv_bomb_bay_medium_frag } }
 				fixed_zv_rear_cockpit = zv_cat_tourelle_x2
 				fixed_zv_role = zv_role_tac_bomber_medium
 			}
@@ -3259,7 +3259,7 @@ generic_maritime_patrol = {
 			has_tech = engines_1
 			has_tech = iw_large_airframe
 			has_tech = iw_small_airframe
-			has_tech = phased_array
+			has_tech = monopulse_radar
 			has_tech = survivability_studies
 			has_tech = zv_air_asw_1
 			has_tech = zv_propellers_1
@@ -3314,7 +3314,7 @@ generic_maritime_patrol = {
 			has_tech = iw_large_airframe
 			has_tech = iw_small_airframe
 			has_tech = modern_large_airframe
-			has_tech = phased_array
+			has_tech = monopulse_radar
 			has_tech = survivability_studies
 			has_tech = zv_air_asw_1
 			has_tech = zv_propellers_2

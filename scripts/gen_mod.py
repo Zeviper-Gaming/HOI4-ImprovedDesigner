@@ -185,16 +185,23 @@ def allowed_sizes(m):
 def limits_text(size, ind):
     """Limites du mod pour un archétype : tailles, limites partagées, une par design (09, 05)."""
     t = "\t" * ind
-    out = []
+    out, seen = [], set()
 
     def limit(comment, conds, count, op="<"):
+        key = (frozenset(conds), op)
+        if key in seen:                          # deux limites aux mêmes conditions : le jeu n'en garderait qu'une
+            return
+        seen.add(key)
         out.append(f"{t}module_count_limit = {{\t# ZV: {comment}")
         out.extend(f"{t}\t{c}" for c in conds)
         out.extend([f"{t}\tcount {op} {count}", f"{t}}}"])
 
-    for mid in MODULE_IDS:
+    def forbidden_here(mid):
         sizes = allowed_sizes(MODS[mid])
-        if sizes is not None and size not in sizes:
+        return sizes is not None and size not in sizes
+
+    for mid in MODULE_IDS:
+        if forbidden_here(mid):
             limit(f"{MODS[mid]['nom']} interdit sur cette cellule", [f"module = {mid}"], 1)
     for text, (name, count) in T.SHARED_LIMIT_TEXT.items():
         mods = [mid for mid in MODULE_IDS if text in MODS[mid].get("regles", {}).get("limites", [])]
@@ -207,7 +214,7 @@ def limits_text(size, ind):
                 limit(f"une seule {grouped} par design (09)", [f"category = {c}"], 2)
     for grouped in T.ONE_OF_EACH:
         for mid in MODULE_IDS:
-            if MODS[mid]["categorie"] == grouped:
+            if MODS[mid]["categorie"] == grouped and not forbidden_here(mid):
                 limit(f"un seul exemplaire ({grouped}, 05)", [f"module = {mid}"], 2)
     for mid in MODULE_IDS:                       # « 1 par design », « 2 par design »… (05)
         for lim in MODS[mid].get("regles", {}).get("limites", []):
@@ -215,6 +222,8 @@ def limits_text(size, ind):
                 _, n, on = T.LIMITE_PHRASES[lim]
                 cat = CAT_ID[MODS[mid]["categorie_jeu"]]
                 cond = f"module = {mid}" if on == "module" else f"category = {cat}"
+                if on == "module" and forbidden_here(mid):
+                    continue                     # la limite « interdit ici » porte les mêmes conditions (phase 7)
                 limit(f"{MODS[mid]['nom']} : {lim} (05)", [cond], n + 1)
     for name, grouped, mods, counts in T.SIZE_LIMITS:   # limites d'armes par taille (05)
         n = counts[0 if size in "NP" else 1 if size == "M" else 2]

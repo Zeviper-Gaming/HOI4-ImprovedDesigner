@@ -761,23 +761,7 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
-			module = zv_high_octane_fuel_m
-			count < 2
-		}
-		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
-			module = zv_high_octane_fuel_l
-			count < 2
-		}
-		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
 			module = zv_water_injection_s
-			count < 2
-		}
-		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
-			module = zv_water_injection_m
-			count < 2
-		}
-		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
-			module = zv_water_injection_l
 			count < 2
 		}
 		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
@@ -796,56 +780,12 @@ equipments = {
 			module = zv_armor_plate_s
 			count < 2
 		}
-		module_count_limit = {	# ZV: Blindage (M) : 2 par design (05)
-			module = zv_armor_plate_m
-			count < 3
-		}
-		module_count_limit = {	# ZV: Blindage (L) : 2 par design (05)
-			module = zv_armor_plate_l
-			count < 3
-		}
 		module_count_limit = {	# ZV: Matériaux non stratégiques (S) : 1 par design (05)
 			module = zv_non_strategic_materials_s
 			count < 2
 		}
-		module_count_limit = {	# ZV: Matériaux non stratégiques (M) : 1 par design (05)
-			module = zv_non_strategic_materials_m
-			count < 2
-		}
-		module_count_limit = {	# ZV: Matériaux non stratégiques (L) : 1 par design (05)
-			module = zv_non_strategic_materials_l
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs supplémentaires (S) : 1 par design (catégorie) (05)
-			category = zv_cat_reservoir_interne
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs supplémentaires (M) : 1 par design (catégorie) (05)
-			category = zv_cat_reservoir_interne
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs supplémentaires (L) : 1 par design (catégorie) (05)
-			category = zv_cat_reservoir_interne
-			count < 2
-		}
 		module_count_limit = {	# ZV: Réservoirs auto-obturants (S) : 1 par design (05)
 			module = zv_self_sealing_fuel_tanks_s
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs auto-obturants (M) : 1 par design (05)
-			module = zv_self_sealing_fuel_tanks_m
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs auto-obturants (L) : 1 par design (05)
-			module = zv_self_sealing_fuel_tanks_l
-			count < 2
-		}
-		module_count_limit = {	# ZV: Très gros calibres (attaches) : 1 par design ; grande cellule (05)
-			module = zv_bomb_locks_earthquake
-			count < 2
-		}
-		module_count_limit = {	# ZV: Très grosses bombes en soute (sans portes) : 1 par design ; grande cellule (05)
-			module = zv_bomb_bay_earthquake
 			count < 2
 		}
 		module_count_limit = {	# ZV: Armes navales + Armes guidées : 1 au plus (05)
@@ -1819,23 +1759,7 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
-			module = zv_high_octane_fuel_m
-			count < 2
-		}
-		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
-			module = zv_high_octane_fuel_l
-			count < 2
-		}
-		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
 			module = zv_water_injection_s
-			count < 2
-		}
-		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
-			module = zv_water_injection_m
-			count < 2
-		}
-		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
-			module = zv_water_injection_l
 			count < 2
 		}
 		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
@@ -1854,56 +1778,12 @@ equipments = {
 			module = zv_armor_plate_s
 			count < 2
 		}
-		module_count_limit = {	# ZV: Blindage (M) : 2 par design (05)
-			module = zv_armor_plate_m
-			count < 3
-		}
-		module_count_limit = {	# ZV: Blindage (L) : 2 par design (05)
-			module = zv_armor_plate_l
-			count < 3
-		}
 		module_count_limit = {	# ZV: Matériaux non stratégiques (S) : 1 par design (05)
 			module = zv_non_strategic_materials_s
 			count < 2
 		}
-		module_count_limit = {	# ZV: Matériaux non stratégiques (M) : 1 par design (05)
-			module = zv_non_strategic_materials_m
-			count < 2
-		}
-		module_count_limit = {	# ZV: Matériaux non stratégiques (L) : 1 par design (05)
-			module = zv_non_strategic_materials_l
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs supplémentaires (S) : 1 par design (catégorie) (05)
-			category = zv_cat_reservoir_interne
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs supplémentaires (M) : 1 par design (catégorie) (05)
-			category = zv_cat_reservoir_interne
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs supplémentaires (L) : 1 par design (catégorie) (05)
-			category = zv_cat_reservoir_interne
-			count < 2
-		}
 		module_count_limit = {	# ZV: Réservoirs auto-obturants (S) : 1 par design (05)
 			module = zv_self_sealing_fuel_tanks_s
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs auto-obturants (M) : 1 par design (05)
-			module = zv_self_sealing_fuel_tanks_m
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs auto-obturants (L) : 1 par design (05)
-			module = zv_self_sealing_fuel_tanks_l
-			count < 2
-		}
-		module_count_limit = {	# ZV: Très gros calibres (attaches) : 1 par design ; grande cellule (05)
-			module = zv_bomb_locks_earthquake
-			count < 2
-		}
-		module_count_limit = {	# ZV: Très grosses bombes en soute (sans portes) : 1 par design ; grande cellule (05)
-			module = zv_bomb_bay_earthquake
 			count < 2
 		}
 		module_count_limit = {	# ZV: Armes navales + Armes guidées : 1 au plus (05)
@@ -2861,27 +2741,11 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
-			module = zv_high_octane_fuel_s
-			count < 2
-		}
-		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
 			module = zv_high_octane_fuel_m
 			count < 2
 		}
 		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
-			module = zv_high_octane_fuel_l
-			count < 2
-		}
-		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
-			module = zv_water_injection_s
-			count < 2
-		}
-		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
 			module = zv_water_injection_m
-			count < 2
-		}
-		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
-			module = zv_water_injection_l
 			count < 2
 		}
 		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
@@ -2896,60 +2760,16 @@ equipments = {
 			module = zv_anti_g_carburettor
 			count < 2
 		}
-		module_count_limit = {	# ZV: Blindage (S) : 1 par design (05)
-			module = zv_armor_plate_s
-			count < 2
-		}
 		module_count_limit = {	# ZV: Blindage (M) : 2 par design (05)
 			module = zv_armor_plate_m
 			count < 3
-		}
-		module_count_limit = {	# ZV: Blindage (L) : 2 par design (05)
-			module = zv_armor_plate_l
-			count < 3
-		}
-		module_count_limit = {	# ZV: Matériaux non stratégiques (S) : 1 par design (05)
-			module = zv_non_strategic_materials_s
-			count < 2
 		}
 		module_count_limit = {	# ZV: Matériaux non stratégiques (M) : 1 par design (05)
 			module = zv_non_strategic_materials_m
 			count < 2
 		}
-		module_count_limit = {	# ZV: Matériaux non stratégiques (L) : 1 par design (05)
-			module = zv_non_strategic_materials_l
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs supplémentaires (S) : 1 par design (catégorie) (05)
-			category = zv_cat_reservoir_interne
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs supplémentaires (M) : 1 par design (catégorie) (05)
-			category = zv_cat_reservoir_interne
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs supplémentaires (L) : 1 par design (catégorie) (05)
-			category = zv_cat_reservoir_interne
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs auto-obturants (S) : 1 par design (05)
-			module = zv_self_sealing_fuel_tanks_s
-			count < 2
-		}
 		module_count_limit = {	# ZV: Réservoirs auto-obturants (M) : 1 par design (05)
 			module = zv_self_sealing_fuel_tanks_m
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs auto-obturants (L) : 1 par design (05)
-			module = zv_self_sealing_fuel_tanks_l
-			count < 2
-		}
-		module_count_limit = {	# ZV: Très gros calibres (attaches) : 1 par design ; grande cellule (05)
-			module = zv_bomb_locks_earthquake
-			count < 2
-		}
-		module_count_limit = {	# ZV: Très grosses bombes en soute (sans portes) : 1 par design ; grande cellule (05)
-			module = zv_bomb_bay_earthquake
 			count < 2
 		}
 		module_count_limit = {	# ZV: Armes navales + Armes guidées : 2 au plus (05)
@@ -3968,23 +3788,7 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
-			module = zv_high_octane_fuel_s
-			count < 2
-		}
-		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
-			module = zv_high_octane_fuel_m
-			count < 2
-		}
-		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
 			module = zv_high_octane_fuel_l
-			count < 2
-		}
-		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
-			module = zv_water_injection_s
-			count < 2
-		}
-		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
-			module = zv_water_injection_m
 			count < 2
 		}
 		module_count_limit = {	# ZV: un seul exemplaire (Alimentation, 05)
@@ -4003,48 +3807,12 @@ equipments = {
 			module = zv_anti_g_carburettor
 			count < 2
 		}
-		module_count_limit = {	# ZV: Blindage (S) : 1 par design (05)
-			module = zv_armor_plate_s
-			count < 2
-		}
-		module_count_limit = {	# ZV: Blindage (M) : 2 par design (05)
-			module = zv_armor_plate_m
-			count < 3
-		}
 		module_count_limit = {	# ZV: Blindage (L) : 2 par design (05)
 			module = zv_armor_plate_l
 			count < 3
 		}
-		module_count_limit = {	# ZV: Matériaux non stratégiques (S) : 1 par design (05)
-			module = zv_non_strategic_materials_s
-			count < 2
-		}
-		module_count_limit = {	# ZV: Matériaux non stratégiques (M) : 1 par design (05)
-			module = zv_non_strategic_materials_m
-			count < 2
-		}
 		module_count_limit = {	# ZV: Matériaux non stratégiques (L) : 1 par design (05)
 			module = zv_non_strategic_materials_l
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs supplémentaires (S) : 1 par design (catégorie) (05)
-			category = zv_cat_reservoir_interne
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs supplémentaires (M) : 1 par design (catégorie) (05)
-			category = zv_cat_reservoir_interne
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs supplémentaires (L) : 1 par design (catégorie) (05)
-			category = zv_cat_reservoir_interne
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs auto-obturants (S) : 1 par design (05)
-			module = zv_self_sealing_fuel_tanks_s
-			count < 2
-		}
-		module_count_limit = {	# ZV: Réservoirs auto-obturants (M) : 1 par design (05)
-			module = zv_self_sealing_fuel_tanks_m
 			count < 2
 		}
 		module_count_limit = {	# ZV: Réservoirs auto-obturants (L) : 1 par design (05)
