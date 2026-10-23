@@ -1743,9 +1743,9 @@ if = {
 				fixed_zv_tail = zv_tail_classic
 				fixed_zv_role = zv_role_tac_bomber_medium
 				fixed_zv_cockpit = zv_cockpit_glazed_nose
-				fixed_zv_rear_cockpit = zv_fuel_tanks_m
+				fixed_zv_rear_cockpit = lmg_defense_turret
+				fixed_zv_internal_1 = zv_fuel_tanks_m
 				fixed_zv_belly_middle = zv_bomb_bay_medium
-				zv_belly_rear = lmg_defense_turret
 			}
 			upgrades = {	# ZV: curseurs au cran 5 (réglage d'usine)
 				zv_engine_power_upgrade = 5
@@ -1766,9 +1766,9 @@ if = {
 				fixed_zv_tail = zv_tail_classic
 				fixed_zv_role = zv_role_tac_bomber_medium
 				fixed_zv_cockpit = zv_cockpit_closed
-				fixed_zv_rear_cockpit = zv_fuel_tanks_m
+				fixed_zv_rear_cockpit = lmg_defense_turret
+				fixed_zv_internal_1 = zv_fuel_tanks_m
 				fixed_zv_belly_middle = zv_bomb_bay_medium
-				zv_belly_rear = lmg_defense_turret
 			}
 			upgrades = {	# ZV: curseurs au cran 5 (réglage d'usine)
 				zv_engine_power_upgrade = 5

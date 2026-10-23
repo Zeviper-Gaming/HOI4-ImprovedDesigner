@@ -140,7 +140,9 @@ def convert(tag, name, eq_type, vanilla, techs):
     notes, missing = [], []
     design = Z.build(eq_type, rec, techs, missing)
     notes += [f"⚠ {m} imposé sans sa tech ({Z.RULES.module_tech.get(m)}) : aucun autre module possible" for m in missing]
-    for w in weapons:
+    slots = Z.RULES.archetypes[Z.RULES.resolve(eq_type)[0]]["slots"]
+    room = lambda m: sum(1 for _, cats in slots.values() if Z.RULES.modules[m]["category"] in cats)
+    for w in sorted(weapons, key=room):         # les modules qui ont le moins de places d'abord (phase 7)
         # Le module vanilla, sinon un plus ancien de la même catégorie (Florian, 23/10 : « remplace-les par
         # des modules de niveau 1 quand c'est possible »), le plus récent d'abord.
         cat = Z.RULES.modules[w]["category"]

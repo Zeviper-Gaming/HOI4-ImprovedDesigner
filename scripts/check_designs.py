@@ -136,6 +136,8 @@ class Rules:
         for mid in modules:
             if mid not in self.modules:
                 raise KeyError(f"module inconnu : {mid}")
+        room = lambda m: sum(1 for _, cats in slots.values() if self.modules[m]["category"] in cats)
+        for mid in sorted(modules, key=room):     # les modules qui ont le moins de places d'abord
             cat = self.modules[mid]["category"]
             free = [s for s, (_, cats) in slots.items() if cat in cats and s not in design]
             if not free:
