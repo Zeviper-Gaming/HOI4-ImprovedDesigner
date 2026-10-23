@@ -76,6 +76,10 @@ class Canvas:
     def line(self, pts, width=0.6, dark=0.55):
         p = [(x * K, y * K) for x, y in pts]
         m = self._mask(lambda d: d.line(p, fill=255, width=max(1, int(width * K)), joint="curve"))
+        if dark == 0:                     # trait visible pour lui-même (réticule, ondes, jet) : il remplit l'image
+            self.fill(m, 0.8, outline=False)
+            self.lines = np.maximum(self.lines, m)
+            return
         m = m * (self.alpha > 0.05)
         self.lum = self.lum * (1 - m * dark)
         self.lines = np.maximum(self.lines, m)
